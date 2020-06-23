@@ -3,6 +3,11 @@
 Windows Kits wrapper for netstandard2.0.
 Parse windows.h and Generate C# code for netstandard2.0 by [ClangCaster](https://github.com/ousttrue/ClangCaster).
 
+## Features
+
+* Support only 64bit
+* [user32.dll](NWindowsKits/winuser.cs)
+
 ## TODO
 
 * [ ] add HINSTANCE
@@ -13,6 +18,22 @@ Parse windows.h and Generate C# code for netstandard2.0 by [ClangCaster](https:/
 ### HelloWindow
 
 * port from https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/begin/LearnWin32/HelloWorld
+
+### DXGIEnumerateAdapter
+
+* TODO
+
+### D3D11CreateDevice
+
+* TODO
+
+### D3D11ClearSwapchain
+
+* TODO
+
+### D3D11DrawTriangle
+
+* TODO
 
 ## Code Generation
 
