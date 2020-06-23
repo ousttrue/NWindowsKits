@@ -11,10 +11,10 @@ namespace NWindowsKits
         public uint cbSize;
         public HWND hwndOwner;
         public HMODULE hInstance;
-        public IntPtr lpszText;
-        public IntPtr lpszCaption;
+        [MarshalAs(UnmanagedType.LPWStr)] public string lpszText;
+        [MarshalAs(UnmanagedType.LPWStr)] public string lpszCaption;
         public uint dwStyle;
-        public IntPtr lpszIcon;
+        [MarshalAs(UnmanagedType.LPWStr)] public string lpszIcon;
         public ulong dwContextHelpId;
         public MSGBOXCALLBACK lpfnMsgBoxCallback;
         public uint dwLanguageId;

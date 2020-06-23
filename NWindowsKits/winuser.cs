@@ -96,7 +96,7 @@ namespace NWindowsKits
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:123
     public delegate int PROPENUMPROCW(
         HWND __param__0,
-        IntPtr __param__1,
+        [MarshalAs(UnmanagedType.LPWStr)] string __param__1,
         IntPtr __param__2
     );
 
@@ -145,7 +145,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int wvsprintfW(
             IntPtr __param__0,
-            IntPtr __param__1,
+            [MarshalAs(UnmanagedType.LPWStr)] string __param__1,
             ref byte arglist
         );
 
@@ -160,7 +160,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int wsprintfW(
             IntPtr __param__0,
-            IntPtr __param__1
+            [MarshalAs(UnmanagedType.LPWStr)] string __param__1
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1241
@@ -173,7 +173,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1247
         [DllImport("user32.dll")]
         public static extern HKL LoadKeyboardLayoutW(
-            IntPtr pwszKLID,
+            [MarshalAs(UnmanagedType.LPWStr)] string pwszKLID,
             uint Flags
         );
 
@@ -251,8 +251,8 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1406
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopW(
-            IntPtr lpszDesktop,
-            IntPtr lpszDevice,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDevice,
             IntPtr pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
@@ -275,8 +275,8 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1434
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopExW(
-            IntPtr lpszDesktop,
-            IntPtr lpszDevice,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDevice,
             IntPtr pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
@@ -297,7 +297,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1469
         [DllImport("user32.dll")]
         public static extern HDESK OpenDesktopW(
-            IntPtr lpszDesktop,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
             uint dwFlags,
             int fInherit,
             uint dwDesiredAccess
@@ -371,7 +371,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1590
         [DllImport("user32.dll")]
         public static extern HWINSTA CreateWindowStationW(
-            IntPtr lpwinsta,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpwinsta,
             uint dwFlags,
             uint dwDesiredAccess,
             ref _SECURITY_ATTRIBUTES lpsa
@@ -388,7 +388,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1611
         [DllImport("user32.dll")]
         public static extern HWINSTA OpenWindowStationW(
-            IntPtr lpszWinSta,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszWinSta,
             int fInherit,
             uint dwDesiredAccess
         );
@@ -500,7 +500,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2645
         [DllImport("user32.dll")]
         public static extern uint RegisterWindowMessageW(
-            IntPtr lpString
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2765
@@ -990,7 +990,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4307
         [DllImport("user32.dll")]
         public static extern int UnregisterClassW(
-            IntPtr lpClassName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
             HMODULE hInstance
         );
 
@@ -1006,7 +1006,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int GetClassInfoW(
             HMODULE hInstance,
-            IntPtr lpClassName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
             ref WNDCLASSW lpWndClass
         );
 
@@ -1034,7 +1034,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int GetClassInfoExW(
             HMODULE hInstance,
-            IntPtr lpszClass,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszClass,
             ref WNDCLASSEXW lpwcx
         );
 
@@ -1059,8 +1059,8 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HWND CreateWindowExW(
             uint dwExStyle,
-            IntPtr lpClassName,
-            IntPtr lpWindowName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpWindowName,
             uint dwStyle,
             int X,
             int Y,
@@ -1317,7 +1317,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamW(
             HMODULE hInstance,
-            IntPtr lpTemplateName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
             long dwInitParam
@@ -1357,7 +1357,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern long DialogBoxParamW(
             HMODULE hInstance,
-            IntPtr lpTemplateName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
             long dwInitParam
@@ -1428,7 +1428,7 @@ namespace NWindowsKits
         public static extern int SetDlgItemTextW(
             HWND hDlg,
             int nIDDlgItem,
-            IntPtr lpString
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5177
@@ -1613,7 +1613,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5465
         [DllImport("user32.dll")]
         public static extern uint RegisterClipboardFormatW(
-            IntPtr lpszFormat
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszFormat
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5476
@@ -1696,7 +1696,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5567
         [DllImport("user32.dll")]
         public static extern int CharToOemW(
-            IntPtr pSrc,
+            [MarshalAs(UnmanagedType.LPWStr)] string pSrc,
             IntPtr pDst
         );
 
@@ -1725,7 +1725,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5606
         [DllImport("user32.dll")]
         public static extern int CharToOemBuffW(
-            IntPtr lpszSrc,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszSrc,
             IntPtr lpszDst,
             uint cchDstLength
         );
@@ -1807,7 +1807,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5718
         [DllImport("user32.dll")]
         public static extern IntPtr CharNextW(
-            IntPtr lpsz
+            [MarshalAs(UnmanagedType.LPWStr)] string lpsz
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5729
@@ -1820,8 +1820,8 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5735
         [DllImport("user32.dll")]
         public static extern IntPtr CharPrevW(
-            IntPtr lpszStart,
-            IntPtr lpszCurrent
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszStart,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszCurrent
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5748
@@ -2477,7 +2477,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HACCEL LoadAcceleratorsW(
             HMODULE hInstance,
-            IntPtr lpTableName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpTableName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7121
@@ -2556,7 +2556,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuW(
             HMODULE hInstance,
-            IntPtr lpMenuName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpMenuName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7402
@@ -2599,7 +2599,7 @@ namespace NWindowsKits
         public static extern int ChangeMenuW(
             HMENU hMenu,
             uint cmd,
-            IntPtr lpszNewItem,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszNewItem,
             uint cmdInsert,
             uint flags
         );
@@ -2723,7 +2723,7 @@ namespace NWindowsKits
             uint uPosition,
             uint uFlags,
             ulong uIDNewItem,
-            IntPtr lpNewItem
+            [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7594
@@ -2741,7 +2741,7 @@ namespace NWindowsKits
             HMENU hMenu,
             uint uFlags,
             ulong uIDNewItem,
-            IntPtr lpNewItem
+            [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7616
@@ -2761,7 +2761,7 @@ namespace NWindowsKits
             uint uPosition,
             uint uFlags,
             ulong uIDNewItem,
-            IntPtr lpNewItem
+            [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7640
@@ -2974,7 +2974,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int DrawTextW(
             HDC hdc,
-            IntPtr lpchText,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpchText,
             int cchText,
             ref RECT lprc,
             uint format
@@ -3079,7 +3079,7 @@ namespace NWindowsKits
             HDC hdc,
             int x,
             int y,
-            IntPtr lpString,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString,
             int chCount,
             int nTabPositions,
             IntPtr lpnTabStopPositions,
@@ -3100,7 +3100,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern uint GetTabbedTextExtentW(
             HDC hdc,
-            IntPtr lpString,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString,
             int chCount,
             int nTabPositions,
             IntPtr lpnTabStopPositions
@@ -3389,7 +3389,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int SetPropW(
             HWND hWnd,
-            IntPtr lpString,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString,
             IntPtr hData
         );
 
@@ -3404,7 +3404,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern IntPtr GetPropW(
             HWND hWnd,
-            IntPtr lpString
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8837
@@ -3418,7 +3418,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern IntPtr RemovePropW(
             HWND hWnd,
-            IntPtr lpString
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8855
@@ -3462,7 +3462,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int SetWindowTextW(
             HWND hWnd,
-            IntPtr lpString
+            [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8912
@@ -3573,8 +3573,8 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int MessageBoxW(
             HWND hWnd,
-            IntPtr lpText,
-            IntPtr lpCaption,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpText,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpCaption,
             uint uType
         );
 
@@ -3592,8 +3592,8 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int MessageBoxExW(
             HWND hWnd,
-            IntPtr lpText,
-            IntPtr lpCaption,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpText,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpCaption,
             uint uType,
             ushort wLanguageId
         );
@@ -4130,8 +4130,8 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10046
         [DllImport("user32.dll")]
         public static extern HWND FindWindowW(
-            IntPtr lpClassName,
-            IntPtr lpWindowName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpWindowName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10059
@@ -4148,8 +4148,8 @@ namespace NWindowsKits
         public static extern HWND FindWindowExW(
             HWND hWndParent,
             HWND hWndChildAfter,
-            IntPtr lpszClass,
-            IntPtr lpszWindow
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszClass,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszWindow
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10081
@@ -4307,7 +4307,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HBITMAP LoadBitmapW(
             HMODULE hInstance,
-            IntPtr lpBitmapName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpBitmapName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10524
@@ -4321,7 +4321,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorW(
             HMODULE hInstance,
-            IntPtr lpCursorName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpCursorName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10548
@@ -4333,7 +4333,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10553
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorFromFileW(
-            IntPtr lpFileName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpFileName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10570
@@ -4372,7 +4372,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadIconW(
             HMODULE hInstance,
-            IntPtr lpIconName
+            [MarshalAs(UnmanagedType.LPWStr)] string lpIconName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10674
@@ -4391,7 +4391,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10686
         [DllImport("user32.dll")]
         public static extern uint PrivateExtractIconsW(
-            IntPtr szFileName,
+            [MarshalAs(UnmanagedType.LPWStr)] string szFileName,
             int nIconIndex,
             int cxIcon,
             int cyIcon,
@@ -4472,7 +4472,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern IntPtr LoadImageW(
             HMODULE hInst,
-            IntPtr name,
+            [MarshalAs(UnmanagedType.LPWStr)] string name,
             uint type,
             int cx,
             int cy,
@@ -4719,8 +4719,8 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12115
         [DllImport("user32.dll")]
         public static extern HWND CreateMDIWindowW(
-            IntPtr lpClassName,
-            IntPtr lpWindowName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpWindowName,
             uint dwStyle,
             int X,
             int Y,
@@ -4764,7 +4764,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int WinHelpW(
             HWND hWndMain,
-            IntPtr lpszHelp,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszHelp,
             uint uCommand,
             ulong dwData
         );
@@ -4803,7 +4803,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12989
         [DllImport("user32.dll")]
         public static extern int ChangeDisplaySettingsExW(
-            IntPtr lpszDeviceName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
             IntPtr lpDevMode,
             HWND hwnd,
             uint dwflags,
@@ -4821,7 +4821,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13015
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsW(
-            IntPtr lpszDeviceName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
             uint iModeNum,
             IntPtr lpDevMode
         );
@@ -4838,7 +4838,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13038
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsExW(
-            IntPtr lpszDeviceName,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
             uint iModeNum,
             IntPtr lpDevMode,
             uint dwFlags
@@ -4856,7 +4856,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13064
         [DllImport("user32.dll")]
         public static extern int EnumDisplayDevicesW(
-            IntPtr lpDevice,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpDevice,
             uint iDevNum,
             ref _DISPLAY_DEVICEW lpDisplayDevice,
             uint dwFlags
@@ -5477,7 +5477,7 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int ShutdownBlockReasonCreate(
             HWND hWnd,
-            IntPtr pwszReason
+            [MarshalAs(UnmanagedType.LPWStr)] string pwszReason
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15720

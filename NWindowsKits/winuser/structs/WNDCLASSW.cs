@@ -16,7 +16,7 @@ namespace NWindowsKits
         public HCURSOR hIcon;
         public HCURSOR hCursor;
         public HBRUSH hbrBackground;
-        public IntPtr lpszMenuName;
-        public IntPtr lpszClassName;
+        [MarshalAs(UnmanagedType.LPWStr)] public string lpszMenuName;
+        [MarshalAs(UnmanagedType.LPWStr)] public string lpszClassName;
     }
 }
