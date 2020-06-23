@@ -6,6 +6,7 @@ Parse windows.h and Generate C# code for netstandard2.0 by [ClangCaster](https:/
 ## TODO
 
 * [ ] add HINSTANCE
+* [ ] kernel32.dll
 
 ## Samples
 
