@@ -4,13 +4,13 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class COLOR_
+    public static partial class COLOR_
     {
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/wingdi.h:4973
-        public const int ADJ_MIN = unchecked((int)( SHORT ) - 100);
+        public const int _ADJ_MIN = unchecked((int)( short ) - 100);
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/wingdi.h:4974
-        public const int ADJ_MAX = unchecked((int)( SHORT ) 100);
+        public const int _ADJ_MAX = unchecked((int)( short ) 100);
 
     }
 }

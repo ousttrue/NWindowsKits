@@ -4,775 +4,775 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class WM_
+    public static partial class WM_
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1981
-        public const int NULL = unchecked((int)0x0000);
+        public const int _NULL = unchecked((int)0x0000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1982
-        public const int CREATE = unchecked((int)0x0001);
+        public const int _CREATE = unchecked((int)0x0001);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1983
-        public const int DESTROY = unchecked((int)0x0002);
+        public const int _DESTROY = unchecked((int)0x0002);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1984
-        public const int MOVE = unchecked((int)0x0003);
+        public const int _MOVE = unchecked((int)0x0003);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1985
-        public const int SIZE = unchecked((int)0x0005);
+        public const int _SIZE = unchecked((int)0x0005);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1987
-        public const int ACTIVATE = unchecked((int)0x0006);
+        public const int _ACTIVATE = unchecked((int)0x0006);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1995
-        public const int SETFOCUS = unchecked((int)0x0007);
+        public const int _SETFOCUS = unchecked((int)0x0007);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1996
-        public const int KILLFOCUS = unchecked((int)0x0008);
+        public const int _KILLFOCUS = unchecked((int)0x0008);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1997
-        public const int ENABLE = unchecked((int)0x000A);
+        public const int _ENABLE = unchecked((int)0x000A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1998
-        public const int SETREDRAW = unchecked((int)0x000B);
+        public const int _SETREDRAW = unchecked((int)0x000B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1999
-        public const int SETTEXT = unchecked((int)0x000C);
+        public const int _SETTEXT = unchecked((int)0x000C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2000
-        public const int GETTEXT = unchecked((int)0x000D);
+        public const int _GETTEXT = unchecked((int)0x000D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2001
-        public const int GETTEXTLENGTH = unchecked((int)0x000E);
+        public const int _GETTEXTLENGTH = unchecked((int)0x000E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2002
-        public const int PAINT = unchecked((int)0x000F);
+        public const int _PAINT = unchecked((int)0x000F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2003
-        public const int CLOSE = unchecked((int)0x0010);
+        public const int _CLOSE = unchecked((int)0x0010);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2005
-        public const int QUERYENDSESSION = unchecked((int)0x0011);
+        public const int _QUERYENDSESSION = unchecked((int)0x0011);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2006
-        public const int QUERYOPEN = unchecked((int)0x0013);
+        public const int _QUERYOPEN = unchecked((int)0x0013);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2007
-        public const int ENDSESSION = unchecked((int)0x0016);
+        public const int _ENDSESSION = unchecked((int)0x0016);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2009
-        public const int QUIT = unchecked((int)0x0012);
+        public const int _QUIT = unchecked((int)0x0012);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2010
-        public const int ERASEBKGND = unchecked((int)0x0014);
+        public const int _ERASEBKGND = unchecked((int)0x0014);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2011
-        public const int SYSCOLORCHANGE = unchecked((int)0x0015);
+        public const int _SYSCOLORCHANGE = unchecked((int)0x0015);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2012
-        public const int SHOWWINDOW = unchecked((int)0x0018);
+        public const int _SHOWWINDOW = unchecked((int)0x0018);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2013
-        public const int WININICHANGE = unchecked((int)0x001A);
+        public const int _WININICHANGE = unchecked((int)0x001A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2015
-        public const int SETTINGCHANGE = unchecked((int)WININICHANGE);
+        public const int _SETTINGCHANGE = unchecked((int)_WININICHANGE);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2019
-        public const int DEVMODECHANGE = unchecked((int)0x001B);
+        public const int _DEVMODECHANGE = unchecked((int)0x001B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2020
-        public const int ACTIVATEAPP = unchecked((int)0x001C);
+        public const int _ACTIVATEAPP = unchecked((int)0x001C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2021
-        public const int FONTCHANGE = unchecked((int)0x001D);
+        public const int _FONTCHANGE = unchecked((int)0x001D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2022
-        public const int TIMECHANGE = unchecked((int)0x001E);
+        public const int _TIMECHANGE = unchecked((int)0x001E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2023
-        public const int CANCELMODE = unchecked((int)0x001F);
+        public const int _CANCELMODE = unchecked((int)0x001F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2024
-        public const int SETCURSOR = unchecked((int)0x0020);
+        public const int _SETCURSOR = unchecked((int)0x0020);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2025
-        public const int MOUSEACTIVATE = unchecked((int)0x0021);
+        public const int _MOUSEACTIVATE = unchecked((int)0x0021);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2026
-        public const int CHILDACTIVATE = unchecked((int)0x0022);
+        public const int _CHILDACTIVATE = unchecked((int)0x0022);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2027
-        public const int QUEUESYNC = unchecked((int)0x0023);
+        public const int _QUEUESYNC = unchecked((int)0x0023);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2029
-        public const int GETMINMAXINFO = unchecked((int)0x0024);
+        public const int _GETMINMAXINFO = unchecked((int)0x0024);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2048
-        public const int PAINTICON = unchecked((int)0x0026);
+        public const int _PAINTICON = unchecked((int)0x0026);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2049
-        public const int ICONERASEBKGND = unchecked((int)0x0027);
+        public const int _ICONERASEBKGND = unchecked((int)0x0027);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2050
-        public const int NEXTDLGCTL = unchecked((int)0x0028);
+        public const int _NEXTDLGCTL = unchecked((int)0x0028);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2051
-        public const int SPOOLERSTATUS = unchecked((int)0x002A);
+        public const int _SPOOLERSTATUS = unchecked((int)0x002A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2052
-        public const int DRAWITEM = unchecked((int)0x002B);
+        public const int _DRAWITEM = unchecked((int)0x002B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2053
-        public const int MEASUREITEM = unchecked((int)0x002C);
+        public const int _MEASUREITEM = unchecked((int)0x002C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2054
-        public const int DELETEITEM = unchecked((int)0x002D);
+        public const int _DELETEITEM = unchecked((int)0x002D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2055
-        public const int VKEYTOITEM = unchecked((int)0x002E);
+        public const int _VKEYTOITEM = unchecked((int)0x002E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2056
-        public const int CHARTOITEM = unchecked((int)0x002F);
+        public const int _CHARTOITEM = unchecked((int)0x002F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2057
-        public const int SETFONT = unchecked((int)0x0030);
+        public const int _SETFONT = unchecked((int)0x0030);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2058
-        public const int GETFONT = unchecked((int)0x0031);
+        public const int _GETFONT = unchecked((int)0x0031);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2059
-        public const int SETHOTKEY = unchecked((int)0x0032);
+        public const int _SETHOTKEY = unchecked((int)0x0032);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2060
-        public const int GETHOTKEY = unchecked((int)0x0033);
+        public const int _GETHOTKEY = unchecked((int)0x0033);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2061
-        public const int QUERYDRAGICON = unchecked((int)0x0037);
+        public const int _QUERYDRAGICON = unchecked((int)0x0037);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2062
-        public const int COMPAREITEM = unchecked((int)0x0039);
+        public const int _COMPAREITEM = unchecked((int)0x0039);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2065
-        public const int GETOBJECT = unchecked((int)0x003D);
+        public const int _GETOBJECT = unchecked((int)0x003D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2068
-        public const int COMPACTING = unchecked((int)0x0041);
+        public const int _COMPACTING = unchecked((int)0x0041);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2069
-        public const int COMMNOTIFY = unchecked((int)0x0044);
+        public const int _COMMNOTIFY = unchecked((int)0x0044);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2070
-        public const int WINDOWPOSCHANGING = unchecked((int)0x0046);
+        public const int _WINDOWPOSCHANGING = unchecked((int)0x0046);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2071
-        public const int WINDOWPOSCHANGED = unchecked((int)0x0047);
+        public const int _WINDOWPOSCHANGED = unchecked((int)0x0047);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2073
-        public const int POWER = unchecked((int)0x0048);
+        public const int _POWER = unchecked((int)0x0048);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2083
-        public const int COPYDATA = unchecked((int)0x004A);
+        public const int _COPYDATA = unchecked((int)0x004A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2084
-        public const int CANCELJOURNAL = unchecked((int)0x004B);
+        public const int _CANCELJOURNAL = unchecked((int)0x004B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2113
-        public const int NOTIFY = unchecked((int)0x004E);
+        public const int _NOTIFY = unchecked((int)0x004E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2114
-        public const int INPUTLANGCHANGEREQUEST = unchecked((int)0x0050);
+        public const int _INPUTLANGCHANGEREQUEST = unchecked((int)0x0050);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2115
-        public const int INPUTLANGCHANGE = unchecked((int)0x0051);
+        public const int _INPUTLANGCHANGE = unchecked((int)0x0051);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2116
-        public const int TCARD = unchecked((int)0x0052);
+        public const int _TCARD = unchecked((int)0x0052);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2117
-        public const int HELP = unchecked((int)0x0053);
+        public const int _HELP = unchecked((int)0x0053);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2118
-        public const int USERCHANGED = unchecked((int)0x0054);
+        public const int _USERCHANGED = unchecked((int)0x0054);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2119
-        public const int NOTIFYFORMAT = unchecked((int)0x0055);
+        public const int _NOTIFYFORMAT = unchecked((int)0x0055);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2126
-        public const int CONTEXTMENU = unchecked((int)0x007B);
+        public const int _CONTEXTMENU = unchecked((int)0x007B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2127
-        public const int STYLECHANGING = unchecked((int)0x007C);
+        public const int _STYLECHANGING = unchecked((int)0x007C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2128
-        public const int STYLECHANGED = unchecked((int)0x007D);
+        public const int _STYLECHANGED = unchecked((int)0x007D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2129
-        public const int DISPLAYCHANGE = unchecked((int)0x007E);
+        public const int _DISPLAYCHANGE = unchecked((int)0x007E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2130
-        public const int GETICON = unchecked((int)0x007F);
+        public const int _GETICON = unchecked((int)0x007F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2131
-        public const int SETICON = unchecked((int)0x0080);
+        public const int _SETICON = unchecked((int)0x0080);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2134
-        public const int NCCREATE = unchecked((int)0x0081);
+        public const int _NCCREATE = unchecked((int)0x0081);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2135
-        public const int NCDESTROY = unchecked((int)0x0082);
+        public const int _NCDESTROY = unchecked((int)0x0082);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2136
-        public const int NCCALCSIZE = unchecked((int)0x0083);
+        public const int _NCCALCSIZE = unchecked((int)0x0083);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2137
-        public const int NCHITTEST = unchecked((int)0x0084);
+        public const int _NCHITTEST = unchecked((int)0x0084);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2138
-        public const int NCPAINT = unchecked((int)0x0085);
+        public const int _NCPAINT = unchecked((int)0x0085);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2139
-        public const int NCACTIVATE = unchecked((int)0x0086);
+        public const int _NCACTIVATE = unchecked((int)0x0086);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2140
-        public const int GETDLGCODE = unchecked((int)0x0087);
+        public const int _GETDLGCODE = unchecked((int)0x0087);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2142
-        public const int SYNCPAINT = unchecked((int)0x0088);
+        public const int _SYNCPAINT = unchecked((int)0x0088);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2144
-        public const int NCMOUSEMOVE = unchecked((int)0x00A0);
+        public const int _NCMOUSEMOVE = unchecked((int)0x00A0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2145
-        public const int NCLBUTTONDOWN = unchecked((int)0x00A1);
+        public const int _NCLBUTTONDOWN = unchecked((int)0x00A1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2146
-        public const int NCLBUTTONUP = unchecked((int)0x00A2);
+        public const int _NCLBUTTONUP = unchecked((int)0x00A2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2147
-        public const int NCLBUTTONDBLCLK = unchecked((int)0x00A3);
+        public const int _NCLBUTTONDBLCLK = unchecked((int)0x00A3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2148
-        public const int NCRBUTTONDOWN = unchecked((int)0x00A4);
+        public const int _NCRBUTTONDOWN = unchecked((int)0x00A4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2149
-        public const int NCRBUTTONUP = unchecked((int)0x00A5);
+        public const int _NCRBUTTONUP = unchecked((int)0x00A5);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2150
-        public const int NCRBUTTONDBLCLK = unchecked((int)0x00A6);
+        public const int _NCRBUTTONDBLCLK = unchecked((int)0x00A6);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2151
-        public const int NCMBUTTONDOWN = unchecked((int)0x00A7);
+        public const int _NCMBUTTONDOWN = unchecked((int)0x00A7);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2152
-        public const int NCMBUTTONUP = unchecked((int)0x00A8);
+        public const int _NCMBUTTONUP = unchecked((int)0x00A8);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2153
-        public const int NCMBUTTONDBLCLK = unchecked((int)0x00A9);
+        public const int _NCMBUTTONDBLCLK = unchecked((int)0x00A9);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2158
-        public const int NCXBUTTONDOWN = unchecked((int)0x00AB);
+        public const int _NCXBUTTONDOWN = unchecked((int)0x00AB);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2159
-        public const int NCXBUTTONUP = unchecked((int)0x00AC);
+        public const int _NCXBUTTONUP = unchecked((int)0x00AC);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2160
-        public const int NCXBUTTONDBLCLK = unchecked((int)0x00AD);
+        public const int _NCXBUTTONDBLCLK = unchecked((int)0x00AD);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2165
-        public const int INPUT_DEVICE_CHANGE = unchecked((int)0x00FE);
+        public const int _INPUT_DEVICE_CHANGE = unchecked((int)0x00FE);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2169
-        public const int INPUT = unchecked((int)0x00FF);
+        public const int _INPUT = unchecked((int)0x00FF);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2172
-        public const int KEYFIRST = unchecked((int)0x0100);
+        public const int _KEYFIRST = unchecked((int)0x0100);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2173
-        public const int KEYDOWN = unchecked((int)0x0100);
+        public const int _KEYDOWN = unchecked((int)0x0100);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2174
-        public const int KEYUP = unchecked((int)0x0101);
+        public const int _KEYUP = unchecked((int)0x0101);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2175
-        public const int CHAR = unchecked((int)0x0102);
+        public const int _CHAR = unchecked((int)0x0102);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2176
-        public const int DEADCHAR = unchecked((int)0x0103);
+        public const int _DEADCHAR = unchecked((int)0x0103);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2177
-        public const int SYSKEYDOWN = unchecked((int)0x0104);
+        public const int _SYSKEYDOWN = unchecked((int)0x0104);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2178
-        public const int SYSKEYUP = unchecked((int)0x0105);
+        public const int _SYSKEYUP = unchecked((int)0x0105);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2179
-        public const int SYSCHAR = unchecked((int)0x0106);
+        public const int _SYSCHAR = unchecked((int)0x0106);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2180
-        public const int SYSDEADCHAR = unchecked((int)0x0107);
+        public const int _SYSDEADCHAR = unchecked((int)0x0107);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2182
-        public const int UNICHAR = unchecked((int)0x0109);
+        public const int _UNICHAR = unchecked((int)0x0109);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2183
-        public const int KEYLAST = unchecked((int)0x0109);
+        public const int _KEYLAST = unchecked((int)0x0109);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2190
-        public const int IME_STARTCOMPOSITION = unchecked((int)0x010D);
+        public const int _IME_STARTCOMPOSITION = unchecked((int)0x010D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2191
-        public const int IME_ENDCOMPOSITION = unchecked((int)0x010E);
+        public const int _IME_ENDCOMPOSITION = unchecked((int)0x010E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2192
-        public const int IME_COMPOSITION = unchecked((int)0x010F);
+        public const int _IME_COMPOSITION = unchecked((int)0x010F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2193
-        public const int IME_KEYLAST = unchecked((int)0x010F);
+        public const int _IME_KEYLAST = unchecked((int)0x010F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2196
-        public const int INITDIALOG = unchecked((int)0x0110);
+        public const int _INITDIALOG = unchecked((int)0x0110);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2197
-        public const int COMMAND = unchecked((int)0x0111);
+        public const int _COMMAND = unchecked((int)0x0111);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2198
-        public const int SYSCOMMAND = unchecked((int)0x0112);
+        public const int _SYSCOMMAND = unchecked((int)0x0112);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2199
-        public const int TIMER = unchecked((int)0x0113);
+        public const int _TIMER = unchecked((int)0x0113);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2200
-        public const int HSCROLL = unchecked((int)0x0114);
+        public const int _HSCROLL = unchecked((int)0x0114);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2201
-        public const int VSCROLL = unchecked((int)0x0115);
+        public const int _VSCROLL = unchecked((int)0x0115);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2202
-        public const int INITMENU = unchecked((int)0x0116);
+        public const int _INITMENU = unchecked((int)0x0116);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2203
-        public const int INITMENUPOPUP = unchecked((int)0x0117);
+        public const int _INITMENUPOPUP = unchecked((int)0x0117);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2205
-        public const int GESTURE = unchecked((int)0x0119);
+        public const int _GESTURE = unchecked((int)0x0119);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2206
-        public const int GESTURENOTIFY = unchecked((int)0x011A);
+        public const int _GESTURENOTIFY = unchecked((int)0x011A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2208
-        public const int MENUSELECT = unchecked((int)0x011F);
+        public const int _MENUSELECT = unchecked((int)0x011F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2209
-        public const int MENUCHAR = unchecked((int)0x0120);
+        public const int _MENUCHAR = unchecked((int)0x0120);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2210
-        public const int ENTERIDLE = unchecked((int)0x0121);
+        public const int _ENTERIDLE = unchecked((int)0x0121);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2213
-        public const int MENURBUTTONUP = unchecked((int)0x0122);
+        public const int _MENURBUTTONUP = unchecked((int)0x0122);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2214
-        public const int MENUDRAG = unchecked((int)0x0123);
+        public const int _MENUDRAG = unchecked((int)0x0123);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2215
-        public const int MENUGETOBJECT = unchecked((int)0x0124);
+        public const int _MENUGETOBJECT = unchecked((int)0x0124);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2216
-        public const int UNINITMENUPOPUP = unchecked((int)0x0125);
+        public const int _UNINITMENUPOPUP = unchecked((int)0x0125);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2217
-        public const int MENUCOMMAND = unchecked((int)0x0126);
+        public const int _MENUCOMMAND = unchecked((int)0x0126);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2221
-        public const int CHANGEUISTATE = unchecked((int)0x0127);
+        public const int _CHANGEUISTATE = unchecked((int)0x0127);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2222
-        public const int UPDATEUISTATE = unchecked((int)0x0128);
+        public const int _UPDATEUISTATE = unchecked((int)0x0128);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2223
-        public const int QUERYUISTATE = unchecked((int)0x0129);
+        public const int _QUERYUISTATE = unchecked((int)0x0129);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2246
-        public const int CTLCOLORMSGBOX = unchecked((int)0x0132);
+        public const int _CTLCOLORMSGBOX = unchecked((int)0x0132);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2247
-        public const int CTLCOLOREDIT = unchecked((int)0x0133);
+        public const int _CTLCOLOREDIT = unchecked((int)0x0133);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2248
-        public const int CTLCOLORLISTBOX = unchecked((int)0x0134);
+        public const int _CTLCOLORLISTBOX = unchecked((int)0x0134);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2249
-        public const int CTLCOLORBTN = unchecked((int)0x0135);
+        public const int _CTLCOLORBTN = unchecked((int)0x0135);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2250
-        public const int CTLCOLORDLG = unchecked((int)0x0136);
+        public const int _CTLCOLORDLG = unchecked((int)0x0136);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2251
-        public const int CTLCOLORSCROLLBAR = unchecked((int)0x0137);
+        public const int _CTLCOLORSCROLLBAR = unchecked((int)0x0137);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2252
-        public const int CTLCOLORSTATIC = unchecked((int)0x0138);
+        public const int _CTLCOLORSTATIC = unchecked((int)0x0138);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2255
-        public const int MOUSEFIRST = unchecked((int)0x0200);
+        public const int _MOUSEFIRST = unchecked((int)0x0200);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2256
-        public const int MOUSEMOVE = unchecked((int)0x0200);
+        public const int _MOUSEMOVE = unchecked((int)0x0200);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2257
-        public const int LBUTTONDOWN = unchecked((int)0x0201);
+        public const int _LBUTTONDOWN = unchecked((int)0x0201);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2258
-        public const int LBUTTONUP = unchecked((int)0x0202);
+        public const int _LBUTTONUP = unchecked((int)0x0202);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2259
-        public const int LBUTTONDBLCLK = unchecked((int)0x0203);
+        public const int _LBUTTONDBLCLK = unchecked((int)0x0203);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2260
-        public const int RBUTTONDOWN = unchecked((int)0x0204);
+        public const int _RBUTTONDOWN = unchecked((int)0x0204);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2261
-        public const int RBUTTONUP = unchecked((int)0x0205);
+        public const int _RBUTTONUP = unchecked((int)0x0205);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2262
-        public const int RBUTTONDBLCLK = unchecked((int)0x0206);
+        public const int _RBUTTONDBLCLK = unchecked((int)0x0206);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2263
-        public const int MBUTTONDOWN = unchecked((int)0x0207);
+        public const int _MBUTTONDOWN = unchecked((int)0x0207);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2264
-        public const int MBUTTONUP = unchecked((int)0x0208);
+        public const int _MBUTTONUP = unchecked((int)0x0208);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2265
-        public const int MBUTTONDBLCLK = unchecked((int)0x0209);
+        public const int _MBUTTONDBLCLK = unchecked((int)0x0209);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2267
-        public const int MOUSEWHEEL = unchecked((int)0x020A);
+        public const int _MOUSEWHEEL = unchecked((int)0x020A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2270
-        public const int XBUTTONDOWN = unchecked((int)0x020B);
+        public const int _XBUTTONDOWN = unchecked((int)0x020B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2271
-        public const int XBUTTONUP = unchecked((int)0x020C);
+        public const int _XBUTTONUP = unchecked((int)0x020C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2272
-        public const int XBUTTONDBLCLK = unchecked((int)0x020D);
+        public const int _XBUTTONDBLCLK = unchecked((int)0x020D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2275
-        public const int MOUSEHWHEEL = unchecked((int)0x020E);
+        public const int _MOUSEHWHEEL = unchecked((int)0x020E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2279
-        public const int MOUSELAST = unchecked((int)0x020E);
+        public const int _MOUSELAST = unchecked((int)0x020E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2309
-        public const int PARENTNOTIFY = unchecked((int)0x0210);
+        public const int _PARENTNOTIFY = unchecked((int)0x0210);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2310
-        public const int ENTERMENULOOP = unchecked((int)0x0211);
+        public const int _ENTERMENULOOP = unchecked((int)0x0211);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2311
-        public const int EXITMENULOOP = unchecked((int)0x0212);
+        public const int _EXITMENULOOP = unchecked((int)0x0212);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2314
-        public const int NEXTMENU = unchecked((int)0x0213);
+        public const int _NEXTMENU = unchecked((int)0x0213);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2315
-        public const int SIZING = unchecked((int)0x0214);
+        public const int _SIZING = unchecked((int)0x0214);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2316
-        public const int CAPTURECHANGED = unchecked((int)0x0215);
+        public const int _CAPTURECHANGED = unchecked((int)0x0215);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2317
-        public const int MOVING = unchecked((int)0x0216);
+        public const int _MOVING = unchecked((int)0x0216);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2323
-        public const int POWERBROADCAST = unchecked((int)0x0218);
+        public const int _POWERBROADCAST = unchecked((int)0x0218);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2373
-        public const int DEVICECHANGE = unchecked((int)0x0219);
+        public const int _DEVICECHANGE = unchecked((int)0x0219);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2376
-        public const int MDICREATE = unchecked((int)0x0220);
+        public const int _MDICREATE = unchecked((int)0x0220);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2377
-        public const int MDIDESTROY = unchecked((int)0x0221);
+        public const int _MDIDESTROY = unchecked((int)0x0221);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2378
-        public const int MDIACTIVATE = unchecked((int)0x0222);
+        public const int _MDIACTIVATE = unchecked((int)0x0222);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2379
-        public const int MDIRESTORE = unchecked((int)0x0223);
+        public const int _MDIRESTORE = unchecked((int)0x0223);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2380
-        public const int MDINEXT = unchecked((int)0x0224);
+        public const int _MDINEXT = unchecked((int)0x0224);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2381
-        public const int MDIMAXIMIZE = unchecked((int)0x0225);
+        public const int _MDIMAXIMIZE = unchecked((int)0x0225);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2382
-        public const int MDITILE = unchecked((int)0x0226);
+        public const int _MDITILE = unchecked((int)0x0226);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2383
-        public const int MDICASCADE = unchecked((int)0x0227);
+        public const int _MDICASCADE = unchecked((int)0x0227);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2384
-        public const int MDIICONARRANGE = unchecked((int)0x0228);
+        public const int _MDIICONARRANGE = unchecked((int)0x0228);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2385
-        public const int MDIGETACTIVE = unchecked((int)0x0229);
+        public const int _MDIGETACTIVE = unchecked((int)0x0229);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2388
-        public const int MDISETMENU = unchecked((int)0x0230);
+        public const int _MDISETMENU = unchecked((int)0x0230);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2389
-        public const int ENTERSIZEMOVE = unchecked((int)0x0231);
+        public const int _ENTERSIZEMOVE = unchecked((int)0x0231);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2390
-        public const int EXITSIZEMOVE = unchecked((int)0x0232);
+        public const int _EXITSIZEMOVE = unchecked((int)0x0232);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2391
-        public const int DROPFILES = unchecked((int)0x0233);
+        public const int _DROPFILES = unchecked((int)0x0233);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2392
-        public const int MDIREFRESHMENU = unchecked((int)0x0234);
+        public const int _MDIREFRESHMENU = unchecked((int)0x0234);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2395
-        public const int POINTERDEVICECHANGE = unchecked((int)0x238);
+        public const int _POINTERDEVICECHANGE = unchecked((int)0x238);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2396
-        public const int POINTERDEVICEINRANGE = unchecked((int)0x239);
+        public const int _POINTERDEVICEINRANGE = unchecked((int)0x239);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2397
-        public const int POINTERDEVICEOUTOFRANGE = unchecked((int)0x23A);
+        public const int _POINTERDEVICEOUTOFRANGE = unchecked((int)0x23A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2402
-        public const int TOUCH = unchecked((int)0x0240);
+        public const int _TOUCH = unchecked((int)0x0240);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2406
-        public const int NCPOINTERUPDATE = unchecked((int)0x0241);
+        public const int _NCPOINTERUPDATE = unchecked((int)0x0241);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2407
-        public const int NCPOINTERDOWN = unchecked((int)0x0242);
+        public const int _NCPOINTERDOWN = unchecked((int)0x0242);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2408
-        public const int NCPOINTERUP = unchecked((int)0x0243);
+        public const int _NCPOINTERUP = unchecked((int)0x0243);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2409
-        public const int POINTERUPDATE = unchecked((int)0x0245);
+        public const int _POINTERUPDATE = unchecked((int)0x0245);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2410
-        public const int POINTERDOWN = unchecked((int)0x0246);
+        public const int _POINTERDOWN = unchecked((int)0x0246);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2411
-        public const int POINTERUP = unchecked((int)0x0247);
+        public const int _POINTERUP = unchecked((int)0x0247);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2412
-        public const int POINTERENTER = unchecked((int)0x0249);
+        public const int _POINTERENTER = unchecked((int)0x0249);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2413
-        public const int POINTERLEAVE = unchecked((int)0x024A);
+        public const int _POINTERLEAVE = unchecked((int)0x024A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2414
-        public const int POINTERACTIVATE = unchecked((int)0x024B);
+        public const int _POINTERACTIVATE = unchecked((int)0x024B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2415
-        public const int POINTERCAPTURECHANGED = unchecked((int)0x024C);
+        public const int _POINTERCAPTURECHANGED = unchecked((int)0x024C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2416
-        public const int TOUCHHITTESTING = unchecked((int)0x024D);
+        public const int _TOUCHHITTESTING = unchecked((int)0x024D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2417
-        public const int POINTERWHEEL = unchecked((int)0x024E);
+        public const int _POINTERWHEEL = unchecked((int)0x024E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2418
-        public const int POINTERHWHEEL = unchecked((int)0x024F);
+        public const int _POINTERHWHEEL = unchecked((int)0x024F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2420
-        public const int POINTERROUTEDTO = unchecked((int)0x0251);
+        public const int _POINTERROUTEDTO = unchecked((int)0x0251);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2421
-        public const int POINTERROUTEDAWAY = unchecked((int)0x0252);
+        public const int _POINTERROUTEDAWAY = unchecked((int)0x0252);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2422
-        public const int POINTERROUTEDRELEASED = unchecked((int)0x0253);
+        public const int _POINTERROUTEDRELEASED = unchecked((int)0x0253);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2427
-        public const int IME_SETCONTEXT = unchecked((int)0x0281);
+        public const int _IME_SETCONTEXT = unchecked((int)0x0281);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2428
-        public const int IME_NOTIFY = unchecked((int)0x0282);
+        public const int _IME_NOTIFY = unchecked((int)0x0282);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2429
-        public const int IME_CONTROL = unchecked((int)0x0283);
+        public const int _IME_CONTROL = unchecked((int)0x0283);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2430
-        public const int IME_COMPOSITIONFULL = unchecked((int)0x0284);
+        public const int _IME_COMPOSITIONFULL = unchecked((int)0x0284);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2431
-        public const int IME_SELECT = unchecked((int)0x0285);
+        public const int _IME_SELECT = unchecked((int)0x0285);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2432
-        public const int IME_CHAR = unchecked((int)0x0286);
+        public const int _IME_CHAR = unchecked((int)0x0286);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2435
-        public const int IME_REQUEST = unchecked((int)0x0288);
+        public const int _IME_REQUEST = unchecked((int)0x0288);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2438
-        public const int IME_KEYDOWN = unchecked((int)0x0290);
+        public const int _IME_KEYDOWN = unchecked((int)0x0290);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2439
-        public const int IME_KEYUP = unchecked((int)0x0291);
+        public const int _IME_KEYUP = unchecked((int)0x0291);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2443
-        public const int MOUSEHOVER = unchecked((int)0x02A1);
+        public const int _MOUSEHOVER = unchecked((int)0x02A1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2444
-        public const int MOUSELEAVE = unchecked((int)0x02A3);
+        public const int _MOUSELEAVE = unchecked((int)0x02A3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2447
-        public const int NCMOUSEHOVER = unchecked((int)0x02A0);
+        public const int _NCMOUSEHOVER = unchecked((int)0x02A0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2448
-        public const int NCMOUSELEAVE = unchecked((int)0x02A2);
+        public const int _NCMOUSELEAVE = unchecked((int)0x02A2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2452
-        public const int WTSSESSION_CHANGE = unchecked((int)0x02B1);
+        public const int _WTSSESSION_CHANGE = unchecked((int)0x02B1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2454
-        public const int TABLET_FIRST = unchecked((int)0x02c0);
+        public const int _TABLET_FIRST = unchecked((int)0x02c0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2455
-        public const int TABLET_LAST = unchecked((int)0x02df);
+        public const int _TABLET_LAST = unchecked((int)0x02df);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2459
-        public const int DPICHANGED = unchecked((int)0x02E0);
+        public const int _DPICHANGED = unchecked((int)0x02E0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2462
-        public const int DPICHANGED_BEFOREPARENT = unchecked((int)0x02E2);
+        public const int _DPICHANGED_BEFOREPARENT = unchecked((int)0x02E2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2463
-        public const int DPICHANGED_AFTERPARENT = unchecked((int)0x02E3);
+        public const int _DPICHANGED_AFTERPARENT = unchecked((int)0x02E3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2464
-        public const int GETDPISCALEDSIZE = unchecked((int)0x02E4);
+        public const int _GETDPISCALEDSIZE = unchecked((int)0x02E4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2468
-        public const int CUT = unchecked((int)0x0300);
+        public const int _CUT = unchecked((int)0x0300);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2469
-        public const int COPY = unchecked((int)0x0301);
+        public const int _COPY = unchecked((int)0x0301);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2470
-        public const int PASTE = unchecked((int)0x0302);
+        public const int _PASTE = unchecked((int)0x0302);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2471
-        public const int CLEAR = unchecked((int)0x0303);
+        public const int _CLEAR = unchecked((int)0x0303);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2472
-        public const int UNDO = unchecked((int)0x0304);
+        public const int _UNDO = unchecked((int)0x0304);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2473
-        public const int RENDERFORMAT = unchecked((int)0x0305);
+        public const int _RENDERFORMAT = unchecked((int)0x0305);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2474
-        public const int RENDERALLFORMATS = unchecked((int)0x0306);
+        public const int _RENDERALLFORMATS = unchecked((int)0x0306);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2475
-        public const int DESTROYCLIPBOARD = unchecked((int)0x0307);
+        public const int _DESTROYCLIPBOARD = unchecked((int)0x0307);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2476
-        public const int DRAWCLIPBOARD = unchecked((int)0x0308);
+        public const int _DRAWCLIPBOARD = unchecked((int)0x0308);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2477
-        public const int PAINTCLIPBOARD = unchecked((int)0x0309);
+        public const int _PAINTCLIPBOARD = unchecked((int)0x0309);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2478
-        public const int VSCROLLCLIPBOARD = unchecked((int)0x030A);
+        public const int _VSCROLLCLIPBOARD = unchecked((int)0x030A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2479
-        public const int SIZECLIPBOARD = unchecked((int)0x030B);
+        public const int _SIZECLIPBOARD = unchecked((int)0x030B);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2480
-        public const int ASKCBFORMATNAME = unchecked((int)0x030C);
+        public const int _ASKCBFORMATNAME = unchecked((int)0x030C);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2481
-        public const int CHANGECBCHAIN = unchecked((int)0x030D);
+        public const int _CHANGECBCHAIN = unchecked((int)0x030D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2482
-        public const int HSCROLLCLIPBOARD = unchecked((int)0x030E);
+        public const int _HSCROLLCLIPBOARD = unchecked((int)0x030E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2483
-        public const int QUERYNEWPALETTE = unchecked((int)0x030F);
+        public const int _QUERYNEWPALETTE = unchecked((int)0x030F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2484
-        public const int PALETTEISCHANGING = unchecked((int)0x0310);
+        public const int _PALETTEISCHANGING = unchecked((int)0x0310);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2485
-        public const int PALETTECHANGED = unchecked((int)0x0311);
+        public const int _PALETTECHANGED = unchecked((int)0x0311);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2486
-        public const int HOTKEY = unchecked((int)0x0312);
+        public const int _HOTKEY = unchecked((int)0x0312);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2489
-        public const int PRINT = unchecked((int)0x0317);
+        public const int _PRINT = unchecked((int)0x0317);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2490
-        public const int PRINTCLIENT = unchecked((int)0x0318);
+        public const int _PRINTCLIENT = unchecked((int)0x0318);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2494
-        public const int APPCOMMAND = unchecked((int)0x0319);
+        public const int _APPCOMMAND = unchecked((int)0x0319);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2498
-        public const int THEMECHANGED = unchecked((int)0x031A);
+        public const int _THEMECHANGED = unchecked((int)0x031A);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2503
-        public const int CLIPBOARDUPDATE = unchecked((int)0x031D);
+        public const int _CLIPBOARDUPDATE = unchecked((int)0x031D);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2507
-        public const int DWMCOMPOSITIONCHANGED = unchecked((int)0x031E);
+        public const int _DWMCOMPOSITIONCHANGED = unchecked((int)0x031E);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2508
-        public const int DWMNCRENDERINGCHANGED = unchecked((int)0x031F);
+        public const int _DWMNCRENDERINGCHANGED = unchecked((int)0x031F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2509
-        public const int DWMCOLORIZATIONCOLORCHANGED = unchecked((int)0x0320);
+        public const int _DWMCOLORIZATIONCOLORCHANGED = unchecked((int)0x0320);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2510
-        public const int DWMWINDOWMAXIMIZEDCHANGE = unchecked((int)0x0321);
+        public const int _DWMWINDOWMAXIMIZEDCHANGE = unchecked((int)0x0321);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2514
-        public const int DWMSENDICONICTHUMBNAIL = unchecked((int)0x0323);
+        public const int _DWMSENDICONICTHUMBNAIL = unchecked((int)0x0323);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2515
-        public const int DWMSENDICONICLIVEPREVIEWBITMAP = unchecked((int)0x0326);
+        public const int _DWMSENDICONICLIVEPREVIEWBITMAP = unchecked((int)0x0326);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2520
-        public const int GETTITLEBARINFOEX = unchecked((int)0x033F);
+        public const int _GETTITLEBARINFOEX = unchecked((int)0x033F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2528
-        public const int HANDHELDFIRST = unchecked((int)0x0358);
+        public const int _HANDHELDFIRST = unchecked((int)0x0358);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2529
-        public const int HANDHELDLAST = unchecked((int)0x035F);
+        public const int _HANDHELDLAST = unchecked((int)0x035F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2531
-        public const int AFXFIRST = unchecked((int)0x0360);
+        public const int _AFXFIRST = unchecked((int)0x0360);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2532
-        public const int AFXLAST = unchecked((int)0x037F);
+        public const int _AFXLAST = unchecked((int)0x037F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2535
-        public const int PENWINFIRST = unchecked((int)0x0380);
+        public const int _PENWINFIRST = unchecked((int)0x0380);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2536
-        public const int PENWINLAST = unchecked((int)0x038F);
+        public const int _PENWINLAST = unchecked((int)0x038F);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2540
-        public const int APP = unchecked((int)0x8000);
+        public const int _APP = unchecked((int)0x8000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2549
-        public const int USER = unchecked((int)0x0400);
+        public const int _USER = unchecked((int)0x0400);
 
     }
 }

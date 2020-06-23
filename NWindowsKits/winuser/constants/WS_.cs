@@ -4,172 +4,172 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class WS_
+    public static partial class WS_
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2790
-        public const int OVERLAPPED = unchecked((int)0x00000000);
+        public const int _OVERLAPPED = unchecked((int)0x00000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2791
-        public const int POPUP = unchecked((int)0x80000000);
+        public const int _POPUP = unchecked((int)0x80000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2792
-        public const int CHILD = unchecked((int)0x40000000);
+        public const int _CHILD = unchecked((int)0x40000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2793
-        public const int MINIMIZE = unchecked((int)0x20000000);
+        public const int _MINIMIZE = unchecked((int)0x20000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2794
-        public const int VISIBLE = unchecked((int)0x10000000);
+        public const int _VISIBLE = unchecked((int)0x10000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2795
-        public const int DISABLED = unchecked((int)0x08000000);
+        public const int _DISABLED = unchecked((int)0x08000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2796
-        public const int CLIPSIBLINGS = unchecked((int)0x04000000);
+        public const int _CLIPSIBLINGS = unchecked((int)0x04000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2797
-        public const int CLIPCHILDREN = unchecked((int)0x02000000);
+        public const int _CLIPCHILDREN = unchecked((int)0x02000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2798
-        public const int MAXIMIZE = unchecked((int)0x01000000);
+        public const int _MAXIMIZE = unchecked((int)0x01000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2799
-        public const int CAPTION = unchecked((int)0x00C00000);
+        public const int _CAPTION = unchecked((int)0x00C00000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2800
-        public const int BORDER = unchecked((int)0x00800000);
+        public const int _BORDER = unchecked((int)0x00800000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2801
-        public const int DLGFRAME = unchecked((int)0x00400000);
+        public const int _DLGFRAME = unchecked((int)0x00400000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2802
-        public const int VSCROLL = unchecked((int)0x00200000);
+        public const int _VSCROLL = unchecked((int)0x00200000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2803
-        public const int HSCROLL = unchecked((int)0x00100000);
+        public const int _HSCROLL = unchecked((int)0x00100000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2804
-        public const int SYSMENU = unchecked((int)0x00080000);
+        public const int _SYSMENU = unchecked((int)0x00080000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2805
-        public const int THICKFRAME = unchecked((int)0x00040000);
+        public const int _THICKFRAME = unchecked((int)0x00040000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2806
-        public const int GROUP = unchecked((int)0x00020000);
+        public const int _GROUP = unchecked((int)0x00020000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2807
-        public const int TABSTOP = unchecked((int)0x00010000);
+        public const int _TABSTOP = unchecked((int)0x00010000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2809
-        public const int MINIMIZEBOX = unchecked((int)0x00020000);
+        public const int _MINIMIZEBOX = unchecked((int)0x00020000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2810
-        public const int MAXIMIZEBOX = unchecked((int)0x00010000);
+        public const int _MAXIMIZEBOX = unchecked((int)0x00010000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2813
-        public const int TILED = unchecked((int)OVERLAPPED);
+        public const int _TILED = unchecked((int)_OVERLAPPED);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2814
-        public const int ICONIC = unchecked((int)MINIMIZE);
+        public const int _ICONIC = unchecked((int)_MINIMIZE);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2815
-        public const int SIZEBOX = unchecked((int)THICKFRAME);
+        public const int _SIZEBOX = unchecked((int)_THICKFRAME);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2816
-        public const int TILEDWINDOW = unchecked((int)OVERLAPPEDWINDOW);
+        public const int _TILEDWINDOW = unchecked((int)_OVERLAPPEDWINDOW);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2821
-        public const int OVERLAPPEDWINDOW = unchecked((int)( OVERLAPPED | CAPTION | SYSMENU | THICKFRAME | MINIMIZEBOX | MAXIMIZEBOX ));
+        public const int _OVERLAPPEDWINDOW = unchecked((int)( _OVERLAPPED | _CAPTION | _SYSMENU | _THICKFRAME | _MINIMIZEBOX | _MAXIMIZEBOX ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2828
-        public const int POPUPWINDOW = unchecked((int)( POPUP | BORDER | SYSMENU ));
+        public const int _POPUPWINDOW = unchecked((int)( _POPUP | _BORDER | _SYSMENU ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2832
-        public const int CHILDWINDOW = unchecked((int)( CHILD ));
+        public const int _CHILDWINDOW = unchecked((int)( _CHILD ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2837
-        public const int EX_DLGMODALFRAME = unchecked((int)0x00000001);
+        public const int _EX_DLGMODALFRAME = unchecked((int)0x00000001);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2838
-        public const int EX_NOPARENTNOTIFY = unchecked((int)0x00000004);
+        public const int _EX_NOPARENTNOTIFY = unchecked((int)0x00000004);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2839
-        public const int EX_TOPMOST = unchecked((int)0x00000008);
+        public const int _EX_TOPMOST = unchecked((int)0x00000008);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2840
-        public const int EX_ACCEPTFILES = unchecked((int)0x00000010);
+        public const int _EX_ACCEPTFILES = unchecked((int)0x00000010);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2841
-        public const int EX_TRANSPARENT = unchecked((int)0x00000020);
+        public const int _EX_TRANSPARENT = unchecked((int)0x00000020);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2843
-        public const int EX_MDICHILD = unchecked((int)0x00000040);
+        public const int _EX_MDICHILD = unchecked((int)0x00000040);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2844
-        public const int EX_TOOLWINDOW = unchecked((int)0x00000080);
+        public const int _EX_TOOLWINDOW = unchecked((int)0x00000080);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2845
-        public const int EX_WINDOWEDGE = unchecked((int)0x00000100);
+        public const int _EX_WINDOWEDGE = unchecked((int)0x00000100);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2846
-        public const int EX_CLIENTEDGE = unchecked((int)0x00000200);
+        public const int _EX_CLIENTEDGE = unchecked((int)0x00000200);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2847
-        public const int EX_CONTEXTHELP = unchecked((int)0x00000400);
+        public const int _EX_CONTEXTHELP = unchecked((int)0x00000400);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2852
-        public const int EX_RIGHT = unchecked((int)0x00001000);
+        public const int _EX_RIGHT = unchecked((int)0x00001000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2853
-        public const int EX_LEFT = unchecked((int)0x00000000);
+        public const int _EX_LEFT = unchecked((int)0x00000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2854
-        public const int EX_RTLREADING = unchecked((int)0x00002000);
+        public const int _EX_RTLREADING = unchecked((int)0x00002000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2855
-        public const int EX_LTRREADING = unchecked((int)0x00000000);
+        public const int _EX_LTRREADING = unchecked((int)0x00000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2856
-        public const int EX_LEFTSCROLLBAR = unchecked((int)0x00004000);
+        public const int _EX_LEFTSCROLLBAR = unchecked((int)0x00004000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2857
-        public const int EX_RIGHTSCROLLBAR = unchecked((int)0x00000000);
+        public const int _EX_RIGHTSCROLLBAR = unchecked((int)0x00000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2859
-        public const int EX_CONTROLPARENT = unchecked((int)0x00010000);
+        public const int _EX_CONTROLPARENT = unchecked((int)0x00010000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2860
-        public const int EX_STATICEDGE = unchecked((int)0x00020000);
+        public const int _EX_STATICEDGE = unchecked((int)0x00020000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2861
-        public const int EX_APPWINDOW = unchecked((int)0x00040000);
+        public const int _EX_APPWINDOW = unchecked((int)0x00040000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2864
-        public const int EX_OVERLAPPEDWINDOW = unchecked((int)( EX_WINDOWEDGE | EX_CLIENTEDGE ));
+        public const int _EX_OVERLAPPEDWINDOW = unchecked((int)( _EX_WINDOWEDGE | _EX_CLIENTEDGE ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2865
-        public const int EX_PALETTEWINDOW = unchecked((int)( EX_WINDOWEDGE | EX_TOOLWINDOW | EX_TOPMOST ));
+        public const int _EX_PALETTEWINDOW = unchecked((int)( _EX_WINDOWEDGE | _EX_TOOLWINDOW | _EX_TOPMOST ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2870
-        public const int EX_LAYERED = unchecked((int)0x00080000);
+        public const int _EX_LAYERED = unchecked((int)0x00080000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2876
-        public const int EX_NOINHERITLAYOUT = unchecked((int)0x00100000);
+        public const int _EX_NOINHERITLAYOUT = unchecked((int)0x00100000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2880
-        public const int EX_NOREDIRECTIONBITMAP = unchecked((int)0x00200000);
+        public const int _EX_NOREDIRECTIONBITMAP = unchecked((int)0x00200000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2884
-        public const int EX_LAYOUTRTL = unchecked((int)0x00400000);
+        public const int _EX_LAYOUTRTL = unchecked((int)0x00400000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2888
-        public const int EX_COMPOSITED = unchecked((int)0x02000000);
+        public const int _EX_COMPOSITED = unchecked((int)0x02000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2891
-        public const int EX_NOACTIVATE = unchecked((int)0x08000000);
+        public const int _EX_NOACTIVATE = unchecked((int)0x08000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14571
-        public const int ACTIVECAPTION = unchecked((int)0x0001);
+        public const int _ACTIVECAPTION = unchecked((int)0x0001);
 
     }
 }

@@ -4,37 +4,37 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class WM_
+    public static partial class WM_
     {
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:807
-        public const int CHOOSEFONT_GETLOGFONT = unchecked((int)( USER + 1 ));
+        public const int _CHOOSEFONT_GETLOGFONT = unchecked((int)( _USER + 1 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:809
-        public const int CHOOSEFONT_SETLOGFONT = unchecked((int)( USER + 101 ));
+        public const int _CHOOSEFONT_SETLOGFONT = unchecked((int)( _USER + 101 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:810
-        public const int CHOOSEFONT_SETFLAGS = unchecked((int)( USER + 102 ));
+        public const int _CHOOSEFONT_SETFLAGS = unchecked((int)( _USER + 102 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1161
-        public const int PSD_PAGESETUPDLG = unchecked((int)( USER ));
+        public const int _PSD_PAGESETUPDLG = unchecked((int)( _USER ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1162
-        public const int PSD_FULLPAGERECT = unchecked((int)( USER + 1 ));
+        public const int _PSD_FULLPAGERECT = unchecked((int)( _USER + 1 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1163
-        public const int PSD_MINMARGINRECT = unchecked((int)( USER + 2 ));
+        public const int _PSD_MINMARGINRECT = unchecked((int)( _USER + 2 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1164
-        public const int PSD_MARGINRECT = unchecked((int)( USER + 3 ));
+        public const int _PSD_MARGINRECT = unchecked((int)( _USER + 3 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1165
-        public const int PSD_GREEKTEXTRECT = unchecked((int)( USER + 4 ));
+        public const int _PSD_GREEKTEXTRECT = unchecked((int)( _USER + 4 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1166
-        public const int PSD_ENVSTAMPRECT = unchecked((int)( USER + 5 ));
+        public const int _PSD_ENVSTAMPRECT = unchecked((int)( _USER + 5 ));
 
         // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/commdlg.h:1167
-        public const int PSD_YAFULLPAGERECT = unchecked((int)( USER + 6 ));
+        public const int _PSD_YAFULLPAGERECT = unchecked((int)( _USER + 6 ));
 
     }
 }

@@ -4,76 +4,76 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class SW_
+    public static partial class SW_
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:393
-        public const int HIDE = unchecked((int)0);
+        public const int _HIDE = unchecked((int)0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:394
-        public const int SHOWNORMAL = unchecked((int)1);
+        public const int _SHOWNORMAL = unchecked((int)1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:395
-        public const int NORMAL = unchecked((int)1);
+        public const int _NORMAL = unchecked((int)1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:396
-        public const int SHOWMINIMIZED = unchecked((int)2);
+        public const int _SHOWMINIMIZED = unchecked((int)2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:397
-        public const int SHOWMAXIMIZED = unchecked((int)3);
+        public const int _SHOWMAXIMIZED = unchecked((int)3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:398
-        public const int MAXIMIZE = unchecked((int)3);
+        public const int _MAXIMIZE = unchecked((int)3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:399
-        public const int SHOWNOACTIVATE = unchecked((int)4);
+        public const int _SHOWNOACTIVATE = unchecked((int)4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:400
-        public const int SHOW = unchecked((int)5);
+        public const int _SHOW = unchecked((int)5);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:401
-        public const int MINIMIZE = unchecked((int)6);
+        public const int _MINIMIZE = unchecked((int)6);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:402
-        public const int SHOWMINNOACTIVE = unchecked((int)7);
+        public const int _SHOWMINNOACTIVE = unchecked((int)7);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:403
-        public const int SHOWNA = unchecked((int)8);
+        public const int _SHOWNA = unchecked((int)8);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:404
-        public const int RESTORE = unchecked((int)9);
+        public const int _RESTORE = unchecked((int)9);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:405
-        public const int SHOWDEFAULT = unchecked((int)10);
+        public const int _SHOWDEFAULT = unchecked((int)10);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:406
-        public const int FORCEMINIMIZE = unchecked((int)11);
+        public const int _FORCEMINIMIZE = unchecked((int)11);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:407
-        public const int MAX = unchecked((int)11);
+        public const int _MAX = unchecked((int)11);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:422
-        public const int PARENTCLOSING = unchecked((int)1);
+        public const int _PARENTCLOSING = unchecked((int)1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:423
-        public const int OTHERZOOM = unchecked((int)2);
+        public const int _OTHERZOOM = unchecked((int)2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:424
-        public const int PARENTOPENING = unchecked((int)3);
+        public const int _PARENTOPENING = unchecked((int)3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:425
-        public const int OTHERUNZOOM = unchecked((int)4);
+        public const int _OTHERUNZOOM = unchecked((int)4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8716
-        public const int SCROLLCHILDREN = unchecked((int)0x0001);
+        public const int _SCROLLCHILDREN = unchecked((int)0x0001);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8717
-        public const int INVALIDATE = unchecked((int)0x0002);
+        public const int _INVALIDATE = unchecked((int)0x0002);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8718
-        public const int ERASE = unchecked((int)0x0004);
+        public const int _ERASE = unchecked((int)0x0004);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8720
-        public const int SMOOTHSCROLL = unchecked((int)0x0010);
+        public const int _SMOOTHSCROLL = unchecked((int)0x0010);
 
     }
 }

@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class CW_
+    public static partial class CW_
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4403
-        public const int USEDEFAULT = unchecked((int)( ( int ) 0x80000000 ));
+        public const int _USEDEFAULT = unchecked((int)( ( int ) 0x80000000 ));
 
     }
 }

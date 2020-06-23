@@ -4,115 +4,115 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    public static class COLOR_
+    public static partial class COLOR_
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9550
-        public const int SCROLLBAR = unchecked((int)0);
+        public const int _SCROLLBAR = unchecked((int)0);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9551
-        public const int BACKGROUND = unchecked((int)1);
+        public const int _BACKGROUND = unchecked((int)1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9552
-        public const int ACTIVECAPTION = unchecked((int)2);
+        public const int _ACTIVECAPTION = unchecked((int)2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9553
-        public const int INACTIVECAPTION = unchecked((int)3);
+        public const int _INACTIVECAPTION = unchecked((int)3);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9554
-        public const int MENU = unchecked((int)4);
+        public const int _MENU = unchecked((int)4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9555
-        public const int WINDOW = unchecked((int)5);
+        public const int _WINDOW = unchecked((int)5);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9556
-        public const int WINDOWFRAME = unchecked((int)6);
+        public const int _WINDOWFRAME = unchecked((int)6);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9557
-        public const int MENUTEXT = unchecked((int)7);
+        public const int _MENUTEXT = unchecked((int)7);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9558
-        public const int WINDOWTEXT = unchecked((int)8);
+        public const int _WINDOWTEXT = unchecked((int)8);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9559
-        public const int CAPTIONTEXT = unchecked((int)9);
+        public const int _CAPTIONTEXT = unchecked((int)9);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9560
-        public const int ACTIVEBORDER = unchecked((int)10);
+        public const int _ACTIVEBORDER = unchecked((int)10);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9561
-        public const int INACTIVEBORDER = unchecked((int)11);
+        public const int _INACTIVEBORDER = unchecked((int)11);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9562
-        public const int APPWORKSPACE = unchecked((int)12);
+        public const int _APPWORKSPACE = unchecked((int)12);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9563
-        public const int HIGHLIGHT = unchecked((int)13);
+        public const int _HIGHLIGHT = unchecked((int)13);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9564
-        public const int HIGHLIGHTTEXT = unchecked((int)14);
+        public const int _HIGHLIGHTTEXT = unchecked((int)14);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9565
-        public const int BTNFACE = unchecked((int)15);
+        public const int _BTNFACE = unchecked((int)15);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9566
-        public const int BTNSHADOW = unchecked((int)16);
+        public const int _BTNSHADOW = unchecked((int)16);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9567
-        public const int GRAYTEXT = unchecked((int)17);
+        public const int _GRAYTEXT = unchecked((int)17);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9568
-        public const int BTNTEXT = unchecked((int)18);
+        public const int _BTNTEXT = unchecked((int)18);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9569
-        public const int INACTIVECAPTIONTEXT = unchecked((int)19);
+        public const int _INACTIVECAPTIONTEXT = unchecked((int)19);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9570
-        public const int BTNHIGHLIGHT = unchecked((int)20);
+        public const int _BTNHIGHLIGHT = unchecked((int)20);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9573
-        public const int 3DDKSHADOW = unchecked((int)21);
+        public const int _3DDKSHADOW = unchecked((int)21);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9574
-        public const int 3DLIGHT = unchecked((int)22);
+        public const int _3DLIGHT = unchecked((int)22);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9575
-        public const int INFOTEXT = unchecked((int)23);
+        public const int _INFOTEXT = unchecked((int)23);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9576
-        public const int INFOBK = unchecked((int)24);
+        public const int _INFOBK = unchecked((int)24);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9580
-        public const int HOTLIGHT = unchecked((int)26);
+        public const int _HOTLIGHT = unchecked((int)26);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9581
-        public const int GRADIENTACTIVECAPTION = unchecked((int)27);
+        public const int _GRADIENTACTIVECAPTION = unchecked((int)27);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9582
-        public const int GRADIENTINACTIVECAPTION = unchecked((int)28);
+        public const int _GRADIENTINACTIVECAPTION = unchecked((int)28);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9584
-        public const int MENUHILIGHT = unchecked((int)29);
+        public const int _MENUHILIGHT = unchecked((int)29);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9585
-        public const int MENUBAR = unchecked((int)30);
+        public const int _MENUBAR = unchecked((int)30);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9590
-        public const int DESKTOP = unchecked((int)BACKGROUND);
+        public const int _DESKTOP = unchecked((int)_BACKGROUND);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9591
-        public const int 3DFACE = unchecked((int)BTNFACE);
+        public const int _3DFACE = unchecked((int)_BTNFACE);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9592
-        public const int 3DSHADOW = unchecked((int)BTNSHADOW);
+        public const int _3DSHADOW = unchecked((int)_BTNSHADOW);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9593
-        public const int 3DHIGHLIGHT = unchecked((int)BTNHIGHLIGHT);
+        public const int _3DHIGHLIGHT = unchecked((int)_BTNHIGHLIGHT);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9594
-        public const int 3DHILIGHT = unchecked((int)BTNHIGHLIGHT);
+        public const int _3DHILIGHT = unchecked((int)_BTNHIGHLIGHT);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9595
-        public const int BTNHILIGHT = unchecked((int)BTNHIGHLIGHT);
+        public const int _BTNHILIGHT = unchecked((int)_BTNHIGHLIGHT);
 
     }
 }
