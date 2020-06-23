@@ -32,10 +32,10 @@ namespace HelloWorld
                 0,                              // Optional window styles.
                 CLASS_NAME,                     // Window class
                 "Learn to Program Windows",    // Window text
-                WS_.OVERLAPPEDWINDOW,            // Window style
+                WS_._OVERLAPPEDWINDOW,            // Window style
 
                 // Size and position
-                CW_.USEDEFAULT, CW_.USEDEFAULT, CW_.USEDEFAULT, CW_.USEDEFAULT,
+                CW_._USEDEFAULT, CW_._USEDEFAULT, CW_._USEDEFAULT, CW_._USEDEFAULT,
 
                 default,       // Parent window    
                 default,       // Menu
@@ -65,11 +65,11 @@ namespace HelloWorld
         {
             switch (uMsg)
             {
-                case WM_.DESTROY:
+                case WM_._DESTROY:
                     user32.PostQuitMessage(0);
                     return 0;
 
-                case WM_.PAINT:
+                case WM_._PAINT:
                     {
                         PAINTSTRUCT ps = default;
                         var hdc = user32.BeginPaint(hwnd, ref ps);
@@ -77,7 +77,7 @@ namespace HelloWorld
                         // All painting occurs here, between BeginPaint and EndPaint.
                         var hbrush = new HBRUSH
                         {
-                            ptr = new IntPtr(COLOR_.WINDOW + 1),
+                            ptr = new IntPtr(COLOR_._WINDOW + 1),
                         };
                         user32.FillRect(hdc, ref ps.rcPaint, hbrush);
                         user32.EndPaint(hwnd, ref ps);

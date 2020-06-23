@@ -3,13 +3,16 @@
 Windows Kits wrapper for netstandard2.0.
 Parse windows.h and Generate C# code for netstandard2.0 by [ClangCaster](https://github.com/ousttrue/ClangCaster).
 
+## TODO
+
+* [ ] fix IntPtr to ref XXX 
+* [ ] add HINSTANCE
+
 ## Samples
 
-### Create Window
-TODO:
+### HelloWindow
 
-### Create D3D Device
-TODO:
+WIP
 
 ## Code Generation
 
