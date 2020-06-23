@@ -11,10 +11,9 @@ namespace HelloWorld
         [STAThread]
         static void Main()
         {
-        }
+            var hInstance = default(HMODULE);
+            var nCmdShow = SW_._SHOW;
 
-        static int wWinMain(HMODULE hInstance, HMODULE _, string pCmdLine, int nCmdShow)
-        {
             // Register the window class.
             var CLASS_NAME = "Sample Window Class";
 
@@ -43,9 +42,9 @@ namespace HelloWorld
                 default        // Additional application data
                 );
 
-            if (hwnd.ptr == default)
+            if (hwnd.ptr == IntPtr.Zero)
             {
-                return 0;
+                return;
             }
 
             user32.ShowWindow(hwnd, nCmdShow);
@@ -55,10 +54,8 @@ namespace HelloWorld
             while (user32.GetMessageW(ref msg, default, 0, 0) != 0)
             {
                 user32.TranslateMessage(ref msg);
-                user32.DispatchMessage(ref msg);
+                user32.DispatchMessageW(ref msg);
             }
-
-            return 0;
         }
 
         static long WindowProc(HWND hwnd, uint uMsg, ulong wParam, long lParam)
