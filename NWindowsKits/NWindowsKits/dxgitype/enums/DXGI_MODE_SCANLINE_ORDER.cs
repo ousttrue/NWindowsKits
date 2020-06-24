@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/shared/dxgitype.h:59
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgitype.h:59
     public enum DXGI_MODE_SCANLINE_ORDER // 1
     {
         _UNSPECIFIED = 0x0,

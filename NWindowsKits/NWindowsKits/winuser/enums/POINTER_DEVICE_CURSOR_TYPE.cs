@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15325
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15325
     public enum POINTER_DEVICE_CURSOR_TYPE // 1
     {
         _UNKNOWN = 0x0,

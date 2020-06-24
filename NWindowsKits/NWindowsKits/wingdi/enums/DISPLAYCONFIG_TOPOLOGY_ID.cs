@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/wingdi.h:3017
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:3017
     public enum DISPLAYCONFIG_TOPOLOGY_ID // 1
     {
         _INTERNAL = 0x1,

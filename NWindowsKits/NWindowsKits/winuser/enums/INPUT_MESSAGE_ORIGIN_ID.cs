@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15757
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15757
     public enum INPUT_MESSAGE_ORIGIN_ID // 1
     {
         _UNAVAILABLE = 0x0,

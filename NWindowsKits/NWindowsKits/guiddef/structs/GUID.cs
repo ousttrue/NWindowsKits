@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/shared/guiddef.h:22
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/guiddef.h:22
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct GUID // 1
     {

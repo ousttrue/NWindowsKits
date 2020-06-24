@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/unknwnbase.h:108
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/unknwnbase.h:108
     public class IUnknown : ComPtr // 44
     {
         static Guid s_uuid = new Guid("00000000-0000-0000-c000-000000000046");

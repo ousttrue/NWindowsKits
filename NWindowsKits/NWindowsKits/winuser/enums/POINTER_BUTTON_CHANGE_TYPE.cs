@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6305
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6305
     public enum POINTER_BUTTON_CHANGE_TYPE // 1
     {
         _NONE = 0x0,

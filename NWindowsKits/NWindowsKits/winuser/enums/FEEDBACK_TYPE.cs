@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6730
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6730
     public enum FEEDBACK_TYPE // 1
     {
         _TOUCH_CONTACTVISUALIZATION = 0x1,

@@ -4,25 +4,25 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:199
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:199
     public delegate int NAMEENUMPROCA(
         IntPtr __param__0,
         long __param__1
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:200
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:200
     public delegate int NAMEENUMPROCW(
         IntPtr __param__0,
         long __param__1
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:118
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:118
     public delegate int WNDENUMPROC(
         HWND __param__0,
         long __param__1
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:120
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:120
     public delegate void SENDASYNCPROC(
         HWND __param__0,
         uint __param__1,
@@ -30,7 +30,7 @@ namespace NWindowsKits
         long __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:91
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:91
     public delegate long WNDPROC(
         HWND __param__0,
         uint __param__1,
@@ -38,7 +38,7 @@ namespace NWindowsKits
         long __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:101
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:101
     public delegate long DLGPROC(
         HWND __param__0,
         uint __param__1,
@@ -46,7 +46,7 @@ namespace NWindowsKits
         long __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:109
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:109
     public delegate void TIMERPROC(
         HWND __param__0,
         uint __param__1,
@@ -54,14 +54,14 @@ namespace NWindowsKits
         uint __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:117
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:117
     public delegate int GRAYSTRINGPROC(
         HDC __param__0,
         long __param__1,
         int __param__2
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:132
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:132
     public delegate int DRAWSTATEPROC(
         HDC hdc,
         long lData,
@@ -70,7 +70,7 @@ namespace NWindowsKits
         int cy
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:125
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:125
     public delegate int PROPENUMPROCEXA(
         HWND __param__0,
         IntPtr __param__1,
@@ -78,7 +78,7 @@ namespace NWindowsKits
         ulong __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:126
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:126
     public delegate int PROPENUMPROCEXW(
         HWND __param__0,
         IntPtr __param__1,
@@ -86,33 +86,33 @@ namespace NWindowsKits
         ulong __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:122
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:122
     public delegate int PROPENUMPROCA(
         HWND __param__0,
         [MarshalAs(UnmanagedType.LPStr)] string __param__1,
         IntPtr __param__2
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:123
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:123
     public delegate int PROPENUMPROCW(
         HWND __param__0,
         [MarshalAs(UnmanagedType.LPWStr)] string __param__1,
         IntPtr __param__2
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9214
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9214
     public delegate void MSGBOXCALLBACK(
         ref tagHELPINFO lpHelpInfo
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:119
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:119
     public delegate long HOOKPROC(
         int code,
         ulong wParam,
         long lParam
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13587
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13587
     public delegate int MONITORENUMPROC(
         HMONITOR __param__0,
         HDC __param__1,
@@ -120,7 +120,7 @@ namespace NWindowsKits
         long __param__3
     );
 
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13620
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13620
     public delegate void WINEVENTPROC(
         HWINEVENTHOOK hWinEventHook,
         uint _event,
@@ -133,7 +133,7 @@ namespace NWindowsKits
 
     public static partial class user32
     {
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:303
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:303
         [DllImport("user32.dll")]
         public static extern int wvsprintfA(
             IntPtr __param__0,
@@ -141,7 +141,7 @@ namespace NWindowsKits
             ref byte arglist
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:310
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:310
         [DllImport("user32.dll")]
         public static extern int wvsprintfW(
             IntPtr __param__0,
@@ -149,42 +149,42 @@ namespace NWindowsKits
             ref byte arglist
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:323
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:323
         [DllImport("user32.dll")]
         public static extern int wsprintfA(
             IntPtr __param__0,
             [MarshalAs(UnmanagedType.LPStr)] string __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:330
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:330
         [DllImport("user32.dll")]
         public static extern int wsprintfW(
             IntPtr __param__0,
             [MarshalAs(UnmanagedType.LPWStr)] string __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1241
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1241
         [DllImport("user32.dll")]
         public static extern HKL LoadKeyboardLayoutA(
             [MarshalAs(UnmanagedType.LPStr)] string pwszKLID,
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1247
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1247
         [DllImport("user32.dll")]
         public static extern HKL LoadKeyboardLayoutW(
             [MarshalAs(UnmanagedType.LPWStr)] string pwszKLID,
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1261
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1261
         [DllImport("user32.dll")]
         public static extern HKL ActivateKeyboardLayout(
             HKL hkl,
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1277
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1277
         [DllImport("user32.dll")]
         public static extern int ToUnicodeEx(
             uint wVirtKey,
@@ -196,38 +196,38 @@ namespace NWindowsKits
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1290
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1290
         [DllImport("user32.dll")]
         public static extern int UnloadKeyboardLayout(
             HKL hkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1296
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1296
         [DllImport("user32.dll")]
         public static extern int GetKeyboardLayoutNameA(
             IntPtr pwszKLID
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1301
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1301
         [DllImport("user32.dll")]
         public static extern int GetKeyboardLayoutNameW(
             IntPtr pwszKLID
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1313
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1313
         [DllImport("user32.dll")]
         public static extern int GetKeyboardLayoutList(
             int nBuff,
             ref HKL lpList
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1320
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1320
         [DllImport("user32.dll")]
         public static extern HKL GetKeyboardLayout(
             uint idThread
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1356
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1356
         [DllImport("user32.dll")]
         public static extern int GetMouseMovePointsEx(
             uint cbSize,
@@ -237,7 +237,7 @@ namespace NWindowsKits
             uint resolution
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1396
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1396
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDesktop,
@@ -248,7 +248,7 @@ namespace NWindowsKits
             ref _SECURITY_ATTRIBUTES lpsa
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1406
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1406
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
@@ -259,7 +259,7 @@ namespace NWindowsKits
             ref _SECURITY_ATTRIBUTES lpsa
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1422
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1422
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopExA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDesktop,
@@ -272,7 +272,7 @@ namespace NWindowsKits
             IntPtr pvoid
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1434
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1434
         [DllImport("user32.dll")]
         public static extern HDESK CreateDesktopExW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
@@ -285,7 +285,7 @@ namespace NWindowsKits
             IntPtr pvoid
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1461
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1461
         [DllImport("user32.dll")]
         public static extern HDESK OpenDesktopA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDesktop,
@@ -294,7 +294,7 @@ namespace NWindowsKits
             uint dwDesiredAccess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1469
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1469
         [DllImport("user32.dll")]
         public static extern HDESK OpenDesktopW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDesktop,
@@ -303,7 +303,7 @@ namespace NWindowsKits
             uint dwDesiredAccess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1483
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1483
         [DllImport("user32.dll")]
         public static extern HDESK OpenInputDesktop(
             uint dwFlags,
@@ -311,7 +311,7 @@ namespace NWindowsKits
             uint dwDesiredAccess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1492
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1492
         [DllImport("user32.dll")]
         public static extern int EnumDesktopsA(
             HWINSTA hwinsta,
@@ -319,14 +319,14 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:199
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:199
         [DllImport("user32.dll")]
         public static extern int NAMEENUMPROCA(
             IntPtr __param__0,
             long __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1499
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1499
         [DllImport("user32.dll")]
         public static extern int EnumDesktopsW(
             HWINSTA hwinsta,
@@ -334,14 +334,14 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:200
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:200
         [DllImport("user32.dll")]
         public static extern int NAMEENUMPROCW(
             IntPtr __param__0,
             long __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1512
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1512
         [DllImport("user32.dll")]
         public static extern int EnumDesktopWindows(
             HDESK hDesktop,
@@ -349,38 +349,38 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:118
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:118
         [DllImport("user32.dll")]
         public static extern int WNDENUMPROC(
             HWND __param__0,
             long __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1521
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1521
         [DllImport("user32.dll")]
         public static extern int SwitchDesktop(
             HDESK hDesktop
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1528
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1528
         [DllImport("user32.dll")]
         public static extern int SetThreadDesktop(
             HDESK hDesktop
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1534
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1534
         [DllImport("user32.dll")]
         public static extern int CloseDesktop(
             HDESK hDesktop
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1540
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1540
         [DllImport("user32.dll")]
         public static extern HDESK GetThreadDesktop(
             uint dwThreadId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1582
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1582
         [DllImport("user32.dll")]
         public static extern HWINSTA CreateWindowStationA(
             [MarshalAs(UnmanagedType.LPStr)] string lpwinsta,
@@ -389,7 +389,7 @@ namespace NWindowsKits
             ref _SECURITY_ATTRIBUTES lpsa
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1590
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1590
         [DllImport("user32.dll")]
         public static extern HWINSTA CreateWindowStationW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpwinsta,
@@ -398,7 +398,7 @@ namespace NWindowsKits
             ref _SECURITY_ATTRIBUTES lpsa
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1604
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1604
         [DllImport("user32.dll")]
         public static extern HWINSTA OpenWindowStationA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszWinSta,
@@ -406,7 +406,7 @@ namespace NWindowsKits
             uint dwDesiredAccess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1611
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1611
         [DllImport("user32.dll")]
         public static extern HWINSTA OpenWindowStationW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszWinSta,
@@ -414,38 +414,38 @@ namespace NWindowsKits
             uint dwDesiredAccess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1624
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1624
         [DllImport("user32.dll")]
         public static extern int EnumWindowStationsA(
             NAMEENUMPROCA lpEnumFunc,
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1630
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1630
         [DllImport("user32.dll")]
         public static extern int EnumWindowStationsW(
             NAMEENUMPROCW lpEnumFunc,
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1642
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1642
         [DllImport("user32.dll")]
         public static extern int CloseWindowStation(
             HWINSTA hWinSta
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1648
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1648
         [DllImport("user32.dll")]
         public static extern int SetProcessWindowStation(
             HWINSTA hWinSta
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1654
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1654
         [DllImport("user32.dll")]
         public static extern HWINSTA GetProcessWindowStation(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1670
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1670
         [DllImport("user32.dll")]
         public static extern int SetUserObjectSecurity(
             IntPtr hObj,
@@ -453,7 +453,7 @@ namespace NWindowsKits
             IntPtr pSID
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1678
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1678
         [DllImport("user32.dll")]
         public static extern int GetUserObjectSecurity(
             IntPtr hObj,
@@ -463,7 +463,7 @@ namespace NWindowsKits
             IntPtr lpnLengthNeeded
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1710
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1710
         [DllImport("user32.dll")]
         public static extern int GetUserObjectInformationA(
             IntPtr hObj,
@@ -473,7 +473,7 @@ namespace NWindowsKits
             IntPtr lpnLengthNeeded
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1719
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1719
         [DllImport("user32.dll")]
         public static extern int GetUserObjectInformationW(
             IntPtr hObj,
@@ -483,7 +483,7 @@ namespace NWindowsKits
             IntPtr lpnLengthNeeded
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1734
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1734
         [DllImport("user32.dll")]
         public static extern int SetUserObjectInformationA(
             IntPtr hObj,
@@ -492,7 +492,7 @@ namespace NWindowsKits
             uint nLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1742
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1742
         [DllImport("user32.dll")]
         public static extern int SetUserObjectInformationW(
             IntPtr hObj,
@@ -501,36 +501,36 @@ namespace NWindowsKits
             uint nLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1852
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1852
         [DllImport("user32.dll")]
         public static extern int IsHungAppWindow(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1860
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1860
         [DllImport("user32.dll")]
         public static extern void DisableProcessWindowsGhosting(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2640
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:2640
         [DllImport("user32.dll")]
         public static extern uint RegisterWindowMessageA(
             [MarshalAs(UnmanagedType.LPStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2645
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:2645
         [DllImport("user32.dll")]
         public static extern uint RegisterWindowMessageW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2765
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:2765
         [DllImport("user32.dll")]
         public static extern int TrackMouseEvent(
             ref tagTRACKMOUSEEVENT lpEventTrack
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:2976
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:2976
         [DllImport("user32.dll")]
         public static extern int DrawEdge(
             HDC hdc,
@@ -539,7 +539,7 @@ namespace NWindowsKits
             uint grfFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3039
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3039
         [DllImport("user32.dll")]
         public static extern int DrawFrameControl(
             HDC __param__0,
@@ -548,7 +548,7 @@ namespace NWindowsKits
             uint __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3069
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3069
         [DllImport("user32.dll")]
         public static extern int DrawCaption(
             HWND hwnd,
@@ -557,7 +557,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3088
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3088
         [DllImport("user32.dll")]
         public static extern int DrawAnimatedRects(
             HWND hwnd,
@@ -566,7 +566,7 @@ namespace NWindowsKits
             ref RECT lprcTo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3399
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3399
         [DllImport("user32.dll")]
         public static extern int GetMessageA(
             ref MSG lpMsg,
@@ -575,7 +575,7 @@ namespace NWindowsKits
             uint wMsgFilterMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3407
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3407
         [DllImport("user32.dll")]
         public static extern int GetMessageW(
             ref MSG lpMsg,
@@ -584,31 +584,31 @@ namespace NWindowsKits
             uint wMsgFilterMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3446
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3446
         [DllImport("user32.dll")]
         public static extern int TranslateMessage(
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3452
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3452
         [DllImport("user32.dll")]
         public static extern long DispatchMessageA(
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3457
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3457
         [DllImport("user32.dll")]
         public static extern long DispatchMessageW(
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3492
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3492
         [DllImport("user32.dll")]
         public static extern int SetMessageQueue(
             int cMessagesMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3504
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3504
         [DllImport("user32.dll")]
         public static extern int PeekMessageA(
             ref MSG lpMsg,
@@ -618,7 +618,7 @@ namespace NWindowsKits
             uint wRemoveMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3513
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3513
         [DllImport("user32.dll")]
         public static extern int PeekMessageW(
             ref MSG lpMsg,
@@ -628,7 +628,7 @@ namespace NWindowsKits
             uint wRemoveMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3552
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3552
         [DllImport("user32.dll")]
         public static extern int RegisterHotKey(
             HWND hWnd,
@@ -637,58 +637,58 @@ namespace NWindowsKits
             uint vk
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3561
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3561
         [DllImport("user32.dll")]
         public static extern int UnregisterHotKey(
             HWND hWnd,
             int id
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3630
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3630
         [DllImport("user32.dll")]
         public static extern int ExitWindowsEx(
             uint uFlags,
             uint dwReason
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3637
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3637
         [DllImport("user32.dll")]
         public static extern int SwapMouseButton(
             int fSwap
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3643
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3643
         [DllImport("user32.dll")]
         public static extern uint GetMessagePos(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3649
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3649
         [DllImport("user32.dll")]
         public static extern int GetMessageTime(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3655
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3655
         [DllImport("user32.dll")]
         public static extern long GetMessageExtraInfo(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3662
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3662
         [DllImport("user32.dll")]
         public static extern uint GetUnpredictedMessagePos(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3670
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3670
         [DllImport("user32.dll")]
         public static extern int IsWow64Message(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3678
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3678
         [DllImport("user32.dll")]
         public static extern long SetMessageExtraInfo(
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3691
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3691
         [DllImport("user32.dll")]
         public static extern long SendMessageA(
             HWND hWnd,
@@ -697,7 +697,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3699
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3699
         [DllImport("user32.dll")]
         public static extern long SendMessageW(
             HWND hWnd,
@@ -706,7 +706,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3743
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3743
         [DllImport("user32.dll")]
         public static extern long SendMessageTimeoutA(
             HWND hWnd,
@@ -718,7 +718,7 @@ namespace NWindowsKits
             IntPtr lpdwResult
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3754
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3754
         [DllImport("user32.dll")]
         public static extern long SendMessageTimeoutW(
             HWND hWnd,
@@ -730,7 +730,7 @@ namespace NWindowsKits
             IntPtr lpdwResult
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3771
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3771
         [DllImport("user32.dll")]
         public static extern int SendNotifyMessageA(
             HWND hWnd,
@@ -739,7 +739,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3779
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3779
         [DllImport("user32.dll")]
         public static extern int SendNotifyMessageW(
             HWND hWnd,
@@ -748,7 +748,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3793
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3793
         [DllImport("user32.dll")]
         public static extern int SendMessageCallbackA(
             HWND hWnd,
@@ -759,7 +759,7 @@ namespace NWindowsKits
             ulong dwData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:120
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:120
         [DllImport("user32.dll")]
         public static extern void SENDASYNCPROC(
             HWND __param__0,
@@ -768,7 +768,7 @@ namespace NWindowsKits
             long __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3803
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3803
         [DllImport("user32.dll")]
         public static extern int SendMessageCallbackW(
             HWND hWnd,
@@ -779,7 +779,7 @@ namespace NWindowsKits
             ulong dwData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3827
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3827
         [DllImport("user32.dll")]
         public static extern int BroadcastSystemMessageExA(
             uint flags,
@@ -790,7 +790,7 @@ namespace NWindowsKits
             ref __Anonymous__0 pbsmInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3837
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3837
         [DllImport("user32.dll")]
         public static extern int BroadcastSystemMessageExW(
             uint flags,
@@ -801,7 +801,7 @@ namespace NWindowsKits
             ref __Anonymous__0 pbsmInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3863
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3863
         [DllImport("user32.dll")]
         public static extern int BroadcastSystemMessageA(
             uint flags,
@@ -811,7 +811,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3872
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3872
         [DllImport("user32.dll")]
         public static extern int BroadcastSystemMessageW(
             uint flags,
@@ -821,7 +821,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3946
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3946
         [DllImport("user32.dll")]
         public static extern IntPtr RegisterDeviceNotificationA(
             IntPtr hRecipient,
@@ -829,7 +829,7 @@ namespace NWindowsKits
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3953
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3953
         [DllImport("user32.dll")]
         public static extern IntPtr RegisterDeviceNotificationW(
             IntPtr hRecipient,
@@ -837,13 +837,13 @@ namespace NWindowsKits
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3966
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3966
         [DllImport("user32.dll")]
         public static extern int UnregisterDeviceNotification(
             IntPtr Handle
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3984
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3984
         [DllImport("user32.dll")]
         public static extern IntPtr RegisterPowerSettingNotification(
             IntPtr hRecipient,
@@ -851,26 +851,26 @@ namespace NWindowsKits
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3993
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3993
         [DllImport("user32.dll")]
         public static extern int UnregisterPowerSettingNotification(
             IntPtr Handle
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4000
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4000
         [DllImport("user32.dll")]
         public static extern IntPtr RegisterSuspendResumeNotification(
             IntPtr hRecipient,
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4008
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4008
         [DllImport("user32.dll")]
         public static extern int UnregisterSuspendResumeNotification(
             IntPtr Handle
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4025
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4025
         [DllImport("user32.dll")]
         public static extern int PostMessageA(
             HWND hWnd,
@@ -879,7 +879,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4033
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4033
         [DllImport("user32.dll")]
         public static extern int PostMessageW(
             HWND hWnd,
@@ -888,7 +888,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4047
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4047
         [DllImport("user32.dll")]
         public static extern int PostThreadMessageA(
             uint idThread,
@@ -897,7 +897,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4055
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4055
         [DllImport("user32.dll")]
         public static extern int PostThreadMessageW(
             uint idThread,
@@ -906,7 +906,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4094
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4094
         [DllImport("user32.dll")]
         public static extern int AttachThreadInput(
             uint idAttach,
@@ -914,25 +914,25 @@ namespace NWindowsKits
             int fAttach
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4103
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4103
         [DllImport("user32.dll")]
         public static extern int ReplyMessage(
             long lResult
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4109
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4109
         [DllImport("user32.dll")]
         public static extern int WaitMessage(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4119
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4119
         [DllImport("user32.dll")]
         public static extern uint WaitForInputIdle(
             IntPtr hProcess,
             uint dwMilliseconds
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4132
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4132
         [DllImport("user32.dll")]
         public static extern long DefWindowProcA(
             HWND hWnd,
@@ -941,7 +941,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4145
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4145
         [DllImport("user32.dll")]
         public static extern long DefWindowProcW(
             HWND hWnd,
@@ -950,13 +950,13 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4164
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4164
         [DllImport("user32.dll")]
         public static extern void PostQuitMessage(
             int nExitCode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4172
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4172
         [DllImport("user32.dll")]
         public static extern long CallWindowProcA(
             WNDPROC lpPrevWndFunc,
@@ -966,7 +966,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:91
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:91
         [DllImport("user32.dll")]
         public static extern long WNDPROC(
             HWND __param__0,
@@ -975,7 +975,7 @@ namespace NWindowsKits
             long __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4181
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4181
         [DllImport("user32.dll")]
         public static extern long CallWindowProcW(
             WNDPROC lpPrevWndFunc,
@@ -985,55 +985,55 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4230
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4230
         [DllImport("user32.dll")]
         public static extern int InSendMessage(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4244
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4244
         [DllImport("user32.dll")]
         public static extern uint InSendMessageEx(
             IntPtr lpReserved
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4267
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4267
         [DllImport("user32.dll")]
         public static extern uint GetDoubleClickTime(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4273
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4273
         [DllImport("user32.dll")]
         public static extern int SetDoubleClickTime(
             uint __param__0
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4285
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4285
         [DllImport("user32.dll")]
         public static extern ushort RegisterClassA(
             ref WNDCLASSA lpWndClass
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4290
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4290
         [DllImport("user32.dll")]
         public static extern ushort RegisterClassW(
             ref WNDCLASSW lpWndClass
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4301
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4301
         [DllImport("user32.dll")]
         public static extern int UnregisterClassA(
             [MarshalAs(UnmanagedType.LPStr)] string lpClassName,
             HMODULE hInstance
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4307
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4307
         [DllImport("user32.dll")]
         public static extern int UnregisterClassW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
             HMODULE hInstance
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4326
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4326
         [DllImport("user32.dll")]
         public static extern int GetClassInfoA(
             HMODULE hInstance,
@@ -1041,7 +1041,7 @@ namespace NWindowsKits
             ref WNDCLASSA lpWndClass
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4334
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4334
         [DllImport("user32.dll")]
         public static extern int GetClassInfoW(
             HMODULE hInstance,
@@ -1049,19 +1049,19 @@ namespace NWindowsKits
             ref WNDCLASSW lpWndClass
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4354
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4354
         [DllImport("user32.dll")]
         public static extern ushort RegisterClassExA(
             ref WNDCLASSEXA __param__0
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4359
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4359
         [DllImport("user32.dll")]
         public static extern ushort RegisterClassExW(
             ref WNDCLASSEXW __param__0
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4377
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4377
         [DllImport("user32.dll")]
         public static extern int GetClassInfoExA(
             HMODULE hInstance,
@@ -1069,7 +1069,7 @@ namespace NWindowsKits
             ref WNDCLASSEXA lpwcx
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4385
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4385
         [DllImport("user32.dll")]
         public static extern int GetClassInfoExW(
             HMODULE hInstance,
@@ -1077,7 +1077,7 @@ namespace NWindowsKits
             ref WNDCLASSEXW lpwcx
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4417
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4417
         [DllImport("user32.dll")]
         public static extern HWND CreateWindowExA(
             uint dwExStyle,
@@ -1094,7 +1094,7 @@ namespace NWindowsKits
             IntPtr lpParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4433
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4433
         [DllImport("user32.dll")]
         public static extern HWND CreateWindowExW(
             uint dwExStyle,
@@ -1111,39 +1111,39 @@ namespace NWindowsKits
             IntPtr lpParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4476
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4476
         [DllImport("user32.dll")]
         public static extern int IsWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4483
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4483
         [DllImport("user32.dll")]
         public static extern int IsMenu(
             HMENU hMenu
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4489
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4489
         [DllImport("user32.dll")]
         public static extern int IsChild(
             HWND hWndParent,
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4502
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4502
         [DllImport("user32.dll")]
         public static extern int DestroyWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4508
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4508
         [DllImport("user32.dll")]
         public static extern int ShowWindow(
             HWND hWnd,
             int nCmdShow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4522
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4522
         [DllImport("user32.dll")]
         public static extern int AnimateWindow(
             HWND hWnd,
@@ -1151,7 +1151,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4540
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4540
         [DllImport("user32.dll")]
         public static extern int UpdateLayeredWindow(
             HWND hWnd,
@@ -1165,14 +1165,14 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4575
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4575
         [DllImport("user32.dll")]
         public static extern int UpdateLayeredWindowIndirect(
             HWND hWnd,
             ref UPDATELAYEREDWINDOWINFO pULWInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4592
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4592
         [DllImport("user32.dll")]
         public static extern int GetLayeredWindowAttributes(
             HWND hwnd,
@@ -1181,7 +1181,7 @@ namespace NWindowsKits
             IntPtr pdwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4608
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4608
         [DllImport("user32.dll")]
         public static extern int PrintWindow(
             HWND hwnd,
@@ -1189,7 +1189,7 @@ namespace NWindowsKits
             uint nFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4624
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4624
         [DllImport("user32.dll")]
         public static extern int SetLayeredWindowAttributes(
             HWND hwnd,
@@ -1198,46 +1198,46 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4654
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4654
         [DllImport("user32.dll")]
         public static extern int ShowWindowAsync(
             HWND hWnd,
             int nCmdShow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4662
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4662
         [DllImport("user32.dll")]
         public static extern int FlashWindow(
             HWND hWnd,
             int bInvert
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4678
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4678
         [DllImport("user32.dll")]
         public static extern int FlashWindowEx(
             ref __Anonymous__1 pfwi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4693
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4693
         [DllImport("user32.dll")]
         public static extern int ShowOwnedPopups(
             HWND hWnd,
             int fShow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4700
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4700
         [DllImport("user32.dll")]
         public static extern int OpenIcon(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4706
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4706
         [DllImport("user32.dll")]
         public static extern int CloseWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4718
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4718
         [DllImport("user32.dll")]
         public static extern int MoveWindow(
             HWND hWnd,
@@ -1248,7 +1248,7 @@ namespace NWindowsKits
             int bRepaint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4729
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4729
         [DllImport("user32.dll")]
         public static extern int SetWindowPos(
             HWND hWnd,
@@ -1260,41 +1260,41 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4747
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4747
         [DllImport("user32.dll")]
         public static extern int GetWindowPlacement(
             HWND hWnd,
             ref WINDOWPLACEMENT lpwndpl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4754
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4754
         [DllImport("user32.dll")]
         public static extern int SetWindowPlacement(
             HWND hWnd,
             ref WINDOWPLACEMENT lpwndpl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4766
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4766
         [DllImport("user32.dll")]
         public static extern int GetWindowDisplayAffinity(
             HWND hWnd,
             IntPtr pdwAffinity
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4773
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4773
         [DllImport("user32.dll")]
         public static extern int SetWindowDisplayAffinity(
             HWND hWnd,
             uint dwAffinity
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4790
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4790
         [DllImport("user32.dll")]
         public static extern IntPtr BeginDeferWindowPos(
             int nNumWindows
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4796
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4796
         [DllImport("user32.dll")]
         public static extern IntPtr DeferWindowPos(
             IntPtr hWinPosInfo,
@@ -1307,42 +1307,42 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4810
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4810
         [DllImport("user32.dll")]
         public static extern int EndDeferWindowPos(
             IntPtr hWinPosInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4824
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4824
         [DllImport("user32.dll")]
         public static extern int IsWindowVisible(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4836
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4836
         [DllImport("user32.dll")]
         public static extern int IsIconic(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4842
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4842
         [DllImport("user32.dll")]
         public static extern int AnyPopup(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4848
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4848
         [DllImport("user32.dll")]
         public static extern int BringWindowToTop(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4854
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4854
         [DllImport("user32.dll")]
         public static extern int IsZoomed(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4988
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4988
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamA(
             HMODULE hInstance,
@@ -1352,7 +1352,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:101
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:101
         [DllImport("user32.dll")]
         public static extern long DLGPROC(
             HWND __param__0,
@@ -1361,7 +1361,7 @@ namespace NWindowsKits
             long __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4997
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4997
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamW(
             HMODULE hInstance,
@@ -1371,7 +1371,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5012
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5012
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogIndirectParamA(
             HMODULE hInstance,
@@ -1381,7 +1381,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5021
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5021
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogIndirectParamW(
             HMODULE hInstance,
@@ -1391,7 +1391,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5056
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5056
         [DllImport("user32.dll")]
         public static extern long DialogBoxParamA(
             HMODULE hInstance,
@@ -1401,7 +1401,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5065
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5065
         [DllImport("user32.dll")]
         public static extern long DialogBoxParamW(
             HMODULE hInstance,
@@ -1411,7 +1411,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5080
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5080
         [DllImport("user32.dll")]
         public static extern long DialogBoxIndirectParamA(
             HMODULE hInstance,
@@ -1421,7 +1421,7 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5089
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5089
         [DllImport("user32.dll")]
         public static extern long DialogBoxIndirectParamW(
             HMODULE hInstance,
@@ -1431,21 +1431,21 @@ namespace NWindowsKits
             long dwInitParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5124
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5124
         [DllImport("user32.dll")]
         public static extern int EndDialog(
             HWND hDlg,
             long nResult
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5131
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5131
         [DllImport("user32.dll")]
         public static extern HWND GetDlgItem(
             HWND hDlg,
             int nIDDlgItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5138
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5138
         [DllImport("user32.dll")]
         public static extern int SetDlgItemInt(
             HWND hDlg,
@@ -1454,7 +1454,7 @@ namespace NWindowsKits
             int bSigned
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5147
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5147
         [DllImport("user32.dll")]
         public static extern uint GetDlgItemInt(
             HWND hDlg,
@@ -1463,7 +1463,7 @@ namespace NWindowsKits
             int bSigned
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5156
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5156
         [DllImport("user32.dll")]
         public static extern int SetDlgItemTextA(
             HWND hDlg,
@@ -1471,7 +1471,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5163
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5163
         [DllImport("user32.dll")]
         public static extern int SetDlgItemTextW(
             HWND hDlg,
@@ -1479,7 +1479,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5177
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5177
         [DllImport("user32.dll")]
         public static extern uint GetDlgItemTextA(
             HWND hDlg,
@@ -1488,7 +1488,7 @@ namespace NWindowsKits
             int cchMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5186
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5186
         [DllImport("user32.dll")]
         public static extern uint GetDlgItemTextW(
             HWND hDlg,
@@ -1497,7 +1497,7 @@ namespace NWindowsKits
             int cchMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5200
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5200
         [DllImport("user32.dll")]
         public static extern int CheckDlgButton(
             HWND hDlg,
@@ -1505,7 +1505,7 @@ namespace NWindowsKits
             uint uCheck
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5208
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5208
         [DllImport("user32.dll")]
         public static extern int CheckRadioButton(
             HWND hDlg,
@@ -1514,14 +1514,14 @@ namespace NWindowsKits
             int nIDCheckButton
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5217
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5217
         [DllImport("user32.dll")]
         public static extern uint IsDlgButtonChecked(
             HWND hDlg,
             int nIDButton
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5224
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5224
         [DllImport("user32.dll")]
         public static extern long SendDlgItemMessageA(
             HWND hDlg,
@@ -1531,7 +1531,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5233
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5233
         [DllImport("user32.dll")]
         public static extern long SendDlgItemMessageW(
             HWND hDlg,
@@ -1541,7 +1541,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5248
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5248
         [DllImport("user32.dll")]
         public static extern HWND GetNextDlgGroupItem(
             HWND hDlg,
@@ -1549,7 +1549,7 @@ namespace NWindowsKits
             int bPrevious
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5256
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5256
         [DllImport("user32.dll")]
         public static extern HWND GetNextDlgTabItem(
             HWND hDlg,
@@ -1557,18 +1557,18 @@ namespace NWindowsKits
             int bPrevious
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5264
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5264
         [DllImport("user32.dll")]
         public static extern int GetDlgCtrlID(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5270
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5270
         [DllImport("user32.dll")]
         public static extern int GetDialogBaseUnits(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5276
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5276
         [DllImport("user32.dll")]
         public static extern long DefDlgProcA(
             HWND hDlg,
@@ -1577,7 +1577,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5289
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5289
         [DllImport("user32.dll")]
         public static extern long DefDlgProcW(
             HWND hDlg,
@@ -1586,7 +1586,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5319
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5319
         [DllImport("user32.dll")]
         public static extern int SetDialogControlDpiChangeBehavior(
             HWND hWnd,
@@ -1594,13 +1594,13 @@ namespace NWindowsKits
             DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS values
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5326
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5326
         [DllImport("user32.dll")]
         public static extern DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS GetDialogControlDpiChangeBehavior(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5342
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5342
         [DllImport("user32.dll")]
         public static extern int SetDialogDpiChangeBehavior(
             HWND hDlg,
@@ -1608,102 +1608,102 @@ namespace NWindowsKits
             DIALOG_DPI_CHANGE_BEHAVIORS values
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5349
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5349
         [DllImport("user32.dll")]
         public static extern DIALOG_DPI_CHANGE_BEHAVIORS GetDialogDpiChangeBehavior(
             HWND hDlg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5373
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5373
         [DllImport("user32.dll")]
         public static extern int CallMsgFilterA(
             ref MSG lpMsg,
             int nCode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5379
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5379
         [DllImport("user32.dll")]
         public static extern int CallMsgFilterW(
             ref MSG lpMsg,
             int nCode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5399
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5399
         [DllImport("user32.dll")]
         public static extern int OpenClipboard(
             HWND hWndNewOwner
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5405
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5405
         [DllImport("user32.dll")]
         public static extern int CloseClipboard(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5414
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5414
         [DllImport("user32.dll")]
         public static extern uint GetClipboardSequenceNumber(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5422
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5422
         [DllImport("user32.dll")]
         public static extern HWND GetClipboardOwner(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5428
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5428
         [DllImport("user32.dll")]
         public static extern HWND SetClipboardViewer(
             HWND hWndNewViewer
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5434
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5434
         [DllImport("user32.dll")]
         public static extern HWND GetClipboardViewer(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5440
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5440
         [DllImport("user32.dll")]
         public static extern int ChangeClipboardChain(
             HWND hWndRemove,
             HWND hWndNewNext
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5447
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5447
         [DllImport("user32.dll")]
         public static extern IntPtr SetClipboardData(
             uint uFormat,
             IntPtr hMem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5454
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5454
         [DllImport("user32.dll")]
         public static extern IntPtr GetClipboardData(
             uint uFormat
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5460
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5460
         [DllImport("user32.dll")]
         public static extern uint RegisterClipboardFormatA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszFormat
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5465
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5465
         [DllImport("user32.dll")]
         public static extern uint RegisterClipboardFormatW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszFormat
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5476
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5476
         [DllImport("user32.dll")]
         public static extern int CountClipboardFormats(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5482
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5482
         [DllImport("user32.dll")]
         public static extern uint EnumClipboardFormats(
             uint format
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5488
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5488
         [DllImport("user32.dll")]
         public static extern int GetClipboardFormatNameA(
             uint format,
@@ -1711,7 +1711,7 @@ namespace NWindowsKits
             int cchMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5495
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5495
         [DllImport("user32.dll")]
         public static extern int GetClipboardFormatNameW(
             uint format,
@@ -1719,42 +1719,42 @@ namespace NWindowsKits
             int cchMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5508
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5508
         [DllImport("user32.dll")]
         public static extern int EmptyClipboard(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5514
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5514
         [DllImport("user32.dll")]
         public static extern int IsClipboardFormatAvailable(
             uint format
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5520
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5520
         [DllImport("user32.dll")]
         public static extern int GetPriorityClipboardFormat(
             IntPtr paFormatPriorityList,
             int cFormats
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5527
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5527
         [DllImport("user32.dll")]
         public static extern HWND GetOpenClipboardWindow(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5534
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5534
         [DllImport("user32.dll")]
         public static extern int AddClipboardFormatListener(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5540
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5540
         [DllImport("user32.dll")]
         public static extern int RemoveClipboardFormatListener(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5546
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5546
         [DllImport("user32.dll")]
         public static extern int GetUpdatedClipboardFormats(
             ref uint lpuiFormats,
@@ -1762,35 +1762,35 @@ namespace NWindowsKits
             ref uint pcFormatsOut
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5561
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5561
         [DllImport("user32.dll")]
         public static extern int CharToOemA(
             [MarshalAs(UnmanagedType.LPStr)] string pSrc,
             IntPtr pDst
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5567
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5567
         [DllImport("user32.dll")]
         public static extern int CharToOemW(
             [MarshalAs(UnmanagedType.LPWStr)] string pSrc,
             IntPtr pDst
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5580
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5580
         [DllImport("user32.dll")]
         public static extern int OemToCharA(
             [MarshalAs(UnmanagedType.LPStr)] string pSrc,
             IntPtr pDst
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5587
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5587
         [DllImport("user32.dll")]
         public static extern int OemToCharW(
             [MarshalAs(UnmanagedType.LPStr)] string pSrc,
             IntPtr pDst
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5599
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5599
         [DllImport("user32.dll")]
         public static extern int CharToOemBuffA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszSrc,
@@ -1798,7 +1798,7 @@ namespace NWindowsKits
             uint cchDstLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5606
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5606
         [DllImport("user32.dll")]
         public static extern int CharToOemBuffW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszSrc,
@@ -1806,7 +1806,7 @@ namespace NWindowsKits
             uint cchDstLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5619
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5619
         [DllImport("user32.dll")]
         public static extern int OemToCharBuffA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszSrc,
@@ -1814,7 +1814,7 @@ namespace NWindowsKits
             uint cchDstLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5626
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5626
         [DllImport("user32.dll")]
         public static extern int OemToCharBuffW(
             [MarshalAs(UnmanagedType.LPStr)] string lpszSrc,
@@ -1822,85 +1822,85 @@ namespace NWindowsKits
             uint cchDstLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5645
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5645
         [DllImport("user32.dll")]
         public static extern IntPtr CharUpperA(
             IntPtr lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5650
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5650
         [DllImport("user32.dll")]
         public static extern IntPtr CharUpperW(
             IntPtr lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5661
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5661
         [DllImport("user32.dll")]
         public static extern uint CharUpperBuffA(
             IntPtr lpsz,
             uint cchLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5667
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5667
         [DllImport("user32.dll")]
         public static extern uint CharUpperBuffW(
             IntPtr lpsz,
             uint cchLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5679
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5679
         [DllImport("user32.dll")]
         public static extern IntPtr CharLowerA(
             IntPtr lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5684
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5684
         [DllImport("user32.dll")]
         public static extern IntPtr CharLowerW(
             IntPtr lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5695
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5695
         [DllImport("user32.dll")]
         public static extern uint CharLowerBuffA(
             IntPtr lpsz,
             uint cchLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5701
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5701
         [DllImport("user32.dll")]
         public static extern uint CharLowerBuffW(
             IntPtr lpsz,
             uint cchLength
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5713
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5713
         [DllImport("user32.dll")]
         public static extern IntPtr CharNextA(
             [MarshalAs(UnmanagedType.LPStr)] string lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5718
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5718
         [DllImport("user32.dll")]
         public static extern IntPtr CharNextW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpsz
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5729
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5729
         [DllImport("user32.dll")]
         public static extern IntPtr CharPrevA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszStart,
             [MarshalAs(UnmanagedType.LPStr)] string lpszCurrent
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5735
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5735
         [DllImport("user32.dll")]
         public static extern IntPtr CharPrevW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszStart,
             [MarshalAs(UnmanagedType.LPWStr)] string lpszCurrent
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5748
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5748
         [DllImport("user32.dll")]
         public static extern IntPtr CharNextExA(
             ushort CodePage,
@@ -1908,7 +1908,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5756
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5756
         [DllImport("user32.dll")]
         public static extern IntPtr CharPrevExA(
             ushort CodePage,
@@ -1917,100 +1917,100 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5791
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5791
         [DllImport("user32.dll")]
         public static extern int IsCharAlphaA(
             sbyte ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5796
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5796
         [DllImport("user32.dll")]
         public static extern int IsCharAlphaW(
             ushort ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5807
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5807
         [DllImport("user32.dll")]
         public static extern int IsCharAlphaNumericA(
             sbyte ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5812
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5812
         [DllImport("user32.dll")]
         public static extern int IsCharAlphaNumericW(
             ushort ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5823
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5823
         [DllImport("user32.dll")]
         public static extern int IsCharUpperA(
             sbyte ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5828
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5828
         [DllImport("user32.dll")]
         public static extern int IsCharUpperW(
             ushort ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5839
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5839
         [DllImport("user32.dll")]
         public static extern int IsCharLowerA(
             sbyte ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5844
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5844
         [DllImport("user32.dll")]
         public static extern int IsCharLowerW(
             ushort ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5863
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5863
         [DllImport("user32.dll")]
         public static extern HWND SetFocus(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5869
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5869
         [DllImport("user32.dll")]
         public static extern HWND GetActiveWindow(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5875
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5875
         [DllImport("user32.dll")]
         public static extern HWND GetFocus(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5881
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5881
         [DllImport("user32.dll")]
         public static extern uint GetKBCodePage(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5887
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5887
         [DllImport("user32.dll")]
         public static extern short GetKeyState(
             int nVirtKey
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5893
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5893
         [DllImport("user32.dll")]
         public static extern short GetAsyncKeyState(
             int vKey
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5899
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5899
         [DllImport("user32.dll")]
         public static extern int GetKeyboardState(
             IntPtr lpKeyState
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5906
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5906
         [DllImport("user32.dll")]
         public static extern int SetKeyboardState(
             IntPtr lpKeyState
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5919
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5919
         [DllImport("user32.dll")]
         public static extern int GetKeyNameTextA(
             int lParam,
@@ -2018,7 +2018,7 @@ namespace NWindowsKits
             int cchSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5926
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5926
         [DllImport("user32.dll")]
         public static extern int GetKeyNameTextW(
             int lParam,
@@ -2026,13 +2026,13 @@ namespace NWindowsKits
             int cchSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5946
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5946
         [DllImport("user32.dll")]
         public static extern int GetKeyboardType(
             int nTypeFlag
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5952
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5952
         [DllImport("user32.dll")]
         public static extern int ToAscii(
             uint uVirtKey,
@@ -2042,7 +2042,7 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5963
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5963
         [DllImport("user32.dll")]
         public static extern int ToAsciiEx(
             uint uVirtKey,
@@ -2053,7 +2053,7 @@ namespace NWindowsKits
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5975
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5975
         [DllImport("user32.dll")]
         public static extern int ToUnicode(
             uint wVirtKey,
@@ -2064,39 +2064,39 @@ namespace NWindowsKits
             uint wFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5986
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5986
         [DllImport("user32.dll")]
         public static extern uint OemKeyScan(
             ushort wOemChar
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5992
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5992
         [DllImport("user32.dll")]
         public static extern short VkKeyScanA(
             sbyte ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5997
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5997
         [DllImport("user32.dll")]
         public static extern short VkKeyScanW(
             ushort ch
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6009
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6009
         [DllImport("user32.dll")]
         public static extern short VkKeyScanExA(
             sbyte ch,
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6015
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6015
         [DllImport("user32.dll")]
         public static extern short VkKeyScanExW(
             ushort ch,
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6034
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6034
         [DllImport("user32.dll")]
         public static extern void keybd_event(
             byte bVk,
@@ -2105,7 +2105,7 @@ namespace NWindowsKits
             ulong dwExtraInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6068
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6068
         [DllImport("user32.dll")]
         public static extern void mouse_event(
             uint dwFlags,
@@ -2115,7 +2115,7 @@ namespace NWindowsKits
             ulong dwExtraInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6124
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6124
         [DllImport("user32.dll")]
         public static extern uint SendInput(
             uint cInputs,
@@ -2123,7 +2123,7 @@ namespace NWindowsKits
             int cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6196
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6196
         [DllImport("user32.dll")]
         public static extern int GetTouchInputInfo(
             HTOUCHINPUT hTouchInput,
@@ -2132,68 +2132,68 @@ namespace NWindowsKits
             int cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6205
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6205
         [DllImport("user32.dll")]
         public static extern int CloseTouchInputHandle(
             HTOUCHINPUT hTouchInput
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6225
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6225
         [DllImport("user32.dll")]
         public static extern int RegisterTouchWindow(
             HWND hwnd,
             uint ulFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6232
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6232
         [DllImport("user32.dll")]
         public static extern int UnregisterTouchWindow(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6238
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6238
         [DllImport("user32.dll")]
         public static extern int IsTouchWindow(
             HWND hwnd,
             IntPtr pulFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6438
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6438
         [DllImport("user32.dll")]
         public static extern int InitializeTouchInjection(
             uint maxCount,
             uint dwMode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6445
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6445
         [DllImport("user32.dll")]
         public static extern int InjectTouchInput(
             uint count,
             ref POINTER_TOUCH_INFO contacts
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6480
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6480
         [DllImport("user32.dll")]
         public static extern int GetPointerType(
             uint pointerId,
             IntPtr pointerType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6487
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6487
         [DllImport("user32.dll")]
         public static extern int GetPointerCursorId(
             uint pointerId,
             IntPtr cursorId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6494
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6494
         [DllImport("user32.dll")]
         public static extern int GetPointerInfo(
             uint pointerId,
             ref POINTER_INFO pointerInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6501
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6501
         [DllImport("user32.dll")]
         public static extern int GetPointerInfoHistory(
             uint pointerId,
@@ -2201,7 +2201,7 @@ namespace NWindowsKits
             ref POINTER_INFO pointerInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6509
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6509
         [DllImport("user32.dll")]
         public static extern int GetPointerFrameInfo(
             uint pointerId,
@@ -2209,7 +2209,7 @@ namespace NWindowsKits
             ref POINTER_INFO pointerInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6517
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6517
         [DllImport("user32.dll")]
         public static extern int GetPointerFrameInfoHistory(
             uint pointerId,
@@ -2218,14 +2218,14 @@ namespace NWindowsKits
             ref POINTER_INFO pointerInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6526
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6526
         [DllImport("user32.dll")]
         public static extern int GetPointerTouchInfo(
             uint pointerId,
             ref POINTER_TOUCH_INFO touchInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6533
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6533
         [DllImport("user32.dll")]
         public static extern int GetPointerTouchInfoHistory(
             uint pointerId,
@@ -2233,7 +2233,7 @@ namespace NWindowsKits
             ref POINTER_TOUCH_INFO touchInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6541
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6541
         [DllImport("user32.dll")]
         public static extern int GetPointerFrameTouchInfo(
             uint pointerId,
@@ -2241,7 +2241,7 @@ namespace NWindowsKits
             ref POINTER_TOUCH_INFO touchInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6549
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6549
         [DllImport("user32.dll")]
         public static extern int GetPointerFrameTouchInfoHistory(
             uint pointerId,
@@ -2250,14 +2250,14 @@ namespace NWindowsKits
             ref POINTER_TOUCH_INFO touchInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6558
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6558
         [DllImport("user32.dll")]
         public static extern int GetPointerPenInfo(
             uint pointerId,
             ref POINTER_PEN_INFO penInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6565
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6565
         [DllImport("user32.dll")]
         public static extern int GetPointerPenInfoHistory(
             uint pointerId,
@@ -2265,7 +2265,7 @@ namespace NWindowsKits
             ref POINTER_PEN_INFO penInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6573
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6573
         [DllImport("user32.dll")]
         public static extern int GetPointerFramePenInfo(
             uint pointerId,
@@ -2273,7 +2273,7 @@ namespace NWindowsKits
             ref POINTER_PEN_INFO penInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6581
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6581
         [DllImport("user32.dll")]
         public static extern int GetPointerFramePenInfoHistory(
             uint pointerId,
@@ -2282,27 +2282,27 @@ namespace NWindowsKits
             ref POINTER_PEN_INFO penInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6591
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6591
         [DllImport("user32.dll")]
         public static extern int SkipPointerFrameMessages(
             uint pointerId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6597
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6597
         [DllImport("user32.dll")]
         public static extern int RegisterPointerInputTarget(
             HWND hwnd,
             uint pointerType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6604
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6604
         [DllImport("user32.dll")]
         public static extern int UnregisterPointerInputTarget(
             HWND hwnd,
             uint pointerType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6611
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6611
         [DllImport("user32.dll")]
         public static extern int RegisterPointerInputTargetEx(
             HWND hwnd,
@@ -2310,14 +2310,14 @@ namespace NWindowsKits
             int fObserve
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6619
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6619
         [DllImport("user32.dll")]
         public static extern int UnregisterPointerInputTargetEx(
             HWND hwnd,
             uint pointerType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6628
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6628
         [DllImport("user32.dll")]
         public static extern HSYNTHETICPOINTERDEVICE CreateSyntheticPointerDevice(
             uint pointerType,
@@ -2325,7 +2325,7 @@ namespace NWindowsKits
             POINTER_FEEDBACK_MODE mode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6636
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6636
         [DllImport("user32.dll")]
         public static extern int InjectSyntheticPointerInput(
             HSYNTHETICPOINTERDEVICE device,
@@ -2333,36 +2333,36 @@ namespace NWindowsKits
             uint count
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6644
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6644
         [DllImport("user32.dll")]
         public static extern void DestroySyntheticPointerDevice(
             HSYNTHETICPOINTERDEVICE device
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6652
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6652
         [DllImport("user32.dll")]
         public static extern int EnableMouseInPointer(
             int fEnable
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6658
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6658
         [DllImport("user32.dll")]
         public static extern int IsMouseInPointerEnabled(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6665
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6665
         [DllImport("user32.dll")]
         public static extern int EnableMouseInPointerForThread(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6675
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6675
         [DllImport("user32.dll")]
         public static extern int RegisterTouchHitTestingWindow(
             HWND hwnd,
             uint value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6705
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6705
         [DllImport("user32.dll")]
         public static extern int EvaluateProximityToRect(
             ref RECT controlBoundingBox,
@@ -2370,7 +2370,7 @@ namespace NWindowsKits
             ref TOUCH_HIT_TESTING_PROXIMITY_EVALUATION pProximityEval
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6713
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6713
         [DllImport("user32.dll")]
         public static extern int EvaluateProximityToPolygon(
             uint numVertices,
@@ -2379,14 +2379,14 @@ namespace NWindowsKits
             ref TOUCH_HIT_TESTING_PROXIMITY_EVALUATION pProximityEval
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6722
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6722
         [DllImport("user32.dll")]
         public static extern long PackTouchHitTestingProximityEvaluation(
             ref TOUCH_HIT_TESTING_INPUT pHitTestingInput,
             ref TOUCH_HIT_TESTING_PROXIMITY_EVALUATION pProximityEval
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6749
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6749
         [DllImport("user32.dll")]
         public static extern int GetWindowFeedbackSetting(
             HWND hwnd,
@@ -2396,7 +2396,7 @@ namespace NWindowsKits
             IntPtr config
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6759
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6759
         [DllImport("user32.dll")]
         public static extern int SetWindowFeedbackSetting(
             HWND hwnd,
@@ -2406,7 +2406,7 @@ namespace NWindowsKits
             IntPtr configuration
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6803
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6803
         [DllImport("user32.dll")]
         public static extern int GetPointerInputTransform(
             uint pointerId,
@@ -2414,27 +2414,27 @@ namespace NWindowsKits
             ref INPUT_TRANSFORM inputTransform
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6831
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6831
         [DllImport("user32.dll")]
         public static extern int GetLastInputInfo(
             ref tagLASTINPUTINFO plii
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6844
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6844
         [DllImport("user32.dll")]
         public static extern uint MapVirtualKeyA(
             uint uCode,
             uint uMapType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6850
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6850
         [DllImport("user32.dll")]
         public static extern uint MapVirtualKeyW(
             uint uCode,
             uint uMapType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6863
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6863
         [DllImport("user32.dll")]
         public static extern uint MapVirtualKeyExA(
             uint uCode,
@@ -2442,7 +2442,7 @@ namespace NWindowsKits
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6870
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6870
         [DllImport("user32.dll")]
         public static extern uint MapVirtualKeyExW(
             uint uCode,
@@ -2450,34 +2450,34 @@ namespace NWindowsKits
             HKL dwhkl
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6898
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6898
         [DllImport("user32.dll")]
         public static extern int GetInputState(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6904
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6904
         [DllImport("user32.dll")]
         public static extern uint GetQueueStatus(
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6911
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6911
         [DllImport("user32.dll")]
         public static extern HWND GetCapture(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6917
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6917
         [DllImport("user32.dll")]
         public static extern HWND SetCapture(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6923
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6923
         [DllImport("user32.dll")]
         public static extern int ReleaseCapture(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6929
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6929
         [DllImport("user32.dll")]
         public static extern uint MsgWaitForMultipleObjects(
             uint nCount,
@@ -2487,7 +2487,7 @@ namespace NWindowsKits
             uint dwWakeMask
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6939
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6939
         [DllImport("user32.dll")]
         public static extern uint MsgWaitForMultipleObjectsEx(
             uint nCount,
@@ -2497,7 +2497,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7026
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7026
         [DllImport("user32.dll")]
         public static extern ulong SetTimer(
             HWND hWnd,
@@ -2506,7 +2506,7 @@ namespace NWindowsKits
             TIMERPROC lpTimerFunc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:109
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:109
         [DllImport("user32.dll")]
         public static extern void TIMERPROC(
             HWND __param__0,
@@ -2515,7 +2515,7 @@ namespace NWindowsKits
             uint __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7053
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7053
         [DllImport("user32.dll")]
         public static extern ulong SetCoalescableTimer(
             HWND hWnd,
@@ -2525,67 +2525,67 @@ namespace NWindowsKits
             uint uToleranceDelay
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7071
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7071
         [DllImport("user32.dll")]
         public static extern int KillTimer(
             HWND hWnd,
             ulong uIDEvent
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7084
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7084
         [DllImport("user32.dll")]
         public static extern int IsWindowUnicode(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7090
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7090
         [DllImport("user32.dll")]
         public static extern int EnableWindow(
             HWND hWnd,
             int bEnable
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7097
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7097
         [DllImport("user32.dll")]
         public static extern int IsWindowEnabled(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7103
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7103
         [DllImport("user32.dll")]
         public static extern HACCEL LoadAcceleratorsA(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpTableName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7109
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7109
         [DllImport("user32.dll")]
         public static extern HACCEL LoadAcceleratorsW(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpTableName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7121
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7121
         [DllImport("user32.dll")]
         public static extern HACCEL CreateAcceleratorTableA(
             ref tagACCEL paccel,
             int cAccel
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7127
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7127
         [DllImport("user32.dll")]
         public static extern HACCEL CreateAcceleratorTableW(
             ref tagACCEL paccel,
             int cAccel
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7139
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7139
         [DllImport("user32.dll")]
         public static extern int DestroyAcceleratorTable(
             HACCEL hAccel
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7145
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7145
         [DllImport("user32.dll")]
         public static extern int CopyAcceleratorTableA(
             HACCEL hAccelSrc,
@@ -2593,7 +2593,7 @@ namespace NWindowsKits
             int cAccelEntries
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7152
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7152
         [DllImport("user32.dll")]
         public static extern int CopyAcceleratorTableW(
             HACCEL hAccelSrc,
@@ -2601,7 +2601,7 @@ namespace NWindowsKits
             int cAccelEntries
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7167
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7167
         [DllImport("user32.dll")]
         public static extern int TranslateAcceleratorA(
             HWND hWnd,
@@ -2609,7 +2609,7 @@ namespace NWindowsKits
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7174
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7174
         [DllImport("user32.dll")]
         public static extern int TranslateAcceleratorW(
             HWND hWnd,
@@ -2617,59 +2617,59 @@ namespace NWindowsKits
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7357
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7357
         [DllImport("user32.dll")]
         public static extern int GetSystemMetrics(
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7365
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7365
         [DllImport("user32.dll")]
         public static extern int GetSystemMetricsForDpi(
             int nIndex,
             uint dpi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7384
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7384
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuA(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpMenuName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7390
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7390
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuW(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpMenuName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7402
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7402
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuIndirectA(
             IntPtr lpMenuTemplate
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7407
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7407
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuIndirectW(
             IntPtr lpMenuTemplate
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7418
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7418
         [DllImport("user32.dll")]
         public static extern HMENU GetMenu(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7424
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7424
         [DllImport("user32.dll")]
         public static extern int SetMenu(
             HWND hWnd,
             HMENU hMenu
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7431
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7431
         [DllImport("user32.dll")]
         public static extern int ChangeMenuA(
             HMENU hMenu,
@@ -2679,7 +2679,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7440
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7440
         [DllImport("user32.dll")]
         public static extern int ChangeMenuW(
             HMENU hMenu,
@@ -2689,7 +2689,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7455
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7455
         [DllImport("user32.dll")]
         public static extern int HiliteMenuItem(
             HWND hWnd,
@@ -2698,7 +2698,7 @@ namespace NWindowsKits
             uint uHilite
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7464
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7464
         [DllImport("user32.dll")]
         public static extern int GetMenuStringA(
             HMENU hMenu,
@@ -2708,7 +2708,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7473
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7473
         [DllImport("user32.dll")]
         public static extern int GetMenuStringW(
             HMENU hMenu,
@@ -2718,7 +2718,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7488
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7488
         [DllImport("user32.dll")]
         public static extern uint GetMenuState(
             HMENU hMenu,
@@ -2726,36 +2726,36 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7496
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7496
         [DllImport("user32.dll")]
         public static extern int DrawMenuBar(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7508
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7508
         [DllImport("user32.dll")]
         public static extern HMENU GetSystemMenu(
             HWND hWnd,
             int bRevert
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7516
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7516
         [DllImport("user32.dll")]
         public static extern HMENU CreateMenu(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7522
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7522
         [DllImport("user32.dll")]
         public static extern HMENU CreatePopupMenu(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7528
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7528
         [DllImport("user32.dll")]
         public static extern int DestroyMenu(
             HMENU hMenu
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7534
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7534
         [DllImport("user32.dll")]
         public static extern uint CheckMenuItem(
             HMENU hMenu,
@@ -2763,7 +2763,7 @@ namespace NWindowsKits
             uint uCheck
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7542
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7542
         [DllImport("user32.dll")]
         public static extern int EnableMenuItem(
             HMENU hMenu,
@@ -2771,27 +2771,27 @@ namespace NWindowsKits
             uint uEnable
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7550
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7550
         [DllImport("user32.dll")]
         public static extern HMENU GetSubMenu(
             HMENU hMenu,
             int nPos
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7557
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7557
         [DllImport("user32.dll")]
         public static extern uint GetMenuItemID(
             HMENU hMenu,
             int nPos
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7564
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7564
         [DllImport("user32.dll")]
         public static extern int GetMenuItemCount(
             HMENU hMenu
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7570
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7570
         [DllImport("user32.dll")]
         public static extern int InsertMenuA(
             HMENU hMenu,
@@ -2801,7 +2801,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7579
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7579
         [DllImport("user32.dll")]
         public static extern int InsertMenuW(
             HMENU hMenu,
@@ -2811,7 +2811,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7594
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7594
         [DllImport("user32.dll")]
         public static extern int AppendMenuA(
             HMENU hMenu,
@@ -2820,7 +2820,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7602
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7602
         [DllImport("user32.dll")]
         public static extern int AppendMenuW(
             HMENU hMenu,
@@ -2829,7 +2829,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7616
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7616
         [DllImport("user32.dll")]
         public static extern int ModifyMenuA(
             HMENU hMnu,
@@ -2839,7 +2839,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7625
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7625
         [DllImport("user32.dll")]
         public static extern int ModifyMenuW(
             HMENU hMnu,
@@ -2849,7 +2849,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpNewItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7640
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7640
         [DllImport("user32.dll")]
         public static extern int RemoveMenu(
             HMENU hMenu,
@@ -2857,7 +2857,7 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7647
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7647
         [DllImport("user32.dll")]
         public static extern int DeleteMenu(
             HMENU hMenu,
@@ -2865,7 +2865,7 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7655
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7655
         [DllImport("user32.dll")]
         public static extern int SetMenuItemBitmaps(
             HMENU hMenu,
@@ -2875,12 +2875,12 @@ namespace NWindowsKits
             HBITMAP hBitmapChecked
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7665
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7665
         [DllImport("user32.dll")]
         public static extern int GetMenuCheckMarkDimensions(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7671
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7671
         [DllImport("user32.dll")]
         public static extern int TrackPopupMenu(
             HMENU hMenu,
@@ -2892,7 +2892,7 @@ namespace NWindowsKits
             ref RECT prcRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7697
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7697
         [DllImport("user32.dll")]
         public static extern int TrackPopupMenuEx(
             HMENU hMenu,
@@ -2903,7 +2903,7 @@ namespace NWindowsKits
             ref TPMPARAMS lptpm
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7710
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7710
         [DllImport("user32.dll")]
         public static extern int CalculatePopupWindowPosition(
             ref POINT anchorPoint,
@@ -2913,26 +2913,26 @@ namespace NWindowsKits
             ref RECT popupWindowPosition
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7750
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7750
         [DllImport("user32.dll")]
         public static extern int GetMenuInfo(
             HMENU __param__0,
             ref MENUINFO __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7757
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7757
         [DllImport("user32.dll")]
         public static extern int SetMenuInfo(
             HMENU __param__0,
             ref MENUINFO __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7764
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7764
         [DllImport("user32.dll")]
         public static extern int EndMenu(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7876
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7876
         [DllImport("user32.dll")]
         public static extern int InsertMenuItemA(
             HMENU hmenu,
@@ -2941,7 +2941,7 @@ namespace NWindowsKits
             ref MENUITEMINFOA lpmi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7884
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7884
         [DllImport("user32.dll")]
         public static extern int InsertMenuItemW(
             HMENU hmenu,
@@ -2950,7 +2950,7 @@ namespace NWindowsKits
             ref MENUITEMINFOW lpmi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7898
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7898
         [DllImport("user32.dll")]
         public static extern int GetMenuItemInfoA(
             HMENU hmenu,
@@ -2959,7 +2959,7 @@ namespace NWindowsKits
             ref MENUITEMINFOA lpmii
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7906
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7906
         [DllImport("user32.dll")]
         public static extern int GetMenuItemInfoW(
             HMENU hmenu,
@@ -2968,7 +2968,7 @@ namespace NWindowsKits
             ref MENUITEMINFOW lpmii
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7920
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7920
         [DllImport("user32.dll")]
         public static extern int SetMenuItemInfoA(
             HMENU hmenu,
@@ -2977,7 +2977,7 @@ namespace NWindowsKits
             ref MENUITEMINFOA lpmii
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7928
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7928
         [DllImport("user32.dll")]
         public static extern int SetMenuItemInfoW(
             HMENU hmenu,
@@ -2986,7 +2986,7 @@ namespace NWindowsKits
             ref MENUITEMINFOW lpmii
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7946
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7946
         [DllImport("user32.dll")]
         public static extern uint GetMenuDefaultItem(
             HMENU hMenu,
@@ -2994,7 +2994,7 @@ namespace NWindowsKits
             uint gmdiFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7954
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7954
         [DllImport("user32.dll")]
         public static extern int SetMenuDefaultItem(
             HMENU hMenu,
@@ -3002,7 +3002,7 @@ namespace NWindowsKits
             uint fByPos
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7962
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7962
         [DllImport("user32.dll")]
         public static extern int GetMenuItemRect(
             HWND hWnd,
@@ -3011,7 +3011,7 @@ namespace NWindowsKits
             ref RECT lprcItem
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7971
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7971
         [DllImport("user32.dll")]
         public static extern int MenuItemFromPoint(
             HWND hWnd,
@@ -3019,7 +3019,7 @@ namespace NWindowsKits
             POINT ptScreen
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8057
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8057
         [DllImport("user32.dll")]
         public static extern uint DragObject(
             HWND hwndParent,
@@ -3029,14 +3029,14 @@ namespace NWindowsKits
             HCURSOR hcur
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8067
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8067
         [DllImport("user32.dll")]
         public static extern int DragDetect(
             HWND hwnd,
             POINT pt
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8082
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8082
         [DllImport("user32.dll")]
         public static extern int DrawIcon(
             HDC hDC,
@@ -3045,7 +3045,7 @@ namespace NWindowsKits
             HCURSOR hIcon
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8159
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8159
         [DllImport("user32.dll")]
         public static extern int DrawTextA(
             HDC hdc,
@@ -3055,7 +3055,7 @@ namespace NWindowsKits
             uint format
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8171
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8171
         [DllImport("user32.dll")]
         public static extern int DrawTextW(
             HDC hdc,
@@ -3065,7 +3065,7 @@ namespace NWindowsKits
             uint format
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8217
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8217
         [DllImport("user32.dll")]
         public static extern int DrawTextExA(
             HDC hdc,
@@ -3076,7 +3076,7 @@ namespace NWindowsKits
             ref tagDRAWTEXTPARAMS lpdtp
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8231
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8231
         [DllImport("user32.dll")]
         public static extern int DrawTextExW(
             HDC hdc,
@@ -3087,7 +3087,7 @@ namespace NWindowsKits
             ref tagDRAWTEXTPARAMS lpdtp
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8260
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8260
         [DllImport("user32.dll")]
         public static extern int GrayStringA(
             HDC hDC,
@@ -3101,7 +3101,7 @@ namespace NWindowsKits
             int nHeight
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:117
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:117
         [DllImport("user32.dll")]
         public static extern int GRAYSTRINGPROC(
             HDC __param__0,
@@ -3109,7 +3109,7 @@ namespace NWindowsKits
             int __param__2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8273
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8273
         [DllImport("user32.dll")]
         public static extern int GrayStringW(
             HDC hDC,
@@ -3123,7 +3123,7 @@ namespace NWindowsKits
             int nHeight
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8318
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8318
         [DllImport("user32.dll")]
         public static extern int DrawStateA(
             HDC hdc,
@@ -3138,7 +3138,7 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:132
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:132
         [DllImport("user32.dll")]
         public static extern int DRAWSTATEPROC(
             HDC hdc,
@@ -3148,7 +3148,7 @@ namespace NWindowsKits
             int cy
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8332
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8332
         [DllImport("user32.dll")]
         public static extern int DrawStateW(
             HDC hdc,
@@ -3163,7 +3163,7 @@ namespace NWindowsKits
             uint uFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8360
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8360
         [DllImport("user32.dll")]
         public static extern int TabbedTextOutA(
             HDC hdc,
@@ -3176,7 +3176,7 @@ namespace NWindowsKits
             int nTabOrigin
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8372
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8372
         [DllImport("user32.dll")]
         public static extern int TabbedTextOutW(
             HDC hdc,
@@ -3189,7 +3189,7 @@ namespace NWindowsKits
             int nTabOrigin
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8390
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8390
         [DllImport("user32.dll")]
         public static extern uint GetTabbedTextExtentA(
             HDC hdc,
@@ -3199,7 +3199,7 @@ namespace NWindowsKits
             IntPtr lpnTabStopPositions
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8399
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8399
         [DllImport("user32.dll")]
         public static extern uint GetTabbedTextExtentW(
             HDC hdc,
@@ -3209,67 +3209,67 @@ namespace NWindowsKits
             IntPtr lpnTabStopPositions
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8414
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8414
         [DllImport("user32.dll")]
         public static extern int UpdateWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8420
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8420
         [DllImport("user32.dll")]
         public static extern HWND SetActiveWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8427
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8427
         [DllImport("user32.dll")]
         public static extern HWND GetForegroundWindow(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8434
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8434
         [DllImport("user32.dll")]
         public static extern int PaintDesktop(
             HDC hdc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8440
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8440
         [DllImport("user32.dll")]
         public static extern void SwitchToThisWindow(
             HWND hwnd,
             int fUnknown
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8449
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8449
         [DllImport("user32.dll")]
         public static extern int SetForegroundWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8456
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8456
         [DllImport("user32.dll")]
         public static extern int AllowSetForegroundWindow(
             uint dwProcessId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8464
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8464
         [DllImport("user32.dll")]
         public static extern int LockSetForegroundWindow(
             uint uLockCode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8475
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8475
         [DllImport("user32.dll")]
         public static extern HWND WindowFromDC(
             HDC hDC
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8481
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8481
         [DllImport("user32.dll")]
         public static extern HDC GetDC(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8487
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8487
         [DllImport("user32.dll")]
         public static extern HDC GetDCEx(
             HWND hWnd,
@@ -3277,34 +3277,34 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8518
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8518
         [DllImport("user32.dll")]
         public static extern HDC GetWindowDC(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8524
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8524
         [DllImport("user32.dll")]
         public static extern int ReleaseDC(
             HWND hWnd,
             HDC hDC
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8531
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8531
         [DllImport("user32.dll")]
         public static extern HDC BeginPaint(
             HWND hWnd,
             ref PAINTSTRUCT lpPaint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8538
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8538
         [DllImport("user32.dll")]
         public static extern int EndPaint(
             HWND hWnd,
             ref PAINTSTRUCT lpPaint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8545
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8545
         [DllImport("user32.dll")]
         public static extern int GetUpdateRect(
             HWND hWnd,
@@ -3312,7 +3312,7 @@ namespace NWindowsKits
             int bErase
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8553
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8553
         [DllImport("user32.dll")]
         public static extern int GetUpdateRgn(
             HWND hWnd,
@@ -3320,7 +3320,7 @@ namespace NWindowsKits
             int bErase
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8561
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8561
         [DllImport("user32.dll")]
         public static extern int SetWindowRgn(
             HWND hWnd,
@@ -3328,28 +3328,28 @@ namespace NWindowsKits
             int bRedraw
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8576
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8576
         [DllImport("user32.dll")]
         public static extern int GetWindowRgn(
             HWND hWnd,
             HRGN hRgn
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8585
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8585
         [DllImport("user32.dll")]
         public static extern int GetWindowRgnBox(
             HWND hWnd,
             ref RECT lprc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8594
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8594
         [DllImport("user32.dll")]
         public static extern int ExcludeUpdateRgn(
             HDC hDC,
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8601
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8601
         [DllImport("user32.dll")]
         public static extern int InvalidateRect(
             HWND hWnd,
@@ -3357,14 +3357,14 @@ namespace NWindowsKits
             int bErase
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8609
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8609
         [DllImport("user32.dll")]
         public static extern int ValidateRect(
             HWND hWnd,
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8616
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8616
         [DllImport("user32.dll")]
         public static extern int InvalidateRgn(
             HWND hWnd,
@@ -3372,14 +3372,14 @@ namespace NWindowsKits
             int bErase
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8624
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8624
         [DllImport("user32.dll")]
         public static extern int ValidateRgn(
             HWND hWnd,
             HRGN hRgn
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8632
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8632
         [DllImport("user32.dll")]
         public static extern int RedrawWindow(
             HWND hWnd,
@@ -3388,13 +3388,13 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8672
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8672
         [DllImport("user32.dll")]
         public static extern int LockWindowUpdate(
             HWND hWndLock
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8678
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8678
         [DllImport("user32.dll")]
         public static extern int ScrollWindow(
             HWND hWnd,
@@ -3404,7 +3404,7 @@ namespace NWindowsKits
             ref RECT lpClipRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8688
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8688
         [DllImport("user32.dll")]
         public static extern int ScrollDC(
             HDC hDC,
@@ -3416,7 +3416,7 @@ namespace NWindowsKits
             ref RECT lprcUpdate
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8700
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8700
         [DllImport("user32.dll")]
         public static extern int ScrollWindowEx(
             HWND hWnd,
@@ -3429,7 +3429,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8728
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8728
         [DllImport("user32.dll")]
         public static extern int SetScrollPos(
             HWND hWnd,
@@ -3438,14 +3438,14 @@ namespace NWindowsKits
             int bRedraw
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8737
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8737
         [DllImport("user32.dll")]
         public static extern int GetScrollPos(
             HWND hWnd,
             int nBar
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8744
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8744
         [DllImport("user32.dll")]
         public static extern int SetScrollRange(
             HWND hWnd,
@@ -3455,7 +3455,7 @@ namespace NWindowsKits
             int bRedraw
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8754
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8754
         [DllImport("user32.dll")]
         public static extern int GetScrollRange(
             HWND hWnd,
@@ -3464,7 +3464,7 @@ namespace NWindowsKits
             ref int lpMaxPos
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8763
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8763
         [DllImport("user32.dll")]
         public static extern int ShowScrollBar(
             HWND hWnd,
@@ -3472,7 +3472,7 @@ namespace NWindowsKits
             int bShow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8771
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8771
         [DllImport("user32.dll")]
         public static extern int EnableScrollBar(
             HWND hWnd,
@@ -3480,7 +3480,7 @@ namespace NWindowsKits
             uint wArrows
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8799
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8799
         [DllImport("user32.dll")]
         public static extern int SetPropA(
             HWND hWnd,
@@ -3488,7 +3488,7 @@ namespace NWindowsKits
             IntPtr hData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8806
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8806
         [DllImport("user32.dll")]
         public static extern int SetPropW(
             HWND hWnd,
@@ -3496,35 +3496,35 @@ namespace NWindowsKits
             IntPtr hData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8819
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8819
         [DllImport("user32.dll")]
         public static extern IntPtr GetPropA(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8825
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8825
         [DllImport("user32.dll")]
         public static extern IntPtr GetPropW(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8837
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8837
         [DllImport("user32.dll")]
         public static extern IntPtr RemovePropA(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8843
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8843
         [DllImport("user32.dll")]
         public static extern IntPtr RemovePropW(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8855
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8855
         [DllImport("user32.dll")]
         public static extern int EnumPropsExA(
             HWND hWnd,
@@ -3532,7 +3532,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:125
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:125
         [DllImport("user32.dll")]
         public static extern int PROPENUMPROCEXA(
             HWND __param__0,
@@ -3541,7 +3541,7 @@ namespace NWindowsKits
             ulong __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8862
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8862
         [DllImport("user32.dll")]
         public static extern int EnumPropsExW(
             HWND hWnd,
@@ -3549,7 +3549,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:126
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:126
         [DllImport("user32.dll")]
         public static extern int PROPENUMPROCEXW(
             HWND __param__0,
@@ -3558,14 +3558,14 @@ namespace NWindowsKits
             ulong __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8875
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8875
         [DllImport("user32.dll")]
         public static extern int EnumPropsA(
             HWND hWnd,
             PROPENUMPROCA lpEnumFunc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:122
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:122
         [DllImport("user32.dll")]
         public static extern int PROPENUMPROCA(
             HWND __param__0,
@@ -3573,14 +3573,14 @@ namespace NWindowsKits
             IntPtr __param__2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8881
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8881
         [DllImport("user32.dll")]
         public static extern int EnumPropsW(
             HWND hWnd,
             PROPENUMPROCW lpEnumFunc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:123
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:123
         [DllImport("user32.dll")]
         public static extern int PROPENUMPROCW(
             HWND __param__0,
@@ -3588,21 +3588,21 @@ namespace NWindowsKits
             IntPtr __param__2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8893
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8893
         [DllImport("user32.dll")]
         public static extern int SetWindowTextA(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8899
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8899
         [DllImport("user32.dll")]
         public static extern int SetWindowTextW(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPWStr)] string lpString
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8912
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8912
         [DllImport("user32.dll")]
         public static extern int GetWindowTextA(
             HWND hWnd,
@@ -3610,7 +3610,7 @@ namespace NWindowsKits
             int nMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8920
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8920
         [DllImport("user32.dll")]
         public static extern int GetWindowTextW(
             HWND hWnd,
@@ -3618,33 +3618,33 @@ namespace NWindowsKits
             int nMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8933
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8933
         [DllImport("user32.dll")]
         public static extern int GetWindowTextLengthA(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8938
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8938
         [DllImport("user32.dll")]
         public static extern int GetWindowTextLengthW(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8955
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8955
         [DllImport("user32.dll")]
         public static extern int GetClientRect(
             HWND hWnd,
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8968
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8968
         [DllImport("user32.dll")]
         public static extern int GetWindowRect(
             HWND hWnd,
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8981
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8981
         [DllImport("user32.dll")]
         public static extern int AdjustWindowRect(
             ref RECT lpRect,
@@ -3652,7 +3652,7 @@ namespace NWindowsKits
             int bMenu
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8989
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8989
         [DllImport("user32.dll")]
         public static extern int AdjustWindowRectEx(
             ref RECT lpRect,
@@ -3661,7 +3661,7 @@ namespace NWindowsKits
             uint dwExStyle
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9005
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9005
         [DllImport("user32.dll")]
         public static extern int AdjustWindowRectExForDpi(
             ref RECT lpRect,
@@ -3671,33 +3671,33 @@ namespace NWindowsKits
             uint dpi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9037
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9037
         [DllImport("user32.dll")]
         public static extern int SetWindowContextHelpId(
             HWND __param__0,
             uint __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9044
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9044
         [DllImport("user32.dll")]
         public static extern uint GetWindowContextHelpId(
             HWND __param__0
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9050
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9050
         [DllImport("user32.dll")]
         public static extern int SetMenuContextHelpId(
             HMENU __param__0,
             uint __param__1
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9057
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9057
         [DllImport("user32.dll")]
         public static extern uint GetMenuContextHelpId(
             HMENU __param__0
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9142
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9142
         [DllImport("user32.dll")]
         public static extern int MessageBoxA(
             HWND hWnd,
@@ -3706,7 +3706,7 @@ namespace NWindowsKits
             uint uType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9150
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9150
         [DllImport("user32.dll")]
         public static extern int MessageBoxW(
             HWND hWnd,
@@ -3715,7 +3715,7 @@ namespace NWindowsKits
             uint uType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9188
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9188
         [DllImport("user32.dll")]
         public static extern int MessageBoxExA(
             HWND hWnd,
@@ -3725,7 +3725,7 @@ namespace NWindowsKits
             ushort wLanguageId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9197
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9197
         [DllImport("user32.dll")]
         public static extern int MessageBoxExW(
             HWND hWnd,
@@ -3735,80 +3735,80 @@ namespace NWindowsKits
             ushort wLanguageId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9252
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9252
         [DllImport("user32.dll")]
         public static extern int MessageBoxIndirectA(
             ref MSGBOXPARAMSA lpmbp
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9214
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9214
         [DllImport("user32.dll")]
         public static extern void MSGBOXCALLBACK(
             ref tagHELPINFO lpHelpInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9257
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9257
         [DllImport("user32.dll")]
         public static extern int MessageBoxIndirectW(
             ref MSGBOXPARAMSW lpmbp
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9277
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9277
         [DllImport("user32.dll")]
         public static extern int MessageBeep(
             uint uType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9298
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9298
         [DllImport("user32.dll")]
         public static extern int ShowCursor(
             int bShow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9310
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9310
         [DllImport("user32.dll")]
         public static extern int SetCursorPos(
             int X,
             int Y
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9318
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9318
         [DllImport("user32.dll")]
         public static extern int SetPhysicalCursorPos(
             int X,
             int Y
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9332
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9332
         [DllImport("user32.dll")]
         public static extern HCURSOR SetCursor(
             HCURSOR hCursor
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9338
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9338
         [DllImport("user32.dll")]
         public static extern int GetCursorPos(
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9351
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9351
         [DllImport("user32.dll")]
         public static extern int GetPhysicalCursorPos(
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9359
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9359
         [DllImport("user32.dll")]
         public static extern int GetClipCursor(
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9365
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9365
         [DllImport("user32.dll")]
         public static extern HCURSOR GetCursor(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9371
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9371
         [DllImport("user32.dll")]
         public static extern int CreateCaret(
             HWND hWnd,
@@ -3817,90 +3817,90 @@ namespace NWindowsKits
             int nHeight
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9380
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9380
         [DllImport("user32.dll")]
         public static extern uint GetCaretBlinkTime(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9386
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9386
         [DllImport("user32.dll")]
         public static extern int SetCaretBlinkTime(
             uint uMSeconds
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9392
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9392
         [DllImport("user32.dll")]
         public static extern int DestroyCaret(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9398
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9398
         [DllImport("user32.dll")]
         public static extern int HideCaret(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9404
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9404
         [DllImport("user32.dll")]
         public static extern int ShowCaret(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9410
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9410
         [DllImport("user32.dll")]
         public static extern int SetCaretPos(
             int X,
             int Y
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9417
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9417
         [DllImport("user32.dll")]
         public static extern int GetCaretPos(
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9423
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9423
         [DllImport("user32.dll")]
         public static extern int ClientToScreen(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9430
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9430
         [DllImport("user32.dll")]
         public static extern int ScreenToClient(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9438
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9438
         [DllImport("user32.dll")]
         public static extern int LogicalToPhysicalPoint(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9445
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9445
         [DllImport("user32.dll")]
         public static extern int PhysicalToLogicalPoint(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9455
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9455
         [DllImport("user32.dll")]
         public static extern int LogicalToPhysicalPointForPerMonitorDPI(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9462
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9462
         [DllImport("user32.dll")]
         public static extern int PhysicalToLogicalPointForPerMonitorDPI(
             HWND hWnd,
             ref POINT lpPoint
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9471
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9471
         [DllImport("user32.dll")]
         public static extern int MapWindowPoints(
             HWND hWndFrom,
@@ -3909,32 +3909,32 @@ namespace NWindowsKits
             uint cPoints
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9480
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9480
         [DllImport("user32.dll")]
         public static extern HWND WindowFromPoint(
             POINT Point
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9487
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9487
         [DllImport("user32.dll")]
         public static extern HWND WindowFromPhysicalPoint(
             POINT Point
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9494
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9494
         [DllImport("user32.dll")]
         public static extern HWND ChildWindowFromPoint(
             HWND hWndParent,
             POINT Point
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9506
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9506
         [DllImport("user32.dll")]
         public static extern int ClipCursor(
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9523
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9523
         [DllImport("user32.dll")]
         public static extern HWND ChildWindowFromPointEx(
             HWND hwnd,
@@ -3942,19 +3942,19 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9602
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9602
         [DllImport("user32.dll")]
         public static extern uint GetSysColor(
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9609
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9609
         [DllImport("user32.dll")]
         public static extern HBRUSH GetSysColorBrush(
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9618
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9618
         [DllImport("user32.dll")]
         public static extern int SetSysColors(
             int cElements,
@@ -3962,14 +3962,14 @@ namespace NWindowsKits
             IntPtr lpaRgbValues
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9634
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9634
         [DllImport("user32.dll")]
         public static extern int DrawFocusRect(
             HDC hDC,
             ref RECT lprc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9641
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9641
         [DllImport("user32.dll")]
         public static extern int FillRect(
             HDC hDC,
@@ -3977,7 +3977,7 @@ namespace NWindowsKits
             HBRUSH hbr
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9649
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9649
         [DllImport("user32.dll")]
         public static extern int FrameRect(
             HDC hDC,
@@ -3985,14 +3985,14 @@ namespace NWindowsKits
             HBRUSH hbr
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9657
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9657
         [DllImport("user32.dll")]
         public static extern int InvertRect(
             HDC hDC,
             ref RECT lprc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9664
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9664
         [DllImport("user32.dll")]
         public static extern int SetRect(
             ref RECT lprc,
@@ -4002,20 +4002,20 @@ namespace NWindowsKits
             int yBottom
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9674
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9674
         [DllImport("user32.dll")]
         public static extern int SetRectEmpty(
             ref RECT lprc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9680
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9680
         [DllImport("user32.dll")]
         public static extern int CopyRect(
             ref RECT lprcDst,
             ref RECT lprcSrc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9687
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9687
         [DllImport("user32.dll")]
         public static extern int InflateRect(
             ref RECT lprc,
@@ -4023,7 +4023,7 @@ namespace NWindowsKits
             int dy
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9695
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9695
         [DllImport("user32.dll")]
         public static extern int IntersectRect(
             ref RECT lprcDst,
@@ -4031,7 +4031,7 @@ namespace NWindowsKits
             ref RECT lprcSrc2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9703
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9703
         [DllImport("user32.dll")]
         public static extern int UnionRect(
             ref RECT lprcDst,
@@ -4039,7 +4039,7 @@ namespace NWindowsKits
             ref RECT lprcSrc2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9711
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9711
         [DllImport("user32.dll")]
         public static extern int SubtractRect(
             ref RECT lprcDst,
@@ -4047,7 +4047,7 @@ namespace NWindowsKits
             ref RECT lprcSrc2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9719
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9719
         [DllImport("user32.dll")]
         public static extern int OffsetRect(
             ref RECT lprc,
@@ -4055,34 +4055,34 @@ namespace NWindowsKits
             int dy
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9727
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9727
         [DllImport("user32.dll")]
         public static extern int IsRectEmpty(
             ref RECT lprc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9733
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9733
         [DllImport("user32.dll")]
         public static extern int EqualRect(
             ref RECT lprc1,
             ref RECT lprc2
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9740
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9740
         [DllImport("user32.dll")]
         public static extern int PtInRect(
             ref RECT lprc,
             POINT pt
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9749
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9749
         [DllImport("user32.dll")]
         public static extern ushort GetWindowWord(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9756
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9756
         [DllImport("user32.dll")]
         public static extern ushort SetWindowWord(
             HWND hWnd,
@@ -4090,21 +4090,21 @@ namespace NWindowsKits
             ushort wNewWord
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9774
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9774
         [DllImport("user32.dll")]
         public static extern int GetWindowLongA(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9780
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9780
         [DllImport("user32.dll")]
         public static extern int GetWindowLongW(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9792
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9792
         [DllImport("user32.dll")]
         public static extern int SetWindowLongA(
             HWND hWnd,
@@ -4112,7 +4112,7 @@ namespace NWindowsKits
             int dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9799
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9799
         [DllImport("user32.dll")]
         public static extern int SetWindowLongW(
             HWND hWnd,
@@ -4120,21 +4120,21 @@ namespace NWindowsKits
             int dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9814
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9814
         [DllImport("user32.dll")]
         public static extern long GetWindowLongPtrA(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9820
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9820
         [DllImport("user32.dll")]
         public static extern long GetWindowLongPtrW(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9832
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9832
         [DllImport("user32.dll")]
         public static extern long SetWindowLongPtrA(
             HWND hWnd,
@@ -4142,7 +4142,7 @@ namespace NWindowsKits
             long dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9839
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9839
         [DllImport("user32.dll")]
         public static extern long SetWindowLongPtrW(
             HWND hWnd,
@@ -4150,14 +4150,14 @@ namespace NWindowsKits
             long dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9882
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9882
         [DllImport("user32.dll")]
         public static extern ushort GetClassWord(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9889
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9889
         [DllImport("user32.dll")]
         public static extern ushort SetClassWord(
             HWND hWnd,
@@ -4165,21 +4165,21 @@ namespace NWindowsKits
             ushort wNewWord
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9897
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9897
         [DllImport("user32.dll")]
         public static extern uint GetClassLongA(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9903
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9903
         [DllImport("user32.dll")]
         public static extern uint GetClassLongW(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9915
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9915
         [DllImport("user32.dll")]
         public static extern uint SetClassLongA(
             HWND hWnd,
@@ -4187,7 +4187,7 @@ namespace NWindowsKits
             int dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9922
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9922
         [DllImport("user32.dll")]
         public static extern uint SetClassLongW(
             HWND hWnd,
@@ -4195,21 +4195,21 @@ namespace NWindowsKits
             int dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9937
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9937
         [DllImport("user32.dll")]
         public static extern ulong GetClassLongPtrA(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9943
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9943
         [DllImport("user32.dll")]
         public static extern ulong GetClassLongPtrW(
             HWND hWnd,
             int nIndex
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9955
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9955
         [DllImport("user32.dll")]
         public static extern ulong SetClassLongPtrA(
             HWND hWnd,
@@ -4217,7 +4217,7 @@ namespace NWindowsKits
             long dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9962
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9962
         [DllImport("user32.dll")]
         public static extern ulong SetClassLongPtrW(
             HWND hWnd,
@@ -4225,37 +4225,37 @@ namespace NWindowsKits
             long dwNewLong
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9998
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9998
         [DllImport("user32.dll")]
         public static extern int GetProcessDefaultLayout(
             IntPtr pdwDefaultLayout
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10004
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10004
         [DllImport("user32.dll")]
         public static extern int SetProcessDefaultLayout(
             uint dwDefaultLayout
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10011
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10011
         [DllImport("user32.dll")]
         public static extern HWND GetDesktopWindow(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10018
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10018
         [DllImport("user32.dll")]
         public static extern HWND GetParent(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10024
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10024
         [DllImport("user32.dll")]
         public static extern HWND SetParent(
             HWND hWndChild,
             HWND hWndNewParent
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10031
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10031
         [DllImport("user32.dll")]
         public static extern int EnumChildWindows(
             HWND hWndParent,
@@ -4263,21 +4263,21 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10040
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10040
         [DllImport("user32.dll")]
         public static extern HWND FindWindowA(
             [MarshalAs(UnmanagedType.LPStr)] string lpClassName,
             [MarshalAs(UnmanagedType.LPStr)] string lpWindowName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10046
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10046
         [DllImport("user32.dll")]
         public static extern HWND FindWindowW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
             [MarshalAs(UnmanagedType.LPWStr)] string lpWindowName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10059
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10059
         [DllImport("user32.dll")]
         public static extern HWND FindWindowExA(
             HWND hWndParent,
@@ -4286,7 +4286,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpszWindow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10067
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10067
         [DllImport("user32.dll")]
         public static extern HWND FindWindowExW(
             HWND hWndParent,
@@ -4295,31 +4295,31 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpszWindow
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10081
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10081
         [DllImport("user32.dll")]
         public static extern HWND GetShellWindow(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10090
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10090
         [DllImport("user32.dll")]
         public static extern int RegisterShellHookWindow(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10096
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10096
         [DllImport("user32.dll")]
         public static extern int DeregisterShellHookWindow(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10102
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10102
         [DllImport("user32.dll")]
         public static extern int EnumWindows(
             WNDENUMPROC lpEnumFunc,
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10109
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10109
         [DllImport("user32.dll")]
         public static extern int EnumThreadWindows(
             uint dwThreadId,
@@ -4327,7 +4327,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10126
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10126
         [DllImport("user32.dll")]
         public static extern int GetClassNameA(
             HWND hWnd,
@@ -4335,7 +4335,7 @@ namespace NWindowsKits
             int nMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10134
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10134
         [DllImport("user32.dll")]
         public static extern int GetClassNameW(
             HWND hWnd,
@@ -4343,46 +4343,46 @@ namespace NWindowsKits
             int nMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10176
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10176
         [DllImport("user32.dll")]
         public static extern HWND GetTopWindow(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10186
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10186
         [DllImport("user32.dll")]
         public static extern uint GetWindowThreadProcessId(
             HWND hWnd,
             IntPtr lpdwProcessId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10195
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10195
         [DllImport("user32.dll")]
         public static extern int IsGUIThread(
             int bConvert
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10207
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10207
         [DllImport("user32.dll")]
         public static extern HWND GetLastActivePopup(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10229
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10229
         [DllImport("user32.dll")]
         public static extern HWND GetWindow(
             HWND hWnd,
             uint uCmd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10241
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10241
         [DllImport("user32.dll")]
         public static extern HHOOK SetWindowsHookA(
             int nFilterType,
             HOOKPROC pfnFilterProc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:119
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:119
         [DllImport("user32.dll")]
         public static extern long HOOKPROC(
             int code,
@@ -4390,21 +4390,21 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10247
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10247
         [DllImport("user32.dll")]
         public static extern HHOOK SetWindowsHookW(
             int nFilterType,
             HOOKPROC pfnFilterProc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10281
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10281
         [DllImport("user32.dll")]
         public static extern int UnhookWindowsHook(
             int nCode,
             HOOKPROC pfnFilterProc
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10288
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10288
         [DllImport("user32.dll")]
         public static extern HHOOK SetWindowsHookExA(
             int idHook,
@@ -4413,7 +4413,7 @@ namespace NWindowsKits
             uint dwThreadId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10296
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10296
         [DllImport("user32.dll")]
         public static extern HHOOK SetWindowsHookExW(
             int idHook,
@@ -4422,13 +4422,13 @@ namespace NWindowsKits
             uint dwThreadId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10310
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10310
         [DllImport("user32.dll")]
         public static extern int UnhookWindowsHookEx(
             HHOOK hhk
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10316
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10316
         [DllImport("user32.dll")]
         public static extern long CallNextHookEx(
             HHOOK hhk,
@@ -4437,7 +4437,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10420
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10420
         [DllImport("user32.dll")]
         public static extern int CheckMenuRadioItem(
             HMENU hmenu,
@@ -4447,47 +4447,47 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10500
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10500
         [DllImport("user32.dll")]
         public static extern HBITMAP LoadBitmapA(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpBitmapName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10506
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10506
         [DllImport("user32.dll")]
         public static extern HBITMAP LoadBitmapW(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpBitmapName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10524
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10524
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorA(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpCursorName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10530
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10530
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorW(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpCursorName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10548
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10548
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorFromFileA(
             [MarshalAs(UnmanagedType.LPStr)] string lpFileName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10553
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10553
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadCursorFromFileW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpFileName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10570
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10570
         [DllImport("user32.dll")]
         public static extern HCURSOR CreateCursor(
             HMODULE hInst,
@@ -4499,34 +4499,34 @@ namespace NWindowsKits
             IntPtr pvXORPlane
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10582
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10582
         [DllImport("user32.dll")]
         public static extern int DestroyCursor(
             HCURSOR hCursor
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10639
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10639
         [DllImport("user32.dll")]
         public static extern int SetSystemCursor(
             HCURSOR hcur,
             uint id
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10655
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10655
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadIconA(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpIconName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10661
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10661
         [DllImport("user32.dll")]
         public static extern HCURSOR LoadIconW(
             HMODULE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpIconName
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10674
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10674
         [DllImport("user32.dll")]
         public static extern uint PrivateExtractIconsA(
             [MarshalAs(UnmanagedType.LPStr)] string szFileName,
@@ -4539,7 +4539,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10686
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10686
         [DllImport("user32.dll")]
         public static extern uint PrivateExtractIconsW(
             [MarshalAs(UnmanagedType.LPWStr)] string szFileName,
@@ -4552,7 +4552,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10704
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10704
         [DllImport("user32.dll")]
         public static extern HCURSOR CreateIcon(
             HMODULE hInstance,
@@ -4564,20 +4564,20 @@ namespace NWindowsKits
             IntPtr lpbXORbits
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10716
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10716
         [DllImport("user32.dll")]
         public static extern int DestroyIcon(
             HCURSOR hIcon
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10722
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10722
         [DllImport("user32.dll")]
         public static extern int LookupIconIdFromDirectory(
             IntPtr presbits,
             int fIcon
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10730
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10730
         [DllImport("user32.dll")]
         public static extern int LookupIconIdFromDirectoryEx(
             IntPtr presbits,
@@ -4587,7 +4587,7 @@ namespace NWindowsKits
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10741
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10741
         [DllImport("user32.dll")]
         public static extern HCURSOR CreateIconFromResource(
             IntPtr presbits,
@@ -4596,7 +4596,7 @@ namespace NWindowsKits
             uint dwVer
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10751
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10751
         [DllImport("user32.dll")]
         public static extern HCURSOR CreateIconFromResourceEx(
             IntPtr presbits,
@@ -4608,7 +4608,7 @@ namespace NWindowsKits
             uint Flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10802
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10802
         [DllImport("user32.dll")]
         public static extern IntPtr LoadImageA(
             HMODULE hInst,
@@ -4619,7 +4619,7 @@ namespace NWindowsKits
             uint fuLoad
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10812
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10812
         [DllImport("user32.dll")]
         public static extern IntPtr LoadImageW(
             HMODULE hInst,
@@ -4630,7 +4630,7 @@ namespace NWindowsKits
             uint fuLoad
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10828
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10828
         [DllImport("user32.dll")]
         public static extern IntPtr CopyImage(
             IntPtr h,
@@ -4640,7 +4640,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10847
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10847
         [DllImport("user32.dll")]
         public static extern int DrawIconEx(
             HDC hdc,
@@ -4654,61 +4654,61 @@ namespace NWindowsKits
             uint diFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10866
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10866
         [DllImport("user32.dll")]
         public static extern HCURSOR CreateIconIndirect(
             ref ICONINFO piconinfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10872
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10872
         [DllImport("user32.dll")]
         public static extern HCURSOR CopyIcon(
             HCURSOR hIcon
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10878
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10878
         [DllImport("user32.dll")]
         public static extern int GetIconInfo(
             HCURSOR hIcon,
             ref ICONINFO piconinfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10916
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10916
         [DllImport("user32.dll")]
         public static extern int GetIconInfoExA(
             HCURSOR hicon,
             ref _ICONINFOEXA piconinfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10922
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10922
         [DllImport("user32.dll")]
         public static extern int GetIconInfoExW(
             HCURSOR hicon,
             ref _ICONINFOEXW piconinfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11449
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11449
         [DllImport("user32.dll")]
         public static extern int IsDialogMessageA(
             HWND hDlg,
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11455
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11455
         [DllImport("user32.dll")]
         public static extern int IsDialogMessageW(
             HWND hDlg,
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11469
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11469
         [DllImport("user32.dll")]
         public static extern int MapDialogRect(
             HWND hDlg,
             ref RECT lpRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11476
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11476
         [DllImport("user32.dll")]
         public static extern int DlgDirListA(
             HWND hDlg,
@@ -4718,7 +4718,7 @@ namespace NWindowsKits
             uint uFileType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11485
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11485
         [DllImport("user32.dll")]
         public static extern int DlgDirListW(
             HWND hDlg,
@@ -4728,7 +4728,7 @@ namespace NWindowsKits
             uint uFileType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11520
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11520
         [DllImport("user32.dll")]
         public static extern int DlgDirSelectExA(
             HWND hwndDlg,
@@ -4737,7 +4737,7 @@ namespace NWindowsKits
             int idListBox
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11528
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11528
         [DllImport("user32.dll")]
         public static extern int DlgDirSelectExW(
             HWND hwndDlg,
@@ -4746,7 +4746,7 @@ namespace NWindowsKits
             int idListBox
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11542
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11542
         [DllImport("user32.dll")]
         public static extern int DlgDirListComboBoxA(
             HWND hDlg,
@@ -4756,7 +4756,7 @@ namespace NWindowsKits
             uint uFiletype
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11551
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11551
         [DllImport("user32.dll")]
         public static extern int DlgDirListComboBoxW(
             HWND hDlg,
@@ -4766,7 +4766,7 @@ namespace NWindowsKits
             uint uFiletype
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11566
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11566
         [DllImport("user32.dll")]
         public static extern int DlgDirSelectComboBoxExA(
             HWND hwndDlg,
@@ -4775,7 +4775,7 @@ namespace NWindowsKits
             int idComboBox
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11574
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11574
         [DllImport("user32.dll")]
         public static extern int DlgDirSelectComboBoxExW(
             HWND hwndDlg,
@@ -4784,7 +4784,7 @@ namespace NWindowsKits
             int idComboBox
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11948
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11948
         [DllImport("user32.dll")]
         public static extern int SetScrollInfo(
             HWND hwnd,
@@ -4793,7 +4793,7 @@ namespace NWindowsKits
             int redraw
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:11957
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11957
         [DllImport("user32.dll")]
         public static extern int GetScrollInfo(
             HWND hwnd,
@@ -4801,7 +4801,7 @@ namespace NWindowsKits
             ref SCROLLINFO lpsi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12028
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12028
         [DllImport("user32.dll")]
         public static extern long DefFrameProcA(
             HWND hWnd,
@@ -4811,7 +4811,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12037
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12037
         [DllImport("user32.dll")]
         public static extern long DefFrameProcW(
             HWND hWnd,
@@ -4821,7 +4821,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12052
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12052
         [DllImport("user32.dll")]
         public static extern long DefMDIChildProcA(
             HWND hWnd,
@@ -4830,7 +4830,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12065
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12065
         [DllImport("user32.dll")]
         public static extern long DefMDIChildProcW(
             HWND hWnd,
@@ -4839,20 +4839,20 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12086
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12086
         [DllImport("user32.dll")]
         public static extern int TranslateMDISysAccel(
             HWND hWndClient,
             ref MSG lpMsg
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12095
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12095
         [DllImport("user32.dll")]
         public static extern uint ArrangeIconicWindows(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12101
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12101
         [DllImport("user32.dll")]
         public static extern HWND CreateMDIWindowA(
             [MarshalAs(UnmanagedType.LPStr)] string lpClassName,
@@ -4867,7 +4867,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12115
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12115
         [DllImport("user32.dll")]
         public static extern HWND CreateMDIWindowW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
@@ -4882,7 +4882,7 @@ namespace NWindowsKits
             long lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12136
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12136
         [DllImport("user32.dll")]
         public static extern ushort TileWindows(
             HWND hwndParent,
@@ -4892,7 +4892,7 @@ namespace NWindowsKits
             ref HWND lpKids
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12146
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12146
         [DllImport("user32.dll")]
         public static extern ushort CascadeWindows(
             HWND hwndParent,
@@ -4902,7 +4902,7 @@ namespace NWindowsKits
             ref HWND lpKids
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12268
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12268
         [DllImport("user32.dll")]
         public static extern int WinHelpA(
             HWND hWndMain,
@@ -4911,7 +4911,7 @@ namespace NWindowsKits
             ulong dwData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12276
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12276
         [DllImport("user32.dll")]
         public static extern int WinHelpW(
             HWND hWndMain,
@@ -4920,28 +4920,28 @@ namespace NWindowsKits
             ulong dwData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12313
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12313
         [DllImport("user32.dll")]
         public static extern uint GetGuiResources(
             IntPtr hProcess,
             uint uiFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12962
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12962
         [DllImport("user32.dll")]
         public static extern int ChangeDisplaySettingsA(
             ref DEVMODEA lpDevMode,
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12968
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12968
         [DllImport("user32.dll")]
         public static extern int ChangeDisplaySettingsW(
             ref DEVMODEW lpDevMode,
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12980
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12980
         [DllImport("user32.dll")]
         public static extern int ChangeDisplaySettingsExA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDeviceName,
@@ -4951,7 +4951,7 @@ namespace NWindowsKits
             IntPtr lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:12989
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12989
         [DllImport("user32.dll")]
         public static extern int ChangeDisplaySettingsExW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
@@ -4961,7 +4961,7 @@ namespace NWindowsKits
             IntPtr lParam
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13008
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13008
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDeviceName,
@@ -4969,7 +4969,7 @@ namespace NWindowsKits
             ref DEVMODEA lpDevMode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13015
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13015
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
@@ -4977,7 +4977,7 @@ namespace NWindowsKits
             ref DEVMODEW lpDevMode
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13030
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13030
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsExA(
             [MarshalAs(UnmanagedType.LPStr)] string lpszDeviceName,
@@ -4986,7 +4986,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13038
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13038
         [DllImport("user32.dll")]
         public static extern int EnumDisplaySettingsExW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpszDeviceName,
@@ -4995,7 +4995,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13056
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13056
         [DllImport("user32.dll")]
         public static extern int EnumDisplayDevicesA(
             [MarshalAs(UnmanagedType.LPStr)] string lpDevice,
@@ -5004,7 +5004,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13064
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13064
         [DllImport("user32.dll")]
         public static extern int EnumDisplayDevicesW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpDevice,
@@ -5013,7 +5013,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13085
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13085
         [DllImport("user32.dll")]
         public static extern int GetDisplayConfigBufferSizes(
             uint flags,
@@ -5021,7 +5021,7 @@ namespace NWindowsKits
             IntPtr numModeInfoArrayElements
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13093
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13093
         [DllImport("user32.dll")]
         public static extern int SetDisplayConfig(
             uint numPathArrayElements,
@@ -5031,7 +5031,7 @@ namespace NWindowsKits
             uint flags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13103
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13103
         [DllImport("user32.dll")]
         public static extern int QueryDisplayConfig(
             uint flags,
@@ -5042,19 +5042,19 @@ namespace NWindowsKits
             IntPtr currentTopologyId
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13116
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13116
         [DllImport("user32.dll")]
         public static extern int DisplayConfigGetDeviceInfo(
             ref DISPLAYCONFIG_DEVICE_INFO_HEADER requestPacket
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13122
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13122
         [DllImport("user32.dll")]
         public static extern int DisplayConfigSetDeviceInfo(
             ref DISPLAYCONFIG_DEVICE_INFO_HEADER setPacket
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13135
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13135
         [DllImport("user32.dll")]
         public static extern int SystemParametersInfoA(
             uint uiAction,
@@ -5063,7 +5063,7 @@ namespace NWindowsKits
             uint fWinIni
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13144
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13144
         [DllImport("user32.dll")]
         public static extern int SystemParametersInfoW(
             uint uiAction,
@@ -5072,7 +5072,7 @@ namespace NWindowsKits
             uint fWinIni
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13161
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13161
         [DllImport("user32.dll")]
         public static extern int SystemParametersInfoForDpi(
             uint uiAction,
@@ -5082,25 +5082,25 @@ namespace NWindowsKits
             uint dpi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13378
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13378
         [DllImport("user32.dll")]
         public static extern int SoundSentry(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13423
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13423
         [DllImport("user32.dll")]
         public static extern void SetDebugErrorLevel(
             uint dwLevel
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13443
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13443
         [DllImport("user32.dll")]
         public static extern void SetLastErrorEx(
             uint dwErrCode,
             uint dwType
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13450
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13450
         [DllImport("user32.dll")]
         public static extern int InternalGetWindowText(
             HWND hWnd,
@@ -5108,47 +5108,47 @@ namespace NWindowsKits
             int cchMaxCount
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13469
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13469
         [DllImport("user32.dll")]
         public static extern int CancelShutdown(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13492
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13492
         [DllImport("user32.dll")]
         public static extern HMONITOR MonitorFromPoint(
             POINT pt,
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13499
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13499
         [DllImport("user32.dll")]
         public static extern HMONITOR MonitorFromRect(
             ref RECT lprc,
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13506
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13506
         [DllImport("user32.dll")]
         public static extern HMONITOR MonitorFromWindow(
             HWND hwnd,
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13569
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13569
         [DllImport("user32.dll")]
         public static extern int GetMonitorInfoA(
             HMONITOR hMonitor,
             ref tagMONITORINFO lpmi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13575
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13575
         [DllImport("user32.dll")]
         public static extern int GetMonitorInfoW(
             HMONITOR hMonitor,
             ref tagMONITORINFO lpmi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13589
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13589
         [DllImport("user32.dll")]
         public static extern int EnumDisplayMonitors(
             HDC hdc,
@@ -5157,7 +5157,7 @@ namespace NWindowsKits
             long dwData
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13587
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13587
         [DllImport("user32.dll")]
         public static extern int MONITORENUMPROC(
             HMONITOR __param__0,
@@ -5166,7 +5166,7 @@ namespace NWindowsKits
             long __param__3
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13611
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13611
         [DllImport("user32.dll")]
         public static extern void NotifyWinEvent(
             uint _event,
@@ -5175,7 +5175,7 @@ namespace NWindowsKits
             int idChild
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13629
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13629
         [DllImport("user32.dll")]
         public static extern HWINEVENTHOOK SetWinEventHook(
             uint eventMin,
@@ -5187,7 +5187,7 @@ namespace NWindowsKits
             uint dwFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13620
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13620
         [DllImport("user32.dll")]
         public static extern void WINEVENTPROC(
             HWINEVENTHOOK hWinEventHook,
@@ -5199,143 +5199,143 @@ namespace NWindowsKits
             uint dwmsEventTime
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13642
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13642
         [DllImport("user32.dll")]
         public static extern int IsWinEventHookInstalled(
             uint _event
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13663
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13663
         [DllImport("user32.dll")]
         public static extern int UnhookWinEvent(
             HWINEVENTHOOK hWinEventHook
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14313
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14313
         [DllImport("user32.dll")]
         public static extern int GetGUIThreadInfo(
             uint idThread,
             ref tagGUITHREADINFO pgui
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14320
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14320
         [DllImport("user32.dll")]
         public static extern int BlockInput(
             int fBlockIt
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14330
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14330
         [DllImport("user32.dll")]
         public static extern int SetProcessDPIAware(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14336
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14336
         [DllImport("user32.dll")]
         public static extern int IsProcessDPIAware(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14345
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14345
         [DllImport("user32.dll")]
         public static extern DPI_AWARENESS_CONTEXT SetThreadDpiAwarenessContext(
             DPI_AWARENESS_CONTEXT dpiContext
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14351
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14351
         [DllImport("user32.dll")]
         public static extern DPI_AWARENESS_CONTEXT GetThreadDpiAwarenessContext(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14357
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14357
         [DllImport("user32.dll")]
         public static extern DPI_AWARENESS_CONTEXT GetWindowDpiAwarenessContext(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14363
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14363
         [DllImport("user32.dll")]
         public static extern DPI_AWARENESS GetAwarenessFromDpiAwarenessContext(
             DPI_AWARENESS_CONTEXT value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14369
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14369
         [DllImport("user32.dll")]
         public static extern uint GetDpiFromDpiAwarenessContext(
             DPI_AWARENESS_CONTEXT value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14375
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14375
         [DllImport("user32.dll")]
         public static extern int AreDpiAwarenessContextsEqual(
             DPI_AWARENESS_CONTEXT dpiContextA,
             DPI_AWARENESS_CONTEXT dpiContextB
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14382
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14382
         [DllImport("user32.dll")]
         public static extern int IsValidDpiAwarenessContext(
             DPI_AWARENESS_CONTEXT value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14388
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14388
         [DllImport("user32.dll")]
         public static extern uint GetDpiForWindow(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14394
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14394
         [DllImport("user32.dll")]
         public static extern uint GetDpiForSystem(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14400
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14400
         [DllImport("user32.dll")]
         public static extern uint GetSystemDpiForProcess(
             IntPtr hProcess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14406
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14406
         [DllImport("user32.dll")]
         public static extern int EnableNonClientDpiScaling(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14412
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14412
         [DllImport("user32.dll")]
         public static extern int InheritWindowMonitor(
             HWND hwnd,
             HWND hwndInherit
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14422
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14422
         [DllImport("user32.dll")]
         public static extern int SetProcessDpiAwarenessContext(
             DPI_AWARENESS_CONTEXT value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14432
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14432
         [DllImport("user32.dll")]
         public static extern DPI_AWARENESS_CONTEXT GetDpiAwarenessContextForProcess(
             IntPtr hProcess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14442
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14442
         [DllImport("user32.dll")]
         public static extern DPI_HOSTING_BEHAVIOR SetThreadDpiHostingBehavior(
             DPI_HOSTING_BEHAVIOR value
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14448
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14448
         [DllImport("user32.dll")]
         public static extern DPI_HOSTING_BEHAVIOR GetThreadDpiHostingBehavior(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14453
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14453
         [DllImport("user32.dll")]
         public static extern DPI_HOSTING_BEHAVIOR GetWindowDpiHostingBehavior(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14462
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14462
         [DllImport("user32.dll")]
         public static extern uint GetWindowModuleFileNameA(
             HWND hwnd,
@@ -5343,7 +5343,7 @@ namespace NWindowsKits
             uint cchFileNameMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14469
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14469
         [DllImport("user32.dll")]
         public static extern uint GetWindowModuleFileNameW(
             HWND hwnd,
@@ -5351,27 +5351,27 @@ namespace NWindowsKits
             uint cchFileNameMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14542
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14542
         [DllImport("user32.dll")]
         public static extern int GetCursorInfo(
             ref tagCURSORINFO pci
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14573
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14573
         [DllImport("user32.dll")]
         public static extern int GetWindowInfo(
             HWND hwnd,
             ref tagWINDOWINFO pwi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14590
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14590
         [DllImport("user32.dll")]
         public static extern int GetTitleBarInfo(
             HWND hwnd,
             ref tagTITLEBARINFO pti
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14620
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14620
         [DllImport("user32.dll")]
         public static extern int GetMenuBarInfo(
             HWND hwnd,
@@ -5380,7 +5380,7 @@ namespace NWindowsKits
             ref tagMENUBARINFO pmbi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14643
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14643
         [DllImport("user32.dll")]
         public static extern int GetScrollBarInfo(
             HWND hwnd,
@@ -5388,28 +5388,28 @@ namespace NWindowsKits
             ref tagSCROLLBARINFO psbi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14665
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14665
         [DllImport("user32.dll")]
         public static extern int GetComboBoxInfo(
             HWND hwndCombo,
             ref tagCOMBOBOXINFO pcbi
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14685
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14685
         [DllImport("user32.dll")]
         public static extern HWND GetAncestor(
             HWND hwnd,
             uint gaFlags
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14699
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14699
         [DllImport("user32.dll")]
         public static extern HWND RealChildWindowFromPoint(
             HWND hwndParent,
             POINT ptParentClientCoords
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14711
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14711
         [DllImport("user32.dll")]
         public static extern uint RealGetWindowClassA(
             HWND hwnd,
@@ -5417,7 +5417,7 @@ namespace NWindowsKits
             uint cchClassNameMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14722
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14722
         [DllImport("user32.dll")]
         public static extern uint RealGetWindowClassW(
             HWND hwnd,
@@ -5425,7 +5425,7 @@ namespace NWindowsKits
             uint cchClassNameMax
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14751
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14751
         [DllImport("user32.dll")]
         public static extern int GetAltTabInfoA(
             HWND hwnd,
@@ -5435,7 +5435,7 @@ namespace NWindowsKits
             uint cchItemText
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14760
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14760
         [DllImport("user32.dll")]
         public static extern int GetAltTabInfoW(
             HWND hwnd,
@@ -5445,18 +5445,18 @@ namespace NWindowsKits
             uint cchItemText
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14779
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14779
         [DllImport("user32.dll")]
         public static extern uint GetListBoxInfo(
             HWND hwnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14796
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14796
         [DllImport("user32.dll")]
         public static extern int LockWorkStation(
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:14805
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14805
         [DllImport("user32.dll")]
         public static extern int UserHandleGrantAccess(
             IntPtr hUserHandle,
@@ -5464,7 +5464,7 @@ namespace NWindowsKits
             int bGrant
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15085
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15085
         [DllImport("user32.dll")]
         public static extern uint GetRawInputData(
             HRAWINPUT hRawInput,
@@ -5474,7 +5474,7 @@ namespace NWindowsKits
             uint cbSizeHeader
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15146
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15146
         [DllImport("user32.dll")]
         public static extern uint GetRawInputDeviceInfoA(
             IntPtr hDevice,
@@ -5483,7 +5483,7 @@ namespace NWindowsKits
             ref uint pcbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15154
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15154
         [DllImport("user32.dll")]
         public static extern uint GetRawInputDeviceInfoW(
             IntPtr hDevice,
@@ -5492,7 +5492,7 @@ namespace NWindowsKits
             ref uint pcbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15172
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15172
         [DllImport("user32.dll")]
         public static extern uint GetRawInputBuffer(
             ref tagRAWINPUT pData,
@@ -5500,7 +5500,7 @@ namespace NWindowsKits
             uint cbSizeHeader
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15228
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15228
         [DllImport("user32.dll")]
         public static extern int RegisterRawInputDevices(
             ref RAWINPUTDEVICE pRawInputDevices,
@@ -5508,7 +5508,7 @@ namespace NWindowsKits
             uint cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15236
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15236
         [DllImport("user32.dll")]
         public static extern uint GetRegisteredRawInputDevices(
             ref RAWINPUTDEVICE pRawInputDevices,
@@ -5516,7 +5516,7 @@ namespace NWindowsKits
             uint cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15250
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15250
         [DllImport("user32.dll")]
         public static extern uint GetRawInputDeviceList(
             ref tagRAWINPUTDEVICELIST pRawInputDeviceList,
@@ -5524,7 +5524,7 @@ namespace NWindowsKits
             uint cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15258
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15258
         [DllImport("user32.dll")]
         public static extern long DefRawInputProc(
             ref IntPtr paRawInput,
@@ -5532,21 +5532,21 @@ namespace NWindowsKits
             uint cbSizeHeader
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15337
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15337
         [DllImport("user32.dll")]
         public static extern int GetPointerDevices(
             IntPtr deviceCount,
             ref POINTER_DEVICE_INFO pointerDevices
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15344
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15344
         [DllImport("user32.dll")]
         public static extern int GetPointerDevice(
             IntPtr device,
             ref POINTER_DEVICE_INFO pointerDevice
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15351
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15351
         [DllImport("user32.dll")]
         public static extern int GetPointerDeviceProperties(
             IntPtr device,
@@ -5554,14 +5554,14 @@ namespace NWindowsKits
             ref POINTER_DEVICE_PROPERTY pointerProperties
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15359
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15359
         [DllImport("user32.dll")]
         public static extern int RegisterPointerDeviceNotifications(
             HWND window,
             int notifyRange
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15366
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15366
         [DllImport("user32.dll")]
         public static extern int GetPointerDeviceRects(
             IntPtr device,
@@ -5569,7 +5569,7 @@ namespace NWindowsKits
             ref RECT displayRect
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15374
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15374
         [DllImport("user32.dll")]
         public static extern int GetPointerDeviceCursors(
             IntPtr device,
@@ -5577,7 +5577,7 @@ namespace NWindowsKits
             ref POINTER_DEVICE_CURSOR_INFO deviceCursors
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15382
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15382
         [DllImport("user32.dll")]
         public static extern int GetRawPointerDeviceData(
             uint pointerId,
@@ -5587,14 +5587,14 @@ namespace NWindowsKits
             IntPtr pValues
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15411
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15411
         [DllImport("user32.dll")]
         public static extern int ChangeWindowMessageFilter(
             uint message,
             uint dwFlag
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15454
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15454
         [DllImport("user32.dll")]
         public static extern int ChangeWindowMessageFilterEx(
             HWND hwnd,
@@ -5603,14 +5603,14 @@ namespace NWindowsKits
             ref tagCHANGEFILTERSTRUCT pChangeFilterStruct
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15559
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15559
         [DllImport("user32.dll")]
         public static extern int GetGestureInfo(
             HGESTUREINFO hGestureInfo,
             ref tagGESTUREINFO pGestureInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15572
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15572
         [DllImport("user32.dll")]
         public static extern int GetGestureExtraArgs(
             HGESTUREINFO hGestureInfo,
@@ -5618,13 +5618,13 @@ namespace NWindowsKits
             IntPtr pExtraArgs
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15590
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15590
         [DllImport("user32.dll")]
         public static extern int CloseGestureInfoHandle(
             HGESTUREINFO hGestureInfo
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15658
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15658
         [DllImport("user32.dll")]
         public static extern int SetGestureConfig(
             HWND hwnd,
@@ -5634,7 +5634,7 @@ namespace NWindowsKits
             uint cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15673
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15673
         [DllImport("user32.dll")]
         public static extern int GetGestureConfig(
             HWND hwnd,
@@ -5645,14 +5645,14 @@ namespace NWindowsKits
             uint cbSize
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15713
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15713
         [DllImport("user32.dll")]
         public static extern int ShutdownBlockReasonCreate(
             HWND hWnd,
             [MarshalAs(UnmanagedType.LPWStr)] string pwszReason
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15720
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15720
         [DllImport("user32.dll")]
         public static extern int ShutdownBlockReasonQuery(
             HWND hWnd,
@@ -5660,37 +5660,37 @@ namespace NWindowsKits
             IntPtr pcchBuff
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15728
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15728
         [DllImport("user32.dll")]
         public static extern int ShutdownBlockReasonDestroy(
             HWND hWnd
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15776
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15776
         [DllImport("user32.dll")]
         public static extern int GetCurrentInputMessageSource(
             ref INPUT_MESSAGE_SOURCE inputMessageSource
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15782
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15782
         [DllImport("user32.dll")]
         public static extern int GetCIMSSM(
             ref INPUT_MESSAGE_SOURCE inputMessageSource
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15846
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15846
         [DllImport("user32.dll")]
         public static extern int GetAutoRotationState(
             ref AR_STATE pState
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15852
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15852
         [DllImport("user32.dll")]
         public static extern int GetDisplayAutoRotationPreferences(
             IntPtr pOrientation
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15858
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15858
         [DllImport("user32.dll")]
         public static extern int GetDisplayAutoRotationPreferencesByProcessId(
             uint dwProcessId,
@@ -5698,19 +5698,19 @@ namespace NWindowsKits
             IntPtr fRotateScreen
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15866
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15866
         [DllImport("user32.dll")]
         public static extern int SetDisplayAutoRotationPreferences(
             ORIENTATION_PREFERENCE orientation
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15883
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15883
         [DllImport("user32.dll")]
         public static extern int IsImmersiveProcess(
             IntPtr hProcess
         );
 
-        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:15889
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15889
         [DllImport("user32.dll")]
         public static extern int SetProcessRestrictionExemption(
             int fEnableExemption

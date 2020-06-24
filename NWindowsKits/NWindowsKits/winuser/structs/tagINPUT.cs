@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:6113
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6113
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct tagINPUT // 3
     {
