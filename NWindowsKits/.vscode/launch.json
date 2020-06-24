@@ -16,6 +16,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "DXGIEnumerateAdapters",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Samples/DXGIEnumerateAdapters/bin/Debug/netcoreapp3.1/DXGIEnumerateAdapters.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Samples/DXGIEnumerateAdapters",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach",
