@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:174
-    [StructLayout(LayoutKind.Sequential)]
+    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/shared/windef.h:174
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINT // 4
     {
         public int x;

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10897
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct _ICONINFOEXW // 2
     {
         public uint cbSize;
@@ -15,7 +15,7 @@ namespace NWindowsKits
         public HBITMAP hbmMask;
         public HBITMAP hbmColor;
         public ushort wResID;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 260)] public ushort[] szModName;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 260)] public ushort[] szResName;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 260)] public string szModName;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 260)] public string szResName;
     }
 }

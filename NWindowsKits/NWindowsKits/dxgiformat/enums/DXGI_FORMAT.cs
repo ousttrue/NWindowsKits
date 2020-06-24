@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgiformat.h:10
+    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/shared/dxgiformat.h:10
     public enum DXGI_FORMAT // 1
     {
         _UNKNOWN = 0x0,

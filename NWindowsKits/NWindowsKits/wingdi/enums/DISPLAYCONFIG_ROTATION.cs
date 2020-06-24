@@ -2,7 +2,7 @@
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2880
+    // C:/Program Files (x86)/Windows Kits/10/include/10.0.18362.0/um/wingdi.h:2880
     public enum DISPLAYCONFIG_ROTATION // 1
     {
         _IDENTITY = 0x1,

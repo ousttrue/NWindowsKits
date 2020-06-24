@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3240
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WINDOWPLACEMENT // 1
     {
         public uint length;

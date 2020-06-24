@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:218
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTPUT_DESC // 1
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] public ushort[] DeviceName;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] public string DeviceName;
         public RECT DesktopCoordinates;
         public int AttachedToDesktop;
         public DXGI_MODE_ROTATION Rotation;
