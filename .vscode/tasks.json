@@ -52,7 +52,9 @@
                 "-h",
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/Windows.h",
                 "-h",
-                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h,user32.dll"
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h,user32.dll",
+                "-h",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h,dxgi.dll",
             ],
             "options": {
                 "cwd": "${workspaceFolder}/../ClangCaster/ClangCaster",

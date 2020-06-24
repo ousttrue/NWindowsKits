@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:70
     [StructLayout(LayoutKind.Sequential)]
-    public struct HACCEL // 19
+    public struct HACCEL // 28
     {
         public IntPtr ptr;
     }

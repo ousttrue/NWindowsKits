@@ -4,10 +4,11 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/minwindef.h:252
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:842
     [StructLayout(LayoutKind.Sequential)]
-    public struct HRGN // 47
+    public struct LARGE_INTEGER // 1
     {
-        public IntPtr ptr;
+        public __Anonymous__3 u;
+        public long QuadPart;
     }
 }

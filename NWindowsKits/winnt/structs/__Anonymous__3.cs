@@ -4,10 +4,11 @@ using System.Runtime.InteropServices;
 
 namespace NWindowsKits
 {
-    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/minwindef.h:252
+    // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:847
     [StructLayout(LayoutKind.Sequential)]
-    public struct HRGN // 47
+    public struct __Anonymous__3 // 1
     {
-        public IntPtr ptr;
+        public uint LowPart;
+        public int HighPart;
     }
 }

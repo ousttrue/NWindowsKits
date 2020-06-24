@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:39
     [StructLayout(LayoutKind.Sequential)]
-    public struct HWND // 552
+    public struct HWND // 566
     {
         public IntPtr ptr;
     }
