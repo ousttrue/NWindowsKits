@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int EnumOutputs(uint Output, ref IntPtr ppOutput)
         {
-            var fp = GetFunctionPointer(7);
-            if(m_EnumOutputsFunc==null) m_EnumOutputsFunc = (EnumOutputsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumOutputsFunc));
+            if(m_EnumOutputsFunc==null){
+                var fp = GetFunctionPointer(7);
+                m_EnumOutputsFunc = (EnumOutputsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumOutputsFunc));
+            } 
             
             return  m_EnumOutputsFunc(m_ptr, Output, ref ppOutput);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int GetDesc(ref DXGI_ADAPTER_DESC pDesc)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_GetDescFunc==null) m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            if(m_GetDescFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            } 
             
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int CheckInterfaceSupport(ref GUID InterfaceName, ref LARGE_INTEGER pUMDVersion)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_CheckInterfaceSupportFunc==null) m_CheckInterfaceSupportFunc = (CheckInterfaceSupportFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckInterfaceSupportFunc));
+            if(m_CheckInterfaceSupportFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_CheckInterfaceSupportFunc = (CheckInterfaceSupportFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckInterfaceSupportFunc));
+            } 
             
             return  m_CheckInterfaceSupportFunc(m_ptr, ref InterfaceName, ref pUMDVersion);
         }

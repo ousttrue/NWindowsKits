@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetDesc(ref DXGI_SURFACE_DESC pDesc)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_GetDescFunc==null) m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            if(m_GetDescFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            } 
             
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int Map(ref DXGI_MAPPED_RECT pLockedRect, uint MapFlags)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_MapFunc==null) m_MapFunc = (MapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapFunc));
+            if(m_MapFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_MapFunc = (MapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapFunc));
+            } 
             
             return  m_MapFunc(m_ptr, ref pLockedRect, MapFlags);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int Unmap()
         {
-            var fp = GetFunctionPointer(10);
-            if(m_UnmapFunc==null) m_UnmapFunc = (UnmapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmapFunc));
+            if(m_UnmapFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_UnmapFunc = (UnmapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmapFunc));
+            } 
             
             return  m_UnmapFunc(m_ptr);
         }

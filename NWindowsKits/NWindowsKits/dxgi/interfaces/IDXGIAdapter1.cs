@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetDesc1(ref DXGI_ADAPTER_DESC1 pDesc)
         {
-            var fp = GetFunctionPointer(10);
-            if(m_GetDesc1Func==null) m_GetDesc1Func = (GetDesc1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDesc1Func));
+            if(m_GetDesc1Func==null){
+                var fp = GetFunctionPointer(10);
+                m_GetDesc1Func = (GetDesc1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDesc1Func));
+            } 
             
             return  m_GetDesc1Func(m_ptr, ref pDesc);
         }

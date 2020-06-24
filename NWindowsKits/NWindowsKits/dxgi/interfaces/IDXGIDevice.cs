@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetAdapter(ref IntPtr pAdapter)
         {
-            var fp = GetFunctionPointer(7);
-            if(m_GetAdapterFunc==null) m_GetAdapterFunc = (GetAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAdapterFunc));
+            if(m_GetAdapterFunc==null){
+                var fp = GetFunctionPointer(7);
+                m_GetAdapterFunc = (GetAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAdapterFunc));
+            } 
             
             return  m_GetAdapterFunc(m_ptr, ref pAdapter);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int CreateSurface(ref DXGI_SURFACE_DESC pDesc, uint NumSurfaces, uint Usage, ref DXGI_SHARED_RESOURCE pSharedResource, ref IntPtr ppSurface)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_CreateSurfaceFunc==null) m_CreateSurfaceFunc = (CreateSurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSurfaceFunc));
+            if(m_CreateSurfaceFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_CreateSurfaceFunc = (CreateSurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSurfaceFunc));
+            } 
             
             return  m_CreateSurfaceFunc(m_ptr, ref pDesc, NumSurfaces, Usage, ref pSharedResource, ref ppSurface);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int QueryResourceResidency(ref IntPtr ppResources, IntPtr pResidencyStatus, uint NumResources)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_QueryResourceResidencyFunc==null) m_QueryResourceResidencyFunc = (QueryResourceResidencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryResourceResidencyFunc));
+            if(m_QueryResourceResidencyFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_QueryResourceResidencyFunc = (QueryResourceResidencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryResourceResidencyFunc));
+            } 
             
             return  m_QueryResourceResidencyFunc(m_ptr, ref ppResources, pResidencyStatus, NumResources);
         }
@@ -43,8 +49,10 @@ namespace NWindowsKits
 
         public int SetGPUThreadPriority(int Priority)
         {
-            var fp = GetFunctionPointer(10);
-            if(m_SetGPUThreadPriorityFunc==null) m_SetGPUThreadPriorityFunc = (SetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGPUThreadPriorityFunc));
+            if(m_SetGPUThreadPriorityFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_SetGPUThreadPriorityFunc = (SetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGPUThreadPriorityFunc));
+            } 
             
             return  m_SetGPUThreadPriorityFunc(m_ptr, Priority);
         }
@@ -53,8 +61,10 @@ namespace NWindowsKits
 
         public int GetGPUThreadPriority(IntPtr pPriority)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_GetGPUThreadPriorityFunc==null) m_GetGPUThreadPriorityFunc = (GetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGPUThreadPriorityFunc));
+            if(m_GetGPUThreadPriorityFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_GetGPUThreadPriorityFunc = (GetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGPUThreadPriorityFunc));
+            } 
             
             return  m_GetGPUThreadPriorityFunc(m_ptr, pPriority);
         }

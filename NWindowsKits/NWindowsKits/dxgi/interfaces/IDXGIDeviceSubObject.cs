@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetDevice(ref Guid riid, ref IntPtr ppDevice)
         {
-            var fp = GetFunctionPointer(7);
-            if(m_GetDeviceFunc==null) m_GetDeviceFunc = (GetDeviceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDeviceFunc));
+            if(m_GetDeviceFunc==null){
+                var fp = GetFunctionPointer(7);
+                m_GetDeviceFunc = (GetDeviceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDeviceFunc));
+            } 
             
             return  m_GetDeviceFunc(m_ptr, ref riid, ref ppDevice);
         }

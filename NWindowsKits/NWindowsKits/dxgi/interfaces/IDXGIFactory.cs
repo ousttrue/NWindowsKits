@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int EnumAdapters(uint Adapter, ref IntPtr ppAdapter)
         {
-            var fp = GetFunctionPointer(7);
-            if(m_EnumAdaptersFunc==null) m_EnumAdaptersFunc = (EnumAdaptersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdaptersFunc));
+            if(m_EnumAdaptersFunc==null){
+                var fp = GetFunctionPointer(7);
+                m_EnumAdaptersFunc = (EnumAdaptersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdaptersFunc));
+            } 
             
             return  m_EnumAdaptersFunc(m_ptr, Adapter, ref ppAdapter);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int MakeWindowAssociation(HWND WindowHandle, uint Flags)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_MakeWindowAssociationFunc==null) m_MakeWindowAssociationFunc = (MakeWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MakeWindowAssociationFunc));
+            if(m_MakeWindowAssociationFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_MakeWindowAssociationFunc = (MakeWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MakeWindowAssociationFunc));
+            } 
             
             return  m_MakeWindowAssociationFunc(m_ptr, WindowHandle, Flags);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int GetWindowAssociation(ref HWND pWindowHandle)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_GetWindowAssociationFunc==null) m_GetWindowAssociationFunc = (GetWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowAssociationFunc));
+            if(m_GetWindowAssociationFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_GetWindowAssociationFunc = (GetWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowAssociationFunc));
+            } 
             
             return  m_GetWindowAssociationFunc(m_ptr, ref pWindowHandle);
         }
@@ -43,8 +49,10 @@ namespace NWindowsKits
 
         public int CreateSwapChain(IntPtr pDevice, ref DXGI_SWAP_CHAIN_DESC pDesc, ref IntPtr ppSwapChain)
         {
-            var fp = GetFunctionPointer(10);
-            if(m_CreateSwapChainFunc==null) m_CreateSwapChainFunc = (CreateSwapChainFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSwapChainFunc));
+            if(m_CreateSwapChainFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_CreateSwapChainFunc = (CreateSwapChainFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSwapChainFunc));
+            } 
             
             return  m_CreateSwapChainFunc(m_ptr, pDevice, ref pDesc, ref ppSwapChain);
         }
@@ -53,8 +61,10 @@ namespace NWindowsKits
 
         public int CreateSoftwareAdapter(HMODULE Module, ref IntPtr ppAdapter)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_CreateSoftwareAdapterFunc==null) m_CreateSoftwareAdapterFunc = (CreateSoftwareAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSoftwareAdapterFunc));
+            if(m_CreateSoftwareAdapterFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_CreateSoftwareAdapterFunc = (CreateSoftwareAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSoftwareAdapterFunc));
+            } 
             
             return  m_CreateSoftwareAdapterFunc(m_ptr, Module, ref ppAdapter);
         }

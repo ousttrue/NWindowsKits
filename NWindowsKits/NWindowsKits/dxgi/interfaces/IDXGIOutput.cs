@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetDesc(ref DXGI_OUTPUT_DESC pDesc)
         {
-            var fp = GetFunctionPointer(7);
-            if(m_GetDescFunc==null) m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            if(m_GetDescFunc==null){
+                var fp = GetFunctionPointer(7);
+                m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            } 
             
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int GetDisplayModeList(DXGI_FORMAT EnumFormat, uint Flags, IntPtr pNumModes, ref DXGI_MODE_DESC pDesc)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_GetDisplayModeListFunc==null) m_GetDisplayModeListFunc = (GetDisplayModeListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayModeListFunc));
+            if(m_GetDisplayModeListFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_GetDisplayModeListFunc = (GetDisplayModeListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayModeListFunc));
+            } 
             
             return  m_GetDisplayModeListFunc(m_ptr, EnumFormat, Flags, pNumModes, ref pDesc);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int FindClosestMatchingMode(ref DXGI_MODE_DESC pModeToMatch, ref DXGI_MODE_DESC pClosestMatch, IntPtr pConcernedDevice)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_FindClosestMatchingModeFunc==null) m_FindClosestMatchingModeFunc = (FindClosestMatchingModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindClosestMatchingModeFunc));
+            if(m_FindClosestMatchingModeFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_FindClosestMatchingModeFunc = (FindClosestMatchingModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindClosestMatchingModeFunc));
+            } 
             
             return  m_FindClosestMatchingModeFunc(m_ptr, ref pModeToMatch, ref pClosestMatch, pConcernedDevice);
         }
@@ -43,8 +49,10 @@ namespace NWindowsKits
 
         public int WaitForVBlank()
         {
-            var fp = GetFunctionPointer(10);
-            if(m_WaitForVBlankFunc==null) m_WaitForVBlankFunc = (WaitForVBlankFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitForVBlankFunc));
+            if(m_WaitForVBlankFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_WaitForVBlankFunc = (WaitForVBlankFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitForVBlankFunc));
+            } 
             
             return  m_WaitForVBlankFunc(m_ptr);
         }
@@ -53,8 +61,10 @@ namespace NWindowsKits
 
         public int TakeOwnership(IntPtr pDevice, int Exclusive)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_TakeOwnershipFunc==null) m_TakeOwnershipFunc = (TakeOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TakeOwnershipFunc));
+            if(m_TakeOwnershipFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_TakeOwnershipFunc = (TakeOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TakeOwnershipFunc));
+            } 
             
             return  m_TakeOwnershipFunc(m_ptr, pDevice, Exclusive);
         }
@@ -63,8 +73,10 @@ namespace NWindowsKits
 
         public void ReleaseOwnership()
         {
-            var fp = GetFunctionPointer(12);
-            if(m_ReleaseOwnershipFunc==null) m_ReleaseOwnershipFunc = (ReleaseOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseOwnershipFunc));
+            if(m_ReleaseOwnershipFunc==null){
+                var fp = GetFunctionPointer(12);
+                m_ReleaseOwnershipFunc = (ReleaseOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseOwnershipFunc));
+            } 
             
              m_ReleaseOwnershipFunc(m_ptr);
         }
@@ -73,8 +85,10 @@ namespace NWindowsKits
 
         public int GetGammaControlCapabilities(ref DXGI_GAMMA_CONTROL_CAPABILITIES pGammaCaps)
         {
-            var fp = GetFunctionPointer(13);
-            if(m_GetGammaControlCapabilitiesFunc==null) m_GetGammaControlCapabilitiesFunc = (GetGammaControlCapabilitiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlCapabilitiesFunc));
+            if(m_GetGammaControlCapabilitiesFunc==null){
+                var fp = GetFunctionPointer(13);
+                m_GetGammaControlCapabilitiesFunc = (GetGammaControlCapabilitiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlCapabilitiesFunc));
+            } 
             
             return  m_GetGammaControlCapabilitiesFunc(m_ptr, ref pGammaCaps);
         }
@@ -83,8 +97,10 @@ namespace NWindowsKits
 
         public int SetGammaControl(ref DXGI_GAMMA_CONTROL pArray)
         {
-            var fp = GetFunctionPointer(14);
-            if(m_SetGammaControlFunc==null) m_SetGammaControlFunc = (SetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGammaControlFunc));
+            if(m_SetGammaControlFunc==null){
+                var fp = GetFunctionPointer(14);
+                m_SetGammaControlFunc = (SetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGammaControlFunc));
+            } 
             
             return  m_SetGammaControlFunc(m_ptr, ref pArray);
         }
@@ -93,8 +109,10 @@ namespace NWindowsKits
 
         public int GetGammaControl(ref DXGI_GAMMA_CONTROL pArray)
         {
-            var fp = GetFunctionPointer(15);
-            if(m_GetGammaControlFunc==null) m_GetGammaControlFunc = (GetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlFunc));
+            if(m_GetGammaControlFunc==null){
+                var fp = GetFunctionPointer(15);
+                m_GetGammaControlFunc = (GetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlFunc));
+            } 
             
             return  m_GetGammaControlFunc(m_ptr, ref pArray);
         }
@@ -103,8 +121,10 @@ namespace NWindowsKits
 
         public int SetDisplaySurface(ref IDXGISurface pScanoutSurface)
         {
-            var fp = GetFunctionPointer(16);
-            if(m_SetDisplaySurfaceFunc==null) m_SetDisplaySurfaceFunc = (SetDisplaySurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDisplaySurfaceFunc));
+            if(m_SetDisplaySurfaceFunc==null){
+                var fp = GetFunctionPointer(16);
+                m_SetDisplaySurfaceFunc = (SetDisplaySurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDisplaySurfaceFunc));
+            } 
             
             return  m_SetDisplaySurfaceFunc(m_ptr, ref pScanoutSurface);
         }
@@ -113,8 +133,10 @@ namespace NWindowsKits
 
         public int GetDisplaySurfaceData(ref IDXGISurface pDestination)
         {
-            var fp = GetFunctionPointer(17);
-            if(m_GetDisplaySurfaceDataFunc==null) m_GetDisplaySurfaceDataFunc = (GetDisplaySurfaceDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplaySurfaceDataFunc));
+            if(m_GetDisplaySurfaceDataFunc==null){
+                var fp = GetFunctionPointer(17);
+                m_GetDisplaySurfaceDataFunc = (GetDisplaySurfaceDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplaySurfaceDataFunc));
+            } 
             
             return  m_GetDisplaySurfaceDataFunc(m_ptr, ref pDestination);
         }
@@ -123,8 +145,10 @@ namespace NWindowsKits
 
         public int GetFrameStatistics(ref DXGI_FRAME_STATISTICS pStats)
         {
-            var fp = GetFunctionPointer(18);
-            if(m_GetFrameStatisticsFunc==null) m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
+            if(m_GetFrameStatisticsFunc==null){
+                var fp = GetFunctionPointer(18);
+                m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
+            } 
             
             return  m_GetFrameStatisticsFunc(m_ptr, ref pStats);
         }

@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int Present(uint SyncInterval, uint Flags)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_PresentFunc==null) m_PresentFunc = (PresentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PresentFunc));
+            if(m_PresentFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_PresentFunc = (PresentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PresentFunc));
+            } 
             
             return  m_PresentFunc(m_ptr, SyncInterval, Flags);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int GetBuffer(uint Buffer, ref Guid riid, ref IntPtr ppSurface)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_GetBufferFunc==null) m_GetBufferFunc = (GetBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferFunc));
+            if(m_GetBufferFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_GetBufferFunc = (GetBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferFunc));
+            } 
             
             return  m_GetBufferFunc(m_ptr, Buffer, ref riid, ref ppSurface);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int SetFullscreenState(int Fullscreen, ref IDXGIOutput pTarget)
         {
-            var fp = GetFunctionPointer(10);
-            if(m_SetFullscreenStateFunc==null) m_SetFullscreenStateFunc = (SetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFullscreenStateFunc));
+            if(m_SetFullscreenStateFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_SetFullscreenStateFunc = (SetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFullscreenStateFunc));
+            } 
             
             return  m_SetFullscreenStateFunc(m_ptr, Fullscreen, ref pTarget);
         }
@@ -43,8 +49,10 @@ namespace NWindowsKits
 
         public int GetFullscreenState(IntPtr pFullscreen, ref IntPtr ppTarget)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_GetFullscreenStateFunc==null) m_GetFullscreenStateFunc = (GetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFullscreenStateFunc));
+            if(m_GetFullscreenStateFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_GetFullscreenStateFunc = (GetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFullscreenStateFunc));
+            } 
             
             return  m_GetFullscreenStateFunc(m_ptr, pFullscreen, ref ppTarget);
         }
@@ -53,8 +61,10 @@ namespace NWindowsKits
 
         public int GetDesc(ref DXGI_SWAP_CHAIN_DESC pDesc)
         {
-            var fp = GetFunctionPointer(12);
-            if(m_GetDescFunc==null) m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            if(m_GetDescFunc==null){
+                var fp = GetFunctionPointer(12);
+                m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
+            } 
             
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
@@ -63,8 +73,10 @@ namespace NWindowsKits
 
         public int ResizeBuffers(uint BufferCount, uint Width, uint Height, DXGI_FORMAT NewFormat, uint SwapChainFlags)
         {
-            var fp = GetFunctionPointer(13);
-            if(m_ResizeBuffersFunc==null) m_ResizeBuffersFunc = (ResizeBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeBuffersFunc));
+            if(m_ResizeBuffersFunc==null){
+                var fp = GetFunctionPointer(13);
+                m_ResizeBuffersFunc = (ResizeBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeBuffersFunc));
+            } 
             
             return  m_ResizeBuffersFunc(m_ptr, BufferCount, Width, Height, NewFormat, SwapChainFlags);
         }
@@ -73,8 +85,10 @@ namespace NWindowsKits
 
         public int ResizeTarget(ref DXGI_MODE_DESC pNewTargetParameters)
         {
-            var fp = GetFunctionPointer(14);
-            if(m_ResizeTargetFunc==null) m_ResizeTargetFunc = (ResizeTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeTargetFunc));
+            if(m_ResizeTargetFunc==null){
+                var fp = GetFunctionPointer(14);
+                m_ResizeTargetFunc = (ResizeTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeTargetFunc));
+            } 
             
             return  m_ResizeTargetFunc(m_ptr, ref pNewTargetParameters);
         }
@@ -83,8 +97,10 @@ namespace NWindowsKits
 
         public int GetContainingOutput(ref IntPtr ppOutput)
         {
-            var fp = GetFunctionPointer(15);
-            if(m_GetContainingOutputFunc==null) m_GetContainingOutputFunc = (GetContainingOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContainingOutputFunc));
+            if(m_GetContainingOutputFunc==null){
+                var fp = GetFunctionPointer(15);
+                m_GetContainingOutputFunc = (GetContainingOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContainingOutputFunc));
+            } 
             
             return  m_GetContainingOutputFunc(m_ptr, ref ppOutput);
         }
@@ -93,8 +109,10 @@ namespace NWindowsKits
 
         public int GetFrameStatistics(ref DXGI_FRAME_STATISTICS pStats)
         {
-            var fp = GetFunctionPointer(16);
-            if(m_GetFrameStatisticsFunc==null) m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
+            if(m_GetFrameStatisticsFunc==null){
+                var fp = GetFunctionPointer(16);
+                m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
+            } 
             
             return  m_GetFrameStatisticsFunc(m_ptr, ref pStats);
         }
@@ -103,8 +121,10 @@ namespace NWindowsKits
 
         public int GetLastPresentCount(IntPtr pLastPresentCount)
         {
-            var fp = GetFunctionPointer(17);
-            if(m_GetLastPresentCountFunc==null) m_GetLastPresentCountFunc = (GetLastPresentCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastPresentCountFunc));
+            if(m_GetLastPresentCountFunc==null){
+                var fp = GetFunctionPointer(17);
+                m_GetLastPresentCountFunc = (GetLastPresentCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastPresentCountFunc));
+            } 
             
             return  m_GetLastPresentCountFunc(m_ptr, pLastPresentCount);
         }

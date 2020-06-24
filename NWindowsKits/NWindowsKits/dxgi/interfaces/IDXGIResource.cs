@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetSharedHandle(ref IntPtr pSharedHandle)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_GetSharedHandleFunc==null) m_GetSharedHandleFunc = (GetSharedHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSharedHandleFunc));
+            if(m_GetSharedHandleFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_GetSharedHandleFunc = (GetSharedHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSharedHandleFunc));
+            } 
             
             return  m_GetSharedHandleFunc(m_ptr, ref pSharedHandle);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int GetUsage(IntPtr pUsage)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_GetUsageFunc==null) m_GetUsageFunc = (GetUsageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUsageFunc));
+            if(m_GetUsageFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_GetUsageFunc = (GetUsageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUsageFunc));
+            } 
             
             return  m_GetUsageFunc(m_ptr, pUsage);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public int SetEvictionPriority(uint EvictionPriority)
         {
-            var fp = GetFunctionPointer(10);
-            if(m_SetEvictionPriorityFunc==null) m_SetEvictionPriorityFunc = (SetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEvictionPriorityFunc));
+            if(m_SetEvictionPriorityFunc==null){
+                var fp = GetFunctionPointer(10);
+                m_SetEvictionPriorityFunc = (SetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEvictionPriorityFunc));
+            } 
             
             return  m_SetEvictionPriorityFunc(m_ptr, EvictionPriority);
         }
@@ -43,8 +49,10 @@ namespace NWindowsKits
 
         public int GetEvictionPriority(IntPtr pEvictionPriority)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_GetEvictionPriorityFunc==null) m_GetEvictionPriorityFunc = (GetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEvictionPriorityFunc));
+            if(m_GetEvictionPriorityFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_GetEvictionPriorityFunc = (GetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEvictionPriorityFunc));
+            } 
             
             return  m_GetEvictionPriorityFunc(m_ptr, pEvictionPriority);
         }

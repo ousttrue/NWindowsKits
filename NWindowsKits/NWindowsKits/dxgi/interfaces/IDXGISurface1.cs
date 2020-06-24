@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int GetDC(int Discard, ref HDC phdc)
         {
-            var fp = GetFunctionPointer(11);
-            if(m_GetDCFunc==null) m_GetDCFunc = (GetDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDCFunc));
+            if(m_GetDCFunc==null){
+                var fp = GetFunctionPointer(11);
+                m_GetDCFunc = (GetDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDCFunc));
+            } 
             
             return  m_GetDCFunc(m_ptr, Discard, ref phdc);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int ReleaseDC(ref RECT pDirtyRect)
         {
-            var fp = GetFunctionPointer(12);
-            if(m_ReleaseDCFunc==null) m_ReleaseDCFunc = (ReleaseDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseDCFunc));
+            if(m_ReleaseDCFunc==null){
+                var fp = GetFunctionPointer(12);
+                m_ReleaseDCFunc = (ReleaseDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseDCFunc));
+            } 
             
             return  m_ReleaseDCFunc(m_ptr, ref pDirtyRect);
         }

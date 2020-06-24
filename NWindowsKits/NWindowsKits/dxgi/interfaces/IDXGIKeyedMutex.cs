@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int AcquireSync(ulong Key, uint dwMilliseconds)
         {
-            var fp = GetFunctionPointer(8);
-            if(m_AcquireSyncFunc==null) m_AcquireSyncFunc = (AcquireSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AcquireSyncFunc));
+            if(m_AcquireSyncFunc==null){
+                var fp = GetFunctionPointer(8);
+                m_AcquireSyncFunc = (AcquireSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AcquireSyncFunc));
+            } 
             
             return  m_AcquireSyncFunc(m_ptr, Key, dwMilliseconds);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int ReleaseSync(ulong Key)
         {
-            var fp = GetFunctionPointer(9);
-            if(m_ReleaseSyncFunc==null) m_ReleaseSyncFunc = (ReleaseSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseSyncFunc));
+            if(m_ReleaseSyncFunc==null){
+                var fp = GetFunctionPointer(9);
+                m_ReleaseSyncFunc = (ReleaseSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseSyncFunc));
+            } 
             
             return  m_ReleaseSyncFunc(m_ptr, Key);
         }

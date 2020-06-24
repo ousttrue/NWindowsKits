@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int QueryInterface(ref Guid riid, ref IntPtr ppvObject)
         {
-            var fp = GetFunctionPointer(0);
-            if(m_QueryInterfaceFunc==null) m_QueryInterfaceFunc = (QueryInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInterfaceFunc));
+            if(m_QueryInterfaceFunc==null){
+                var fp = GetFunctionPointer(0);
+                m_QueryInterfaceFunc = (QueryInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInterfaceFunc));
+            } 
             
             return  m_QueryInterfaceFunc(m_ptr, ref riid, ref ppvObject);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public uint AddRef()
         {
-            var fp = GetFunctionPointer(1);
-            if(m_AddRefFunc==null) m_AddRefFunc = (AddRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefFunc));
+            if(m_AddRefFunc==null){
+                var fp = GetFunctionPointer(1);
+                m_AddRefFunc = (AddRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefFunc));
+            } 
             
             return  m_AddRefFunc(m_ptr);
         }
@@ -33,8 +37,10 @@ namespace NWindowsKits
 
         public uint Release()
         {
-            var fp = GetFunctionPointer(2);
-            if(m_ReleaseFunc==null) m_ReleaseFunc = (ReleaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseFunc));
+            if(m_ReleaseFunc==null){
+                var fp = GetFunctionPointer(2);
+                m_ReleaseFunc = (ReleaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseFunc));
+            } 
             
             return  m_ReleaseFunc(m_ptr);
         }

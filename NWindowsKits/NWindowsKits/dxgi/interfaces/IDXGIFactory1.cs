@@ -13,8 +13,10 @@ namespace NWindowsKits
 
         public int EnumAdapters1(uint Adapter, ref IntPtr ppAdapter)
         {
-            var fp = GetFunctionPointer(12);
-            if(m_EnumAdapters1Func==null) m_EnumAdapters1Func = (EnumAdapters1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdapters1Func));
+            if(m_EnumAdapters1Func==null){
+                var fp = GetFunctionPointer(12);
+                m_EnumAdapters1Func = (EnumAdapters1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdapters1Func));
+            } 
             
             return  m_EnumAdapters1Func(m_ptr, Adapter, ref ppAdapter);
         }
@@ -23,8 +25,10 @@ namespace NWindowsKits
 
         public int IsCurrent()
         {
-            var fp = GetFunctionPointer(13);
-            if(m_IsCurrentFunc==null) m_IsCurrentFunc = (IsCurrentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsCurrentFunc));
+            if(m_IsCurrentFunc==null){
+                var fp = GetFunctionPointer(13);
+                m_IsCurrentFunc = (IsCurrentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsCurrentFunc));
+            } 
             
             return  m_IsCurrentFunc(m_ptr);
         }
