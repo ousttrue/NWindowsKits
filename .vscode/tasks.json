@@ -47,14 +47,12 @@
                 "--",
                 "-ns",
                 "NWindowsKits",
-                "-dll",
-                "user32",
                 "-d",
                 "${workspaceFolder}/NWindowsKits",
                 "-h",
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/Windows.h",
                 "-h",
-                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h"
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h,user32.dll"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/../ClangCaster/ClangCaster",

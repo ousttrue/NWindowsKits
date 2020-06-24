@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13525
     [StructLayout(LayoutKind.Sequential)]
-    public struct tagMONITORINFO // 2
+    public struct tagMONITORINFO // 4
     {
         public uint cbSize;
         public RECT rcMonitor;

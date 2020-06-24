@@ -319,6 +319,13 @@ namespace NWindowsKits
             long lParam
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:199
+        [DllImport("user32.dll")]
+        public static extern int NAMEENUMPROCA(
+            IntPtr __param__0,
+            long __param__1
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1499
         [DllImport("user32.dll")]
         public static extern int EnumDesktopsW(
@@ -327,12 +334,26 @@ namespace NWindowsKits
             long lParam
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:200
+        [DllImport("user32.dll")]
+        public static extern int NAMEENUMPROCW(
+            IntPtr __param__0,
+            long __param__1
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1512
         [DllImport("user32.dll")]
         public static extern int EnumDesktopWindows(
             HDESK hDesktop,
             WNDENUMPROC lpfn,
             long lParam
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:118
+        [DllImport("user32.dll")]
+        public static extern int WNDENUMPROC(
+            HWND __param__0,
+            long __param__1
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:1521
@@ -738,6 +759,15 @@ namespace NWindowsKits
             ulong dwData
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:120
+        [DllImport("user32.dll")]
+        public static extern void SENDASYNCPROC(
+            HWND __param__0,
+            uint __param__1,
+            ulong __param__2,
+            long __param__3
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:3803
         [DllImport("user32.dll")]
         public static extern int SendMessageCallbackW(
@@ -934,6 +964,15 @@ namespace NWindowsKits
             uint Msg,
             ulong wParam,
             long lParam
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:91
+        [DllImport("user32.dll")]
+        public static extern long WNDPROC(
+            HWND __param__0,
+            uint __param__1,
+            ulong __param__2,
+            long __param__3
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4181
@@ -1313,6 +1352,15 @@ namespace NWindowsKits
             long dwInitParam
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:101
+        [DllImport("user32.dll")]
+        public static extern long DLGPROC(
+            HWND __param__0,
+            uint __param__1,
+            ulong __param__2,
+            long __param__3
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:4997
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamW(
@@ -1536,6 +1584,34 @@ namespace NWindowsKits
             uint Msg,
             ulong wParam,
             long lParam
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5319
+        [DllImport("user32.dll")]
+        public static extern int SetDialogControlDpiChangeBehavior(
+            HWND hWnd,
+            DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS mask,
+            DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS values
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5326
+        [DllImport("user32.dll")]
+        public static extern DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS GetDialogControlDpiChangeBehavior(
+            HWND hWnd
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5342
+        [DllImport("user32.dll")]
+        public static extern int SetDialogDpiChangeBehavior(
+            HWND hDlg,
+            DIALOG_DPI_CHANGE_BEHAVIORS mask,
+            DIALOG_DPI_CHANGE_BEHAVIORS values
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5349
+        [DllImport("user32.dll")]
+        public static extern DIALOG_DPI_CHANGE_BEHAVIORS GetDialogDpiChangeBehavior(
+            HWND hDlg
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:5373
@@ -2430,6 +2506,15 @@ namespace NWindowsKits
             TIMERPROC lpTimerFunc
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:109
+        [DllImport("user32.dll")]
+        public static extern void TIMERPROC(
+            HWND __param__0,
+            uint __param__1,
+            ulong __param__2,
+            uint __param__3
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:7053
         [DllImport("user32.dll")]
         public static extern ulong SetCoalescableTimer(
@@ -3016,6 +3101,14 @@ namespace NWindowsKits
             int nHeight
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:117
+        [DllImport("user32.dll")]
+        public static extern int GRAYSTRINGPROC(
+            HDC __param__0,
+            long __param__1,
+            int __param__2
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8273
         [DllImport("user32.dll")]
         public static extern int GrayStringW(
@@ -3043,6 +3136,16 @@ namespace NWindowsKits
             int cx,
             int cy,
             uint uFlags
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:132
+        [DllImport("user32.dll")]
+        public static extern int DRAWSTATEPROC(
+            HDC hdc,
+            long lData,
+            ulong wData,
+            int cx,
+            int cy
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8332
@@ -3429,12 +3532,30 @@ namespace NWindowsKits
             long lParam
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:125
+        [DllImport("user32.dll")]
+        public static extern int PROPENUMPROCEXA(
+            HWND __param__0,
+            IntPtr __param__1,
+            IntPtr __param__2,
+            ulong __param__3
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8862
         [DllImport("user32.dll")]
         public static extern int EnumPropsExW(
             HWND hWnd,
             PROPENUMPROCEXW lpEnumFunc,
             long lParam
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:126
+        [DllImport("user32.dll")]
+        public static extern int PROPENUMPROCEXW(
+            HWND __param__0,
+            IntPtr __param__1,
+            IntPtr __param__2,
+            ulong __param__3
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8875
@@ -3444,11 +3565,27 @@ namespace NWindowsKits
             PROPENUMPROCA lpEnumFunc
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:122
+        [DllImport("user32.dll")]
+        public static extern int PROPENUMPROCA(
+            HWND __param__0,
+            [MarshalAs(UnmanagedType.LPStr)] string __param__1,
+            IntPtr __param__2
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8881
         [DllImport("user32.dll")]
         public static extern int EnumPropsW(
             HWND hWnd,
             PROPENUMPROCW lpEnumFunc
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:123
+        [DllImport("user32.dll")]
+        public static extern int PROPENUMPROCW(
+            HWND __param__0,
+            [MarshalAs(UnmanagedType.LPWStr)] string __param__1,
+            IntPtr __param__2
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:8893
@@ -3602,6 +3739,12 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int MessageBoxIndirectA(
             ref MSGBOXPARAMSA lpmbp
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9214
+        [DllImport("user32.dll")]
+        public static extern void MSGBOXCALLBACK(
+            ref tagHELPINFO lpHelpInfo
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:9257
@@ -4237,6 +4380,14 @@ namespace NWindowsKits
         public static extern HHOOK SetWindowsHookA(
             int nFilterType,
             HOOKPROC pfnFilterProc
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:119
+        [DllImport("user32.dll")]
+        public static extern long HOOKPROC(
+            int code,
+            ulong wParam,
+            long lParam
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:10247
@@ -5006,6 +5157,15 @@ namespace NWindowsKits
             long dwData
         );
 
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13587
+        [DllImport("user32.dll")]
+        public static extern int MONITORENUMPROC(
+            HMONITOR __param__0,
+            HDC __param__1,
+            ref RECT __param__2,
+            long __param__3
+        );
+
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13611
         [DllImport("user32.dll")]
         public static extern void NotifyWinEvent(
@@ -5025,6 +5185,18 @@ namespace NWindowsKits
             uint idProcess,
             uint idThread,
             uint dwFlags
+        );
+
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13620
+        [DllImport("user32.dll")]
+        public static extern void WINEVENTPROC(
+            HWINEVENTHOOK hWinEventHook,
+            uint _event,
+            HWND hwnd,
+            int idObject,
+            int idChild,
+            uint idEventThread,
+            uint dwmsEventTime
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winuser.h:13642
