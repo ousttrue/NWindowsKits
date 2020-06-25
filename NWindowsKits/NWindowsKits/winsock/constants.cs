@@ -2,22 +2,22 @@
 
 namespace NWindowsKits
 {
-    public static partial class MSG_
+    public static partial class C
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winsock.h:543
-        public const int _OOB = unchecked((int)0x1);
+        public const int MSG_OOB = unchecked((int)0x1);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winsock.h:544
-        public const int _PEEK = unchecked((int)0x2);
+        public const int MSG_PEEK = unchecked((int)0x2);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winsock.h:545
-        public const int _DONTROUTE = unchecked((int)0x4);
+        public const int MSG_DONTROUTE = unchecked((int)0x4);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winsock.h:547
-        public const int _MAXIOVLEN = unchecked((int)16);
+        public const int MSG_MAXIOVLEN = unchecked((int)16);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winsock.h:549
-        public const int _PARTIAL = unchecked((int)0x8000);
+        public const int MSG_PARTIAL = unchecked((int)0x8000);
 
     }
 }
