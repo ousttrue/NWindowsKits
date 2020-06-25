@@ -41,9 +41,9 @@ namespace SampleLib
                 ref MemoryMarshal.GetReference(levels),
                 (uint)levels.Length,
                 C.D3D11_SDK_VERSION,
-                ref Device.PtrForNew,
+                ref Device.NewPtr,
                 ref level,
-                ref Context.PtrForNew).ThrowIfFailed();
+                ref Context.NewPtr).ThrowIfFailed();
         }
     }
 }

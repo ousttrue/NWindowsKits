@@ -113,8 +113,8 @@ namespace SampleLib
                     target,
                     flag1,
                     flag2,
-                    ref dst.PtrForNew,
-                    ref error.PtrForNew
+                    ref dst.NewPtr,
+                    ref error.NewPtr
                 );
                 if (hr!=0)
                 {
@@ -212,13 +212,13 @@ float4 psMain( VS_OUTPUT In ) : SV_TARGET
 
             if (!m_inputLayout)
             {
-                var hr = device.CreateVertexShader(m_vs_blob.GetBufferPointer(), m_vs_blob.GetBufferSize(), default, ref m_vs.PtrForNew);
+                var hr = device.CreateVertexShader(m_vs_blob.GetBufferPointer(), m_vs_blob.GetBufferSize(), default, ref m_vs.NewPtr);
                 hr.ThrowIfFailed();
-                hr = device.CreatePixelShader(m_ps_blob.GetBufferPointer(), m_ps_blob.GetBufferSize(), default, ref m_ps.PtrForNew);
+                hr = device.CreatePixelShader(m_ps_blob.GetBufferPointer(), m_ps_blob.GetBufferSize(), default, ref m_ps.NewPtr);
                 hr.ThrowIfFailed();
 
                 hr = device.CreateInputLayout(ref m_layout[0], (uint)m_layout.Length,
-                            m_vs_blob.GetBufferPointer(), m_vs_blob.GetBufferSize(), ref m_inputLayout.PtrForNew);
+                            m_vs_blob.GetBufferPointer(), m_vs_blob.GetBufferSize(), ref m_inputLayout.NewPtr);
                 hr.ThrowIfFailed();
             }
 

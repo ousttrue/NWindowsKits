@@ -51,7 +51,7 @@ namespace D3D11TriangleSample
                     ViewDimension = D3D11_RTV_DIMENSION._TEXTURE2D
                 };
                 var rtv = new ID3D11RenderTargetView();
-                m_d3d11.Device.CreateRenderTargetView(texture.Ptr, ref rtv_desc, ref rtv.PtrForNew).ThrowIfFailed();
+                m_d3d11.Device.CreateRenderTargetView(texture.Ptr, ref rtv_desc, ref rtv.NewPtr).ThrowIfFailed();
                 return rtv;
             }
         }

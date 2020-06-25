@@ -47,7 +47,7 @@ namespace SampleLib
                     {
                         pSysMem = pin.Ptr,
                     };
-                    device.CreateBuffer(ref desc, ref data, ref m_constantBuffer.PtrForNew).ThrowIfFailed();
+                    device.CreateBuffer(ref desc, ref data, ref m_constantBuffer.NewPtr).ThrowIfFailed();
                 }
             }
 

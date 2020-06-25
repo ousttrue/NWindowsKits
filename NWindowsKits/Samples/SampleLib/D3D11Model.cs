@@ -101,7 +101,7 @@ namespace SampleLib
                         pSysMem = pin.Ptr
                     };
                     device.CreateBuffer(ref desc, ref data,
-                        ref m_vertexBuffer.PtrForNew).ThrowIfFailed();
+                        ref m_vertexBuffer.NewPtr).ThrowIfFailed();
                 }
             }
             Span<IntPtr> pBufferTbl = stackalloc IntPtr[] { m_vertexBuffer.Ptr };
@@ -127,7 +127,7 @@ namespace SampleLib
                         pSysMem = pin.Ptr
                     };
                     device.CreateBuffer(ref desc, ref data,
-                        ref m_indexBuffer.PtrForNew).ThrowIfFailed();
+                        ref m_indexBuffer.NewPtr).ThrowIfFailed();
                 }
             }
             context.IASetIndexBuffer(m_indexBuffer.Ptr, m_indexFormat, 0);

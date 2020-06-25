@@ -71,10 +71,10 @@ namespace Sample
                 (uint)levels.Length,
                 C.D3D11_SDK_VERSION,
                 ref desc,
-                ref m_swapChain.PtrForNew,
-                ref m_pDevice.PtrForNew,
+                ref m_swapChain.NewPtr,
+                ref m_pDevice.NewPtr,
                 ref level,
-                ref m_pContext.PtrForNew);
+                ref m_pContext.NewPtr);
 
             if (m_pDevice.GetFeatureLevel() != level)
             {
@@ -107,7 +107,7 @@ namespace Sample
             {
                 DXGI_SWAP_CHAIN_DESC desc = default;
                 m_swapChain.GetDesc(ref desc);
-                m_swapChain.GetBuffer(0, ref ID3D11Texture2D.IID, ref texture.PtrForNew).ThrowIfFailed();
+                m_swapChain.GetBuffer(0, ref ID3D11Texture2D.IID, ref texture.NewPtr).ThrowIfFailed();
 
                 D3D11_TEXTURE2D_DESC tdesc = default;
                 texture.GetDesc(ref tdesc);
@@ -119,7 +119,7 @@ namespace Sample
                     ViewDimension = D3D11_RTV_DIMENSION._TEXTURE2D
                 };
                 var pRTV = new ID3D11RenderTargetView();
-                var hr = m_pDevice.CreateRenderTargetView(texture.Ptr, ref rtv_desc, ref pRTV.PtrForNew);
+                var hr = m_pDevice.CreateRenderTargetView(texture.Ptr, ref rtv_desc, ref pRTV.NewPtr);
                 if (hr != 0)
                 {
                     var uhr = (uint)hr;

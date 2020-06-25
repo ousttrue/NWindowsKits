@@ -10,7 +10,7 @@ namespace NWindowsKits
         public static T QueryInterface<T>(this IUnknown self) where T : ComPtr, new()
         {
             var p = new T();
-            if (self.QueryInterface(ref p.GetIID(), ref p.PtrForNew) != 0)
+            if (self.QueryInterface(ref p.GetIID(), ref p.NewPtr) != 0)
             {
                 return null;
             }
@@ -38,7 +38,7 @@ namespace NWindowsKits
         /// 初期化に、 void** が要求された場合に使う
         /// </summary>
         /// <value></value>
-        public ref IntPtr PtrForNew
+        public ref IntPtr NewPtr
         {
             get
             {
@@ -136,7 +136,7 @@ namespace NWindowsKits
             // var count = Marshal.AddRef(pNativeData);
             // Marshal.Release(pNativeData);
             var t = new T();
-            t.PtrForNew = pNativeData;
+            t.NewPtr = pNativeData;
             return t;
         }
 

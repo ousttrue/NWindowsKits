@@ -9,7 +9,7 @@ namespace DXGIEnumerateAdapters
         {
             using var factory = new IDXGIFactory();
 
-            var hr = dxgi.CreateDXGIFactory(ref factory.GetIID(), ref factory.PtrForNew);
+            var hr = dxgi.CreateDXGIFactory(ref factory.GetIID(), ref factory.NewPtr);
             if (hr != 0)
             {
                 throw new ComException(hr);
@@ -18,7 +18,7 @@ namespace DXGIEnumerateAdapters
             for (uint i = 0; ; ++i)
             {
                 using var adapter = new IDXGIAdapter();
-                hr = factory.EnumAdapters(i, ref adapter.PtrForNew);
+                hr = factory.EnumAdapters(i, ref adapter.NewPtr);
                 if (hr != 0)
                 {
                     break;

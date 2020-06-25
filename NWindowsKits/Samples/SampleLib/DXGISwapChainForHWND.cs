@@ -31,15 +31,15 @@ namespace SampleLib
             {
                 using (var dxgiDevice = new IDXGIDevice2())
                 {
-                    device.QueryInterface(ref IDXGIDevice2.IID, ref dxgiDevice.PtrForNew).ThrowIfFailed();
+                    device.QueryInterface(ref IDXGIDevice2.IID, ref dxgiDevice.NewPtr).ThrowIfFailed();
 
                     var dxgiAdapter = new IDXGIAdapter();
-                    dxgiDevice.GetAdapter(ref dxgiAdapter.PtrForNew).ThrowIfFailed();
+                    dxgiDevice.GetAdapter(ref dxgiAdapter.NewPtr).ThrowIfFailed();
                     using (dxgiAdapter)
                     {
                         using (var dxgiFactory = new IDXGIFactory2())
                         {
-                            dxgiAdapter.GetParent(ref IDXGIFactory2.IID, ref dxgiFactory.PtrForNew).ThrowIfFailed();
+                            dxgiAdapter.GetParent(ref IDXGIFactory2.IID, ref dxgiFactory.NewPtr).ThrowIfFailed();
 
                             var desc = new DXGI_SWAP_CHAIN_DESC1
                             {
@@ -62,7 +62,7 @@ namespace SampleLib
                                 Windowed = 1,
                             };
 
-                            var hr = dxgiFactory.CreateSwapChainForHwnd(device.Ptr, hWnd, ref desc, ref fs_desc, default, ref m_swapChain.PtrForNew);
+                            var hr = dxgiFactory.CreateSwapChainForHwnd(device.Ptr, hWnd, ref desc, ref fs_desc, default, ref m_swapChain.NewPtr);
                             hr.ThrowIfFailed();
                         }
                     }
@@ -70,7 +70,7 @@ namespace SampleLib
             }
 
             var texture = new ID3D11Texture2D();
-            m_swapChain.GetBuffer(0, ref texture.GetIID(), ref texture.PtrForNew).ThrowIfFailed();
+            m_swapChain.GetBuffer(0, ref texture.GetIID(), ref texture.NewPtr).ThrowIfFailed();
             return texture;
         }
 
