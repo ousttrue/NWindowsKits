@@ -38,6 +38,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "D3D11Triangle",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Samples/D3D11Triangle/bin/Debug/netcoreapp3.1/D3D11Triangle.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Samples/D3D11Triangle",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach",
