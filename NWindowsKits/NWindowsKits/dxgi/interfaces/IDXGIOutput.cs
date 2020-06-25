@@ -23,16 +23,16 @@ namespace NWindowsKits
         delegate int GetDescFunc(IntPtr self, ref DXGI_OUTPUT_DESC pDesc);
         GetDescFunc m_GetDescFunc;
 
-        public int GetDisplayModeList(DXGI_FORMAT EnumFormat, uint Flags, IntPtr pNumModes, ref DXGI_MODE_DESC pDesc)
+        public int GetDisplayModeList(DXGI_FORMAT EnumFormat, uint Flags, ref uint pNumModes, ref DXGI_MODE_DESC pDesc)
         {
             if(m_GetDisplayModeListFunc==null){
                 var fp = GetFunctionPointer(8);
                 m_GetDisplayModeListFunc = (GetDisplayModeListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayModeListFunc));
             } 
             
-            return  m_GetDisplayModeListFunc(m_ptr, EnumFormat, Flags, pNumModes, ref pDesc);
+            return  m_GetDisplayModeListFunc(m_ptr, EnumFormat, Flags, ref pNumModes, ref pDesc);
         }
-        delegate int GetDisplayModeListFunc(IntPtr self, DXGI_FORMAT EnumFormat, uint Flags, IntPtr pNumModes, ref DXGI_MODE_DESC pDesc);
+        delegate int GetDisplayModeListFunc(IntPtr self, DXGI_FORMAT EnumFormat, uint Flags, ref uint pNumModes, ref DXGI_MODE_DESC pDesc);
         GetDisplayModeListFunc m_GetDisplayModeListFunc;
 
         public int FindClosestMatchingMode(ref DXGI_MODE_DESC pModeToMatch, ref DXGI_MODE_DESC pClosestMatch, IntPtr pConcernedDevice)
@@ -119,28 +119,28 @@ namespace NWindowsKits
         delegate int GetGammaControlFunc(IntPtr self, ref DXGI_GAMMA_CONTROL pArray);
         GetGammaControlFunc m_GetGammaControlFunc;
 
-        public int SetDisplaySurface(ref IDXGISurface pScanoutSurface)
+        public int SetDisplaySurface(IntPtr pScanoutSurface)
         {
             if(m_SetDisplaySurfaceFunc==null){
                 var fp = GetFunctionPointer(16);
                 m_SetDisplaySurfaceFunc = (SetDisplaySurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDisplaySurfaceFunc));
             } 
             
-            return  m_SetDisplaySurfaceFunc(m_ptr, ref pScanoutSurface);
+            return  m_SetDisplaySurfaceFunc(m_ptr, pScanoutSurface);
         }
-        delegate int SetDisplaySurfaceFunc(IntPtr self, ref IDXGISurface pScanoutSurface);
+        delegate int SetDisplaySurfaceFunc(IntPtr self, IntPtr pScanoutSurface);
         SetDisplaySurfaceFunc m_SetDisplaySurfaceFunc;
 
-        public int GetDisplaySurfaceData(ref IDXGISurface pDestination)
+        public int GetDisplaySurfaceData(IntPtr pDestination)
         {
             if(m_GetDisplaySurfaceDataFunc==null){
                 var fp = GetFunctionPointer(17);
                 m_GetDisplaySurfaceDataFunc = (GetDisplaySurfaceDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplaySurfaceDataFunc));
             } 
             
-            return  m_GetDisplaySurfaceDataFunc(m_ptr, ref pDestination);
+            return  m_GetDisplaySurfaceDataFunc(m_ptr, pDestination);
         }
-        delegate int GetDisplaySurfaceDataFunc(IntPtr self, ref IDXGISurface pDestination);
+        delegate int GetDisplaySurfaceDataFunc(IntPtr self, IntPtr pDestination);
         GetDisplaySurfaceDataFunc m_GetDisplaySurfaceDataFunc;
 
         public int GetFrameStatistics(ref DXGI_FRAME_STATISTICS pStats)

@@ -9,5 +9,6 @@ namespace NWindowsKits
     public struct POINTER_TYPE_INFO // 2
     {
         public uint type;
+        public __Anonymous__3 __field__1;
     }
 }

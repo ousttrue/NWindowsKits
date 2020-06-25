@@ -10,6 +10,7 @@ namespace NWindowsKits
     {
         public LUID adapterId;
         public uint id;
+        public __Anonymous__8 __field__2;
         public DISPLAYCONFIG_VIDEO_OUTPUT_TECHNOLOGY outputTechnology;
         public DISPLAYCONFIG_ROTATION rotation;
         public DISPLAYCONFIG_SCALING scaling;

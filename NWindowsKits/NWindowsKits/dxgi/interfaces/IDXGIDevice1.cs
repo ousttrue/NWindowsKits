@@ -23,16 +23,16 @@ namespace NWindowsKits
         delegate int SetMaximumFrameLatencyFunc(IntPtr self, uint MaxLatency);
         SetMaximumFrameLatencyFunc m_SetMaximumFrameLatencyFunc;
 
-        public int GetMaximumFrameLatency(IntPtr pMaxLatency)
+        public int GetMaximumFrameLatency(ref uint pMaxLatency)
         {
             if(m_GetMaximumFrameLatencyFunc==null){
                 var fp = GetFunctionPointer(13);
                 m_GetMaximumFrameLatencyFunc = (GetMaximumFrameLatencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMaximumFrameLatencyFunc));
             } 
             
-            return  m_GetMaximumFrameLatencyFunc(m_ptr, pMaxLatency);
+            return  m_GetMaximumFrameLatencyFunc(m_ptr, ref pMaxLatency);
         }
-        delegate int GetMaximumFrameLatencyFunc(IntPtr self, IntPtr pMaxLatency);
+        delegate int GetMaximumFrameLatencyFunc(IntPtr self, ref uint pMaxLatency);
         GetMaximumFrameLatencyFunc m_GetMaximumFrameLatencyFunc;
 
     }

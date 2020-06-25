@@ -10,6 +10,7 @@ namespace NWindowsKits
     {
         public LUID adapterId;
         public uint id;
+        public __Anonymous__6 __field__2;
         public uint statusFlags;
     }
 }

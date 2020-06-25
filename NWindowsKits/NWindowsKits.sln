@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "Samples\Hello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXGIEnumerateAdapters", "Samples\DXGIEnumerateAdapters\DXGIEnumerateAdapters.csproj", "{4F578F59-240D-4688-802C-87E573CD2B7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearSwapchainSample", "Samples\ClearSwapchainSample\ClearSwapchainSample.csproj", "{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,22 @@ Global
 		{4F578F59-240D-4688-802C-87E573CD2B7B}.Release|x64.Build.0 = Release|Any CPU
 		{4F578F59-240D-4688-802C-87E573CD2B7B}.Release|x86.ActiveCfg = Release|Any CPU
 		{4F578F59-240D-4688-802C-87E573CD2B7B}.Release|x86.Build.0 = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|x64.Build.0 = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Debug|x86.Build.0 = Debug|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|x64.ActiveCfg = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|x64.Build.0 = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|x86.ActiveCfg = Release|Any CPU
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DF60E5A3-0EDC-4AC9-8FBA-FC1ADF279BFD} = {C2ED06C5-01CE-458B-9FD4-966E60FCFCF5}
 		{4F578F59-240D-4688-802C-87E573CD2B7B} = {C2ED06C5-01CE-458B-9FD4-966E60FCFCF5}
+		{851AD0FC-D0EC-4166-872A-0C8A08AD0B6F} = {C2ED06C5-01CE-458B-9FD4-966E60FCFCF5}
 	EndGlobalSection
 EndGlobal

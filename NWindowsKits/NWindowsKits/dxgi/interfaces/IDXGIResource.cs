@@ -47,16 +47,16 @@ namespace NWindowsKits
         delegate int SetEvictionPriorityFunc(IntPtr self, uint EvictionPriority);
         SetEvictionPriorityFunc m_SetEvictionPriorityFunc;
 
-        public int GetEvictionPriority(IntPtr pEvictionPriority)
+        public int GetEvictionPriority(ref uint pEvictionPriority)
         {
             if(m_GetEvictionPriorityFunc==null){
                 var fp = GetFunctionPointer(11);
                 m_GetEvictionPriorityFunc = (GetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEvictionPriorityFunc));
             } 
             
-            return  m_GetEvictionPriorityFunc(m_ptr, pEvictionPriority);
+            return  m_GetEvictionPriorityFunc(m_ptr, ref pEvictionPriority);
         }
-        delegate int GetEvictionPriorityFunc(IntPtr self, IntPtr pEvictionPriority);
+        delegate int GetEvictionPriorityFunc(IntPtr self, ref uint pEvictionPriority);
         GetEvictionPriorityFunc m_GetEvictionPriorityFunc;
 
     }

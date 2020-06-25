@@ -24,6 +24,7 @@ namespace NWindowsKits
         public uint dmBitsPerPel;
         public uint dmPelsWidth;
         public uint dmPelsHeight;
+        public __Anonymous__0 __field__16;
         public uint dmDisplayFrequency;
         public uint dmICMMethod;
         public uint dmICMIntent;

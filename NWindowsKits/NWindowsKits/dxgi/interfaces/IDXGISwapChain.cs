@@ -35,28 +35,28 @@ namespace NWindowsKits
         delegate int GetBufferFunc(IntPtr self, uint Buffer, ref Guid riid, ref IntPtr ppSurface);
         GetBufferFunc m_GetBufferFunc;
 
-        public int SetFullscreenState(int Fullscreen, ref IDXGIOutput pTarget)
+        public int SetFullscreenState(int Fullscreen, IntPtr pTarget)
         {
             if(m_SetFullscreenStateFunc==null){
                 var fp = GetFunctionPointer(10);
                 m_SetFullscreenStateFunc = (SetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFullscreenStateFunc));
             } 
             
-            return  m_SetFullscreenStateFunc(m_ptr, Fullscreen, ref pTarget);
+            return  m_SetFullscreenStateFunc(m_ptr, Fullscreen, pTarget);
         }
-        delegate int SetFullscreenStateFunc(IntPtr self, int Fullscreen, ref IDXGIOutput pTarget);
+        delegate int SetFullscreenStateFunc(IntPtr self, int Fullscreen, IntPtr pTarget);
         SetFullscreenStateFunc m_SetFullscreenStateFunc;
 
-        public int GetFullscreenState(IntPtr pFullscreen, ref IntPtr ppTarget)
+        public int GetFullscreenState(ref int pFullscreen, ref IntPtr ppTarget)
         {
             if(m_GetFullscreenStateFunc==null){
                 var fp = GetFunctionPointer(11);
                 m_GetFullscreenStateFunc = (GetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFullscreenStateFunc));
             } 
             
-            return  m_GetFullscreenStateFunc(m_ptr, pFullscreen, ref ppTarget);
+            return  m_GetFullscreenStateFunc(m_ptr, ref pFullscreen, ref ppTarget);
         }
-        delegate int GetFullscreenStateFunc(IntPtr self, IntPtr pFullscreen, ref IntPtr ppTarget);
+        delegate int GetFullscreenStateFunc(IntPtr self, ref int pFullscreen, ref IntPtr ppTarget);
         GetFullscreenStateFunc m_GetFullscreenStateFunc;
 
         public int GetDesc(ref DXGI_SWAP_CHAIN_DESC pDesc)
@@ -119,16 +119,16 @@ namespace NWindowsKits
         delegate int GetFrameStatisticsFunc(IntPtr self, ref DXGI_FRAME_STATISTICS pStats);
         GetFrameStatisticsFunc m_GetFrameStatisticsFunc;
 
-        public int GetLastPresentCount(IntPtr pLastPresentCount)
+        public int GetLastPresentCount(ref uint pLastPresentCount)
         {
             if(m_GetLastPresentCountFunc==null){
                 var fp = GetFunctionPointer(17);
                 m_GetLastPresentCountFunc = (GetLastPresentCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastPresentCountFunc));
             } 
             
-            return  m_GetLastPresentCountFunc(m_ptr, pLastPresentCount);
+            return  m_GetLastPresentCountFunc(m_ptr, ref pLastPresentCount);
         }
-        delegate int GetLastPresentCountFunc(IntPtr self, IntPtr pLastPresentCount);
+        delegate int GetLastPresentCountFunc(IntPtr self, ref uint pLastPresentCount);
         GetLastPresentCountFunc m_GetLastPresentCountFunc;
 
     }

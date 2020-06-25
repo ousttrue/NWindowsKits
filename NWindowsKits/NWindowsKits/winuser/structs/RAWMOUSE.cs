@@ -9,6 +9,7 @@ namespace NWindowsKits
     public struct RAWMOUSE // 3
     {
         public ushort usFlags;
+        public __Anonymous__13 __field__1;
         public uint ulRawButtons;
         public int lLastX;
         public int lLastY;

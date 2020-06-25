@@ -5,10 +5,14 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:842
-    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
     public struct LARGE_INTEGER // 1
     {
-        public __Anonymous__3 u;
-        public long QuadPart;
+
+        [FieldOffset(0)] public __Anonymous__20 __field__0;
+
+        [FieldOffset(0)] public __Anonymous__21 u;
+
+        [FieldOffset(0)] public long QuadPart;
     }
 }

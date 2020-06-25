@@ -35,16 +35,16 @@ namespace NWindowsKits
         delegate int CreateSurfaceFunc(IntPtr self, ref DXGI_SURFACE_DESC pDesc, uint NumSurfaces, uint Usage, ref DXGI_SHARED_RESOURCE pSharedResource, ref IntPtr ppSurface);
         CreateSurfaceFunc m_CreateSurfaceFunc;
 
-        public int QueryResourceResidency(ref IntPtr ppResources, IntPtr pResidencyStatus, uint NumResources)
+        public int QueryResourceResidency(ref IntPtr ppResources, ref DXGI_RESIDENCY pResidencyStatus, uint NumResources)
         {
             if(m_QueryResourceResidencyFunc==null){
                 var fp = GetFunctionPointer(9);
                 m_QueryResourceResidencyFunc = (QueryResourceResidencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryResourceResidencyFunc));
             } 
             
-            return  m_QueryResourceResidencyFunc(m_ptr, ref ppResources, pResidencyStatus, NumResources);
+            return  m_QueryResourceResidencyFunc(m_ptr, ref ppResources, ref pResidencyStatus, NumResources);
         }
-        delegate int QueryResourceResidencyFunc(IntPtr self, ref IntPtr ppResources, IntPtr pResidencyStatus, uint NumResources);
+        delegate int QueryResourceResidencyFunc(IntPtr self, ref IntPtr ppResources, ref DXGI_RESIDENCY pResidencyStatus, uint NumResources);
         QueryResourceResidencyFunc m_QueryResourceResidencyFunc;
 
         public int SetGPUThreadPriority(int Priority)
@@ -59,16 +59,16 @@ namespace NWindowsKits
         delegate int SetGPUThreadPriorityFunc(IntPtr self, int Priority);
         SetGPUThreadPriorityFunc m_SetGPUThreadPriorityFunc;
 
-        public int GetGPUThreadPriority(IntPtr pPriority)
+        public int GetGPUThreadPriority(ref int pPriority)
         {
             if(m_GetGPUThreadPriorityFunc==null){
                 var fp = GetFunctionPointer(11);
                 m_GetGPUThreadPriorityFunc = (GetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGPUThreadPriorityFunc));
             } 
             
-            return  m_GetGPUThreadPriorityFunc(m_ptr, pPriority);
+            return  m_GetGPUThreadPriorityFunc(m_ptr, ref pPriority);
         }
-        delegate int GetGPUThreadPriorityFunc(IntPtr self, IntPtr pPriority);
+        delegate int GetGPUThreadPriorityFunc(IntPtr self, ref int pPriority);
         GetGPUThreadPriorityFunc m_GetGPUThreadPriorityFunc;
 
     }

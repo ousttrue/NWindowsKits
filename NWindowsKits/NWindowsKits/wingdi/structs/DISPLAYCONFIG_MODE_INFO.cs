@@ -11,5 +11,6 @@ namespace NWindowsKits
         public DISPLAYCONFIG_MODE_INFO_TYPE infoType;
         public uint id;
         public LUID adapterId;
+        public __Anonymous__10 __field__3;
     }
 }

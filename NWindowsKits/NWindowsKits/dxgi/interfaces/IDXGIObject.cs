@@ -35,16 +35,16 @@ namespace NWindowsKits
         delegate int SetPrivateDataInterfaceFunc(IntPtr self, ref GUID Name, IntPtr pUnknown);
         SetPrivateDataInterfaceFunc m_SetPrivateDataInterfaceFunc;
 
-        public int GetPrivateData(ref GUID Name, IntPtr pDataSize, IntPtr pData)
+        public int GetPrivateData(ref GUID Name, ref uint pDataSize, IntPtr pData)
         {
             if(m_GetPrivateDataFunc==null){
                 var fp = GetFunctionPointer(5);
                 m_GetPrivateDataFunc = (GetPrivateDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPrivateDataFunc));
             } 
             
-            return  m_GetPrivateDataFunc(m_ptr, ref Name, pDataSize, pData);
+            return  m_GetPrivateDataFunc(m_ptr, ref Name, ref pDataSize, pData);
         }
-        delegate int GetPrivateDataFunc(IntPtr self, ref GUID Name, IntPtr pDataSize, IntPtr pData);
+        delegate int GetPrivateDataFunc(IntPtr self, ref GUID Name, ref uint pDataSize, IntPtr pData);
         GetPrivateDataFunc m_GetPrivateDataFunc;
 
         public int GetParent(ref Guid riid, ref IntPtr ppParent)

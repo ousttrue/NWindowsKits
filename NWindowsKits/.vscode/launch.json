@@ -27,6 +27,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "ClearSwapchainSample",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Samples/ClearSwapchainSample/bin/Debug/netcoreapp3.1/ClearSwapchainSample.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Samples/ClearSwapchainSample",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach",

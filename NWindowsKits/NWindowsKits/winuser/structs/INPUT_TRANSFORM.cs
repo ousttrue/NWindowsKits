@@ -8,5 +8,6 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct INPUT_TRANSFORM // 1
     {
+        public __Anonymous__4 __field__0;
     }
 }
