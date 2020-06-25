@@ -27,13 +27,13 @@
             "stopAtEntry": false
         },
         {
-            "name": "ClearSwapchainSample",
+            "name": "D3D11ClearSwapchain",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Samples/ClearSwapchainSample/bin/Debug/netcoreapp3.1/ClearSwapchainSample.dll",
+            "program": "${workspaceFolder}/Samples/D3D11ClearSwapchain/bin/Debug/netcoreapp3.1/D3D11ClearSwapchain.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Samples/ClearSwapchainSample",
+            "cwd": "${workspaceFolder}/Samples/D3D11ClearSwapchain",
             "console": "internalConsole",
             "stopAtEntry": false
         },
