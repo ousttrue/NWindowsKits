@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_uniqueIDFunc = (uniqueIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(uniqueIDFunc));
             } 
-            
             return  m_uniqueIDFunc(m_ptr, pNode, ref pID);
         }
         delegate int uniqueIDFunc(IntPtr self, IntPtr pNode, ref int pID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_depthFunc = (depthFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(depthFunc));
             } 
-            
             return  m_depthFunc(m_ptr, pNode, ref pDepth);
         }
         delegate int depthFunc(IntPtr self, IntPtr pNode, ref int pDepth);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_childNumberFunc = (childNumberFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(childNumberFunc));
             } 
-            
             return  m_childNumberFunc(m_ptr, pNode, ref pNumber);
         }
         delegate int childNumberFunc(IntPtr self, IntPtr pNode, ref int pNumber);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(46);
                 m_ancestorChildNumberFunc = (ancestorChildNumberFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ancestorChildNumberFunc));
             } 
-            
             return  m_ancestorChildNumberFunc(m_ptr, bstrNodeName, pNode, ref pNumber);
         }
         delegate int ancestorChildNumberFunc(IntPtr self, IntPtr bstrNodeName, IntPtr pNode, ref int pNumber);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(47);
                 m_absoluteChildNumberFunc = (absoluteChildNumberFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(absoluteChildNumberFunc));
             } 
-            
             return  m_absoluteChildNumberFunc(m_ptr, pNode, ref pNumber);
         }
         delegate int absoluteChildNumberFunc(IntPtr self, IntPtr pNode, ref int pNumber);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(48);
                 m_formatIndexFunc = (formatIndexFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(formatIndexFunc));
             } 
-            
             return  m_formatIndexFunc(m_ptr, lIndex, bstrFormat, ref pbstrFormattedString);
         }
         delegate int formatIndexFunc(IntPtr self, int lIndex, IntPtr bstrFormat, ref IntPtr pbstrFormattedString);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(49);
                 m_formatNumberFunc = (formatNumberFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(formatNumberFunc));
             } 
-            
             return  m_formatNumberFunc(m_ptr, dblNumber, bstrFormat, ref pbstrFormattedString);
         }
         delegate int formatNumberFunc(IntPtr self, double dblNumber, IntPtr bstrFormat, ref IntPtr pbstrFormattedString);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(50);
                 m_formatDateFunc = (formatDateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(formatDateFunc));
             } 
-            
             return  m_formatDateFunc(m_ptr, varDate, bstrFormat, varDestLocale, ref pbstrFormattedString);
         }
         delegate int formatDateFunc(IntPtr self, VARIANT varDate, IntPtr bstrFormat, VARIANT varDestLocale, ref IntPtr pbstrFormattedString);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(51);
                 m_formatTimeFunc = (formatTimeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(formatTimeFunc));
             } 
-            
             return  m_formatTimeFunc(m_ptr, varTime, bstrFormat, varDestLocale, ref pbstrFormattedString);
         }
         delegate int formatTimeFunc(IntPtr self, VARIANT varTime, IntPtr bstrFormat, VARIANT varDestLocale, ref IntPtr pbstrFormattedString);

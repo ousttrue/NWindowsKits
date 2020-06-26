@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetTypeInfoCountFunc = (GetTypeInfoCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoCountFunc));
             } 
-            
             return  m_GetTypeInfoCountFunc(m_ptr, ref pctinfo);
         }
         delegate int GetTypeInfoCountFunc(IntPtr self, ref uint pctinfo);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetTypeInfoFunc = (GetTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoFunc));
             } 
-            
             return  m_GetTypeInfoFunc(m_ptr, iTInfo, lcid, ref ppTInfo);
         }
         delegate int GetTypeInfoFunc(IntPtr self, uint iTInfo, uint lcid, ref IntPtr ppTInfo);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetIDsOfNamesFunc = (GetIDsOfNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIDsOfNamesFunc));
             } 
-            
             return  m_GetIDsOfNamesFunc(m_ptr, ref riid, ref rgszNames, cNames, lcid, rgDispId);
         }
         delegate int GetIDsOfNamesFunc(IntPtr self, ref Guid riid, ref IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_InvokeFunc = (InvokeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InvokeFunc));
             } 
-            
             return  m_InvokeFunc(m_ptr, dispIdMember, ref riid, lcid, wFlags, ref pDispParams, ref pVarResult, ref pExcepInfo, ref puArgErr);
         }
         delegate int InvokeFunc(IntPtr self, int dispIdMember, ref Guid riid, uint lcid, ushort wFlags, ref DISPPARAMS pDispParams, ref VARIANT pVarResult, ref EXCEPINFO pExcepInfo, ref uint puArgErr);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OnProgressFunc = (OnProgressFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnProgressFunc));
             } 
-            
             return  m_OnProgressFunc(m_ptr, dwProgressCurrent, dwProgressMaximum, fAccurate, fOwner);
         }
         delegate int OnProgressFunc(IntPtr self, uint dwProgressCurrent, uint dwProgressMaximum, int fAccurate, int fOwner);

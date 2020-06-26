@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetSharedHandleFunc = (GetSharedHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSharedHandleFunc));
             } 
-            
             return  m_GetSharedHandleFunc(m_ptr, ref pSharedHandle);
         }
         delegate int GetSharedHandleFunc(IntPtr self, ref IntPtr pSharedHandle);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetUsageFunc = (GetUsageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUsageFunc));
             } 
-            
             return  m_GetUsageFunc(m_ptr, pUsage);
         }
         delegate int GetUsageFunc(IntPtr self, IntPtr pUsage);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SetEvictionPriorityFunc = (SetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEvictionPriorityFunc));
             } 
-            
             return  m_SetEvictionPriorityFunc(m_ptr, EvictionPriority);
         }
         delegate int SetEvictionPriorityFunc(IntPtr self, uint EvictionPriority);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetEvictionPriorityFunc = (GetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEvictionPriorityFunc));
             } 
-            
             return  m_GetEvictionPriorityFunc(m_ptr, ref pEvictionPriority);
         }
         delegate int GetEvictionPriorityFunc(IntPtr self, ref uint pEvictionPriority);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AdviseFunc = (AdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AdviseFunc));
             } 
-            
             return  m_AdviseFunc(m_ptr, pDataObject, ref pFetc, advf, pAdvise, ref pdwConnection);
         }
         delegate int AdviseFunc(IntPtr self, IntPtr pDataObject, ref FORMATETC pFetc, uint advf, IntPtr pAdvise, ref uint pdwConnection);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UnadviseFunc = (UnadviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnadviseFunc));
             } 
-            
             return  m_UnadviseFunc(m_ptr, dwConnection);
         }
         delegate int UnadviseFunc(IntPtr self, uint dwConnection);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_EnumAdviseFunc = (EnumAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdviseFunc));
             } 
-            
             return  m_EnumAdviseFunc(m_ptr, ref ppenumAdvise);
         }
         delegate int EnumAdviseFunc(IntPtr self, ref IntPtr ppenumAdvise);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SendOnDataChangeFunc = (SendOnDataChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SendOnDataChangeFunc));
             } 
-            
             return  m_SendOnDataChangeFunc(m_ptr, pDataObject, dwReserved, advf);
         }
         delegate int SendOnDataChangeFunc(IntPtr self, IntPtr pDataObject, uint dwReserved, uint advf);

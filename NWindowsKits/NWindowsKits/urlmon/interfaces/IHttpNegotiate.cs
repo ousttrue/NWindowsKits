@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_BeginningTransactionFunc = (BeginningTransactionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BeginningTransactionFunc));
             } 
-            
             return  m_BeginningTransactionFunc(m_ptr, szURL, szHeaders, dwReserved, ref pszAdditionalHeaders);
         }
         delegate int BeginningTransactionFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string szURL, [MarshalAs(UnmanagedType.LPWStr)] string szHeaders, uint dwReserved, ref IntPtr pszAdditionalHeaders);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnResponseFunc = (OnResponseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnResponseFunc));
             } 
-            
             return  m_OnResponseFunc(m_ptr, dwResponseCode, szResponseHeaders, szRequestHeaders, ref pszAdditionalRequestHeaders);
         }
         delegate int OnResponseFunc(IntPtr self, uint dwResponseCode, [MarshalAs(UnmanagedType.LPWStr)] string szResponseHeaders, [MarshalAs(UnmanagedType.LPWStr)] string szRequestHeaders, ref IntPtr pszAdditionalRequestHeaders);

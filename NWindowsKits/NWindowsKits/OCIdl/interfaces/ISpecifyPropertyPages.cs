@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetPagesFunc = (GetPagesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPagesFunc));
             } 
-            
             return  m_GetPagesFunc(m_ptr, ref pPages);
         }
         delegate int GetPagesFunc(IntPtr self, ref CAUUID pPages);

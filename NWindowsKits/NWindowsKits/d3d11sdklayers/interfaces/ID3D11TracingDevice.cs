@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetShaderTrackingOptionsByTypeFunc = (SetShaderTrackingOptionsByTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetShaderTrackingOptionsByTypeFunc));
             } 
-            
             return  m_SetShaderTrackingOptionsByTypeFunc(m_ptr, ResourceTypeFlags, Options);
         }
         delegate int SetShaderTrackingOptionsByTypeFunc(IntPtr self, uint ResourceTypeFlags, uint Options);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetShaderTrackingOptionsFunc = (SetShaderTrackingOptionsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetShaderTrackingOptionsFunc));
             } 
-            
             return  m_SetShaderTrackingOptionsFunc(m_ptr, pShader, Options);
         }
         delegate int SetShaderTrackingOptionsFunc(IntPtr self, IntPtr pShader, uint Options);

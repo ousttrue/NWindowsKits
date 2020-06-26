@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_StartExFunc = (StartExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(StartExFunc));
             } 
-            
             return  m_StartExFunc(m_ptr, pUri, pOIProtSink, pOIBindInfo, grfPI, dwReserved);
         }
         delegate int StartExFunc(IntPtr self, IntPtr pUri, IntPtr pOIProtSink, IntPtr pOIBindInfo, uint grfPI, ulong dwReserved);

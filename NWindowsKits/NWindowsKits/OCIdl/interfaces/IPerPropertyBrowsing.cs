@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetDisplayStringFunc = (GetDisplayStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayStringFunc));
             } 
-            
             return  m_GetDisplayStringFunc(m_ptr, dispID, ref pBstr);
         }
         delegate int GetDisplayStringFunc(IntPtr self, int dispID, ref IntPtr pBstr);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_MapPropertyToPageFunc = (MapPropertyToPageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapPropertyToPageFunc));
             } 
-            
             return  m_MapPropertyToPageFunc(m_ptr, dispID, pClsid);
         }
         delegate int MapPropertyToPageFunc(IntPtr self, int dispID, IntPtr pClsid);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetPredefinedStringsFunc = (GetPredefinedStringsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPredefinedStringsFunc));
             } 
-            
             return  m_GetPredefinedStringsFunc(m_ptr, dispID, ref pCaStringsOut, ref pCaCookiesOut);
         }
         delegate int GetPredefinedStringsFunc(IntPtr self, int dispID, ref CALPOLESTR pCaStringsOut, ref CADWORD pCaCookiesOut);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetPredefinedValueFunc = (GetPredefinedValueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPredefinedValueFunc));
             } 
-            
             return  m_GetPredefinedValueFunc(m_ptr, dispID, dwCookie, ref pVarOut);
         }
         delegate int GetPredefinedValueFunc(IntPtr self, int dispID, uint dwCookie, ref VARIANT pVarOut);

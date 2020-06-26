@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetZoneActionPolicyExFunc = (GetZoneActionPolicyExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetZoneActionPolicyExFunc));
             } 
-            
             return  m_GetZoneActionPolicyExFunc(m_ptr, dwZone, dwAction, ref pPolicy, cbPolicy, urlZoneReg, dwFlags);
         }
         delegate int GetZoneActionPolicyExFunc(IntPtr self, uint dwZone, uint dwAction, ref byte pPolicy, uint cbPolicy, URLZONEREG urlZoneReg, uint dwFlags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_SetZoneActionPolicyExFunc = (SetZoneActionPolicyExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetZoneActionPolicyExFunc));
             } 
-            
             return  m_SetZoneActionPolicyExFunc(m_ptr, dwZone, dwAction, ref pPolicy, cbPolicy, urlZoneReg, dwFlags);
         }
         delegate int SetZoneActionPolicyExFunc(IntPtr self, uint dwZone, uint dwAction, ref byte pPolicy, uint cbPolicy, URLZONEREG urlZoneReg, uint dwFlags);

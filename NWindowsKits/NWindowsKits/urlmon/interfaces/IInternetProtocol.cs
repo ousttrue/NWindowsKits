@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_ReadFunc = (ReadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadFunc));
             } 
-            
             return  m_ReadFunc(m_ptr, pv, cb, pcbRead);
         }
         delegate int ReadFunc(IntPtr self, IntPtr pv, uint cb, IntPtr pcbRead);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SeekFunc = (SeekFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SeekFunc));
             } 
-            
             return  m_SeekFunc(m_ptr, dlibMove, dwOrigin, ref plibNewPosition);
         }
         delegate int SeekFunc(IntPtr self, LARGE_INTEGER dlibMove, uint dwOrigin, ref ULARGE_INTEGER plibNewPosition);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_LockRequestFunc = (LockRequestFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockRequestFunc));
             } 
-            
             return  m_LockRequestFunc(m_ptr, dwOptions);
         }
         delegate int LockRequestFunc(IntPtr self, uint dwOptions);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_UnlockRequestFunc = (UnlockRequestFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnlockRequestFunc));
             } 
-            
             return  m_UnlockRequestFunc(m_ptr);
         }
         delegate int UnlockRequestFunc(IntPtr self);

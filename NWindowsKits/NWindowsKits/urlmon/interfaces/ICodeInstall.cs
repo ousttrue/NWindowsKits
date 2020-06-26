@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnCodeInstallProblemFunc = (OnCodeInstallProblemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnCodeInstallProblemFunc));
             } 
-            
             return  m_OnCodeInstallProblemFunc(m_ptr, ulStatusCode, szDestination, szSource, dwReserved);
         }
         delegate int OnCodeInstallProblemFunc(IntPtr self, uint ulStatusCode, [MarshalAs(UnmanagedType.LPWStr)] string szDestination, [MarshalAs(UnmanagedType.LPWStr)] string szSource, uint dwReserved);

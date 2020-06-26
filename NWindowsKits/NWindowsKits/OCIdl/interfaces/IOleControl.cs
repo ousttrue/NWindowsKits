@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetControlInfoFunc = (GetControlInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetControlInfoFunc));
             } 
-            
             return  m_GetControlInfoFunc(m_ptr, ref pCI);
         }
         delegate int GetControlInfoFunc(IntPtr self, ref CONTROLINFO pCI);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnMnemonicFunc = (OnMnemonicFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnMnemonicFunc));
             } 
-            
             return  m_OnMnemonicFunc(m_ptr, ref pMsg);
         }
         delegate int OnMnemonicFunc(IntPtr self, ref MSG pMsg);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_OnAmbientPropertyChangeFunc = (OnAmbientPropertyChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnAmbientPropertyChangeFunc));
             } 
-            
             return  m_OnAmbientPropertyChangeFunc(m_ptr, dispID);
         }
         delegate int OnAmbientPropertyChangeFunc(IntPtr self, int dispID);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_FreezeEventsFunc = (FreezeEventsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreezeEventsFunc));
             } 
-            
             return  m_FreezeEventsFunc(m_ptr, bFreeze);
         }
         delegate int FreezeEventsFunc(IntPtr self, int bFreeze);

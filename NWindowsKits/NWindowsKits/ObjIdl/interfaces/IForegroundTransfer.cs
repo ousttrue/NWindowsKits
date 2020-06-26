@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AllowForegroundTransferFunc = (AllowForegroundTransferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AllowForegroundTransferFunc));
             } 
-            
             return  m_AllowForegroundTransferFunc(m_ptr, lpvReserved);
         }
         delegate int AllowForegroundTransferFunc(IntPtr self, IntPtr lpvReserved);

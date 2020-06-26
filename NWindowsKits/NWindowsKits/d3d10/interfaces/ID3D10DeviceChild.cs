@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetDeviceFunc = (GetDeviceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDeviceFunc));
             } 
-            
              m_GetDeviceFunc(m_ptr, ref ppDevice);
         }
         delegate void GetDeviceFunc(IntPtr self, ref IntPtr ppDevice);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetPrivateDataFunc = (GetPrivateDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPrivateDataFunc));
             } 
-            
             return  m_GetPrivateDataFunc(m_ptr, ref guid, ref pDataSize, pData);
         }
         delegate int GetPrivateDataFunc(IntPtr self, ref GUID guid, ref uint pDataSize, IntPtr pData);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetPrivateDataFunc = (SetPrivateDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPrivateDataFunc));
             } 
-            
             return  m_SetPrivateDataFunc(m_ptr, ref guid, DataSize, pData);
         }
         delegate int SetPrivateDataFunc(IntPtr self, ref GUID guid, uint DataSize, IntPtr pData);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetPrivateDataInterfaceFunc = (SetPrivateDataInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPrivateDataInterfaceFunc));
             } 
-            
             return  m_SetPrivateDataInterfaceFunc(m_ptr, ref guid, pData);
         }
         delegate int SetPrivateDataInterfaceFunc(IntPtr self, ref GUID guid, IntPtr pData);

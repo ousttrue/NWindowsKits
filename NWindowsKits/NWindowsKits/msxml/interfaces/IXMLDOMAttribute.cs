@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_get_nameFunc = (get_nameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nameFunc));
             } 
-            
             return  m_get_nameFunc(m_ptr, ref attributeName);
         }
         delegate int get_nameFunc(IntPtr self, ref IntPtr attributeName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_get_valueFunc = (get_valueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_valueFunc));
             } 
-            
             return  m_get_valueFunc(m_ptr, ref attributeValue);
         }
         delegate int get_valueFunc(IntPtr self, ref VARIANT attributeValue);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_put_valueFunc = (put_valueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_valueFunc));
             } 
-            
             return  m_put_valueFunc(m_ptr, attributeValue);
         }
         delegate int put_valueFunc(IntPtr self, VARIANT attributeValue);

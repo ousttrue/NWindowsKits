@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_hasFeatureFunc = (hasFeatureFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(hasFeatureFunc));
             } 
-            
             return  m_hasFeatureFunc(m_ptr, feature, version, ref hasFeature);
         }
         delegate int hasFeatureFunc(IntPtr self, IntPtr feature, IntPtr version, ref short hasFeature);

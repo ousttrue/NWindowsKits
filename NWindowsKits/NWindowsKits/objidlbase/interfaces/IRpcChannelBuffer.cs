@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetBufferFunc = (GetBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferFunc));
             } 
-            
             return  m_GetBufferFunc(m_ptr, ref pMessage, ref riid);
         }
         delegate int GetBufferFunc(IntPtr self, ref RPCOLEMESSAGE pMessage, ref Guid riid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SendReceiveFunc = (SendReceiveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SendReceiveFunc));
             } 
-            
             return  m_SendReceiveFunc(m_ptr, ref pMessage, pStatus);
         }
         delegate int SendReceiveFunc(IntPtr self, ref RPCOLEMESSAGE pMessage, IntPtr pStatus);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_FreeBufferFunc = (FreeBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreeBufferFunc));
             } 
-            
             return  m_FreeBufferFunc(m_ptr, ref pMessage);
         }
         delegate int FreeBufferFunc(IntPtr self, ref RPCOLEMESSAGE pMessage);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetDestCtxFunc = (GetDestCtxFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDestCtxFunc));
             } 
-            
             return  m_GetDestCtxFunc(m_ptr, ref pdwDestContext, ref ppvDestContext);
         }
         delegate int GetDestCtxFunc(IntPtr self, ref uint pdwDestContext, ref IntPtr ppvDestContext);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_IsConnectedFunc = (IsConnectedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsConnectedFunc));
             } 
-            
             return  m_IsConnectedFunc(m_ptr);
         }
         delegate int IsConnectedFunc(IntPtr self);

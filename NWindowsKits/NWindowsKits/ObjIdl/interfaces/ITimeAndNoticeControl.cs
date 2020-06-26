@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SuppressChangesFunc = (SuppressChangesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SuppressChangesFunc));
             } 
-            
             return  m_SuppressChangesFunc(m_ptr, res1, res2);
         }
         delegate int SuppressChangesFunc(IntPtr self, uint res1, uint res2);

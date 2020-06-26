@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(51);
                 m_splitTextFunc = (splitTextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(splitTextFunc));
             } 
-            
             return  m_splitTextFunc(m_ptr, offset, ref rightHandTextNode);
         }
         delegate int splitTextFunc(IntPtr self, int offset, ref IntPtr rightHandTextNode);

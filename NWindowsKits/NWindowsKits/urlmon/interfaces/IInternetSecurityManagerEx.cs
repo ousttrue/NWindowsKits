@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_ProcessUrlActionExFunc = (ProcessUrlActionExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessUrlActionExFunc));
             } 
-            
             return  m_ProcessUrlActionExFunc(m_ptr, pwszUrl, dwAction, ref pPolicy, cbPolicy, ref pContext, cbContext, dwFlags, dwReserved, ref pdwOutFlags);
         }
         delegate int ProcessUrlActionExFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwszUrl, uint dwAction, ref byte pPolicy, uint cbPolicy, ref byte pContext, uint cbContext, uint dwFlags, uint dwReserved, ref uint pdwOutFlags);

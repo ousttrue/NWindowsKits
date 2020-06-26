@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetUseRefFunc = (SetUseRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetUseRefFunc));
             } 
-            
             return  m_SetUseRefFunc(m_ptr, UseRef);
         }
         delegate int SetUseRefFunc(IntPtr self, int UseRef);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetUseRefFunc = (GetUseRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUseRefFunc));
             } 
-            
             return  m_GetUseRefFunc(m_ptr);
         }
         delegate int GetUseRefFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_OnInPlaceActivateExFunc = (OnInPlaceActivateExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInPlaceActivateExFunc));
             } 
-            
             return  m_OnInPlaceActivateExFunc(m_ptr, ref pfNoRedraw, dwFlags);
         }
         delegate int OnInPlaceActivateExFunc(IntPtr self, ref int pfNoRedraw, uint dwFlags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_OnInPlaceDeactivateExFunc = (OnInPlaceDeactivateExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInPlaceDeactivateExFunc));
             } 
-            
             return  m_OnInPlaceDeactivateExFunc(m_ptr, fNoRedraw);
         }
         delegate int OnInPlaceDeactivateExFunc(IntPtr self, int fNoRedraw);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_RequestUIActivateFunc = (RequestUIActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RequestUIActivateFunc));
             } 
-            
             return  m_RequestUIActivateFunc(m_ptr);
         }
         delegate int RequestUIActivateFunc(IntPtr self);

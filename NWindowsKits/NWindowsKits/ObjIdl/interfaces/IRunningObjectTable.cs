@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RegisterFunc = (RegisterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterFunc));
             } 
-            
             return  m_RegisterFunc(m_ptr, grfFlags, punkObject, pmkObjectName, ref pdwRegister);
         }
         delegate int RegisterFunc(IntPtr self, uint grfFlags, IntPtr punkObject, IntPtr pmkObjectName, ref uint pdwRegister);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_RevokeFunc = (RevokeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RevokeFunc));
             } 
-            
             return  m_RevokeFunc(m_ptr, dwRegister);
         }
         delegate int RevokeFunc(IntPtr self, uint dwRegister);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_IsRunningFunc = (IsRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsRunningFunc));
             } 
-            
             return  m_IsRunningFunc(m_ptr, pmkObjectName);
         }
         delegate int IsRunningFunc(IntPtr self, IntPtr pmkObjectName);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetObjectAFunc = (GetObjectAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetObjectAFunc));
             } 
-            
             return  m_GetObjectAFunc(m_ptr, pmkObjectName, ref ppunkObject);
         }
         delegate int GetObjectAFunc(IntPtr self, IntPtr pmkObjectName, ref IntPtr ppunkObject);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_NoteChangeTimeFunc = (NoteChangeTimeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(NoteChangeTimeFunc));
             } 
-            
             return  m_NoteChangeTimeFunc(m_ptr, dwRegister, ref pfiletime);
         }
         delegate int NoteChangeTimeFunc(IntPtr self, uint dwRegister, ref FILETIME pfiletime);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetTimeOfLastChangeFunc = (GetTimeOfLastChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTimeOfLastChangeFunc));
             } 
-            
             return  m_GetTimeOfLastChangeFunc(m_ptr, pmkObjectName, ref pfiletime);
         }
         delegate int GetTimeOfLastChangeFunc(IntPtr self, IntPtr pmkObjectName, ref FILETIME pfiletime);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_EnumRunningFunc = (EnumRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumRunningFunc));
             } 
-            
             return  m_EnumRunningFunc(m_ptr, ref ppenumMoniker);
         }
         delegate int EnumRunningFunc(IntPtr self, ref IntPtr ppenumMoniker);

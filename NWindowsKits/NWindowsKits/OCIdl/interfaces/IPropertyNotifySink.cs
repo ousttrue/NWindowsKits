@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OnChangedFunc = (OnChangedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnChangedFunc));
             } 
-            
             return  m_OnChangedFunc(m_ptr, dispID);
         }
         delegate int OnChangedFunc(IntPtr self, int dispID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnRequestEditFunc = (OnRequestEditFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnRequestEditFunc));
             } 
-            
             return  m_OnRequestEditFunc(m_ptr, dispID);
         }
         delegate int OnRequestEditFunc(IntPtr self, int dispID);

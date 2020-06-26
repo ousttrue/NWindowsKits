@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_InterfaceSupportsErrorInfoFunc = (InterfaceSupportsErrorInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InterfaceSupportsErrorInfoFunc));
             } 
-            
             return  m_InterfaceSupportsErrorInfoFunc(m_ptr, ref riid);
         }
         delegate int InterfaceSupportsErrorInfoFunc(IntPtr self, ref Guid riid);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SwitchSinkFunc = (SwitchSinkFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SwitchSinkFunc));
             } 
-            
             return  m_SwitchSinkFunc(m_ptr, pOIProtSink);
         }
         delegate int SwitchSinkFunc(IntPtr self, IntPtr pOIProtSink);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CommitSwitchFunc = (CommitSwitchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CommitSwitchFunc));
             } 
-            
             return  m_CommitSwitchFunc(m_ptr);
         }
         delegate int CommitSwitchFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_RollbackSwitchFunc = (RollbackSwitchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RollbackSwitchFunc));
             } 
-            
             return  m_RollbackSwitchFunc(m_ptr);
         }
         delegate int RollbackSwitchFunc(IntPtr self);

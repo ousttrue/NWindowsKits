@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_EnumTypeLibRegistrationsFunc = (EnumTypeLibRegistrationsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumTypeLibRegistrationsFunc));
             } 
-            
             return  m_EnumTypeLibRegistrationsFunc(m_ptr, ref ppEnumUnknown);
         }
         delegate int EnumTypeLibRegistrationsFunc(IntPtr self, ref IntPtr ppEnumUnknown);

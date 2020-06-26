@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetDecoderBufferFunc = (GetDecoderBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDecoderBufferFunc));
             } 
-            
             return  m_GetDecoderBufferFunc(m_ptr, pDecoder, Type, ref pBufferSize, ref ppBuffer);
         }
         delegate int GetDecoderBufferFunc(IntPtr self, IntPtr pDecoder, D3D11_VIDEO_DECODER_BUFFER_TYPE Type, ref uint pBufferSize, ref IntPtr ppBuffer);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_ReleaseDecoderBufferFunc = (ReleaseDecoderBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseDecoderBufferFunc));
             } 
-            
             return  m_ReleaseDecoderBufferFunc(m_ptr, pDecoder, Type);
         }
         delegate int ReleaseDecoderBufferFunc(IntPtr self, IntPtr pDecoder, D3D11_VIDEO_DECODER_BUFFER_TYPE Type);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_DecoderBeginFrameFunc = (DecoderBeginFrameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DecoderBeginFrameFunc));
             } 
-            
             return  m_DecoderBeginFrameFunc(m_ptr, pDecoder, pView, ContentKeySize, pContentKey);
         }
         delegate int DecoderBeginFrameFunc(IntPtr self, IntPtr pDecoder, IntPtr pView, uint ContentKeySize, IntPtr pContentKey);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_DecoderEndFrameFunc = (DecoderEndFrameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DecoderEndFrameFunc));
             } 
-            
             return  m_DecoderEndFrameFunc(m_ptr, pDecoder);
         }
         delegate int DecoderEndFrameFunc(IntPtr self, IntPtr pDecoder);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_SubmitDecoderBuffersFunc = (SubmitDecoderBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SubmitDecoderBuffersFunc));
             } 
-            
             return  m_SubmitDecoderBuffersFunc(m_ptr, pDecoder, NumBuffers, ref pBufferDesc);
         }
         delegate int SubmitDecoderBuffersFunc(IntPtr self, IntPtr pDecoder, uint NumBuffers, ref D3D11_VIDEO_DECODER_BUFFER_DESC pBufferDesc);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_DecoderExtensionFunc = (DecoderExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DecoderExtensionFunc));
             } 
-            
             return  m_DecoderExtensionFunc(m_ptr, pDecoder, ref pExtensionData);
         }
         delegate int DecoderExtensionFunc(IntPtr self, IntPtr pDecoder, ref D3D11_VIDEO_DECODER_EXTENSION pExtensionData);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_VideoProcessorSetOutputTargetRectFunc = (VideoProcessorSetOutputTargetRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputTargetRectFunc));
             } 
-            
              m_VideoProcessorSetOutputTargetRectFunc(m_ptr, pVideoProcessor, Enable, ref pRect);
         }
         delegate void VideoProcessorSetOutputTargetRectFunc(IntPtr self, IntPtr pVideoProcessor, int Enable, ref RECT pRect);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_VideoProcessorSetOutputBackgroundColorFunc = (VideoProcessorSetOutputBackgroundColorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputBackgroundColorFunc));
             } 
-            
              m_VideoProcessorSetOutputBackgroundColorFunc(m_ptr, pVideoProcessor, YCbCr, ref pColor);
         }
         delegate void VideoProcessorSetOutputBackgroundColorFunc(IntPtr self, IntPtr pVideoProcessor, int YCbCr, ref D3D11_VIDEO_COLOR pColor);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_VideoProcessorSetOutputColorSpaceFunc = (VideoProcessorSetOutputColorSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputColorSpaceFunc));
             } 
-            
              m_VideoProcessorSetOutputColorSpaceFunc(m_ptr, pVideoProcessor, ref pColorSpace);
         }
         delegate void VideoProcessorSetOutputColorSpaceFunc(IntPtr self, IntPtr pVideoProcessor, ref D3D11_VIDEO_PROCESSOR_COLOR_SPACE pColorSpace);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_VideoProcessorSetOutputAlphaFillModeFunc = (VideoProcessorSetOutputAlphaFillModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputAlphaFillModeFunc));
             } 
-            
              m_VideoProcessorSetOutputAlphaFillModeFunc(m_ptr, pVideoProcessor, AlphaFillMode, StreamIndex);
         }
         delegate void VideoProcessorSetOutputAlphaFillModeFunc(IntPtr self, IntPtr pVideoProcessor, D3D11_VIDEO_PROCESSOR_ALPHA_FILL_MODE AlphaFillMode, uint StreamIndex);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_VideoProcessorSetOutputConstrictionFunc = (VideoProcessorSetOutputConstrictionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputConstrictionFunc));
             } 
-            
              m_VideoProcessorSetOutputConstrictionFunc(m_ptr, pVideoProcessor, Enable, Size);
         }
         delegate void VideoProcessorSetOutputConstrictionFunc(IntPtr self, IntPtr pVideoProcessor, int Enable, SIZE Size);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_VideoProcessorSetOutputStereoModeFunc = (VideoProcessorSetOutputStereoModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputStereoModeFunc));
             } 
-            
              m_VideoProcessorSetOutputStereoModeFunc(m_ptr, pVideoProcessor, Enable);
         }
         delegate void VideoProcessorSetOutputStereoModeFunc(IntPtr self, IntPtr pVideoProcessor, int Enable);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_VideoProcessorSetOutputExtensionFunc = (VideoProcessorSetOutputExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetOutputExtensionFunc));
             } 
-            
             return  m_VideoProcessorSetOutputExtensionFunc(m_ptr, pVideoProcessor, ref pExtensionGuid, DataSize, pData);
         }
         delegate int VideoProcessorSetOutputExtensionFunc(IntPtr self, IntPtr pVideoProcessor, ref GUID pExtensionGuid, uint DataSize, IntPtr pData);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_VideoProcessorGetOutputTargetRectFunc = (VideoProcessorGetOutputTargetRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputTargetRectFunc));
             } 
-            
              m_VideoProcessorGetOutputTargetRectFunc(m_ptr, pVideoProcessor, ref Enabled, ref pRect);
         }
         delegate void VideoProcessorGetOutputTargetRectFunc(IntPtr self, IntPtr pVideoProcessor, ref int Enabled, ref RECT pRect);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_VideoProcessorGetOutputBackgroundColorFunc = (VideoProcessorGetOutputBackgroundColorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputBackgroundColorFunc));
             } 
-            
              m_VideoProcessorGetOutputBackgroundColorFunc(m_ptr, pVideoProcessor, ref pYCbCr, ref pColor);
         }
         delegate void VideoProcessorGetOutputBackgroundColorFunc(IntPtr self, IntPtr pVideoProcessor, ref int pYCbCr, ref D3D11_VIDEO_COLOR pColor);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_VideoProcessorGetOutputColorSpaceFunc = (VideoProcessorGetOutputColorSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputColorSpaceFunc));
             } 
-            
              m_VideoProcessorGetOutputColorSpaceFunc(m_ptr, pVideoProcessor, ref pColorSpace);
         }
         delegate void VideoProcessorGetOutputColorSpaceFunc(IntPtr self, IntPtr pVideoProcessor, ref D3D11_VIDEO_PROCESSOR_COLOR_SPACE pColorSpace);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_VideoProcessorGetOutputAlphaFillModeFunc = (VideoProcessorGetOutputAlphaFillModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputAlphaFillModeFunc));
             } 
-            
              m_VideoProcessorGetOutputAlphaFillModeFunc(m_ptr, pVideoProcessor, ref pAlphaFillMode, ref pStreamIndex);
         }
         delegate void VideoProcessorGetOutputAlphaFillModeFunc(IntPtr self, IntPtr pVideoProcessor, ref D3D11_VIDEO_PROCESSOR_ALPHA_FILL_MODE pAlphaFillMode, ref uint pStreamIndex);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_VideoProcessorGetOutputConstrictionFunc = (VideoProcessorGetOutputConstrictionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputConstrictionFunc));
             } 
-            
              m_VideoProcessorGetOutputConstrictionFunc(m_ptr, pVideoProcessor, ref pEnabled, ref pSize);
         }
         delegate void VideoProcessorGetOutputConstrictionFunc(IntPtr self, IntPtr pVideoProcessor, ref int pEnabled, ref SIZE pSize);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_VideoProcessorGetOutputStereoModeFunc = (VideoProcessorGetOutputStereoModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputStereoModeFunc));
             } 
-            
              m_VideoProcessorGetOutputStereoModeFunc(m_ptr, pVideoProcessor, ref pEnabled);
         }
         delegate void VideoProcessorGetOutputStereoModeFunc(IntPtr self, IntPtr pVideoProcessor, ref int pEnabled);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_VideoProcessorGetOutputExtensionFunc = (VideoProcessorGetOutputExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetOutputExtensionFunc));
             } 
-            
             return  m_VideoProcessorGetOutputExtensionFunc(m_ptr, pVideoProcessor, ref pExtensionGuid, DataSize, pData);
         }
         delegate int VideoProcessorGetOutputExtensionFunc(IntPtr self, IntPtr pVideoProcessor, ref GUID pExtensionGuid, uint DataSize, IntPtr pData);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_VideoProcessorSetStreamFrameFormatFunc = (VideoProcessorSetStreamFrameFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamFrameFormatFunc));
             } 
-            
              m_VideoProcessorSetStreamFrameFormatFunc(m_ptr, pVideoProcessor, StreamIndex, FrameFormat);
         }
         delegate void VideoProcessorSetStreamFrameFormatFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, D3D11_VIDEO_FRAME_FORMAT FrameFormat);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_VideoProcessorSetStreamColorSpaceFunc = (VideoProcessorSetStreamColorSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamColorSpaceFunc));
             } 
-            
              m_VideoProcessorSetStreamColorSpaceFunc(m_ptr, pVideoProcessor, StreamIndex, ref pColorSpace);
         }
         delegate void VideoProcessorSetStreamColorSpaceFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref D3D11_VIDEO_PROCESSOR_COLOR_SPACE pColorSpace);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_VideoProcessorSetStreamOutputRateFunc = (VideoProcessorSetStreamOutputRateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamOutputRateFunc));
             } 
-            
              m_VideoProcessorSetStreamOutputRateFunc(m_ptr, pVideoProcessor, StreamIndex, OutputRate, RepeatFrame, ref pCustomRate);
         }
         delegate void VideoProcessorSetStreamOutputRateFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, D3D11_VIDEO_PROCESSOR_OUTPUT_RATE OutputRate, int RepeatFrame, ref DXGI_RATIONAL pCustomRate);
@@ -293,7 +270,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(30);
                 m_VideoProcessorSetStreamSourceRectFunc = (VideoProcessorSetStreamSourceRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamSourceRectFunc));
             } 
-            
              m_VideoProcessorSetStreamSourceRectFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, ref pRect);
         }
         delegate void VideoProcessorSetStreamSourceRectFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, ref RECT pRect);
@@ -305,7 +281,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(31);
                 m_VideoProcessorSetStreamDestRectFunc = (VideoProcessorSetStreamDestRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamDestRectFunc));
             } 
-            
              m_VideoProcessorSetStreamDestRectFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, ref pRect);
         }
         delegate void VideoProcessorSetStreamDestRectFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, ref RECT pRect);
@@ -317,7 +292,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(32);
                 m_VideoProcessorSetStreamAlphaFunc = (VideoProcessorSetStreamAlphaFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamAlphaFunc));
             } 
-            
              m_VideoProcessorSetStreamAlphaFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, Alpha);
         }
         delegate void VideoProcessorSetStreamAlphaFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, float Alpha);
@@ -329,7 +303,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(33);
                 m_VideoProcessorSetStreamPaletteFunc = (VideoProcessorSetStreamPaletteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamPaletteFunc));
             } 
-            
              m_VideoProcessorSetStreamPaletteFunc(m_ptr, pVideoProcessor, StreamIndex, Count, ref pEntries);
         }
         delegate void VideoProcessorSetStreamPaletteFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, uint Count, ref uint pEntries);
@@ -341,7 +314,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(34);
                 m_VideoProcessorSetStreamPixelAspectRatioFunc = (VideoProcessorSetStreamPixelAspectRatioFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamPixelAspectRatioFunc));
             } 
-            
              m_VideoProcessorSetStreamPixelAspectRatioFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, ref pSourceAspectRatio, ref pDestinationAspectRatio);
         }
         delegate void VideoProcessorSetStreamPixelAspectRatioFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, ref DXGI_RATIONAL pSourceAspectRatio, ref DXGI_RATIONAL pDestinationAspectRatio);
@@ -353,7 +325,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(35);
                 m_VideoProcessorSetStreamLumaKeyFunc = (VideoProcessorSetStreamLumaKeyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamLumaKeyFunc));
             } 
-            
              m_VideoProcessorSetStreamLumaKeyFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, Lower, Upper);
         }
         delegate void VideoProcessorSetStreamLumaKeyFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, float Lower, float Upper);
@@ -365,7 +336,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(36);
                 m_VideoProcessorSetStreamStereoFormatFunc = (VideoProcessorSetStreamStereoFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamStereoFormatFunc));
             } 
-            
              m_VideoProcessorSetStreamStereoFormatFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, Format, LeftViewFrame0, BaseViewFrame0, FlipMode, MonoOffset);
         }
         delegate void VideoProcessorSetStreamStereoFormatFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, D3D11_VIDEO_PROCESSOR_STEREO_FORMAT Format, int LeftViewFrame0, int BaseViewFrame0, D3D11_VIDEO_PROCESSOR_STEREO_FLIP_MODE FlipMode, int MonoOffset);
@@ -377,7 +347,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(37);
                 m_VideoProcessorSetStreamAutoProcessingModeFunc = (VideoProcessorSetStreamAutoProcessingModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamAutoProcessingModeFunc));
             } 
-            
              m_VideoProcessorSetStreamAutoProcessingModeFunc(m_ptr, pVideoProcessor, StreamIndex, Enable);
         }
         delegate void VideoProcessorSetStreamAutoProcessingModeFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable);
@@ -389,7 +358,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(38);
                 m_VideoProcessorSetStreamFilterFunc = (VideoProcessorSetStreamFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamFilterFunc));
             } 
-            
              m_VideoProcessorSetStreamFilterFunc(m_ptr, pVideoProcessor, StreamIndex, Filter, Enable, Level);
         }
         delegate void VideoProcessorSetStreamFilterFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, D3D11_VIDEO_PROCESSOR_FILTER Filter, int Enable, int Level);
@@ -401,7 +369,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(39);
                 m_VideoProcessorSetStreamExtensionFunc = (VideoProcessorSetStreamExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamExtensionFunc));
             } 
-            
             return  m_VideoProcessorSetStreamExtensionFunc(m_ptr, pVideoProcessor, StreamIndex, ref pExtensionGuid, DataSize, pData);
         }
         delegate int VideoProcessorSetStreamExtensionFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref GUID pExtensionGuid, uint DataSize, IntPtr pData);
@@ -413,7 +380,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(40);
                 m_VideoProcessorGetStreamFrameFormatFunc = (VideoProcessorGetStreamFrameFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamFrameFormatFunc));
             } 
-            
              m_VideoProcessorGetStreamFrameFormatFunc(m_ptr, pVideoProcessor, StreamIndex, ref pFrameFormat);
         }
         delegate void VideoProcessorGetStreamFrameFormatFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref D3D11_VIDEO_FRAME_FORMAT pFrameFormat);
@@ -425,7 +391,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(41);
                 m_VideoProcessorGetStreamColorSpaceFunc = (VideoProcessorGetStreamColorSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamColorSpaceFunc));
             } 
-            
              m_VideoProcessorGetStreamColorSpaceFunc(m_ptr, pVideoProcessor, StreamIndex, ref pColorSpace);
         }
         delegate void VideoProcessorGetStreamColorSpaceFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref D3D11_VIDEO_PROCESSOR_COLOR_SPACE pColorSpace);
@@ -437,7 +402,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(42);
                 m_VideoProcessorGetStreamOutputRateFunc = (VideoProcessorGetStreamOutputRateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamOutputRateFunc));
             } 
-            
              m_VideoProcessorGetStreamOutputRateFunc(m_ptr, pVideoProcessor, StreamIndex, ref pOutputRate, ref pRepeatFrame, ref pCustomRate);
         }
         delegate void VideoProcessorGetStreamOutputRateFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref D3D11_VIDEO_PROCESSOR_OUTPUT_RATE pOutputRate, ref int pRepeatFrame, ref DXGI_RATIONAL pCustomRate);
@@ -449,7 +413,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_VideoProcessorGetStreamSourceRectFunc = (VideoProcessorGetStreamSourceRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamSourceRectFunc));
             } 
-            
              m_VideoProcessorGetStreamSourceRectFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled, ref pRect);
         }
         delegate void VideoProcessorGetStreamSourceRectFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled, ref RECT pRect);
@@ -461,7 +424,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_VideoProcessorGetStreamDestRectFunc = (VideoProcessorGetStreamDestRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamDestRectFunc));
             } 
-            
              m_VideoProcessorGetStreamDestRectFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled, ref pRect);
         }
         delegate void VideoProcessorGetStreamDestRectFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled, ref RECT pRect);
@@ -473,7 +435,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_VideoProcessorGetStreamAlphaFunc = (VideoProcessorGetStreamAlphaFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamAlphaFunc));
             } 
-            
              m_VideoProcessorGetStreamAlphaFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled, ref pAlpha);
         }
         delegate void VideoProcessorGetStreamAlphaFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled, ref float pAlpha);
@@ -485,7 +446,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(46);
                 m_VideoProcessorGetStreamPaletteFunc = (VideoProcessorGetStreamPaletteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamPaletteFunc));
             } 
-            
              m_VideoProcessorGetStreamPaletteFunc(m_ptr, pVideoProcessor, StreamIndex, Count, ref pEntries);
         }
         delegate void VideoProcessorGetStreamPaletteFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, uint Count, ref uint pEntries);
@@ -497,7 +457,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(47);
                 m_VideoProcessorGetStreamPixelAspectRatioFunc = (VideoProcessorGetStreamPixelAspectRatioFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamPixelAspectRatioFunc));
             } 
-            
              m_VideoProcessorGetStreamPixelAspectRatioFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled, ref pSourceAspectRatio, ref pDestinationAspectRatio);
         }
         delegate void VideoProcessorGetStreamPixelAspectRatioFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled, ref DXGI_RATIONAL pSourceAspectRatio, ref DXGI_RATIONAL pDestinationAspectRatio);
@@ -509,7 +468,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(48);
                 m_VideoProcessorGetStreamLumaKeyFunc = (VideoProcessorGetStreamLumaKeyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamLumaKeyFunc));
             } 
-            
              m_VideoProcessorGetStreamLumaKeyFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled, ref pLower, ref pUpper);
         }
         delegate void VideoProcessorGetStreamLumaKeyFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled, ref float pLower, ref float pUpper);
@@ -521,7 +479,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(49);
                 m_VideoProcessorGetStreamStereoFormatFunc = (VideoProcessorGetStreamStereoFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamStereoFormatFunc));
             } 
-            
              m_VideoProcessorGetStreamStereoFormatFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnable, ref pFormat, ref pLeftViewFrame0, ref pBaseViewFrame0, ref pFlipMode, ref MonoOffset);
         }
         delegate void VideoProcessorGetStreamStereoFormatFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnable, ref D3D11_VIDEO_PROCESSOR_STEREO_FORMAT pFormat, ref int pLeftViewFrame0, ref int pBaseViewFrame0, ref D3D11_VIDEO_PROCESSOR_STEREO_FLIP_MODE pFlipMode, ref int MonoOffset);
@@ -533,7 +490,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(50);
                 m_VideoProcessorGetStreamAutoProcessingModeFunc = (VideoProcessorGetStreamAutoProcessingModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamAutoProcessingModeFunc));
             } 
-            
              m_VideoProcessorGetStreamAutoProcessingModeFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnabled);
         }
         delegate void VideoProcessorGetStreamAutoProcessingModeFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnabled);
@@ -545,7 +501,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(51);
                 m_VideoProcessorGetStreamFilterFunc = (VideoProcessorGetStreamFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamFilterFunc));
             } 
-            
              m_VideoProcessorGetStreamFilterFunc(m_ptr, pVideoProcessor, StreamIndex, Filter, ref pEnabled, ref pLevel);
         }
         delegate void VideoProcessorGetStreamFilterFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, D3D11_VIDEO_PROCESSOR_FILTER Filter, ref int pEnabled, ref int pLevel);
@@ -557,7 +512,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(52);
                 m_VideoProcessorGetStreamExtensionFunc = (VideoProcessorGetStreamExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamExtensionFunc));
             } 
-            
             return  m_VideoProcessorGetStreamExtensionFunc(m_ptr, pVideoProcessor, StreamIndex, ref pExtensionGuid, DataSize, pData);
         }
         delegate int VideoProcessorGetStreamExtensionFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref GUID pExtensionGuid, uint DataSize, IntPtr pData);
@@ -569,7 +523,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(53);
                 m_VideoProcessorBltFunc = (VideoProcessorBltFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorBltFunc));
             } 
-            
             return  m_VideoProcessorBltFunc(m_ptr, pVideoProcessor, pView, OutputFrame, StreamCount, ref pStreams);
         }
         delegate int VideoProcessorBltFunc(IntPtr self, IntPtr pVideoProcessor, IntPtr pView, uint OutputFrame, uint StreamCount, ref D3D11_VIDEO_PROCESSOR_STREAM pStreams);
@@ -581,7 +534,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(54);
                 m_NegotiateCryptoSessionKeyExchangeFunc = (NegotiateCryptoSessionKeyExchangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(NegotiateCryptoSessionKeyExchangeFunc));
             } 
-            
             return  m_NegotiateCryptoSessionKeyExchangeFunc(m_ptr, pCryptoSession, DataSize, pData);
         }
         delegate int NegotiateCryptoSessionKeyExchangeFunc(IntPtr self, IntPtr pCryptoSession, uint DataSize, IntPtr pData);
@@ -593,7 +545,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(55);
                 m_EncryptionBltFunc = (EncryptionBltFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EncryptionBltFunc));
             } 
-            
              m_EncryptionBltFunc(m_ptr, pCryptoSession, pSrcSurface, pDstSurface, IVSize, pIV);
         }
         delegate void EncryptionBltFunc(IntPtr self, IntPtr pCryptoSession, IntPtr pSrcSurface, IntPtr pDstSurface, uint IVSize, IntPtr pIV);
@@ -605,7 +556,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(56);
                 m_DecryptionBltFunc = (DecryptionBltFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DecryptionBltFunc));
             } 
-            
              m_DecryptionBltFunc(m_ptr, pCryptoSession, pSrcSurface, pDstSurface, ref pEncryptedBlockInfo, ContentKeySize, pContentKey, IVSize, pIV);
         }
         delegate void DecryptionBltFunc(IntPtr self, IntPtr pCryptoSession, IntPtr pSrcSurface, IntPtr pDstSurface, ref D3D11_ENCRYPTED_BLOCK_INFO pEncryptedBlockInfo, uint ContentKeySize, IntPtr pContentKey, uint IVSize, IntPtr pIV);
@@ -617,7 +567,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(57);
                 m_StartSessionKeyRefreshFunc = (StartSessionKeyRefreshFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(StartSessionKeyRefreshFunc));
             } 
-            
              m_StartSessionKeyRefreshFunc(m_ptr, pCryptoSession, RandomNumberSize, pRandomNumber);
         }
         delegate void StartSessionKeyRefreshFunc(IntPtr self, IntPtr pCryptoSession, uint RandomNumberSize, IntPtr pRandomNumber);
@@ -629,7 +578,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(58);
                 m_FinishSessionKeyRefreshFunc = (FinishSessionKeyRefreshFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FinishSessionKeyRefreshFunc));
             } 
-            
              m_FinishSessionKeyRefreshFunc(m_ptr, pCryptoSession);
         }
         delegate void FinishSessionKeyRefreshFunc(IntPtr self, IntPtr pCryptoSession);
@@ -641,7 +589,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(59);
                 m_GetEncryptionBltKeyFunc = (GetEncryptionBltKeyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEncryptionBltKeyFunc));
             } 
-            
             return  m_GetEncryptionBltKeyFunc(m_ptr, pCryptoSession, KeySize, pReadbackKey);
         }
         delegate int GetEncryptionBltKeyFunc(IntPtr self, IntPtr pCryptoSession, uint KeySize, IntPtr pReadbackKey);
@@ -653,7 +600,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(60);
                 m_NegotiateAuthenticatedChannelKeyExchangeFunc = (NegotiateAuthenticatedChannelKeyExchangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(NegotiateAuthenticatedChannelKeyExchangeFunc));
             } 
-            
             return  m_NegotiateAuthenticatedChannelKeyExchangeFunc(m_ptr, pChannel, DataSize, pData);
         }
         delegate int NegotiateAuthenticatedChannelKeyExchangeFunc(IntPtr self, IntPtr pChannel, uint DataSize, IntPtr pData);
@@ -665,7 +611,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(61);
                 m_QueryAuthenticatedChannelFunc = (QueryAuthenticatedChannelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryAuthenticatedChannelFunc));
             } 
-            
             return  m_QueryAuthenticatedChannelFunc(m_ptr, pChannel, InputSize, pInput, OutputSize, pOutput);
         }
         delegate int QueryAuthenticatedChannelFunc(IntPtr self, IntPtr pChannel, uint InputSize, IntPtr pInput, uint OutputSize, IntPtr pOutput);
@@ -677,7 +622,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(62);
                 m_ConfigureAuthenticatedChannelFunc = (ConfigureAuthenticatedChannelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ConfigureAuthenticatedChannelFunc));
             } 
-            
             return  m_ConfigureAuthenticatedChannelFunc(m_ptr, pChannel, InputSize, pInput, ref pOutput);
         }
         delegate int ConfigureAuthenticatedChannelFunc(IntPtr self, IntPtr pChannel, uint InputSize, IntPtr pInput, ref D3D11_AUTHENTICATED_CONFIGURE_OUTPUT pOutput);
@@ -689,7 +633,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(63);
                 m_VideoProcessorSetStreamRotationFunc = (VideoProcessorSetStreamRotationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorSetStreamRotationFunc));
             } 
-            
              m_VideoProcessorSetStreamRotationFunc(m_ptr, pVideoProcessor, StreamIndex, Enable, Rotation);
         }
         delegate void VideoProcessorSetStreamRotationFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, int Enable, D3D11_VIDEO_PROCESSOR_ROTATION Rotation);
@@ -701,7 +644,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(64);
                 m_VideoProcessorGetStreamRotationFunc = (VideoProcessorGetStreamRotationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VideoProcessorGetStreamRotationFunc));
             } 
-            
              m_VideoProcessorGetStreamRotationFunc(m_ptr, pVideoProcessor, StreamIndex, ref pEnable, ref pRotation);
         }
         delegate void VideoProcessorGetStreamRotationFunc(IntPtr self, IntPtr pVideoProcessor, uint StreamIndex, ref int pEnable, ref D3D11_VIDEO_PROCESSOR_ROTATION pRotation);

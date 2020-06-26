@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetGUIDFunc = (GetGUIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGUIDFunc));
             } 
-            
             return  m_GetGUIDFunc(m_ptr, dwGuidKind, ref pGUID);
         }
         delegate int GetGUIDFunc(IntPtr self, uint dwGuidKind, ref GUID pGUID);

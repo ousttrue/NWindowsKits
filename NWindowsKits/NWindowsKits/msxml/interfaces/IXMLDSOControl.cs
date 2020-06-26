@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_XMLDocumentFunc = (get_XMLDocumentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_XMLDocumentFunc));
             } 
-            
             return  m_get_XMLDocumentFunc(m_ptr, ref ppDoc);
         }
         delegate int get_XMLDocumentFunc(IntPtr self, ref IntPtr ppDoc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_put_XMLDocumentFunc = (put_XMLDocumentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_XMLDocumentFunc));
             } 
-            
             return  m_put_XMLDocumentFunc(m_ptr, ppDoc);
         }
         delegate int put_XMLDocumentFunc(IntPtr self, IntPtr ppDoc);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_get_JavaDSOCompatibleFunc = (get_JavaDSOCompatibleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_JavaDSOCompatibleFunc));
             } 
-            
             return  m_get_JavaDSOCompatibleFunc(m_ptr, ref fJavaDSOCompatible);
         }
         delegate int get_JavaDSOCompatibleFunc(IntPtr self, ref int fJavaDSOCompatible);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_put_JavaDSOCompatibleFunc = (put_JavaDSOCompatibleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_JavaDSOCompatibleFunc));
             } 
-            
             return  m_put_JavaDSOCompatibleFunc(m_ptr, fJavaDSOCompatible);
         }
         delegate int put_JavaDSOCompatibleFunc(IntPtr self, int fJavaDSOCompatible);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_readyStateFunc = (get_readyStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_readyStateFunc));
             } 
-            
             return  m_get_readyStateFunc(m_ptr, ref state);
         }
         delegate int get_readyStateFunc(IntPtr self, ref int state);

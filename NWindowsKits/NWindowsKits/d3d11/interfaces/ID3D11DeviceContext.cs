@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_VSSetConstantBuffersFunc = (VSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSSetConstantBuffersFunc));
             } 
-            
              m_VSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void VSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_PSSetShaderResourcesFunc = (PSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSSetShaderResourcesFunc));
             } 
-            
              m_PSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void PSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_PSSetShaderFunc = (PSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSSetShaderFunc));
             } 
-            
              m_PSSetShaderFunc(m_ptr, pPixelShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void PSSetShaderFunc(IntPtr self, IntPtr pPixelShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_PSSetSamplersFunc = (PSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSSetSamplersFunc));
             } 
-            
              m_PSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void PSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_VSSetShaderFunc = (VSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSSetShaderFunc));
             } 
-            
              m_VSSetShaderFunc(m_ptr, pVertexShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void VSSetShaderFunc(IntPtr self, IntPtr pVertexShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_DrawIndexedFunc = (DrawIndexedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawIndexedFunc));
             } 
-            
              m_DrawIndexedFunc(m_ptr, IndexCount, StartIndexLocation, BaseVertexLocation);
         }
         delegate void DrawIndexedFunc(IntPtr self, uint IndexCount, uint StartIndexLocation, int BaseVertexLocation);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_DrawFunc = (DrawFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawFunc));
             } 
-            
              m_DrawFunc(m_ptr, VertexCount, StartVertexLocation);
         }
         delegate void DrawFunc(IntPtr self, uint VertexCount, uint StartVertexLocation);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_MapFunc = (MapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapFunc));
             } 
-            
             return  m_MapFunc(m_ptr, pResource, Subresource, MapType, MapFlags, ref pMappedResource);
         }
         delegate int MapFunc(IntPtr self, IntPtr pResource, uint Subresource, D3D11_MAP MapType, uint MapFlags, ref D3D11_MAPPED_SUBRESOURCE pMappedResource);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_UnmapFunc = (UnmapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmapFunc));
             } 
-            
              m_UnmapFunc(m_ptr, pResource, Subresource);
         }
         delegate void UnmapFunc(IntPtr self, IntPtr pResource, uint Subresource);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_PSSetConstantBuffersFunc = (PSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSSetConstantBuffersFunc));
             } 
-            
              m_PSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void PSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_IASetInputLayoutFunc = (IASetInputLayoutFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IASetInputLayoutFunc));
             } 
-            
              m_IASetInputLayoutFunc(m_ptr, pInputLayout);
         }
         delegate void IASetInputLayoutFunc(IntPtr self, IntPtr pInputLayout);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_IASetVertexBuffersFunc = (IASetVertexBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IASetVertexBuffersFunc));
             } 
-            
              m_IASetVertexBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppVertexBuffers, ref pStrides, ref pOffsets);
         }
         delegate void IASetVertexBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppVertexBuffers, ref uint pStrides, ref uint pOffsets);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_IASetIndexBufferFunc = (IASetIndexBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IASetIndexBufferFunc));
             } 
-            
              m_IASetIndexBufferFunc(m_ptr, pIndexBuffer, Format, Offset);
         }
         delegate void IASetIndexBufferFunc(IntPtr self, IntPtr pIndexBuffer, DXGI_FORMAT Format, uint Offset);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_DrawIndexedInstancedFunc = (DrawIndexedInstancedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawIndexedInstancedFunc));
             } 
-            
              m_DrawIndexedInstancedFunc(m_ptr, IndexCountPerInstance, InstanceCount, StartIndexLocation, BaseVertexLocation, StartInstanceLocation);
         }
         delegate void DrawIndexedInstancedFunc(IntPtr self, uint IndexCountPerInstance, uint InstanceCount, uint StartIndexLocation, int BaseVertexLocation, uint StartInstanceLocation);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_DrawInstancedFunc = (DrawInstancedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawInstancedFunc));
             } 
-            
              m_DrawInstancedFunc(m_ptr, VertexCountPerInstance, InstanceCount, StartVertexLocation, StartInstanceLocation);
         }
         delegate void DrawInstancedFunc(IntPtr self, uint VertexCountPerInstance, uint InstanceCount, uint StartVertexLocation, uint StartInstanceLocation);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_GSSetConstantBuffersFunc = (GSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSSetConstantBuffersFunc));
             } 
-            
              m_GSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void GSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_GSSetShaderFunc = (GSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSSetShaderFunc));
             } 
-            
              m_GSSetShaderFunc(m_ptr, pShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void GSSetShaderFunc(IntPtr self, IntPtr pShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_IASetPrimitiveTopologyFunc = (IASetPrimitiveTopologyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IASetPrimitiveTopologyFunc));
             } 
-            
              m_IASetPrimitiveTopologyFunc(m_ptr, Topology);
         }
         delegate void IASetPrimitiveTopologyFunc(IntPtr self, D3D_PRIMITIVE_TOPOLOGY Topology);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_VSSetShaderResourcesFunc = (VSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSSetShaderResourcesFunc));
             } 
-            
              m_VSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void VSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_VSSetSamplersFunc = (VSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSSetSamplersFunc));
             } 
-            
              m_VSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void VSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_BeginFunc = (BeginFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BeginFunc));
             } 
-            
              m_BeginFunc(m_ptr, pAsync);
         }
         delegate void BeginFunc(IntPtr self, IntPtr pAsync);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_EndFunc = (EndFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EndFunc));
             } 
-            
              m_EndFunc(m_ptr, pAsync);
         }
         delegate void EndFunc(IntPtr self, IntPtr pAsync);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_GetDataFunc = (GetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataFunc));
             } 
-            
             return  m_GetDataFunc(m_ptr, pAsync, pData, DataSize, GetDataFlags);
         }
         delegate int GetDataFunc(IntPtr self, IntPtr pAsync, IntPtr pData, uint DataSize, uint GetDataFlags);
@@ -293,7 +270,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(30);
                 m_SetPredicationFunc = (SetPredicationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPredicationFunc));
             } 
-            
              m_SetPredicationFunc(m_ptr, pPredicate, PredicateValue);
         }
         delegate void SetPredicationFunc(IntPtr self, IntPtr pPredicate, int PredicateValue);
@@ -305,7 +281,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(31);
                 m_GSSetShaderResourcesFunc = (GSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSSetShaderResourcesFunc));
             } 
-            
              m_GSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void GSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -317,7 +292,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(32);
                 m_GSSetSamplersFunc = (GSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSSetSamplersFunc));
             } 
-            
              m_GSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void GSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -329,7 +303,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(33);
                 m_OMSetRenderTargetsFunc = (OMSetRenderTargetsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMSetRenderTargetsFunc));
             } 
-            
              m_OMSetRenderTargetsFunc(m_ptr, NumViews, ref ppRenderTargetViews, pDepthStencilView);
         }
         delegate void OMSetRenderTargetsFunc(IntPtr self, uint NumViews, ref IntPtr ppRenderTargetViews, IntPtr pDepthStencilView);
@@ -341,7 +314,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(34);
                 m_OMSetRenderTargetsAndUnorderedAccessViewsFunc = (OMSetRenderTargetsAndUnorderedAccessViewsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMSetRenderTargetsAndUnorderedAccessViewsFunc));
             } 
-            
              m_OMSetRenderTargetsAndUnorderedAccessViewsFunc(m_ptr, NumRTVs, ref ppRenderTargetViews, pDepthStencilView, UAVStartSlot, NumUAVs, ref ppUnorderedAccessViews, ref pUAVInitialCounts);
         }
         delegate void OMSetRenderTargetsAndUnorderedAccessViewsFunc(IntPtr self, uint NumRTVs, ref IntPtr ppRenderTargetViews, IntPtr pDepthStencilView, uint UAVStartSlot, uint NumUAVs, ref IntPtr ppUnorderedAccessViews, ref uint pUAVInitialCounts);
@@ -353,7 +325,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(35);
                 m_OMSetBlendStateFunc = (OMSetBlendStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMSetBlendStateFunc));
             } 
-            
              m_OMSetBlendStateFunc(m_ptr, pBlendState, ref BlendFactor, SampleMask);
         }
         delegate void OMSetBlendStateFunc(IntPtr self, IntPtr pBlendState, ref float BlendFactor, uint SampleMask);
@@ -365,7 +336,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(36);
                 m_OMSetDepthStencilStateFunc = (OMSetDepthStencilStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMSetDepthStencilStateFunc));
             } 
-            
              m_OMSetDepthStencilStateFunc(m_ptr, pDepthStencilState, StencilRef);
         }
         delegate void OMSetDepthStencilStateFunc(IntPtr self, IntPtr pDepthStencilState, uint StencilRef);
@@ -377,7 +347,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(37);
                 m_SOSetTargetsFunc = (SOSetTargetsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SOSetTargetsFunc));
             } 
-            
              m_SOSetTargetsFunc(m_ptr, NumBuffers, ref ppSOTargets, ref pOffsets);
         }
         delegate void SOSetTargetsFunc(IntPtr self, uint NumBuffers, ref IntPtr ppSOTargets, ref uint pOffsets);
@@ -389,7 +358,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(38);
                 m_DrawAutoFunc = (DrawAutoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawAutoFunc));
             } 
-            
              m_DrawAutoFunc(m_ptr);
         }
         delegate void DrawAutoFunc(IntPtr self);
@@ -401,7 +369,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(39);
                 m_DrawIndexedInstancedIndirectFunc = (DrawIndexedInstancedIndirectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawIndexedInstancedIndirectFunc));
             } 
-            
              m_DrawIndexedInstancedIndirectFunc(m_ptr, pBufferForArgs, AlignedByteOffsetForArgs);
         }
         delegate void DrawIndexedInstancedIndirectFunc(IntPtr self, IntPtr pBufferForArgs, uint AlignedByteOffsetForArgs);
@@ -413,7 +380,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(40);
                 m_DrawInstancedIndirectFunc = (DrawInstancedIndirectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawInstancedIndirectFunc));
             } 
-            
              m_DrawInstancedIndirectFunc(m_ptr, pBufferForArgs, AlignedByteOffsetForArgs);
         }
         delegate void DrawInstancedIndirectFunc(IntPtr self, IntPtr pBufferForArgs, uint AlignedByteOffsetForArgs);
@@ -425,7 +391,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(41);
                 m_DispatchFunc = (DispatchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DispatchFunc));
             } 
-            
              m_DispatchFunc(m_ptr, ThreadGroupCountX, ThreadGroupCountY, ThreadGroupCountZ);
         }
         delegate void DispatchFunc(IntPtr self, uint ThreadGroupCountX, uint ThreadGroupCountY, uint ThreadGroupCountZ);
@@ -437,7 +402,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(42);
                 m_DispatchIndirectFunc = (DispatchIndirectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DispatchIndirectFunc));
             } 
-            
              m_DispatchIndirectFunc(m_ptr, pBufferForArgs, AlignedByteOffsetForArgs);
         }
         delegate void DispatchIndirectFunc(IntPtr self, IntPtr pBufferForArgs, uint AlignedByteOffsetForArgs);
@@ -449,7 +413,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_RSSetStateFunc = (RSSetStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSSetStateFunc));
             } 
-            
              m_RSSetStateFunc(m_ptr, pRasterizerState);
         }
         delegate void RSSetStateFunc(IntPtr self, IntPtr pRasterizerState);
@@ -461,7 +424,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_RSSetViewportsFunc = (RSSetViewportsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSSetViewportsFunc));
             } 
-            
              m_RSSetViewportsFunc(m_ptr, NumViewports, ref pViewports);
         }
         delegate void RSSetViewportsFunc(IntPtr self, uint NumViewports, ref D3D11_VIEWPORT pViewports);
@@ -473,7 +435,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_RSSetScissorRectsFunc = (RSSetScissorRectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSSetScissorRectsFunc));
             } 
-            
              m_RSSetScissorRectsFunc(m_ptr, NumRects, pRects);
         }
         delegate void RSSetScissorRectsFunc(IntPtr self, uint NumRects, IntPtr pRects);
@@ -485,7 +446,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(46);
                 m_CopySubresourceRegionFunc = (CopySubresourceRegionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CopySubresourceRegionFunc));
             } 
-            
              m_CopySubresourceRegionFunc(m_ptr, pDstResource, DstSubresource, DstX, DstY, DstZ, pSrcResource, SrcSubresource, ref pSrcBox);
         }
         delegate void CopySubresourceRegionFunc(IntPtr self, IntPtr pDstResource, uint DstSubresource, uint DstX, uint DstY, uint DstZ, IntPtr pSrcResource, uint SrcSubresource, ref D3D11_BOX pSrcBox);
@@ -497,7 +457,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(47);
                 m_CopyResourceFunc = (CopyResourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CopyResourceFunc));
             } 
-            
              m_CopyResourceFunc(m_ptr, pDstResource, pSrcResource);
         }
         delegate void CopyResourceFunc(IntPtr self, IntPtr pDstResource, IntPtr pSrcResource);
@@ -509,7 +468,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(48);
                 m_UpdateSubresourceFunc = (UpdateSubresourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UpdateSubresourceFunc));
             } 
-            
              m_UpdateSubresourceFunc(m_ptr, pDstResource, DstSubresource, ref pDstBox, pSrcData, SrcRowPitch, SrcDepthPitch);
         }
         delegate void UpdateSubresourceFunc(IntPtr self, IntPtr pDstResource, uint DstSubresource, ref D3D11_BOX pDstBox, IntPtr pSrcData, uint SrcRowPitch, uint SrcDepthPitch);
@@ -521,7 +479,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(49);
                 m_CopyStructureCountFunc = (CopyStructureCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CopyStructureCountFunc));
             } 
-            
              m_CopyStructureCountFunc(m_ptr, pDstBuffer, DstAlignedByteOffset, pSrcView);
         }
         delegate void CopyStructureCountFunc(IntPtr self, IntPtr pDstBuffer, uint DstAlignedByteOffset, IntPtr pSrcView);
@@ -533,7 +490,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(50);
                 m_ClearRenderTargetViewFunc = (ClearRenderTargetViewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearRenderTargetViewFunc));
             } 
-            
              m_ClearRenderTargetViewFunc(m_ptr, pRenderTargetView, ref ColorRGBA);
         }
         delegate void ClearRenderTargetViewFunc(IntPtr self, IntPtr pRenderTargetView, ref float ColorRGBA);
@@ -545,7 +501,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(51);
                 m_ClearUnorderedAccessViewUintFunc = (ClearUnorderedAccessViewUintFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearUnorderedAccessViewUintFunc));
             } 
-            
              m_ClearUnorderedAccessViewUintFunc(m_ptr, pUnorderedAccessView, ref Values);
         }
         delegate void ClearUnorderedAccessViewUintFunc(IntPtr self, IntPtr pUnorderedAccessView, ref uint Values);
@@ -557,7 +512,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(52);
                 m_ClearUnorderedAccessViewFloatFunc = (ClearUnorderedAccessViewFloatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearUnorderedAccessViewFloatFunc));
             } 
-            
              m_ClearUnorderedAccessViewFloatFunc(m_ptr, pUnorderedAccessView, ref Values);
         }
         delegate void ClearUnorderedAccessViewFloatFunc(IntPtr self, IntPtr pUnorderedAccessView, ref float Values);
@@ -569,7 +523,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(53);
                 m_ClearDepthStencilViewFunc = (ClearDepthStencilViewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearDepthStencilViewFunc));
             } 
-            
              m_ClearDepthStencilViewFunc(m_ptr, pDepthStencilView, ClearFlags, Depth, Stencil);
         }
         delegate void ClearDepthStencilViewFunc(IntPtr self, IntPtr pDepthStencilView, uint ClearFlags, float Depth, byte Stencil);
@@ -581,7 +534,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(54);
                 m_GenerateMipsFunc = (GenerateMipsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GenerateMipsFunc));
             } 
-            
              m_GenerateMipsFunc(m_ptr, pShaderResourceView);
         }
         delegate void GenerateMipsFunc(IntPtr self, IntPtr pShaderResourceView);
@@ -593,7 +545,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(55);
                 m_SetResourceMinLODFunc = (SetResourceMinLODFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetResourceMinLODFunc));
             } 
-            
              m_SetResourceMinLODFunc(m_ptr, pResource, MinLOD);
         }
         delegate void SetResourceMinLODFunc(IntPtr self, IntPtr pResource, float MinLOD);
@@ -605,7 +556,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(56);
                 m_GetResourceMinLODFunc = (GetResourceMinLODFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetResourceMinLODFunc));
             } 
-            
             return  m_GetResourceMinLODFunc(m_ptr, pResource);
         }
         delegate float GetResourceMinLODFunc(IntPtr self, IntPtr pResource);
@@ -617,7 +567,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(57);
                 m_ResolveSubresourceFunc = (ResolveSubresourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResolveSubresourceFunc));
             } 
-            
              m_ResolveSubresourceFunc(m_ptr, pDstResource, DstSubresource, pSrcResource, SrcSubresource, Format);
         }
         delegate void ResolveSubresourceFunc(IntPtr self, IntPtr pDstResource, uint DstSubresource, IntPtr pSrcResource, uint SrcSubresource, DXGI_FORMAT Format);
@@ -629,7 +578,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(58);
                 m_ExecuteCommandListFunc = (ExecuteCommandListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ExecuteCommandListFunc));
             } 
-            
              m_ExecuteCommandListFunc(m_ptr, pCommandList, RestoreContextState);
         }
         delegate void ExecuteCommandListFunc(IntPtr self, IntPtr pCommandList, int RestoreContextState);
@@ -641,7 +589,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(59);
                 m_HSSetShaderResourcesFunc = (HSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSSetShaderResourcesFunc));
             } 
-            
              m_HSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void HSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -653,7 +600,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(60);
                 m_HSSetShaderFunc = (HSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSSetShaderFunc));
             } 
-            
              m_HSSetShaderFunc(m_ptr, pHullShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void HSSetShaderFunc(IntPtr self, IntPtr pHullShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -665,7 +611,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(61);
                 m_HSSetSamplersFunc = (HSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSSetSamplersFunc));
             } 
-            
              m_HSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void HSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -677,7 +622,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(62);
                 m_HSSetConstantBuffersFunc = (HSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSSetConstantBuffersFunc));
             } 
-            
              m_HSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void HSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -689,7 +633,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(63);
                 m_DSSetShaderResourcesFunc = (DSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSSetShaderResourcesFunc));
             } 
-            
              m_DSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void DSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -701,7 +644,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(64);
                 m_DSSetShaderFunc = (DSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSSetShaderFunc));
             } 
-            
              m_DSSetShaderFunc(m_ptr, pDomainShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void DSSetShaderFunc(IntPtr self, IntPtr pDomainShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -713,7 +655,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(65);
                 m_DSSetSamplersFunc = (DSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSSetSamplersFunc));
             } 
-            
              m_DSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void DSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -725,7 +666,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(66);
                 m_DSSetConstantBuffersFunc = (DSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSSetConstantBuffersFunc));
             } 
-            
              m_DSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void DSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -737,7 +677,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(67);
                 m_CSSetShaderResourcesFunc = (CSSetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSSetShaderResourcesFunc));
             } 
-            
              m_CSSetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void CSSetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -749,7 +688,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(68);
                 m_CSSetUnorderedAccessViewsFunc = (CSSetUnorderedAccessViewsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSSetUnorderedAccessViewsFunc));
             } 
-            
              m_CSSetUnorderedAccessViewsFunc(m_ptr, StartSlot, NumUAVs, ref ppUnorderedAccessViews, ref pUAVInitialCounts);
         }
         delegate void CSSetUnorderedAccessViewsFunc(IntPtr self, uint StartSlot, uint NumUAVs, ref IntPtr ppUnorderedAccessViews, ref uint pUAVInitialCounts);
@@ -761,7 +699,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(69);
                 m_CSSetShaderFunc = (CSSetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSSetShaderFunc));
             } 
-            
              m_CSSetShaderFunc(m_ptr, pComputeShader, ref ppClassInstances, NumClassInstances);
         }
         delegate void CSSetShaderFunc(IntPtr self, IntPtr pComputeShader, ref IntPtr ppClassInstances, uint NumClassInstances);
@@ -773,7 +710,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(70);
                 m_CSSetSamplersFunc = (CSSetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSSetSamplersFunc));
             } 
-            
              m_CSSetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void CSSetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -785,7 +721,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(71);
                 m_CSSetConstantBuffersFunc = (CSSetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSSetConstantBuffersFunc));
             } 
-            
              m_CSSetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void CSSetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -797,7 +732,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(72);
                 m_VSGetConstantBuffersFunc = (VSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSGetConstantBuffersFunc));
             } 
-            
              m_VSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void VSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -809,7 +743,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(73);
                 m_PSGetShaderResourcesFunc = (PSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSGetShaderResourcesFunc));
             } 
-            
              m_PSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void PSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -821,7 +754,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(74);
                 m_PSGetShaderFunc = (PSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSGetShaderFunc));
             } 
-            
              m_PSGetShaderFunc(m_ptr, ref ppPixelShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void PSGetShaderFunc(IntPtr self, ref IntPtr ppPixelShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -833,7 +765,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(75);
                 m_PSGetSamplersFunc = (PSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSGetSamplersFunc));
             } 
-            
              m_PSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void PSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -845,7 +776,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(76);
                 m_VSGetShaderFunc = (VSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSGetShaderFunc));
             } 
-            
              m_VSGetShaderFunc(m_ptr, ref ppVertexShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void VSGetShaderFunc(IntPtr self, ref IntPtr ppVertexShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -857,7 +787,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(77);
                 m_PSGetConstantBuffersFunc = (PSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PSGetConstantBuffersFunc));
             } 
-            
              m_PSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void PSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -869,7 +798,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(78);
                 m_IAGetInputLayoutFunc = (IAGetInputLayoutFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IAGetInputLayoutFunc));
             } 
-            
              m_IAGetInputLayoutFunc(m_ptr, ref ppInputLayout);
         }
         delegate void IAGetInputLayoutFunc(IntPtr self, ref IntPtr ppInputLayout);
@@ -881,7 +809,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(79);
                 m_IAGetVertexBuffersFunc = (IAGetVertexBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IAGetVertexBuffersFunc));
             } 
-            
              m_IAGetVertexBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppVertexBuffers, ref pStrides, ref pOffsets);
         }
         delegate void IAGetVertexBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppVertexBuffers, ref uint pStrides, ref uint pOffsets);
@@ -893,7 +820,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(80);
                 m_IAGetIndexBufferFunc = (IAGetIndexBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IAGetIndexBufferFunc));
             } 
-            
              m_IAGetIndexBufferFunc(m_ptr, ref pIndexBuffer, ref Format, ref Offset);
         }
         delegate void IAGetIndexBufferFunc(IntPtr self, ref IntPtr pIndexBuffer, ref DXGI_FORMAT Format, ref uint Offset);
@@ -905,7 +831,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(81);
                 m_GSGetConstantBuffersFunc = (GSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSGetConstantBuffersFunc));
             } 
-            
              m_GSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void GSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -917,7 +842,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(82);
                 m_GSGetShaderFunc = (GSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSGetShaderFunc));
             } 
-            
              m_GSGetShaderFunc(m_ptr, ref ppGeometryShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void GSGetShaderFunc(IntPtr self, ref IntPtr ppGeometryShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -929,7 +853,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(83);
                 m_IAGetPrimitiveTopologyFunc = (IAGetPrimitiveTopologyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IAGetPrimitiveTopologyFunc));
             } 
-            
              m_IAGetPrimitiveTopologyFunc(m_ptr, pTopology);
         }
         delegate void IAGetPrimitiveTopologyFunc(IntPtr self, IntPtr pTopology);
@@ -941,7 +864,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(84);
                 m_VSGetShaderResourcesFunc = (VSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSGetShaderResourcesFunc));
             } 
-            
              m_VSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void VSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -953,7 +875,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(85);
                 m_VSGetSamplersFunc = (VSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(VSGetSamplersFunc));
             } 
-            
              m_VSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void VSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -965,7 +886,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(86);
                 m_GetPredicationFunc = (GetPredicationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPredicationFunc));
             } 
-            
              m_GetPredicationFunc(m_ptr, ref ppPredicate, ref pPredicateValue);
         }
         delegate void GetPredicationFunc(IntPtr self, ref IntPtr ppPredicate, ref int pPredicateValue);
@@ -977,7 +897,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(87);
                 m_GSGetShaderResourcesFunc = (GSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSGetShaderResourcesFunc));
             } 
-            
              m_GSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void GSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -989,7 +908,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(88);
                 m_GSGetSamplersFunc = (GSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GSGetSamplersFunc));
             } 
-            
              m_GSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void GSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -1001,7 +919,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(89);
                 m_OMGetRenderTargetsFunc = (OMGetRenderTargetsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMGetRenderTargetsFunc));
             } 
-            
              m_OMGetRenderTargetsFunc(m_ptr, NumViews, ref ppRenderTargetViews, ref ppDepthStencilView);
         }
         delegate void OMGetRenderTargetsFunc(IntPtr self, uint NumViews, ref IntPtr ppRenderTargetViews, ref IntPtr ppDepthStencilView);
@@ -1013,7 +930,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(90);
                 m_OMGetRenderTargetsAndUnorderedAccessViewsFunc = (OMGetRenderTargetsAndUnorderedAccessViewsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMGetRenderTargetsAndUnorderedAccessViewsFunc));
             } 
-            
              m_OMGetRenderTargetsAndUnorderedAccessViewsFunc(m_ptr, NumRTVs, ref ppRenderTargetViews, ref ppDepthStencilView, UAVStartSlot, NumUAVs, ref ppUnorderedAccessViews);
         }
         delegate void OMGetRenderTargetsAndUnorderedAccessViewsFunc(IntPtr self, uint NumRTVs, ref IntPtr ppRenderTargetViews, ref IntPtr ppDepthStencilView, uint UAVStartSlot, uint NumUAVs, ref IntPtr ppUnorderedAccessViews);
@@ -1025,7 +941,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(91);
                 m_OMGetBlendStateFunc = (OMGetBlendStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMGetBlendStateFunc));
             } 
-            
              m_OMGetBlendStateFunc(m_ptr, ref ppBlendState, ref BlendFactor, ref pSampleMask);
         }
         delegate void OMGetBlendStateFunc(IntPtr self, ref IntPtr ppBlendState, ref float BlendFactor, ref uint pSampleMask);
@@ -1037,7 +952,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(92);
                 m_OMGetDepthStencilStateFunc = (OMGetDepthStencilStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OMGetDepthStencilStateFunc));
             } 
-            
              m_OMGetDepthStencilStateFunc(m_ptr, ref ppDepthStencilState, ref pStencilRef);
         }
         delegate void OMGetDepthStencilStateFunc(IntPtr self, ref IntPtr ppDepthStencilState, ref uint pStencilRef);
@@ -1049,7 +963,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(93);
                 m_SOGetTargetsFunc = (SOGetTargetsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SOGetTargetsFunc));
             } 
-            
              m_SOGetTargetsFunc(m_ptr, NumBuffers, ref ppSOTargets);
         }
         delegate void SOGetTargetsFunc(IntPtr self, uint NumBuffers, ref IntPtr ppSOTargets);
@@ -1061,7 +974,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(94);
                 m_RSGetStateFunc = (RSGetStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSGetStateFunc));
             } 
-            
              m_RSGetStateFunc(m_ptr, ref ppRasterizerState);
         }
         delegate void RSGetStateFunc(IntPtr self, ref IntPtr ppRasterizerState);
@@ -1073,7 +985,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(95);
                 m_RSGetViewportsFunc = (RSGetViewportsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSGetViewportsFunc));
             } 
-            
              m_RSGetViewportsFunc(m_ptr, ref pNumViewports, ref pViewports);
         }
         delegate void RSGetViewportsFunc(IntPtr self, ref uint pNumViewports, ref D3D11_VIEWPORT pViewports);
@@ -1085,7 +996,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(96);
                 m_RSGetScissorRectsFunc = (RSGetScissorRectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RSGetScissorRectsFunc));
             } 
-            
              m_RSGetScissorRectsFunc(m_ptr, ref pNumRects, pRects);
         }
         delegate void RSGetScissorRectsFunc(IntPtr self, ref uint pNumRects, IntPtr pRects);
@@ -1097,7 +1007,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(97);
                 m_HSGetShaderResourcesFunc = (HSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSGetShaderResourcesFunc));
             } 
-            
              m_HSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void HSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -1109,7 +1018,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(98);
                 m_HSGetShaderFunc = (HSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSGetShaderFunc));
             } 
-            
              m_HSGetShaderFunc(m_ptr, ref ppHullShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void HSGetShaderFunc(IntPtr self, ref IntPtr ppHullShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -1121,7 +1029,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(99);
                 m_HSGetSamplersFunc = (HSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSGetSamplersFunc));
             } 
-            
              m_HSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void HSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -1133,7 +1040,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(100);
                 m_HSGetConstantBuffersFunc = (HSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HSGetConstantBuffersFunc));
             } 
-            
              m_HSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void HSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -1145,7 +1051,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(101);
                 m_DSGetShaderResourcesFunc = (DSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSGetShaderResourcesFunc));
             } 
-            
              m_DSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void DSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -1157,7 +1062,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(102);
                 m_DSGetShaderFunc = (DSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSGetShaderFunc));
             } 
-            
              m_DSGetShaderFunc(m_ptr, ref ppDomainShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void DSGetShaderFunc(IntPtr self, ref IntPtr ppDomainShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -1169,7 +1073,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(103);
                 m_DSGetSamplersFunc = (DSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSGetSamplersFunc));
             } 
-            
              m_DSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void DSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -1181,7 +1084,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(104);
                 m_DSGetConstantBuffersFunc = (DSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DSGetConstantBuffersFunc));
             } 
-            
              m_DSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void DSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -1193,7 +1095,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(105);
                 m_CSGetShaderResourcesFunc = (CSGetShaderResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSGetShaderResourcesFunc));
             } 
-            
              m_CSGetShaderResourcesFunc(m_ptr, StartSlot, NumViews, ref ppShaderResourceViews);
         }
         delegate void CSGetShaderResourcesFunc(IntPtr self, uint StartSlot, uint NumViews, ref IntPtr ppShaderResourceViews);
@@ -1205,7 +1106,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(106);
                 m_CSGetUnorderedAccessViewsFunc = (CSGetUnorderedAccessViewsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSGetUnorderedAccessViewsFunc));
             } 
-            
              m_CSGetUnorderedAccessViewsFunc(m_ptr, StartSlot, NumUAVs, ref ppUnorderedAccessViews);
         }
         delegate void CSGetUnorderedAccessViewsFunc(IntPtr self, uint StartSlot, uint NumUAVs, ref IntPtr ppUnorderedAccessViews);
@@ -1217,7 +1117,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(107);
                 m_CSGetShaderFunc = (CSGetShaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSGetShaderFunc));
             } 
-            
              m_CSGetShaderFunc(m_ptr, ref ppComputeShader, ref ppClassInstances, ref pNumClassInstances);
         }
         delegate void CSGetShaderFunc(IntPtr self, ref IntPtr ppComputeShader, ref IntPtr ppClassInstances, ref uint pNumClassInstances);
@@ -1229,7 +1128,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(108);
                 m_CSGetSamplersFunc = (CSGetSamplersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSGetSamplersFunc));
             } 
-            
              m_CSGetSamplersFunc(m_ptr, StartSlot, NumSamplers, ref ppSamplers);
         }
         delegate void CSGetSamplersFunc(IntPtr self, uint StartSlot, uint NumSamplers, ref IntPtr ppSamplers);
@@ -1241,7 +1139,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(109);
                 m_CSGetConstantBuffersFunc = (CSGetConstantBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CSGetConstantBuffersFunc));
             } 
-            
              m_CSGetConstantBuffersFunc(m_ptr, StartSlot, NumBuffers, ref ppConstantBuffers);
         }
         delegate void CSGetConstantBuffersFunc(IntPtr self, uint StartSlot, uint NumBuffers, ref IntPtr ppConstantBuffers);
@@ -1253,7 +1150,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(110);
                 m_ClearStateFunc = (ClearStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearStateFunc));
             } 
-            
              m_ClearStateFunc(m_ptr);
         }
         delegate void ClearStateFunc(IntPtr self);
@@ -1265,7 +1161,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(111);
                 m_FlushFunc = (FlushFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FlushFunc));
             } 
-            
              m_FlushFunc(m_ptr);
         }
         delegate void FlushFunc(IntPtr self);
@@ -1277,7 +1172,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(112);
                 m_GetTypeFunc = (GetTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeFunc));
             } 
-            
             return  m_GetTypeFunc(m_ptr);
         }
         delegate D3D11_DEVICE_CONTEXT_TYPE GetTypeFunc(IntPtr self);
@@ -1289,7 +1183,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(113);
                 m_GetContextFlagsFunc = (GetContextFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContextFlagsFunc));
             } 
-            
             return  m_GetContextFlagsFunc(m_ptr);
         }
         delegate uint GetContextFlagsFunc(IntPtr self);
@@ -1301,7 +1194,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(114);
                 m_FinishCommandListFunc = (FinishCommandListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FinishCommandListFunc));
             } 
-            
             return  m_FinishCommandListFunc(m_ptr, RestoreDeferredContextState, ref ppCommandList);
         }
         delegate int FinishCommandListFunc(IntPtr self, int RestoreDeferredContextState, ref IntPtr ppCommandList);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetLicInfoFunc = (GetLicInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLicInfoFunc));
             } 
-            
             return  m_GetLicInfoFunc(m_ptr, ref pLicInfo);
         }
         delegate int GetLicInfoFunc(IntPtr self, ref LICINFO pLicInfo);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_RequestLicKeyFunc = (RequestLicKeyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RequestLicKeyFunc));
             } 
-            
             return  m_RequestLicKeyFunc(m_ptr, dwReserved, ref pBstrKey);
         }
         delegate int RequestLicKeyFunc(IntPtr self, uint dwReserved, ref IntPtr pBstrKey);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_CreateInstanceLicFunc = (CreateInstanceLicFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateInstanceLicFunc));
             } 
-            
             return  m_CreateInstanceLicFunc(m_ptr, pUnkOuter, pUnkReserved, ref riid, bstrKey, ref ppvObj);
         }
         delegate int CreateInstanceLicFunc(IntPtr self, IntPtr pUnkOuter, IntPtr pUnkReserved, ref Guid riid, IntPtr bstrKey, ref IntPtr ppvObj);

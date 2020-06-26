@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetClientSiteFunc = (SetClientSiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetClientSiteFunc));
             } 
-            
             return  m_SetClientSiteFunc(m_ptr, pClientSite);
         }
         delegate int SetClientSiteFunc(IntPtr self, IntPtr pClientSite);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetClientSiteFunc = (GetClientSiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClientSiteFunc));
             } 
-            
             return  m_GetClientSiteFunc(m_ptr, ref ppClientSite);
         }
         delegate int GetClientSiteFunc(IntPtr self, ref IntPtr ppClientSite);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetHostNamesFunc = (SetHostNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHostNamesFunc));
             } 
-            
             return  m_SetHostNamesFunc(m_ptr, szContainerApp, szContainerObj);
         }
         delegate int SetHostNamesFunc(IntPtr self, IntPtr szContainerApp, IntPtr szContainerObj);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_CloseFunc = (CloseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CloseFunc));
             } 
-            
             return  m_CloseFunc(m_ptr, dwSaveOption);
         }
         delegate int CloseFunc(IntPtr self, uint dwSaveOption);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetMonikerFunc = (SetMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMonikerFunc));
             } 
-            
             return  m_SetMonikerFunc(m_ptr, dwWhichMoniker, pmk);
         }
         delegate int SetMonikerFunc(IntPtr self, uint dwWhichMoniker, IntPtr pmk);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetMonikerFunc = (GetMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMonikerFunc));
             } 
-            
             return  m_GetMonikerFunc(m_ptr, dwAssign, dwWhichMoniker, ref ppmk);
         }
         delegate int GetMonikerFunc(IntPtr self, uint dwAssign, uint dwWhichMoniker, ref IntPtr ppmk);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_InitFromDataFunc = (InitFromDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitFromDataFunc));
             } 
-            
             return  m_InitFromDataFunc(m_ptr, pDataObject, fCreation, dwReserved);
         }
         delegate int InitFromDataFunc(IntPtr self, IntPtr pDataObject, int fCreation, uint dwReserved);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetClipboardDataFunc = (GetClipboardDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClipboardDataFunc));
             } 
-            
             return  m_GetClipboardDataFunc(m_ptr, dwReserved, ref ppDataObject);
         }
         delegate int GetClipboardDataFunc(IntPtr self, uint dwReserved, ref IntPtr ppDataObject);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_DoVerbFunc = (DoVerbFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DoVerbFunc));
             } 
-            
             return  m_DoVerbFunc(m_ptr, iVerb, ref lpmsg, pActiveSite, lindex, hwndParent, ref lprcPosRect);
         }
         delegate int DoVerbFunc(IntPtr self, int iVerb, ref MSG lpmsg, IntPtr pActiveSite, int lindex, HWND hwndParent, ref RECT lprcPosRect);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_EnumVerbsFunc = (EnumVerbsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumVerbsFunc));
             } 
-            
             return  m_EnumVerbsFunc(m_ptr, ref ppEnumOleVerb);
         }
         delegate int EnumVerbsFunc(IntPtr self, ref IntPtr ppEnumOleVerb);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_UpdateFunc = (UpdateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UpdateFunc));
             } 
-            
             return  m_UpdateFunc(m_ptr);
         }
         delegate int UpdateFunc(IntPtr self);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_IsUpToDateFunc = (IsUpToDateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsUpToDateFunc));
             } 
-            
             return  m_IsUpToDateFunc(m_ptr);
         }
         delegate int IsUpToDateFunc(IntPtr self);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetUserClassIDFunc = (GetUserClassIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUserClassIDFunc));
             } 
-            
             return  m_GetUserClassIDFunc(m_ptr, pClsid);
         }
         delegate int GetUserClassIDFunc(IntPtr self, IntPtr pClsid);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_GetUserTypeFunc = (GetUserTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUserTypeFunc));
             } 
-            
             return  m_GetUserTypeFunc(m_ptr, dwFormOfType, ref pszUserType);
         }
         delegate int GetUserTypeFunc(IntPtr self, uint dwFormOfType, ref IntPtr pszUserType);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_SetExtentFunc = (SetExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetExtentFunc));
             } 
-            
             return  m_SetExtentFunc(m_ptr, dwDrawAspect, psizel);
         }
         delegate int SetExtentFunc(IntPtr self, uint dwDrawAspect, IntPtr psizel);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_GetExtentFunc = (GetExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetExtentFunc));
             } 
-            
             return  m_GetExtentFunc(m_ptr, dwDrawAspect, psizel);
         }
         delegate int GetExtentFunc(IntPtr self, uint dwDrawAspect, IntPtr psizel);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_AdviseFunc = (AdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AdviseFunc));
             } 
-            
             return  m_AdviseFunc(m_ptr, pAdvSink, ref pdwConnection);
         }
         delegate int AdviseFunc(IntPtr self, IntPtr pAdvSink, ref uint pdwConnection);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_UnadviseFunc = (UnadviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnadviseFunc));
             } 
-            
             return  m_UnadviseFunc(m_ptr, dwConnection);
         }
         delegate int UnadviseFunc(IntPtr self, uint dwConnection);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_EnumAdviseFunc = (EnumAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdviseFunc));
             } 
-            
             return  m_EnumAdviseFunc(m_ptr, ref ppenumAdvise);
         }
         delegate int EnumAdviseFunc(IntPtr self, ref IntPtr ppenumAdvise);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_GetMiscStatusFunc = (GetMiscStatusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMiscStatusFunc));
             } 
-            
             return  m_GetMiscStatusFunc(m_ptr, dwAspect, ref pdwStatus);
         }
         delegate int GetMiscStatusFunc(IntPtr self, uint dwAspect, ref uint pdwStatus);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_SetColorSchemeFunc = (SetColorSchemeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetColorSchemeFunc));
             } 
-            
             return  m_SetColorSchemeFunc(m_ptr, ref pLogpal);
         }
         delegate int SetColorSchemeFunc(IntPtr self, ref LOGPALETTE pLogpal);

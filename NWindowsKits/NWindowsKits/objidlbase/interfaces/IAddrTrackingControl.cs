@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_EnableCOMDynamicAddrTrackingFunc = (EnableCOMDynamicAddrTrackingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnableCOMDynamicAddrTrackingFunc));
             } 
-            
             return  m_EnableCOMDynamicAddrTrackingFunc(m_ptr);
         }
         delegate int EnableCOMDynamicAddrTrackingFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_DisableCOMDynamicAddrTrackingFunc = (DisableCOMDynamicAddrTrackingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DisableCOMDynamicAddrTrackingFunc));
             } 
-            
             return  m_DisableCOMDynamicAddrTrackingFunc(m_ptr);
         }
         delegate int DisableCOMDynamicAddrTrackingFunc(IntPtr self);

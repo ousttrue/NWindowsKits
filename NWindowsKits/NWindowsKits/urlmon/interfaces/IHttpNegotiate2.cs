@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetRootSecurityIdFunc = (GetRootSecurityIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRootSecurityIdFunc));
             } 
-            
             return  m_GetRootSecurityIdFunc(m_ptr, ref pbSecurityId, ref pcbSecurityId, dwReserved);
         }
         delegate int GetRootSecurityIdFunc(IntPtr self, ref byte pbSecurityId, ref uint pcbSecurityId, ulong dwReserved);

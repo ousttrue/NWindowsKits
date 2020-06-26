@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetFunc = (SetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFunc));
             } 
-            
             return  m_SetFunc(m_ptr, pPrx, dwProperty, dwValue);
         }
         delegate int SetFunc(IntPtr self, IntPtr pPrx, RPCOPT_PROPERTIES dwProperty, ulong dwValue);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_QueryFunc = (QueryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryFunc));
             } 
-            
             return  m_QueryFunc(m_ptr, pPrx, dwProperty, ref pdwValue);
         }
         delegate int QueryFunc(IntPtr self, IntPtr pPrx, RPCOPT_PROPERTIES dwProperty, ref ulong pdwValue);

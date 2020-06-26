@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateFunc = (CreateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateFunc));
             } 
-            
             return  m_CreateFunc(m_ptr, ref rfmtid, pclsid, grfFlags, grfMode, ref ppprstg);
         }
         delegate int CreateFunc(IntPtr self, ref Guid rfmtid, IntPtr pclsid, uint grfFlags, uint grfMode, ref IntPtr ppprstg);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OpenFunc = (OpenFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OpenFunc));
             } 
-            
             return  m_OpenFunc(m_ptr, ref rfmtid, grfMode, ref ppprstg);
         }
         delegate int OpenFunc(IntPtr self, ref Guid rfmtid, uint grfMode, ref IntPtr ppprstg);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_DeleteFunc = (DeleteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeleteFunc));
             } 
-            
             return  m_DeleteFunc(m_ptr, ref rfmtid);
         }
         delegate int DeleteFunc(IntPtr self, ref Guid rfmtid);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_EnumFunc = (EnumFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumFunc));
             } 
-            
             return  m_EnumFunc(m_ptr, ref ppenum);
         }
         delegate int EnumFunc(IntPtr self, ref IntPtr ppenum);

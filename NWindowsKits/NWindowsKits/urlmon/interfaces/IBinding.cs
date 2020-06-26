@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AbortFunc = (AbortFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AbortFunc));
             } 
-            
             return  m_AbortFunc(m_ptr);
         }
         delegate int AbortFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SuspendFunc = (SuspendFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SuspendFunc));
             } 
-            
             return  m_SuspendFunc(m_ptr);
         }
         delegate int SuspendFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ResumeFunc = (ResumeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResumeFunc));
             } 
-            
             return  m_ResumeFunc(m_ptr);
         }
         delegate int ResumeFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetPriorityFunc = (SetPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPriorityFunc));
             } 
-            
             return  m_SetPriorityFunc(m_ptr, nPriority);
         }
         delegate int SetPriorityFunc(IntPtr self, int nPriority);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetPriorityFunc = (GetPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPriorityFunc));
             } 
-            
             return  m_GetPriorityFunc(m_ptr, ref pnPriority);
         }
         delegate int GetPriorityFunc(IntPtr self, ref int pnPriority);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetBindResultFunc = (GetBindResultFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBindResultFunc));
             } 
-            
             return  m_GetBindResultFunc(m_ptr, pclsidProtocol, ref pdwResult, ref pszResult, ref pdwReserved);
         }
         delegate int GetBindResultFunc(IntPtr self, IntPtr pclsidProtocol, ref uint pdwResult, ref IntPtr pszResult, ref uint pdwReserved);

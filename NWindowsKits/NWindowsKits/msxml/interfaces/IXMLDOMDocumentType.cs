@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_get_nameFunc = (get_nameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nameFunc));
             } 
-            
             return  m_get_nameFunc(m_ptr, ref rootName);
         }
         delegate int get_nameFunc(IntPtr self, ref IntPtr rootName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_get_entitiesFunc = (get_entitiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_entitiesFunc));
             } 
-            
             return  m_get_entitiesFunc(m_ptr, ref entityMap);
         }
         delegate int get_entitiesFunc(IntPtr self, ref IntPtr entityMap);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_get_notationsFunc = (get_notationsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_notationsFunc));
             } 
-            
             return  m_get_notationsFunc(m_ptr, ref notationMap);
         }
         delegate int get_notationsFunc(IntPtr self, ref IntPtr notationMap);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetUpdateOptionsFunc = (SetUpdateOptionsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetUpdateOptionsFunc));
             } 
-            
             return  m_SetUpdateOptionsFunc(m_ptr, dwUpdateOpt);
         }
         delegate int SetUpdateOptionsFunc(IntPtr self, uint dwUpdateOpt);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetUpdateOptionsFunc = (GetUpdateOptionsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUpdateOptionsFunc));
             } 
-            
             return  m_GetUpdateOptionsFunc(m_ptr, ref pdwUpdateOpt);
         }
         delegate int GetUpdateOptionsFunc(IntPtr self, ref uint pdwUpdateOpt);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetSourceMonikerFunc = (SetSourceMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSourceMonikerFunc));
             } 
-            
             return  m_SetSourceMonikerFunc(m_ptr, pmk, ref rclsid);
         }
         delegate int SetSourceMonikerFunc(IntPtr self, IntPtr pmk, ref Guid rclsid);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetSourceMonikerFunc = (GetSourceMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSourceMonikerFunc));
             } 
-            
             return  m_GetSourceMonikerFunc(m_ptr, ref ppmk);
         }
         delegate int GetSourceMonikerFunc(IntPtr self, ref IntPtr ppmk);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetSourceDisplayNameFunc = (SetSourceDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSourceDisplayNameFunc));
             } 
-            
             return  m_SetSourceDisplayNameFunc(m_ptr, pszStatusText);
         }
         delegate int SetSourceDisplayNameFunc(IntPtr self, IntPtr pszStatusText);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetSourceDisplayNameFunc = (GetSourceDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSourceDisplayNameFunc));
             } 
-            
             return  m_GetSourceDisplayNameFunc(m_ptr, ref ppszDisplayName);
         }
         delegate int GetSourceDisplayNameFunc(IntPtr self, ref IntPtr ppszDisplayName);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_BindToSourceFunc = (BindToSourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindToSourceFunc));
             } 
-            
             return  m_BindToSourceFunc(m_ptr, bindflags, pbc);
         }
         delegate int BindToSourceFunc(IntPtr self, uint bindflags, IntPtr pbc);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_BindIfRunningFunc = (BindIfRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindIfRunningFunc));
             } 
-            
             return  m_BindIfRunningFunc(m_ptr);
         }
         delegate int BindIfRunningFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetBoundSourceFunc = (GetBoundSourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBoundSourceFunc));
             } 
-            
             return  m_GetBoundSourceFunc(m_ptr, ref ppunk);
         }
         delegate int GetBoundSourceFunc(IntPtr self, ref IntPtr ppunk);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_UnbindSourceFunc = (UnbindSourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnbindSourceFunc));
             } 
-            
             return  m_UnbindSourceFunc(m_ptr);
         }
         delegate int UnbindSourceFunc(IntPtr self);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_UpdateFunc = (UpdateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UpdateFunc));
             } 
-            
             return  m_UpdateFunc(m_ptr, pbc);
         }
         delegate int UpdateFunc(IntPtr self, IntPtr pbc);

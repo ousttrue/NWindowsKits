@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RedirectFunc = (RedirectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RedirectFunc));
             } 
-            
             return  m_RedirectFunc(m_ptr, lpcUrl, ref vbCancel);
         }
         delegate int RedirectFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string lpcUrl, ref short vbCancel);

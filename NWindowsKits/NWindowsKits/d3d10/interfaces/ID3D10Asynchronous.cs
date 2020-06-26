@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_BeginFunc = (BeginFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BeginFunc));
             } 
-            
              m_BeginFunc(m_ptr);
         }
         delegate void BeginFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_EndFunc = (EndFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EndFunc));
             } 
-            
              m_EndFunc(m_ptr);
         }
         delegate void EndFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetDataFunc = (GetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataFunc));
             } 
-            
             return  m_GetDataFunc(m_ptr, pData, DataSize, GetDataFlags);
         }
         delegate int GetDataFunc(IntPtr self, IntPtr pData, uint DataSize, uint GetDataFlags);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetDataSizeFunc = (GetDataSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataSizeFunc));
             } 
-            
             return  m_GetDataSizeFunc(m_ptr);
         }
         delegate uint GetDataSizeFunc(IntPtr self);

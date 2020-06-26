@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetClassObjectFunc = (GetClassObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassObjectFunc));
             } 
-            
             return  m_GetClassObjectFunc(m_ptr, ref rclsid, dwClassContext, locale, ref riid, ref ppv);
         }
         delegate int GetClassObjectFunc(IntPtr self, ref Guid rclsid, uint dwClassContext, uint locale, ref Guid riid, ref IntPtr ppv);

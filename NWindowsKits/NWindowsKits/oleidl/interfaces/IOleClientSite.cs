@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SaveObjectFunc = (SaveObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveObjectFunc));
             } 
-            
             return  m_SaveObjectFunc(m_ptr);
         }
         delegate int SaveObjectFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetMonikerFunc = (GetMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMonikerFunc));
             } 
-            
             return  m_GetMonikerFunc(m_ptr, dwAssign, dwWhichMoniker, ref ppmk);
         }
         delegate int GetMonikerFunc(IntPtr self, uint dwAssign, uint dwWhichMoniker, ref IntPtr ppmk);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetContainerFunc = (GetContainerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContainerFunc));
             } 
-            
             return  m_GetContainerFunc(m_ptr, ref ppContainer);
         }
         delegate int GetContainerFunc(IntPtr self, ref IntPtr ppContainer);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ShowObjectFunc = (ShowObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ShowObjectFunc));
             } 
-            
             return  m_ShowObjectFunc(m_ptr);
         }
         delegate int ShowObjectFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_OnShowWindowFunc = (OnShowWindowFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnShowWindowFunc));
             } 
-            
             return  m_OnShowWindowFunc(m_ptr, fShow);
         }
         delegate int OnShowWindowFunc(IntPtr self, int fShow);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_RequestNewObjectLayoutFunc = (RequestNewObjectLayoutFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RequestNewObjectLayoutFunc));
             } 
-            
             return  m_RequestNewObjectLayoutFunc(m_ptr);
         }
         delegate int RequestNewObjectLayoutFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_AcquireSyncFunc = (AcquireSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AcquireSyncFunc));
             } 
-            
             return  m_AcquireSyncFunc(m_ptr, Key, dwMilliseconds);
         }
         delegate int AcquireSyncFunc(IntPtr self, ulong Key, uint dwMilliseconds);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_ReleaseSyncFunc = (ReleaseSyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseSyncFunc));
             } 
-            
             return  m_ReleaseSyncFunc(m_ptr, Key);
         }
         delegate int ReleaseSyncFunc(IntPtr self, ulong Key);

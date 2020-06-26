@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RegisterDestructionCallbackFunc = (RegisterDestructionCallbackFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterDestructionCallbackFunc));
             } 
-            
             return  m_RegisterDestructionCallbackFunc(m_ptr, callbackFn, pData, ref pCallbackID);
         }
         delegate int RegisterDestructionCallbackFunc(IntPtr self, PFN_DESTRUCTION_CALLBACK callbackFn, IntPtr pData, ref uint pCallbackID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UnregisterDestructionCallbackFunc = (UnregisterDestructionCallbackFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnregisterDestructionCallbackFunc));
             } 
-            
             return  m_UnregisterDestructionCallbackFunc(m_ptr, callbackID);
         }
         delegate int UnregisterDestructionCallbackFunc(IntPtr self, uint callbackID);

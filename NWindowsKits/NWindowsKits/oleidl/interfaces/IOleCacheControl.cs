@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OnRunFunc = (OnRunFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnRunFunc));
             } 
-            
             return  m_OnRunFunc(m_ptr, pDataObject);
         }
         delegate int OnRunFunc(IntPtr self, IntPtr pDataObject);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnStopFunc = (OnStopFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnStopFunc));
             } 
-            
             return  m_OnStopFunc(m_ptr);
         }
         delegate int OnStopFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetCurrentApartmentTypeFunc = (GetCurrentApartmentTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurrentApartmentTypeFunc));
             } 
-            
             return  m_GetCurrentApartmentTypeFunc(m_ptr, ref pAptType);
         }
         delegate int GetCurrentApartmentTypeFunc(IntPtr self, ref APTTYPE pAptType);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetCurrentThreadTypeFunc = (GetCurrentThreadTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurrentThreadTypeFunc));
             } 
-            
             return  m_GetCurrentThreadTypeFunc(m_ptr, ref pThreadType);
         }
         delegate int GetCurrentThreadTypeFunc(IntPtr self, ref THDTYPE pThreadType);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetCurrentLogicalThreadIdFunc = (GetCurrentLogicalThreadIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurrentLogicalThreadIdFunc));
             } 
-            
             return  m_GetCurrentLogicalThreadIdFunc(m_ptr, ref pguidLogicalThreadId);
         }
         delegate int GetCurrentLogicalThreadIdFunc(IntPtr self, ref GUID pguidLogicalThreadId);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetCurrentLogicalThreadIdFunc = (SetCurrentLogicalThreadIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetCurrentLogicalThreadIdFunc));
             } 
-            
             return  m_SetCurrentLogicalThreadIdFunc(m_ptr, ref rguid);
         }
         delegate int SetCurrentLogicalThreadIdFunc(IntPtr self, ref GUID rguid);

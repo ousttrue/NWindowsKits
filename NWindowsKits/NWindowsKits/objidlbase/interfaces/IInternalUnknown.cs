@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryInternalInterfaceFunc = (QueryInternalInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInternalInterfaceFunc));
             } 
-            
             return  m_QueryInternalInterfaceFunc(m_ptr, ref riid, ref ppv);
         }
         delegate int QueryInternalInterfaceFunc(IntPtr self, ref Guid riid, ref IntPtr ppv);

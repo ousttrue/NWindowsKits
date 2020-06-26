@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateFromTypeInfoFunc = (CreateFromTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateFromTypeInfoFunc));
             } 
-            
             return  m_CreateFromTypeInfoFunc(m_ptr, pTypeInfo, ref riid, ref ppv);
         }
         delegate int CreateFromTypeInfoFunc(IntPtr self, IntPtr pTypeInfo, ref Guid riid, ref IntPtr ppv);

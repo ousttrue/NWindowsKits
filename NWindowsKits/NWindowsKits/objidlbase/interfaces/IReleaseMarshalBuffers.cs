@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ReleaseMarshalBufferFunc = (ReleaseMarshalBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseMarshalBufferFunc));
             } 
-            
             return  m_ReleaseMarshalBufferFunc(m_ptr, ref pMsg, dwFlags, pChnl);
         }
         delegate int ReleaseMarshalBufferFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, uint dwFlags, IntPtr pChnl);

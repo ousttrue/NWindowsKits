@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ReadAtFunc = (ReadAtFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadAtFunc));
             } 
-            
             return  m_ReadAtFunc(m_ptr, ulOffset, pv, cb, pcbRead);
         }
         delegate int ReadAtFunc(IntPtr self, ULARGE_INTEGER ulOffset, IntPtr pv, uint cb, IntPtr pcbRead);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_WriteAtFunc = (WriteAtFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WriteAtFunc));
             } 
-            
             return  m_WriteAtFunc(m_ptr, ulOffset, pv, cb, pcbWritten);
         }
         delegate int WriteAtFunc(IntPtr self, ULARGE_INTEGER ulOffset, IntPtr pv, uint cb, IntPtr pcbWritten);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_FlushFunc = (FlushFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FlushFunc));
             } 
-            
             return  m_FlushFunc(m_ptr);
         }
         delegate int FlushFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetSizeFunc = (SetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSizeFunc));
             } 
-            
             return  m_SetSizeFunc(m_ptr, cb);
         }
         delegate int SetSizeFunc(IntPtr self, ULARGE_INTEGER cb);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_LockRegionFunc = (LockRegionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockRegionFunc));
             } 
-            
             return  m_LockRegionFunc(m_ptr, libOffset, cb, dwLockType);
         }
         delegate int LockRegionFunc(IntPtr self, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, uint dwLockType);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_UnlockRegionFunc = (UnlockRegionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnlockRegionFunc));
             } 
-            
             return  m_UnlockRegionFunc(m_ptr, libOffset, cb, dwLockType);
         }
         delegate int UnlockRegionFunc(IntPtr self, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, uint dwLockType);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_StatFunc = (StatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(StatFunc));
             } 
-            
             return  m_StatFunc(m_ptr, ref pstatstg, grfStatFlag);
         }
         delegate int StatFunc(IntPtr self, ref STATSTG pstatstg, uint grfStatFlag);

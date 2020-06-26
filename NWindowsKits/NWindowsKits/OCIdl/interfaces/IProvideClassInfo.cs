@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetClassInfoAFunc = (GetClassInfoAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassInfoAFunc));
             } 
-            
             return  m_GetClassInfoAFunc(m_ptr, ref ppTI);
         }
         delegate int GetClassInfoAFunc(IntPtr self, ref IntPtr ppTI);

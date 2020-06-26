@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_CreateSubresourceSurfaceFunc = (CreateSubresourceSurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSubresourceSurfaceFunc));
             } 
-            
             return  m_CreateSubresourceSurfaceFunc(m_ptr, index, ref ppSurface);
         }
         delegate int CreateSubresourceSurfaceFunc(IntPtr self, uint index, ref IntPtr ppSurface);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_CreateSharedHandleFunc = (CreateSharedHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSharedHandleFunc));
             } 
-            
             return  m_CreateSharedHandleFunc(m_ptr, ref pAttributes, dwAccess, lpName, ref pHandle);
         }
         delegate int CreateSharedHandleFunc(IntPtr self, ref LPSECURITY_ATTRIBUTES pAttributes, uint dwAccess, [MarshalAs(UnmanagedType.LPWStr)] string lpName, ref IntPtr pHandle);

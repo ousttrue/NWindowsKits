@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_getNamedItemFunc = (getNamedItemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getNamedItemFunc));
             } 
-            
             return  m_getNamedItemFunc(m_ptr, name, ref namedItem);
         }
         delegate int getNamedItemFunc(IntPtr self, IntPtr name, ref IntPtr namedItem);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_setNamedItemFunc = (setNamedItemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(setNamedItemFunc));
             } 
-            
             return  m_setNamedItemFunc(m_ptr, newItem, ref nameItem);
         }
         delegate int setNamedItemFunc(IntPtr self, IntPtr newItem, ref IntPtr nameItem);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_removeNamedItemFunc = (removeNamedItemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(removeNamedItemFunc));
             } 
-            
             return  m_removeNamedItemFunc(m_ptr, name, ref namedItem);
         }
         delegate int removeNamedItemFunc(IntPtr self, IntPtr name, ref IntPtr namedItem);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_get_itemFunc = (get_itemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_itemFunc));
             } 
-            
             return  m_get_itemFunc(m_ptr, index, ref listItem);
         }
         delegate int get_itemFunc(IntPtr self, int index, ref IntPtr listItem);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_lengthFunc = (get_lengthFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_lengthFunc));
             } 
-            
             return  m_get_lengthFunc(m_ptr, ref listLength);
         }
         delegate int get_lengthFunc(IntPtr self, ref int listLength);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_getQualifiedItemFunc = (getQualifiedItemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getQualifiedItemFunc));
             } 
-            
             return  m_getQualifiedItemFunc(m_ptr, baseName, namespaceURI, ref qualifiedItem);
         }
         delegate int getQualifiedItemFunc(IntPtr self, IntPtr baseName, IntPtr namespaceURI, ref IntPtr qualifiedItem);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_removeQualifiedItemFunc = (removeQualifiedItemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(removeQualifiedItemFunc));
             } 
-            
             return  m_removeQualifiedItemFunc(m_ptr, baseName, namespaceURI, ref qualifiedItem);
         }
         delegate int removeQualifiedItemFunc(IntPtr self, IntPtr baseName, IntPtr namespaceURI, ref IntPtr qualifiedItem);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_nextNodeFunc = (nextNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(nextNodeFunc));
             } 
-            
             return  m_nextNodeFunc(m_ptr, ref nextItem);
         }
         delegate int nextNodeFunc(IntPtr self, ref IntPtr nextItem);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_resetFunc = (resetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(resetFunc));
             } 
-            
             return  m_resetFunc(m_ptr);
         }
         delegate int resetFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_get__newEnumFunc = (get__newEnumFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get__newEnumFunc));
             } 
-            
             return  m_get__newEnumFunc(m_ptr, ref ppUnk);
         }
         delegate int get__newEnumFunc(IntPtr self, ref IntPtr ppUnk);

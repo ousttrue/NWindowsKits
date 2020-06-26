@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(0);
                 m_QueryInterfaceFunc = (QueryInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInterfaceFunc));
             } 
-            
             return  m_QueryInterfaceFunc(m_ptr, ref riid, ref ppvObject);
         }
         delegate int QueryInterfaceFunc(IntPtr self, ref Guid riid, ref IntPtr ppvObject);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(1);
                 m_AddRefFunc = (AddRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefFunc));
             } 
-            
             return  m_AddRefFunc(m_ptr);
         }
         delegate uint AddRefFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(2);
                 m_ReleaseFunc = (ReleaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseFunc));
             } 
-            
             return  m_ReleaseFunc(m_ptr);
         }
         delegate uint ReleaseFunc(IntPtr self);

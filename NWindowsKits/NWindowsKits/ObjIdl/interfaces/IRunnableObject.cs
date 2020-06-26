@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetRunningClassFunc = (GetRunningClassFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRunningClassFunc));
             } 
-            
             return  m_GetRunningClassFunc(m_ptr, lpClsid);
         }
         delegate int GetRunningClassFunc(IntPtr self, IntPtr lpClsid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_RunFunc = (RunFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RunFunc));
             } 
-            
             return  m_RunFunc(m_ptr, pbc);
         }
         delegate int RunFunc(IntPtr self, IntPtr pbc);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_IsRunningFunc = (IsRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsRunningFunc));
             } 
-            
             return  m_IsRunningFunc(m_ptr);
         }
         delegate int IsRunningFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_LockRunningFunc = (LockRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockRunningFunc));
             } 
-            
             return  m_LockRunningFunc(m_ptr, fLock, fLastUnlockCloses);
         }
         delegate int LockRunningFunc(IntPtr self, int fLock, int fLastUnlockCloses);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetContainedObjectFunc = (SetContainedObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetContainedObjectFunc));
             } 
-            
             return  m_SetContainedObjectFunc(m_ptr, fContained);
         }
         delegate int SetContainedObjectFunc(IntPtr self, int fContained);

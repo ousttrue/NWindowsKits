@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_itemFunc = (get_itemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_itemFunc));
             } 
-            
             return  m_get_itemFunc(m_ptr, index, ref listItem);
         }
         delegate int get_itemFunc(IntPtr self, int index, ref IntPtr listItem);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_get_lengthFunc = (get_lengthFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_lengthFunc));
             } 
-            
             return  m_get_lengthFunc(m_ptr, ref listLength);
         }
         delegate int get_lengthFunc(IntPtr self, ref int listLength);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_nextNodeFunc = (nextNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(nextNodeFunc));
             } 
-            
             return  m_nextNodeFunc(m_ptr, ref nextItem);
         }
         delegate int nextNodeFunc(IntPtr self, ref IntPtr nextItem);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_resetFunc = (resetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(resetFunc));
             } 
-            
             return  m_resetFunc(m_ptr);
         }
         delegate int resetFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get__newEnumFunc = (get__newEnumFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get__newEnumFunc));
             } 
-            
             return  m_get__newEnumFunc(m_ptr, ref ppUnk);
         }
         delegate int get__newEnumFunc(IntPtr self, ref IntPtr ppUnk);

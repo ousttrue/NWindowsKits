@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_NegotiateSyntaxFunc = (NegotiateSyntaxFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(NegotiateSyntaxFunc));
             } 
-            
             return  m_NegotiateSyntaxFunc(m_ptr, ref pMsg);
         }
         delegate int NegotiateSyntaxFunc(IntPtr self, ref RPCOLEMESSAGE pMsg);

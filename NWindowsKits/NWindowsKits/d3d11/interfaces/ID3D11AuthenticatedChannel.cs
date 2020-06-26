@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetCertificateSizeFunc = (GetCertificateSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCertificateSizeFunc));
             } 
-            
             return  m_GetCertificateSizeFunc(m_ptr, ref pCertificateSize);
         }
         delegate int GetCertificateSizeFunc(IntPtr self, ref uint pCertificateSize);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetCertificateFunc = (GetCertificateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCertificateFunc));
             } 
-            
             return  m_GetCertificateFunc(m_ptr, CertificateSize, ref pCertificate);
         }
         delegate int GetCertificateFunc(IntPtr self, uint CertificateSize, ref byte pCertificate);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetChannelHandleFunc = (GetChannelHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetChannelHandleFunc));
             } 
-            
              m_GetChannelHandleFunc(m_ptr, ref pChannelHandle);
         }
         delegate void GetChannelHandleFunc(IntPtr self, ref IntPtr pChannelHandle);

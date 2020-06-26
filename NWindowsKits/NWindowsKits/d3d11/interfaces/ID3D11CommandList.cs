@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetContextFlagsFunc = (GetContextFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContextFlagsFunc));
             } 
-            
             return  m_GetContextFlagsFunc(m_ptr);
         }
         delegate uint GetContextFlagsFunc(IntPtr self);

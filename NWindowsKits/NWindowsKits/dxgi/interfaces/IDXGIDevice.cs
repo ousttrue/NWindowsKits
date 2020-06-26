@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetAdapterFunc = (GetAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAdapterFunc));
             } 
-            
             return  m_GetAdapterFunc(m_ptr, ref pAdapter);
         }
         delegate int GetAdapterFunc(IntPtr self, ref IntPtr pAdapter);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_CreateSurfaceFunc = (CreateSurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSurfaceFunc));
             } 
-            
             return  m_CreateSurfaceFunc(m_ptr, ref pDesc, NumSurfaces, Usage, ref pSharedResource, ref ppSurface);
         }
         delegate int CreateSurfaceFunc(IntPtr self, ref DXGI_SURFACE_DESC pDesc, uint NumSurfaces, uint Usage, ref DXGI_SHARED_RESOURCE pSharedResource, ref IntPtr ppSurface);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_QueryResourceResidencyFunc = (QueryResourceResidencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryResourceResidencyFunc));
             } 
-            
             return  m_QueryResourceResidencyFunc(m_ptr, ref ppResources, ref pResidencyStatus, NumResources);
         }
         delegate int QueryResourceResidencyFunc(IntPtr self, ref IntPtr ppResources, ref DXGI_RESIDENCY pResidencyStatus, uint NumResources);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SetGPUThreadPriorityFunc = (SetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGPUThreadPriorityFunc));
             } 
-            
             return  m_SetGPUThreadPriorityFunc(m_ptr, Priority);
         }
         delegate int SetGPUThreadPriorityFunc(IntPtr self, int Priority);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetGPUThreadPriorityFunc = (GetGPUThreadPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGPUThreadPriorityFunc));
             } 
-            
             return  m_GetGPUThreadPriorityFunc(m_ptr, ref pPriority);
         }
         delegate int GetGPUThreadPriorityFunc(IntPtr self, ref int pPriority);

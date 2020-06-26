@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_SetMaximumFrameLatencyFunc = (SetMaximumFrameLatencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMaximumFrameLatencyFunc));
             } 
-            
             return  m_SetMaximumFrameLatencyFunc(m_ptr, MaxLatency);
         }
         delegate int SetMaximumFrameLatencyFunc(IntPtr self, uint MaxLatency);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetMaximumFrameLatencyFunc = (GetMaximumFrameLatencyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMaximumFrameLatencyFunc));
             } 
-            
             return  m_GetMaximumFrameLatencyFunc(m_ptr, ref pMaxLatency);
         }
         delegate int GetMaximumFrameLatencyFunc(IntPtr self, ref uint pMaxLatency);

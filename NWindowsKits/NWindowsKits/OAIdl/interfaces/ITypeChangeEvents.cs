@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RequestTypeChangeFunc = (RequestTypeChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RequestTypeChangeFunc));
             } 
-            
             return  m_RequestTypeChangeFunc(m_ptr, changeKind, pTInfoBefore, pStrName, ref pfCancel);
         }
         delegate int RequestTypeChangeFunc(IntPtr self, CHANGEKIND changeKind, IntPtr pTInfoBefore, IntPtr pStrName, ref int pfCancel);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_AfterTypeChangeFunc = (AfterTypeChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AfterTypeChangeFunc));
             } 
-            
             return  m_AfterTypeChangeFunc(m_ptr, changeKind, pTInfoAfter, pStrName);
         }
         delegate int AfterTypeChangeFunc(IntPtr self, CHANGEKIND changeKind, IntPtr pTInfoAfter, IntPtr pStrName);

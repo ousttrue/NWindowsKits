@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetActivationPolicyFunc = (GetActivationPolicyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetActivationPolicyFunc));
             } 
-            
             return  m_GetActivationPolicyFunc(m_ptr, ref pdwPolicy);
         }
         delegate int GetActivationPolicyFunc(IntPtr self, ref uint pdwPolicy);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnInactiveMouseMoveFunc = (OnInactiveMouseMoveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInactiveMouseMoveFunc));
             } 
-            
             return  m_OnInactiveMouseMoveFunc(m_ptr, ref pRectBounds, x, y, grfKeyState);
         }
         delegate int OnInactiveMouseMoveFunc(IntPtr self, ref RECT pRectBounds, int x, int y, uint grfKeyState);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_OnInactiveSetCursorFunc = (OnInactiveSetCursorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInactiveSetCursorFunc));
             } 
-            
             return  m_OnInactiveSetCursorFunc(m_ptr, ref pRectBounds, x, y, dwMouseMsg, fSetAlways);
         }
         delegate int OnInactiveSetCursorFunc(IntPtr self, ref RECT pRectBounds, int x, int y, uint dwMouseMsg, int fSetAlways);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ConnectFunc = (ConnectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ConnectFunc));
             } 
-            
             return  m_ConnectFunc(m_ptr, pRpcChannelBuffer);
         }
         delegate int ConnectFunc(IntPtr self, IntPtr pRpcChannelBuffer);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_DisconnectFunc = (DisconnectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DisconnectFunc));
             } 
-            
              m_DisconnectFunc(m_ptr);
         }
         delegate void DisconnectFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SwitchFunc = (SwitchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SwitchFunc));
             } 
-            
             return  m_SwitchFunc(m_ptr, ref pProtocolData);
         }
         delegate int SwitchFunc(IntPtr self, ref PROTOCOLDATA pProtocolData);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ReportProgressFunc = (ReportProgressFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReportProgressFunc));
             } 
-            
             return  m_ReportProgressFunc(m_ptr, ulStatusCode, szStatusText);
         }
         delegate int ReportProgressFunc(IntPtr self, uint ulStatusCode, [MarshalAs(UnmanagedType.LPWStr)] string szStatusText);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ReportDataFunc = (ReportDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReportDataFunc));
             } 
-            
             return  m_ReportDataFunc(m_ptr, grfBSCF, ulProgress, ulProgressMax);
         }
         delegate int ReportDataFunc(IntPtr self, uint grfBSCF, uint ulProgress, uint ulProgressMax);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ReportResultFunc = (ReportResultFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReportResultFunc));
             } 
-            
             return  m_ReportResultFunc(m_ptr, hrResult, dwError, szResult);
         }
         delegate int ReportResultFunc(IntPtr self, int hrResult, uint dwError, [MarshalAs(UnmanagedType.LPWStr)] string szResult);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_get_publicIdFunc = (get_publicIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_publicIdFunc));
             } 
-            
             return  m_get_publicIdFunc(m_ptr, ref publicID);
         }
         delegate int get_publicIdFunc(IntPtr self, ref VARIANT publicID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_get_systemIdFunc = (get_systemIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_systemIdFunc));
             } 
-            
             return  m_get_systemIdFunc(m_ptr, ref systemID);
         }
         delegate int get_systemIdFunc(IntPtr self, ref VARIANT systemID);

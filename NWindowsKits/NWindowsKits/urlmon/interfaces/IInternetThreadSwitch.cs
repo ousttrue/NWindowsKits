@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PrepareFunc = (PrepareFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PrepareFunc));
             } 
-            
             return  m_PrepareFunc(m_ptr);
         }
         delegate int PrepareFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ContinueFunc = (ContinueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ContinueFunc));
             } 
-            
             return  m_ContinueFunc(m_ptr);
         }
         delegate int ContinueFunc(IntPtr self);

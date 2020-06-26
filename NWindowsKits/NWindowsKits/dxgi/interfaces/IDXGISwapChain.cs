@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_PresentFunc = (PresentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PresentFunc));
             } 
-            
             return  m_PresentFunc(m_ptr, SyncInterval, Flags);
         }
         delegate int PresentFunc(IntPtr self, uint SyncInterval, uint Flags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetBufferFunc = (GetBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferFunc));
             } 
-            
             return  m_GetBufferFunc(m_ptr, Buffer, ref riid, ref ppSurface);
         }
         delegate int GetBufferFunc(IntPtr self, uint Buffer, ref Guid riid, ref IntPtr ppSurface);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SetFullscreenStateFunc = (SetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFullscreenStateFunc));
             } 
-            
             return  m_SetFullscreenStateFunc(m_ptr, Fullscreen, pTarget);
         }
         delegate int SetFullscreenStateFunc(IntPtr self, int Fullscreen, IntPtr pTarget);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetFullscreenStateFunc = (GetFullscreenStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFullscreenStateFunc));
             } 
-            
             return  m_GetFullscreenStateFunc(m_ptr, ref pFullscreen, ref ppTarget);
         }
         delegate int GetFullscreenStateFunc(IntPtr self, ref int pFullscreen, ref IntPtr ppTarget);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate int GetDescFunc(IntPtr self, ref DXGI_SWAP_CHAIN_DESC pDesc);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_ResizeBuffersFunc = (ResizeBuffersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeBuffersFunc));
             } 
-            
             return  m_ResizeBuffersFunc(m_ptr, BufferCount, Width, Height, NewFormat, SwapChainFlags);
         }
         delegate int ResizeBuffersFunc(IntPtr self, uint BufferCount, uint Width, uint Height, DXGI_FORMAT NewFormat, uint SwapChainFlags);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_ResizeTargetFunc = (ResizeTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeTargetFunc));
             } 
-            
             return  m_ResizeTargetFunc(m_ptr, ref pNewTargetParameters);
         }
         delegate int ResizeTargetFunc(IntPtr self, ref DXGI_MODE_DESC pNewTargetParameters);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetContainingOutputFunc = (GetContainingOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContainingOutputFunc));
             } 
-            
             return  m_GetContainingOutputFunc(m_ptr, ref ppOutput);
         }
         delegate int GetContainingOutputFunc(IntPtr self, ref IntPtr ppOutput);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
             } 
-            
             return  m_GetFrameStatisticsFunc(m_ptr, ref pStats);
         }
         delegate int GetFrameStatisticsFunc(IntPtr self, ref DXGI_FRAME_STATISTICS pStats);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_GetLastPresentCountFunc = (GetLastPresentCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastPresentCountFunc));
             } 
-            
             return  m_GetLastPresentCountFunc(m_ptr, ref pLastPresentCount);
         }
         delegate int GetLastPresentCountFunc(IntPtr self, ref uint pLastPresentCount);

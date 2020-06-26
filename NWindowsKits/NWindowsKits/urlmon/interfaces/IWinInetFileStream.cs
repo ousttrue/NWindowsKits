@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetHandleForUnlockFunc = (SetHandleForUnlockFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHandleForUnlockFunc));
             } 
-            
             return  m_SetHandleForUnlockFunc(m_ptr, hWinInetLockHandle, dwReserved);
         }
         delegate int SetHandleForUnlockFunc(IntPtr self, ulong hWinInetLockHandle, ulong dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetDeleteFileFunc = (SetDeleteFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDeleteFileFunc));
             } 
-            
             return  m_SetDeleteFileFunc(m_ptr, dwReserved);
         }
         delegate int SetDeleteFileFunc(IntPtr self, ulong dwReserved);

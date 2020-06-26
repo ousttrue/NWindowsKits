@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryBlanketFunc = (QueryBlanketFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryBlanketFunc));
             } 
-            
             return  m_QueryBlanketFunc(m_ptr, ref pAuthnSvc, ref pAuthzSvc, ref pServerPrincName, ref pAuthnLevel, ref pImpLevel, ref pPrivs, ref pCapabilities);
         }
         delegate int QueryBlanketFunc(IntPtr self, ref uint pAuthnSvc, ref uint pAuthzSvc, ref IntPtr pServerPrincName, ref uint pAuthnLevel, ref uint pImpLevel, ref IntPtr pPrivs, ref uint pCapabilities);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ImpersonateClientFunc = (ImpersonateClientFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ImpersonateClientFunc));
             } 
-            
             return  m_ImpersonateClientFunc(m_ptr);
         }
         delegate int ImpersonateClientFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_RevertToSelfFunc = (RevertToSelfFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RevertToSelfFunc));
             } 
-            
             return  m_RevertToSelfFunc(m_ptr);
         }
         delegate int RevertToSelfFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_IsImpersonatingFunc = (IsImpersonatingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsImpersonatingFunc));
             } 
-            
             return  m_IsImpersonatingFunc(m_ptr);
         }
         delegate int IsImpersonatingFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnSecurityProblemFunc = (OnSecurityProblemFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnSecurityProblemFunc));
             } 
-            
             return  m_OnSecurityProblemFunc(m_ptr, dwProblem);
         }
         delegate int OnSecurityProblemFunc(IntPtr self, uint dwProblem);

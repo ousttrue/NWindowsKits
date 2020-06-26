@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryMultipleInterfacesFunc = (QueryMultipleInterfacesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryMultipleInterfacesFunc));
             } 
-            
             return  m_QueryMultipleInterfacesFunc(m_ptr, cMQIs, ref pMQIs);
         }
         delegate int QueryMultipleInterfacesFunc(IntPtr self, uint cMQIs, ref MULTI_QI pMQIs);

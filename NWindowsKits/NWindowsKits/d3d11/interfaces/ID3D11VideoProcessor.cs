@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetContentDescFunc = (GetContentDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContentDescFunc));
             } 
-            
              m_GetContentDescFunc(m_ptr, ref pDesc);
         }
         delegate void GetContentDescFunc(IntPtr self, ref D3D11_VIDEO_PROCESSOR_CONTENT_DESC pDesc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetRateConversionCapsFunc = (GetRateConversionCapsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRateConversionCapsFunc));
             } 
-            
              m_GetRateConversionCapsFunc(m_ptr, ref pCaps);
         }
         delegate void GetRateConversionCapsFunc(IntPtr self, ref D3D11_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS pCaps);

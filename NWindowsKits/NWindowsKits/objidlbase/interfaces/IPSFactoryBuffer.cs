@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateProxyFunc = (CreateProxyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateProxyFunc));
             } 
-            
             return  m_CreateProxyFunc(m_ptr, pUnkOuter, ref riid, ref ppProxy, ref ppv);
         }
         delegate int CreateProxyFunc(IntPtr self, IntPtr pUnkOuter, ref Guid riid, ref IntPtr ppProxy, ref IntPtr ppv);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CreateStubFunc = (CreateStubFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateStubFunc));
             } 
-            
             return  m_CreateStubFunc(m_ptr, ref riid, pUnkServer, ref ppStub);
         }
         delegate int CreateStubFunc(IntPtr self, ref Guid riid, IntPtr pUnkServer, ref IntPtr ppStub);

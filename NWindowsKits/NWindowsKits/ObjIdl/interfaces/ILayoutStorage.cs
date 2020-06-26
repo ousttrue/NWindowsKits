@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_LayoutScriptFunc = (LayoutScriptFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LayoutScriptFunc));
             } 
-            
             return  m_LayoutScriptFunc(m_ptr, ref pStorageLayout, nEntries, glfInterleavedFlag);
         }
         delegate int LayoutScriptFunc(IntPtr self, ref StorageLayout pStorageLayout, uint nEntries, uint glfInterleavedFlag);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_BeginMonitorFunc = (BeginMonitorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BeginMonitorFunc));
             } 
-            
             return  m_BeginMonitorFunc(m_ptr);
         }
         delegate int BeginMonitorFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_EndMonitorFunc = (EndMonitorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EndMonitorFunc));
             } 
-            
             return  m_EndMonitorFunc(m_ptr);
         }
         delegate int EndMonitorFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ReLayoutDocfileFunc = (ReLayoutDocfileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReLayoutDocfileFunc));
             } 
-            
             return  m_ReLayoutDocfileFunc(m_ptr, pwcsNewDfName);
         }
         delegate int ReLayoutDocfileFunc(IntPtr self, IntPtr pwcsNewDfName);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_ReLayoutDocfileOnILockBytesFunc = (ReLayoutDocfileOnILockBytesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReLayoutDocfileOnILockBytesFunc));
             } 
-            
             return  m_ReLayoutDocfileOnILockBytesFunc(m_ptr, pILockBytes);
         }
         delegate int ReLayoutDocfileOnILockBytesFunc(IntPtr self, IntPtr pILockBytes);

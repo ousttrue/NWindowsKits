@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_InitNewFunc = (InitNewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitNewFunc));
             } 
-            
             return  m_InitNewFunc(m_ptr);
         }
         delegate int InitNewFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_LoadFunc = (LoadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadFunc));
             } 
-            
             return  m_LoadFunc(m_ptr, pPropBag, pErrLog);
         }
         delegate int LoadFunc(IntPtr self, IntPtr pPropBag, IntPtr pErrLog);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SaveFunc = (SaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveFunc));
             } 
-            
             return  m_SaveFunc(m_ptr, pPropBag, fClearDirty, fSaveAllProperties);
         }
         delegate int SaveFunc(IntPtr self, IntPtr pPropBag, int fClearDirty, int fSaveAllProperties);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_IsDirtyFunc = (IsDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsDirtyFunc));
             } 
-            
             return  m_IsDirtyFunc(m_ptr);
         }
         delegate int IsDirtyFunc(IntPtr self);

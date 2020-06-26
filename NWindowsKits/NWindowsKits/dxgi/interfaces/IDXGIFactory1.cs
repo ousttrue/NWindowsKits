@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_EnumAdapters1Func = (EnumAdapters1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdapters1Func));
             } 
-            
             return  m_EnumAdapters1Func(m_ptr, Adapter, ref ppAdapter);
         }
         delegate int EnumAdapters1Func(IntPtr self, uint Adapter, ref IntPtr ppAdapter);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_IsCurrentFunc = (IsCurrentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsCurrentFunc));
             } 
-            
             return  m_IsCurrentFunc(m_ptr);
         }
         delegate int IsCurrentFunc(IntPtr self);

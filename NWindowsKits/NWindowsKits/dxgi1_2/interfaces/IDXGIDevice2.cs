@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_OfferResourcesFunc = (OfferResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OfferResourcesFunc));
             } 
-            
             return  m_OfferResourcesFunc(m_ptr, NumResources, ref ppResources, Priority);
         }
         delegate int OfferResourcesFunc(IntPtr self, uint NumResources, ref IntPtr ppResources, DXGI_OFFER_RESOURCE_PRIORITY Priority);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_ReclaimResourcesFunc = (ReclaimResourcesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReclaimResourcesFunc));
             } 
-            
             return  m_ReclaimResourcesFunc(m_ptr, NumResources, ref ppResources, ref pDiscarded);
         }
         delegate int ReclaimResourcesFunc(IntPtr self, uint NumResources, ref IntPtr ppResources, ref int pDiscarded);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_EnqueueSetEventFunc = (EnqueueSetEventFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnqueueSetEventFunc));
             } 
-            
             return  m_EnqueueSetEventFunc(m_ptr, hEvent);
         }
         delegate int EnqueueSetEventFunc(IntPtr self, IntPtr hEvent);

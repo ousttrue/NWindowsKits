@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetCacheExtensionFunc = (SetCacheExtensionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetCacheExtensionFunc));
             } 
-            
             return  m_SetCacheExtensionFunc(m_ptr, pwzExt, pszCacheFile, ref pcbCacheFile, ref pdwWinInetError, ref pdwReserved);
         }
         delegate int SetCacheExtensionFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzExt, IntPtr pszCacheFile, ref uint pcbCacheFile, ref uint pdwWinInetError, ref uint pdwReserved);

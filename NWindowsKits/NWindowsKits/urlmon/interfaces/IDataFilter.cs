@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DoEncodeFunc = (DoEncodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DoEncodeFunc));
             } 
-            
             return  m_DoEncodeFunc(m_ptr, dwFlags, lInBufferSize, ref pbInBuffer, lOutBufferSize, ref pbOutBuffer, lInBytesAvailable, ref plInBytesRead, ref plOutBytesWritten, dwReserved);
         }
         delegate int DoEncodeFunc(IntPtr self, uint dwFlags, int lInBufferSize, ref byte pbInBuffer, int lOutBufferSize, ref byte pbOutBuffer, int lInBytesAvailable, ref int plInBytesRead, ref int plOutBytesWritten, uint dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_DoDecodeFunc = (DoDecodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DoDecodeFunc));
             } 
-            
             return  m_DoDecodeFunc(m_ptr, dwFlags, lInBufferSize, ref pbInBuffer, lOutBufferSize, ref pbOutBuffer, lInBytesAvailable, ref plInBytesRead, ref plOutBytesWritten, dwReserved);
         }
         delegate int DoDecodeFunc(IntPtr self, uint dwFlags, int lInBufferSize, ref byte pbInBuffer, int lOutBufferSize, ref byte pbOutBuffer, int lInBytesAvailable, ref int plInBytesRead, ref int plOutBytesWritten, uint dwReserved);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetEncodingLevelFunc = (SetEncodingLevelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEncodingLevelFunc));
             } 
-            
             return  m_SetEncodingLevelFunc(m_ptr, dwEncLevel);
         }
         delegate int SetEncodingLevelFunc(IntPtr self, uint dwEncLevel);

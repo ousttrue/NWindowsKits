@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
              m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate void GetDescFunc(IntPtr self, ref D3D11_UNORDERED_ACCESS_VIEW_DESC pDesc);

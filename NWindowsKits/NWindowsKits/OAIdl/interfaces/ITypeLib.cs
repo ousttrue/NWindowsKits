@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetTypeInfoCountFunc = (GetTypeInfoCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoCountFunc));
             } 
-            
             return  m_GetTypeInfoCountFunc(m_ptr);
         }
         delegate uint GetTypeInfoCountFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetTypeInfoFunc = (GetTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoFunc));
             } 
-            
             return  m_GetTypeInfoFunc(m_ptr, index, ref ppTInfo);
         }
         delegate int GetTypeInfoFunc(IntPtr self, uint index, ref IntPtr ppTInfo);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetTypeInfoTypeFunc = (GetTypeInfoTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoTypeFunc));
             } 
-            
             return  m_GetTypeInfoTypeFunc(m_ptr, index, ref pTKind);
         }
         delegate int GetTypeInfoTypeFunc(IntPtr self, uint index, ref TYPEKIND pTKind);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetTypeInfoOfGuidFunc = (GetTypeInfoOfGuidFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoOfGuidFunc));
             } 
-            
             return  m_GetTypeInfoOfGuidFunc(m_ptr, ref guid, ref ppTinfo);
         }
         delegate int GetTypeInfoOfGuidFunc(IntPtr self, ref GUID guid, ref IntPtr ppTinfo);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetLibAttrFunc = (GetLibAttrFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLibAttrFunc));
             } 
-            
             return  m_GetLibAttrFunc(m_ptr, ref ppTLibAttr);
         }
         delegate int GetLibAttrFunc(IntPtr self, ref IntPtr ppTLibAttr);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetTypeCompFunc = (GetTypeCompFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeCompFunc));
             } 
-            
             return  m_GetTypeCompFunc(m_ptr, ref ppTComp);
         }
         delegate int GetTypeCompFunc(IntPtr self, ref IntPtr ppTComp);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetDocumentationFunc = (GetDocumentationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDocumentationFunc));
             } 
-            
             return  m_GetDocumentationFunc(m_ptr, index, ref pBstrName, ref pBstrDocString, ref pdwHelpContext, ref pBstrHelpFile);
         }
         delegate int GetDocumentationFunc(IntPtr self, int index, ref IntPtr pBstrName, ref IntPtr pBstrDocString, ref uint pdwHelpContext, ref IntPtr pBstrHelpFile);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_IsNameFunc = (IsNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsNameFunc));
             } 
-            
             return  m_IsNameFunc(m_ptr, szNameBuf, lHashVal, ref pfName);
         }
         delegate int IsNameFunc(IntPtr self, IntPtr szNameBuf, uint lHashVal, ref int pfName);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_FindNameFunc = (FindNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindNameFunc));
             } 
-            
             return  m_FindNameFunc(m_ptr, szNameBuf, lHashVal, ref ppTInfo, rgMemId, ref pcFound);
         }
         delegate int FindNameFunc(IntPtr self, IntPtr szNameBuf, uint lHashVal, ref IntPtr ppTInfo, IntPtr rgMemId, ref ushort pcFound);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_ReleaseTLibAttrFunc = (ReleaseTLibAttrFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseTLibAttrFunc));
             } 
-            
              m_ReleaseTLibAttrFunc(m_ptr, ref pTLibAttr);
         }
         delegate void ReleaseTLibAttrFunc(IntPtr self, ref TLIBATTR pTLibAttr);

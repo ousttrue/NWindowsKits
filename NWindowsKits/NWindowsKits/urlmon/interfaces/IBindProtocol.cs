@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateBindingFunc = (CreateBindingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateBindingFunc));
             } 
-            
             return  m_CreateBindingFunc(m_ptr, szUrl, pbc, ref ppb);
         }
         delegate int CreateBindingFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string szUrl, IntPtr pbc, ref IntPtr ppb);

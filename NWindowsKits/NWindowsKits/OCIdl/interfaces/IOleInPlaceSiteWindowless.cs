@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_CanWindowlessActivateFunc = (CanWindowlessActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CanWindowlessActivateFunc));
             } 
-            
             return  m_CanWindowlessActivateFunc(m_ptr);
         }
         delegate int CanWindowlessActivateFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_GetCaptureFunc = (GetCaptureFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCaptureFunc));
             } 
-            
             return  m_GetCaptureFunc(m_ptr);
         }
         delegate int GetCaptureFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_SetCaptureFunc = (SetCaptureFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetCaptureFunc));
             } 
-            
             return  m_SetCaptureFunc(m_ptr, fCapture);
         }
         delegate int SetCaptureFunc(IntPtr self, int fCapture);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_GetFocusFunc = (GetFocusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFocusFunc));
             } 
-            
             return  m_GetFocusFunc(m_ptr);
         }
         delegate int GetFocusFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_SetFocusFunc = (SetFocusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFocusFunc));
             } 
-            
             return  m_SetFocusFunc(m_ptr, fFocus);
         }
         delegate int SetFocusFunc(IntPtr self, int fFocus);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_GetDCFunc = (GetDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDCFunc));
             } 
-            
             return  m_GetDCFunc(m_ptr, ref pRect, grfFlags, ref phDC);
         }
         delegate int GetDCFunc(IntPtr self, ref RECT pRect, uint grfFlags, ref HDC phDC);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_ReleaseDCFunc = (ReleaseDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseDCFunc));
             } 
-            
             return  m_ReleaseDCFunc(m_ptr, hDC);
         }
         delegate int ReleaseDCFunc(IntPtr self, HDC hDC);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_InvalidateRectFunc = (InvalidateRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InvalidateRectFunc));
             } 
-            
             return  m_InvalidateRectFunc(m_ptr, ref pRect, fErase);
         }
         delegate int InvalidateRectFunc(IntPtr self, ref RECT pRect, int fErase);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_InvalidateRgnFunc = (InvalidateRgnFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InvalidateRgnFunc));
             } 
-            
             return  m_InvalidateRgnFunc(m_ptr, hRGN, fErase);
         }
         delegate int InvalidateRgnFunc(IntPtr self, HRGN hRGN, int fErase);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_ScrollRectFunc = (ScrollRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ScrollRectFunc));
             } 
-            
             return  m_ScrollRectFunc(m_ptr, dx, dy, ref pRectScroll, ref pRectClip);
         }
         delegate int ScrollRectFunc(IntPtr self, int dx, int dy, ref RECT pRectScroll, ref RECT pRectClip);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_AdjustRectFunc = (AdjustRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AdjustRectFunc));
             } 
-            
             return  m_AdjustRectFunc(m_ptr, ref prc);
         }
         delegate int AdjustRectFunc(IntPtr self, ref RECT prc);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_OnDefWindowMessageFunc = (OnDefWindowMessageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnDefWindowMessageFunc));
             } 
-            
             return  m_OnDefWindowMessageFunc(m_ptr, msg, wParam, lParam, plResult);
         }
         delegate int OnDefWindowMessageFunc(IntPtr self, uint msg, ulong wParam, long lParam, IntPtr plResult);

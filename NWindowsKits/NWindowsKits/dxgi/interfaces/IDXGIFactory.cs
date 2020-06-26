@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_EnumAdaptersFunc = (EnumAdaptersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumAdaptersFunc));
             } 
-            
             return  m_EnumAdaptersFunc(m_ptr, Adapter, ref ppAdapter);
         }
         delegate int EnumAdaptersFunc(IntPtr self, uint Adapter, ref IntPtr ppAdapter);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_MakeWindowAssociationFunc = (MakeWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MakeWindowAssociationFunc));
             } 
-            
             return  m_MakeWindowAssociationFunc(m_ptr, WindowHandle, Flags);
         }
         delegate int MakeWindowAssociationFunc(IntPtr self, HWND WindowHandle, uint Flags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetWindowAssociationFunc = (GetWindowAssociationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowAssociationFunc));
             } 
-            
             return  m_GetWindowAssociationFunc(m_ptr, ref pWindowHandle);
         }
         delegate int GetWindowAssociationFunc(IntPtr self, ref HWND pWindowHandle);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_CreateSwapChainFunc = (CreateSwapChainFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSwapChainFunc));
             } 
-            
             return  m_CreateSwapChainFunc(m_ptr, pDevice, ref pDesc, ref ppSwapChain);
         }
         delegate int CreateSwapChainFunc(IntPtr self, IntPtr pDevice, ref DXGI_SWAP_CHAIN_DESC pDesc, ref IntPtr ppSwapChain);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_CreateSoftwareAdapterFunc = (CreateSoftwareAdapterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateSoftwareAdapterFunc));
             } 
-            
             return  m_CreateSoftwareAdapterFunc(m_ptr, Module, ref ppAdapter);
         }
         delegate int CreateSoftwareAdapterFunc(IntPtr self, HINSTANCE Module, ref IntPtr ppAdapter);

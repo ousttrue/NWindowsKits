@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DummyFunc = (DummyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DummyFunc));
             } 
-            
             return  m_DummyFunc(m_ptr, h1, h2);
         }
         delegate int DummyFunc(IntPtr self, HICON h1, HDC h2);

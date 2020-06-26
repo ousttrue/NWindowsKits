@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_IsStereoEnabledFunc = (IsStereoEnabledFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsStereoEnabledFunc));
             } 
-            
             return  m_IsStereoEnabledFunc(m_ptr);
         }
         delegate int IsStereoEnabledFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetStereoEnabledFunc = (SetStereoEnabledFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetStereoEnabledFunc));
             } 
-            
              m_SetStereoEnabledFunc(m_ptr, enabled);
         }
         delegate void SetStereoEnabledFunc(IntPtr self, int enabled);

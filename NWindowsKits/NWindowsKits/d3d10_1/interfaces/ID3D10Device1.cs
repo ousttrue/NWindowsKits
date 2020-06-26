@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(98);
                 m_CreateShaderResourceView1Func = (CreateShaderResourceView1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateShaderResourceView1Func));
             } 
-            
             return  m_CreateShaderResourceView1Func(m_ptr, pResource, ref pDesc, ref ppSRView);
         }
         delegate int CreateShaderResourceView1Func(IntPtr self, IntPtr pResource, ref D3D10_SHADER_RESOURCE_VIEW_DESC1 pDesc, ref IntPtr ppSRView);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(99);
                 m_CreateBlendState1Func = (CreateBlendState1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateBlendState1Func));
             } 
-            
             return  m_CreateBlendState1Func(m_ptr, ref pBlendStateDesc, ref ppBlendState);
         }
         delegate int CreateBlendState1Func(IntPtr self, ref D3D10_BLEND_DESC1 pBlendStateDesc, ref IntPtr ppBlendState);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(100);
                 m_GetFeatureLevelFunc = (GetFeatureLevelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFeatureLevelFunc));
             } 
-            
             return  m_GetFeatureLevelFunc(m_ptr);
         }
         delegate D3D10_FEATURE_LEVEL1 GetFeatureLevelFunc(IntPtr self);

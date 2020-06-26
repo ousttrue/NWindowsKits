@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AddSynchronizeFunc = (AddSynchronizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddSynchronizeFunc));
             } 
-            
             return  m_AddSynchronizeFunc(m_ptr, pSync);
         }
         delegate int AddSynchronizeFunc(IntPtr self, IntPtr pSync);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_WaitMultipleFunc = (WaitMultipleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitMultipleFunc));
             } 
-            
             return  m_WaitMultipleFunc(m_ptr, dwFlags, dwTimeOut, ref ppSync);
         }
         delegate int WaitMultipleFunc(IntPtr self, uint dwFlags, uint dwTimeOut, ref IntPtr ppSync);

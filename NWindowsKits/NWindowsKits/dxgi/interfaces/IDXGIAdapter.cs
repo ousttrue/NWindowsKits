@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_EnumOutputsFunc = (EnumOutputsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumOutputsFunc));
             } 
-            
             return  m_EnumOutputsFunc(m_ptr, Output, ref ppOutput);
         }
         delegate int EnumOutputsFunc(IntPtr self, uint Output, ref IntPtr ppOutput);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate int GetDescFunc(IntPtr self, ref DXGI_ADAPTER_DESC pDesc);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_CheckInterfaceSupportFunc = (CheckInterfaceSupportFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckInterfaceSupportFunc));
             } 
-            
             return  m_CheckInterfaceSupportFunc(m_ptr, ref InterfaceName, ref pUMDVersion);
         }
         delegate int CheckInterfaceSupportFunc(IntPtr self, ref GUID InterfaceName, ref LARGE_INTEGER pUMDVersion);

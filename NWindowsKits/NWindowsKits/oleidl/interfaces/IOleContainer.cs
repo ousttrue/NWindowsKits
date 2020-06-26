@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_EnumObjectsFunc = (EnumObjectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumObjectsFunc));
             } 
-            
             return  m_EnumObjectsFunc(m_ptr, grfFlags, ref ppenum);
         }
         delegate int EnumObjectsFunc(IntPtr self, uint grfFlags, ref IntPtr ppenum);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_LockContainerFunc = (LockContainerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockContainerFunc));
             } 
-            
             return  m_LockContainerFunc(m_ptr, fLock);
         }
         delegate int LockContainerFunc(IntPtr self, int fLock);

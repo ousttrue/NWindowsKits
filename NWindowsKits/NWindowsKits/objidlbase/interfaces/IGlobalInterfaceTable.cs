@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RegisterInterfaceInGlobalFunc = (RegisterInterfaceInGlobalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterInterfaceInGlobalFunc));
             } 
-            
             return  m_RegisterInterfaceInGlobalFunc(m_ptr, pUnk, ref riid, ref pdwCookie);
         }
         delegate int RegisterInterfaceInGlobalFunc(IntPtr self, IntPtr pUnk, ref Guid riid, ref uint pdwCookie);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_RevokeInterfaceFromGlobalFunc = (RevokeInterfaceFromGlobalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RevokeInterfaceFromGlobalFunc));
             } 
-            
             return  m_RevokeInterfaceFromGlobalFunc(m_ptr, dwCookie);
         }
         delegate int RevokeInterfaceFromGlobalFunc(IntPtr self, uint dwCookie);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetInterfaceFromGlobalFunc = (GetInterfaceFromGlobalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetInterfaceFromGlobalFunc));
             } 
-            
             return  m_GetInterfaceFromGlobalFunc(m_ptr, dwCookie, ref riid, ref ppv);
         }
         delegate int GetInterfaceFromGlobalFunc(IntPtr self, uint dwCookie, ref Guid riid, ref IntPtr ppv);

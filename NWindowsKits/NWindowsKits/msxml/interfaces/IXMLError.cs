@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetErrorInfoFunc = (GetErrorInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetErrorInfoFunc));
             } 
-            
             return  m_GetErrorInfoFunc(m_ptr, ref pErrorReturn);
         }
         delegate int GetErrorInfoFunc(IntPtr self, ref XML_ERROR pErrorReturn);

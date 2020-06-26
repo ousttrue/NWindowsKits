@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetSerializedClientCertContextFunc = (GetSerializedClientCertContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSerializedClientCertContextFunc));
             } 
-            
             return  m_GetSerializedClientCertContextFunc(m_ptr, ref ppbCert, ref pcbCert);
         }
         delegate int GetSerializedClientCertContextFunc(IntPtr self, ref IntPtr ppbCert, ref uint pcbCert);

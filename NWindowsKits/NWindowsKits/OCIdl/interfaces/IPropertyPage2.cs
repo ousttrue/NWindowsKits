@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_EditPropertyFunc = (EditPropertyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EditPropertyFunc));
             } 
-            
             return  m_EditPropertyFunc(m_ptr, dispID);
         }
         delegate int EditPropertyFunc(IntPtr self, int dispID);

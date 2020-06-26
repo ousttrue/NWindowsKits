@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetMultiTypeInfoCountFunc = (GetMultiTypeInfoCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMultiTypeInfoCountFunc));
             } 
-            
             return  m_GetMultiTypeInfoCountFunc(m_ptr, pcti);
         }
         delegate int GetMultiTypeInfoCountFunc(IntPtr self, IntPtr pcti);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetInfoOfIndexFunc = (GetInfoOfIndexFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetInfoOfIndexFunc));
             } 
-            
             return  m_GetInfoOfIndexFunc(m_ptr, iti, dwFlags, ref pptiCoClass, ref pdwTIFlags, pcdispidReserved, ref piidPrimary, ref piidSource);
         }
         delegate int GetInfoOfIndexFunc(IntPtr self, uint iti, uint dwFlags, ref IntPtr pptiCoClass, ref uint pdwTIFlags, IntPtr pcdispidReserved, ref Guid piidPrimary, ref Guid piidSource);

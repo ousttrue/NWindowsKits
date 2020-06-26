@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_HandleActivationFunc = (HandleActivationFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HandleActivationFunc));
             } 
-            
             return  m_HandleActivationFunc(m_ptr, dwActivationType, ref rclsid, pReplacementClsId);
         }
         delegate int HandleActivationFunc(IntPtr self, uint dwActivationType, ref Guid rclsid, IntPtr pReplacementClsId);

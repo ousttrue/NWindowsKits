@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ParseDisplayNameFunc = (ParseDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ParseDisplayNameFunc));
             } 
-            
             return  m_ParseDisplayNameFunc(m_ptr, pbc, pszDisplayName, pchEaten, ref ppmkOut);
         }
         delegate int ParseDisplayNameFunc(IntPtr self, IntPtr pbc, IntPtr pszDisplayName, IntPtr pchEaten, ref IntPtr ppmkOut);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PreMessageFilterFunc = (PreMessageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreMessageFilterFunc));
             } 
-            
             return  m_PreMessageFilterFunc(m_ptr, hWnd, msg, wp, lp, plResult, ref pdwCookie);
         }
         delegate int PreMessageFilterFunc(IntPtr self, HWND hWnd, uint msg, ulong wp, long lp, IntPtr plResult, ref uint pdwCookie);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_PostMessageFilterFunc = (PostMessageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostMessageFilterFunc));
             } 
-            
             return  m_PostMessageFilterFunc(m_ptr, hWnd, msg, wp, lp, plResult, dwCookie);
         }
         delegate int PostMessageFilterFunc(IntPtr self, HWND hWnd, uint msg, ulong wp, long lp, IntPtr plResult, uint dwCookie);

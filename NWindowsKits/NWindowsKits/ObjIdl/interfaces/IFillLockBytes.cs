@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_FillAppendFunc = (FillAppendFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FillAppendFunc));
             } 
-            
             return  m_FillAppendFunc(m_ptr, pv, cb, pcbWritten);
         }
         delegate int FillAppendFunc(IntPtr self, IntPtr pv, uint cb, IntPtr pcbWritten);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_FillAtFunc = (FillAtFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FillAtFunc));
             } 
-            
             return  m_FillAtFunc(m_ptr, ulOffset, pv, cb, pcbWritten);
         }
         delegate int FillAtFunc(IntPtr self, ULARGE_INTEGER ulOffset, IntPtr pv, uint cb, IntPtr pcbWritten);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetFillSizeFunc = (SetFillSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFillSizeFunc));
             } 
-            
             return  m_SetFillSizeFunc(m_ptr, ulSize);
         }
         delegate int SetFillSizeFunc(IntPtr self, ULARGE_INTEGER ulSize);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_TerminateFunc = (TerminateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TerminateFunc));
             } 
-            
             return  m_TerminateFunc(m_ptr, bCanceled);
         }
         delegate int TerminateFunc(IntPtr self, int bCanceled);

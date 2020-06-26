@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SwitchToFileFunc = (SwitchToFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SwitchToFileFunc));
             } 
-            
             return  m_SwitchToFileFunc(m_ptr, pszFile);
         }
         delegate int SwitchToFileFunc(IntPtr self, IntPtr pszFile);

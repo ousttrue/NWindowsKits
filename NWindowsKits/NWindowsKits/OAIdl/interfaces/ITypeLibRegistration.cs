@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetGuidFunc = (GetGuidFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGuidFunc));
             } 
-            
             return  m_GetGuidFunc(m_ptr, ref pGuid);
         }
         delegate int GetGuidFunc(IntPtr self, ref GUID pGuid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetVersionFunc = (GetVersionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVersionFunc));
             } 
-            
             return  m_GetVersionFunc(m_ptr, ref pVersion);
         }
         delegate int GetVersionFunc(IntPtr self, ref IntPtr pVersion);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetLcidFunc = (GetLcidFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLcidFunc));
             } 
-            
             return  m_GetLcidFunc(m_ptr, pLcid);
         }
         delegate int GetLcidFunc(IntPtr self, IntPtr pLcid);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetWin32PathFunc = (GetWin32PathFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWin32PathFunc));
             } 
-            
             return  m_GetWin32PathFunc(m_ptr, ref pWin32Path);
         }
         delegate int GetWin32PathFunc(IntPtr self, ref IntPtr pWin32Path);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetWin64PathFunc = (GetWin64PathFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWin64PathFunc));
             } 
-            
             return  m_GetWin64PathFunc(m_ptr, ref pWin64Path);
         }
         delegate int GetWin64PathFunc(IntPtr self, ref IntPtr pWin64Path);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDisplayNameFunc = (GetDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayNameFunc));
             } 
-            
             return  m_GetDisplayNameFunc(m_ptr, ref pDisplayName);
         }
         delegate int GetDisplayNameFunc(IntPtr self, ref IntPtr pDisplayName);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetFlagsFunc = (GetFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFlagsFunc));
             } 
-            
             return  m_GetFlagsFunc(m_ptr, ref pFlags);
         }
         delegate int GetFlagsFunc(IntPtr self, ref uint pFlags);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetHelpDirFunc = (GetHelpDirFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetHelpDirFunc));
             } 
-            
             return  m_GetHelpDirFunc(m_ptr, ref pHelpDir);
         }
         delegate int GetHelpDirFunc(IntPtr self, ref IntPtr pHelpDir);

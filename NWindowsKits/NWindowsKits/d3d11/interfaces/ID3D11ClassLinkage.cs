@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetClassInstanceFunc = (GetClassInstanceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassInstanceFunc));
             } 
-            
             return  m_GetClassInstanceFunc(m_ptr, pClassInstanceName, InstanceIndex, ref ppInstance);
         }
         delegate int GetClassInstanceFunc(IntPtr self, [MarshalAs(UnmanagedType.LPStr)] string pClassInstanceName, uint InstanceIndex, ref IntPtr ppInstance);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_CreateClassInstanceFunc = (CreateClassInstanceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateClassInstanceFunc));
             } 
-            
             return  m_CreateClassInstanceFunc(m_ptr, pClassTypeName, ConstantBufferOffset, ConstantVectorOffset, TextureOffset, SamplerOffset, ref ppInstance);
         }
         delegate int CreateClassInstanceFunc(IntPtr self, [MarshalAs(UnmanagedType.LPStr)] string pClassTypeName, uint ConstantBufferOffset, uint ConstantVectorOffset, uint TextureOffset, uint SamplerOffset, ref IntPtr ppInstance);

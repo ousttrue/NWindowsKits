@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_SendFunc = (SendFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SendFunc));
             } 
-            
             return  m_SendFunc(m_ptr, ref pMsg, pulStatus);
         }
         delegate int SendFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, IntPtr pulStatus);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_ReceiveFunc = (ReceiveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReceiveFunc));
             } 
-            
             return  m_ReceiveFunc(m_ptr, ref pMsg, ulSize, pulStatus);
         }
         delegate int ReceiveFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, uint ulSize, IntPtr pulStatus);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_CancelFunc = (CancelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CancelFunc));
             } 
-            
             return  m_CancelFunc(m_ptr, ref pMsg);
         }
         delegate int CancelFunc(IntPtr self, ref RPCOLEMESSAGE pMsg);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetCallContextFunc = (GetCallContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCallContextFunc));
             } 
-            
             return  m_GetCallContextFunc(m_ptr, ref pMsg, ref riid, ref pInterface);
         }
         delegate int GetCallContextFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, ref Guid riid, ref IntPtr pInterface);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetDestCtxExFunc = (GetDestCtxExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDestCtxExFunc));
             } 
-            
             return  m_GetDestCtxExFunc(m_ptr, ref pMsg, ref pdwDestContext, ref ppvDestContext);
         }
         delegate int GetDestCtxExFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, ref uint pdwDestContext, ref IntPtr ppvDestContext);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetStateFunc = (GetStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetStateFunc));
             } 
-            
             return  m_GetStateFunc(m_ptr, ref pMsg, ref pState);
         }
         delegate int GetStateFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, ref uint pState);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_RegisterAsyncFunc = (RegisterAsyncFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterAsyncFunc));
             } 
-            
             return  m_RegisterAsyncFunc(m_ptr, ref pMsg, pAsyncMgr);
         }
         delegate int RegisterAsyncFunc(IntPtr self, ref RPCOLEMESSAGE pMsg, IntPtr pAsyncMgr);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_GetTypeKindFunc = (GetTypeKindFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeKindFunc));
             } 
-            
             return  m_GetTypeKindFunc(m_ptr, ref pTypeKind);
         }
         delegate int GetTypeKindFunc(IntPtr self, ref TYPEKIND pTypeKind);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_GetTypeFlagsFunc = (GetTypeFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeFlagsFunc));
             } 
-            
             return  m_GetTypeFlagsFunc(m_ptr, pTypeFlags);
         }
         delegate int GetTypeFlagsFunc(IntPtr self, IntPtr pTypeFlags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_GetFuncIndexOfMemIdFunc = (GetFuncIndexOfMemIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFuncIndexOfMemIdFunc));
             } 
-            
             return  m_GetFuncIndexOfMemIdFunc(m_ptr, memid, invKind, ref pFuncIndex);
         }
         delegate int GetFuncIndexOfMemIdFunc(IntPtr self, int memid, INVOKEKIND invKind, ref uint pFuncIndex);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_GetVarIndexOfMemIdFunc = (GetVarIndexOfMemIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVarIndexOfMemIdFunc));
             } 
-            
             return  m_GetVarIndexOfMemIdFunc(m_ptr, memid, ref pVarIndex);
         }
         delegate int GetVarIndexOfMemIdFunc(IntPtr self, int memid, ref uint pVarIndex);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_GetCustDataFunc = (GetCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCustDataFunc));
             } 
-            
             return  m_GetCustDataFunc(m_ptr, ref guid, ref pVarVal);
         }
         delegate int GetCustDataFunc(IntPtr self, ref GUID guid, ref VARIANT pVarVal);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_GetFuncCustDataFunc = (GetFuncCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFuncCustDataFunc));
             } 
-            
             return  m_GetFuncCustDataFunc(m_ptr, index, ref guid, ref pVarVal);
         }
         delegate int GetFuncCustDataFunc(IntPtr self, uint index, ref GUID guid, ref VARIANT pVarVal);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_GetParamCustDataFunc = (GetParamCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetParamCustDataFunc));
             } 
-            
             return  m_GetParamCustDataFunc(m_ptr, indexFunc, indexParam, ref guid, ref pVarVal);
         }
         delegate int GetParamCustDataFunc(IntPtr self, uint indexFunc, uint indexParam, ref GUID guid, ref VARIANT pVarVal);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_GetVarCustDataFunc = (GetVarCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVarCustDataFunc));
             } 
-            
             return  m_GetVarCustDataFunc(m_ptr, index, ref guid, ref pVarVal);
         }
         delegate int GetVarCustDataFunc(IntPtr self, uint index, ref GUID guid, ref VARIANT pVarVal);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(30);
                 m_GetImplTypeCustDataFunc = (GetImplTypeCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetImplTypeCustDataFunc));
             } 
-            
             return  m_GetImplTypeCustDataFunc(m_ptr, index, ref guid, ref pVarVal);
         }
         delegate int GetImplTypeCustDataFunc(IntPtr self, uint index, ref GUID guid, ref VARIANT pVarVal);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(31);
                 m_GetDocumentation2Func = (GetDocumentation2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDocumentation2Func));
             } 
-            
             return  m_GetDocumentation2Func(m_ptr, memid, lcid, ref pbstrHelpString, ref pdwHelpStringContext, ref pbstrHelpStringDll);
         }
         delegate int GetDocumentation2Func(IntPtr self, int memid, uint lcid, ref IntPtr pbstrHelpString, ref uint pdwHelpStringContext, ref IntPtr pbstrHelpStringDll);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(32);
                 m_GetAllCustDataFunc = (GetAllCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllCustDataFunc));
             } 
-            
             return  m_GetAllCustDataFunc(m_ptr, ref pCustData);
         }
         delegate int GetAllCustDataFunc(IntPtr self, ref CUSTDATA pCustData);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(33);
                 m_GetAllFuncCustDataFunc = (GetAllFuncCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllFuncCustDataFunc));
             } 
-            
             return  m_GetAllFuncCustDataFunc(m_ptr, index, ref pCustData);
         }
         delegate int GetAllFuncCustDataFunc(IntPtr self, uint index, ref CUSTDATA pCustData);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(34);
                 m_GetAllParamCustDataFunc = (GetAllParamCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllParamCustDataFunc));
             } 
-            
             return  m_GetAllParamCustDataFunc(m_ptr, indexFunc, indexParam, ref pCustData);
         }
         delegate int GetAllParamCustDataFunc(IntPtr self, uint indexFunc, uint indexParam, ref CUSTDATA pCustData);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(35);
                 m_GetAllVarCustDataFunc = (GetAllVarCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllVarCustDataFunc));
             } 
-            
             return  m_GetAllVarCustDataFunc(m_ptr, index, ref pCustData);
         }
         delegate int GetAllVarCustDataFunc(IntPtr self, uint index, ref CUSTDATA pCustData);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(36);
                 m_GetAllImplTypeCustDataFunc = (GetAllImplTypeCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllImplTypeCustDataFunc));
             } 
-            
             return  m_GetAllImplTypeCustDataFunc(m_ptr, index, ref pCustData);
         }
         delegate int GetAllImplTypeCustDataFunc(IntPtr self, uint index, ref CUSTDATA pCustData);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetEventHandleFunc = (SetEventHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEventHandleFunc));
             } 
-            
             return  m_SetEventHandleFunc(m_ptr, ref ph);
         }
         delegate int SetEventHandleFunc(IntPtr self, ref IntPtr ph);

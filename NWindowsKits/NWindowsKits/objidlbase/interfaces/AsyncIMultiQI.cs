@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_Begin_QueryMultipleInterfacesFunc = (Begin_QueryMultipleInterfacesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_QueryMultipleInterfacesFunc));
             } 
-            
             return  m_Begin_QueryMultipleInterfacesFunc(m_ptr, cMQIs, ref pMQIs);
         }
         delegate int Begin_QueryMultipleInterfacesFunc(IntPtr self, uint cMQIs, ref MULTI_QI pMQIs);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_Finish_QueryMultipleInterfacesFunc = (Finish_QueryMultipleInterfacesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_QueryMultipleInterfacesFunc));
             } 
-            
             return  m_Finish_QueryMultipleInterfacesFunc(m_ptr, ref pMQIs);
         }
         delegate int Finish_QueryMultipleInterfacesFunc(IntPtr self, ref MULTI_QI pMQIs);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetDCFunc = (GetDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDCFunc));
             } 
-            
             return  m_GetDCFunc(m_ptr, Discard, ref phdc);
         }
         delegate int GetDCFunc(IntPtr self, int Discard, ref HDC phdc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_ReleaseDCFunc = (ReleaseDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseDCFunc));
             } 
-            
             return  m_ReleaseDCFunc(m_ptr, ref pDirtyRect);
         }
         delegate int ReleaseDCFunc(IntPtr self, ref RECT pDirtyRect);

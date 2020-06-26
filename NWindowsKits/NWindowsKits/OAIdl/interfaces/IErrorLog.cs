@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AddErrorFunc = (AddErrorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddErrorFunc));
             } 
-            
             return  m_AddErrorFunc(m_ptr, pszPropName, ref pExcepInfo);
         }
         delegate int AddErrorFunc(IntPtr self, IntPtr pszPropName, ref EXCEPINFO pExcepInfo);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateStorageExFunc = (CreateStorageExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateStorageExFunc));
             } 
-            
             return  m_CreateStorageExFunc(m_ptr, pwcsName, grfMode, stgfmt, grfAttrs, ref riid, ref ppstgOpen);
         }
         delegate int CreateStorageExFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwcsName, uint grfMode, uint stgfmt, uint grfAttrs, ref Guid riid, ref IntPtr ppstgOpen);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OpenStorageExFunc = (OpenStorageExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OpenStorageExFunc));
             } 
-            
             return  m_OpenStorageExFunc(m_ptr, pwcsName, grfMode, stgfmt, grfAttrs, ref riid, ref ppstgOpen);
         }
         delegate int OpenStorageExFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwcsName, uint grfMode, uint stgfmt, uint grfAttrs, ref Guid riid, ref IntPtr ppstgOpen);

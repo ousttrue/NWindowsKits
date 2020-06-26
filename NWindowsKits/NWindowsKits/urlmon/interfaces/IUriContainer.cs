@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetIUriFunc = (GetIUriFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIUriFunc));
             } 
-            
             return  m_GetIUriFunc(m_ptr, ref ppIUri);
         }
         delegate int GetIUriFunc(IntPtr self, ref IntPtr ppIUri);

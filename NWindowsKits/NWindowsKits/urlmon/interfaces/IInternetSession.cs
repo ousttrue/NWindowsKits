@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RegisterNameSpaceFunc = (RegisterNameSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterNameSpaceFunc));
             } 
-            
             return  m_RegisterNameSpaceFunc(m_ptr, pCF, ref rclsid, pwzProtocol, cPatterns, ref ppwzPatterns, dwReserved);
         }
         delegate int RegisterNameSpaceFunc(IntPtr self, IntPtr pCF, ref Guid rclsid, [MarshalAs(UnmanagedType.LPWStr)] string pwzProtocol, uint cPatterns, ref IntPtr ppwzPatterns, uint dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UnregisterNameSpaceFunc = (UnregisterNameSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnregisterNameSpaceFunc));
             } 
-            
             return  m_UnregisterNameSpaceFunc(m_ptr, pCF, pszProtocol);
         }
         delegate int UnregisterNameSpaceFunc(IntPtr self, IntPtr pCF, [MarshalAs(UnmanagedType.LPWStr)] string pszProtocol);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_RegisterMimeFilterFunc = (RegisterMimeFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RegisterMimeFilterFunc));
             } 
-            
             return  m_RegisterMimeFilterFunc(m_ptr, pCF, ref rclsid, pwzType);
         }
         delegate int RegisterMimeFilterFunc(IntPtr self, IntPtr pCF, ref Guid rclsid, [MarshalAs(UnmanagedType.LPWStr)] string pwzType);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_UnregisterMimeFilterFunc = (UnregisterMimeFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnregisterMimeFilterFunc));
             } 
-            
             return  m_UnregisterMimeFilterFunc(m_ptr, pCF, pwzType);
         }
         delegate int UnregisterMimeFilterFunc(IntPtr self, IntPtr pCF, [MarshalAs(UnmanagedType.LPWStr)] string pwzType);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_CreateBindingFunc = (CreateBindingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateBindingFunc));
             } 
-            
             return  m_CreateBindingFunc(m_ptr, pBC, szUrl, pUnkOuter, ref ppUnk, ref ppOInetProt, dwOption);
         }
         delegate int CreateBindingFunc(IntPtr self, IntPtr pBC, [MarshalAs(UnmanagedType.LPWStr)] string szUrl, IntPtr pUnkOuter, ref IntPtr ppUnk, ref IntPtr ppOInetProt, uint dwOption);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_SetSessionOptionFunc = (SetSessionOptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSessionOptionFunc));
             } 
-            
             return  m_SetSessionOptionFunc(m_ptr, dwOption, pBuffer, dwBufferLength, dwReserved);
         }
         delegate int SetSessionOptionFunc(IntPtr self, uint dwOption, IntPtr pBuffer, uint dwBufferLength, uint dwReserved);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetSessionOptionFunc = (GetSessionOptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSessionOptionFunc));
             } 
-            
             return  m_GetSessionOptionFunc(m_ptr, dwOption, pBuffer, ref pdwBufferLength, dwReserved);
         }
         delegate int GetSessionOptionFunc(IntPtr self, uint dwOption, IntPtr pBuffer, ref uint pdwBufferLength, uint dwReserved);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateMonikerFunc = (CreateMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateMonikerFunc));
             } 
-            
             return  m_CreateMonikerFunc(m_ptr, szName, pBC, ref ppmk, dwReserved);
         }
         delegate int CreateMonikerFunc(IntPtr self, IntPtr szName, IntPtr pBC, ref IntPtr ppmk, uint dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_MonikerBindToStorageFunc = (MonikerBindToStorageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MonikerBindToStorageFunc));
             } 
-            
             return  m_MonikerBindToStorageFunc(m_ptr, pMk, pBC, pBSC, ref riid, ref ppvObj);
         }
         delegate int MonikerBindToStorageFunc(IntPtr self, IntPtr pMk, IntPtr pBC, IntPtr pBSC, ref Guid riid, ref IntPtr ppvObj);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_MonikerBindToObjectFunc = (MonikerBindToObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MonikerBindToObjectFunc));
             } 
-            
             return  m_MonikerBindToObjectFunc(m_ptr, pMk, pBC, pBSC, ref riid, ref ppvObj);
         }
         delegate int MonikerBindToObjectFunc(IntPtr self, IntPtr pMk, IntPtr pBC, IntPtr pBSC, ref Guid riid, ref IntPtr ppvObj);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_BindFunc = (BindFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindFunc));
             } 
-            
             return  m_BindFunc(m_ptr, szName, lHashVal, wFlags, ref ppTInfo, ref pDescKind, ref pBindPtr);
         }
         delegate int BindFunc(IntPtr self, IntPtr szName, uint lHashVal, ushort wFlags, ref IntPtr ppTInfo, ref DESCKIND pDescKind, ref BINDPTR pBindPtr);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_BindTypeFunc = (BindTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindTypeFunc));
             } 
-            
             return  m_BindTypeFunc(m_ptr, szName, lHashVal, ref ppTInfo, ref ppTComp);
         }
         delegate int BindTypeFunc(IntPtr self, IntPtr szName, uint lHashVal, ref IntPtr ppTInfo, ref IntPtr ppTComp);

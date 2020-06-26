@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_GetZoneAttributesExFunc = (GetZoneAttributesExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetZoneAttributesExFunc));
             } 
-            
             return  m_GetZoneAttributesExFunc(m_ptr, dwZone, ref pZoneAttributes, dwFlags);
         }
         delegate int GetZoneAttributesExFunc(IntPtr self, uint dwZone, ref ZONEATTRIBUTES pZoneAttributes, uint dwFlags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_GetZoneSecurityStateFunc = (GetZoneSecurityStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetZoneSecurityStateFunc));
             } 
-            
             return  m_GetZoneSecurityStateFunc(m_ptr, dwZoneIndex, fRespectPolicy, ref pdwState, ref pfPolicyEncountered);
         }
         delegate int GetZoneSecurityStateFunc(IntPtr self, uint dwZoneIndex, int fRespectPolicy, ref uint pdwState, ref int pfPolicyEncountered);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_GetIESecurityStateFunc = (GetIESecurityStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIESecurityStateFunc));
             } 
-            
             return  m_GetIESecurityStateFunc(m_ptr, fRespectPolicy, ref pdwState, ref pfPolicyEncountered, fNoCache);
         }
         delegate int GetIESecurityStateFunc(IntPtr self, int fRespectPolicy, ref uint pdwState, ref int pfPolicyEncountered, int fNoCache);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_FixUnsecureSettingsFunc = (FixUnsecureSettingsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FixUnsecureSettingsFunc));
             } 
-            
             return  m_FixUnsecureSettingsFunc(m_ptr);
         }
         delegate int FixUnsecureSettingsFunc(IntPtr self);

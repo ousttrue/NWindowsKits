@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_RecordInitFunc = (RecordInitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordInitFunc));
             } 
-            
             return  m_RecordInitFunc(m_ptr, pvNew);
         }
         delegate int RecordInitFunc(IntPtr self, IntPtr pvNew);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_RecordClearFunc = (RecordClearFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordClearFunc));
             } 
-            
             return  m_RecordClearFunc(m_ptr, pvExisting);
         }
         delegate int RecordClearFunc(IntPtr self, IntPtr pvExisting);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_RecordCopyFunc = (RecordCopyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordCopyFunc));
             } 
-            
             return  m_RecordCopyFunc(m_ptr, pvExisting, pvNew);
         }
         delegate int RecordCopyFunc(IntPtr self, IntPtr pvExisting, IntPtr pvNew);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetGuidFunc = (GetGuidFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGuidFunc));
             } 
-            
             return  m_GetGuidFunc(m_ptr, ref pguid);
         }
         delegate int GetGuidFunc(IntPtr self, ref GUID pguid);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetNameFunc = (GetNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNameFunc));
             } 
-            
             return  m_GetNameFunc(m_ptr, ref pbstrName);
         }
         delegate int GetNameFunc(IntPtr self, ref IntPtr pbstrName);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetSizeFunc = (GetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSizeFunc));
             } 
-            
             return  m_GetSizeFunc(m_ptr, pcbSize);
         }
         delegate int GetSizeFunc(IntPtr self, IntPtr pcbSize);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetTypeInfoFunc = (GetTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeInfoFunc));
             } 
-            
             return  m_GetTypeInfoFunc(m_ptr, ref ppTypeInfo);
         }
         delegate int GetTypeInfoFunc(IntPtr self, ref IntPtr ppTypeInfo);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetFieldFunc = (GetFieldFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFieldFunc));
             } 
-            
             return  m_GetFieldFunc(m_ptr, pvData, szFieldName, ref pvarField);
         }
         delegate int GetFieldFunc(IntPtr self, IntPtr pvData, IntPtr szFieldName, ref VARIANT pvarField);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetFieldNoCopyFunc = (GetFieldNoCopyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFieldNoCopyFunc));
             } 
-            
             return  m_GetFieldNoCopyFunc(m_ptr, pvData, szFieldName, ref pvarField, ref ppvDataCArray);
         }
         delegate int GetFieldNoCopyFunc(IntPtr self, IntPtr pvData, IntPtr szFieldName, ref VARIANT pvarField, ref IntPtr ppvDataCArray);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_PutFieldFunc = (PutFieldFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PutFieldFunc));
             } 
-            
             return  m_PutFieldFunc(m_ptr, wFlags, pvData, szFieldName, ref pvarField);
         }
         delegate int PutFieldFunc(IntPtr self, uint wFlags, IntPtr pvData, IntPtr szFieldName, ref VARIANT pvarField);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_PutFieldNoCopyFunc = (PutFieldNoCopyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PutFieldNoCopyFunc));
             } 
-            
             return  m_PutFieldNoCopyFunc(m_ptr, wFlags, pvData, szFieldName, ref pvarField);
         }
         delegate int PutFieldNoCopyFunc(IntPtr self, uint wFlags, IntPtr pvData, IntPtr szFieldName, ref VARIANT pvarField);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetFieldNamesFunc = (GetFieldNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFieldNamesFunc));
             } 
-            
             return  m_GetFieldNamesFunc(m_ptr, pcNames, ref rgBstrNames);
         }
         delegate int GetFieldNamesFunc(IntPtr self, IntPtr pcNames, ref IntPtr rgBstrNames);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_IsMatchingTypeFunc = (IsMatchingTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsMatchingTypeFunc));
             } 
-            
             return  m_IsMatchingTypeFunc(m_ptr, pRecordInfo);
         }
         delegate int IsMatchingTypeFunc(IntPtr self, IntPtr pRecordInfo);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_RecordCreateFunc = (RecordCreateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordCreateFunc));
             } 
-            
             return  m_RecordCreateFunc(m_ptr);
         }
         delegate IntPtr RecordCreateFunc(IntPtr self);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_RecordCreateCopyFunc = (RecordCreateCopyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordCreateCopyFunc));
             } 
-            
             return  m_RecordCreateCopyFunc(m_ptr, pvSource, ref ppvDest);
         }
         delegate int RecordCreateCopyFunc(IntPtr self, IntPtr pvSource, ref IntPtr ppvDest);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_RecordDestroyFunc = (RecordDestroyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RecordDestroyFunc));
             } 
-            
             return  m_RecordDestroyFunc(m_ptr, pvRecord);
         }
         delegate int RecordDestroyFunc(IntPtr self, IntPtr pvRecord);

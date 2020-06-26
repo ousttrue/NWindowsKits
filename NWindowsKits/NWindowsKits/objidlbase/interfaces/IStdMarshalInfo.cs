@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetClassForHandlerFunc = (GetClassForHandlerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassForHandlerFunc));
             } 
-            
             return  m_GetClassForHandlerFunc(m_ptr, dwDestContext, pvDestContext, pClsid);
         }
         delegate int GetClassForHandlerFunc(IntPtr self, uint dwDestContext, IntPtr pvDestContext, IntPtr pClsid);

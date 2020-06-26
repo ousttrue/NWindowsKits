@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetWindowFunc = (GetWindowFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowFunc));
             } 
-            
             return  m_GetWindowFunc(m_ptr, ref phwnd);
         }
         delegate int GetWindowFunc(IntPtr self, ref HWND phwnd);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_EnableModelessFunc = (EnableModelessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnableModelessFunc));
             } 
-            
             return  m_EnableModelessFunc(m_ptr, fEnable);
         }
         delegate int EnableModelessFunc(IntPtr self, int fEnable);

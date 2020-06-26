@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ExtractThumbnailFunc = (ExtractThumbnailFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ExtractThumbnailFunc));
             } 
-            
             return  m_ExtractThumbnailFunc(m_ptr, pStg, ulLength, ulHeight, pulOutputLength, pulOutputHeight, ref phOutputBitmap);
         }
         delegate int ExtractThumbnailFunc(IntPtr self, IntPtr pStg, uint ulLength, uint ulHeight, IntPtr pulOutputLength, IntPtr pulOutputHeight, ref HBITMAP phOutputBitmap);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_OnFileUpdatedFunc = (OnFileUpdatedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnFileUpdatedFunc));
             } 
-            
             return  m_OnFileUpdatedFunc(m_ptr, pStg);
         }
         delegate int OnFileUpdatedFunc(IntPtr self, IntPtr pStg);

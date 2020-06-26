@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetSiteFunc = (SetSiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSiteFunc));
             } 
-            
             return  m_SetSiteFunc(m_ptr, pUnkSite);
         }
         delegate int SetSiteFunc(IntPtr self, IntPtr pUnkSite);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetSiteFunc = (GetSiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSiteFunc));
             } 
-            
             return  m_GetSiteFunc(m_ptr, ref riid, ref ppvSite);
         }
         delegate int GetSiteFunc(IntPtr self, ref Guid riid, ref IntPtr ppvSite);

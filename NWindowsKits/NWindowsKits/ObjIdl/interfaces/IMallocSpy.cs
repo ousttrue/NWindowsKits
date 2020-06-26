@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PreAllocFunc = (PreAllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreAllocFunc));
             } 
-            
             return  m_PreAllocFunc(m_ptr, cbRequest);
         }
         delegate ulong PreAllocFunc(IntPtr self, ulong cbRequest);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_PostAllocFunc = (PostAllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostAllocFunc));
             } 
-            
             return  m_PostAllocFunc(m_ptr, pActual);
         }
         delegate IntPtr PostAllocFunc(IntPtr self, IntPtr pActual);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_PreFreeFunc = (PreFreeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreFreeFunc));
             } 
-            
             return  m_PreFreeFunc(m_ptr, pRequest, fSpyed);
         }
         delegate IntPtr PreFreeFunc(IntPtr self, IntPtr pRequest, int fSpyed);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_PostFreeFunc = (PostFreeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostFreeFunc));
             } 
-            
              m_PostFreeFunc(m_ptr, fSpyed);
         }
         delegate void PostFreeFunc(IntPtr self, int fSpyed);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_PreReallocFunc = (PreReallocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreReallocFunc));
             } 
-            
             return  m_PreReallocFunc(m_ptr, pRequest, cbRequest, ref ppNewRequest, fSpyed);
         }
         delegate ulong PreReallocFunc(IntPtr self, IntPtr pRequest, ulong cbRequest, ref IntPtr ppNewRequest, int fSpyed);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_PostReallocFunc = (PostReallocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostReallocFunc));
             } 
-            
             return  m_PostReallocFunc(m_ptr, pActual, fSpyed);
         }
         delegate IntPtr PostReallocFunc(IntPtr self, IntPtr pActual, int fSpyed);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_PreGetSizeFunc = (PreGetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreGetSizeFunc));
             } 
-            
             return  m_PreGetSizeFunc(m_ptr, pRequest, fSpyed);
         }
         delegate IntPtr PreGetSizeFunc(IntPtr self, IntPtr pRequest, int fSpyed);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_PostGetSizeFunc = (PostGetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostGetSizeFunc));
             } 
-            
             return  m_PostGetSizeFunc(m_ptr, cbActual, fSpyed);
         }
         delegate ulong PostGetSizeFunc(IntPtr self, ulong cbActual, int fSpyed);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_PreDidAllocFunc = (PreDidAllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreDidAllocFunc));
             } 
-            
             return  m_PreDidAllocFunc(m_ptr, pRequest, fSpyed);
         }
         delegate IntPtr PreDidAllocFunc(IntPtr self, IntPtr pRequest, int fSpyed);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_PostDidAllocFunc = (PostDidAllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostDidAllocFunc));
             } 
-            
             return  m_PostDidAllocFunc(m_ptr, pRequest, fSpyed, fActual);
         }
         delegate int PostDidAllocFunc(IntPtr self, IntPtr pRequest, int fSpyed, int fActual);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_PreHeapMinimizeFunc = (PreHeapMinimizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreHeapMinimizeFunc));
             } 
-            
              m_PreHeapMinimizeFunc(m_ptr);
         }
         delegate void PreHeapMinimizeFunc(IntPtr self);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_PostHeapMinimizeFunc = (PostHeapMinimizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostHeapMinimizeFunc));
             } 
-            
              m_PostHeapMinimizeFunc(m_ptr);
         }
         delegate void PostHeapMinimizeFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateUriSimpleFunc = (CreateUriSimpleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateUriSimpleFunc));
             } 
-            
             return  m_CreateUriSimpleFunc(m_ptr, dwAllowEncodingPropertyMask, dwReserved, ref ppIUri);
         }
         delegate int CreateUriSimpleFunc(IntPtr self, uint dwAllowEncodingPropertyMask, ulong dwReserved, ref IntPtr ppIUri);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CreateUriFunc = (CreateUriFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateUriFunc));
             } 
-            
             return  m_CreateUriFunc(m_ptr, dwCreateFlags, dwAllowEncodingPropertyMask, dwReserved, ref ppIUri);
         }
         delegate int CreateUriFunc(IntPtr self, uint dwCreateFlags, uint dwAllowEncodingPropertyMask, ulong dwReserved, ref IntPtr ppIUri);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CreateUriWithFlagsFunc = (CreateUriWithFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateUriWithFlagsFunc));
             } 
-            
             return  m_CreateUriWithFlagsFunc(m_ptr, dwCreateFlags, dwUriBuilderFlags, dwAllowEncodingPropertyMask, dwReserved, ref ppIUri);
         }
         delegate int CreateUriWithFlagsFunc(IntPtr self, uint dwCreateFlags, uint dwUriBuilderFlags, uint dwAllowEncodingPropertyMask, ulong dwReserved, ref IntPtr ppIUri);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetIUriFunc = (GetIUriFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIUriFunc));
             } 
-            
             return  m_GetIUriFunc(m_ptr, ref ppIUri);
         }
         delegate int GetIUriFunc(IntPtr self, ref IntPtr ppIUri);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetIUriFunc = (SetIUriFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetIUriFunc));
             } 
-            
             return  m_SetIUriFunc(m_ptr, pIUri);
         }
         delegate int SetIUriFunc(IntPtr self, IntPtr pIUri);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetFragmentFunc = (GetFragmentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFragmentFunc));
             } 
-            
             return  m_GetFragmentFunc(m_ptr, ref pcchFragment, ref ppwzFragment);
         }
         delegate int GetFragmentFunc(IntPtr self, ref uint pcchFragment, ref IntPtr ppwzFragment);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetHostFunc = (GetHostFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetHostFunc));
             } 
-            
             return  m_GetHostFunc(m_ptr, ref pcchHost, ref ppwzHost);
         }
         delegate int GetHostFunc(IntPtr self, ref uint pcchHost, ref IntPtr ppwzHost);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetPasswordFunc = (GetPasswordFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPasswordFunc));
             } 
-            
             return  m_GetPasswordFunc(m_ptr, ref pcchPassword, ref ppwzPassword);
         }
         delegate int GetPasswordFunc(IntPtr self, ref uint pcchPassword, ref IntPtr ppwzPassword);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetPathFunc = (GetPathFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPathFunc));
             } 
-            
             return  m_GetPathFunc(m_ptr, ref pcchPath, ref ppwzPath);
         }
         delegate int GetPathFunc(IntPtr self, ref uint pcchPath, ref IntPtr ppwzPath);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetPortFunc = (GetPortFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPortFunc));
             } 
-            
             return  m_GetPortFunc(m_ptr, ref pfHasPort, ref pdwPort);
         }
         delegate int GetPortFunc(IntPtr self, ref int pfHasPort, ref uint pdwPort);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetQueryFunc = (GetQueryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetQueryFunc));
             } 
-            
             return  m_GetQueryFunc(m_ptr, ref pcchQuery, ref ppwzQuery);
         }
         delegate int GetQueryFunc(IntPtr self, ref uint pcchQuery, ref IntPtr ppwzQuery);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetSchemeNameFunc = (GetSchemeNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSchemeNameFunc));
             } 
-            
             return  m_GetSchemeNameFunc(m_ptr, ref pcchSchemeName, ref ppwzSchemeName);
         }
         delegate int GetSchemeNameFunc(IntPtr self, ref uint pcchSchemeName, ref IntPtr ppwzSchemeName);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetUserNameAFunc = (GetUserNameAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUserNameAFunc));
             } 
-            
             return  m_GetUserNameAFunc(m_ptr, ref pcchUserName, ref ppwzUserName);
         }
         delegate int GetUserNameAFunc(IntPtr self, ref uint pcchUserName, ref IntPtr ppwzUserName);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_SetFragmentFunc = (SetFragmentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFragmentFunc));
             } 
-            
             return  m_SetFragmentFunc(m_ptr, pwzNewValue);
         }
         delegate int SetFragmentFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_SetHostFunc = (SetHostFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHostFunc));
             } 
-            
             return  m_SetHostFunc(m_ptr, pwzNewValue);
         }
         delegate int SetHostFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_SetPasswordFunc = (SetPasswordFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPasswordFunc));
             } 
-            
             return  m_SetPasswordFunc(m_ptr, pwzNewValue);
         }
         delegate int SetPasswordFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_SetPathFunc = (SetPathFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPathFunc));
             } 
-            
             return  m_SetPathFunc(m_ptr, pwzNewValue);
         }
         delegate int SetPathFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_SetPortAFunc = (SetPortAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPortAFunc));
             } 
-            
             return  m_SetPortAFunc(m_ptr, fHasPort, dwNewValue);
         }
         delegate int SetPortAFunc(IntPtr self, int fHasPort, uint dwNewValue);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_SetQueryFunc = (SetQueryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetQueryFunc));
             } 
-            
             return  m_SetQueryFunc(m_ptr, pwzNewValue);
         }
         delegate int SetQueryFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_SetSchemeNameFunc = (SetSchemeNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSchemeNameFunc));
             } 
-            
             return  m_SetSchemeNameFunc(m_ptr, pwzNewValue);
         }
         delegate int SetSchemeNameFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_SetUserNameFunc = (SetUserNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetUserNameFunc));
             } 
-            
             return  m_SetUserNameFunc(m_ptr, pwzNewValue);
         }
         delegate int SetUserNameFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzNewValue);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_RemovePropertiesFunc = (RemovePropertiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RemovePropertiesFunc));
             } 
-            
             return  m_RemovePropertiesFunc(m_ptr, dwPropertyMask);
         }
         delegate int RemovePropertiesFunc(IntPtr self, uint dwPropertyMask);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_HasBeenModifiedFunc = (HasBeenModifiedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HasBeenModifiedFunc));
             } 
-            
             return  m_HasBeenModifiedFunc(m_ptr, ref pfModified);
         }
         delegate int HasBeenModifiedFunc(IntPtr self, ref int pfModified);

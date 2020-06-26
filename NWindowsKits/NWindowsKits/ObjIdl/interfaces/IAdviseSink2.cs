@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_OnLinkSrcChangeFunc = (OnLinkSrcChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnLinkSrcChangeFunc));
             } 
-            
              m_OnLinkSrcChangeFunc(m_ptr, pmk);
         }
         delegate void OnLinkSrcChangeFunc(IntPtr self, IntPtr pmk);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetDataFunc = (GetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataFunc));
             } 
-            
             return  m_GetDataFunc(m_ptr, ref pformatetcIn, pmedium);
         }
         delegate int GetDataFunc(IntPtr self, ref FORMATETC pformatetcIn, IntPtr pmedium);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetDataHereFunc = (GetDataHereFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataHereFunc));
             } 
-            
             return  m_GetDataHereFunc(m_ptr, ref pformatetc, pmedium);
         }
         delegate int GetDataHereFunc(IntPtr self, ref FORMATETC pformatetc, IntPtr pmedium);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_QueryGetDataFunc = (QueryGetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryGetDataFunc));
             } 
-            
             return  m_QueryGetDataFunc(m_ptr, ref pformatetc);
         }
         delegate int QueryGetDataFunc(IntPtr self, ref FORMATETC pformatetc);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetCanonicalFormatEtcFunc = (GetCanonicalFormatEtcFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCanonicalFormatEtcFunc));
             } 
-            
             return  m_GetCanonicalFormatEtcFunc(m_ptr, ref pformatectIn, ref pformatetcOut);
         }
         delegate int GetCanonicalFormatEtcFunc(IntPtr self, ref FORMATETC pformatectIn, ref FORMATETC pformatetcOut);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetDataFunc = (SetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDataFunc));
             } 
-            
             return  m_SetDataFunc(m_ptr, ref pformatetc, pmedium, fRelease);
         }
         delegate int SetDataFunc(IntPtr self, ref FORMATETC pformatetc, IntPtr pmedium, int fRelease);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_EnumFormatEtcFunc = (EnumFormatEtcFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumFormatEtcFunc));
             } 
-            
             return  m_EnumFormatEtcFunc(m_ptr, dwDirection, ref ppenumFormatEtc);
         }
         delegate int EnumFormatEtcFunc(IntPtr self, uint dwDirection, ref IntPtr ppenumFormatEtc);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_DAdviseFunc = (DAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DAdviseFunc));
             } 
-            
             return  m_DAdviseFunc(m_ptr, ref pformatetc, advf, pAdvSink, ref pdwConnection);
         }
         delegate int DAdviseFunc(IntPtr self, ref FORMATETC pformatetc, uint advf, IntPtr pAdvSink, ref uint pdwConnection);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_DUnadviseFunc = (DUnadviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DUnadviseFunc));
             } 
-            
             return  m_DUnadviseFunc(m_ptr, dwConnection);
         }
         delegate int DUnadviseFunc(IntPtr self, uint dwConnection);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_EnumDAdviseFunc = (EnumDAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumDAdviseFunc));
             } 
-            
             return  m_EnumDAdviseFunc(m_ptr, ref ppenumAdvise);
         }
         delegate int EnumDAdviseFunc(IntPtr self, ref IntPtr ppenumAdvise);

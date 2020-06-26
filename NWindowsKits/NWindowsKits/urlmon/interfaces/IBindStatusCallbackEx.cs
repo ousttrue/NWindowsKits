@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetBindInfoExFunc = (GetBindInfoExFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBindInfoExFunc));
             } 
-            
             return  m_GetBindInfoExFunc(m_ptr, ref grfBINDF, ref pbindinfo, ref grfBINDF2, ref pdwReserved);
         }
         delegate int GetBindInfoExFunc(IntPtr self, ref uint grfBINDF, ref BINDINFO pbindinfo, ref uint grfBINDF2, ref uint pdwReserved);

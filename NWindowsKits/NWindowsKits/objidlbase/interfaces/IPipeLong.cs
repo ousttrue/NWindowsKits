@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PullFunc = (PullFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PullFunc));
             } 
-            
             return  m_PullFunc(m_ptr, ref buf, cRequest, pcReturned);
         }
         delegate int PullFunc(IntPtr self, ref int buf, uint cRequest, IntPtr pcReturned);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_PushFunc = (PushFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushFunc));
             } 
-            
             return  m_PushFunc(m_ptr, ref buf, cSent);
         }
         delegate int PushFunc(IntPtr self, ref int buf, uint cSent);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetFeatureMaskFunc = (SetFeatureMaskFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFeatureMaskFunc));
             } 
-            
             return  m_SetFeatureMaskFunc(m_ptr, Mask);
         }
         delegate int SetFeatureMaskFunc(IntPtr self, uint Mask);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetFeatureMaskFunc = (GetFeatureMaskFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFeatureMaskFunc));
             } 
-            
             return  m_GetFeatureMaskFunc(m_ptr);
         }
         delegate uint GetFeatureMaskFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetPresentPerRenderOpDelayFunc = (SetPresentPerRenderOpDelayFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPresentPerRenderOpDelayFunc));
             } 
-            
             return  m_SetPresentPerRenderOpDelayFunc(m_ptr, Milliseconds);
         }
         delegate int SetPresentPerRenderOpDelayFunc(IntPtr self, uint Milliseconds);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetPresentPerRenderOpDelayFunc = (GetPresentPerRenderOpDelayFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPresentPerRenderOpDelayFunc));
             } 
-            
             return  m_GetPresentPerRenderOpDelayFunc(m_ptr);
         }
         delegate uint GetPresentPerRenderOpDelayFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetSwapChainFunc = (SetSwapChainFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSwapChainFunc));
             } 
-            
             return  m_SetSwapChainFunc(m_ptr, pSwapChain);
         }
         delegate int SetSwapChainFunc(IntPtr self, IntPtr pSwapChain);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetSwapChainFunc = (GetSwapChainFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSwapChainFunc));
             } 
-            
             return  m_GetSwapChainFunc(m_ptr, ref ppSwapChain);
         }
         delegate int GetSwapChainFunc(IntPtr self, ref IntPtr ppSwapChain);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_ValidateContextFunc = (ValidateContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ValidateContextFunc));
             } 
-            
             return  m_ValidateContextFunc(m_ptr, pContext);
         }
         delegate int ValidateContextFunc(IntPtr self, IntPtr pContext);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_ReportLiveDeviceObjectsFunc = (ReportLiveDeviceObjectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReportLiveDeviceObjectsFunc));
             } 
-            
             return  m_ReportLiveDeviceObjectsFunc(m_ptr, Flags);
         }
         delegate int ReportLiveDeviceObjectsFunc(IntPtr self, D3D11_RLDO_FLAGS Flags);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_ValidateContextForDispatchFunc = (ValidateContextForDispatchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ValidateContextForDispatchFunc));
             } 
-            
             return  m_ValidateContextForDispatchFunc(m_ptr, pContext);
         }
         delegate int ValidateContextForDispatchFunc(IntPtr self, IntPtr pContext);

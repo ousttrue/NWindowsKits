@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetDesc2Func = (GetDesc2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDesc2Func));
             } 
-            
             return  m_GetDesc2Func(m_ptr, ref pDesc);
         }
         delegate int GetDesc2Func(IntPtr self, ref DXGI_ADAPTER_DESC2 pDesc);

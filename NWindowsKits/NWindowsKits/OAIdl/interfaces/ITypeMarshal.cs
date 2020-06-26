@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SizeFunc = (SizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SizeFunc));
             } 
-            
             return  m_SizeFunc(m_ptr, pvType, dwDestContext, pvDestContext, pSize);
         }
         delegate int SizeFunc(IntPtr self, IntPtr pvType, uint dwDestContext, IntPtr pvDestContext, IntPtr pSize);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m__MarshalFunc = (_MarshalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(_MarshalFunc));
             } 
-            
             return  m__MarshalFunc(m_ptr, pvType, dwDestContext, pvDestContext, cbBufferLength, ref pBuffer, pcbWritten);
         }
         delegate int _MarshalFunc(IntPtr self, IntPtr pvType, uint dwDestContext, IntPtr pvDestContext, uint cbBufferLength, ref byte pBuffer, IntPtr pcbWritten);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_UnmarshalFunc = (UnmarshalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmarshalFunc));
             } 
-            
             return  m_UnmarshalFunc(m_ptr, pvType, dwFlags, cbBufferLength, ref pBuffer, pcbRead);
         }
         delegate int UnmarshalFunc(IntPtr self, IntPtr pvType, uint dwFlags, uint cbBufferLength, ref byte pBuffer, IntPtr pcbRead);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_FreeFunc = (FreeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreeFunc));
             } 
-            
             return  m_FreeFunc(m_ptr, pvType);
         }
         delegate int FreeFunc(IntPtr self, IntPtr pvType);

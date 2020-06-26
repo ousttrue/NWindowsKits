@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetSecuritySiteFunc = (SetSecuritySiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSecuritySiteFunc));
             } 
-            
             return  m_SetSecuritySiteFunc(m_ptr, pSite);
         }
         delegate int SetSecuritySiteFunc(IntPtr self, IntPtr pSite);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetSecuritySiteFunc = (GetSecuritySiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSecuritySiteFunc));
             } 
-            
             return  m_GetSecuritySiteFunc(m_ptr, ref ppSite);
         }
         delegate int GetSecuritySiteFunc(IntPtr self, ref IntPtr ppSite);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_MapUrlToZoneFunc = (MapUrlToZoneFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapUrlToZoneFunc));
             } 
-            
             return  m_MapUrlToZoneFunc(m_ptr, pwszUrl, ref pdwZone, dwFlags);
         }
         delegate int MapUrlToZoneFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwszUrl, ref uint pdwZone, uint dwFlags);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetSecurityIdFunc = (GetSecurityIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSecurityIdFunc));
             } 
-            
             return  m_GetSecurityIdFunc(m_ptr, pwszUrl, ref pbSecurityId, ref pcbSecurityId, dwReserved);
         }
         delegate int GetSecurityIdFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwszUrl, ref byte pbSecurityId, ref uint pcbSecurityId, ulong dwReserved);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_ProcessUrlActionFunc = (ProcessUrlActionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessUrlActionFunc));
             } 
-            
             return  m_ProcessUrlActionFunc(m_ptr, pwszUrl, dwAction, ref pPolicy, cbPolicy, ref pContext, cbContext, dwFlags, dwReserved);
         }
         delegate int ProcessUrlActionFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwszUrl, uint dwAction, ref byte pPolicy, uint cbPolicy, ref byte pContext, uint cbContext, uint dwFlags, uint dwReserved);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_QueryCustomPolicyFunc = (QueryCustomPolicyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryCustomPolicyFunc));
             } 
-            
             return  m_QueryCustomPolicyFunc(m_ptr, pwszUrl, ref guidKey, ref ppPolicy, ref pcbPolicy, ref pContext, cbContext, dwReserved);
         }
         delegate int QueryCustomPolicyFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwszUrl, ref GUID guidKey, ref IntPtr ppPolicy, ref uint pcbPolicy, ref byte pContext, uint cbContext, uint dwReserved);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_SetZoneMappingFunc = (SetZoneMappingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetZoneMappingFunc));
             } 
-            
             return  m_SetZoneMappingFunc(m_ptr, dwZone, lpszPattern, dwFlags);
         }
         delegate int SetZoneMappingFunc(IntPtr self, uint dwZone, [MarshalAs(UnmanagedType.LPWStr)] string lpszPattern, uint dwFlags);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetZoneMappingsFunc = (GetZoneMappingsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetZoneMappingsFunc));
             } 
-            
             return  m_GetZoneMappingsFunc(m_ptr, dwZone, ref ppenumString, dwFlags);
         }
         delegate int GetZoneMappingsFunc(IntPtr self, uint dwZone, ref IntPtr ppenumString, uint dwFlags);

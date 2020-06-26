@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_FindBestFilterFunc = (FindBestFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindBestFilterFunc));
             } 
-            
             return  m_FindBestFilterFunc(m_ptr, pwzCodeIn, pwzCodeOut, info, ref ppDF);
         }
         delegate int FindBestFilterFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzCodeIn, [MarshalAs(UnmanagedType.LPWStr)] string pwzCodeOut, DATAINFO info, ref IntPtr ppDF);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetDefaultFilterFunc = (GetDefaultFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDefaultFilterFunc));
             } 
-            
             return  m_GetDefaultFilterFunc(m_ptr, pwzCodeIn, pwzCodeOut, ref ppDF);
         }
         delegate int GetDefaultFilterFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzCodeIn, [MarshalAs(UnmanagedType.LPWStr)] string pwzCodeOut, ref IntPtr ppDF);

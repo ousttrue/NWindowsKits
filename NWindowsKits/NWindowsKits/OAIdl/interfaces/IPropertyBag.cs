@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ReadFunc = (ReadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadFunc));
             } 
-            
             return  m_ReadFunc(m_ptr, pszPropName, ref pVar, pErrorLog);
         }
         delegate int ReadFunc(IntPtr self, IntPtr pszPropName, ref VARIANT pVar, IntPtr pErrorLog);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_WriteFunc = (WriteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WriteFunc));
             } 
-            
             return  m_WriteFunc(m_ptr, pszPropName, ref pVar);
         }
         delegate int WriteFunc(IntPtr self, IntPtr pszPropName, ref VARIANT pVar);

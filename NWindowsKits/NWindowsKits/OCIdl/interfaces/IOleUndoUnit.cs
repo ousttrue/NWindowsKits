@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DoFunc = (DoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DoFunc));
             } 
-            
             return  m_DoFunc(m_ptr, pUndoManager);
         }
         delegate int DoFunc(IntPtr self, IntPtr pUndoManager);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetDescriptionFunc = (GetDescriptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescriptionFunc));
             } 
-            
             return  m_GetDescriptionFunc(m_ptr, ref pBstr);
         }
         delegate int GetDescriptionFunc(IntPtr self, ref IntPtr pBstr);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetUnitTypeFunc = (GetUnitTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUnitTypeFunc));
             } 
-            
             return  m_GetUnitTypeFunc(m_ptr, pClsid, ref plID);
         }
         delegate int GetUnitTypeFunc(IntPtr self, IntPtr pClsid, ref int plID);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_OnNextAddFunc = (OnNextAddFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnNextAddFunc));
             } 
-            
             return  m_OnNextAddFunc(m_ptr);
         }
         delegate int OnNextAddFunc(IntPtr self);

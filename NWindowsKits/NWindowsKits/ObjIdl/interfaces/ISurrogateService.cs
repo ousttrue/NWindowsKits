@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_InitFunc = (InitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitFunc));
             } 
-            
             return  m_InitFunc(m_ptr, ref rguidProcessID, pProcessLock, ref pfApplicationAware);
         }
         delegate int InitFunc(IntPtr self, ref GUID rguidProcessID, IntPtr pProcessLock, ref int pfApplicationAware);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ApplicationLaunchFunc = (ApplicationLaunchFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ApplicationLaunchFunc));
             } 
-            
             return  m_ApplicationLaunchFunc(m_ptr, ref rguidApplID, appType);
         }
         delegate int ApplicationLaunchFunc(IntPtr self, ref GUID rguidApplID, ApplicationType appType);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ApplicationFreeFunc = (ApplicationFreeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ApplicationFreeFunc));
             } 
-            
             return  m_ApplicationFreeFunc(m_ptr, ref rguidApplID);
         }
         delegate int ApplicationFreeFunc(IntPtr self, ref GUID rguidApplID);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_CatalogRefreshFunc = (CatalogRefreshFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CatalogRefreshFunc));
             } 
-            
             return  m_CatalogRefreshFunc(m_ptr, ulReserved);
         }
         delegate int CatalogRefreshFunc(IntPtr self, uint ulReserved);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_ProcessShutdownFunc = (ProcessShutdownFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessShutdownFunc));
             } 
-            
             return  m_ProcessShutdownFunc(m_ptr, shutdownType);
         }
         delegate int ProcessShutdownFunc(IntPtr self, ShutdownType shutdownType);

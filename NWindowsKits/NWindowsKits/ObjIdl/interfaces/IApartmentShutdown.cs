@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OnUninitializeFunc = (OnUninitializeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnUninitializeFunc));
             } 
-            
              m_OnUninitializeFunc(m_ptr, ui64ApartmentIdentifier);
         }
         delegate void OnUninitializeFunc(IntPtr self, ulong ui64ApartmentIdentifier);

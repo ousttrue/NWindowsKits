@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_InsertMenusFunc = (InsertMenusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InsertMenusFunc));
             } 
-            
             return  m_InsertMenusFunc(m_ptr, hmenuShared, ref lpMenuWidths);
         }
         delegate int InsertMenusFunc(IntPtr self, HMENU hmenuShared, ref LPOLEMENUGROUPWIDTHS lpMenuWidths);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SetMenuFunc = (SetMenuFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMenuFunc));
             } 
-            
             return  m_SetMenuFunc(m_ptr, hmenuShared, holemenu, hwndActiveObject);
         }
         delegate int SetMenuFunc(IntPtr self, HMENU hmenuShared, IntPtr holemenu, HWND hwndActiveObject);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_RemoveMenusFunc = (RemoveMenusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RemoveMenusFunc));
             } 
-            
             return  m_RemoveMenusFunc(m_ptr, hmenuShared);
         }
         delegate int RemoveMenusFunc(IntPtr self, HMENU hmenuShared);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_SetStatusTextFunc = (SetStatusTextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetStatusTextFunc));
             } 
-            
             return  m_SetStatusTextFunc(m_ptr, pszStatusText);
         }
         delegate int SetStatusTextFunc(IntPtr self, IntPtr pszStatusText);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_EnableModelessFunc = (EnableModelessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnableModelessFunc));
             } 
-            
             return  m_EnableModelessFunc(m_ptr, fEnable);
         }
         delegate int EnableModelessFunc(IntPtr self, int fEnable);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_TranslateAcceleratorAFunc = (TranslateAcceleratorAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TranslateAcceleratorAFunc));
             } 
-            
             return  m_TranslateAcceleratorAFunc(m_ptr, ref lpmsg, wID);
         }
         delegate int TranslateAcceleratorAFunc(IntPtr self, ref MSG lpmsg, ushort wID);

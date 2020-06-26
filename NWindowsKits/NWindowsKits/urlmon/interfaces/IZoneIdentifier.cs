@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetIdFunc = (GetIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIdFunc));
             } 
-            
             return  m_GetIdFunc(m_ptr, ref pdwZone);
         }
         delegate int GetIdFunc(IntPtr self, ref uint pdwZone);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetIdFunc = (SetIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetIdFunc));
             } 
-            
             return  m_SetIdFunc(m_ptr, dwZone);
         }
         delegate int SetIdFunc(IntPtr self, uint dwZone);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_RemoveFunc = (RemoveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RemoveFunc));
             } 
-            
             return  m_RemoveFunc(m_ptr);
         }
         delegate int RemoveFunc(IntPtr self);

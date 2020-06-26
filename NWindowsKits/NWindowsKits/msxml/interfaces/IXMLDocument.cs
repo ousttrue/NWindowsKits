@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_rootFunc = (get_rootFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_rootFunc));
             } 
-            
             return  m_get_rootFunc(m_ptr, ref p);
         }
         delegate int get_rootFunc(IntPtr self, ref IntPtr p);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_get_fileSizeFunc = (get_fileSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_fileSizeFunc));
             } 
-            
             return  m_get_fileSizeFunc(m_ptr, ref p);
         }
         delegate int get_fileSizeFunc(IntPtr self, ref IntPtr p);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_get_fileModifiedDateFunc = (get_fileModifiedDateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_fileModifiedDateFunc));
             } 
-            
             return  m_get_fileModifiedDateFunc(m_ptr, ref p);
         }
         delegate int get_fileModifiedDateFunc(IntPtr self, ref IntPtr p);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_get_fileUpdatedDateFunc = (get_fileUpdatedDateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_fileUpdatedDateFunc));
             } 
-            
             return  m_get_fileUpdatedDateFunc(m_ptr, ref p);
         }
         delegate int get_fileUpdatedDateFunc(IntPtr self, ref IntPtr p);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_URLFunc = (get_URLFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_URLFunc));
             } 
-            
             return  m_get_URLFunc(m_ptr, ref p);
         }
         delegate int get_URLFunc(IntPtr self, ref IntPtr p);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_put_URLFunc = (put_URLFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_URLFunc));
             } 
-            
             return  m_put_URLFunc(m_ptr, p);
         }
         delegate int put_URLFunc(IntPtr self, IntPtr p);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_get_mimeTypeFunc = (get_mimeTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_mimeTypeFunc));
             } 
-            
             return  m_get_mimeTypeFunc(m_ptr, ref p);
         }
         delegate int get_mimeTypeFunc(IntPtr self, ref IntPtr p);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_get_readyStateFunc = (get_readyStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_readyStateFunc));
             } 
-            
             return  m_get_readyStateFunc(m_ptr, ref pl);
         }
         delegate int get_readyStateFunc(IntPtr self, ref int pl);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_get_charsetFunc = (get_charsetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_charsetFunc));
             } 
-            
             return  m_get_charsetFunc(m_ptr, ref p);
         }
         delegate int get_charsetFunc(IntPtr self, ref IntPtr p);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_put_charsetFunc = (put_charsetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_charsetFunc));
             } 
-            
             return  m_put_charsetFunc(m_ptr, p);
         }
         delegate int put_charsetFunc(IntPtr self, IntPtr p);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_get_versionFunc = (get_versionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_versionFunc));
             } 
-            
             return  m_get_versionFunc(m_ptr, ref p);
         }
         delegate int get_versionFunc(IntPtr self, ref IntPtr p);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_get_doctypeFunc = (get_doctypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_doctypeFunc));
             } 
-            
             return  m_get_doctypeFunc(m_ptr, ref p);
         }
         delegate int get_doctypeFunc(IntPtr self, ref IntPtr p);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_get_dtdURLFunc = (get_dtdURLFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_dtdURLFunc));
             } 
-            
             return  m_get_dtdURLFunc(m_ptr, ref p);
         }
         delegate int get_dtdURLFunc(IntPtr self, ref IntPtr p);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_createElementFunc = (createElementFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(createElementFunc));
             } 
-            
             return  m_createElementFunc(m_ptr, vType, var1, ref ppElem);
         }
         delegate int createElementFunc(IntPtr self, VARIANT vType, VARIANT var1, ref IntPtr ppElem);

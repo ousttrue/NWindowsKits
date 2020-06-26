@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetObjectAFunc = (GetObjectAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetObjectAFunc));
             } 
-            
             return  m_GetObjectAFunc(m_ptr, pszItem, dwSpeedNeeded, pbc, ref riid, ref ppvObject);
         }
         delegate int GetObjectAFunc(IntPtr self, IntPtr pszItem, uint dwSpeedNeeded, IntPtr pbc, ref Guid riid, ref IntPtr ppvObject);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetObjectStorageFunc = (GetObjectStorageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetObjectStorageFunc));
             } 
-            
             return  m_GetObjectStorageFunc(m_ptr, pszItem, pbc, ref riid, ref ppvStorage);
         }
         delegate int GetObjectStorageFunc(IntPtr self, IntPtr pszItem, IntPtr pbc, ref Guid riid, ref IntPtr ppvStorage);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_IsRunningFunc = (IsRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsRunningFunc));
             } 
-            
             return  m_IsRunningFunc(m_ptr, pszItem);
         }
         delegate int IsRunningFunc(IntPtr self, IntPtr pszItem);

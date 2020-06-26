@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetProtocolVersionFunc = (GetProtocolVersionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetProtocolVersionFunc));
             } 
-            
             return  m_GetProtocolVersionFunc(m_ptr, ref pdwVersion);
         }
         delegate int GetProtocolVersionFunc(IntPtr self, ref uint pdwVersion);

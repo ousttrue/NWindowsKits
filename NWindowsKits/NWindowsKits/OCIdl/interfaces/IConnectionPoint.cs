@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetConnectionInterfaceFunc = (GetConnectionInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetConnectionInterfaceFunc));
             } 
-            
             return  m_GetConnectionInterfaceFunc(m_ptr, ref pIID);
         }
         delegate int GetConnectionInterfaceFunc(IntPtr self, ref Guid pIID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetConnectionPointContainerFunc = (GetConnectionPointContainerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetConnectionPointContainerFunc));
             } 
-            
             return  m_GetConnectionPointContainerFunc(m_ptr, ref ppCPC);
         }
         delegate int GetConnectionPointContainerFunc(IntPtr self, ref IntPtr ppCPC);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_AdviseFunc = (AdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AdviseFunc));
             } 
-            
             return  m_AdviseFunc(m_ptr, pUnkSink, ref pdwCookie);
         }
         delegate int AdviseFunc(IntPtr self, IntPtr pUnkSink, ref uint pdwCookie);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_UnadviseFunc = (UnadviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnadviseFunc));
             } 
-            
             return  m_UnadviseFunc(m_ptr, dwCookie);
         }
         delegate int UnadviseFunc(IntPtr self, uint dwCookie);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_EnumConnectionsFunc = (EnumConnectionsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumConnectionsFunc));
             } 
-            
             return  m_EnumConnectionsFunc(m_ptr, ref ppEnum);
         }
         delegate int EnumConnectionsFunc(IntPtr self, ref IntPtr ppEnum);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_Begin_OnDataChangeFunc = (Begin_OnDataChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_OnDataChangeFunc));
             } 
-            
              m_Begin_OnDataChangeFunc(m_ptr, ref pFormatetc, pStgmed);
         }
         delegate void Begin_OnDataChangeFunc(IntPtr self, ref FORMATETC pFormatetc, IntPtr pStgmed);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_Finish_OnDataChangeFunc = (Finish_OnDataChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_OnDataChangeFunc));
             } 
-            
              m_Finish_OnDataChangeFunc(m_ptr);
         }
         delegate void Finish_OnDataChangeFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_Begin_OnViewChangeFunc = (Begin_OnViewChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_OnViewChangeFunc));
             } 
-            
              m_Begin_OnViewChangeFunc(m_ptr, dwAspect, lindex);
         }
         delegate void Begin_OnViewChangeFunc(IntPtr self, uint dwAspect, int lindex);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_Finish_OnViewChangeFunc = (Finish_OnViewChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_OnViewChangeFunc));
             } 
-            
              m_Finish_OnViewChangeFunc(m_ptr);
         }
         delegate void Finish_OnViewChangeFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_Begin_OnRenameFunc = (Begin_OnRenameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_OnRenameFunc));
             } 
-            
              m_Begin_OnRenameFunc(m_ptr, pmk);
         }
         delegate void Begin_OnRenameFunc(IntPtr self, IntPtr pmk);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_Finish_OnRenameFunc = (Finish_OnRenameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_OnRenameFunc));
             } 
-            
              m_Finish_OnRenameFunc(m_ptr);
         }
         delegate void Finish_OnRenameFunc(IntPtr self);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_Begin_OnSaveFunc = (Begin_OnSaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_OnSaveFunc));
             } 
-            
              m_Begin_OnSaveFunc(m_ptr);
         }
         delegate void Begin_OnSaveFunc(IntPtr self);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_Finish_OnSaveFunc = (Finish_OnSaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_OnSaveFunc));
             } 
-            
              m_Finish_OnSaveFunc(m_ptr);
         }
         delegate void Finish_OnSaveFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_Begin_OnCloseFunc = (Begin_OnCloseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_OnCloseFunc));
             } 
-            
              m_Begin_OnCloseFunc(m_ptr);
         }
         delegate void Begin_OnCloseFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_Finish_OnCloseFunc = (Finish_OnCloseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_OnCloseFunc));
             } 
-            
              m_Finish_OnCloseFunc(m_ptr);
         }
         delegate void Finish_OnCloseFunc(IntPtr self);

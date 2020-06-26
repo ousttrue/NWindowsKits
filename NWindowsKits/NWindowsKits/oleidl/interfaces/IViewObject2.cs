@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetExtentFunc = (GetExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetExtentFunc));
             } 
-            
             return  m_GetExtentFunc(m_ptr, dwDrawAspect, lindex, ref ptd, ref lpsizel);
         }
         delegate int GetExtentFunc(IntPtr self, uint dwDrawAspect, int lindex, ref DVTARGETDEVICE ptd, ref SIZE lpsizel);

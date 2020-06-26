@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetGuidFunc = (SetGuidFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGuidFunc));
             } 
-            
             return  m_SetGuidFunc(m_ptr, ref guid);
         }
         delegate int SetGuidFunc(IntPtr self, ref GUID guid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetTypeFlagsFunc = (SetTypeFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetTypeFlagsFunc));
             } 
-            
             return  m_SetTypeFlagsFunc(m_ptr, uTypeFlags);
         }
         delegate int SetTypeFlagsFunc(IntPtr self, uint uTypeFlags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetDocStringFunc = (SetDocStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDocStringFunc));
             } 
-            
             return  m_SetDocStringFunc(m_ptr, pStrDoc);
         }
         delegate int SetDocStringFunc(IntPtr self, IntPtr pStrDoc);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetHelpContextFunc = (SetHelpContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHelpContextFunc));
             } 
-            
             return  m_SetHelpContextFunc(m_ptr, dwHelpContext);
         }
         delegate int SetHelpContextFunc(IntPtr self, uint dwHelpContext);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetVersionFunc = (SetVersionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetVersionFunc));
             } 
-            
             return  m_SetVersionFunc(m_ptr, wMajorVerNum, wMinorVerNum);
         }
         delegate int SetVersionFunc(IntPtr self, ushort wMajorVerNum, ushort wMinorVerNum);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_AddRefTypeInfoFunc = (AddRefTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefTypeInfoFunc));
             } 
-            
             return  m_AddRefTypeInfoFunc(m_ptr, pTInfo, phRefType);
         }
         delegate int AddRefTypeInfoFunc(IntPtr self, IntPtr pTInfo, IntPtr phRefType);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_AddFuncDescFunc = (AddFuncDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddFuncDescFunc));
             } 
-            
             return  m_AddFuncDescFunc(m_ptr, index, ref pFuncDesc);
         }
         delegate int AddFuncDescFunc(IntPtr self, uint index, ref FUNCDESC pFuncDesc);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_AddImplTypeFunc = (AddImplTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddImplTypeFunc));
             } 
-            
             return  m_AddImplTypeFunc(m_ptr, index, hRefType);
         }
         delegate int AddImplTypeFunc(IntPtr self, uint index, uint hRefType);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_SetImplTypeFlagsFunc = (SetImplTypeFlagsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetImplTypeFlagsFunc));
             } 
-            
             return  m_SetImplTypeFlagsFunc(m_ptr, index, implTypeFlags);
         }
         delegate int SetImplTypeFlagsFunc(IntPtr self, uint index, int implTypeFlags);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_SetAlignmentFunc = (SetAlignmentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetAlignmentFunc));
             } 
-            
             return  m_SetAlignmentFunc(m_ptr, cbAlignment);
         }
         delegate int SetAlignmentFunc(IntPtr self, ushort cbAlignment);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_SetSchemaFunc = (SetSchemaFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSchemaFunc));
             } 
-            
             return  m_SetSchemaFunc(m_ptr, pStrSchema);
         }
         delegate int SetSchemaFunc(IntPtr self, IntPtr pStrSchema);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_AddVarDescFunc = (AddVarDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddVarDescFunc));
             } 
-            
             return  m_AddVarDescFunc(m_ptr, index, ref pVarDesc);
         }
         delegate int AddVarDescFunc(IntPtr self, uint index, ref VARDESC pVarDesc);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_SetFuncAndParamNamesFunc = (SetFuncAndParamNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFuncAndParamNamesFunc));
             } 
-            
             return  m_SetFuncAndParamNamesFunc(m_ptr, index, ref rgszNames, cNames);
         }
         delegate int SetFuncAndParamNamesFunc(IntPtr self, uint index, ref IntPtr rgszNames, uint cNames);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_SetVarNameFunc = (SetVarNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetVarNameFunc));
             } 
-            
             return  m_SetVarNameFunc(m_ptr, index, szName);
         }
         delegate int SetVarNameFunc(IntPtr self, uint index, IntPtr szName);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_SetTypeDescAliasFunc = (SetTypeDescAliasFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetTypeDescAliasFunc));
             } 
-            
             return  m_SetTypeDescAliasFunc(m_ptr, ref pTDescAlias);
         }
         delegate int SetTypeDescAliasFunc(IntPtr self, ref TYPEDESC pTDescAlias);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_DefineFuncAsDllEntryFunc = (DefineFuncAsDllEntryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DefineFuncAsDllEntryFunc));
             } 
-            
             return  m_DefineFuncAsDllEntryFunc(m_ptr, index, szDllName, szProcName);
         }
         delegate int DefineFuncAsDllEntryFunc(IntPtr self, uint index, IntPtr szDllName, IntPtr szProcName);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_SetFuncDocStringFunc = (SetFuncDocStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFuncDocStringFunc));
             } 
-            
             return  m_SetFuncDocStringFunc(m_ptr, index, szDocString);
         }
         delegate int SetFuncDocStringFunc(IntPtr self, uint index, IntPtr szDocString);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_SetVarDocStringFunc = (SetVarDocStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetVarDocStringFunc));
             } 
-            
             return  m_SetVarDocStringFunc(m_ptr, index, szDocString);
         }
         delegate int SetVarDocStringFunc(IntPtr self, uint index, IntPtr szDocString);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_SetFuncHelpContextFunc = (SetFuncHelpContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetFuncHelpContextFunc));
             } 
-            
             return  m_SetFuncHelpContextFunc(m_ptr, index, dwHelpContext);
         }
         delegate int SetFuncHelpContextFunc(IntPtr self, uint index, uint dwHelpContext);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_SetVarHelpContextFunc = (SetVarHelpContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetVarHelpContextFunc));
             } 
-            
             return  m_SetVarHelpContextFunc(m_ptr, index, dwHelpContext);
         }
         delegate int SetVarHelpContextFunc(IntPtr self, uint index, uint dwHelpContext);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_SetMopsFunc = (SetMopsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMopsFunc));
             } 
-            
             return  m_SetMopsFunc(m_ptr, index, bstrMops);
         }
         delegate int SetMopsFunc(IntPtr self, uint index, IntPtr bstrMops);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_SetTypeIdldescFunc = (SetTypeIdldescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetTypeIdldescFunc));
             } 
-            
             return  m_SetTypeIdldescFunc(m_ptr, ref pIdlDesc);
         }
         delegate int SetTypeIdldescFunc(IntPtr self, ref IDLDESC pIdlDesc);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_LayOutFunc = (LayOutFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LayOutFunc));
             } 
-            
             return  m_LayOutFunc(m_ptr);
         }
         delegate int LayOutFunc(IntPtr self);

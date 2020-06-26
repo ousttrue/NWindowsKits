@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetMessageCountLimitFunc = (SetMessageCountLimitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMessageCountLimitFunc));
             } 
-            
             return  m_SetMessageCountLimitFunc(m_ptr, MessageCountLimit);
         }
         delegate int SetMessageCountLimitFunc(IntPtr self, ulong MessageCountLimit);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ClearStoredMessagesFunc = (ClearStoredMessagesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearStoredMessagesFunc));
             } 
-            
              m_ClearStoredMessagesFunc(m_ptr);
         }
         delegate void ClearStoredMessagesFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetMessageAFunc = (GetMessageAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMessageAFunc));
             } 
-            
             return  m_GetMessageAFunc(m_ptr, MessageIndex, ref pMessage, pMessageByteLength);
         }
         delegate int GetMessageAFunc(IntPtr self, ulong MessageIndex, ref D3D11_MESSAGE pMessage, IntPtr pMessageByteLength);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetNumMessagesAllowedByStorageFilterFunc = (GetNumMessagesAllowedByStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNumMessagesAllowedByStorageFilterFunc));
             } 
-            
             return  m_GetNumMessagesAllowedByStorageFilterFunc(m_ptr);
         }
         delegate ulong GetNumMessagesAllowedByStorageFilterFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetNumMessagesDeniedByStorageFilterFunc = (GetNumMessagesDeniedByStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNumMessagesDeniedByStorageFilterFunc));
             } 
-            
             return  m_GetNumMessagesDeniedByStorageFilterFunc(m_ptr);
         }
         delegate ulong GetNumMessagesDeniedByStorageFilterFunc(IntPtr self);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetNumStoredMessagesFunc = (GetNumStoredMessagesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNumStoredMessagesFunc));
             } 
-            
             return  m_GetNumStoredMessagesFunc(m_ptr);
         }
         delegate ulong GetNumStoredMessagesFunc(IntPtr self);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetNumStoredMessagesAllowedByRetrievalFilterFunc = (GetNumStoredMessagesAllowedByRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNumStoredMessagesAllowedByRetrievalFilterFunc));
             } 
-            
             return  m_GetNumStoredMessagesAllowedByRetrievalFilterFunc(m_ptr);
         }
         delegate ulong GetNumStoredMessagesAllowedByRetrievalFilterFunc(IntPtr self);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetNumMessagesDiscardedByMessageCountLimitFunc = (GetNumMessagesDiscardedByMessageCountLimitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNumMessagesDiscardedByMessageCountLimitFunc));
             } 
-            
             return  m_GetNumMessagesDiscardedByMessageCountLimitFunc(m_ptr);
         }
         delegate ulong GetNumMessagesDiscardedByMessageCountLimitFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetMessageCountLimitFunc = (GetMessageCountLimitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMessageCountLimitFunc));
             } 
-            
             return  m_GetMessageCountLimitFunc(m_ptr);
         }
         delegate ulong GetMessageCountLimitFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_AddStorageFilterEntriesFunc = (AddStorageFilterEntriesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddStorageFilterEntriesFunc));
             } 
-            
             return  m_AddStorageFilterEntriesFunc(m_ptr, ref pFilter);
         }
         delegate int AddStorageFilterEntriesFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetStorageFilterFunc = (GetStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetStorageFilterFunc));
             } 
-            
             return  m_GetStorageFilterFunc(m_ptr, ref pFilter, pFilterByteLength);
         }
         delegate int GetStorageFilterFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter, IntPtr pFilterByteLength);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_ClearStorageFilterFunc = (ClearStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearStorageFilterFunc));
             } 
-            
              m_ClearStorageFilterFunc(m_ptr);
         }
         delegate void ClearStorageFilterFunc(IntPtr self);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_PushEmptyStorageFilterFunc = (PushEmptyStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushEmptyStorageFilterFunc));
             } 
-            
             return  m_PushEmptyStorageFilterFunc(m_ptr);
         }
         delegate int PushEmptyStorageFilterFunc(IntPtr self);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_PushCopyOfStorageFilterFunc = (PushCopyOfStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushCopyOfStorageFilterFunc));
             } 
-            
             return  m_PushCopyOfStorageFilterFunc(m_ptr);
         }
         delegate int PushCopyOfStorageFilterFunc(IntPtr self);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_PushStorageFilterFunc = (PushStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushStorageFilterFunc));
             } 
-            
             return  m_PushStorageFilterFunc(m_ptr, ref pFilter);
         }
         delegate int PushStorageFilterFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_PopStorageFilterFunc = (PopStorageFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PopStorageFilterFunc));
             } 
-            
              m_PopStorageFilterFunc(m_ptr);
         }
         delegate void PopStorageFilterFunc(IntPtr self);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_GetStorageFilterStackSizeFunc = (GetStorageFilterStackSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetStorageFilterStackSizeFunc));
             } 
-            
             return  m_GetStorageFilterStackSizeFunc(m_ptr);
         }
         delegate uint GetStorageFilterStackSizeFunc(IntPtr self);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_AddRetrievalFilterEntriesFunc = (AddRetrievalFilterEntriesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRetrievalFilterEntriesFunc));
             } 
-            
             return  m_AddRetrievalFilterEntriesFunc(m_ptr, ref pFilter);
         }
         delegate int AddRetrievalFilterEntriesFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_GetRetrievalFilterFunc = (GetRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRetrievalFilterFunc));
             } 
-            
             return  m_GetRetrievalFilterFunc(m_ptr, ref pFilter, pFilterByteLength);
         }
         delegate int GetRetrievalFilterFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter, IntPtr pFilterByteLength);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_ClearRetrievalFilterFunc = (ClearRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClearRetrievalFilterFunc));
             } 
-            
              m_ClearRetrievalFilterFunc(m_ptr);
         }
         delegate void ClearRetrievalFilterFunc(IntPtr self);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_PushEmptyRetrievalFilterFunc = (PushEmptyRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushEmptyRetrievalFilterFunc));
             } 
-            
             return  m_PushEmptyRetrievalFilterFunc(m_ptr);
         }
         delegate int PushEmptyRetrievalFilterFunc(IntPtr self);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_PushCopyOfRetrievalFilterFunc = (PushCopyOfRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushCopyOfRetrievalFilterFunc));
             } 
-            
             return  m_PushCopyOfRetrievalFilterFunc(m_ptr);
         }
         delegate int PushCopyOfRetrievalFilterFunc(IntPtr self);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_PushRetrievalFilterFunc = (PushRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PushRetrievalFilterFunc));
             } 
-            
             return  m_PushRetrievalFilterFunc(m_ptr, ref pFilter);
         }
         delegate int PushRetrievalFilterFunc(IntPtr self, ref D3D11_INFO_QUEUE_FILTER pFilter);
@@ -293,7 +270,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_PopRetrievalFilterFunc = (PopRetrievalFilterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PopRetrievalFilterFunc));
             } 
-            
              m_PopRetrievalFilterFunc(m_ptr);
         }
         delegate void PopRetrievalFilterFunc(IntPtr self);
@@ -305,7 +281,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_GetRetrievalFilterStackSizeFunc = (GetRetrievalFilterStackSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRetrievalFilterStackSizeFunc));
             } 
-            
             return  m_GetRetrievalFilterStackSizeFunc(m_ptr);
         }
         delegate uint GetRetrievalFilterStackSizeFunc(IntPtr self);
@@ -317,7 +292,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_AddMessageFunc = (AddMessageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddMessageFunc));
             } 
-            
             return  m_AddMessageFunc(m_ptr, Category, Severity, ID, pDescription);
         }
         delegate int AddMessageFunc(IntPtr self, D3D11_MESSAGE_CATEGORY Category, D3D11_MESSAGE_SEVERITY Severity, D3D11_MESSAGE_ID ID, [MarshalAs(UnmanagedType.LPStr)] string pDescription);
@@ -329,7 +303,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_AddApplicationMessageFunc = (AddApplicationMessageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddApplicationMessageFunc));
             } 
-            
             return  m_AddApplicationMessageFunc(m_ptr, Severity, pDescription);
         }
         delegate int AddApplicationMessageFunc(IntPtr self, D3D11_MESSAGE_SEVERITY Severity, [MarshalAs(UnmanagedType.LPStr)] string pDescription);
@@ -341,7 +314,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(30);
                 m_SetBreakOnCategoryFunc = (SetBreakOnCategoryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetBreakOnCategoryFunc));
             } 
-            
             return  m_SetBreakOnCategoryFunc(m_ptr, Category, bEnable);
         }
         delegate int SetBreakOnCategoryFunc(IntPtr self, D3D11_MESSAGE_CATEGORY Category, int bEnable);
@@ -353,7 +325,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(31);
                 m_SetBreakOnSeverityFunc = (SetBreakOnSeverityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetBreakOnSeverityFunc));
             } 
-            
             return  m_SetBreakOnSeverityFunc(m_ptr, Severity, bEnable);
         }
         delegate int SetBreakOnSeverityFunc(IntPtr self, D3D11_MESSAGE_SEVERITY Severity, int bEnable);
@@ -365,7 +336,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(32);
                 m_SetBreakOnIDFunc = (SetBreakOnIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetBreakOnIDFunc));
             } 
-            
             return  m_SetBreakOnIDFunc(m_ptr, ID, bEnable);
         }
         delegate int SetBreakOnIDFunc(IntPtr self, D3D11_MESSAGE_ID ID, int bEnable);
@@ -377,7 +347,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(33);
                 m_GetBreakOnCategoryFunc = (GetBreakOnCategoryFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBreakOnCategoryFunc));
             } 
-            
             return  m_GetBreakOnCategoryFunc(m_ptr, Category);
         }
         delegate int GetBreakOnCategoryFunc(IntPtr self, D3D11_MESSAGE_CATEGORY Category);
@@ -389,7 +358,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(34);
                 m_GetBreakOnSeverityFunc = (GetBreakOnSeverityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBreakOnSeverityFunc));
             } 
-            
             return  m_GetBreakOnSeverityFunc(m_ptr, Severity);
         }
         delegate int GetBreakOnSeverityFunc(IntPtr self, D3D11_MESSAGE_SEVERITY Severity);
@@ -401,7 +369,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(35);
                 m_GetBreakOnIDFunc = (GetBreakOnIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBreakOnIDFunc));
             } 
-            
             return  m_GetBreakOnIDFunc(m_ptr, ID);
         }
         delegate int GetBreakOnIDFunc(IntPtr self, D3D11_MESSAGE_ID ID);
@@ -413,7 +380,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(36);
                 m_SetMuteDebugOutputFunc = (SetMuteDebugOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMuteDebugOutputFunc));
             } 
-            
              m_SetMuteDebugOutputFunc(m_ptr, bMute);
         }
         delegate void SetMuteDebugOutputFunc(IntPtr self, int bMute);
@@ -425,7 +391,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(37);
                 m_GetMuteDebugOutputFunc = (GetMuteDebugOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMuteDebugOutputFunc));
             } 
-            
             return  m_GetMuteDebugOutputFunc(m_ptr);
         }
         delegate int GetMuteDebugOutputFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_errorCodeFunc = (get_errorCodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_errorCodeFunc));
             } 
-            
             return  m_get_errorCodeFunc(m_ptr, ref errorCode);
         }
         delegate int get_errorCodeFunc(IntPtr self, ref int errorCode);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_get_urlFunc = (get_urlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_urlFunc));
             } 
-            
             return  m_get_urlFunc(m_ptr, ref urlString);
         }
         delegate int get_urlFunc(IntPtr self, ref IntPtr urlString);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_get_reasonFunc = (get_reasonFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_reasonFunc));
             } 
-            
             return  m_get_reasonFunc(m_ptr, ref reasonString);
         }
         delegate int get_reasonFunc(IntPtr self, ref IntPtr reasonString);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_get_srcTextFunc = (get_srcTextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_srcTextFunc));
             } 
-            
             return  m_get_srcTextFunc(m_ptr, ref sourceString);
         }
         delegate int get_srcTextFunc(IntPtr self, ref IntPtr sourceString);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_lineFunc = (get_lineFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_lineFunc));
             } 
-            
             return  m_get_lineFunc(m_ptr, ref lineNumber);
         }
         delegate int get_lineFunc(IntPtr self, ref int lineNumber);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_get_lineposFunc = (get_lineposFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_lineposFunc));
             } 
-            
             return  m_get_lineposFunc(m_ptr, ref linePosition);
         }
         delegate int get_lineposFunc(IntPtr self, ref int linePosition);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_get_fileposFunc = (get_fileposFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_fileposFunc));
             } 
-            
             return  m_get_fileposFunc(m_ptr, ref filePosition);
         }
         delegate int get_fileposFunc(IntPtr self, ref int filePosition);

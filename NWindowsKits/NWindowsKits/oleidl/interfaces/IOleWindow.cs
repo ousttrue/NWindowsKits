@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetWindowFunc = (GetWindowFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowFunc));
             } 
-            
             return  m_GetWindowFunc(m_ptr, ref phwnd);
         }
         delegate int GetWindowFunc(IntPtr self, ref HWND phwnd);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ContextSensitiveHelpFunc = (ContextSensitiveHelpFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ContextSensitiveHelpFunc));
             } 
-            
             return  m_ContextSensitiveHelpFunc(m_ptr, fEnterMode);
         }
         delegate int ContextSensitiveHelpFunc(IntPtr self, int fEnterMode);

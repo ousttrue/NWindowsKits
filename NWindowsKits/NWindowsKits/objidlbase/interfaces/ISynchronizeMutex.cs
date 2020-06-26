@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ReleaseMutexFunc = (ReleaseMutexFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseMutexFunc));
             } 
-            
             return  m_ReleaseMutexFunc(m_ptr);
         }
         delegate int ReleaseMutexFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_OpenFunc = (OpenFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OpenFunc));
             } 
-            
             return  m_OpenFunc(m_ptr, pPUU);
         }
         delegate int OpenFunc(IntPtr self, IntPtr pPUU);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_CloseFunc = (CloseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CloseFunc));
             } 
-            
             return  m_CloseFunc(m_ptr, pPUU, fCommit);
         }
         delegate int CloseFunc(IntPtr self, IntPtr pPUU, int fCommit);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_AddFunc = (AddFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddFunc));
             } 
-            
             return  m_AddFunc(m_ptr, pUU);
         }
         delegate int AddFunc(IntPtr self, IntPtr pUU);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_FindUnitFunc = (FindUnitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindUnitFunc));
             } 
-            
             return  m_FindUnitFunc(m_ptr, pUU);
         }
         delegate int FindUnitFunc(IntPtr self, IntPtr pUU);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetParentStateFunc = (GetParentStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetParentStateFunc));
             } 
-            
             return  m_GetParentStateFunc(m_ptr, ref pdwState);
         }
         delegate int GetParentStateFunc(IntPtr self, ref uint pdwState);

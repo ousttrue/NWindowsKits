@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetSecurityIdFunc = (GetSecurityIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSecurityIdFunc));
             } 
-            
             return  m_GetSecurityIdFunc(m_ptr, ref pbSecurityId, ref pcbSecurityId, dwReserved);
         }
         delegate int GetSecurityIdFunc(IntPtr self, ref byte pbSecurityId, ref uint pcbSecurityId, ulong dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ProcessUrlActionFunc = (ProcessUrlActionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessUrlActionFunc));
             } 
-            
             return  m_ProcessUrlActionFunc(m_ptr, dwAction, ref pPolicy, cbPolicy, ref pContext, cbContext, dwFlags, dwReserved);
         }
         delegate int ProcessUrlActionFunc(IntPtr self, uint dwAction, ref byte pPolicy, uint cbPolicy, ref byte pContext, uint cbContext, uint dwFlags, uint dwReserved);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_QueryCustomPolicyFunc = (QueryCustomPolicyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryCustomPolicyFunc));
             } 
-            
             return  m_QueryCustomPolicyFunc(m_ptr, ref guidKey, ref ppPolicy, ref pcbPolicy, ref pContext, cbContext, dwReserved);
         }
         delegate int QueryCustomPolicyFunc(IntPtr self, ref GUID guidKey, ref IntPtr ppPolicy, ref uint pcbPolicy, ref byte pContext, uint cbContext, uint dwReserved);

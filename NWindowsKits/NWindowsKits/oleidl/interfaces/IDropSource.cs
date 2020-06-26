@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryContinueDragFunc = (QueryContinueDragFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryContinueDragFunc));
             } 
-            
             return  m_QueryContinueDragFunc(m_ptr, fEscapePressed, grfKeyState);
         }
         delegate int QueryContinueDragFunc(IntPtr self, int fEscapePressed, uint grfKeyState);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GiveFeedbackFunc = (GiveFeedbackFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GiveFeedbackFunc));
             } 
-            
             return  m_GiveFeedbackFunc(m_ptr, dwEffect);
         }
         delegate int GiveFeedbackFunc(IntPtr self, uint dwEffect);

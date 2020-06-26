@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetVideoProcessorContentDescFunc = (GetVideoProcessorContentDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoProcessorContentDescFunc));
             } 
-            
             return  m_GetVideoProcessorContentDescFunc(m_ptr, ref pContentDesc);
         }
         delegate int GetVideoProcessorContentDescFunc(IntPtr self, ref D3D11_VIDEO_PROCESSOR_CONTENT_DESC pContentDesc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_CheckVideoProcessorFormatFunc = (CheckVideoProcessorFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckVideoProcessorFormatFunc));
             } 
-            
             return  m_CheckVideoProcessorFormatFunc(m_ptr, Format, ref pFlags);
         }
         delegate int CheckVideoProcessorFormatFunc(IntPtr self, DXGI_FORMAT Format, ref uint pFlags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetVideoProcessorCapsFunc = (GetVideoProcessorCapsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoProcessorCapsFunc));
             } 
-            
             return  m_GetVideoProcessorCapsFunc(m_ptr, ref pCaps);
         }
         delegate int GetVideoProcessorCapsFunc(IntPtr self, ref D3D11_VIDEO_PROCESSOR_CAPS pCaps);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetVideoProcessorRateConversionCapsFunc = (GetVideoProcessorRateConversionCapsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoProcessorRateConversionCapsFunc));
             } 
-            
             return  m_GetVideoProcessorRateConversionCapsFunc(m_ptr, TypeIndex, ref pCaps);
         }
         delegate int GetVideoProcessorRateConversionCapsFunc(IntPtr self, uint TypeIndex, ref D3D11_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS pCaps);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetVideoProcessorCustomRateFunc = (GetVideoProcessorCustomRateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoProcessorCustomRateFunc));
             } 
-            
             return  m_GetVideoProcessorCustomRateFunc(m_ptr, TypeIndex, CustomRateIndex, ref pRate);
         }
         delegate int GetVideoProcessorCustomRateFunc(IntPtr self, uint TypeIndex, uint CustomRateIndex, ref D3D11_VIDEO_PROCESSOR_CUSTOM_RATE pRate);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetVideoProcessorFilterRangeFunc = (GetVideoProcessorFilterRangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoProcessorFilterRangeFunc));
             } 
-            
             return  m_GetVideoProcessorFilterRangeFunc(m_ptr, Filter, ref pRange);
         }
         delegate int GetVideoProcessorFilterRangeFunc(IntPtr self, D3D11_VIDEO_PROCESSOR_FILTER Filter, ref D3D11_VIDEO_PROCESSOR_FILTER_RANGE pRange);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetBorderFunc = (GetBorderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBorderFunc));
             } 
-            
             return  m_GetBorderFunc(m_ptr, ref lprectBorder);
         }
         delegate int GetBorderFunc(IntPtr self, ref RECT lprectBorder);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_RequestBorderSpaceFunc = (RequestBorderSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RequestBorderSpaceFunc));
             } 
-            
             return  m_RequestBorderSpaceFunc(m_ptr, ref pborderwidths);
         }
         delegate int RequestBorderSpaceFunc(IntPtr self, ref RECT pborderwidths);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetBorderSpaceFunc = (SetBorderSpaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetBorderSpaceFunc));
             } 
-            
             return  m_SetBorderSpaceFunc(m_ptr, ref pborderwidths);
         }
         delegate int SetBorderSpaceFunc(IntPtr self, ref RECT pborderwidths);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_SetActiveObjectFunc = (SetActiveObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetActiveObjectFunc));
             } 
-            
             return  m_SetActiveObjectFunc(m_ptr, pActiveObject, pszObjName);
         }
         delegate int SetActiveObjectFunc(IntPtr self, IntPtr pActiveObject, IntPtr pszObjName);

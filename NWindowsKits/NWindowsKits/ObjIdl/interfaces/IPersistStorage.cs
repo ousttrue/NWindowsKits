@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_IsDirtyFunc = (IsDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsDirtyFunc));
             } 
-            
             return  m_IsDirtyFunc(m_ptr);
         }
         delegate int IsDirtyFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_InitNewFunc = (InitNewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitNewFunc));
             } 
-            
             return  m_InitNewFunc(m_ptr, pStg);
         }
         delegate int InitNewFunc(IntPtr self, IntPtr pStg);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_LoadFunc = (LoadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadFunc));
             } 
-            
             return  m_LoadFunc(m_ptr, pStg);
         }
         delegate int LoadFunc(IntPtr self, IntPtr pStg);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SaveFunc = (SaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveFunc));
             } 
-            
             return  m_SaveFunc(m_ptr, pStgSave, fSameAsLoad);
         }
         delegate int SaveFunc(IntPtr self, IntPtr pStgSave, int fSameAsLoad);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_SaveCompletedFunc = (SaveCompletedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveCompletedFunc));
             } 
-            
             return  m_SaveCompletedFunc(m_ptr, pStgNew);
         }
         delegate int SaveCompletedFunc(IntPtr self, IntPtr pStgNew);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_HandsOffStorageFunc = (HandsOffStorageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HandsOffStorageFunc));
             } 
-            
             return  m_HandsOffStorageFunc(m_ptr);
         }
         delegate int HandsOffStorageFunc(IntPtr self);

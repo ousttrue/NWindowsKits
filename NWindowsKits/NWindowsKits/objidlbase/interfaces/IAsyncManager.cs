@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CompleteCallFunc = (CompleteCallFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CompleteCallFunc));
             } 
-            
             return  m_CompleteCallFunc(m_ptr, Result);
         }
         delegate int CompleteCallFunc(IntPtr self, int Result);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetCallContextFunc = (GetCallContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCallContextFunc));
             } 
-            
             return  m_GetCallContextFunc(m_ptr, ref riid, ref pInterface);
         }
         delegate int GetCallContextFunc(IntPtr self, ref Guid riid, ref IntPtr pInterface);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetStateFunc = (GetStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetStateFunc));
             } 
-            
             return  m_GetStateFunc(m_ptr, pulStateFlags);
         }
         delegate int GetStateFunc(IntPtr self, IntPtr pulStateFlags);

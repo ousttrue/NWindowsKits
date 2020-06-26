@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AddRefOnProcessFunc = (AddRefOnProcessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefOnProcessFunc));
             } 
-            
             return  m_AddRefOnProcessFunc(m_ptr);
         }
         delegate uint AddRefOnProcessFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ReleaseRefOnProcessFunc = (ReleaseRefOnProcessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseRefOnProcessFunc));
             } 
-            
             return  m_ReleaseRefOnProcessFunc(m_ptr);
         }
         delegate uint ReleaseRefOnProcessFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DragEnterTargetFunc = (DragEnterTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DragEnterTargetFunc));
             } 
-            
             return  m_DragEnterTargetFunc(m_ptr, hwndTarget);
         }
         delegate int DragEnterTargetFunc(IntPtr self, HWND hwndTarget);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_DragLeaveTargetFunc = (DragLeaveTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DragLeaveTargetFunc));
             } 
-            
             return  m_DragLeaveTargetFunc(m_ptr);
         }
         delegate int DragLeaveTargetFunc(IntPtr self);

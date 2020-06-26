@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_EnterFunc = (EnterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnterFunc));
             } 
-            
              m_EnterFunc(m_ptr);
         }
         delegate void EnterFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_LeaveFunc = (LeaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LeaveFunc));
             } 
-            
              m_LeaveFunc(m_ptr);
         }
         delegate void LeaveFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetMultithreadProtectedFunc = (SetMultithreadProtectedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetMultithreadProtectedFunc));
             } 
-            
             return  m_SetMultithreadProtectedFunc(m_ptr, bMTProtect);
         }
         delegate int SetMultithreadProtectedFunc(IntPtr self, int bMTProtect);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetMultithreadProtectedFunc = (GetMultithreadProtectedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMultithreadProtectedFunc));
             } 
-            
             return  m_GetMultithreadProtectedFunc(m_ptr);
         }
         delegate int GetMultithreadProtectedFunc(IntPtr self);

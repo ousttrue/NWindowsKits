@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PutPropertyFunc = (PutPropertyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PutPropertyFunc));
             } 
-            
             return  m_PutPropertyFunc(m_ptr, mkp, val);
         }
         delegate int PutPropertyFunc(IntPtr self, MONIKERPROPERTY mkp, [MarshalAs(UnmanagedType.LPWStr)] string val);

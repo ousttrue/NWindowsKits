@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(43);
                 m_get_tagNameFunc = (get_tagNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_tagNameFunc));
             } 
-            
             return  m_get_tagNameFunc(m_ptr, ref tagName);
         }
         delegate int get_tagNameFunc(IntPtr self, ref IntPtr tagName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(44);
                 m_getAttributeFunc = (getAttributeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getAttributeFunc));
             } 
-            
             return  m_getAttributeFunc(m_ptr, name, ref value);
         }
         delegate int getAttributeFunc(IntPtr self, IntPtr name, ref VARIANT value);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(45);
                 m_setAttributeFunc = (setAttributeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(setAttributeFunc));
             } 
-            
             return  m_setAttributeFunc(m_ptr, name, value);
         }
         delegate int setAttributeFunc(IntPtr self, IntPtr name, VARIANT value);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(46);
                 m_removeAttributeFunc = (removeAttributeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(removeAttributeFunc));
             } 
-            
             return  m_removeAttributeFunc(m_ptr, name);
         }
         delegate int removeAttributeFunc(IntPtr self, IntPtr name);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(47);
                 m_getAttributeNodeFunc = (getAttributeNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getAttributeNodeFunc));
             } 
-            
             return  m_getAttributeNodeFunc(m_ptr, name, ref attributeNode);
         }
         delegate int getAttributeNodeFunc(IntPtr self, IntPtr name, ref IntPtr attributeNode);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(48);
                 m_setAttributeNodeFunc = (setAttributeNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(setAttributeNodeFunc));
             } 
-            
             return  m_setAttributeNodeFunc(m_ptr, DOMAttribute, ref attributeNode);
         }
         delegate int setAttributeNodeFunc(IntPtr self, IntPtr DOMAttribute, ref IntPtr attributeNode);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(49);
                 m_removeAttributeNodeFunc = (removeAttributeNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(removeAttributeNodeFunc));
             } 
-            
             return  m_removeAttributeNodeFunc(m_ptr, DOMAttribute, ref attributeNode);
         }
         delegate int removeAttributeNodeFunc(IntPtr self, IntPtr DOMAttribute, ref IntPtr attributeNode);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(50);
                 m_getElementsByTagNameFunc = (getElementsByTagNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getElementsByTagNameFunc));
             } 
-            
             return  m_getElementsByTagNameFunc(m_ptr, tagName, ref resultList);
         }
         delegate int getElementsByTagNameFunc(IntPtr self, IntPtr tagName, ref IntPtr resultList);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(51);
                 m_normalizeFunc = (normalizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(normalizeFunc));
             } 
-            
             return  m_normalizeFunc(m_ptr);
         }
         delegate int normalizeFunc(IntPtr self);

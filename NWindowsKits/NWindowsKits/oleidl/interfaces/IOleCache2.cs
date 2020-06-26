@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_UpdateCacheFunc = (UpdateCacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UpdateCacheFunc));
             } 
-            
             return  m_UpdateCacheFunc(m_ptr, pDataObject, grfUpdf, pReserved);
         }
         delegate int UpdateCacheFunc(IntPtr self, IntPtr pDataObject, uint grfUpdf, IntPtr pReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_DiscardCacheFunc = (DiscardCacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DiscardCacheFunc));
             } 
-            
             return  m_DiscardCacheFunc(m_ptr, dwDiscardOptions);
         }
         delegate int DiscardCacheFunc(IntPtr self, uint dwDiscardOptions);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate int GetDescFunc(IntPtr self, ref DXGI_OUTPUT_DESC pDesc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDisplayModeListFunc = (GetDisplayModeListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayModeListFunc));
             } 
-            
             return  m_GetDisplayModeListFunc(m_ptr, EnumFormat, Flags, ref pNumModes, ref pDesc);
         }
         delegate int GetDisplayModeListFunc(IntPtr self, DXGI_FORMAT EnumFormat, uint Flags, ref uint pNumModes, ref DXGI_MODE_DESC pDesc);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_FindClosestMatchingModeFunc = (FindClosestMatchingModeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindClosestMatchingModeFunc));
             } 
-            
             return  m_FindClosestMatchingModeFunc(m_ptr, ref pModeToMatch, ref pClosestMatch, pConcernedDevice);
         }
         delegate int FindClosestMatchingModeFunc(IntPtr self, ref DXGI_MODE_DESC pModeToMatch, ref DXGI_MODE_DESC pClosestMatch, IntPtr pConcernedDevice);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_WaitForVBlankFunc = (WaitForVBlankFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitForVBlankFunc));
             } 
-            
             return  m_WaitForVBlankFunc(m_ptr);
         }
         delegate int WaitForVBlankFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_TakeOwnershipFunc = (TakeOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TakeOwnershipFunc));
             } 
-            
             return  m_TakeOwnershipFunc(m_ptr, pDevice, Exclusive);
         }
         delegate int TakeOwnershipFunc(IntPtr self, IntPtr pDevice, int Exclusive);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_ReleaseOwnershipFunc = (ReleaseOwnershipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseOwnershipFunc));
             } 
-            
              m_ReleaseOwnershipFunc(m_ptr);
         }
         delegate void ReleaseOwnershipFunc(IntPtr self);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetGammaControlCapabilitiesFunc = (GetGammaControlCapabilitiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlCapabilitiesFunc));
             } 
-            
             return  m_GetGammaControlCapabilitiesFunc(m_ptr, ref pGammaCaps);
         }
         delegate int GetGammaControlCapabilitiesFunc(IntPtr self, ref DXGI_GAMMA_CONTROL_CAPABILITIES pGammaCaps);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_SetGammaControlFunc = (SetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGammaControlFunc));
             } 
-            
             return  m_SetGammaControlFunc(m_ptr, ref pArray);
         }
         delegate int SetGammaControlFunc(IntPtr self, ref DXGI_GAMMA_CONTROL pArray);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetGammaControlFunc = (GetGammaControlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetGammaControlFunc));
             } 
-            
             return  m_GetGammaControlFunc(m_ptr, ref pArray);
         }
         delegate int GetGammaControlFunc(IntPtr self, ref DXGI_GAMMA_CONTROL pArray);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_SetDisplaySurfaceFunc = (SetDisplaySurfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDisplaySurfaceFunc));
             } 
-            
             return  m_SetDisplaySurfaceFunc(m_ptr, pScanoutSurface);
         }
         delegate int SetDisplaySurfaceFunc(IntPtr self, IntPtr pScanoutSurface);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_GetDisplaySurfaceDataFunc = (GetDisplaySurfaceDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplaySurfaceDataFunc));
             } 
-            
             return  m_GetDisplaySurfaceDataFunc(m_ptr, pDestination);
         }
         delegate int GetDisplaySurfaceDataFunc(IntPtr self, IntPtr pDestination);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_GetFrameStatisticsFunc = (GetFrameStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFrameStatisticsFunc));
             } 
-            
             return  m_GetFrameStatisticsFunc(m_ptr, ref pStats);
         }
         delegate int GetFrameStatisticsFunc(IntPtr self, ref DXGI_FRAME_STATISTICS pStats);

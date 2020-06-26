@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_PreInitializeFunc = (PreInitializeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreInitializeFunc));
             } 
-            
             return  m_PreInitializeFunc(m_ptr, dwCoInit, dwCurThreadAptRefs);
         }
         delegate int PreInitializeFunc(IntPtr self, uint dwCoInit, uint dwCurThreadAptRefs);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_PostInitializeFunc = (PostInitializeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostInitializeFunc));
             } 
-            
             return  m_PostInitializeFunc(m_ptr, hrCoInit, dwCoInit, dwNewThreadAptRefs);
         }
         delegate int PostInitializeFunc(IntPtr self, int hrCoInit, uint dwCoInit, uint dwNewThreadAptRefs);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_PreUninitializeFunc = (PreUninitializeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PreUninitializeFunc));
             } 
-            
             return  m_PreUninitializeFunc(m_ptr, dwCurThreadAptRefs);
         }
         delegate int PreUninitializeFunc(IntPtr self, uint dwCurThreadAptRefs);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_PostUninitializeFunc = (PostUninitializeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PostUninitializeFunc));
             } 
-            
             return  m_PostUninitializeFunc(m_ptr, dwNewThreadAptRefs);
         }
         delegate int PostUninitializeFunc(IntPtr self, uint dwNewThreadAptRefs);

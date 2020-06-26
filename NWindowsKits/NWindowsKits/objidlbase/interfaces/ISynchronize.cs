@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_WaitFunc = (WaitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitFunc));
             } 
-            
             return  m_WaitFunc(m_ptr, dwFlags, dwMilliseconds);
         }
         delegate int WaitFunc(IntPtr self, uint dwFlags, uint dwMilliseconds);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SignalFunc = (SignalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SignalFunc));
             } 
-            
             return  m_SignalFunc(m_ptr);
         }
         delegate int SignalFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ResetFunc = (ResetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResetFunc));
             } 
-            
             return  m_ResetFunc(m_ptr);
         }
         delegate int ResetFunc(IntPtr self);

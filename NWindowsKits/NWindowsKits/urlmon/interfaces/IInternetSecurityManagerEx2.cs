@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_MapUrlToZoneEx2Func = (MapUrlToZoneEx2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapUrlToZoneEx2Func));
             } 
-            
             return  m_MapUrlToZoneEx2Func(m_ptr, pUri, ref pdwZone, dwFlags, ref ppwszMappedUrl, ref pdwOutFlags);
         }
         delegate int MapUrlToZoneEx2Func(IntPtr self, IntPtr pUri, ref uint pdwZone, uint dwFlags, ref IntPtr ppwszMappedUrl, ref uint pdwOutFlags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_ProcessUrlActionEx2Func = (ProcessUrlActionEx2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessUrlActionEx2Func));
             } 
-            
             return  m_ProcessUrlActionEx2Func(m_ptr, pUri, dwAction, ref pPolicy, cbPolicy, ref pContext, cbContext, dwFlags, dwReserved, ref pdwOutFlags);
         }
         delegate int ProcessUrlActionEx2Func(IntPtr self, IntPtr pUri, uint dwAction, ref byte pPolicy, uint cbPolicy, ref byte pContext, uint cbContext, uint dwFlags, ulong dwReserved, ref uint pdwOutFlags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetSecurityIdEx2Func = (GetSecurityIdEx2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSecurityIdEx2Func));
             } 
-            
             return  m_GetSecurityIdEx2Func(m_ptr, pUri, ref pbSecurityId, ref pcbSecurityId, dwReserved);
         }
         delegate int GetSecurityIdEx2Func(IntPtr self, IntPtr pUri, ref byte pbSecurityId, ref uint pcbSecurityId, ulong dwReserved);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_QueryCustomPolicyEx2Func = (QueryCustomPolicyEx2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryCustomPolicyEx2Func));
             } 
-            
             return  m_QueryCustomPolicyEx2Func(m_ptr, pUri, ref guidKey, ref ppPolicy, ref pcbPolicy, ref pContext, cbContext, dwReserved);
         }
         delegate int QueryCustomPolicyEx2Func(IntPtr self, IntPtr pUri, ref GUID guidKey, ref IntPtr ppPolicy, ref uint pcbPolicy, ref byte pContext, uint cbContext, ulong dwReserved);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ResetInitializerTimeoutFunc = (ResetInitializerTimeoutFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResetInitializerTimeoutFunc));
             } 
-            
             return  m_ResetInitializerTimeoutFunc(m_ptr, dwSecondsRemaining);
         }
         delegate int ResetInitializerTimeoutFunc(IntPtr self, uint dwSecondsRemaining);

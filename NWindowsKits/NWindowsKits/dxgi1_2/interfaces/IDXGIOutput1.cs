@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_GetDisplayModeList1Func = (GetDisplayModeList1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayModeList1Func));
             } 
-            
             return  m_GetDisplayModeList1Func(m_ptr, EnumFormat, Flags, ref pNumModes, ref pDesc);
         }
         delegate int GetDisplayModeList1Func(IntPtr self, DXGI_FORMAT EnumFormat, uint Flags, ref uint pNumModes, ref DXGI_MODE_DESC1 pDesc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_FindClosestMatchingMode1Func = (FindClosestMatchingMode1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindClosestMatchingMode1Func));
             } 
-            
             return  m_FindClosestMatchingMode1Func(m_ptr, ref pModeToMatch, ref pClosestMatch, pConcernedDevice);
         }
         delegate int FindClosestMatchingMode1Func(IntPtr self, ref DXGI_MODE_DESC1 pModeToMatch, ref DXGI_MODE_DESC1 pClosestMatch, IntPtr pConcernedDevice);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_GetDisplaySurfaceData1Func = (GetDisplaySurfaceData1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplaySurfaceData1Func));
             } 
-            
             return  m_GetDisplaySurfaceData1Func(m_ptr, pDestination);
         }
         delegate int GetDisplaySurfaceData1Func(IntPtr self, IntPtr pDestination);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_DuplicateOutputFunc = (DuplicateOutputFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DuplicateOutputFunc));
             } 
-            
             return  m_DuplicateOutputFunc(m_ptr, pDevice, ref ppOutputDuplication);
         }
         delegate int DuplicateOutputFunc(IntPtr self, IntPtr pDevice, ref IntPtr ppOutputDuplication);

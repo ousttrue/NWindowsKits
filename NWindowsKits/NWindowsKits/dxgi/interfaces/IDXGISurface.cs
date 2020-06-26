@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
             return  m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate int GetDescFunc(IntPtr self, ref DXGI_SURFACE_DESC pDesc);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_MapFunc = (MapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapFunc));
             } 
-            
             return  m_MapFunc(m_ptr, ref pLockedRect, MapFlags);
         }
         delegate int MapFunc(IntPtr self, ref DXGI_MAPPED_RECT pLockedRect, uint MapFlags);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_UnmapFunc = (UnmapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmapFunc));
             } 
-            
             return  m_UnmapFunc(m_ptr);
         }
         delegate int UnmapFunc(IntPtr self);

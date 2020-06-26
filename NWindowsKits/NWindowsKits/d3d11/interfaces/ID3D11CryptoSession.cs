@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetCryptoTypeFunc = (GetCryptoTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCryptoTypeFunc));
             } 
-            
              m_GetCryptoTypeFunc(m_ptr, ref pCryptoType);
         }
         delegate void GetCryptoTypeFunc(IntPtr self, ref GUID pCryptoType);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDecoderProfileFunc = (GetDecoderProfileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDecoderProfileFunc));
             } 
-            
              m_GetDecoderProfileFunc(m_ptr, ref pDecoderProfile);
         }
         delegate void GetDecoderProfileFunc(IntPtr self, ref GUID pDecoderProfile);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetCertificateSizeFunc = (GetCertificateSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCertificateSizeFunc));
             } 
-            
             return  m_GetCertificateSizeFunc(m_ptr, ref pCertificateSize);
         }
         delegate int GetCertificateSizeFunc(IntPtr self, ref uint pCertificateSize);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetCertificateFunc = (GetCertificateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCertificateFunc));
             } 
-            
             return  m_GetCertificateFunc(m_ptr, CertificateSize, ref pCertificate);
         }
         delegate int GetCertificateFunc(IntPtr self, uint CertificateSize, ref byte pCertificate);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetCryptoSessionHandleFunc = (GetCryptoSessionHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCryptoSessionHandleFunc));
             } 
-            
              m_GetCryptoSessionHandleFunc(m_ptr, ref pCryptoSessionHandle);
         }
         delegate void GetCryptoSessionHandleFunc(IntPtr self, ref IntPtr pCryptoSessionHandle);

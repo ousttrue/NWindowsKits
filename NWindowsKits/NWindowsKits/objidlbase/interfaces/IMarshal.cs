@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetUnmarshalClassFunc = (GetUnmarshalClassFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetUnmarshalClassFunc));
             } 
-            
             return  m_GetUnmarshalClassFunc(m_ptr, ref riid, pv, dwDestContext, pvDestContext, mshlflags, pCid);
         }
         delegate int GetUnmarshalClassFunc(IntPtr self, ref Guid riid, IntPtr pv, uint dwDestContext, IntPtr pvDestContext, uint mshlflags, IntPtr pCid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetMarshalSizeMaxFunc = (GetMarshalSizeMaxFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMarshalSizeMaxFunc));
             } 
-            
             return  m_GetMarshalSizeMaxFunc(m_ptr, ref riid, pv, dwDestContext, pvDestContext, mshlflags, ref pSize);
         }
         delegate int GetMarshalSizeMaxFunc(IntPtr self, ref Guid riid, IntPtr pv, uint dwDestContext, IntPtr pvDestContext, uint mshlflags, ref uint pSize);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_MarshalInterfaceFunc = (MarshalInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MarshalInterfaceFunc));
             } 
-            
             return  m_MarshalInterfaceFunc(m_ptr, pStm, ref riid, pv, dwDestContext, pvDestContext, mshlflags);
         }
         delegate int MarshalInterfaceFunc(IntPtr self, IntPtr pStm, ref Guid riid, IntPtr pv, uint dwDestContext, IntPtr pvDestContext, uint mshlflags);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_UnmarshalInterfaceFunc = (UnmarshalInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmarshalInterfaceFunc));
             } 
-            
             return  m_UnmarshalInterfaceFunc(m_ptr, pStm, ref riid, ref ppv);
         }
         delegate int UnmarshalInterfaceFunc(IntPtr self, IntPtr pStm, ref Guid riid, ref IntPtr ppv);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_ReleaseMarshalDataFunc = (ReleaseMarshalDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseMarshalDataFunc));
             } 
-            
             return  m_ReleaseMarshalDataFunc(m_ptr, pStm);
         }
         delegate int ReleaseMarshalDataFunc(IntPtr self, IntPtr pStm);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_DisconnectObjectFunc = (DisconnectObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DisconnectObjectFunc));
             } 
-            
             return  m_DisconnectObjectFunc(m_ptr, dwReserved);
         }
         delegate int DisconnectObjectFunc(IntPtr self, uint dwReserved);

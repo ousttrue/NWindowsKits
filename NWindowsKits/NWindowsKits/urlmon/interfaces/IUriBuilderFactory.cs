@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateIUriBuilderFunc = (CreateIUriBuilderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateIUriBuilderFunc));
             } 
-            
             return  m_CreateIUriBuilderFunc(m_ptr, dwFlags, dwReserved, ref ppIUriBuilder);
         }
         delegate int CreateIUriBuilderFunc(IntPtr self, uint dwFlags, ulong dwReserved, ref IntPtr ppIUriBuilder);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CreateInitializedIUriBuilderFunc = (CreateInitializedIUriBuilderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateInitializedIUriBuilderFunc));
             } 
-            
             return  m_CreateInitializedIUriBuilderFunc(m_ptr, dwFlags, dwReserved, ref ppIUriBuilder);
         }
         delegate int CreateInitializedIUriBuilderFunc(IntPtr self, uint dwFlags, ulong dwReserved, ref IntPtr ppIUriBuilder);

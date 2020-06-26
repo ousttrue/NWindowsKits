@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetCreationParametersFunc = (GetCreationParametersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCreationParametersFunc));
             } 
-            
             return  m_GetCreationParametersFunc(m_ptr, ref pVideoDesc, ref pConfig);
         }
         delegate int GetCreationParametersFunc(IntPtr self, ref D3D11_VIDEO_DECODER_DESC pVideoDesc, ref D3D11_VIDEO_DECODER_CONFIG pConfig);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDriverHandleFunc = (GetDriverHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDriverHandleFunc));
             } 
-            
             return  m_GetDriverHandleFunc(m_ptr, ref pDriverHandle);
         }
         delegate int GetDriverHandleFunc(IntPtr self, ref IntPtr pDriverHandle);

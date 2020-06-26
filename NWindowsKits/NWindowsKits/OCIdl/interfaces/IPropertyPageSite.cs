@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OnStatusChangeFunc = (OnStatusChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnStatusChangeFunc));
             } 
-            
             return  m_OnStatusChangeFunc(m_ptr, dwFlags);
         }
         delegate int OnStatusChangeFunc(IntPtr self, uint dwFlags);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetLocaleIDFunc = (GetLocaleIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLocaleIDFunc));
             } 
-            
             return  m_GetLocaleIDFunc(m_ptr, pLocaleID);
         }
         delegate int GetLocaleIDFunc(IntPtr self, IntPtr pLocaleID);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetPageContainerFunc = (GetPageContainerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPageContainerFunc));
             } 
-            
             return  m_GetPageContainerFunc(m_ptr, ref ppUnk);
         }
         delegate int GetPageContainerFunc(IntPtr self, ref IntPtr ppUnk);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_TranslateAcceleratorAFunc = (TranslateAcceleratorAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TranslateAcceleratorAFunc));
             } 
-            
             return  m_TranslateAcceleratorAFunc(m_ptr, ref pMsg);
         }
         delegate int TranslateAcceleratorAFunc(IntPtr self, ref MSG pMsg);

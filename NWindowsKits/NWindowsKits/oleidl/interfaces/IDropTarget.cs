@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DragEnterFunc = (DragEnterFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DragEnterFunc));
             } 
-            
             return  m_DragEnterFunc(m_ptr, pDataObj, grfKeyState, pt, ref pdwEffect);
         }
         delegate int DragEnterFunc(IntPtr self, IntPtr pDataObj, uint grfKeyState, POINTL pt, ref uint pdwEffect);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_DragOverFunc = (DragOverFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DragOverFunc));
             } 
-            
             return  m_DragOverFunc(m_ptr, grfKeyState, pt, ref pdwEffect);
         }
         delegate int DragOverFunc(IntPtr self, uint grfKeyState, POINTL pt, ref uint pdwEffect);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_DragLeaveFunc = (DragLeaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DragLeaveFunc));
             } 
-            
             return  m_DragLeaveFunc(m_ptr);
         }
         delegate int DragLeaveFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_DropFunc = (DropFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DropFunc));
             } 
-            
             return  m_DropFunc(m_ptr, pDataObj, grfKeyState, pt, ref pdwEffect);
         }
         delegate int DropFunc(IntPtr self, IntPtr pDataObj, uint grfKeyState, POINTL pt, ref uint pdwEffect);

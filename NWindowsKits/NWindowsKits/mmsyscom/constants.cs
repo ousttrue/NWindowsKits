@@ -248,25 +248,25 @@ namespace NWindowsKits
         public const int MMSYSERR_LASTERROR = unchecked((int)( MMSYSERR_BASE + 21 ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:288
-        public const int CALLBACK_TYPEMASK = unchecked((int)0x00070000l);
+        public const int CALLBACK_TYPEMASK = unchecked((int)0x00070000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:289
-        public const int CALLBACK_NULL = unchecked((int)0x00000000l);
+        public const int CALLBACK_NULL = unchecked((int)0x00000000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:290
-        public const int CALLBACK_WINDOW = unchecked((int)0x00010000l);
+        public const int CALLBACK_WINDOW = unchecked((int)0x00010000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:291
-        public const int CALLBACK_TASK = unchecked((int)0x00020000l);
+        public const int CALLBACK_TASK = unchecked((int)0x00020000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:292
-        public const int CALLBACK_FUNCTION = unchecked((int)0x00030000l);
+        public const int CALLBACK_FUNCTION = unchecked((int)0x00030000);
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:294
         public const int CALLBACK_THREAD = unchecked((int)( CALLBACK_TASK ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:295
-        public const int CALLBACK_EVENT = unchecked((int)0x00050000l);
+        public const int CALLBACK_EVENT = unchecked((int)0x00050000);
 
     }
 }

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetTypeFunc = (GetTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeFunc));
             } 
-            
              m_GetTypeFunc(m_ptr, ref rType);
         }
         delegate void GetTypeFunc(IntPtr self, ref D3D10_RESOURCE_DIMENSION rType);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_SetEvictionPriorityFunc = (SetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetEvictionPriorityFunc));
             } 
-            
              m_SetEvictionPriorityFunc(m_ptr, EvictionPriority);
         }
         delegate void SetEvictionPriorityFunc(IntPtr self, uint EvictionPriority);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetEvictionPriorityFunc = (GetEvictionPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetEvictionPriorityFunc));
             } 
-            
             return  m_GetEvictionPriorityFunc(m_ptr);
         }
         delegate uint GetEvictionPriorityFunc(IntPtr self);

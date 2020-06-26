@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateCallFunc = (CreateCallFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateCallFunc));
             } 
-            
             return  m_CreateCallFunc(m_ptr, ref riid, pCtrlUnk, ref riid2, ref ppv);
         }
         delegate int CreateCallFunc(IntPtr self, ref Guid riid, IntPtr pCtrlUnk, ref Guid riid2, ref IntPtr ppv);

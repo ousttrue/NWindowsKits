@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetResourceFunc = (GetResourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetResourceFunc));
             } 
-            
              m_GetResourceFunc(m_ptr, ref ppResource);
         }
         delegate void GetResourceFunc(IntPtr self, ref IntPtr ppResource);

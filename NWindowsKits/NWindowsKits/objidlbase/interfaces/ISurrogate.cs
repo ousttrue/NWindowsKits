@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_LoadDllServerFunc = (LoadDllServerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadDllServerFunc));
             } 
-            
             return  m_LoadDllServerFunc(m_ptr, ref Clsid);
         }
         delegate int LoadDllServerFunc(IntPtr self, ref Guid Clsid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_FreeSurrogateFunc = (FreeSurrogateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreeSurrogateFunc));
             } 
-            
             return  m_FreeSurrogateFunc(m_ptr);
         }
         delegate int FreeSurrogateFunc(IntPtr self);

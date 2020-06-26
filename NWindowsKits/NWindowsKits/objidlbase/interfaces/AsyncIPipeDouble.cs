@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_Begin_PullFunc = (Begin_PullFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_PullFunc));
             } 
-            
             return  m_Begin_PullFunc(m_ptr, cRequest);
         }
         delegate int Begin_PullFunc(IntPtr self, uint cRequest);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_Finish_PullFunc = (Finish_PullFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_PullFunc));
             } 
-            
             return  m_Finish_PullFunc(m_ptr, ref buf, pcReturned);
         }
         delegate int Finish_PullFunc(IntPtr self, ref double buf, IntPtr pcReturned);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_Begin_PushFunc = (Begin_PushFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_PushFunc));
             } 
-            
             return  m_Begin_PushFunc(m_ptr, ref buf, cSent);
         }
         delegate int Begin_PushFunc(IntPtr self, ref double buf, uint cSent);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_Finish_PushFunc = (Finish_PushFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_PushFunc));
             } 
-            
             return  m_Finish_PushFunc(m_ptr);
         }
         delegate int Finish_PushFunc(IntPtr self);

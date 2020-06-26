@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetRectFunc = (GetRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRectFunc));
             } 
-            
             return  m_GetRectFunc(m_ptr, dwAspect, ref pRect);
         }
         delegate int GetRectFunc(IntPtr self, uint dwAspect, ref RECTL pRect);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetViewStatusFunc = (GetViewStatusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetViewStatusFunc));
             } 
-            
             return  m_GetViewStatusFunc(m_ptr, ref pdwStatus);
         }
         delegate int GetViewStatusFunc(IntPtr self, ref uint pdwStatus);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_QueryHitPointFunc = (QueryHitPointFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryHitPointFunc));
             } 
-            
             return  m_QueryHitPointFunc(m_ptr, dwAspect, ref pRectBounds, ptlLoc, lCloseHint, ref pHitResult);
         }
         delegate int QueryHitPointFunc(IntPtr self, uint dwAspect, ref RECT pRectBounds, POINT ptlLoc, int lCloseHint, ref uint pHitResult);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_QueryHitRectFunc = (QueryHitRectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryHitRectFunc));
             } 
-            
             return  m_QueryHitRectFunc(m_ptr, dwAspect, ref pRectBounds, ref pRectLoc, lCloseHint, ref pHitResult);
         }
         delegate int QueryHitRectFunc(IntPtr self, uint dwAspect, ref RECT pRectBounds, ref RECT pRectLoc, int lCloseHint, ref uint pHitResult);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetNaturalExtentFunc = (GetNaturalExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNaturalExtentFunc));
             } 
-            
             return  m_GetNaturalExtentFunc(m_ptr, dwAspect, lindex, ref ptd, hicTargetDev, ref pExtentInfo, ref pSizel);
         }
         delegate int GetNaturalExtentFunc(IntPtr self, uint dwAspect, int lindex, ref DVTARGETDEVICE ptd, HDC hicTargetDev, ref DVEXTENTINFO pExtentInfo, ref SIZE pSizel);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_OnWindowMessageFunc = (OnWindowMessageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnWindowMessageFunc));
             } 
-            
             return  m_OnWindowMessageFunc(m_ptr, msg, wParam, lParam, plResult);
         }
         delegate int OnWindowMessageFunc(IntPtr self, uint msg, ulong wParam, long lParam, IntPtr plResult);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetDropTargetFunc = (GetDropTargetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDropTargetFunc));
             } 
-            
             return  m_GetDropTargetFunc(m_ptr, ref ppDropTarget);
         }
         delegate int GetDropTargetFunc(IntPtr self, ref IntPtr ppDropTarget);

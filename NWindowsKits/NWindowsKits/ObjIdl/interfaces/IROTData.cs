@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetComparisonDataFunc = (GetComparisonDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetComparisonDataFunc));
             } 
-            
             return  m_GetComparisonDataFunc(m_ptr, ref pbData, cbMax, pcbData);
         }
         delegate int GetComparisonDataFunc(IntPtr self, ref byte pbData, uint cbMax, IntPtr pcbData);

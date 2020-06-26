@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ResolveFunc = (ResolveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResolveFunc));
             } 
-            
             return  m_ResolveFunc(m_ptr, ref riid, ref ppvObjectReference);
         }
         delegate int ResolveFunc(IntPtr self, ref Guid riid, ref IntPtr ppvObjectReference);

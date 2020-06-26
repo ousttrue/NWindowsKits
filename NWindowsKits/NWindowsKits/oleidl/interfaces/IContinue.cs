@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_FContinueFunc = (FContinueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FContinueFunc));
             } 
-            
             return  m_FContinueFunc(m_ptr);
         }
         delegate int FContinueFunc(IntPtr self);

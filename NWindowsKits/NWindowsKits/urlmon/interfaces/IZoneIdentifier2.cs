@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetLastWriterPackageFamilyNameFunc = (GetLastWriterPackageFamilyNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastWriterPackageFamilyNameFunc));
             } 
-            
             return  m_GetLastWriterPackageFamilyNameFunc(m_ptr, ref packageFamilyName);
         }
         delegate int GetLastWriterPackageFamilyNameFunc(IntPtr self, ref IntPtr packageFamilyName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetLastWriterPackageFamilyNameFunc = (SetLastWriterPackageFamilyNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetLastWriterPackageFamilyNameFunc));
             } 
-            
             return  m_SetLastWriterPackageFamilyNameFunc(m_ptr, packageFamilyName);
         }
         delegate int SetLastWriterPackageFamilyNameFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string packageFamilyName);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_RemoveLastWriterPackageFamilyNameFunc = (RemoveLastWriterPackageFamilyNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RemoveLastWriterPackageFamilyNameFunc));
             } 
-            
             return  m_RemoveLastWriterPackageFamilyNameFunc(m_ptr);
         }
         delegate int RemoveLastWriterPackageFamilyNameFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetAppZoneIdFunc = (GetAppZoneIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAppZoneIdFunc));
             } 
-            
             return  m_GetAppZoneIdFunc(m_ptr, ref zone);
         }
         delegate int GetAppZoneIdFunc(IntPtr self, ref uint zone);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_SetAppZoneIdFunc = (SetAppZoneIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetAppZoneIdFunc));
             } 
-            
             return  m_SetAppZoneIdFunc(m_ptr, zone);
         }
         delegate int SetAppZoneIdFunc(IntPtr self, uint zone);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_RemoveAppZoneIdFunc = (RemoveAppZoneIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RemoveAppZoneIdFunc));
             } 
-            
             return  m_RemoveAppZoneIdFunc(m_ptr);
         }
         delegate int RemoveAppZoneIdFunc(IntPtr self);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetRequestTimeoutsFunc = (GetRequestTimeoutsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetRequestTimeoutsFunc));
             } 
-            
             return  m_GetRequestTimeoutsFunc(m_ptr, ref pdwConnectTimeout, ref pdwSendTimeout, ref pdwReceiveTimeout);
         }
         delegate int GetRequestTimeoutsFunc(IntPtr self, ref uint pdwConnectTimeout, ref uint pdwSendTimeout, ref uint pdwReceiveTimeout);

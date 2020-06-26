@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ParseUrlFunc = (ParseUrlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ParseUrlFunc));
             } 
-            
             return  m_ParseUrlFunc(m_ptr, pwzUrl, ParseAction, dwParseFlags, ref pwzResult, cchResult, ref pcchResult, dwReserved);
         }
         delegate int ParseUrlFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzUrl, PARSEACTION ParseAction, uint dwParseFlags, ref ushort pwzResult, uint cchResult, ref uint pcchResult, uint dwReserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CombineUrlFunc = (CombineUrlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CombineUrlFunc));
             } 
-            
             return  m_CombineUrlFunc(m_ptr, pwzBaseUrl, pwzRelativeUrl, dwCombineFlags, ref pwzResult, cchResult, ref pcchResult, dwReserved);
         }
         delegate int CombineUrlFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzBaseUrl, [MarshalAs(UnmanagedType.LPWStr)] string pwzRelativeUrl, uint dwCombineFlags, ref ushort pwzResult, uint cchResult, ref uint pcchResult, uint dwReserved);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CompareUrlFunc = (CompareUrlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CompareUrlFunc));
             } 
-            
             return  m_CompareUrlFunc(m_ptr, pwzUrl1, pwzUrl2, dwCompareFlags);
         }
         delegate int CompareUrlFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzUrl1, [MarshalAs(UnmanagedType.LPWStr)] string pwzUrl2, uint dwCompareFlags);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_QueryInfoFunc = (QueryInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInfoFunc));
             } 
-            
             return  m_QueryInfoFunc(m_ptr, pwzUrl, OueryOption, dwQueryFlags, pBuffer, cbBuffer, ref pcbBuf, dwReserved);
         }
         delegate int QueryInfoFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string pwzUrl, QUERYOPTION OueryOption, uint dwQueryFlags, IntPtr pBuffer, uint cbBuffer, ref uint pcbBuf, uint dwReserved);

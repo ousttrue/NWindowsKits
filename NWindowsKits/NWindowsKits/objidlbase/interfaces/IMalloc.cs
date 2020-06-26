@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AllocFunc = (AllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AllocFunc));
             } 
-            
             return  m_AllocFunc(m_ptr, cb);
         }
         delegate IntPtr AllocFunc(IntPtr self, ulong cb);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ReallocFunc = (ReallocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReallocFunc));
             } 
-            
             return  m_ReallocFunc(m_ptr, pv, cb);
         }
         delegate IntPtr ReallocFunc(IntPtr self, IntPtr pv, ulong cb);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_FreeFunc = (FreeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreeFunc));
             } 
-            
              m_FreeFunc(m_ptr, pv);
         }
         delegate void FreeFunc(IntPtr self, IntPtr pv);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetSizeFunc = (GetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSizeFunc));
             } 
-            
             return  m_GetSizeFunc(m_ptr, pv);
         }
         delegate ulong GetSizeFunc(IntPtr self, IntPtr pv);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_DidAllocFunc = (DidAllocFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DidAllocFunc));
             } 
-            
             return  m_DidAllocFunc(m_ptr, pv);
         }
         delegate int DidAllocFunc(IntPtr self, IntPtr pv);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_HeapMinimizeFunc = (HeapMinimizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HeapMinimizeFunc));
             } 
-            
              m_HeapMinimizeFunc(m_ptr);
         }
         delegate void HeapMinimizeFunc(IntPtr self);

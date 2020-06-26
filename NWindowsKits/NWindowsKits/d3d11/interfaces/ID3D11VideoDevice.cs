@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateVideoDecoderFunc = (CreateVideoDecoderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoDecoderFunc));
             } 
-            
             return  m_CreateVideoDecoderFunc(m_ptr, ref pVideoDesc, ref pConfig, ref ppDecoder);
         }
         delegate int CreateVideoDecoderFunc(IntPtr self, ref D3D11_VIDEO_DECODER_DESC pVideoDesc, ref D3D11_VIDEO_DECODER_CONFIG pConfig, ref IntPtr ppDecoder);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CreateVideoProcessorFunc = (CreateVideoProcessorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoProcessorFunc));
             } 
-            
             return  m_CreateVideoProcessorFunc(m_ptr, pEnum, RateConversionIndex, ref ppVideoProcessor);
         }
         delegate int CreateVideoProcessorFunc(IntPtr self, IntPtr pEnum, uint RateConversionIndex, ref IntPtr ppVideoProcessor);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CreateAuthenticatedChannelFunc = (CreateAuthenticatedChannelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateAuthenticatedChannelFunc));
             } 
-            
             return  m_CreateAuthenticatedChannelFunc(m_ptr, ChannelType, ref ppAuthenticatedChannel);
         }
         delegate int CreateAuthenticatedChannelFunc(IntPtr self, D3D11_AUTHENTICATED_CHANNEL_TYPE ChannelType, ref IntPtr ppAuthenticatedChannel);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_CreateCryptoSessionFunc = (CreateCryptoSessionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateCryptoSessionFunc));
             } 
-            
             return  m_CreateCryptoSessionFunc(m_ptr, ref pCryptoType, ref pDecoderProfile, ref pKeyExchangeType, ref ppCryptoSession);
         }
         delegate int CreateCryptoSessionFunc(IntPtr self, ref GUID pCryptoType, ref GUID pDecoderProfile, ref GUID pKeyExchangeType, ref IntPtr ppCryptoSession);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_CreateVideoDecoderOutputViewFunc = (CreateVideoDecoderOutputViewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoDecoderOutputViewFunc));
             } 
-            
             return  m_CreateVideoDecoderOutputViewFunc(m_ptr, pResource, ref pDesc, ref ppVDOVView);
         }
         delegate int CreateVideoDecoderOutputViewFunc(IntPtr self, IntPtr pResource, ref D3D11_VIDEO_DECODER_OUTPUT_VIEW_DESC pDesc, ref IntPtr ppVDOVView);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_CreateVideoProcessorInputViewFunc = (CreateVideoProcessorInputViewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoProcessorInputViewFunc));
             } 
-            
             return  m_CreateVideoProcessorInputViewFunc(m_ptr, pResource, pEnum, ref pDesc, ref ppVPIView);
         }
         delegate int CreateVideoProcessorInputViewFunc(IntPtr self, IntPtr pResource, IntPtr pEnum, ref D3D11_VIDEO_PROCESSOR_INPUT_VIEW_DESC pDesc, ref IntPtr ppVPIView);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_CreateVideoProcessorOutputViewFunc = (CreateVideoProcessorOutputViewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoProcessorOutputViewFunc));
             } 
-            
             return  m_CreateVideoProcessorOutputViewFunc(m_ptr, pResource, pEnum, ref pDesc, ref ppVPOView);
         }
         delegate int CreateVideoProcessorOutputViewFunc(IntPtr self, IntPtr pResource, IntPtr pEnum, ref D3D11_VIDEO_PROCESSOR_OUTPUT_VIEW_DESC pDesc, ref IntPtr ppVPOView);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_CreateVideoProcessorEnumeratorFunc = (CreateVideoProcessorEnumeratorFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateVideoProcessorEnumeratorFunc));
             } 
-            
             return  m_CreateVideoProcessorEnumeratorFunc(m_ptr, ref pDesc, ref ppEnum);
         }
         delegate int CreateVideoProcessorEnumeratorFunc(IntPtr self, ref D3D11_VIDEO_PROCESSOR_CONTENT_DESC pDesc, ref IntPtr ppEnum);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_GetVideoDecoderProfileCountFunc = (GetVideoDecoderProfileCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoDecoderProfileCountFunc));
             } 
-            
             return  m_GetVideoDecoderProfileCountFunc(m_ptr);
         }
         delegate uint GetVideoDecoderProfileCountFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetVideoDecoderProfileFunc = (GetVideoDecoderProfileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoDecoderProfileFunc));
             } 
-            
             return  m_GetVideoDecoderProfileFunc(m_ptr, Index, ref pDecoderProfile);
         }
         delegate int GetVideoDecoderProfileFunc(IntPtr self, uint Index, ref GUID pDecoderProfile);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_CheckVideoDecoderFormatFunc = (CheckVideoDecoderFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckVideoDecoderFormatFunc));
             } 
-            
             return  m_CheckVideoDecoderFormatFunc(m_ptr, ref pDecoderProfile, Format, ref pSupported);
         }
         delegate int CheckVideoDecoderFormatFunc(IntPtr self, ref GUID pDecoderProfile, DXGI_FORMAT Format, ref int pSupported);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetVideoDecoderConfigCountFunc = (GetVideoDecoderConfigCountFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoDecoderConfigCountFunc));
             } 
-            
             return  m_GetVideoDecoderConfigCountFunc(m_ptr, ref pDesc, ref pCount);
         }
         delegate int GetVideoDecoderConfigCountFunc(IntPtr self, ref D3D11_VIDEO_DECODER_DESC pDesc, ref uint pCount);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetVideoDecoderConfigFunc = (GetVideoDecoderConfigFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetVideoDecoderConfigFunc));
             } 
-            
             return  m_GetVideoDecoderConfigFunc(m_ptr, ref pDesc, Index, ref pConfig);
         }
         delegate int GetVideoDecoderConfigFunc(IntPtr self, ref D3D11_VIDEO_DECODER_DESC pDesc, uint Index, ref D3D11_VIDEO_DECODER_CONFIG pConfig);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_GetContentProtectionCapsFunc = (GetContentProtectionCapsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContentProtectionCapsFunc));
             } 
-            
             return  m_GetContentProtectionCapsFunc(m_ptr, ref pCryptoType, ref pDecoderProfile, ref pCaps);
         }
         delegate int GetContentProtectionCapsFunc(IntPtr self, ref GUID pCryptoType, ref GUID pDecoderProfile, ref D3D11_VIDEO_CONTENT_PROTECTION_CAPS pCaps);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_CheckCryptoKeyExchangeFunc = (CheckCryptoKeyExchangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CheckCryptoKeyExchangeFunc));
             } 
-            
             return  m_CheckCryptoKeyExchangeFunc(m_ptr, ref pCryptoType, ref pDecoderProfile, Index, ref pKeyExchangeType);
         }
         delegate int CheckCryptoKeyExchangeFunc(IntPtr self, ref GUID pCryptoType, ref GUID pDecoderProfile, uint Index, ref GUID pKeyExchangeType);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_SetPrivateDataFunc = (SetPrivateDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPrivateDataFunc));
             } 
-            
             return  m_SetPrivateDataFunc(m_ptr, ref guid, DataSize, pData);
         }
         delegate int SetPrivateDataFunc(IntPtr self, ref GUID guid, uint DataSize, IntPtr pData);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_SetPrivateDataInterfaceFunc = (SetPrivateDataInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPrivateDataInterfaceFunc));
             } 
-            
             return  m_SetPrivateDataInterfaceFunc(m_ptr, ref guid, pData);
         }
         delegate int SetPrivateDataInterfaceFunc(IntPtr self, ref GUID guid, IntPtr pData);

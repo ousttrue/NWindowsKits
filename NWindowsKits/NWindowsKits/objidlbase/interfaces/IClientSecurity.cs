@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryBlanketFunc = (QueryBlanketFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryBlanketFunc));
             } 
-            
             return  m_QueryBlanketFunc(m_ptr, pProxy, ref pAuthnSvc, ref pAuthzSvc, ref pServerPrincName, ref pAuthnLevel, ref pImpLevel, ref pAuthInfo, ref pCapabilites);
         }
         delegate int QueryBlanketFunc(IntPtr self, IntPtr pProxy, ref uint pAuthnSvc, ref uint pAuthzSvc, ref IntPtr pServerPrincName, ref uint pAuthnLevel, ref uint pImpLevel, ref IntPtr pAuthInfo, ref uint pCapabilites);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetBlanketFunc = (SetBlanketFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetBlanketFunc));
             } 
-            
             return  m_SetBlanketFunc(m_ptr, pProxy, dwAuthnSvc, dwAuthzSvc, pServerPrincName, dwAuthnLevel, dwImpLevel, pAuthInfo, dwCapabilities);
         }
         delegate int SetBlanketFunc(IntPtr self, IntPtr pProxy, uint dwAuthnSvc, uint dwAuthzSvc, IntPtr pServerPrincName, uint dwAuthnLevel, uint dwImpLevel, IntPtr pAuthInfo, uint dwCapabilities);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CopyProxyFunc = (CopyProxyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CopyProxyFunc));
             } 
-            
             return  m_CopyProxyFunc(m_ptr, pProxy, ref ppCopy);
         }
         delegate int CopyProxyFunc(IntPtr self, IntPtr pProxy, ref IntPtr ppCopy);

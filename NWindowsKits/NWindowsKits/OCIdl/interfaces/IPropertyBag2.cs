@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ReadFunc = (ReadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadFunc));
             } 
-            
             return  m_ReadFunc(m_ptr, cProperties, ref pPropBag, pErrLog, ref pvarValue, ref phrError);
         }
         delegate int ReadFunc(IntPtr self, uint cProperties, ref PROPBAG2 pPropBag, IntPtr pErrLog, ref VARIANT pvarValue, ref int phrError);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_WriteFunc = (WriteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WriteFunc));
             } 
-            
             return  m_WriteFunc(m_ptr, cProperties, ref pPropBag, ref pvarValue);
         }
         delegate int WriteFunc(IntPtr self, uint cProperties, ref PROPBAG2 pPropBag, ref VARIANT pvarValue);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CountPropertiesFunc = (CountPropertiesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CountPropertiesFunc));
             } 
-            
             return  m_CountPropertiesFunc(m_ptr, pcProperties);
         }
         delegate int CountPropertiesFunc(IntPtr self, IntPtr pcProperties);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetPropertyInfoFunc = (GetPropertyInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPropertyInfoFunc));
             } 
-            
             return  m_GetPropertyInfoFunc(m_ptr, iProperty, cProperties, ref pPropBag, pcProperties);
         }
         delegate int GetPropertyInfoFunc(IntPtr self, uint iProperty, uint cProperties, ref PROPBAG2 pPropBag, IntPtr pcProperties);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_LoadObjectFunc = (LoadObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadObjectFunc));
             } 
-            
             return  m_LoadObjectFunc(m_ptr, pstrName, dwHint, pUnkObject, pErrLog);
         }
         delegate int LoadObjectFunc(IntPtr self, IntPtr pstrName, uint dwHint, IntPtr pUnkObject, IntPtr pErrLog);

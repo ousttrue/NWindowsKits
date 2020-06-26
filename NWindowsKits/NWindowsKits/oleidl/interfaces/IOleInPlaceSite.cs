@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_CanInPlaceActivateFunc = (CanInPlaceActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CanInPlaceActivateFunc));
             } 
-            
             return  m_CanInPlaceActivateFunc(m_ptr);
         }
         delegate int CanInPlaceActivateFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_OnInPlaceActivateFunc = (OnInPlaceActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInPlaceActivateFunc));
             } 
-            
             return  m_OnInPlaceActivateFunc(m_ptr);
         }
         delegate int OnInPlaceActivateFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_OnUIActivateFunc = (OnUIActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnUIActivateFunc));
             } 
-            
             return  m_OnUIActivateFunc(m_ptr);
         }
         delegate int OnUIActivateFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetWindowContextFunc = (GetWindowContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWindowContextFunc));
             } 
-            
             return  m_GetWindowContextFunc(m_ptr, ref ppFrame, ref ppDoc, ref lprcPosRect, ref lprcClipRect, ref lpFrameInfo);
         }
         delegate int GetWindowContextFunc(IntPtr self, ref IntPtr ppFrame, ref IntPtr ppDoc, ref RECT lprcPosRect, ref RECT lprcClipRect, ref LPOLEINPLACEFRAMEINFO lpFrameInfo);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_ScrollFunc = (ScrollFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ScrollFunc));
             } 
-            
             return  m_ScrollFunc(m_ptr, scrollExtant);
         }
         delegate int ScrollFunc(IntPtr self, SIZE scrollExtant);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_OnUIDeactivateFunc = (OnUIDeactivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnUIDeactivateFunc));
             } 
-            
             return  m_OnUIDeactivateFunc(m_ptr, fUndoable);
         }
         delegate int OnUIDeactivateFunc(IntPtr self, int fUndoable);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_OnInPlaceDeactivateFunc = (OnInPlaceDeactivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnInPlaceDeactivateFunc));
             } 
-            
             return  m_OnInPlaceDeactivateFunc(m_ptr);
         }
         delegate int OnInPlaceDeactivateFunc(IntPtr self);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_DiscardUndoStateFunc = (DiscardUndoStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DiscardUndoStateFunc));
             } 
-            
             return  m_DiscardUndoStateFunc(m_ptr);
         }
         delegate int DiscardUndoStateFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_DeactivateAndUndoFunc = (DeactivateAndUndoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeactivateAndUndoFunc));
             } 
-            
             return  m_DeactivateAndUndoFunc(m_ptr);
         }
         delegate int DeactivateAndUndoFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_OnPosRectChangeFunc = (OnPosRectChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnPosRectChangeFunc));
             } 
-            
             return  m_OnPosRectChangeFunc(m_ptr, ref lprcPosRect);
         }
         delegate int OnPosRectChangeFunc(IntPtr self, ref RECT lprcPosRect);

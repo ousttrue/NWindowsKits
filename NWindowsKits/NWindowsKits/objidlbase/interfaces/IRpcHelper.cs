@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetDCOMProtocolVersionFunc = (GetDCOMProtocolVersionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDCOMProtocolVersionFunc));
             } 
-            
             return  m_GetDCOMProtocolVersionFunc(m_ptr, ref pComVersion);
         }
         delegate int GetDCOMProtocolVersionFunc(IntPtr self, ref uint pComVersion);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetIIDFromOBJREFFunc = (GetIIDFromOBJREFFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIIDFromOBJREFFunc));
             } 
-            
             return  m_GetIIDFromOBJREFFunc(m_ptr, pObjRef, ref piid);
         }
         delegate int GetIIDFromOBJREFFunc(IntPtr self, IntPtr pObjRef, ref IntPtr piid);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetTrackingOptionsFunc = (SetTrackingOptionsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetTrackingOptionsFunc));
             } 
-            
             return  m_SetTrackingOptionsFunc(m_ptr, ResourceTypeFlags, Options);
         }
         delegate int SetTrackingOptionsFunc(IntPtr self, uint ResourceTypeFlags, uint Options);

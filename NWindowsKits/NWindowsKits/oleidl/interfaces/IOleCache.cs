@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CacheFunc = (CacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CacheFunc));
             } 
-            
             return  m_CacheFunc(m_ptr, ref pformatetc, advf, ref pdwConnection);
         }
         delegate int CacheFunc(IntPtr self, ref FORMATETC pformatetc, uint advf, ref uint pdwConnection);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UncacheFunc = (UncacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UncacheFunc));
             } 
-            
             return  m_UncacheFunc(m_ptr, dwConnection);
         }
         delegate int UncacheFunc(IntPtr self, uint dwConnection);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_EnumCacheFunc = (EnumCacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumCacheFunc));
             } 
-            
             return  m_EnumCacheFunc(m_ptr, ref ppenumSTATDATA);
         }
         delegate int EnumCacheFunc(IntPtr self, ref IntPtr ppenumSTATDATA);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_InitCacheFunc = (InitCacheFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitCacheFunc));
             } 
-            
             return  m_InitCacheFunc(m_ptr, pDataObject);
         }
         delegate int InitCacheFunc(IntPtr self, IntPtr pDataObject);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetDataFunc = (SetDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDataFunc));
             } 
-            
             return  m_SetDataFunc(m_ptr, ref pformatetc, pmedium, fRelease);
         }
         delegate int SetDataFunc(IntPtr self, ref FORMATETC pformatetc, IntPtr pmedium, int fRelease);

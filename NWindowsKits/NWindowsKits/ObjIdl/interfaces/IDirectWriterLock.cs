@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_WaitForWriteAccessFunc = (WaitForWriteAccessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WaitForWriteAccessFunc));
             } 
-            
             return  m_WaitForWriteAccessFunc(m_ptr, dwTimeout);
         }
         delegate int WaitForWriteAccessFunc(IntPtr self, uint dwTimeout);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ReleaseWriteAccessFunc = (ReleaseWriteAccessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseWriteAccessFunc));
             } 
-            
             return  m_ReleaseWriteAccessFunc(m_ptr);
         }
         delegate int ReleaseWriteAccessFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_HaveWriteAccessFunc = (HaveWriteAccessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HaveWriteAccessFunc));
             } 
-            
             return  m_HaveWriteAccessFunc(m_ptr);
         }
         delegate int HaveWriteAccessFunc(IntPtr self);

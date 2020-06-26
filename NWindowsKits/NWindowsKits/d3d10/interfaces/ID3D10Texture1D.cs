@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_MapFunc = (MapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MapFunc));
             } 
-            
             return  m_MapFunc(m_ptr, Subresource, MapType, MapFlags, ref ppData);
         }
         delegate int MapFunc(IntPtr self, uint Subresource, D3D10_MAP MapType, uint MapFlags, ref IntPtr ppData);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_UnmapFunc = (UnmapFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnmapFunc));
             } 
-            
              m_UnmapFunc(m_ptr, Subresource);
         }
         delegate void UnmapFunc(IntPtr self, uint Subresource);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
              m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate void GetDescFunc(IntPtr self, ref D3D10_TEXTURE1D_DESC pDesc);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_EnumConnectionPointsFunc = (EnumConnectionPointsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumConnectionPointsFunc));
             } 
-            
             return  m_EnumConnectionPointsFunc(m_ptr, ref ppEnum);
         }
         delegate int EnumConnectionPointsFunc(IntPtr self, ref IntPtr ppEnum);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_FindConnectionPointFunc = (FindConnectionPointFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FindConnectionPointFunc));
             } 
-            
             return  m_FindConnectionPointFunc(m_ptr, ref riid, ref ppCP);
         }
         delegate int FindConnectionPointFunc(IntPtr self, ref Guid riid, ref IntPtr ppCP);

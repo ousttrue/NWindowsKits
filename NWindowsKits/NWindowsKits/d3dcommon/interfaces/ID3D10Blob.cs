@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetBufferPointerFunc = (GetBufferPointerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferPointerFunc));
             } 
-            
             return  m_GetBufferPointerFunc(m_ptr);
         }
         delegate IntPtr GetBufferPointerFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetBufferSizeFunc = (GetBufferSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBufferSizeFunc));
             } 
-            
             return  m_GetBufferSizeFunc(m_ptr);
         }
         delegate ulong GetBufferSizeFunc(IntPtr self);

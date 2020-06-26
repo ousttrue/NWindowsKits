@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ClientGetSizeFunc = (ClientGetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClientGetSizeFunc));
             } 
-            
              m_ClientGetSizeFunc(m_ptr, ref uExtent, ref riid, pDataSize);
         }
         delegate void ClientGetSizeFunc(IntPtr self, ref GUID uExtent, ref Guid riid, IntPtr pDataSize);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ClientFillBufferFunc = (ClientFillBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClientFillBufferFunc));
             } 
-            
              m_ClientFillBufferFunc(m_ptr, ref uExtent, ref riid, pDataSize, pDataBuffer);
         }
         delegate void ClientFillBufferFunc(IntPtr self, ref GUID uExtent, ref Guid riid, IntPtr pDataSize, IntPtr pDataBuffer);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ClientNotifyFunc = (ClientNotifyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ClientNotifyFunc));
             } 
-            
              m_ClientNotifyFunc(m_ptr, ref uExtent, ref riid, cbDataSize, pDataBuffer, lDataRep, hrFault);
         }
         delegate void ClientNotifyFunc(IntPtr self, ref GUID uExtent, ref Guid riid, uint cbDataSize, IntPtr pDataBuffer, uint lDataRep, int hrFault);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ServerNotifyFunc = (ServerNotifyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ServerNotifyFunc));
             } 
-            
              m_ServerNotifyFunc(m_ptr, ref uExtent, ref riid, cbDataSize, pDataBuffer, lDataRep);
         }
         delegate void ServerNotifyFunc(IntPtr self, ref GUID uExtent, ref Guid riid, uint cbDataSize, IntPtr pDataBuffer, uint lDataRep);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_ServerGetSizeFunc = (ServerGetSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ServerGetSizeFunc));
             } 
-            
              m_ServerGetSizeFunc(m_ptr, ref uExtent, ref riid, hrFault, pDataSize);
         }
         delegate void ServerGetSizeFunc(IntPtr self, ref GUID uExtent, ref Guid riid, int hrFault, IntPtr pDataSize);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_ServerFillBufferFunc = (ServerFillBufferFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ServerFillBufferFunc));
             } 
-            
              m_ServerFillBufferFunc(m_ptr, ref uExtent, ref riid, pDataSize, pDataBuffer, hrFault);
         }
         delegate void ServerFillBufferFunc(IntPtr self, ref GUID uExtent, ref Guid riid, IntPtr pDataSize, IntPtr pDataBuffer, int hrFault);

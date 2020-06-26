@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetGUIDFunc = (SetGUIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetGUIDFunc));
             } 
-            
             return  m_SetGUIDFunc(m_ptr, ref rguid);
         }
         delegate int SetGUIDFunc(IntPtr self, ref GUID rguid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetSourceFunc = (SetSourceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetSourceFunc));
             } 
-            
             return  m_SetSourceFunc(m_ptr, szSource);
         }
         delegate int SetSourceFunc(IntPtr self, IntPtr szSource);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_SetDescriptionFunc = (SetDescriptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDescriptionFunc));
             } 
-            
             return  m_SetDescriptionFunc(m_ptr, szDescription);
         }
         delegate int SetDescriptionFunc(IntPtr self, IntPtr szDescription);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SetHelpFileFunc = (SetHelpFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHelpFileFunc));
             } 
-            
             return  m_SetHelpFileFunc(m_ptr, szHelpFile);
         }
         delegate int SetHelpFileFunc(IntPtr self, IntPtr szHelpFile);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetHelpContextFunc = (SetHelpContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHelpContextFunc));
             } 
-            
             return  m_SetHelpContextFunc(m_ptr, dwHelpContext);
         }
         delegate int SetHelpContextFunc(IntPtr self, uint dwHelpContext);

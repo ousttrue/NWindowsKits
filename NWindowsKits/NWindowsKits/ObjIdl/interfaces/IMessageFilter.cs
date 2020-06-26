@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_HandleInComingCallFunc = (HandleInComingCallFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HandleInComingCallFunc));
             } 
-            
             return  m_HandleInComingCallFunc(m_ptr, dwCallType, htaskCaller, dwTickCount, ref lpInterfaceInfo);
         }
         delegate uint HandleInComingCallFunc(IntPtr self, uint dwCallType, HTASK htaskCaller, uint dwTickCount, ref LPINTERFACEINFO lpInterfaceInfo);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_RetryRejectedCallFunc = (RetryRejectedCallFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RetryRejectedCallFunc));
             } 
-            
             return  m_RetryRejectedCallFunc(m_ptr, htaskCallee, dwTickCount, dwRejectType);
         }
         delegate uint RetryRejectedCallFunc(IntPtr self, HTASK htaskCallee, uint dwTickCount, uint dwRejectType);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_MessagePendingFunc = (MessagePendingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MessagePendingFunc));
             } 
-            
             return  m_MessagePendingFunc(m_ptr, htaskCallee, dwTickCount, dwPendingType);
         }
         delegate uint MessagePendingFunc(IntPtr self, HTASK htaskCallee, uint dwTickCount, uint dwPendingType);

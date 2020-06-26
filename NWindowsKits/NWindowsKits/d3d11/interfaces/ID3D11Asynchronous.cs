@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetDataSizeFunc = (GetDataSizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDataSizeFunc));
             } 
-            
             return  m_GetDataSizeFunc(m_ptr);
         }
         delegate uint GetDataSizeFunc(IntPtr self);

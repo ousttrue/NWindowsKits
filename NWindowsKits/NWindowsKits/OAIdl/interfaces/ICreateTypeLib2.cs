@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_DeleteTypeInfoFunc = (DeleteTypeInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeleteTypeInfoFunc));
             } 
-            
             return  m_DeleteTypeInfoFunc(m_ptr, szName);
         }
         delegate int DeleteTypeInfoFunc(IntPtr self, IntPtr szName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_SetCustDataFunc = (SetCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetCustDataFunc));
             } 
-            
             return  m_SetCustDataFunc(m_ptr, ref guid, ref pVarVal);
         }
         delegate int SetCustDataFunc(IntPtr self, ref GUID guid, ref VARIANT pVarVal);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_SetHelpStringContextFunc = (SetHelpStringContextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHelpStringContextFunc));
             } 
-            
             return  m_SetHelpStringContextFunc(m_ptr, dwHelpStringContext);
         }
         delegate int SetHelpStringContextFunc(IntPtr self, uint dwHelpStringContext);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_SetHelpStringDllFunc = (SetHelpStringDllFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHelpStringDllFunc));
             } 
-            
             return  m_SetHelpStringDllFunc(m_ptr, szFileName);
         }
         delegate int SetHelpStringDllFunc(IntPtr self, IntPtr szFileName);

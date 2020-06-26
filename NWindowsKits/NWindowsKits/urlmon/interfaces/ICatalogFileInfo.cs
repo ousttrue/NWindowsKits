@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetCatalogFileFunc = (GetCatalogFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCatalogFileFunc));
             } 
-            
             return  m_GetCatalogFileFunc(m_ptr, ref ppszCatalogFile);
         }
         delegate int GetCatalogFileFunc(IntPtr self, ref IntPtr ppszCatalogFile);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetJavaTrustFunc = (GetJavaTrustFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetJavaTrustFunc));
             } 
-            
             return  m_GetJavaTrustFunc(m_ptr, ref ppJavaTrust);
         }
         delegate int GetJavaTrustFunc(IntPtr self, ref IntPtr ppJavaTrust);

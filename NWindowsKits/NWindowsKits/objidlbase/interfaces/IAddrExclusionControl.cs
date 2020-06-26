@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetCurrentAddrExclusionListFunc = (GetCurrentAddrExclusionListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurrentAddrExclusionListFunc));
             } 
-            
             return  m_GetCurrentAddrExclusionListFunc(m_ptr, ref riid, ref ppEnumerator);
         }
         delegate int GetCurrentAddrExclusionListFunc(IntPtr self, ref Guid riid, ref IntPtr ppEnumerator);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UpdateAddrExclusionListFunc = (UpdateAddrExclusionListFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UpdateAddrExclusionListFunc));
             } 
-            
             return  m_UpdateAddrExclusionListFunc(m_ptr, pEnumerator);
         }
         delegate int UpdateAddrExclusionListFunc(IntPtr self, IntPtr pEnumerator);

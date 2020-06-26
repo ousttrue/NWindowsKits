@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_IsDirtyFunc = (IsDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsDirtyFunc));
             } 
-            
             return  m_IsDirtyFunc(m_ptr);
         }
         delegate int IsDirtyFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_LoadFunc = (LoadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadFunc));
             } 
-            
             return  m_LoadFunc(m_ptr, pszFileName, dwMode);
         }
         delegate int LoadFunc(IntPtr self, IntPtr pszFileName, uint dwMode);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SaveFunc = (SaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveFunc));
             } 
-            
             return  m_SaveFunc(m_ptr, pszFileName, fRemember);
         }
         delegate int SaveFunc(IntPtr self, IntPtr pszFileName, int fRemember);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SaveCompletedFunc = (SaveCompletedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveCompletedFunc));
             } 
-            
             return  m_SaveCompletedFunc(m_ptr, pszFileName);
         }
         delegate int SaveCompletedFunc(IntPtr self, IntPtr pszFileName);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetCurFileFunc = (GetCurFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurFileFunc));
             } 
-            
             return  m_GetCurFileFunc(m_ptr, ref ppszFileName);
         }
         delegate int GetCurFileFunc(IntPtr self, ref IntPtr ppszFileName);

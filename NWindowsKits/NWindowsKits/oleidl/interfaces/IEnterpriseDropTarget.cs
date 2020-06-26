@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetDropSourceEnterpriseIdFunc = (SetDropSourceEnterpriseIdFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetDropSourceEnterpriseIdFunc));
             } 
-            
             return  m_SetDropSourceEnterpriseIdFunc(m_ptr, identity);
         }
         delegate int SetDropSourceEnterpriseIdFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string identity);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_IsEvaluatingEdpPolicyFunc = (IsEvaluatingEdpPolicyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsEvaluatingEdpPolicyFunc));
             } 
-            
             return  m_IsEvaluatingEdpPolicyFunc(m_ptr, ref value);
         }
         delegate int IsEvaluatingEdpPolicyFunc(IntPtr self, ref int value);

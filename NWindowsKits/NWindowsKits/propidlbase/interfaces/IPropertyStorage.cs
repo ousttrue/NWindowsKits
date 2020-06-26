@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ReadMultipleFunc = (ReadMultipleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadMultipleFunc));
             } 
-            
             return  m_ReadMultipleFunc(m_ptr, cpspec, ref rgpspec, ref rgpropvar);
         }
         delegate int ReadMultipleFunc(IntPtr self, uint cpspec, ref PROPSPEC rgpspec, ref PROPVARIANT rgpropvar);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_WriteMultipleFunc = (WriteMultipleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WriteMultipleFunc));
             } 
-            
             return  m_WriteMultipleFunc(m_ptr, cpspec, ref rgpspec, ref rgpropvar, propidNameFirst);
         }
         delegate int WriteMultipleFunc(IntPtr self, uint cpspec, ref PROPSPEC rgpspec, ref PROPVARIANT rgpropvar, uint propidNameFirst);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_DeleteMultipleFunc = (DeleteMultipleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeleteMultipleFunc));
             } 
-            
             return  m_DeleteMultipleFunc(m_ptr, cpspec, ref rgpspec);
         }
         delegate int DeleteMultipleFunc(IntPtr self, uint cpspec, ref PROPSPEC rgpspec);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_ReadPropertyNamesFunc = (ReadPropertyNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReadPropertyNamesFunc));
             } 
-            
             return  m_ReadPropertyNamesFunc(m_ptr, cpropid, rgpropid, ref rglpwstrName);
         }
         delegate int ReadPropertyNamesFunc(IntPtr self, uint cpropid, IntPtr rgpropid, ref IntPtr rglpwstrName);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_WritePropertyNamesFunc = (WritePropertyNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(WritePropertyNamesFunc));
             } 
-            
             return  m_WritePropertyNamesFunc(m_ptr, cpropid, rgpropid, ref rglpwstrName);
         }
         delegate int WritePropertyNamesFunc(IntPtr self, uint cpropid, IntPtr rgpropid, ref IntPtr rglpwstrName);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_DeletePropertyNamesFunc = (DeletePropertyNamesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeletePropertyNamesFunc));
             } 
-            
             return  m_DeletePropertyNamesFunc(m_ptr, cpropid, rgpropid);
         }
         delegate int DeletePropertyNamesFunc(IntPtr self, uint cpropid, IntPtr rgpropid);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_CommitFunc = (CommitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CommitFunc));
             } 
-            
             return  m_CommitFunc(m_ptr, grfCommitFlags);
         }
         delegate int CommitFunc(IntPtr self, uint grfCommitFlags);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_RevertFunc = (RevertFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RevertFunc));
             } 
-            
             return  m_RevertFunc(m_ptr);
         }
         delegate int RevertFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_EnumFunc = (EnumFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumFunc));
             } 
-            
             return  m_EnumFunc(m_ptr, ref ppenum);
         }
         delegate int EnumFunc(IntPtr self, ref IntPtr ppenum);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_SetTimesFunc = (SetTimesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetTimesFunc));
             } 
-            
             return  m_SetTimesFunc(m_ptr, ref pctime, ref patime, ref pmtime);
         }
         delegate int SetTimesFunc(IntPtr self, ref FILETIME pctime, ref FILETIME patime, ref FILETIME pmtime);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_SetClassFunc = (SetClassFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetClassFunc));
             } 
-            
             return  m_SetClassFunc(m_ptr, ref clsid);
         }
         delegate int SetClassFunc(IntPtr self, ref Guid clsid);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_StatFunc = (StatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(StatFunc));
             } 
-            
             return  m_StatFunc(m_ptr, ref pstatpsstg);
         }
         delegate int StatFunc(IntPtr self, ref STATPROPSETSTG pstatpsstg);

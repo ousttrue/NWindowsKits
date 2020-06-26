@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CancelFunc = (CancelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CancelFunc));
             } 
-            
             return  m_CancelFunc(m_ptr, ulSeconds);
         }
         delegate int CancelFunc(IntPtr self, uint ulSeconds);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_TestCancelFunc = (TestCancelFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TestCancelFunc));
             } 
-            
             return  m_TestCancelFunc(m_ptr);
         }
         delegate int TestCancelFunc(IntPtr self);

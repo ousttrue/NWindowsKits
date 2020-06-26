@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetMarshalingContextAttributeFunc = (GetMarshalingContextAttributeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetMarshalingContextAttributeFunc));
             } 
-            
             return  m_GetMarshalingContextAttributeFunc(m_ptr, attribute, ref pAttributeValue);
         }
         delegate int GetMarshalingContextAttributeFunc(IntPtr self, CO_MARSHALING_CONTEXT_ATTRIBUTES attribute, ref ulong pAttributeValue);

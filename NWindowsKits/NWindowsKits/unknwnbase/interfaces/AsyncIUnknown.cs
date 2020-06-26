@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_Begin_QueryInterfaceFunc = (Begin_QueryInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_QueryInterfaceFunc));
             } 
-            
             return  m_Begin_QueryInterfaceFunc(m_ptr, ref riid);
         }
         delegate int Begin_QueryInterfaceFunc(IntPtr self, ref Guid riid);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_Finish_QueryInterfaceFunc = (Finish_QueryInterfaceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_QueryInterfaceFunc));
             } 
-            
             return  m_Finish_QueryInterfaceFunc(m_ptr, ref ppvObject);
         }
         delegate int Finish_QueryInterfaceFunc(IntPtr self, ref IntPtr ppvObject);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_Begin_AddRefFunc = (Begin_AddRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_AddRefFunc));
             } 
-            
             return  m_Begin_AddRefFunc(m_ptr);
         }
         delegate int Begin_AddRefFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_Finish_AddRefFunc = (Finish_AddRefFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_AddRefFunc));
             } 
-            
             return  m_Finish_AddRefFunc(m_ptr);
         }
         delegate uint Finish_AddRefFunc(IntPtr self);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_Begin_ReleaseFunc = (Begin_ReleaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Begin_ReleaseFunc));
             } 
-            
             return  m_Begin_ReleaseFunc(m_ptr);
         }
         delegate int Begin_ReleaseFunc(IntPtr self);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_Finish_ReleaseFunc = (Finish_ReleaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(Finish_ReleaseFunc));
             } 
-            
             return  m_Finish_ReleaseFunc(m_ptr);
         }
         delegate uint Finish_ReleaseFunc(IntPtr self);

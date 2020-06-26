@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_InPlaceDeactivateFunc = (InPlaceDeactivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InPlaceDeactivateFunc));
             } 
-            
             return  m_InPlaceDeactivateFunc(m_ptr);
         }
         delegate int InPlaceDeactivateFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_UIDeactivateFunc = (UIDeactivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UIDeactivateFunc));
             } 
-            
             return  m_UIDeactivateFunc(m_ptr);
         }
         delegate int UIDeactivateFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetObjectRectsFunc = (SetObjectRectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetObjectRectsFunc));
             } 
-            
             return  m_SetObjectRectsFunc(m_ptr, ref lprcPosRect, ref lprcClipRect);
         }
         delegate int SetObjectRectsFunc(IntPtr self, ref RECT lprcPosRect, ref RECT lprcClipRect);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_ReactivateAndUndoFunc = (ReactivateAndUndoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReactivateAndUndoFunc));
             } 
-            
             return  m_ReactivateAndUndoFunc(m_ptr);
         }
         delegate int ReactivateAndUndoFunc(IntPtr self);

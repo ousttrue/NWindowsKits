@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetBindHandleFunc = (GetBindHandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBindHandleFunc));
             } 
-            
             return  m_GetBindHandleFunc(m_ptr, enumRequestedHandle, ref pRetHandle);
         }
         delegate int GetBindHandleFunc(IntPtr self, BINDHANDLETYPES enumRequestedHandle, ref IntPtr pRetHandle);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetDesc1Func = (GetDesc1Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDesc1Func));
             } 
-            
              m_GetDesc1Func(m_ptr, ref pDesc);
         }
         delegate void GetDesc1Func(IntPtr self, ref D3D10_SHADER_RESOURCE_VIEW_DESC1 pDesc);

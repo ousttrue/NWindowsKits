@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetIgnoreCertMaskFunc = (GetIgnoreCertMaskFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetIgnoreCertMaskFunc));
             } 
-            
             return  m_GetIgnoreCertMaskFunc(m_ptr, ref pdwIgnoreCertMask);
         }
         delegate int GetIgnoreCertMaskFunc(IntPtr self, ref uint pdwIgnoreCertMask);

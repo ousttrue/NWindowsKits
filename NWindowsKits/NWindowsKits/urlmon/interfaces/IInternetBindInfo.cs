@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetBindInfoFunc = (GetBindInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBindInfoFunc));
             } 
-            
             return  m_GetBindInfoFunc(m_ptr, ref grfBINDF, ref pbindinfo);
         }
         delegate int GetBindInfoFunc(IntPtr self, ref uint grfBINDF, ref BINDINFO pbindinfo);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetBindStringFunc = (GetBindStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetBindStringFunc));
             } 
-            
             return  m_GetBindStringFunc(m_ptr, ulStringType, ref ppwzStr, cEl, pcElFetched);
         }
         delegate int GetBindStringFunc(IntPtr self, uint ulStringType, ref IntPtr ppwzStr, uint cEl, IntPtr pcElFetched);

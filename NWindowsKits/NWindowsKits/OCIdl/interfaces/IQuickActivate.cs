@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QuickActivateFunc = (QuickActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QuickActivateFunc));
             } 
-            
             return  m_QuickActivateFunc(m_ptr, ref pQaContainer, ref pQaControl);
         }
         delegate int QuickActivateFunc(IntPtr self, ref QACONTAINER pQaContainer, ref QACONTROL pQaControl);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SetContentExtentFunc = (SetContentExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetContentExtentFunc));
             } 
-            
             return  m_SetContentExtentFunc(m_ptr, ref pSizel);
         }
         delegate int SetContentExtentFunc(IntPtr self, ref SIZE pSizel);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetContentExtentFunc = (GetContentExtentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetContentExtentFunc));
             } 
-            
             return  m_GetContentExtentFunc(m_ptr, ref pSizel);
         }
         delegate int GetContentExtentFunc(IntPtr self, ref SIZE pSizel);

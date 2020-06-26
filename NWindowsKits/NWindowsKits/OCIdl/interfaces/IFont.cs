@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_get_NameFunc = (get_NameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_NameFunc));
             } 
-            
             return  m_get_NameFunc(m_ptr, ref pName);
         }
         delegate int get_NameFunc(IntPtr self, ref IntPtr pName);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_put_NameFunc = (put_NameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_NameFunc));
             } 
-            
             return  m_put_NameFunc(m_ptr, name);
         }
         delegate int put_NameFunc(IntPtr self, IntPtr name);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_get_SizeFunc = (get_SizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_SizeFunc));
             } 
-            
             return  m_get_SizeFunc(m_ptr, ref pSize);
         }
         delegate int get_SizeFunc(IntPtr self, ref CY pSize);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_put_SizeFunc = (put_SizeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_SizeFunc));
             } 
-            
             return  m_put_SizeFunc(m_ptr, size);
         }
         delegate int put_SizeFunc(IntPtr self, CY size);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_BoldFunc = (get_BoldFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_BoldFunc));
             } 
-            
             return  m_get_BoldFunc(m_ptr, ref pBold);
         }
         delegate int get_BoldFunc(IntPtr self, ref int pBold);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_put_BoldFunc = (put_BoldFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_BoldFunc));
             } 
-            
             return  m_put_BoldFunc(m_ptr, bold);
         }
         delegate int put_BoldFunc(IntPtr self, int bold);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_get_ItalicFunc = (get_ItalicFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_ItalicFunc));
             } 
-            
             return  m_get_ItalicFunc(m_ptr, ref pItalic);
         }
         delegate int get_ItalicFunc(IntPtr self, ref int pItalic);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_put_ItalicFunc = (put_ItalicFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_ItalicFunc));
             } 
-            
             return  m_put_ItalicFunc(m_ptr, italic);
         }
         delegate int put_ItalicFunc(IntPtr self, int italic);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_UnderlineFunc = (get_UnderlineFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_UnderlineFunc));
             } 
-            
             return  m_get_UnderlineFunc(m_ptr, ref pUnderline);
         }
         delegate int get_UnderlineFunc(IntPtr self, ref int pUnderline);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_put_UnderlineFunc = (put_UnderlineFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_UnderlineFunc));
             } 
-            
             return  m_put_UnderlineFunc(m_ptr, underline);
         }
         delegate int put_UnderlineFunc(IntPtr self, int underline);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_get_StrikethroughFunc = (get_StrikethroughFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_StrikethroughFunc));
             } 
-            
             return  m_get_StrikethroughFunc(m_ptr, ref pStrikethrough);
         }
         delegate int get_StrikethroughFunc(IntPtr self, ref int pStrikethrough);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_put_StrikethroughFunc = (put_StrikethroughFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_StrikethroughFunc));
             } 
-            
             return  m_put_StrikethroughFunc(m_ptr, strikethrough);
         }
         delegate int put_StrikethroughFunc(IntPtr self, int strikethrough);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_get_WeightFunc = (get_WeightFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_WeightFunc));
             } 
-            
             return  m_get_WeightFunc(m_ptr, ref pWeight);
         }
         delegate int get_WeightFunc(IntPtr self, ref short pWeight);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_put_WeightFunc = (put_WeightFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_WeightFunc));
             } 
-            
             return  m_put_WeightFunc(m_ptr, weight);
         }
         delegate int put_WeightFunc(IntPtr self, short weight);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_get_CharsetFunc = (get_CharsetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_CharsetFunc));
             } 
-            
             return  m_get_CharsetFunc(m_ptr, ref pCharset);
         }
         delegate int get_CharsetFunc(IntPtr self, ref short pCharset);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_put_CharsetFunc = (put_CharsetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_CharsetFunc));
             } 
-            
             return  m_put_CharsetFunc(m_ptr, charset);
         }
         delegate int put_CharsetFunc(IntPtr self, short charset);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_get_hFontFunc = (get_hFontFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_hFontFunc));
             } 
-            
             return  m_get_hFontFunc(m_ptr, ref phFont);
         }
         delegate int get_hFontFunc(IntPtr self, ref HFONT phFont);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_CloneFunc = (CloneFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CloneFunc));
             } 
-            
             return  m_CloneFunc(m_ptr, ref ppFont);
         }
         delegate int CloneFunc(IntPtr self, ref IntPtr ppFont);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_IsEqualFunc = (IsEqualFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsEqualFunc));
             } 
-            
             return  m_IsEqualFunc(m_ptr, pFontOther);
         }
         delegate int IsEqualFunc(IntPtr self, IntPtr pFontOther);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_SetRatioFunc = (SetRatioFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetRatioFunc));
             } 
-            
             return  m_SetRatioFunc(m_ptr, cyLogical, cyHimetric);
         }
         delegate int SetRatioFunc(IntPtr self, int cyLogical, int cyHimetric);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_QueryTextMetricsFunc = (QueryTextMetricsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryTextMetricsFunc));
             } 
-            
             return  m_QueryTextMetricsFunc(m_ptr, pTM);
         }
         delegate int QueryTextMetricsFunc(IntPtr self, IntPtr pTM);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_AddRefHfontFunc = (AddRefHfontFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddRefHfontFunc));
             } 
-            
             return  m_AddRefHfontFunc(m_ptr, hFont);
         }
         delegate int AddRefHfontFunc(IntPtr self, HFONT hFont);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_ReleaseHfontFunc = (ReleaseHfontFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseHfontFunc));
             } 
-            
             return  m_ReleaseHfontFunc(m_ptr, hFont);
         }
         delegate int ReleaseHfontFunc(IntPtr self, HFONT hFont);
@@ -293,7 +270,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_SetHdcFunc = (SetHdcFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetHdcFunc));
             } 
-            
             return  m_SetHdcFunc(m_ptr, hDC);
         }
         delegate int SetHdcFunc(IntPtr self, HDC hDC);

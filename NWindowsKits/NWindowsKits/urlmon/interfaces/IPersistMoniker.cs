@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetClassIDFunc = (GetClassIDFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassIDFunc));
             } 
-            
             return  m_GetClassIDFunc(m_ptr, pClassID);
         }
         delegate int GetClassIDFunc(IntPtr self, IntPtr pClassID);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_IsDirtyFunc = (IsDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsDirtyFunc));
             } 
-            
             return  m_IsDirtyFunc(m_ptr);
         }
         delegate int IsDirtyFunc(IntPtr self);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_LoadFunc = (LoadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadFunc));
             } 
-            
             return  m_LoadFunc(m_ptr, fFullyAvailable, pimkName, pibc, grfMode);
         }
         delegate int LoadFunc(IntPtr self, int fFullyAvailable, IntPtr pimkName, IntPtr pibc, uint grfMode);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SaveFunc = (SaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveFunc));
             } 
-            
             return  m_SaveFunc(m_ptr, pimkName, pbc, fRemember);
         }
         delegate int SaveFunc(IntPtr self, IntPtr pimkName, IntPtr pbc, int fRemember);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SaveCompletedFunc = (SaveCompletedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveCompletedFunc));
             } 
-            
             return  m_SaveCompletedFunc(m_ptr, pimkName, pibc);
         }
         delegate int SaveCompletedFunc(IntPtr self, IntPtr pimkName, IntPtr pibc);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetCurMonikerFunc = (GetCurMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCurMonikerFunc));
             } 
-            
             return  m_GetCurMonikerFunc(m_ptr, ref ppimkName);
         }
         delegate int GetCurMonikerFunc(IntPtr self, ref IntPtr ppimkName);

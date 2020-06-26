@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_OnViewStatusChangeFunc = (OnViewStatusChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnViewStatusChangeFunc));
             } 
-            
              m_OnViewStatusChangeFunc(m_ptr, dwViewStatus);
         }
         delegate void OnViewStatusChangeFunc(IntPtr self, uint dwViewStatus);

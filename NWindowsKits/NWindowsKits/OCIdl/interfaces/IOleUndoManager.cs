@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_OpenFunc = (OpenFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OpenFunc));
             } 
-            
             return  m_OpenFunc(m_ptr, pPUU);
         }
         delegate int OpenFunc(IntPtr self, IntPtr pPUU);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_CloseFunc = (CloseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CloseFunc));
             } 
-            
             return  m_CloseFunc(m_ptr, pPUU, fCommit);
         }
         delegate int CloseFunc(IntPtr self, IntPtr pPUU, int fCommit);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_AddFunc = (AddFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddFunc));
             } 
-            
             return  m_AddFunc(m_ptr, pUU);
         }
         delegate int AddFunc(IntPtr self, IntPtr pUU);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetOpenParentStateFunc = (GetOpenParentStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetOpenParentStateFunc));
             } 
-            
             return  m_GetOpenParentStateFunc(m_ptr, ref pdwState);
         }
         delegate int GetOpenParentStateFunc(IntPtr self, ref uint pdwState);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_DiscardFromFunc = (DiscardFromFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DiscardFromFunc));
             } 
-            
             return  m_DiscardFromFunc(m_ptr, pUU);
         }
         delegate int DiscardFromFunc(IntPtr self, IntPtr pUU);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_UndoToFunc = (UndoToFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UndoToFunc));
             } 
-            
             return  m_UndoToFunc(m_ptr, pUU);
         }
         delegate int UndoToFunc(IntPtr self, IntPtr pUU);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_RedoToFunc = (RedoToFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RedoToFunc));
             } 
-            
             return  m_RedoToFunc(m_ptr, pUU);
         }
         delegate int RedoToFunc(IntPtr self, IntPtr pUU);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_EnumUndoableFunc = (EnumUndoableFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumUndoableFunc));
             } 
-            
             return  m_EnumUndoableFunc(m_ptr, ref ppEnum);
         }
         delegate int EnumUndoableFunc(IntPtr self, ref IntPtr ppEnum);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_EnumRedoableFunc = (EnumRedoableFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumRedoableFunc));
             } 
-            
             return  m_EnumRedoableFunc(m_ptr, ref ppEnum);
         }
         delegate int EnumRedoableFunc(IntPtr self, ref IntPtr ppEnum);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_GetLastUndoDescriptionFunc = (GetLastUndoDescriptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastUndoDescriptionFunc));
             } 
-            
             return  m_GetLastUndoDescriptionFunc(m_ptr, ref pBstr);
         }
         delegate int GetLastUndoDescriptionFunc(IntPtr self, ref IntPtr pBstr);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetLastRedoDescriptionFunc = (GetLastRedoDescriptionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLastRedoDescriptionFunc));
             } 
-            
             return  m_GetLastRedoDescriptionFunc(m_ptr, ref pBstr);
         }
         delegate int GetLastRedoDescriptionFunc(IntPtr self, ref IntPtr pBstr);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_EnableFunc = (EnableFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnableFunc));
             } 
-            
             return  m_EnableFunc(m_ptr, fEnable);
         }
         delegate int EnableFunc(IntPtr self, int fEnable);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetPriorityFunc = (SetPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPriorityFunc));
             } 
-            
             return  m_SetPriorityFunc(m_ptr, nPriority);
         }
         delegate int SetPriorityFunc(IntPtr self, int nPriority);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetPriorityFunc = (GetPriorityFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPriorityFunc));
             } 
-            
             return  m_GetPriorityFunc(m_ptr, ref pnPriority);
         }
         delegate int GetPriorityFunc(IntPtr self, ref int pnPriority);

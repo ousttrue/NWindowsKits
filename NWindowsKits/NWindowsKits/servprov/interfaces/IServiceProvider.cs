@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_QueryServiceFunc = (QueryServiceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryServiceFunc));
             } 
-            
             return  m_QueryServiceFunc(m_ptr, ref guidService, ref riid, ref ppvObject);
         }
         delegate int QueryServiceFunc(IntPtr self, ref GUID guidService, ref Guid riid, ref IntPtr ppvObject);

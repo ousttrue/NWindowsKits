@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_BindToObjectFunc = (BindToObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindToObjectFunc));
             } 
-            
             return  m_BindToObjectFunc(m_ptr, pbc, pmkToLeft, ref riidResult, ref ppvResult);
         }
         delegate int BindToObjectFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, ref Guid riidResult, ref IntPtr ppvResult);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_BindToStorageFunc = (BindToStorageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(BindToStorageFunc));
             } 
-            
             return  m_BindToStorageFunc(m_ptr, pbc, pmkToLeft, ref riid, ref ppvObj);
         }
         delegate int BindToStorageFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, ref Guid riid, ref IntPtr ppvObj);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_ReduceFunc = (ReduceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReduceFunc));
             } 
-            
             return  m_ReduceFunc(m_ptr, pbc, dwReduceHowFar, ref ppmkToLeft, ref ppmkReduced);
         }
         delegate int ReduceFunc(IntPtr self, IntPtr pbc, uint dwReduceHowFar, ref IntPtr ppmkToLeft, ref IntPtr ppmkReduced);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_ComposeWithFunc = (ComposeWithFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ComposeWithFunc));
             } 
-            
             return  m_ComposeWithFunc(m_ptr, pmkRight, fOnlyIfNotGeneric, ref ppmkComposite);
         }
         delegate int ComposeWithFunc(IntPtr self, IntPtr pmkRight, int fOnlyIfNotGeneric, ref IntPtr ppmkComposite);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_EnumFunc = (EnumFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnumFunc));
             } 
-            
             return  m_EnumFunc(m_ptr, fForward, ref ppenumMoniker);
         }
         delegate int EnumFunc(IntPtr self, int fForward, ref IntPtr ppenumMoniker);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_IsEqualFunc = (IsEqualFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsEqualFunc));
             } 
-            
             return  m_IsEqualFunc(m_ptr, pmkOtherMoniker);
         }
         delegate int IsEqualFunc(IntPtr self, IntPtr pmkOtherMoniker);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_HashFunc = (HashFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HashFunc));
             } 
-            
             return  m_HashFunc(m_ptr, ref pdwHash);
         }
         delegate int HashFunc(IntPtr self, ref uint pdwHash);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_IsRunningFunc = (IsRunningFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsRunningFunc));
             } 
-            
             return  m_IsRunningFunc(m_ptr, pbc, pmkToLeft, pmkNewlyRunning);
         }
         delegate int IsRunningFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, IntPtr pmkNewlyRunning);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_GetTimeOfLastChangeFunc = (GetTimeOfLastChangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTimeOfLastChangeFunc));
             } 
-            
             return  m_GetTimeOfLastChangeFunc(m_ptr, pbc, pmkToLeft, ref pFileTime);
         }
         delegate int GetTimeOfLastChangeFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, ref FILETIME pFileTime);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_InverseFunc = (InverseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InverseFunc));
             } 
-            
             return  m_InverseFunc(m_ptr, ref ppmk);
         }
         delegate int InverseFunc(IntPtr self, ref IntPtr ppmk);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_CommonPrefixWithFunc = (CommonPrefixWithFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CommonPrefixWithFunc));
             } 
-            
             return  m_CommonPrefixWithFunc(m_ptr, pmkOther, ref ppmkPrefix);
         }
         delegate int CommonPrefixWithFunc(IntPtr self, IntPtr pmkOther, ref IntPtr ppmkPrefix);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_RelativePathToFunc = (RelativePathToFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RelativePathToFunc));
             } 
-            
             return  m_RelativePathToFunc(m_ptr, pmkOther, ref ppmkRelPath);
         }
         delegate int RelativePathToFunc(IntPtr self, IntPtr pmkOther, ref IntPtr ppmkRelPath);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_GetDisplayNameFunc = (GetDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDisplayNameFunc));
             } 
-            
             return  m_GetDisplayNameFunc(m_ptr, pbc, pmkToLeft, ref ppszDisplayName);
         }
         delegate int GetDisplayNameFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, ref IntPtr ppszDisplayName);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_ParseDisplayNameFunc = (ParseDisplayNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ParseDisplayNameFunc));
             } 
-            
             return  m_ParseDisplayNameFunc(m_ptr, pbc, pmkToLeft, pszDisplayName, pchEaten, ref ppmkOut);
         }
         delegate int ParseDisplayNameFunc(IntPtr self, IntPtr pbc, IntPtr pmkToLeft, IntPtr pszDisplayName, IntPtr pchEaten, ref IntPtr ppmkOut);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_IsSystemMonikerFunc = (IsSystemMonikerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsSystemMonikerFunc));
             } 
-            
             return  m_IsSystemMonikerFunc(m_ptr, ref pdwMksys);
         }
         delegate int IsSystemMonikerFunc(IntPtr self, ref uint pdwMksys);

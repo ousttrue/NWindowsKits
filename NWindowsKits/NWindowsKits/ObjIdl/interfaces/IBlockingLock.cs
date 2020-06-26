@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_LockFunc = (LockFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockFunc));
             } 
-            
             return  m_LockFunc(m_ptr, dwTimeout);
         }
         delegate int LockFunc(IntPtr self, uint dwTimeout);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_UnlockFunc = (UnlockFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnlockFunc));
             } 
-            
             return  m_UnlockFunc(m_ptr);
         }
         delegate int UnlockFunc(IntPtr self);

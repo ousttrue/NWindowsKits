@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_ProcessSoftDistFunc = (ProcessSoftDistFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ProcessSoftDistFunc));
             } 
-            
             return  m_ProcessSoftDistFunc(m_ptr, szCDFURL, pSoftDistElement, ref lpsdi);
         }
         delegate int ProcessSoftDistFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string szCDFURL, IntPtr pSoftDistElement, ref LPSOFTDISTINFO lpsdi);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetFirstCodeBaseFunc = (GetFirstCodeBaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetFirstCodeBaseFunc));
             } 
-            
             return  m_GetFirstCodeBaseFunc(m_ptr, ref szCodeBase, ref dwMaxSize);
         }
         delegate int GetFirstCodeBaseFunc(IntPtr self, ref IntPtr szCodeBase, ref uint dwMaxSize);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_GetNextCodeBaseFunc = (GetNextCodeBaseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetNextCodeBaseFunc));
             } 
-            
             return  m_GetNextCodeBaseFunc(m_ptr, ref szCodeBase, ref dwMaxSize);
         }
         delegate int GetNextCodeBaseFunc(IntPtr self, ref IntPtr szCodeBase, ref uint dwMaxSize);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_AsyncInstallDistributionUnitFunc = (AsyncInstallDistributionUnitFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AsyncInstallDistributionUnitFunc));
             } 
-            
             return  m_AsyncInstallDistributionUnitFunc(m_ptr, pbc, pvReserved, flags, ref lpcbh);
         }
         delegate int AsyncInstallDistributionUnitFunc(IntPtr self, IntPtr pbc, IntPtr pvReserved, uint flags, ref LPCODEBASEHOLD lpcbh);

@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AddConnectionFunc = (AddConnectionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AddConnectionFunc));
             } 
-            
             return  m_AddConnectionFunc(m_ptr, extconn, reserved);
         }
         delegate uint AddConnectionFunc(IntPtr self, uint extconn, uint reserved);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ReleaseConnectionFunc = (ReleaseConnectionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ReleaseConnectionFunc));
             } 
-            
             return  m_ReleaseConnectionFunc(m_ptr, extconn, reserved, fLastReleaseCloses);
         }
         delegate uint ReleaseConnectionFunc(IntPtr self, uint extconn, uint reserved, int fLastReleaseCloses);

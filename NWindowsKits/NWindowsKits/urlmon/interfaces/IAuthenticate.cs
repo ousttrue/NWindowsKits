@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AuthenticateFunc = (AuthenticateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AuthenticateFunc));
             } 
-            
             return  m_AuthenticateFunc(m_ptr, ref phwnd, ref pszUsername, ref pszPassword);
         }
         delegate int AuthenticateFunc(IntPtr self, ref HWND phwnd, ref IntPtr pszUsername, ref IntPtr pszPassword);

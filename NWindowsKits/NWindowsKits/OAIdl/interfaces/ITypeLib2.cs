@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_GetCustDataFunc = (GetCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetCustDataFunc));
             } 
-            
             return  m_GetCustDataFunc(m_ptr, ref guid, ref pVarVal);
         }
         delegate int GetCustDataFunc(IntPtr self, ref GUID guid, ref VARIANT pVarVal);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_GetLibStatisticsFunc = (GetLibStatisticsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetLibStatisticsFunc));
             } 
-            
             return  m_GetLibStatisticsFunc(m_ptr, pcUniqueNames, pcchUniqueNames);
         }
         delegate int GetLibStatisticsFunc(IntPtr self, IntPtr pcUniqueNames, IntPtr pcchUniqueNames);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_GetDocumentation2Func = (GetDocumentation2Func)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDocumentation2Func));
             } 
-            
             return  m_GetDocumentation2Func(m_ptr, index, lcid, ref pbstrHelpString, ref pdwHelpStringContext, ref pbstrHelpStringDll);
         }
         delegate int GetDocumentation2Func(IntPtr self, int index, uint lcid, ref IntPtr pbstrHelpString, ref uint pdwHelpStringContext, ref IntPtr pbstrHelpStringDll);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_GetAllCustDataFunc = (GetAllCustDataFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAllCustDataFunc));
             } 
-            
             return  m_GetAllCustDataFunc(m_ptr, ref pCustData);
         }
         delegate int GetAllCustDataFunc(IntPtr self, ref CUSTDATA pCustData);

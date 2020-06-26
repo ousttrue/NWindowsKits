@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_NextFunc = (NextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(NextFunc));
             } 
-            
             return  m_NextFunc(m_ptr, celt, ref rgelt, pceltFetched);
         }
         delegate int NextFunc(IntPtr self, uint celt, ref FORMATETC rgelt, IntPtr pceltFetched);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_SkipFunc = (SkipFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SkipFunc));
             } 
-            
             return  m_SkipFunc(m_ptr, celt);
         }
         delegate int SkipFunc(IntPtr self, uint celt);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_ResetFunc = (ResetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResetFunc));
             } 
-            
             return  m_ResetFunc(m_ptr);
         }
         delegate int ResetFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_CloneFunc = (CloneFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CloneFunc));
             } 
-            
             return  m_CloneFunc(m_ptr, ref ppenum);
         }
         delegate int CloneFunc(IntPtr self, ref IntPtr ppenum);

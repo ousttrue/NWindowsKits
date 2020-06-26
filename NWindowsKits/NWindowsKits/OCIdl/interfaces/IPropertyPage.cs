@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_SetPageSiteFunc = (SetPageSiteFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetPageSiteFunc));
             } 
-            
             return  m_SetPageSiteFunc(m_ptr, pPageSite);
         }
         delegate int SetPageSiteFunc(IntPtr self, IntPtr pPageSite);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_ActivateFunc = (ActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ActivateFunc));
             } 
-            
             return  m_ActivateFunc(m_ptr, hWndParent, ref pRect, bModal);
         }
         delegate int ActivateFunc(IntPtr self, HWND hWndParent, ref RECT pRect, int bModal);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_DeactivateFunc = (DeactivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DeactivateFunc));
             } 
-            
             return  m_DeactivateFunc(m_ptr);
         }
         delegate int DeactivateFunc(IntPtr self);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_GetPageInfoFunc = (GetPageInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetPageInfoFunc));
             } 
-            
             return  m_GetPageInfoFunc(m_ptr, ref pPageInfo);
         }
         delegate int GetPageInfoFunc(IntPtr self, ref PROPPAGEINFO pPageInfo);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetObjectsFunc = (SetObjectsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetObjectsFunc));
             } 
-            
             return  m_SetObjectsFunc(m_ptr, cObjects, ref ppUnk);
         }
         delegate int SetObjectsFunc(IntPtr self, uint cObjects, ref IntPtr ppUnk);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_ShowFunc = (ShowFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ShowFunc));
             } 
-            
             return  m_ShowFunc(m_ptr, nCmdShow);
         }
         delegate int ShowFunc(IntPtr self, uint nCmdShow);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_MoveFunc = (MoveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(MoveFunc));
             } 
-            
             return  m_MoveFunc(m_ptr, ref pRect);
         }
         delegate int MoveFunc(IntPtr self, ref RECT pRect);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_IsPageDirtyFunc = (IsPageDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsPageDirtyFunc));
             } 
-            
             return  m_IsPageDirtyFunc(m_ptr);
         }
         delegate int IsPageDirtyFunc(IntPtr self);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_ApplyFunc = (ApplyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ApplyFunc));
             } 
-            
             return  m_ApplyFunc(m_ptr);
         }
         delegate int ApplyFunc(IntPtr self);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_HelpFunc = (HelpFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(HelpFunc));
             } 
-            
             return  m_HelpFunc(m_ptr, pszHelpDir);
         }
         delegate int HelpFunc(IntPtr self, IntPtr pszHelpDir);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_TranslateAcceleratorAFunc = (TranslateAcceleratorAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TranslateAcceleratorAFunc));
             } 
-            
             return  m_TranslateAcceleratorAFunc(m_ptr, ref pMsg);
         }
         delegate int TranslateAcceleratorAFunc(IntPtr self, ref MSG pMsg);

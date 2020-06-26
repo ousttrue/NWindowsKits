@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_openFunc = (openFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(openFunc));
             } 
-            
             return  m_openFunc(m_ptr, bstrMethod, bstrUrl, varAsync, bstrUser, bstrPassword);
         }
         delegate int openFunc(IntPtr self, IntPtr bstrMethod, IntPtr bstrUrl, VARIANT varAsync, VARIANT bstrUser, VARIANT bstrPassword);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_setRequestHeaderFunc = (setRequestHeaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(setRequestHeaderFunc));
             } 
-            
             return  m_setRequestHeaderFunc(m_ptr, bstrHeader, bstrValue);
         }
         delegate int setRequestHeaderFunc(IntPtr self, IntPtr bstrHeader, IntPtr bstrValue);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_getResponseHeaderFunc = (getResponseHeaderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getResponseHeaderFunc));
             } 
-            
             return  m_getResponseHeaderFunc(m_ptr, bstrHeader, ref pbstrValue);
         }
         delegate int getResponseHeaderFunc(IntPtr self, IntPtr bstrHeader, ref IntPtr pbstrValue);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_getAllResponseHeadersFunc = (getAllResponseHeadersFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(getAllResponseHeadersFunc));
             } 
-            
             return  m_getAllResponseHeadersFunc(m_ptr, ref pbstrHeaders);
         }
         delegate int getAllResponseHeadersFunc(IntPtr self, ref IntPtr pbstrHeaders);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_sendFunc = (sendFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(sendFunc));
             } 
-            
             return  m_sendFunc(m_ptr, varBody);
         }
         delegate int sendFunc(IntPtr self, VARIANT varBody);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_abortFunc = (abortFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(abortFunc));
             } 
-            
             return  m_abortFunc(m_ptr);
         }
         delegate int abortFunc(IntPtr self);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_get_statusFunc = (get_statusFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_statusFunc));
             } 
-            
             return  m_get_statusFunc(m_ptr, ref plStatus);
         }
         delegate int get_statusFunc(IntPtr self, ref int plStatus);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_get_statusTextFunc = (get_statusTextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_statusTextFunc));
             } 
-            
             return  m_get_statusTextFunc(m_ptr, ref pbstrStatus);
         }
         delegate int get_statusTextFunc(IntPtr self, ref IntPtr pbstrStatus);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_get_responseXMLFunc = (get_responseXMLFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_responseXMLFunc));
             } 
-            
             return  m_get_responseXMLFunc(m_ptr, ref ppBody);
         }
         delegate int get_responseXMLFunc(IntPtr self, ref IntPtr ppBody);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_get_responseTextFunc = (get_responseTextFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_responseTextFunc));
             } 
-            
             return  m_get_responseTextFunc(m_ptr, ref pbstrBody);
         }
         delegate int get_responseTextFunc(IntPtr self, ref IntPtr pbstrBody);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_get_responseBodyFunc = (get_responseBodyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_responseBodyFunc));
             } 
-            
             return  m_get_responseBodyFunc(m_ptr, ref pvarBody);
         }
         delegate int get_responseBodyFunc(IntPtr self, ref VARIANT pvarBody);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_get_responseStreamFunc = (get_responseStreamFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_responseStreamFunc));
             } 
-            
             return  m_get_responseStreamFunc(m_ptr, ref pvarBody);
         }
         delegate int get_responseStreamFunc(IntPtr self, ref VARIANT pvarBody);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_get_readyStateFunc = (get_readyStateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_readyStateFunc));
             } 
-            
             return  m_get_readyStateFunc(m_ptr, ref plState);
         }
         delegate int get_readyStateFunc(IntPtr self, ref int plState);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_put_onreadystatechangeFunc = (put_onreadystatechangeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_onreadystatechangeFunc));
             } 
-            
             return  m_put_onreadystatechangeFunc(m_ptr, pReadyStateSink);
         }
         delegate int put_onreadystatechangeFunc(IntPtr self, IntPtr pReadyStateSink);

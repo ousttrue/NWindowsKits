@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetClassLinkageFunc = (GetClassLinkageFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetClassLinkageFunc));
             } 
-            
              m_GetClassLinkageFunc(m_ptr, ref ppLinkage);
         }
         delegate void GetClassLinkageFunc(IntPtr self, ref IntPtr ppLinkage);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetDescFunc = (GetDescFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDescFunc));
             } 
-            
              m_GetDescFunc(m_ptr, ref pDesc);
         }
         delegate void GetDescFunc(IntPtr self, ref D3D11_CLASS_INSTANCE_DESC pDesc);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_GetInstanceNameFunc = (GetInstanceNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetInstanceNameFunc));
             } 
-            
              m_GetInstanceNameFunc(m_ptr, ref pInstanceName, pBufferLength);
         }
         delegate void GetInstanceNameFunc(IntPtr self, ref sbyte pInstanceName, IntPtr pBufferLength);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_GetTypeNameFunc = (GetTypeNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetTypeNameFunc));
             } 
-            
              m_GetTypeNameFunc(m_ptr, ref pTypeName, pBufferLength);
         }
         delegate void GetTypeNameFunc(IntPtr self, ref sbyte pTypeName, IntPtr pBufferLength);

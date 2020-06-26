@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_get_HandleFunc = (get_HandleFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_HandleFunc));
             } 
-            
             return  m_get_HandleFunc(m_ptr, pHandle);
         }
         delegate int get_HandleFunc(IntPtr self, IntPtr pHandle);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_get_hPalFunc = (get_hPalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_hPalFunc));
             } 
-            
             return  m_get_hPalFunc(m_ptr, phPal);
         }
         delegate int get_hPalFunc(IntPtr self, IntPtr phPal);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_get_TypeFunc = (get_TypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_TypeFunc));
             } 
-            
             return  m_get_TypeFunc(m_ptr, ref pType);
         }
         delegate int get_TypeFunc(IntPtr self, ref short pType);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_get_WidthFunc = (get_WidthFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_WidthFunc));
             } 
-            
             return  m_get_WidthFunc(m_ptr, pWidth);
         }
         delegate int get_WidthFunc(IntPtr self, IntPtr pWidth);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_HeightFunc = (get_HeightFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_HeightFunc));
             } 
-            
             return  m_get_HeightFunc(m_ptr, pHeight);
         }
         delegate int get_HeightFunc(IntPtr self, IntPtr pHeight);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_RenderFunc = (RenderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(RenderFunc));
             } 
-            
             return  m_RenderFunc(m_ptr, hDC, x, y, cx, cy, xSrc, ySrc, cxSrc, cySrc, ref pRcWBounds);
         }
         delegate int RenderFunc(IntPtr self, HDC hDC, int x, int y, int cx, int cy, int xSrc, int ySrc, int cxSrc, int cySrc, ref RECT pRcWBounds);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_set_hPalFunc = (set_hPalFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(set_hPalFunc));
             } 
-            
             return  m_set_hPalFunc(m_ptr, hPal);
         }
         delegate int set_hPalFunc(IntPtr self, ulong hPal);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_get_CurDCFunc = (get_CurDCFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_CurDCFunc));
             } 
-            
             return  m_get_CurDCFunc(m_ptr, ref phDC);
         }
         delegate int get_CurDCFunc(IntPtr self, ref HDC phDC);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_SelectPictureFunc = (SelectPictureFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SelectPictureFunc));
             } 
-            
             return  m_SelectPictureFunc(m_ptr, hDCIn, ref phDCOut, phBmpOut);
         }
         delegate int SelectPictureFunc(IntPtr self, HDC hDCIn, ref HDC phDCOut, IntPtr phBmpOut);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_get_KeepOriginalFormatFunc = (get_KeepOriginalFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_KeepOriginalFormatFunc));
             } 
-            
             return  m_get_KeepOriginalFormatFunc(m_ptr, ref pKeep);
         }
         delegate int get_KeepOriginalFormatFunc(IntPtr self, ref int pKeep);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_put_KeepOriginalFormatFunc = (put_KeepOriginalFormatFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_KeepOriginalFormatFunc));
             } 
-            
             return  m_put_KeepOriginalFormatFunc(m_ptr, keep);
         }
         delegate int put_KeepOriginalFormatFunc(IntPtr self, int keep);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_PictureChangedFunc = (PictureChangedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(PictureChangedFunc));
             } 
-            
             return  m_PictureChangedFunc(m_ptr);
         }
         delegate int PictureChangedFunc(IntPtr self);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_SaveAsFileFunc = (SaveAsFileFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveAsFileFunc));
             } 
-            
             return  m_SaveAsFileFunc(m_ptr, pStream, fSaveMemCopy, ref pCbSize);
         }
         delegate int SaveAsFileFunc(IntPtr self, IntPtr pStream, int fSaveMemCopy, ref int pCbSize);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_get_AttributesFunc = (get_AttributesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_AttributesFunc));
             } 
-            
             return  m_get_AttributesFunc(m_ptr, ref pDwAttr);
         }
         delegate int get_AttributesFunc(IntPtr self, ref uint pDwAttr);

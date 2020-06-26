@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_IsDirtyFunc = (IsDirtyFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(IsDirtyFunc));
             } 
-            
             return  m_IsDirtyFunc(m_ptr);
         }
         delegate int IsDirtyFunc(IntPtr self);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_LoadFunc = (LoadFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LoadFunc));
             } 
-            
             return  m_LoadFunc(m_ptr, pMem, cbSize);
         }
         delegate int LoadFunc(IntPtr self, IntPtr pMem, uint cbSize);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_SaveFunc = (SaveFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SaveFunc));
             } 
-            
             return  m_SaveFunc(m_ptr, pMem, fClearDirty, cbSize);
         }
         delegate int SaveFunc(IntPtr self, IntPtr pMem, int fClearDirty, uint cbSize);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetSizeMaxFunc = (GetSizeMaxFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetSizeMaxFunc));
             } 
-            
             return  m_GetSizeMaxFunc(m_ptr, pCbSize);
         }
         delegate int GetSizeMaxFunc(IntPtr self, IntPtr pCbSize);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_InitNewFunc = (InitNewFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(InitNewFunc));
             } 
-            
             return  m_InitNewFunc(m_ptr);
         }
         delegate int InitNewFunc(IntPtr self);

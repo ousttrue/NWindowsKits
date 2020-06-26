@@ -11,7 +11,7 @@ namespace NWindowsKits
         public const int DXGI_ENUM_MODES_DISABLED_STEREO = unchecked((int)( 8UL ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:1163
-        public const int DXGI_SHARED_RESOURCE_READ = unchecked((int)( 0x80000000L ));
+        public const int DXGI_SHARED_RESOURCE_READ = unchecked((int)( 0x80000000 ));
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:1165
         public const int DXGI_SHARED_RESOURCE_WRITE = unchecked((int)( 1 ));

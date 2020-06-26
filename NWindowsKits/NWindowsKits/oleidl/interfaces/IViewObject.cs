@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_DrawFunc = (DrawFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(DrawFunc));
             } 
-            
             return  m_DrawFunc(m_ptr, dwDrawAspect, lindex, pvAspect, ref ptd, hdcTargetDev, hdcDraw, ref lprcBounds, ref lprcWBounds, pfnContinue, dwContinue);
         }
         delegate int DrawFunc(IntPtr self, uint dwDrawAspect, int lindex, IntPtr pvAspect, ref DVTARGETDEVICE ptd, HDC hdcTargetDev, HDC hdcDraw, ref RECTL lprcBounds, ref RECTL lprcWBounds, IntPtr pfnContinue, ulong dwContinue);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_GetColorSetFunc = (GetColorSetFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetColorSetFunc));
             } 
-            
             return  m_GetColorSetFunc(m_ptr, dwDrawAspect, lindex, pvAspect, ref ptd, hicTargetDev, ref ppColorSet);
         }
         delegate int GetColorSetFunc(IntPtr self, uint dwDrawAspect, int lindex, IntPtr pvAspect, ref DVTARGETDEVICE ptd, HDC hicTargetDev, ref IntPtr ppColorSet);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_FreezeFunc = (FreezeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(FreezeFunc));
             } 
-            
             return  m_FreezeFunc(m_ptr, dwDrawAspect, lindex, pvAspect, ref pdwFreeze);
         }
         delegate int FreezeFunc(IntPtr self, uint dwDrawAspect, int lindex, IntPtr pvAspect, ref uint pdwFreeze);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_UnfreezeFunc = (UnfreezeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(UnfreezeFunc));
             } 
-            
             return  m_UnfreezeFunc(m_ptr, dwFreeze);
         }
         delegate int UnfreezeFunc(IntPtr self, uint dwFreeze);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_SetAdviseFunc = (SetAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(SetAdviseFunc));
             } 
-            
             return  m_SetAdviseFunc(m_ptr, aspects, advf, pAdvSink);
         }
         delegate int SetAdviseFunc(IntPtr self, uint aspects, uint advf, IntPtr pAdvSink);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_GetAdviseFunc = (GetAdviseFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetAdviseFunc));
             } 
-            
             return  m_GetAdviseFunc(m_ptr, ref pAspects, ref pAdvf, ref ppAdvSink);
         }
         delegate int GetAdviseFunc(IntPtr self, ref uint pAspects, ref uint pAdvf, ref IntPtr ppAdvSink);

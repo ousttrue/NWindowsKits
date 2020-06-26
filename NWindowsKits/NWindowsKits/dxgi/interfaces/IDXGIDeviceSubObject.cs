@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_GetDeviceFunc = (GetDeviceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetDeviceFunc));
             } 
-            
             return  m_GetDeviceFunc(m_ptr, ref riid, ref ppDevice);
         }
         delegate int GetDeviceFunc(IntPtr self, ref Guid riid, ref IntPtr ppDevice);

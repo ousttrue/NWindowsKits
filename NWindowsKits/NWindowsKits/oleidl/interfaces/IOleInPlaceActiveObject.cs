@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(5);
                 m_TranslateAcceleratorAFunc = (TranslateAcceleratorAFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(TranslateAcceleratorAFunc));
             } 
-            
             return  m_TranslateAcceleratorAFunc(m_ptr, ref lpmsg);
         }
         delegate int TranslateAcceleratorAFunc(IntPtr self, ref MSG lpmsg);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(6);
                 m_OnFrameWindowActivateFunc = (OnFrameWindowActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnFrameWindowActivateFunc));
             } 
-            
             return  m_OnFrameWindowActivateFunc(m_ptr, fActivate);
         }
         delegate int OnFrameWindowActivateFunc(IntPtr self, int fActivate);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_OnDocWindowActivateFunc = (OnDocWindowActivateFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(OnDocWindowActivateFunc));
             } 
-            
             return  m_OnDocWindowActivateFunc(m_ptr, fActivate);
         }
         delegate int OnDocWindowActivateFunc(IntPtr self, int fActivate);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_ResizeBorderFunc = (ResizeBorderFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(ResizeBorderFunc));
             } 
-            
             return  m_ResizeBorderFunc(m_ptr, ref prcBorder, pUIWindow, fFrameWindow);
         }
         delegate int ResizeBorderFunc(IntPtr self, ref RECT prcBorder, IntPtr pUIWindow, int fFrameWindow);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_EnableModelessFunc = (EnableModelessFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(EnableModelessFunc));
             } 
-            
             return  m_EnableModelessFunc(m_ptr, fEnable);
         }
         delegate int EnableModelessFunc(IntPtr self, int fEnable);

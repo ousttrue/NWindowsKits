@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_CreateInstanceFunc = (CreateInstanceFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(CreateInstanceFunc));
             } 
-            
             return  m_CreateInstanceFunc(m_ptr, pUnkOuter, ref riid, ref ppvObject);
         }
         delegate int CreateInstanceFunc(IntPtr self, IntPtr pUnkOuter, ref Guid riid, ref IntPtr ppvObject);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_LockServerFunc = (LockServerFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(LockServerFunc));
             } 
-            
             return  m_LockServerFunc(m_ptr, fLock);
         }
         delegate int LockServerFunc(IntPtr self, int fLock);

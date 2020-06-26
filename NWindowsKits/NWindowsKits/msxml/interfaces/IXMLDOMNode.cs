@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(7);
                 m_get_nodeNameFunc = (get_nodeNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nodeNameFunc));
             } 
-            
             return  m_get_nodeNameFunc(m_ptr, ref name);
         }
         delegate int get_nodeNameFunc(IntPtr self, ref IntPtr name);
@@ -29,7 +28,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(8);
                 m_get_nodeValueFunc = (get_nodeValueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nodeValueFunc));
             } 
-            
             return  m_get_nodeValueFunc(m_ptr, ref value);
         }
         delegate int get_nodeValueFunc(IntPtr self, ref VARIANT value);
@@ -41,7 +39,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(9);
                 m_put_nodeValueFunc = (put_nodeValueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_nodeValueFunc));
             } 
-            
             return  m_put_nodeValueFunc(m_ptr, value);
         }
         delegate int put_nodeValueFunc(IntPtr self, VARIANT value);
@@ -53,7 +50,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(10);
                 m_get_nodeTypeFunc = (get_nodeTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nodeTypeFunc));
             } 
-            
             return  m_get_nodeTypeFunc(m_ptr, ref type);
         }
         delegate int get_nodeTypeFunc(IntPtr self, ref DOMNodeType type);
@@ -65,7 +61,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(11);
                 m_get_parentNodeFunc = (get_parentNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_parentNodeFunc));
             } 
-            
             return  m_get_parentNodeFunc(m_ptr, ref parent);
         }
         delegate int get_parentNodeFunc(IntPtr self, ref IntPtr parent);
@@ -77,7 +72,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(12);
                 m_get_childNodesFunc = (get_childNodesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_childNodesFunc));
             } 
-            
             return  m_get_childNodesFunc(m_ptr, ref childList);
         }
         delegate int get_childNodesFunc(IntPtr self, ref IntPtr childList);
@@ -89,7 +83,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(13);
                 m_get_firstChildFunc = (get_firstChildFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_firstChildFunc));
             } 
-            
             return  m_get_firstChildFunc(m_ptr, ref firstChild);
         }
         delegate int get_firstChildFunc(IntPtr self, ref IntPtr firstChild);
@@ -101,7 +94,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(14);
                 m_get_lastChildFunc = (get_lastChildFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_lastChildFunc));
             } 
-            
             return  m_get_lastChildFunc(m_ptr, ref lastChild);
         }
         delegate int get_lastChildFunc(IntPtr self, ref IntPtr lastChild);
@@ -113,7 +105,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(15);
                 m_get_previousSiblingFunc = (get_previousSiblingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_previousSiblingFunc));
             } 
-            
             return  m_get_previousSiblingFunc(m_ptr, ref previousSibling);
         }
         delegate int get_previousSiblingFunc(IntPtr self, ref IntPtr previousSibling);
@@ -125,7 +116,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(16);
                 m_get_nextSiblingFunc = (get_nextSiblingFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nextSiblingFunc));
             } 
-            
             return  m_get_nextSiblingFunc(m_ptr, ref nextSibling);
         }
         delegate int get_nextSiblingFunc(IntPtr self, ref IntPtr nextSibling);
@@ -137,7 +127,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(17);
                 m_get_attributesFunc = (get_attributesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_attributesFunc));
             } 
-            
             return  m_get_attributesFunc(m_ptr, ref attributeMap);
         }
         delegate int get_attributesFunc(IntPtr self, ref IntPtr attributeMap);
@@ -149,7 +138,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(18);
                 m_insertBeforeFunc = (insertBeforeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(insertBeforeFunc));
             } 
-            
             return  m_insertBeforeFunc(m_ptr, newChild, refChild, ref outNewChild);
         }
         delegate int insertBeforeFunc(IntPtr self, IntPtr newChild, VARIANT refChild, ref IntPtr outNewChild);
@@ -161,7 +149,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(19);
                 m_replaceChildFunc = (replaceChildFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(replaceChildFunc));
             } 
-            
             return  m_replaceChildFunc(m_ptr, newChild, oldChild, ref outOldChild);
         }
         delegate int replaceChildFunc(IntPtr self, IntPtr newChild, IntPtr oldChild, ref IntPtr outOldChild);
@@ -173,7 +160,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(20);
                 m_removeChildFunc = (removeChildFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(removeChildFunc));
             } 
-            
             return  m_removeChildFunc(m_ptr, childNode, ref oldChild);
         }
         delegate int removeChildFunc(IntPtr self, IntPtr childNode, ref IntPtr oldChild);
@@ -185,7 +171,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(21);
                 m_appendChildFunc = (appendChildFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(appendChildFunc));
             } 
-            
             return  m_appendChildFunc(m_ptr, newChild, ref outNewChild);
         }
         delegate int appendChildFunc(IntPtr self, IntPtr newChild, ref IntPtr outNewChild);
@@ -197,7 +182,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(22);
                 m_hasChildNodesFunc = (hasChildNodesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(hasChildNodesFunc));
             } 
-            
             return  m_hasChildNodesFunc(m_ptr, ref hasChild);
         }
         delegate int hasChildNodesFunc(IntPtr self, ref short hasChild);
@@ -209,7 +193,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(23);
                 m_get_ownerDocumentFunc = (get_ownerDocumentFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_ownerDocumentFunc));
             } 
-            
             return  m_get_ownerDocumentFunc(m_ptr, ref XMLDOMDocument);
         }
         delegate int get_ownerDocumentFunc(IntPtr self, ref IntPtr XMLDOMDocument);
@@ -221,7 +204,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(24);
                 m_cloneNodeFunc = (cloneNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(cloneNodeFunc));
             } 
-            
             return  m_cloneNodeFunc(m_ptr, deep, ref cloneRoot);
         }
         delegate int cloneNodeFunc(IntPtr self, short deep, ref IntPtr cloneRoot);
@@ -233,7 +215,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(25);
                 m_get_nodeTypeStringFunc = (get_nodeTypeStringFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nodeTypeStringFunc));
             } 
-            
             return  m_get_nodeTypeStringFunc(m_ptr, ref nodeType);
         }
         delegate int get_nodeTypeStringFunc(IntPtr self, ref IntPtr nodeType);
@@ -245,7 +226,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(26);
                 m_get_textFunc = (get_textFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_textFunc));
             } 
-            
             return  m_get_textFunc(m_ptr, ref text);
         }
         delegate int get_textFunc(IntPtr self, ref IntPtr text);
@@ -257,7 +237,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(27);
                 m_put_textFunc = (put_textFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_textFunc));
             } 
-            
             return  m_put_textFunc(m_ptr, text);
         }
         delegate int put_textFunc(IntPtr self, IntPtr text);
@@ -269,7 +248,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(28);
                 m_get_specifiedFunc = (get_specifiedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_specifiedFunc));
             } 
-            
             return  m_get_specifiedFunc(m_ptr, ref isSpecified);
         }
         delegate int get_specifiedFunc(IntPtr self, ref short isSpecified);
@@ -281,7 +259,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(29);
                 m_get_definitionFunc = (get_definitionFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_definitionFunc));
             } 
-            
             return  m_get_definitionFunc(m_ptr, ref definitionNode);
         }
         delegate int get_definitionFunc(IntPtr self, ref IntPtr definitionNode);
@@ -293,7 +270,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(30);
                 m_get_nodeTypedValueFunc = (get_nodeTypedValueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_nodeTypedValueFunc));
             } 
-            
             return  m_get_nodeTypedValueFunc(m_ptr, ref typedValue);
         }
         delegate int get_nodeTypedValueFunc(IntPtr self, ref VARIANT typedValue);
@@ -305,7 +281,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(31);
                 m_put_nodeTypedValueFunc = (put_nodeTypedValueFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_nodeTypedValueFunc));
             } 
-            
             return  m_put_nodeTypedValueFunc(m_ptr, typedValue);
         }
         delegate int put_nodeTypedValueFunc(IntPtr self, VARIANT typedValue);
@@ -317,7 +292,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(32);
                 m_get_dataTypeFunc = (get_dataTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_dataTypeFunc));
             } 
-            
             return  m_get_dataTypeFunc(m_ptr, ref dataTypeName);
         }
         delegate int get_dataTypeFunc(IntPtr self, ref VARIANT dataTypeName);
@@ -329,7 +303,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(33);
                 m_put_dataTypeFunc = (put_dataTypeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(put_dataTypeFunc));
             } 
-            
             return  m_put_dataTypeFunc(m_ptr, dataTypeName);
         }
         delegate int put_dataTypeFunc(IntPtr self, IntPtr dataTypeName);
@@ -341,7 +314,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(34);
                 m_get_xmlFunc = (get_xmlFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_xmlFunc));
             } 
-            
             return  m_get_xmlFunc(m_ptr, ref xmlString);
         }
         delegate int get_xmlFunc(IntPtr self, ref IntPtr xmlString);
@@ -353,7 +325,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(35);
                 m_transformNodeFunc = (transformNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(transformNodeFunc));
             } 
-            
             return  m_transformNodeFunc(m_ptr, stylesheet, ref xmlString);
         }
         delegate int transformNodeFunc(IntPtr self, IntPtr stylesheet, ref IntPtr xmlString);
@@ -365,7 +336,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(36);
                 m_selectNodesFunc = (selectNodesFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(selectNodesFunc));
             } 
-            
             return  m_selectNodesFunc(m_ptr, queryString, ref resultList);
         }
         delegate int selectNodesFunc(IntPtr self, IntPtr queryString, ref IntPtr resultList);
@@ -377,7 +347,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(37);
                 m_selectSingleNodeFunc = (selectSingleNodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(selectSingleNodeFunc));
             } 
-            
             return  m_selectSingleNodeFunc(m_ptr, queryString, ref resultNode);
         }
         delegate int selectSingleNodeFunc(IntPtr self, IntPtr queryString, ref IntPtr resultNode);
@@ -389,7 +358,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(38);
                 m_get_parsedFunc = (get_parsedFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_parsedFunc));
             } 
-            
             return  m_get_parsedFunc(m_ptr, ref isParsed);
         }
         delegate int get_parsedFunc(IntPtr self, ref short isParsed);
@@ -401,7 +369,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(39);
                 m_get_namespaceURIFunc = (get_namespaceURIFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_namespaceURIFunc));
             } 
-            
             return  m_get_namespaceURIFunc(m_ptr, ref namespaceURI);
         }
         delegate int get_namespaceURIFunc(IntPtr self, ref IntPtr namespaceURI);
@@ -413,7 +380,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(40);
                 m_get_prefixFunc = (get_prefixFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_prefixFunc));
             } 
-            
             return  m_get_prefixFunc(m_ptr, ref prefixString);
         }
         delegate int get_prefixFunc(IntPtr self, ref IntPtr prefixString);
@@ -425,7 +391,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(41);
                 m_get_baseNameFunc = (get_baseNameFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(get_baseNameFunc));
             } 
-            
             return  m_get_baseNameFunc(m_ptr, ref nameString);
         }
         delegate int get_baseNameFunc(IntPtr self, ref IntPtr nameString);
@@ -437,7 +402,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(42);
                 m_transformNodeToObjectFunc = (transformNodeToObjectFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(transformNodeToObjectFunc));
             } 
-            
             return  m_transformNodeToObjectFunc(m_ptr, stylesheet, outputObject);
         }
         delegate int transformNodeToObjectFunc(IntPtr self, IntPtr stylesheet, VARIANT outputObject);

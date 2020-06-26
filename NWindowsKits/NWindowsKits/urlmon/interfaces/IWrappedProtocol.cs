@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_GetWrapperCodeFunc = (GetWrapperCodeFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(GetWrapperCodeFunc));
             } 
-            
             return  m_GetWrapperCodeFunc(m_ptr, ref pnCode, dwReserved);
         }
         delegate int GetWrapperCodeFunc(IntPtr self, ref int pnCode, ulong dwReserved);

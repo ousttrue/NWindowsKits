@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(3);
                 m_AsyncGetClassBitsFunc = (AsyncGetClassBitsFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(AsyncGetClassBitsFunc));
             } 
-            
             return  m_AsyncGetClassBitsFunc(m_ptr, ref rclsid, pszTYPE, pszExt, dwFileVersionMS, dwFileVersionLS, pszCodeBase, pbc, dwClassContext, ref riid, flags);
         }
         delegate int AsyncGetClassBitsFunc(IntPtr self, ref Guid rclsid, [MarshalAs(UnmanagedType.LPWStr)] string pszTYPE, [MarshalAs(UnmanagedType.LPWStr)] string pszExt, uint dwFileVersionMS, uint dwFileVersionLS, [MarshalAs(UnmanagedType.LPWStr)] string pszCodeBase, IntPtr pbc, uint dwClassContext, ref Guid riid, uint flags);

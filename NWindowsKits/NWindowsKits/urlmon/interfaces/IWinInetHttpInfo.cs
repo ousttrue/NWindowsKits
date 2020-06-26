@@ -17,7 +17,6 @@ namespace NWindowsKits
                 var fp = GetFunctionPointer(4);
                 m_QueryInfoFunc = (QueryInfoFunc)Marshal.GetDelegateForFunctionPointer(fp, typeof(QueryInfoFunc));
             } 
-            
             return  m_QueryInfoFunc(m_ptr, dwOption, pBuffer, ref pcbBuf, ref pdwFlags, ref pdwReserved);
         }
         delegate int QueryInfoFunc(IntPtr self, uint dwOption, IntPtr pBuffer, ref uint pcbBuf, ref uint pdwFlags, ref uint pdwReserved);
