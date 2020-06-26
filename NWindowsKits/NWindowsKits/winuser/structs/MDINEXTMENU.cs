@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MDINEXTMENU // 3
     {
+
         public HMENU hmenuIn;
         public HMENU hmenuNext;
         public HWND hwndNext;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DELETEITEMSTRUCT // 3
     {
+
         public uint CtlType;
         public uint CtlID;
         public uint itemID;

@@ -11,7 +11,7 @@ namespace NWindowsKits
         public static new ref Guid IID => ref s_uuid;
         public override ref Guid GetIID() { return ref s_uuid; }
 
-        public int Dummy(HCURSOR h1, HDC h2)
+        public int Dummy(HICON h1, HDC h2)
         {
             if(m_DummyFunc==null){
                 var fp = GetFunctionPointer(3);
@@ -20,7 +20,7 @@ namespace NWindowsKits
             
             return  m_DummyFunc(m_ptr, h1, h2);
         }
-        delegate int DummyFunc(IntPtr self, HCURSOR h1, HDC h2);
+        delegate int DummyFunc(IntPtr self, HICON h1, HDC h2);
         DummyFunc m_DummyFunc;
 
     }

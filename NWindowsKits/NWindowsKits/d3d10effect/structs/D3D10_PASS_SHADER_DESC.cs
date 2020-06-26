@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_PASS_SHADER_DESC // 1
     {
+
         public IntPtr pShaderVariable;
         public uint ShaderIndex;
     }

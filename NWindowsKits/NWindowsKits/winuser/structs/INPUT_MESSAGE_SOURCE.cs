@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct INPUT_MESSAGE_SOURCE // 1
     {
+
         public INPUT_MESSAGE_DEVICE_TYPE deviceType;
         public INPUT_MESSAGE_ORIGIN_ID originId;
     }

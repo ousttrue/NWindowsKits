@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct EVENTMSG // 7
     {
+
         public uint message;
         public uint paramL;
         public uint paramH;

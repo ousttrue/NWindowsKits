@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_TEXTURE1D_DESC // 1
     {
+
         public uint Width;
         public uint MipLevels;
         public uint ArraySize;

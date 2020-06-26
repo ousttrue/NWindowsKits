@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct LUID // 2
     {
+
         public uint LowPart;
         public int HighPart;
     }

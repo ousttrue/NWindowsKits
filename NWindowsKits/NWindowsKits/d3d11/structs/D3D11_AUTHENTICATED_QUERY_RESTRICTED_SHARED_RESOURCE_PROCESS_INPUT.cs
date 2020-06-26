@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_INPUT // 1
     {
+
         public D3D11_AUTHENTICATED_QUERY_INPUT Input;
         public uint ProcessIndex;
     }

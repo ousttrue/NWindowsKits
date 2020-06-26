@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WTSSESSION_NOTIFICATION // 2
     {
+
         public uint cbSize;
         public uint dwSessionId;
     }

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HWINSTA // 9
     {
+
         public IntPtr ptr;
     }
 }

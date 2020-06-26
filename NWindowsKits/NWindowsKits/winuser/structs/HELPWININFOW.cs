@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HELPWININFOW // 3
     {
+
         public int wStructSize;
         public int x;
         public int y;

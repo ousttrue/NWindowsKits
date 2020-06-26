@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct COMBOBOXINFO // 3
     {
+
         public uint cbSize;
         public RECT rcItem;
         public RECT rcButton;

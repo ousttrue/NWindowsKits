@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_RATIONAL // 1
     {
+
         public uint Numerator;
         public uint Denominator;
     }

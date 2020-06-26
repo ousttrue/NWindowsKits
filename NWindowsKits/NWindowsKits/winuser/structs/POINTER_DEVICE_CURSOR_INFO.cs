@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINTER_DEVICE_CURSOR_INFO // 1
     {
+
         public uint cursorId;
         public POINTER_DEVICE_CURSOR_TYPE cursor;
     }

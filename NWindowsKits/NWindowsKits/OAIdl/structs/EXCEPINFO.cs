@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct EXCEPINFO // 3
     {
+
         public ushort wCode;
         public ushort wReserved;
         public IntPtr bstrSource;

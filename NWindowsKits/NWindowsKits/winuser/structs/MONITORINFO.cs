@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MONITORINFO // 4
     {
+
         public uint cbSize;
         public RECT rcMonitor;
         public RECT rcWork;

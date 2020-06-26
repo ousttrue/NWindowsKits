@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct BLENDFUNCTION // 2
     {
+
         public byte BlendOp;
         public byte BlendFlags;
         public byte SourceConstantAlpha;

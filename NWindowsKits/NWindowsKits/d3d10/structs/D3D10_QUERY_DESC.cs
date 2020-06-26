@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_QUERY_DESC // 1
     {
+
         public D3D10_QUERY Query;
         public uint MiscFlags;
     }

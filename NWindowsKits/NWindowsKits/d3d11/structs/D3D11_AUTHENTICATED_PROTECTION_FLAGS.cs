@@ -9,6 +9,7 @@ namespace NWindowsKits
     public struct D3D11_AUTHENTICATED_PROTECTION_FLAGS // 1
     {
 
+
         [FieldOffset(0)] public __MIDL___MIDL_itf_d3d11_0000_0034_0001 Flags;
 
         [FieldOffset(0)] public uint Value;

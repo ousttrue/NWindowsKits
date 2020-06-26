@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CLIPDATA // 1
     {
+
         public uint cbSize;
         public int ulClipFmt;
         public IntPtr pClipData;

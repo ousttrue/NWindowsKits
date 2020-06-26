@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE_INPUT // 1
     {
+
         public D3D11_AUTHENTICATED_CONFIGURE_INPUT Parameters;
         public uint StartSequenceQuery;
         public uint StartSequenceConfigure;

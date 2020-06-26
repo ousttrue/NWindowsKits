@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_QUERY_DATA_PIPELINE_STATISTICS // 1
     {
+
         public ulong IAVertices;
         public ulong IAPrimitives;
         public ulong VSInvocations;

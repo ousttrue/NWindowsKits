@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CACY // 1
     {
+
         public uint cElems;
         public IntPtr pElems;
     }

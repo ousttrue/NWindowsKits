@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct KEYBDINPUT // 3
     {
+
         public ushort wVk;
         public ushort wScan;
         public uint dwFlags;

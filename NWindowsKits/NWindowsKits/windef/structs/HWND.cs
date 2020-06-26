@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HWND // 570
     {
+
         public IntPtr ptr;
     }
 }

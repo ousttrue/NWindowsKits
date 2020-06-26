@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_TEX3D_RTV // 1
     {
+
         public uint MipSlice;
         public uint FirstWSlice;
         public uint WSize;

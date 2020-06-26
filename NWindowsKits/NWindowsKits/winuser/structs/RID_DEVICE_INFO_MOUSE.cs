@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RID_DEVICE_INFO_MOUSE // 2
     {
+
         public uint dwId;
         public uint dwNumberOfButtons;
         public uint dwSampleRate;

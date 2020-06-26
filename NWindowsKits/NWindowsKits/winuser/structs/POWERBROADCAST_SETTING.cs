@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POWERBROADCAST_SETTING // 2
     {
+
         public GUID PowerSetting;
         public uint DataLength;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)] public byte[] Data;

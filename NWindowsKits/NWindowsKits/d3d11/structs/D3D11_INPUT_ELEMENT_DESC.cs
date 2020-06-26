@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_INPUT_ELEMENT_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string SemanticName;
         public uint SemanticIndex;
         public DXGI_FORMAT Format;

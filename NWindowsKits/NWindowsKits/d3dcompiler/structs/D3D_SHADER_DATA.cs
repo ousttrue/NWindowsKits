@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D_SHADER_DATA // 1
     {
+
         public IntPtr pBytecode;
         public ulong BytecodeLength;
     }

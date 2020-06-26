@@ -8,6 +8,41 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct INPUT_TRANSFORM // 1
     {
-        public __Anonymous__4 __field__0;
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6787
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public __Anonymous__1 __field__0;
+    
+            [FieldOffset(0)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)] public float[][] m;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6788
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__1 // 0
+        {
+    
+            public float _11;
+            public float _12;
+            public float _13;
+            public float _14;
+            public float _21;
+            public float _22;
+            public float _23;
+            public float _24;
+            public float _31;
+            public float _32;
+            public float _33;
+            public float _34;
+            public float _41;
+            public float _42;
+            public float _43;
+            public float _44;
+        }
+    
+
+        public __Anonymous__0 __field__0;
     }
 }

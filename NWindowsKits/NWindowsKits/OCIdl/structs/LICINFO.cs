@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct LICINFO // 2
     {
+
         public int cbLicInfo;
         public int fRuntimeKeyAvail;
         public int fLicVerified;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CADWORD // 2
     {
+
         public uint cElems;
         public IntPtr pElems;
     }

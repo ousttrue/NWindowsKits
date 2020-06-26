@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MOUSEHOOKSTRUCT // 4
     {
+
         public POINT pt;
         public HWND hwnd;
         public uint wHitTestCode;

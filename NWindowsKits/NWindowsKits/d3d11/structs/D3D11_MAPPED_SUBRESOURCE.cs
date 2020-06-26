@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_MAPPED_SUBRESOURCE // 1
     {
+
         public IntPtr pData;
         public uint RowPitch;
         public uint DepthPitch;

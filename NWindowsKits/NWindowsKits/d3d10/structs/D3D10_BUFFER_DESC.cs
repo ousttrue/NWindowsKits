@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_BUFFER_DESC // 1
     {
+
         public uint ByteWidth;
         public D3D10_USAGE Usage;
         public uint BindFlags;

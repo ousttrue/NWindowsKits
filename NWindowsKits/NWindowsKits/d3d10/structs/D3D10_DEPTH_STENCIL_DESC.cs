@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_DEPTH_STENCIL_DESC // 1
     {
+
         public int DepthEnable;
         public D3D10_DEPTH_WRITE_MASK DepthWriteMask;
         public D3D10_COMPARISON_FUNC DepthFunc;

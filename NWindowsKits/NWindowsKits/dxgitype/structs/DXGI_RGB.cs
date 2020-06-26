@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_RGB // 1
     {
+
         public float Red;
         public float Green;
         public float Blue;

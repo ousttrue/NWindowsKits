@@ -23,7 +23,7 @@ namespace NWindowsKits
         delegate int CreateSubresourceSurfaceFunc(IntPtr self, uint index, ref IntPtr ppSurface);
         CreateSubresourceSurfaceFunc m_CreateSubresourceSurfaceFunc;
 
-        public int CreateSharedHandle(ref SECURITY_ATTRIBUTES pAttributes, uint dwAccess, [MarshalAs(UnmanagedType.LPWStr)] string lpName, ref IntPtr pHandle)
+        public int CreateSharedHandle(ref LPSECURITY_ATTRIBUTES pAttributes, uint dwAccess, [MarshalAs(UnmanagedType.LPWStr)] string lpName, ref IntPtr pHandle)
         {
             if(m_CreateSharedHandleFunc==null){
                 var fp = GetFunctionPointer(13);
@@ -32,7 +32,7 @@ namespace NWindowsKits
             
             return  m_CreateSharedHandleFunc(m_ptr, ref pAttributes, dwAccess, lpName, ref pHandle);
         }
-        delegate int CreateSharedHandleFunc(IntPtr self, ref SECURITY_ATTRIBUTES pAttributes, uint dwAccess, [MarshalAs(UnmanagedType.LPWStr)] string lpName, ref IntPtr pHandle);
+        delegate int CreateSharedHandleFunc(IntPtr self, ref LPSECURITY_ATTRIBUTES pAttributes, uint dwAccess, [MarshalAs(UnmanagedType.LPWStr)] string lpName, ref IntPtr pHandle);
         CreateSharedHandleFunc m_CreateSharedHandleFunc;
 
     }

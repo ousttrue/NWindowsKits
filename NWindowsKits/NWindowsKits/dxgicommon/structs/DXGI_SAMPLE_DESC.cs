@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_SAMPLE_DESC // 1
     {
+
         public uint Count;
         public uint Quality;
     }

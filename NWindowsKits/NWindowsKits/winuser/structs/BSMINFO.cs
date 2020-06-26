@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct BSMINFO // 2
     {
+
         public uint cbSize;
         public HDESK hdesk;
         public HWND hwnd;

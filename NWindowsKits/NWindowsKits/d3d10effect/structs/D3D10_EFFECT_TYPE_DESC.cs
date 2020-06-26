@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_EFFECT_TYPE_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string TypeName;
         public D3D_SHADER_VARIABLE_CLASS Class;
         public D3D_SHADER_VARIABLE_TYPE Type;

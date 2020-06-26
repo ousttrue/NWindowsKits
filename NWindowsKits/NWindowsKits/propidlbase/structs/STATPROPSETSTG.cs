@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct STATPROPSETSTG // 1
     {
+
         public GUID fmtid;
         public GUID clsid;
         public uint grfFlags;

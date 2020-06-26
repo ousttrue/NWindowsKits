@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_PARAMETER_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string Name;
         [MarshalAs(UnmanagedType.LPStr)] public string SemanticName;
         public D3D_SHADER_VARIABLE_TYPE Type;

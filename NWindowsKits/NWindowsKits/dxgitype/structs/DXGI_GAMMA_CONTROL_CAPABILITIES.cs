@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_GAMMA_CONTROL_CAPABILITIES // 1
     {
+
         public int ScaleAndOffsetSupported;
         public float MaxConvertedValue;
         public float MinConvertedValue;

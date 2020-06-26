@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINTER_PEN_INFO // 1
     {
+
         public POINTER_INFO pointerInfo;
         public uint penFlags;
         public uint penMask;

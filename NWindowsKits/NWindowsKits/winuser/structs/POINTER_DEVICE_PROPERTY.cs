@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINTER_DEVICE_PROPERTY // 1
     {
+
         public int logicalMin;
         public int logicalMax;
         public int physicalMin;

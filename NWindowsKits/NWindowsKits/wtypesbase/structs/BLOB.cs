@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct BLOB // 2
     {
+
         public uint cbSize;
         public IntPtr pBlobData;
     }

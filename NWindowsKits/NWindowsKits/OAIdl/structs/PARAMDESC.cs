@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PARAMDESC // 2
     {
+
         public IntPtr pparamdescex;
         public ushort wParamFlags;
     }

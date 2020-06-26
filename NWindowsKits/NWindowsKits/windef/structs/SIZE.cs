@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct SIZE // 3
     {
+
         public int cx;
         public int cy;
     }

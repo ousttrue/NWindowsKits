@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_D3D11_OPTIONS1 // 1
     {
+
         public D3D11_TILED_RESOURCES_TIER TiledResourcesTier;
         public int MinMaxFiltering;
         public int ClearViewAlsoSupportsDepthOnlyFormats;

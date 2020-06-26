@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DROPSTRUCT // 3
     {
+
         public HWND hwndSource;
         public HWND hwndSink;
         public uint wFmt;

@@ -8,7 +8,7 @@ namespace NWindowsKits
     public delegate int PFN_D3D11_CREATE_DEVICE(
         IntPtr __param__0,
         D3D_DRIVER_TYPE __param__1,
-        HMODULE __param__2,
+        HINSTANCE __param__2,
         uint __param__3,
         ref D3D_FEATURE_LEVEL __param__4,
         uint FeatureLevels,
@@ -22,7 +22,7 @@ namespace NWindowsKits
     public delegate int PFN_D3D11_CREATE_DEVICE_AND_SWAP_CHAIN(
         IntPtr __param__0,
         D3D_DRIVER_TYPE __param__1,
-        HMODULE __param__2,
+        HINSTANCE __param__2,
         uint __param__3,
         ref D3D_FEATURE_LEVEL __param__4,
         uint FeatureLevels,
@@ -41,7 +41,7 @@ namespace NWindowsKits
         public static extern int D3D11CreateDevice(
             IntPtr pAdapter,
             D3D_DRIVER_TYPE DriverType,
-            HMODULE Software,
+            HINSTANCE Software,
             uint Flags,
             ref D3D_FEATURE_LEVEL pFeatureLevels,
             uint FeatureLevels,
@@ -56,7 +56,7 @@ namespace NWindowsKits
         public static extern int D3D11CreateDeviceAndSwapChain(
             IntPtr pAdapter,
             D3D_DRIVER_TYPE DriverType,
-            HMODULE Software,
+            HINSTANCE Software,
             uint Flags,
             ref D3D_FEATURE_LEVEL pFeatureLevels,
             uint FeatureLevels,

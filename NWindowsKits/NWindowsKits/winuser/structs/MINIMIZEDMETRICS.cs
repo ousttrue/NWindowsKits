@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MINIMIZEDMETRICS // 3
     {
+
         public uint cbSize;
         public int iWidth;
         public int iHorzGap;

@@ -8,9 +8,10 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MSGBOXPARAMSW // 3
     {
+
         public uint cbSize;
         public HWND hwndOwner;
-        public HMODULE hInstance;
+        public HINSTANCE hInstance;
         [MarshalAs(UnmanagedType.LPWStr)] public string lpszText;
         [MarshalAs(UnmanagedType.LPWStr)] public string lpszCaption;
         public uint dwStyle;

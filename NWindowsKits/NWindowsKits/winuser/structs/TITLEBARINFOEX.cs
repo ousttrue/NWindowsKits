@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TITLEBARINFOEX // 3
     {
+
         public uint cbSize;
         public RECT rcTitleBar;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public uint[] rgstate;

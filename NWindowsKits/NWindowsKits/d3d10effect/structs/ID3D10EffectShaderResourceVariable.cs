@@ -8,5 +8,6 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ID3D10EffectShaderResourceVariable // 4
     {
+
     }
 }

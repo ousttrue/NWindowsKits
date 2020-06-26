@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DEBUGHOOKINFO // 4
     {
+
         public uint idThread;
         public uint idThreadInstaller;
         public long lParam;

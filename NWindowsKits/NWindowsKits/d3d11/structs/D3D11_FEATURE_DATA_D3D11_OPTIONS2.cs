@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_D3D11_OPTIONS2 // 1
     {
+
         public int PSSpecifiedStencilRefSupported;
         public int TypedUAVLoadAdditionalFormats;
         public int ROVsSupported;

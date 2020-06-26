@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WINDOWINFO // 3
     {
+
         public uint cbSize;
         public RECT rcWindow;
         public RECT rcClient;

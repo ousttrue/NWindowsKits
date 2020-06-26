@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_STATE_BLOCK_MASK // 1
     {
+
         public byte VS;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)] public byte[] VSSamplers;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)] public byte[] VSShaderResources;

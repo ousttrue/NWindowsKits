@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_MESSAGE // 1
     {
+
         public D3D10_MESSAGE_CATEGORY Category;
         public D3D10_MESSAGE_SEVERITY Severity;
         public D3D10_MESSAGE_ID ID;

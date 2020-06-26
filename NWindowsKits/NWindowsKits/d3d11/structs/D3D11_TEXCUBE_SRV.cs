@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_TEXCUBE_SRV // 1
     {
+
         public uint MostDetailedMip;
         public uint MipLevels;
     }

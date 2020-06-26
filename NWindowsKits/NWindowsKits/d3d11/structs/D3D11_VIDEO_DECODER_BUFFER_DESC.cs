@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_DECODER_BUFFER_DESC // 1
     {
+
         public D3D11_VIDEO_DECODER_BUFFER_TYPE BufferType;
         public uint BufferIndex;
         public uint DataOffset;

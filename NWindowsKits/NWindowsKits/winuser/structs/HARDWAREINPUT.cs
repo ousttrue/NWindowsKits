@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HARDWAREINPUT // 3
     {
+
         public uint uMsg;
         public ushort wParamL;
         public ushort wParamH;

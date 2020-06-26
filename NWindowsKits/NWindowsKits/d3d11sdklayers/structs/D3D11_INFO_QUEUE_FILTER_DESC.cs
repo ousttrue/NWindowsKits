@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_INFO_QUEUE_FILTER_DESC // 1
     {
+
         public uint NumCategories;
         public IntPtr pCategoryList;
         public uint NumSeverities;

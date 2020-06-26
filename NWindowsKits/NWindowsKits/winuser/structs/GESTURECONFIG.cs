@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct GESTURECONFIG // 2
     {
+
         public uint dwID;
         public uint dwWant;
         public uint dwBlock;

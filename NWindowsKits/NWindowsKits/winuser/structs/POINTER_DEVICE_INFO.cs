@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINTER_DEVICE_INFO // 1
     {
+
         public uint displayOrientation;
         public IntPtr device;
         public POINTER_DEVICE_TYPE pointerDeviceType;

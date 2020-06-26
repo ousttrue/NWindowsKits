@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WINDOWPOS // 3
     {
+
         public HWND hwnd;
         public HWND hwndInsertAfter;
         public int x;

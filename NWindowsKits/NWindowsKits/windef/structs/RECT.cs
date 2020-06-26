@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RECT // 4
     {
+
         public int left;
         public int top;
         public int right;

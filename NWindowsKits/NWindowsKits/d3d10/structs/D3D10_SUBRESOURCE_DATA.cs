@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_SUBRESOURCE_DATA // 1
     {
+
         public IntPtr pSysMem;
         public uint SysMemPitch;
         public uint SysMemSlicePitch;

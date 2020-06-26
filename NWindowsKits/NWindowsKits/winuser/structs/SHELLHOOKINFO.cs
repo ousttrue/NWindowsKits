@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct SHELLHOOKINFO // 2
     {
+
         public HWND hwnd;
         public RECT rc;
     }

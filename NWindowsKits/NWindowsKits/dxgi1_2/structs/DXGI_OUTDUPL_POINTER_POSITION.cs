@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTDUPL_POINTER_POSITION // 1
     {
+
         public POINT Position;
         public int Visible;
     }

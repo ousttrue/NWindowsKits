@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct NONCLIENTMETRICSW // 3
     {
+
         public uint cbSize;
         public int iBorderWidth;
         public int iScrollWidth;

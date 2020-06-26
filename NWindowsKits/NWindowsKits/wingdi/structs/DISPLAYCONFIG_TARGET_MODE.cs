@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_TARGET_MODE // 1
     {
+
         public DISPLAYCONFIG_VIDEO_SIGNAL_INFO targetVideoSignalInfo;
     }
 }

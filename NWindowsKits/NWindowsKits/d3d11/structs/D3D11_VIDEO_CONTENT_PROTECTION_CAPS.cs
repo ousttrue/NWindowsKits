@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_CONTENT_PROTECTION_CAPS // 1
     {
+
         public uint Caps;
         public uint KeyExchangeTypeCount;
         public uint BlockAlignmentSize;

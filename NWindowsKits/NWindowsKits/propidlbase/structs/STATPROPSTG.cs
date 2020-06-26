@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct STATPROPSTG // 1
     {
+
         public IntPtr lpwstrName;
         public uint propid;
         public ushort vt;

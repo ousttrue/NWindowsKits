@@ -8,8 +8,32 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_RENDER_TARGET_VIEW_DESC // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:3813
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public D3D11_BUFFER_RTV Buffer;
+    
+            [FieldOffset(0)] public D3D11_TEX1D_RTV Texture1D;
+    
+            [FieldOffset(0)] public D3D11_TEX1D_ARRAY_RTV Texture1DArray;
+    
+            [FieldOffset(0)] public D3D11_TEX2D_RTV Texture2D;
+    
+            [FieldOffset(0)] public D3D11_TEX2D_ARRAY_RTV Texture2DArray;
+    
+            [FieldOffset(0)] public D3D11_TEX2DMS_RTV Texture2DMS;
+    
+            [FieldOffset(0)] public D3D11_TEX2DMS_ARRAY_RTV Texture2DMSArray;
+    
+            [FieldOffset(0)] public D3D11_TEX3D_RTV Texture3D;
+        }
+    
+
         public DXGI_FORMAT Format;
         public D3D11_RTV_DIMENSION ViewDimension;
-        public __Anonymous__45 __field__2;
+        public __Anonymous__0 __field__2;
     }
 }

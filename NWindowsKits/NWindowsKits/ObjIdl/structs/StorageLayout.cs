@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct StorageLayout // 1
     {
+
         public uint LayoutType;
         public IntPtr pwcsElementName;
         public LARGE_INTEGER cOffset;

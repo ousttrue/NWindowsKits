@@ -8,8 +8,28 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_UNORDERED_ACCESS_VIEW_DESC // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:4648
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public D3D11_BUFFER_UAV Buffer;
+    
+            [FieldOffset(0)] public D3D11_TEX1D_UAV Texture1D;
+    
+            [FieldOffset(0)] public D3D11_TEX1D_ARRAY_UAV Texture1DArray;
+    
+            [FieldOffset(0)] public D3D11_TEX2D_UAV Texture2D;
+    
+            [FieldOffset(0)] public D3D11_TEX2D_ARRAY_UAV Texture2DArray;
+    
+            [FieldOffset(0)] public D3D11_TEX3D_UAV Texture3D;
+        }
+    
+
         public DXGI_FORMAT Format;
         public D3D11_UAV_DIMENSION ViewDimension;
-        public __Anonymous__44 __field__2;
+        public __Anonymous__0 __field__2;
     }
 }

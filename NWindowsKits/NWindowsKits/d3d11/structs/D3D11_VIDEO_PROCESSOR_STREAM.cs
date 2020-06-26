@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_STREAM // 1
     {
+
         public int Enable;
         public uint OutputIndex;
         public uint InputFrameOrField;

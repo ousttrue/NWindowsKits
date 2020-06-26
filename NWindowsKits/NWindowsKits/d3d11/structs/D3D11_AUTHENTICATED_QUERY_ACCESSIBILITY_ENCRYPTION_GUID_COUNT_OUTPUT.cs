@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT // 1
     {
+
         public D3D11_AUTHENTICATED_QUERY_OUTPUT Output;
         public uint EncryptionGuidCount;
     }

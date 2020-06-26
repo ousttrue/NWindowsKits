@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MOUSEINPUT // 3
     {
+
         public int dx;
         public int dy;
         public uint mouseData;

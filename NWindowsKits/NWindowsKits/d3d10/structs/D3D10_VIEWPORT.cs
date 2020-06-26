@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_VIEWPORT // 1
     {
+
         public int TopLeftX;
         public int TopLeftY;
         public uint Width;

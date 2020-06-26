@@ -8,9 +8,10 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CURSORINFO // 3
     {
+
         public uint cbSize;
         public uint flags;
-        public HCURSOR hCursor;
+        public HICON hCursor;
         public POINT ptScreenPos;
     }
 }

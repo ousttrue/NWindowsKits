@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HRAWINPUT // 1
     {
+
         public IntPtr ptr;
     }
 }

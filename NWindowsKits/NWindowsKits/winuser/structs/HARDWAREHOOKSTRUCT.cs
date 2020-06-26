@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HARDWAREHOOKSTRUCT // 3
     {
+
         public HWND hwnd;
         public uint message;
         public ulong wParam;

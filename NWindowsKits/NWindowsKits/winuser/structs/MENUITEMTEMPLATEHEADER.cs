@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MENUITEMTEMPLATEHEADER // 2
     {
+
         public ushort versionNumber;
         public ushort offset;
     }

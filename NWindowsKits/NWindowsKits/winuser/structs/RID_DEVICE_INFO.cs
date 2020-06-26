@@ -8,8 +8,22 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RID_DEVICE_INFO // 3
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15139
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public RID_DEVICE_INFO_MOUSE mouse;
+    
+            [FieldOffset(0)] public RID_DEVICE_INFO_KEYBOARD keyboard;
+    
+            [FieldOffset(0)] public RID_DEVICE_INFO_HID hid;
+        }
+    
+
         public uint cbSize;
         public uint dwType;
-        public __Anonymous__16 __field__2;
+        public __Anonymous__0 __field__2;
     }
 }

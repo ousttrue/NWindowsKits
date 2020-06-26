@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HPALETTE // 21
     {
+
         public IntPtr ptr;
     }
 }

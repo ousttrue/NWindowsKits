@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CWPRETSTRUCT // 4
     {
+
         public long lResult;
         public long lParam;
         public ulong wParam;

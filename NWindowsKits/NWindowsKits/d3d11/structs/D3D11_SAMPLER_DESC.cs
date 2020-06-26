@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_SAMPLER_DESC // 1
     {
+
         public D3D11_FILTER Filter;
         public D3D11_TEXTURE_ADDRESS_MODE AddressU;
         public D3D11_TEXTURE_ADDRESS_MODE AddressV;

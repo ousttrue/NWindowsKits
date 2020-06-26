@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct IDLDESC // 2
     {
+
         public ulong dwReserved;
         public ushort wIDLFlags;
     }

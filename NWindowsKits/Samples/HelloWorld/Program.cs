@@ -11,7 +11,7 @@ namespace HelloWorld
         [STAThread]
         static void Main()
         {
-            var hInstance = default(HMODULE);
+            var hInstance = default(HINSTANCE);
             var nCmdShow = C.SW_SHOW;
 
             // Register the window class.

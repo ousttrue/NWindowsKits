@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_EFFECT_VARIABLE_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string Name;
         [MarshalAs(UnmanagedType.LPStr)] public string Semantic;
         public uint Flags;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct COPYDATASTRUCT // 2
     {
+
         public ulong dwData;
         public uint cbData;
         public IntPtr lpData;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_SOURCE_MODE // 1
     {
+
         public uint width;
         public uint height;
         public DISPLAYCONFIG_PIXELFORMAT pixelFormat;

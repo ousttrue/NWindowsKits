@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct LOGPALETTE // 4
     {
+
         public ushort palVersion;
         public ushort palNumEntries;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)] public PALETTEENTRY[] palPalEntry;

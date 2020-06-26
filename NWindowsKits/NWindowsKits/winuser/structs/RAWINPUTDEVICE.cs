@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWINPUTDEVICE // 3
     {
+
         public ushort usUsagePage;
         public ushort usUsage;
         public uint dwFlags;

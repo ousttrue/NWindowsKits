@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PALETTEENTRY // 3
     {
+
         public byte peRed;
         public byte peGreen;
         public byte peBlue;

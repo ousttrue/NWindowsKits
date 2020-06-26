@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_FORMAT_SUPPORT // 1
     {
+
         public DXGI_FORMAT InFormat;
         public uint OutFormatSupport;
     }

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MDICREATESTRUCTA // 2
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string szClass;
         [MarshalAs(UnmanagedType.LPStr)] public string szTitle;
         public IntPtr hOwner;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_QUERY_OUTPUT // 1
     {
+
         public D3D11_OMAC omac;
         public GUID QueryType;
         public IntPtr hChannel;

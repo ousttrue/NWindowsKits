@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HDESK // 13
     {
+
         public IntPtr ptr;
     }
 }

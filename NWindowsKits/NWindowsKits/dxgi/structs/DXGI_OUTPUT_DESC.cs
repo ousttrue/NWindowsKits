@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTPUT_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] public string DeviceName;
         public RECT DesktopCoordinates;
         public int AttachedToDesktop;

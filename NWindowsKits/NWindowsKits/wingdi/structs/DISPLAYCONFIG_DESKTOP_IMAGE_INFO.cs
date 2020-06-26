@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_DESKTOP_IMAGE_INFO // 1
     {
+
         public POINTL PathSourceSize;
         public RECTL DesktopImageRegion;
         public RECTL DesktopImageClip;

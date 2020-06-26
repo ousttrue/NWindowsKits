@@ -8,10 +8,31 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
     public struct ULARGE_INTEGER // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:863
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+            public uint LowPart;
+            public uint HighPart;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:867
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__1 // 1
+        {
+    
+            public uint LowPart;
+            public uint HighPart;
+        }
+    
 
-        [FieldOffset(0)] public __Anonymous__22 __field__0;
 
-        [FieldOffset(0)] public __Anonymous__23 u;
+        [FieldOffset(0)] public __Anonymous__0 __field__0;
+
+        [FieldOffset(0)] public __Anonymous__1 __field__1;
+
+        [FieldOffset(0)] public __Anonymous__1 u;
 
         [FieldOffset(0)] public ulong QuadPart;
     }

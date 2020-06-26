@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PROPBAG2 // 1
     {
+
         public uint dwType;
         public ushort vt;
         public ushort cfType;

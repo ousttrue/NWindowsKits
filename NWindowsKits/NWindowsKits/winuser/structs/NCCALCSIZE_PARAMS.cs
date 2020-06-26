@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct NCCALCSIZE_PARAMS // 2
     {
+
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)] public RECT[] rgrc;
         public IntPtr lppos;
     }

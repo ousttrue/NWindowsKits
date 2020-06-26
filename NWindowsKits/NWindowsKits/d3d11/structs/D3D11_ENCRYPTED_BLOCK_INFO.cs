@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_ENCRYPTED_BLOCK_INFO // 1
     {
+
         public uint NumEncryptedBytesAtBeginning;
         public uint NumBytesInSkipPattern;
         public uint NumBytesInEncryptPattern;

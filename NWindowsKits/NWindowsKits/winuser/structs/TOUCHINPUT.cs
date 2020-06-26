@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TOUCHINPUT // 2
     {
+
         public int x;
         public int y;
         public IntPtr hSource;

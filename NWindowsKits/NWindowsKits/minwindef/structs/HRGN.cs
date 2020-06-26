@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HRGN // 47
     {
+
         public IntPtr ptr;
     }
 }

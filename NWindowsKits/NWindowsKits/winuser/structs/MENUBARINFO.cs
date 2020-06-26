@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MENUBARINFO // 3
     {
+
         public uint cbSize;
         public RECT rcBar;
         public HMENU hMenu;

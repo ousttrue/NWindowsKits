@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TPMPARAMS // 1
     {
+
         public uint cbSize;
         public RECT rcExclude;
     }

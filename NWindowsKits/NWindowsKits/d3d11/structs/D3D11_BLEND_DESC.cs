@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_BLEND_DESC // 1
     {
+
         public int AlphaToCoverageEnable;
         public int IndependentBlendEnable;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] public D3D11_RENDER_TARGET_BLEND_DESC[] RenderTarget;

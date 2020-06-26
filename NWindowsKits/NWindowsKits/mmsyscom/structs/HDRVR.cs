@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HDRVR // 10
     {
+
         public IntPtr ptr;
     }
 }

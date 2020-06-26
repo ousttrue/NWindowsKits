@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_SO_DECLARATION_ENTRY // 1
     {
+
         public uint Stream;
         [MarshalAs(UnmanagedType.LPStr)] public string SemanticName;
         public uint SemanticIndex;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_SWAP_CHAIN_DESC1 // 1
     {
+
         public uint Width;
         public uint Height;
         public DXGI_FORMAT Format;

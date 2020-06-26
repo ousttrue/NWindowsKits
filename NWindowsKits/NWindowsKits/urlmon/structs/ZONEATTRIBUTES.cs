@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ZONEATTRIBUTES // 2
     {
+
         public uint cbSize;
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 260)] public string szDisplayName;
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 200)] public string szDescription;

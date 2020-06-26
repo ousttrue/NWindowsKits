@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_TEX2DMS_RTV // 1
     {
+
         public uint UnusedField_NothingToDefine;
     }
 }

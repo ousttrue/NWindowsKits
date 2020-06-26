@@ -9,6 +9,7 @@ namespace NWindowsKits
     public struct BINDPTR // 2
     {
 
+
         [FieldOffset(0)] public IntPtr lpfuncdesc;
 
         [FieldOffset(0)] public IntPtr lpvardesc;

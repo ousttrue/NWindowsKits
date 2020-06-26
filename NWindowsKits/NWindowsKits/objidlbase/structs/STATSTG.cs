@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct STATSTG // 1
     {
+
         public IntPtr pwcsName;
         public uint type;
         public ULARGE_INTEGER cbSize;

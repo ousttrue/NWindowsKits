@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TEXTMETRICW // 4
     {
+
         public int tmHeight;
         public int tmAscent;
         public int tmDescent;

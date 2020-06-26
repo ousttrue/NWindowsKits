@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_OMAC // 1
     {
+
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)] public byte[] Omac;
     }
 }

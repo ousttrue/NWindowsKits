@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_DECODER_EXTENSION // 1
     {
+
         public uint Function;
         public IntPtr pPrivateInputData;
         public uint PrivateInputDataSize;

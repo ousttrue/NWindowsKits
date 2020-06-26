@@ -47,7 +47,7 @@ namespace NWindowsKits
         delegate int OnUIActivateFunc(IntPtr self);
         OnUIActivateFunc m_OnUIActivateFunc;
 
-        public int GetWindowContext(ref IntPtr ppFrame, ref IntPtr ppDoc, ref RECT lprcPosRect, ref RECT lprcClipRect, ref tagOIFI lpFrameInfo)
+        public int GetWindowContext(ref IntPtr ppFrame, ref IntPtr ppDoc, ref RECT lprcPosRect, ref RECT lprcClipRect, ref LPOLEINPLACEFRAMEINFO lpFrameInfo)
         {
             if(m_GetWindowContextFunc==null){
                 var fp = GetFunctionPointer(8);
@@ -56,7 +56,7 @@ namespace NWindowsKits
             
             return  m_GetWindowContextFunc(m_ptr, ref ppFrame, ref ppDoc, ref lprcPosRect, ref lprcClipRect, ref lpFrameInfo);
         }
-        delegate int GetWindowContextFunc(IntPtr self, ref IntPtr ppFrame, ref IntPtr ppDoc, ref RECT lprcPosRect, ref RECT lprcClipRect, ref tagOIFI lpFrameInfo);
+        delegate int GetWindowContextFunc(IntPtr self, ref IntPtr ppFrame, ref IntPtr ppDoc, ref RECT lprcPosRect, ref RECT lprcClipRect, ref LPOLEINPLACEFRAMEINFO lpFrameInfo);
         GetWindowContextFunc m_GetWindowContextFunc;
 
         public int Scroll(SIZE scrollExtant)

@@ -8,8 +8,29 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWMOUSE // 3
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14899
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public uint ulButtons;
+    
+            [FieldOffset(0)] public __Anonymous__1 __field__1;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14901
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__1 // 0
+        {
+    
+            public ushort usButtonFlags;
+            public ushort usButtonData;
+        }
+    
+
         public ushort usFlags;
-        public __Anonymous__13 __field__1;
+        public __Anonymous__0 __field__1;
         public uint ulRawButtons;
         public int lLastX;
         public int lLastY;

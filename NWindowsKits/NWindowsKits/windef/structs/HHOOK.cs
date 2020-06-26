@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HHOOK // 6
     {
+
         public IntPtr ptr;
     }
 }

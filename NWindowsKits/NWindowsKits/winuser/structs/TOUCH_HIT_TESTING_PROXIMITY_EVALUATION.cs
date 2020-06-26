@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TOUCH_HIT_TESTING_PROXIMITY_EVALUATION // 2
     {
+
         public ushort score;
         public POINT adjustedPoint;
     }

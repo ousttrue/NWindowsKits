@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CWPSTRUCT // 4
     {
+
         public long lParam;
         public ulong wParam;
         public uint message;

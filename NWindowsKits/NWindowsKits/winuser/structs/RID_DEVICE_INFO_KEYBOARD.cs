@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RID_DEVICE_INFO_KEYBOARD // 2
     {
+
         public uint dwType;
         public uint dwSubType;
         public uint dwKeyboardMode;

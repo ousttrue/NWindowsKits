@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS // 1
     {
+
         public uint PastFrames;
         public uint FutureFrames;
         public uint ProcessorCaps;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_MAPPED_RECT // 1
     {
+
         public int Pitch;
         public IntPtr pBits;
     }

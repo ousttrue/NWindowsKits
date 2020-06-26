@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct XML_ERROR // 1
     {
+
         public uint _nLine;
         public IntPtr _pchBuf;
         public uint _cchBuf;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DATAINFO // 1
     {
+
         public uint ulTotalSize;
         public uint ulavrPacketSize;
         public uint ulConnectSpeed;

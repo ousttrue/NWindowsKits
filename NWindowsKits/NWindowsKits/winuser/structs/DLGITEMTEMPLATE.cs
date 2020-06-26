@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DLGITEMTEMPLATE // 1
     {
+
         public uint style;
         public uint dwExtendedStyle;
         public short x;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_MAPPED_TEXTURE3D // 1
     {
+
         public IntPtr pData;
         public uint RowPitch;
         public uint DepthPitch;

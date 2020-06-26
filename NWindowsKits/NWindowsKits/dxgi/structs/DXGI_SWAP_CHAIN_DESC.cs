@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_SWAP_CHAIN_DESC // 1
     {
+
         public DXGI_MODE_DESC BufferDesc;
         public DXGI_SAMPLE_DESC SampleDesc;
         public uint BufferUsage;

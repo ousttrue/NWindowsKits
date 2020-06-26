@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MENUITEMTEMPLATE // 2
     {
+
         public ushort mtOption;
         public ushort mtID;
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 1)] public string mtString;

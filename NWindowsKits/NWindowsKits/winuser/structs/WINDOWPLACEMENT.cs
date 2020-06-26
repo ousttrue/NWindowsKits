@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WINDOWPLACEMENT // 1
     {
+
         public uint length;
         public uint flags;
         public uint showCmd;

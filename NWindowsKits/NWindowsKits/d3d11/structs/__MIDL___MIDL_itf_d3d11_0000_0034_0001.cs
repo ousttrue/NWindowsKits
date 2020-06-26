@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct __MIDL___MIDL_itf_d3d11_0000_0034_0001 // 1
     {
+
         public uint ProtectionEnabled;
         public uint OverlayOrFullscreenRequired;
         public uint Reserved;

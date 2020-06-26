@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MENUGETOBJECTINFO // 2
     {
+
         public uint dwFlags;
         public uint uPos;
         public HMENU hmenu;

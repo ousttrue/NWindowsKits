@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RID_DEVICE_INFO_HID // 2
     {
+
         public uint dwVendorId;
         public uint dwProductId;
         public uint dwVersionNumber;

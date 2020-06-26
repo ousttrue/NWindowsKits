@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HFONT // 17
     {
+
         public IntPtr ptr;
     }
 }

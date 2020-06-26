@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DRAWTEXTPARAMS // 2
     {
+
         public uint cbSize;
         public int iTabLength;
         public int iLeftMargin;

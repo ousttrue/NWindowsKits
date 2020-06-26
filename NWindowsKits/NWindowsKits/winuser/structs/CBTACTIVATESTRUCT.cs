@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CBTACTIVATESTRUCT // 2
     {
+
         public int fMouse;
         public HWND hWndActive;
     }

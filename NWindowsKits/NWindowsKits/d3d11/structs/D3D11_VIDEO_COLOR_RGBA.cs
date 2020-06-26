@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_COLOR_RGBA // 1
     {
+
         public float R;
         public float G;
         public float B;

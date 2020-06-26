@@ -8,8 +8,18 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_INPUT_VIEW_DESC // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:11391
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public D3D11_TEX2D_VPIV Texture2D;
+        }
+    
+
         public uint FourCC;
         public D3D11_VPIV_DIMENSION ViewDimension;
-        public __Anonymous__50 __field__2;
+        public __Anonymous__0 __field__2;
     }
 }

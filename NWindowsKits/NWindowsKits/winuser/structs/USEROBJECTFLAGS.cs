@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct USEROBJECTFLAGS // 2
     {
+
         public int fInherit;
         public int fReserved;
         public uint dwFlags;

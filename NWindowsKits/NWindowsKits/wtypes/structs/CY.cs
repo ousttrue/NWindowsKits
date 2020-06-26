@@ -8,8 +8,18 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
     public struct CY // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:671
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+            public uint Lo;
+            public int Hi;
+        }
+    
 
-        [FieldOffset(0)] public __Anonymous__29 __field__0;
+
+        [FieldOffset(0)] public __Anonymous__0 __field__0;
 
         [FieldOffset(0)] public long int64;
     }

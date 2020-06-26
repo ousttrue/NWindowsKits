@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWINPUTDEVICELIST // 2
     {
+
         public IntPtr hDevice;
         public uint dwType;
     }

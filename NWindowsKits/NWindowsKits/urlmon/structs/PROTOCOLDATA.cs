@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PROTOCOLDATA // 1
     {
+
         public uint grfFlags;
         public uint dwState;
         public IntPtr pData;

@@ -8,9 +8,50 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DECIMAL // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:697
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public __Anonymous__1 __field__0;
+    
+            [FieldOffset(0)] public ushort signscale;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:698
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__1 // 0
+        {
+    
+            public byte scale;
+            public byte sign;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:705
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__2 // 0
+        {
+    
+    
+            [FieldOffset(0)] public __Anonymous__3 __field__0;
+    
+            [FieldOffset(0)] public ulong Lo64;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:706
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__3 // 0
+        {
+    
+            public uint Lo32;
+            public uint Mid32;
+        }
+    
+
         public ushort wReserved;
-        public __Anonymous__35 __field__1;
+        public __Anonymous__0 __field__1;
         public uint Hi32;
-        public __Anonymous__37 __field__3;
+        public __Anonymous__2 __field__3;
     }
 }

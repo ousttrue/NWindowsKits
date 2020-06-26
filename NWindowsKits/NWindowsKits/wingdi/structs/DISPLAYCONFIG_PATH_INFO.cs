@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_PATH_INFO // 1
     {
+
         public DISPLAYCONFIG_PATH_SOURCE_INFO sourceInfo;
         public DISPLAYCONFIG_PATH_TARGET_INFO targetInfo;
         public uint flags;

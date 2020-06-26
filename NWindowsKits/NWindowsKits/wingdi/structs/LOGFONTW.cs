@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct LOGFONTW // 4
     {
+
         public int lfHeight;
         public int lfWidth;
         public int lfEscapement;

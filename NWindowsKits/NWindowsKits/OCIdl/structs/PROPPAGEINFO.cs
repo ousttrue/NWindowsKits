@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PROPPAGEINFO // 2
     {
+
         public uint cb;
         public IntPtr pszTitle;
         public SIZE size;

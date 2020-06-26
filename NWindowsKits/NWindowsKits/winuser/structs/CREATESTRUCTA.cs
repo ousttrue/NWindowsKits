@@ -8,8 +8,9 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CREATESTRUCTA // 3
     {
+
         public IntPtr lpCreateParams;
-        public HMODULE hInstance;
+        public HINSTANCE hInstance;
         public HMENU hMenu;
         public HWND hwndParent;
         public int cy;

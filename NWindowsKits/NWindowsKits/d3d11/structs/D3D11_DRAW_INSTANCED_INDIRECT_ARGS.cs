@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_DRAW_INSTANCED_INDIRECT_ARGS // 1
     {
+
         public uint VertexCountPerInstance;
         public uint InstanceCount;
         public uint StartVertexLocation;

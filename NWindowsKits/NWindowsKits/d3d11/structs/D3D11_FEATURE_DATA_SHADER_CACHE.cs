@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_SHADER_CACHE // 1
     {
+
         public uint SupportFlags;
     }
 }

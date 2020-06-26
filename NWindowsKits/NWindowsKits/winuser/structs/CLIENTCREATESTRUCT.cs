@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CLIENTCREATESTRUCT // 2
     {
+
         public IntPtr hWindowMenu;
         public uint idFirstChild;
     }

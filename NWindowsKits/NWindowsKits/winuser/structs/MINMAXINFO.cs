@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MINMAXINFO // 3
     {
+
         public POINT ptReserved;
         public POINT ptMaxSize;
         public POINT ptMaxPosition;

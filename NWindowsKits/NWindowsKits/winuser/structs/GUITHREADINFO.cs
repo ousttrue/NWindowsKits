@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct GUITHREADINFO // 3
     {
+
         public uint cbSize;
         public uint flags;
         public HWND hwndActive;

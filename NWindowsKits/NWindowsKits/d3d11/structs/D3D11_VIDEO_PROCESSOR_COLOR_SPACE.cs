@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_COLOR_SPACE // 1
     {
+
         public uint Usage;
         public uint RGB_Range;
         public uint YCbCr_Matrix;

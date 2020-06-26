@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_DECODER_DESC // 1
     {
+
         public GUID Guid;
         public uint SampleWidth;
         public uint SampleHeight;

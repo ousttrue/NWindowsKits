@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_CONFIGURE_PROTECTION_INPUT // 1
     {
+
         public D3D11_AUTHENTICATED_CONFIGURE_INPUT Parameters;
         public D3D11_AUTHENTICATED_PROTECTION_FLAGS Protections;
     }

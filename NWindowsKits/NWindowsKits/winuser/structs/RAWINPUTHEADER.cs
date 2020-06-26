@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWINPUTHEADER // 3
     {
+
         public uint dwType;
         public uint dwSize;
         public IntPtr hDevice;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct FORMATETC // 2
     {
+
         public ushort cfFormat;
         public IntPtr ptd;
         public uint dwAspect;

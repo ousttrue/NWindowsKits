@@ -60,7 +60,7 @@ namespace SampleLib
         {
             var ms = Assembly.GetEntryAssembly().GetModules();
             // var hInstance = Marshal.GetHINSTANCE(ms[0]);
-            var hInstance = default(HMODULE);
+            var hInstance = default(HINSTANCE);
 
             var window = new Window(title, s_count++);
 

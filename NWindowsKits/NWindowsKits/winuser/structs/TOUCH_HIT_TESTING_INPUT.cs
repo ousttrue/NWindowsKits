@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TOUCH_HIT_TESTING_INPUT // 2
     {
+
         public uint pointerId;
         public POINT point;
         public RECT boundingBox;

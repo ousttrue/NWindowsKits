@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_ARCHITECTURE_INFO // 1
     {
+
         public int TileBasedDeferredRenderer;
     }
 }

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MOUSEMOVEPOINT // 3
     {
+
         public int x;
         public int y;
         public uint time;

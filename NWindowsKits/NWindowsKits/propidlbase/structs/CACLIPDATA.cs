@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CACLIPDATA // 1
     {
+
         public uint cElems;
         public IntPtr pElems;
     }

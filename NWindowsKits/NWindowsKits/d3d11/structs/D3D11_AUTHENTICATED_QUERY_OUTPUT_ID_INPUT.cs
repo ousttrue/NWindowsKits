@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AUTHENTICATED_QUERY_OUTPUT_ID_INPUT // 1
     {
+
         public D3D11_AUTHENTICATED_QUERY_INPUT Input;
         public IntPtr DeviceHandle;
         public IntPtr CryptoSessionHandle;

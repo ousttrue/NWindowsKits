@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTDUPL_DESC // 1
     {
+
         public DXGI_MODE_DESC ModeDesc;
         public DXGI_MODE_ROTATION Rotation;
         public int DesktopImageInSystemMemory;

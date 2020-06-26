@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPPARAMS // 1
     {
+
         public IntPtr rgvarg;
         public IntPtr rgdispidNamedArgs;
         public uint cArgs;

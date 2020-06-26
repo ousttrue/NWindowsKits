@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MULTIKEYHELPA // 3
     {
+
         public uint mkSize;
         public sbyte mkKeylist;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)] public sbyte[] szKeyphrase;

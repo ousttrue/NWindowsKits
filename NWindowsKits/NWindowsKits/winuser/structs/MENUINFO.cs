@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MENUINFO // 2
     {
+
         public uint cbSize;
         public uint fMask;
         public uint dwStyle;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MULTI_QI // 1
     {
+
         public IntPtr pIID;
         public IntPtr pItf;
         public int hr;

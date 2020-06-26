@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWHID // 3
     {
+
         public uint dwSizeHid;
         public uint dwCount;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)] public byte[] bRawData;

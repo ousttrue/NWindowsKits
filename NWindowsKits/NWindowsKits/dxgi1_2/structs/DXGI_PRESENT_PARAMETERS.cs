@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_PRESENT_PARAMETERS // 1
     {
+
         public uint DirtyRectsCount;
         public IntPtr pDirtyRects;
         public IntPtr pScrollRect;

@@ -59,7 +59,7 @@ namespace NWindowsKits
         delegate int CreateSwapChainFunc(IntPtr self, IntPtr pDevice, ref DXGI_SWAP_CHAIN_DESC pDesc, ref IntPtr ppSwapChain);
         CreateSwapChainFunc m_CreateSwapChainFunc;
 
-        public int CreateSoftwareAdapter(HMODULE Module, ref IntPtr ppAdapter)
+        public int CreateSoftwareAdapter(HINSTANCE Module, ref IntPtr ppAdapter)
         {
             if(m_CreateSoftwareAdapterFunc==null){
                 var fp = GetFunctionPointer(11);
@@ -68,7 +68,7 @@ namespace NWindowsKits
             
             return  m_CreateSoftwareAdapterFunc(m_ptr, Module, ref ppAdapter);
         }
-        delegate int CreateSoftwareAdapterFunc(IntPtr self, HMODULE Module, ref IntPtr ppAdapter);
+        delegate int CreateSoftwareAdapterFunc(IntPtr self, HINSTANCE Module, ref IntPtr ppAdapter);
         CreateSoftwareAdapterFunc m_CreateSoftwareAdapterFunc;
 
     }

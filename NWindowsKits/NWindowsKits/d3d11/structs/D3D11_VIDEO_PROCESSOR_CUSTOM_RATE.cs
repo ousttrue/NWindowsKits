@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_CUSTOM_RATE // 1
     {
+
         public DXGI_RATIONAL CustomRate;
         public uint OutputFrames;
         public int InputInterlaced;

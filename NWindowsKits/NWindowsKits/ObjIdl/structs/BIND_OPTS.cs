@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct BIND_OPTS // 3
     {
+
         public uint cbStruct;
         public uint grfFlags;
         public uint grfMode;

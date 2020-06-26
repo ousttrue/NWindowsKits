@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_TEX2DMS_ARRAY_DSV // 1
     {
+
         public uint FirstArraySlice;
         public uint ArraySize;
     }

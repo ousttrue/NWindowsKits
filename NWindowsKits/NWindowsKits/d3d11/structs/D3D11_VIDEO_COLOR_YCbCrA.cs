@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_COLOR_YCbCrA // 1
     {
+
         public float Y;
         public float Cb;
         public float Cr;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TLIBATTR // 2
     {
+
         public GUID guid;
         public uint lcid;
         public SYSKIND syskind;

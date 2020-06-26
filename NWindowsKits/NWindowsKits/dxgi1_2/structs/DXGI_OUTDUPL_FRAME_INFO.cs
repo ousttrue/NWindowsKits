@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTDUPL_FRAME_INFO // 1
     {
+
         public LARGE_INTEGER LastPresentTime;
         public LARGE_INTEGER LastMouseUpdateTime;
         public uint AccumulatedFrames;

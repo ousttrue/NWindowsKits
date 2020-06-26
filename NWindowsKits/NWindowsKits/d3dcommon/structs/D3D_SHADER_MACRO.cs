@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D_SHADER_MACRO // 2
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string Name;
         [MarshalAs(UnmanagedType.LPStr)] public string Definition;
     }

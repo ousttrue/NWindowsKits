@@ -8,17 +8,18 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct WNDCLASSEXA // 4
     {
+
         public uint cbSize;
         public uint style;
         public WNDPROC lpfnWndProc;
         public int cbClsExtra;
         public int cbWndExtra;
-        public HMODULE hInstance;
-        public HCURSOR hIcon;
-        public HCURSOR hCursor;
+        public HINSTANCE hInstance;
+        public HICON hIcon;
+        public HICON hCursor;
         public HBRUSH hbrBackground;
         [MarshalAs(UnmanagedType.LPStr)] public string lpszMenuName;
         [MarshalAs(UnmanagedType.LPStr)] public string lpszClassName;
-        public HCURSOR hIconSm;
+        public HICON hIconSm;
     }
 }

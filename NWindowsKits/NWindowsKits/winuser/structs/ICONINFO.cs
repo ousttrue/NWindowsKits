@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ICONINFO // 1
     {
+
         public int fIcon;
         public uint xHotspot;
         public uint yHotspot;

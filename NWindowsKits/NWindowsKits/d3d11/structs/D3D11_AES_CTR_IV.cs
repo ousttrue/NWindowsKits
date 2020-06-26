@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_AES_CTR_IV // 1
     {
+
         public ulong IV;
         public ulong Count;
     }

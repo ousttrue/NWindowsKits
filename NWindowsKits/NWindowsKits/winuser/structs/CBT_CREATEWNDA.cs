@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CBT_CREATEWNDA // 2
     {
+
         public IntPtr lpcs;
         public HWND hwndInsertAfter;
     }

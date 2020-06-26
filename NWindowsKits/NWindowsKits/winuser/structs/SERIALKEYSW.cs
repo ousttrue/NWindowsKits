@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct SERIALKEYSW // 2
     {
+
         public uint cbSize;
         public uint dwFlags;
         public IntPtr lpszActivePort;

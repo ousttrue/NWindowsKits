@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct QACONTAINER // 1
     {
+
         public uint cbSize;
         public IntPtr pClientSite;
         public IntPtr pAdviseSink;

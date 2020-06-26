@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_EFFECT_SHADER_DESC // 1
     {
+
         public IntPtr pInputSignature;
         public int IsInline;
         public IntPtr pBytecode;

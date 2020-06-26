@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct AUDIODESCRIPTION // 2
     {
+
         public uint cbSize;
         public int Enabled;
         public uint Locale;

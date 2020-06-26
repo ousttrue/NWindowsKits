@@ -266,7 +266,7 @@ namespace NWindowsKits
             ref DEVMODEA pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa
+            ref LPSECURITY_ATTRIBUTES lpsa
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1406
@@ -277,7 +277,7 @@ namespace NWindowsKits
             ref DEVMODEW pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa
+            ref LPSECURITY_ATTRIBUTES lpsa
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1422
@@ -288,7 +288,7 @@ namespace NWindowsKits
             ref DEVMODEA pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa,
+            ref LPSECURITY_ATTRIBUTES lpsa,
             uint ulHeapSize,
             IntPtr pvoid
         );
@@ -301,7 +301,7 @@ namespace NWindowsKits
             ref DEVMODEW pDevmode,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa,
+            ref LPSECURITY_ATTRIBUTES lpsa,
             uint ulHeapSize,
             IntPtr pvoid
         );
@@ -386,7 +386,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPStr)] string lpwinsta,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa
+            ref LPSECURITY_ATTRIBUTES lpsa
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1590
@@ -395,7 +395,7 @@ namespace NWindowsKits
             [MarshalAs(UnmanagedType.LPWStr)] string lpwinsta,
             uint dwFlags,
             uint dwDesiredAccess,
-            ref SECURITY_ATTRIBUTES lpsa
+            ref LPSECURITY_ATTRIBUTES lpsa
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1604
@@ -1005,20 +1005,20 @@ namespace NWindowsKits
         [DllImport("user32.dll")]
         public static extern int UnregisterClassA(
             [MarshalAs(UnmanagedType.LPStr)] string lpClassName,
-            HMODULE hInstance
+            HINSTANCE hInstance
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4307
         [DllImport("user32.dll")]
         public static extern int UnregisterClassW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
-            HMODULE hInstance
+            HINSTANCE hInstance
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4326
         [DllImport("user32.dll")]
         public static extern int GetClassInfoA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpClassName,
             ref WNDCLASSA lpWndClass
         );
@@ -1026,7 +1026,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4334
         [DllImport("user32.dll")]
         public static extern int GetClassInfoW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpClassName,
             ref WNDCLASSW lpWndClass
         );
@@ -1046,7 +1046,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4377
         [DllImport("user32.dll")]
         public static extern int GetClassInfoExA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpszClass,
             ref WNDCLASSEXA lpwcx
         );
@@ -1054,7 +1054,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4385
         [DllImport("user32.dll")]
         public static extern int GetClassInfoExW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpszClass,
             ref WNDCLASSEXW lpwcx
         );
@@ -1072,7 +1072,7 @@ namespace NWindowsKits
             int nHeight,
             HWND hWndParent,
             HMENU hMenu,
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             IntPtr lpParam
         );
 
@@ -1089,7 +1089,7 @@ namespace NWindowsKits
             int nHeight,
             HWND hWndParent,
             HMENU hMenu,
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             IntPtr lpParam
         );
 
@@ -1327,7 +1327,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4988
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1337,7 +1337,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4997
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogParamW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1347,7 +1347,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5012
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogIndirectParamA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             ref DLGTEMPLATE lpTemplate,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1357,7 +1357,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5021
         [DllImport("user32.dll")]
         public static extern HWND CreateDialogIndirectParamW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             ref DLGTEMPLATE lpTemplate,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1367,7 +1367,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5056
         [DllImport("user32.dll")]
         public static extern long DialogBoxParamA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1377,7 +1377,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5065
         [DllImport("user32.dll")]
         public static extern long DialogBoxParamW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpTemplateName,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1387,7 +1387,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5080
         [DllImport("user32.dll")]
         public static extern long DialogBoxIndirectParamA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             ref DLGTEMPLATE hDialogTemplate,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -1397,7 +1397,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5089
         [DllImport("user32.dll")]
         public static extern long DialogBoxIndirectParamW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             ref DLGTEMPLATE hDialogTemplate,
             HWND hWndParent,
             DLGPROC lpDialogFunc,
@@ -2518,14 +2518,14 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7103
         [DllImport("user32.dll")]
         public static extern HACCEL LoadAcceleratorsA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpTableName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7109
         [DllImport("user32.dll")]
         public static extern HACCEL LoadAcceleratorsW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpTableName
         );
 
@@ -2597,14 +2597,14 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7384
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpMenuName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:7390
         [DllImport("user32.dll")]
         public static extern HMENU LoadMenuW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpMenuName
         );
 
@@ -2990,7 +2990,7 @@ namespace NWindowsKits
             HWND hwndFrom,
             uint fmt,
             ulong data,
-            HCURSOR hcur
+            HICON hcur
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8067
@@ -3006,7 +3006,7 @@ namespace NWindowsKits
             HDC hDC,
             int X,
             int Y,
-            HCURSOR hIcon
+            HICON hIcon
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:8159
@@ -3687,8 +3687,8 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9332
         [DllImport("user32.dll")]
-        public static extern HCURSOR SetCursor(
-            HCURSOR hCursor
+        public static extern HICON SetCursor(
+            HICON hCursor
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9338
@@ -3711,7 +3711,7 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9365
         [DllImport("user32.dll")]
-        public static extern HCURSOR GetCursor(
+        public static extern HICON GetCursor(
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:9371
@@ -4307,7 +4307,7 @@ namespace NWindowsKits
         public static extern HHOOK SetWindowsHookExA(
             int idHook,
             HOOKPROC lpfn,
-            HMODULE hmod,
+            HINSTANCE hmod,
             uint dwThreadId
         );
 
@@ -4316,7 +4316,7 @@ namespace NWindowsKits
         public static extern HHOOK SetWindowsHookExW(
             int idHook,
             HOOKPROC lpfn,
-            HMODULE hmod,
+            HINSTANCE hmod,
             uint dwThreadId
         );
 
@@ -4348,47 +4348,47 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10500
         [DllImport("user32.dll")]
         public static extern HBITMAP LoadBitmapA(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpBitmapName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10506
         [DllImport("user32.dll")]
         public static extern HBITMAP LoadBitmapW(
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpBitmapName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10524
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadCursorA(
-            HMODULE hInstance,
+        public static extern HICON LoadCursorA(
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpCursorName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10530
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadCursorW(
-            HMODULE hInstance,
+        public static extern HICON LoadCursorW(
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpCursorName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10548
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadCursorFromFileA(
+        public static extern HICON LoadCursorFromFileA(
             [MarshalAs(UnmanagedType.LPStr)] string lpFileName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10553
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadCursorFromFileW(
+        public static extern HICON LoadCursorFromFileW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpFileName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10570
         [DllImport("user32.dll")]
-        public static extern HCURSOR CreateCursor(
-            HMODULE hInst,
+        public static extern HICON CreateCursor(
+            HINSTANCE hInst,
             int xHotSpot,
             int yHotSpot,
             int nWidth,
@@ -4400,27 +4400,27 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10582
         [DllImport("user32.dll")]
         public static extern int DestroyCursor(
-            HCURSOR hCursor
+            HICON hCursor
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10639
         [DllImport("user32.dll")]
         public static extern int SetSystemCursor(
-            HCURSOR hcur,
+            HICON hcur,
             uint id
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10655
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadIconA(
-            HMODULE hInstance,
+        public static extern HICON LoadIconA(
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPStr)] string lpIconName
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10661
         [DllImport("user32.dll")]
-        public static extern HCURSOR LoadIconW(
-            HMODULE hInstance,
+        public static extern HICON LoadIconW(
+            HINSTANCE hInstance,
             [MarshalAs(UnmanagedType.LPWStr)] string lpIconName
         );
 
@@ -4431,7 +4431,7 @@ namespace NWindowsKits
             int nIconIndex,
             int cxIcon,
             int cyIcon,
-            ref HCURSOR phicon,
+            ref HICON phicon,
             ref uint piconid,
             uint nIcons,
             uint flags
@@ -4444,7 +4444,7 @@ namespace NWindowsKits
             int nIconIndex,
             int cxIcon,
             int cyIcon,
-            ref HCURSOR phicon,
+            ref HICON phicon,
             ref uint piconid,
             uint nIcons,
             uint flags
@@ -4452,8 +4452,8 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10704
         [DllImport("user32.dll")]
-        public static extern HCURSOR CreateIcon(
-            HMODULE hInstance,
+        public static extern HICON CreateIcon(
+            HINSTANCE hInstance,
             int nWidth,
             int nHeight,
             byte cPlanes,
@@ -4465,7 +4465,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10716
         [DllImport("user32.dll")]
         public static extern int DestroyIcon(
-            HCURSOR hIcon
+            HICON hIcon
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10722
@@ -4487,7 +4487,7 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10741
         [DllImport("user32.dll")]
-        public static extern HCURSOR CreateIconFromResource(
+        public static extern HICON CreateIconFromResource(
             ref byte presbits,
             uint dwResSize,
             int fIcon,
@@ -4496,7 +4496,7 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10751
         [DllImport("user32.dll")]
-        public static extern HCURSOR CreateIconFromResourceEx(
+        public static extern HICON CreateIconFromResourceEx(
             ref byte presbits,
             uint dwResSize,
             int fIcon,
@@ -4509,7 +4509,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10802
         [DllImport("user32.dll")]
         public static extern IntPtr LoadImageA(
-            HMODULE hInst,
+            HINSTANCE hInst,
             [MarshalAs(UnmanagedType.LPStr)] string name,
             uint type,
             int cx,
@@ -4520,7 +4520,7 @@ namespace NWindowsKits
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10812
         [DllImport("user32.dll")]
         public static extern IntPtr LoadImageW(
-            HMODULE hInst,
+            HINSTANCE hInst,
             [MarshalAs(UnmanagedType.LPWStr)] string name,
             uint type,
             int cx,
@@ -4544,7 +4544,7 @@ namespace NWindowsKits
             HDC hdc,
             int xLeft,
             int yTop,
-            HCURSOR hIcon,
+            HICON hIcon,
             int cxWidth,
             int cyWidth,
             uint istepIfAniCur,
@@ -4554,34 +4554,34 @@ namespace NWindowsKits
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10866
         [DllImport("user32.dll")]
-        public static extern HCURSOR CreateIconIndirect(
+        public static extern HICON CreateIconIndirect(
             ref ICONINFO piconinfo
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10872
         [DllImport("user32.dll")]
-        public static extern HCURSOR CopyIcon(
-            HCURSOR hIcon
+        public static extern HICON CopyIcon(
+            HICON hIcon
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10878
         [DllImport("user32.dll")]
         public static extern int GetIconInfo(
-            HCURSOR hIcon,
+            HICON hIcon,
             ref ICONINFO piconinfo
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10916
         [DllImport("user32.dll")]
         public static extern int GetIconInfoExA(
-            HCURSOR hicon,
+            HICON hicon,
             ref ICONINFOEXA piconinfo
         );
 
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10922
         [DllImport("user32.dll")]
         public static extern int GetIconInfoExW(
-            HCURSOR hicon,
+            HICON hicon,
             ref ICONINFOEXW piconinfo
         );
 
@@ -4761,7 +4761,7 @@ namespace NWindowsKits
             int nWidth,
             int nHeight,
             HWND hWndParent,
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             long lParam
         );
 
@@ -4776,7 +4776,7 @@ namespace NWindowsKits
             int nWidth,
             int nHeight,
             HWND hWndParent,
-            HMODULE hInstance,
+            HINSTANCE hInstance,
             long lParam
         );
 
@@ -4898,7 +4898,7 @@ namespace NWindowsKits
         public static extern int EnumDisplayDevicesA(
             [MarshalAs(UnmanagedType.LPStr)] string lpDevice,
             uint iDevNum,
-            ref _DISPLAY_DEVICEA lpDisplayDevice,
+            ref PDISPLAY_DEVICEA lpDisplayDevice,
             uint dwFlags
         );
 
@@ -4907,7 +4907,7 @@ namespace NWindowsKits
         public static extern int EnumDisplayDevicesW(
             [MarshalAs(UnmanagedType.LPWStr)] string lpDevice,
             uint iDevNum,
-            ref _DISPLAY_DEVICEW lpDisplayDevice,
+            ref PDISPLAY_DEVICEW lpDisplayDevice,
             uint dwFlags
         );
 
@@ -5069,7 +5069,7 @@ namespace NWindowsKits
         public static extern HWINEVENTHOOK SetWinEventHook(
             uint eventMin,
             uint eventMax,
-            HMODULE hmodWinEventProc,
+            HINSTANCE hmodWinEventProc,
             WINEVENTPROC pfnWinEventProc,
             uint idProcess,
             uint idThread,

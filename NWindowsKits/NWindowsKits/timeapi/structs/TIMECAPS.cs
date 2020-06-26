@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct TIMECAPS // 4
     {
+
         public uint wPeriodMin;
         public uint wPeriodMax;
     }

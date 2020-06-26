@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTDUPL_POINTER_SHAPE_INFO // 1
     {
+
         public uint Type;
         public uint Width;
         public uint Height;

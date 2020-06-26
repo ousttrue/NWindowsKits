@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ACCEL // 2
     {
+
         public byte fVirt;
         public ushort key;
         public ushort cmd;

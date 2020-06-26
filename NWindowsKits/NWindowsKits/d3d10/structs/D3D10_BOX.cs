@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_BOX // 1
     {
+
         public uint left;
         public uint top;
         public uint front;

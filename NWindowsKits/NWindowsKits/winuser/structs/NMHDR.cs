@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct NMHDR // 1
     {
+
         public HWND hwndFrom;
         public ulong idFrom;
         public uint code;

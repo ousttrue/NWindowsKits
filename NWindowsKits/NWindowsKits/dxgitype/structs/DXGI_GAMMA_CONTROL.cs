@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_GAMMA_CONTROL // 1
     {
+
         public DXGI_RGB Scale;
         public DXGI_RGB Offset;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1025)] public DXGI_RGB[] GammaCurve;

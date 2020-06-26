@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct FLASHWINFO // 2
     {
+
         public uint cbSize;
         public HWND hwnd;
         public uint dwFlags;

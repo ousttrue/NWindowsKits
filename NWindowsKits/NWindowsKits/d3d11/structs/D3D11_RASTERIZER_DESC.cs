@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_RASTERIZER_DESC // 1
     {
+
         public D3D11_FILL_MODE FillMode;
         public D3D11_CULL_MODE CullMode;
         public int FrontCounterClockwise;

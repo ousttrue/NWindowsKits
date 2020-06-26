@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct tagARRAYDESC // 2
     {
+
         public TYPEDESC tdescElem;
         public ushort cDims;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)] public SAFEARRAYBOUND[] rgbounds;

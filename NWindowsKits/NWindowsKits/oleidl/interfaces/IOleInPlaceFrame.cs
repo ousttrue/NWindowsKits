@@ -11,7 +11,7 @@ namespace NWindowsKits
         public static new ref Guid IID => ref s_uuid;
         public override ref Guid GetIID() { return ref s_uuid; }
 
-        public int InsertMenus(HMENU hmenuShared, ref tagOleMenuGroupWidths lpMenuWidths)
+        public int InsertMenus(HMENU hmenuShared, ref LPOLEMENUGROUPWIDTHS lpMenuWidths)
         {
             if(m_InsertMenusFunc==null){
                 var fp = GetFunctionPointer(9);
@@ -20,7 +20,7 @@ namespace NWindowsKits
             
             return  m_InsertMenusFunc(m_ptr, hmenuShared, ref lpMenuWidths);
         }
-        delegate int InsertMenusFunc(IntPtr self, HMENU hmenuShared, ref tagOleMenuGroupWidths lpMenuWidths);
+        delegate int InsertMenusFunc(IntPtr self, HMENU hmenuShared, ref LPOLEMENUGROUPWIDTHS lpMenuWidths);
         InsertMenusFunc m_InsertMenusFunc;
 
         public int SetMenu(HMENU hmenuShared, IntPtr holemenu, HWND hwndActiveObject)

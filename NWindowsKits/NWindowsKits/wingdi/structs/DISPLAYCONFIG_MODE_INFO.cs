@@ -8,9 +8,23 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_MODE_INFO // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2932
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public DISPLAYCONFIG_TARGET_MODE targetMode;
+    
+            [FieldOffset(0)] public DISPLAYCONFIG_SOURCE_MODE sourceMode;
+    
+            [FieldOffset(0)] public DISPLAYCONFIG_DESKTOP_IMAGE_INFO desktopImageInfo;
+        }
+    
+
         public DISPLAYCONFIG_MODE_INFO_TYPE infoType;
         public uint id;
         public LUID adapterId;
-        public __Anonymous__10 __field__3;
+        public __Anonymous__0 __field__3;
     }
 }

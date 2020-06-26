@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct BINDINFO // 1
     {
+
         public uint cbSize;
         public IntPtr szExtraInfo;
         public uSTGMEDIUM stgmedData;
@@ -18,7 +19,7 @@ namespace NWindowsKits
         public uint dwOptions;
         public uint dwOptionsFlags;
         public uint dwCodePage;
-        public SECURITY_ATTRIBUTES securityAttributes;
+        public LPSECURITY_ATTRIBUTES securityAttributes;
         public GUID iid;
         public IntPtr pUnk;
         public uint dwReserved;

@@ -8,8 +8,28 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_DEPTH_STENCIL_VIEW_DESC // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:3208
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public D3D10_TEX1D_DSV Texture1D;
+    
+            [FieldOffset(0)] public D3D10_TEX1D_ARRAY_DSV Texture1DArray;
+    
+            [FieldOffset(0)] public D3D10_TEX2D_DSV Texture2D;
+    
+            [FieldOffset(0)] public D3D10_TEX2D_ARRAY_DSV Texture2DArray;
+    
+            [FieldOffset(0)] public D3D10_TEX2DMS_DSV Texture2DMS;
+    
+            [FieldOffset(0)] public D3D10_TEX2DMS_ARRAY_DSV Texture2DMSArray;
+        }
+    
+
         public DXGI_FORMAT Format;
         public D3D10_DSV_DIMENSION ViewDimension;
-        public __Anonymous__59 __field__2;
+        public __Anonymous__0 __field__2;
     }
 }

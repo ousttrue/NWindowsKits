@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct PAINTSTRUCT // 4
     {
+
         public HDC hdc;
         public int fErase;
         public RECT rcPaint;

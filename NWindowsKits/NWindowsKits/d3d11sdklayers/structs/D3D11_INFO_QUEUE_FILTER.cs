@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_INFO_QUEUE_FILTER // 1
     {
+
         public D3D11_INFO_QUEUE_FILTER_DESC AllowList;
         public D3D11_INFO_QUEUE_FILTER_DESC DenyList;
     }

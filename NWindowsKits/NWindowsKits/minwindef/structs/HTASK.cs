@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HTASK // 5
     {
+
         public IntPtr ptr;
     }
 }

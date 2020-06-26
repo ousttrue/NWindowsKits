@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct UPDATELAYEREDWINDOWINFO // 2
     {
+
         public uint cbSize;
         public HDC hdcDst;
         public IntPtr pptDst;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct POINTER_INFO // 1
     {
+
         public uint pointerType;
         public uint pointerId;
         public uint frameId;

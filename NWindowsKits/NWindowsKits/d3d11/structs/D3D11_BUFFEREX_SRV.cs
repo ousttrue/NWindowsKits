@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_BUFFEREX_SRV // 1
     {
+
         public uint FirstElement;
         public uint NumElements;
         public uint Flags;

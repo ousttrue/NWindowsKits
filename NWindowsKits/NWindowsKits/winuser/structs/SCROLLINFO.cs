@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct SCROLLINFO // 2
     {
+
         public uint cbSize;
         public uint fMask;
         public int nMin;

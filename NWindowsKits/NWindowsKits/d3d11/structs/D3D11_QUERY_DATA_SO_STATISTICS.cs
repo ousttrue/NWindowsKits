@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_QUERY_DATA_SO_STATISTICS // 1
     {
+
         public ulong NumPrimitivesWritten;
         public ulong PrimitivesStorageNeeded;
     }

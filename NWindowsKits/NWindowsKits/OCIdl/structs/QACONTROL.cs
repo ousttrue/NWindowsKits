@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct QACONTROL // 1
     {
+
         public uint cbSize;
         public uint dwMiscStatus;
         public uint dwViewStatus;

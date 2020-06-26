@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HELPINFO // 2
     {
+
         public uint cbSize;
         public int iContextType;
         public int iCtrlId;

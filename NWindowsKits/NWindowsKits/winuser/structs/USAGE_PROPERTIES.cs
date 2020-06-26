@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct USAGE_PROPERTIES // 2
     {
+
         public ushort level;
         public ushort page;
         public ushort usage;

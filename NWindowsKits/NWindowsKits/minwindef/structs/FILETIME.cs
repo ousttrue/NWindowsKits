@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct FILETIME // 3
     {
+
         public uint dwLowDateTime;
         public uint dwHighDateTime;
     }

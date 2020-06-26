@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct RAWKEYBOARD // 3
     {
+
         public ushort MakeCode;
         public ushort Flags;
         public ushort Reserved;

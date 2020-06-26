@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CONTROLINFO // 2
     {
+
         public uint cb;
         public HACCEL hAccel;
         public ushort cAccel;

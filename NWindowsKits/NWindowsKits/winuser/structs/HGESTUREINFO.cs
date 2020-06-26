@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct HGESTUREINFO // 3
     {
+
         public IntPtr ptr;
     }
 }

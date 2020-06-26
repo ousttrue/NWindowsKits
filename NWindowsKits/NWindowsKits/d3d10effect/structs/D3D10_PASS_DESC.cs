@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_PASS_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string Name;
         public uint Annotations;
         public IntPtr pIAInputSignature;

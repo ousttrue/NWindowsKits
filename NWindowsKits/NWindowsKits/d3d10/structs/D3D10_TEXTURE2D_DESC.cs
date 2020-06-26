@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_TEXTURE2D_DESC // 1
     {
+
         public uint Width;
         public uint Height;
         public uint MipLevels;

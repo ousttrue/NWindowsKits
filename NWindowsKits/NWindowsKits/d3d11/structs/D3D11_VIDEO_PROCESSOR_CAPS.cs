@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_CAPS // 1
     {
+
         public uint DeviceCaps;
         public uint FeatureCaps;
         public uint FilterCaps;

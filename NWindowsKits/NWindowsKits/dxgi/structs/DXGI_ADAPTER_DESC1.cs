@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_ADAPTER_DESC1 // 1
     {
+
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)] public string Description;
         public uint VendorId;
         public uint DeviceId;

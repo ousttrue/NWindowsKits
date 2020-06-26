@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CUSTDATA // 2
     {
+
         public uint cCustData;
         public IntPtr prgCustData;
     }

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_OUTDUPL_MOVE_RECT // 1
     {
+
         public POINT SourcePoint;
         public RECT DestinationRect;
     }

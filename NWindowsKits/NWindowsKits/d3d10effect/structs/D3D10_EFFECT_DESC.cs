@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_EFFECT_DESC // 1
     {
+
         public int IsChildEffect;
         public uint ConstantBuffers;
         public uint SharedConstantBuffers;

@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct KBDLLHOOKSTRUCT // 3
     {
+
         public uint vkCode;
         public uint scanCode;
         public uint flags;

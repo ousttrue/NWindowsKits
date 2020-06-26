@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct AUTHENTICATEINFO // 1
     {
+
         public uint dwFlags;
         public uint dwReserved;
     }

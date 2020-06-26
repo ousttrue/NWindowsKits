@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct INPUT_INJECTION_VALUE // 2
     {
+
         public ushort page;
         public ushort usage;
         public int value;

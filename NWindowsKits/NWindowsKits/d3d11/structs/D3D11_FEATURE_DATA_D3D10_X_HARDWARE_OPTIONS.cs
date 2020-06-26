@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_FEATURE_DATA_D3D10_X_HARDWARE_OPTIONS // 1
     {
+
         public int ComputeShaders_Plus_RawAndStructuredBuffers_Via_Shader_4_x;
     }
 }

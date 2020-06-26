@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_VIDEO_PROCESSOR_FILTER_RANGE // 1
     {
+
         public int Minimum;
         public int Maximum;
         public int Default;

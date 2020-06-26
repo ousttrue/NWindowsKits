@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DVEXTENTINFO // 1
     {
+
         public uint cb;
         public uint dwExtentMode;
         public SIZE sizelProposed;

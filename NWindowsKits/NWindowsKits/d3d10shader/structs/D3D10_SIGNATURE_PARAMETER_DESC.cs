@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_SIGNATURE_PARAMETER_DESC // 1
     {
+
         [MarshalAs(UnmanagedType.LPStr)] public string SemanticName;
         public uint SemanticIndex;
         public uint Register;

@@ -11,7 +11,7 @@ namespace NWindowsKits
         public static new ref Guid IID => ref s_uuid;
         public override ref Guid GetIID() { return ref s_uuid; }
 
-        public int ProcessSoftDist([MarshalAs(UnmanagedType.LPWStr)] string szCDFURL, IntPtr pSoftDistElement, ref _tagSOFTDISTINFO lpsdi)
+        public int ProcessSoftDist([MarshalAs(UnmanagedType.LPWStr)] string szCDFURL, IntPtr pSoftDistElement, ref LPSOFTDISTINFO lpsdi)
         {
             if(m_ProcessSoftDistFunc==null){
                 var fp = GetFunctionPointer(3);
@@ -20,7 +20,7 @@ namespace NWindowsKits
             
             return  m_ProcessSoftDistFunc(m_ptr, szCDFURL, pSoftDistElement, ref lpsdi);
         }
-        delegate int ProcessSoftDistFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string szCDFURL, IntPtr pSoftDistElement, ref _tagSOFTDISTINFO lpsdi);
+        delegate int ProcessSoftDistFunc(IntPtr self, [MarshalAs(UnmanagedType.LPWStr)] string szCDFURL, IntPtr pSoftDistElement, ref LPSOFTDISTINFO lpsdi);
         ProcessSoftDistFunc m_ProcessSoftDistFunc;
 
         public int GetFirstCodeBase(ref IntPtr szCodeBase, ref uint dwMaxSize)
@@ -47,7 +47,7 @@ namespace NWindowsKits
         delegate int GetNextCodeBaseFunc(IntPtr self, ref IntPtr szCodeBase, ref uint dwMaxSize);
         GetNextCodeBaseFunc m_GetNextCodeBaseFunc;
 
-        public int AsyncInstallDistributionUnit(IntPtr pbc, IntPtr pvReserved, uint flags, ref _tagCODEBASEHOLD lpcbh)
+        public int AsyncInstallDistributionUnit(IntPtr pbc, IntPtr pvReserved, uint flags, ref LPCODEBASEHOLD lpcbh)
         {
             if(m_AsyncInstallDistributionUnitFunc==null){
                 var fp = GetFunctionPointer(6);
@@ -56,7 +56,7 @@ namespace NWindowsKits
             
             return  m_AsyncInstallDistributionUnitFunc(m_ptr, pbc, pvReserved, flags, ref lpcbh);
         }
-        delegate int AsyncInstallDistributionUnitFunc(IntPtr self, IntPtr pbc, IntPtr pvReserved, uint flags, ref _tagCODEBASEHOLD lpcbh);
+        delegate int AsyncInstallDistributionUnitFunc(IntPtr self, IntPtr pbc, IntPtr pvReserved, uint flags, ref LPCODEBASEHOLD lpcbh);
         AsyncInstallDistributionUnitFunc m_AsyncInstallDistributionUnitFunc;
 
     }

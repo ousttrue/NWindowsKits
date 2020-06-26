@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_COUNTER_INFO // 1
     {
+
         public D3D10_COUNTER LastDeviceDependentCounter;
         public uint NumSimultaneousCounters;
         public byte NumDetectableParallelUnits;

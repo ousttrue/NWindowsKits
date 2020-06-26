@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DXGI_FRAME_STATISTICS // 1
     {
+
         public uint PresentCount;
         public uint PresentRefreshCount;
         public uint SyncRefreshCount;

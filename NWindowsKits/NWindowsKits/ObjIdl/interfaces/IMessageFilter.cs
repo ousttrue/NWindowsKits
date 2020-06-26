@@ -11,7 +11,7 @@ namespace NWindowsKits
         public static new ref Guid IID => ref s_uuid;
         public override ref Guid GetIID() { return ref s_uuid; }
 
-        public uint HandleInComingCall(uint dwCallType, HTASK htaskCaller, uint dwTickCount, ref tagINTERFACEINFO lpInterfaceInfo)
+        public uint HandleInComingCall(uint dwCallType, HTASK htaskCaller, uint dwTickCount, ref LPINTERFACEINFO lpInterfaceInfo)
         {
             if(m_HandleInComingCallFunc==null){
                 var fp = GetFunctionPointer(3);
@@ -20,7 +20,7 @@ namespace NWindowsKits
             
             return  m_HandleInComingCallFunc(m_ptr, dwCallType, htaskCaller, dwTickCount, ref lpInterfaceInfo);
         }
-        delegate uint HandleInComingCallFunc(IntPtr self, uint dwCallType, HTASK htaskCaller, uint dwTickCount, ref tagINTERFACEINFO lpInterfaceInfo);
+        delegate uint HandleInComingCallFunc(IntPtr self, uint dwCallType, HTASK htaskCaller, uint dwTickCount, ref LPINTERFACEINFO lpInterfaceInfo);
         HandleInComingCallFunc m_HandleInComingCallFunc;
 
         public uint RetryRejectedCall(HTASK htaskCallee, uint dwTickCount, uint dwRejectType)

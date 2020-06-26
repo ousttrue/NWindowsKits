@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D10_DEPTH_STENCILOP_DESC // 1
     {
+
         public D3D10_STENCIL_OP StencilFailOp;
         public D3D10_STENCIL_OP StencilDepthFailOp;
         public D3D10_STENCIL_OP StencilPassOp;

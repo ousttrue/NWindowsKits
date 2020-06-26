@@ -8,8 +8,30 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct uSTGMEDIUM // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:11271
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public HBITMAP hBitmap;
+    
+            [FieldOffset(0)] public IntPtr hMetaFilePict;
+    
+            [FieldOffset(0)] public HENHMETAFILE hEnhMetaFile;
+    
+            [FieldOffset(0)] public IntPtr hGlobal;
+    
+            [FieldOffset(0)] public IntPtr lpszFileName;
+    
+            [FieldOffset(0)] public IntPtr pstm;
+    
+            [FieldOffset(0)] public IntPtr pstg;
+        }
+    
+
         public uint tymed;
-        public __Anonymous__24 __field__1;
+        public __Anonymous__0 __field__1;
         public IntPtr pUnkForRelease;
     }
 }

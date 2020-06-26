@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct CURSORSHAPE // 2
     {
+
         public int xHotSpot;
         public int yHotSpot;
         public int cx;

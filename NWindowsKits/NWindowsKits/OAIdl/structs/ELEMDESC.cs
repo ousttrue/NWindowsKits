@@ -8,7 +8,19 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ELEMDESC // 2
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:725
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public IDLDESC idldesc;
+    
+            [FieldOffset(0)] public PARAMDESC paramdesc;
+        }
+    
+
         public TYPEDESC tdesc;
-        public __Anonymous__31 __field__1;
+        public __Anonymous__0 __field__1;
     }
 }

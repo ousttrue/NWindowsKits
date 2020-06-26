@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ALTTABINFO // 3
     {
+
         public uint cbSize;
         public int cItems;
         public int cColumns;

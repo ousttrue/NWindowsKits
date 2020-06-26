@@ -11,7 +11,7 @@ namespace NWindowsKits
         public static new ref Guid IID => ref s_uuid;
         public override ref Guid GetIID() { return ref s_uuid; }
 
-        public int Next(uint celt, ref tagOLEVERB rgelt, IntPtr pceltFetched)
+        public int Next(uint celt, ref LPOLEVERB rgelt, IntPtr pceltFetched)
         {
             if(m_NextFunc==null){
                 var fp = GetFunctionPointer(3);
@@ -20,7 +20,7 @@ namespace NWindowsKits
             
             return  m_NextFunc(m_ptr, celt, ref rgelt, pceltFetched);
         }
-        delegate int NextFunc(IntPtr self, uint celt, ref tagOLEVERB rgelt, IntPtr pceltFetched);
+        delegate int NextFunc(IntPtr self, uint celt, ref LPOLEVERB rgelt, IntPtr pceltFetched);
         NextFunc m_NextFunc;
 
         public int Skip(uint celt)

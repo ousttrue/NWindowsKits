@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct GUID // 1
     {
+
         public uint Data1;
         public ushort Data2;
         public ushort Data3;

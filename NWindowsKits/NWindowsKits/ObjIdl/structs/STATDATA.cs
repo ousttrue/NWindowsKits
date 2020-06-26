@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct STATDATA // 1
     {
+
         public FORMATETC formatetc;
         public uint advf;
         public IntPtr pAdvSink;

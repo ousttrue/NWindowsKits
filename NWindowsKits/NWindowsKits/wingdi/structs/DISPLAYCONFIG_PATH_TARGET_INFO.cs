@@ -8,9 +8,30 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct DISPLAYCONFIG_PATH_TARGET_INFO // 1
     {
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2973
+        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__0 // 0
+        {
+    
+    
+            [FieldOffset(0)] public uint modeInfoIdx;
+    
+            [FieldOffset(0)] public __Anonymous__1 __field__1;
+        }
+    
+        // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2976
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct __Anonymous__1 // 0
+        {
+    
+            public uint desktopModeInfoIdx;
+            public uint targetModeInfoIdx;
+        }
+    
+
         public LUID adapterId;
         public uint id;
-        public __Anonymous__8 __field__2;
+        public __Anonymous__0 __field__2;
         public DISPLAYCONFIG_VIDEO_OUTPUT_TECHNOLOGY outputTechnology;
         public DISPLAYCONFIG_ROTATION rotation;
         public DISPLAYCONFIG_SCALING scaling;

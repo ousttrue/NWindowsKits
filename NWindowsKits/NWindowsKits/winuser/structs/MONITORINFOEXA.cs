@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct MONITORINFOEXA // 2
     {
+
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] public sbyte[] szDevice;
     }
 }

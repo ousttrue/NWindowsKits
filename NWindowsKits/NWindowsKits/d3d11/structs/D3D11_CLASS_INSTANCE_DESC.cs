@@ -8,6 +8,7 @@ namespace NWindowsKits
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct D3D11_CLASS_INSTANCE_DESC // 1
     {
+
         public uint InstanceId;
         public uint InstanceIndex;
         public uint TypeId;
