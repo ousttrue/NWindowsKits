@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/msxml.h:388
-    public enum DOMNodeType // 1
+    public enum DOMNodeType
     {
         _INVALID = 0x0,
         _ELEMENT = 0x1,

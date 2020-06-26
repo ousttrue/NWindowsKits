@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:472
-    public class ID3DDestructionNotifier : IUnknown // 1
+    public class ID3DDestructionNotifier : IUnknown
     {
         static Guid s_uuid = new Guid("a06eb39a-50da-425b-8c31-4eecd6c270f3");
         public static new ref Guid IID => ref s_uuid;

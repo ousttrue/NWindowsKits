@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15294
-    public enum POINTER_DEVICE_TYPE // 1
+    public enum POINTER_DEVICE_TYPE
     {
         _INTEGRATED_PEN = 0x1,
         _EXTERNAL_PEN = 0x2,

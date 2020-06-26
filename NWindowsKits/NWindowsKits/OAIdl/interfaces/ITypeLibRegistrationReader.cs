@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:5381
-    public class ITypeLibRegistrationReader : IUnknown // 1
+    public class ITypeLibRegistrationReader : IUnknown
     {
         static Guid s_uuid = new Guid("ed6a8a2a-b160-4e77-8f73-aa7435cd5c27");
         public static new ref Guid IID => ref s_uuid;

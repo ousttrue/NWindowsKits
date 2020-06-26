@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:2559
-    public class IWinInetFileStream : IUnknown // 1
+    public class IWinInetFileStream : IUnknown
     {
         static Guid s_uuid = new Guid("f134c4b7-b1f8-4e75-b886-74b90943becb");
         public static new ref Guid IID => ref s_uuid;

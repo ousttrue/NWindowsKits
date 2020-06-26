@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:732
-    public class IEnumConnectionPoints : IUnknown // 2
+    public class IEnumConnectionPoints : IUnknown
     {
         static Guid s_uuid = new Guid("b196b285-bab4-101a-b69c-00aa00341d07");
         public static new ref Guid IID => ref s_uuid;

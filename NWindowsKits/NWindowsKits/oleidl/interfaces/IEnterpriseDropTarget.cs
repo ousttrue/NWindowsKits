@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/oleidl.h:3721
-    public class IEnterpriseDropTarget : IUnknown // 1
+    public class IEnterpriseDropTarget : IUnknown
     {
         static Guid s_uuid = new Guid("390e3878-fd55-4e18-819d-4682081c0cfd");
         public static new ref Guid IID => ref s_uuid;

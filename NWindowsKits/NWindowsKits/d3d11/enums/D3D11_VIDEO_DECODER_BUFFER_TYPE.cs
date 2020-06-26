@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9713
-    public enum D3D11_VIDEO_DECODER_BUFFER_TYPE // 1
+    public enum D3D11_VIDEO_DECODER_BUFFER_TYPE
     {
         _PICTURE_PARAMETERS = 0x0,
         _MACROBLOCK_CONTROL = 0x1,

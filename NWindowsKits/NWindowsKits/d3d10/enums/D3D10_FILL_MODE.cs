@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:656
-    public enum D3D10_FILL_MODE // 1
+    public enum D3D10_FILL_MODE
     {
         _WIREFRAME = 0x2,
         _SOLID = 0x3,

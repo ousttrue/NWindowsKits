@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7425
-    public enum D3D11_CONSERVATIVE_RASTERIZATION_TIER // 1
+    public enum D3D11_CONSERVATIVE_RASTERIZATION_TIER
     {
         _NOT_SUPPORTED = 0x0,
         _TIER_1 = 0x1,

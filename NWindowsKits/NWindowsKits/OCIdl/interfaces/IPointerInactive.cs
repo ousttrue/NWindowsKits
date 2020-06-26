@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:5636
-    public class IPointerInactive : IUnknown // 1
+    public class IPointerInactive : IUnknown
     {
         static Guid s_uuid = new Guid("55980ba0-35aa-11cf-b671-00aa004cd6d8");
         public static new ref Guid IID => ref s_uuid;

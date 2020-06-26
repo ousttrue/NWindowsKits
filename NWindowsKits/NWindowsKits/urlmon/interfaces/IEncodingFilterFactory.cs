@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:9883
-    public class IEncodingFilterFactory : IUnknown // 1
+    public class IEncodingFilterFactory : IUnknown
     {
         static Guid s_uuid = new Guid("70bdde00-c18e-11d0-a9ce-006097942311");
         public static new ref Guid IID => ref s_uuid;

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10112
-    public enum D3D11_VIDEO_FRAME_FORMAT // 1
+    public enum D3D11_VIDEO_FRAME_FORMAT
     {
         _PROGRESSIVE = 0x0,
         _INTERLACED_TOP_FIELD_FIRST = 0x1,

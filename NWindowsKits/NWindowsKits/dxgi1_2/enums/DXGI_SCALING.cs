@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:1179
-    public enum DXGI_SCALING // 1
+    public enum DXGI_SCALING
     {
         _STRETCH = 0x0,
         _NONE = 0x1,

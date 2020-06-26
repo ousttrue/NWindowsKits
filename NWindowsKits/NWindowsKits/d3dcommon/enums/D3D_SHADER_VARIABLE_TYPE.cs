@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:622
-    public enum D3D_SHADER_VARIABLE_TYPE // 1
+    public enum D3D_SHADER_VARIABLE_TYPE
     {
         D3D_SVT_VOID = 0x0,
         D3D_SVT_BOOL = 0x1,

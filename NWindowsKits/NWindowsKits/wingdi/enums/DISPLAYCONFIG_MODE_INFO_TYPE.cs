@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2889
-    public enum DISPLAYCONFIG_MODE_INFO_TYPE // 1
+    public enum DISPLAYCONFIG_MODE_INFO_TYPE
     {
         _SOURCE = 0x1,
         _TARGET = 0x2,

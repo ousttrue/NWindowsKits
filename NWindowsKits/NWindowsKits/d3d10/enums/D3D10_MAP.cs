@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:770
-    public enum D3D10_MAP // 1
+    public enum D3D10_MAP
     {
         _READ = 0x1,
         _WRITE = 0x2,

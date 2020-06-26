@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:936
-    public class IDXGIDevice2 : IDXGIDevice1 // 1
+    public class IDXGIDevice2 : IDXGIDevice1
     {
         static Guid s_uuid = new Guid("05008617-fbfd-4051-a790-144884b4f6a9");
         public static new ref Guid IID => ref s_uuid;

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7712
-    public class IAgileReference : IUnknown // 1
+    public class IAgileReference : IUnknown
     {
         static Guid s_uuid = new Guid("c03f6a43-65a4-9818-987e-e0b810d2a6f2");
         public static new ref Guid IID => ref s_uuid;

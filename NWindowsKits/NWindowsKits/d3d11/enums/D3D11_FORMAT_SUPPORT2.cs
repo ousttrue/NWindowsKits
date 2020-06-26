@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:6100
-    public enum D3D11_FORMAT_SUPPORT2 // 1
+    public enum D3D11_FORMAT_SUPPORT2
     {
         _UAV_ATOMIC_ADD = 0x1,
         _UAV_ATOMIC_BITWISE_OPS = 0x2,

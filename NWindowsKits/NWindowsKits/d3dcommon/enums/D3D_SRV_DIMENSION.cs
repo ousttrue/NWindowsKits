@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:296
-    public enum D3D_SRV_DIMENSION // 1
+    public enum D3D_SRV_DIMENSION
     {
         D3D_SRV_DIMENSION_UNKNOWN = 0x0,
         D3D_SRV_DIMENSION_BUFFER = 0x1,

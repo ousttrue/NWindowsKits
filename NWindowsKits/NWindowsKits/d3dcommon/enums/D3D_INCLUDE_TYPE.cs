@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:567
-    public enum D3D_INCLUDE_TYPE // 1
+    public enum D3D_INCLUDE_TYPE
     {
         D3D_INCLUDE_LOCAL = 0x0,
         D3D_INCLUDE_SYSTEM = 0x1,

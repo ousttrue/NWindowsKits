@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1092
-    public enum D3D11_FILL_MODE // 1
+    public enum D3D11_FILL_MODE
     {
         _WIREFRAME = 0x2,
         _SOLID = 0x3,

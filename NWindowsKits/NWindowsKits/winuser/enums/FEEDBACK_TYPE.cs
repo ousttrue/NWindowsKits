@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6730
-    public enum FEEDBACK_TYPE // 1
+    public enum FEEDBACK_TYPE
     {
         _TOUCH_CONTACTVISUALIZATION = 0x1,
         _PEN_BARRELVISUALIZATION = 0x2,

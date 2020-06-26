@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:4311
-    public class IWinInetHttpTimeouts : IUnknown // 1
+    public class IWinInetHttpTimeouts : IUnknown
     {
         static Guid s_uuid = new Guid("f286fa56-c1fd-4270-8e67-b3eb790a81e8");
         public static new ref Guid IID => ref s_uuid;

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:4248
-    public enum D3D10_QUERY // 1
+    public enum D3D10_QUERY
     {
         _EVENT = 0x0,
         _OCCLUSION = 0x1,

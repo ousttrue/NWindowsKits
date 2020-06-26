@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcompiler.h:445
-    public enum D3DCOMPILER_STRIP_FLAGS // 1
+    public enum D3DCOMPILER_STRIP_FLAGS
     {
         _REFLECTION_DATA = 0x1,
         _DEBUG_INFO = 0x2,

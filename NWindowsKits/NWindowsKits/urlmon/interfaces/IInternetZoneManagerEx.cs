@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:8888
-    public class IInternetZoneManagerEx : IInternetZoneManager // 1
+    public class IInternetZoneManagerEx : IInternetZoneManager
     {
         static Guid s_uuid = new Guid("a4c23339-8e06-431e-9bf4-7e711c085648");
         public static new ref Guid IID => ref s_uuid;

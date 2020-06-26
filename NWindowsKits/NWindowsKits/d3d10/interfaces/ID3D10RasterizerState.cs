@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:1361
-    public class ID3D10RasterizerState : ID3D10DeviceChild // 1
+    public class ID3D10RasterizerState : ID3D10DeviceChild
     {
         static Guid s_uuid = new Guid("a2a07292-89af-4345-be2e-c53d9fbb6e9f");
         public static new ref Guid IID => ref s_uuid;

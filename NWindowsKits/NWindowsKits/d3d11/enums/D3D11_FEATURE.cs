@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7278
-    public enum D3D11_FEATURE // 1
+    public enum D3D11_FEATURE
     {
         _THREADING = 0x0,
         _DOUBLES = 0x1,

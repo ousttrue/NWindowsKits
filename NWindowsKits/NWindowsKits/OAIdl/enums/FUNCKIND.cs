@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:815
-    public enum FUNCKIND // 1
+    public enum FUNCKIND
     {
         _VIRTUAL = 0x0,
         _PUREVIRTUAL = 0x1,

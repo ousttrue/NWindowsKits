@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:5874
-    public class IPerPropertyBrowsing : IUnknown // 1
+    public class IPerPropertyBrowsing : IUnknown
     {
         static Guid s_uuid = new Guid("376bd3aa-3845-101b-84ed-08002b2ec713");
         public static new ref Guid IID => ref s_uuid;

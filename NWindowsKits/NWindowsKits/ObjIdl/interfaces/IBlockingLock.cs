@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13278
-    public class IBlockingLock : IUnknown // 1
+    public class IBlockingLock : IUnknown
     {
         static Guid s_uuid = new Guid("30f3d47a-6447-11d1-8e3c-00c04fb9386d");
         public static new ref Guid IID => ref s_uuid;

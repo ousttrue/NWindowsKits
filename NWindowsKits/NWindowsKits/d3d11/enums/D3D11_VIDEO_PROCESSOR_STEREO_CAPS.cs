@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9991
-    public enum D3D11_VIDEO_PROCESSOR_STEREO_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_STEREO_CAPS
     {
         _MONO_OFFSET = 0x1,
         _ROW_INTERLEAVED = 0x2,

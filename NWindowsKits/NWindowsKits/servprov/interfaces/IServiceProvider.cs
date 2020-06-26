@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/servprov.h:97
-    public class IServiceProvider : IUnknown // 1
+    public class IServiceProvider : IUnknown
     {
         static Guid s_uuid = new Guid("6d5140c1-7436-11ce-8034-00aa006009fa");
         public static new ref Guid IID => ref s_uuid;

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:630
-    public enum TYPEKIND // 1
+    public enum TYPEKIND
     {
         _ENUM = 0x0,
         _RECORD = 0x1,

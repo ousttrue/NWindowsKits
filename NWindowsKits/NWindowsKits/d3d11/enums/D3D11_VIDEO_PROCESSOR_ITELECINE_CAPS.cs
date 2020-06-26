@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10025
-    public enum D3D11_VIDEO_PROCESSOR_ITELECINE_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_ITELECINE_CAPS
     {
         _32 = 0x1,
         _22 = 0x2,

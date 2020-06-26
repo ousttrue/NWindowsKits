@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:706
-    public enum D3D10_DSV_DIMENSION // 1
+    public enum D3D10_DSV_DIMENSION
     {
         _UNKNOWN = 0x0,
         _TEXTURE1D = 0x1,

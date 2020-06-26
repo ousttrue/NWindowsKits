@@ -12,7 +12,7 @@ namespace DXGIEnumerateAdapters
             var hr = dxgi.CreateDXGIFactory(ref factory.GetIID(), ref factory.NewPtr);
             if (hr != 0)
             {
-                throw new ComException(hr);
+                throw new System.Runtime.InteropServices.COMException("CreateDXGIFactory", hr);
             }
 
             for (uint i = 0; ; ++i)

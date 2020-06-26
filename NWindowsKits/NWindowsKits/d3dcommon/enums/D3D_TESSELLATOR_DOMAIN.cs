@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:904
-    public enum D3D_TESSELLATOR_DOMAIN // 1
+    public enum D3D_TESSELLATOR_DOMAIN
     {
         D3D_TESSELLATOR_DOMAIN_UNDEFINED = 0x0,
         D3D_TESSELLATOR_DOMAIN_ISOLINE = 0x1,

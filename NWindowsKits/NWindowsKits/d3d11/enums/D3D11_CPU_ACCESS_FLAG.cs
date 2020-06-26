@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1233
-    public enum D3D11_CPU_ACCESS_FLAG // 1
+    public enum D3D11_CPU_ACCESS_FLAG
     {
         _WRITE = 0x10000,
         _READ = 0x20000,

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:3712
-    public class IFontEventsDisp : IDispatch // 1
+    public class IFontEventsDisp : IDispatch
     {
         static Guid s_uuid = new Guid("4ef6100a-af88-11d0-9846-00c04fc29993");
         public static new ref Guid IID => ref s_uuid;

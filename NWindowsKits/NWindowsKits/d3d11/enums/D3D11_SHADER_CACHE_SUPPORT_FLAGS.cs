@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7457
-    public enum D3D11_SHADER_CACHE_SUPPORT_FLAGS // 1
+    public enum D3D11_SHADER_CACHE_SUPPORT_FLAGS
     {
         _NONE = 0x0,
         _AUTOMATIC_INPROC_CACHE = 0x1,

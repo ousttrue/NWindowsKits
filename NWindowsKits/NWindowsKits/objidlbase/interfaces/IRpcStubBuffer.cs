@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:3398
-    public class IRpcStubBuffer : IUnknown // 8
+    public class IRpcStubBuffer : IUnknown
     {
         static Guid s_uuid = new Guid("d5f56afc-593b-101a-b569-08002b2dbf7a");
         public static new ref Guid IID => ref s_uuid;

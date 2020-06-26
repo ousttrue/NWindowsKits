@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:932
-    public enum D3D_TESSELLATOR_OUTPUT_PRIMITIVE // 1
+    public enum D3D_TESSELLATOR_OUTPUT_PRIMITIVE
     {
         D3D_TESSELLATOR_OUTPUT_UNDEFINED = 0x0,
         D3D_TESSELLATOR_OUTPUT_POINT = 0x1,

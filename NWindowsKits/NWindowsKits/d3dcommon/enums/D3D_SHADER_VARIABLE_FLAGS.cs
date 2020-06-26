@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:608
-    public enum D3D_SHADER_VARIABLE_FLAGS // 1
+    public enum D3D_SHADER_VARIABLE_FLAGS
     {
         D3D_SVF_USERPACKED = 0x1,
         D3D_SVF_USED = 0x2,

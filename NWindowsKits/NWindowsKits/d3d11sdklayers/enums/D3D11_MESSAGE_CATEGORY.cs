@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11sdklayers.h:739
-    public enum D3D11_MESSAGE_CATEGORY // 1
+    public enum D3D11_MESSAGE_CATEGORY
     {
         _APPLICATION_DEFINED = 0x0,
         _MISCELLANEOUS = 0x1,

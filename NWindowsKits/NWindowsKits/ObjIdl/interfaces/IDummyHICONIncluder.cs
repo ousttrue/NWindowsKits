@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13958
-    public class IDummyHICONIncluder : IUnknown // 1
+    public class IDummyHICONIncluder : IUnknown
     {
         static Guid s_uuid = new Guid("947990de-cc28-11d2-a0f7-00805f858fb1");
         public static new ref Guid IID => ref s_uuid;

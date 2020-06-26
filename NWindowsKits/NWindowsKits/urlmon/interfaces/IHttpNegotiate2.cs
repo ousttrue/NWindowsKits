@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:2315
-    public class IHttpNegotiate2 : IHttpNegotiate // 1
+    public class IHttpNegotiate2 : IHttpNegotiate
     {
         static Guid s_uuid = new Guid("4f9f9fcb-e0f4-48eb-b7ab-fa2ea9365cb4");
         public static new ref Guid IID => ref s_uuid;

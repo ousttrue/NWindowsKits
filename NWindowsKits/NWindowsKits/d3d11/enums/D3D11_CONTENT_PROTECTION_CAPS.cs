@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10049
-    public enum D3D11_CONTENT_PROTECTION_CAPS // 1
+    public enum D3D11_CONTENT_PROTECTION_CAPS
     {
         _SOFTWARE = 0x1,
         _HARDWARE = 0x2,

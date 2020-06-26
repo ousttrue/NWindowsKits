@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:14444
-    public class IApartmentShutdown : IUnknown // 1
+    public class IApartmentShutdown : IUnknown
     {
         static Guid s_uuid = new Guid("a2f05a09-27a2-42b5-bc0e-ac163ef49d9b");
         public static new ref Guid IID => ref s_uuid;

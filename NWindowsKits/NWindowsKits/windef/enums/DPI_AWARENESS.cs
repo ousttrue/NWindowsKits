@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:252
-    public enum DPI_AWARENESS // 1
+    public enum DPI_AWARENESS
     {
         _INVALID = unchecked((int)0xffffffff),
         _UNAWARE = 0x0,

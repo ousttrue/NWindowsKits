@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:799
-    public enum CALLCONV // 1
+    public enum CALLCONV
     {
         _FASTCALL = 0x0,
         _CDECL = 0x1,

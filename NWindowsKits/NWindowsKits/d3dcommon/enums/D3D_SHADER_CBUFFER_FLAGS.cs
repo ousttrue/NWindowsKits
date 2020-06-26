@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:784
-    public enum D3D_SHADER_CBUFFER_FLAGS // 1
+    public enum D3D_SHADER_CBUFFER_FLAGS
     {
         D3D_CBF_USERPACKED = 0x1,
         D3D10_CBF_USERPACKED = 0x1,

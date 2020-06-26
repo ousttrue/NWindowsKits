@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11sdklayers.h:458
-    public class ID3D11TracingDevice : IUnknown // 1
+    public class ID3D11TracingDevice : IUnknown
     {
         static Guid s_uuid = new Guid("1911c771-1587-413e-a7e0-fb26c3de0268");
         public static new ref Guid IID => ref s_uuid;

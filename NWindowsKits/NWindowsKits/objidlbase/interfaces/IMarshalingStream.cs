@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7517
-    public class IMarshalingStream : IStream // 1
+    public class IMarshalingStream : IStream
     {
         static Guid s_uuid = new Guid("d8f2f5e6-6102-4863-9f26-389a4676efde");
         public static new ref Guid IID => ref s_uuid;

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:514
-    public enum DXGI_ALPHA_MODE // 1
+    public enum DXGI_ALPHA_MODE
     {
         _UNSPECIFIED = 0x0,
         _PREMULTIPLIED = 0x1,

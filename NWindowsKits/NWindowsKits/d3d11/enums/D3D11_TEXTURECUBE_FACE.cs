@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:3157
-    public enum D3D11_TEXTURECUBE_FACE // 1
+    public enum D3D11_TEXTURECUBE_FACE
     {
         _POSITIVE_X = 0x0,
         _NEGATIVE_X = 0x1,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:8560
-    public enum URLZONEREG // 1
+    public enum URLZONEREG
     {
         _DEFAULT = 0x0,
         _HKLM = 0x1,

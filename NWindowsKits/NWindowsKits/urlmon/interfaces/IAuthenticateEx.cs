@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:2091
-    public class IAuthenticateEx : IAuthenticate // 1
+    public class IAuthenticateEx : IAuthenticate
     {
         static Guid s_uuid = new Guid("2ad1edaf-d83d-48b5-9adf-03dbe19f53bd");
         public static new ref Guid IID => ref s_uuid;

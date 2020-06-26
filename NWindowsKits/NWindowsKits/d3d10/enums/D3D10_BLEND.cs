@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:1144
-    public enum D3D10_BLEND // 1
+    public enum D3D10_BLEND
     {
         _ZERO = 0x1,
         _ONE = 0x2,

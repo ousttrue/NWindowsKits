@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11sdklayers.h:123
-    public enum D3D11_RLDO_FLAGS // 1
+    public enum D3D11_RLDO_FLAGS
     {
         _SUMMARY = 0x1,
         _DETAIL = 0x2,

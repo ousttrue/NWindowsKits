@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcompiler.h:467
-    public enum D3D_BLOB_PART // 1
+    public enum D3D_BLOB_PART
     {
         _INPUT_SIGNATURE_BLOB = 0x0,
         _OUTPUT_SIGNATURE_BLOB = 0x1,

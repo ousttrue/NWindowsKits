@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13858
-    public class IThumbnailExtractor : IUnknown // 1
+    public class IThumbnailExtractor : IUnknown
     {
         static Guid s_uuid = new Guid("969dc708-5c76-11d1-8d86-0000f804b057");
         public static new ref Guid IID => ref s_uuid;

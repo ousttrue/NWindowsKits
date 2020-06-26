@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:69
-    public enum D3D_DRIVER_TYPE // 1
+    public enum D3D_DRIVER_TYPE
     {
         _UNKNOWN = 0x0,
         _HARDWARE = 0x1,

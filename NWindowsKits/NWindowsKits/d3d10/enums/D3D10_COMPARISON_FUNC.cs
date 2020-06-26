@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:958
-    public enum D3D10_COMPARISON_FUNC // 1
+    public enum D3D10_COMPARISON_FUNC
     {
         _NEVER = 0x1,
         _LESS = 0x2,

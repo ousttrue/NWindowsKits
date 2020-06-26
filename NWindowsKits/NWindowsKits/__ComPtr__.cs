@@ -5,19 +5,6 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
 
-    public static class ComPtrExtensions
-    {
-        public static T QueryInterface<T>(this IUnknown self) where T : ComPtr, new()
-        {
-            var p = new T();
-            if (self.QueryInterface(ref p.GetIID(), ref p.NewPtr) != 0)
-            {
-                return null;
-            }
-            return p;
-        }
-    }
-
     /// <summary>
     /// COMの virtual function table を自前で呼び出すヘルパークラス。
     /// RCW は、うまくいかなかった。
@@ -106,53 +93,5 @@ namespace NWindowsKits
             // GC.SuppressFinalize(this);
         }
         #endregion
-    }
-
-    class CustomMarshaler<T> : ICustomMarshaler
-    where T : ComPtr, new()
-    {
-        public void CleanUpManagedData(object ManagedObj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CleanUpNativeData(IntPtr pNativeData)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int GetNativeDataSize()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IntPtr MarshalManagedToNative(object ManagedObj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object MarshalNativeToManaged(IntPtr pNativeData)
-        {
-            // var count = Marshal.AddRef(pNativeData);
-            // Marshal.Release(pNativeData);
-            var t = new T();
-            t.NewPtr = pNativeData;
-            return t;
-        }
-
-        public static ICustomMarshaler GetInstance(string src)
-        {
-            return new CustomMarshaler<T>();
-        }
-    }
-
-    public class ComException : Exception
-    {
-        public readonly int HR;
- 
-        public ComException(int hr)
-        {
-            HR = hr;
-        }
     }
 }

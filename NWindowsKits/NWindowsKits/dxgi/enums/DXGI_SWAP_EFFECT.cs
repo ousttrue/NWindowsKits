@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:259
-    public enum DXGI_SWAP_EFFECT // 1
+    public enum DXGI_SWAP_EFFECT
     {
         _DISCARD = 0x0,
         _SEQUENTIAL = 0x1,

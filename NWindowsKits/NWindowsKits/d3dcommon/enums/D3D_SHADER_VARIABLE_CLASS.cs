@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:586
-    public enum D3D_SHADER_VARIABLE_CLASS // 1
+    public enum D3D_SHADER_VARIABLE_CLASS
     {
         D3D_SVC_SCALAR = 0x0,
         D3D_SVC_VECTOR = 0x1,

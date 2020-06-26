@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7336
-    public class IProcessInitControl : IUnknown // 1
+    public class IProcessInitControl : IUnknown
     {
         static Guid s_uuid = new Guid("72380d55-8d2b-43a3-8513-2b6ef31434e9");
         public static new ref Guid IID => ref s_uuid;

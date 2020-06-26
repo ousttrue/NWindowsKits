@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:3315
-    public enum D3D11_BUFFEREX_SRV_FLAG // 1
+    public enum D3D11_BUFFEREX_SRV_FLAG
     {
         _RAW = 0x1,
     }

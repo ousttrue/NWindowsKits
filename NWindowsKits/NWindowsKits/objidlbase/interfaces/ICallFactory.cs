@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:5512
-    public class ICallFactory : IUnknown // 1
+    public class ICallFactory : IUnknown
     {
         static Guid s_uuid = new Guid("1c733a30-2a1c-11ce-ade5-00aa0044773d");
         public static new ref Guid IID => ref s_uuid;

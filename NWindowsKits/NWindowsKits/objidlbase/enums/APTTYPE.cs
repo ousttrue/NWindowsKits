@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7180
-    public enum APTTYPE // 1
+    public enum APTTYPE
     {
         _CURRENT = unchecked((int)0xffffffff),
         _STA = 0x0,

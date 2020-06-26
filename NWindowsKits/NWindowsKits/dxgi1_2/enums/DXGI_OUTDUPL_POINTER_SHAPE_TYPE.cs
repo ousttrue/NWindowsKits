@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:235
-    public enum DXGI_OUTDUPL_POINTER_SHAPE_TYPE // 1
+    public enum DXGI_OUTDUPL_POINTER_SHAPE_TYPE
     {
         _MONOCHROME = 0x1,
         _COLOR = 0x2,

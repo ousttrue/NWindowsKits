@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:960
-    public enum D3D_INTERPOLATION_MODE // 1
+    public enum D3D_INTERPOLATION_MODE
     {
         _UNDEFINED = 0x0,
         _CONSTANT = 0x1,

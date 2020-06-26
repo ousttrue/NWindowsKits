@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:947
-    public enum D3D_MIN_PRECISION // 1
+    public enum D3D_MIN_PRECISION
     {
         _DEFAULT = 0x0,
         _FLOAT_16 = 0x1,

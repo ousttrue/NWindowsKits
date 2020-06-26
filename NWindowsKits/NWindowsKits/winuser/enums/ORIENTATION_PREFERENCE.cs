@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15830
-    public enum ORIENTATION_PREFERENCE // 1
+    public enum ORIENTATION_PREFERENCE
     {
         _NONE = 0x0,
         _LANDSCAPE = 0x1,

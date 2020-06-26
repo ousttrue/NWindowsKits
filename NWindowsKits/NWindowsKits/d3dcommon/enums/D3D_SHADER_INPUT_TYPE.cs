@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:755
-    public enum D3D_SHADER_INPUT_TYPE // 1
+    public enum D3D_SHADER_INPUT_TYPE
     {
         D3D_SIT_CBUFFER = 0x0,
         D3D_SIT_TBUFFER = 0x1,

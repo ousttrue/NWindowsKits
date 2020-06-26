@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10014
-    public enum D3D11_VIDEO_PROCESSOR_PROCESSOR_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_PROCESSOR_CAPS
     {
         _DEINTERLACE_BLEND = 0x1,
         _DEINTERLACE_BOB = 0x2,

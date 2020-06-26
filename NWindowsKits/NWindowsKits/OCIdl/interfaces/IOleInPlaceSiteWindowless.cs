@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:4420
-    public class IOleInPlaceSiteWindowless : IOleInPlaceSiteEx // 1
+    public class IOleInPlaceSiteWindowless : IOleInPlaceSiteEx
     {
         static Guid s_uuid = new Guid("922eada0-3424-11cf-b670-00aa004cd6d8");
         public static new ref Guid IID => ref s_uuid;

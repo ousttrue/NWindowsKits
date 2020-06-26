@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13030
-    public class IProgressNotify : IUnknown // 1
+    public class IProgressNotify : IUnknown
     {
         static Guid s_uuid = new Guid("a9d758a0-4617-11cf-95fc-00aa00680db4");
         public static new ref Guid IID => ref s_uuid;

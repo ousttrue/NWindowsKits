@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:7901
-    public class IZoneIdentifier2 : IZoneIdentifier // 1
+    public class IZoneIdentifier2 : IZoneIdentifier
     {
         static Guid s_uuid = new Guid("eb5e760c-09ef-45c0-b510-70830ce31e6a");
         public static new ref Guid IID => ref s_uuid;

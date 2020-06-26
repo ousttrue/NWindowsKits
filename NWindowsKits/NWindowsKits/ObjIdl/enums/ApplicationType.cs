@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:14033
-    public enum ApplicationType // 1
+    public enum ApplicationType
     {
         ServerApplication = 0x0,
         LibraryApplication = 0x1,

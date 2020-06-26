@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:268
-    public enum DXGI_SWAP_CHAIN_FLAG // 1
+    public enum DXGI_SWAP_CHAIN_FLAG
     {
         _NONPREROTATED = 0x1,
         _ALLOW_MODE_SWITCH = 0x2,

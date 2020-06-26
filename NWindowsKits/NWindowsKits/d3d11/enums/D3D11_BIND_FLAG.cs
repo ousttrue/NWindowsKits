@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1218
-    public enum D3D11_BIND_FLAG // 1
+    public enum D3D11_BIND_FLAG
     {
         _VERTEX_BUFFER = 0x1,
         _INDEX_BUFFER = 0x2,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:5309
-    public enum DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS // 1
+    public enum DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS
     {
         _DEFAULT = 0x0,
         _DISABLE_FONT_UPDATE = 0x1,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:243
-    public enum DXGI_RESIDENCY // 1
+    public enum DXGI_RESIDENCY
     {
         _FULLY_RESIDENT = 0x1,
         _RESIDENT_IN_SHARED_MEMORY = 0x2,

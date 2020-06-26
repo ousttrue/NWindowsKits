@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10434
-    public enum D3D11_VIDEO_PROCESSOR_ROTATION // 1
+    public enum D3D11_VIDEO_PROCESSOR_ROTATION
     {
         _IDENTITY = 0x0,
         _90 = 0x1,

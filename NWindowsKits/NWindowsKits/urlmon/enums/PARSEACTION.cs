@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:6401
-    public enum PARSEACTION // 1
+    public enum PARSEACTION
     {
         _CANONICALIZE = 0x1,
         _FRIENDLY = 0x2,

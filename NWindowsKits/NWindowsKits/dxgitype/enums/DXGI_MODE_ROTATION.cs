@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgitype.h:74
-    public enum DXGI_MODE_ROTATION // 1
+    public enum DXGI_MODE_ROTATION
     {
         _UNSPECIFIED = 0x0,
         _IDENTITY = 0x1,

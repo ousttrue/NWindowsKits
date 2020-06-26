@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:732
-    public enum D3D10_USAGE // 1
+    public enum D3D10_USAGE
     {
         _DEFAULT = 0x0,
         _IMMUTABLE = 0x1,

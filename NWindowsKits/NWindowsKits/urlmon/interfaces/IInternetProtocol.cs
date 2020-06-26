@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:5407
-    public class IInternetProtocol : IInternetProtocolRoot // 1
+    public class IInternetProtocol : IInternetProtocolRoot
     {
         static Guid s_uuid = new Guid("79eac9e4-baf9-11ce-8c82-00aa004ba90b");
         public static new ref Guid IID => ref s_uuid;

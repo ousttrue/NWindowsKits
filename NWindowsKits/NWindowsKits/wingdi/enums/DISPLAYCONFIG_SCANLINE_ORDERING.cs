@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2826
-    public enum DISPLAYCONFIG_SCANLINE_ORDERING // 1
+    public enum DISPLAYCONFIG_SCANLINE_ORDERING
     {
         _UNSPECIFIED = 0x0,
         _PROGRESSIVE = 0x1,

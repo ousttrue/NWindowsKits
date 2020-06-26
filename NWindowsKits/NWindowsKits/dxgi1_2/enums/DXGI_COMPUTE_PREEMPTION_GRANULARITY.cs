@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:1969
-    public enum DXGI_COMPUTE_PREEMPTION_GRANULARITY // 1
+    public enum DXGI_COMPUTE_PREEMPTION_GRANULARITY
     {
         _DMA_BUFFER_BOUNDARY = 0x0,
         _DISPATCH_BOUNDARY = 0x1,

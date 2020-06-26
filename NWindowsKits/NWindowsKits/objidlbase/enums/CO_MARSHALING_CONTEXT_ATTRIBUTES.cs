@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7479
-    public enum CO_MARSHALING_CONTEXT_ATTRIBUTES // 1
+    public enum CO_MARSHALING_CONTEXT_ATTRIBUTES
     {
         _SOURCE_IS_APP_CONTAINER = 0x0,
         _CONTEXT_ATTRIBUTE_RESERVED_1 = unchecked((int)0x80000000),

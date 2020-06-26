@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:3890
-    public enum D3D10_TEXTURE_ADDRESS_MODE // 1
+    public enum D3D10_TEXTURE_ADDRESS_MODE
     {
         _WRAP = 0x1,
         _MIRROR = 0x2,

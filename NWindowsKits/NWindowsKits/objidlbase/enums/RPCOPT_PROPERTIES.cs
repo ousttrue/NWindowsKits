@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:4280
-    public enum RPCOPT_PROPERTIES // 1
+    public enum RPCOPT_PROPERTIES
     {
         _RPCTIMEOUT = 0x1,
         _SERVER_LOCALITY = 0x2,

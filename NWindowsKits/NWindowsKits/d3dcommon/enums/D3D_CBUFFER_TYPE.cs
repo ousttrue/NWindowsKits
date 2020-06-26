@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:792
-    public enum D3D_CBUFFER_TYPE // 1
+    public enum D3D_CBUFFER_TYPE
     {
         D3D_CT_CBUFFER = 0x0,
         D3D_CT_TBUFFER = 0x1,

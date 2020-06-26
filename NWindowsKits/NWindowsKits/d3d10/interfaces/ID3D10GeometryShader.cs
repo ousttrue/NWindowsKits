@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:3482
-    public class ID3D10GeometryShader : ID3D10DeviceChild // 1
+    public class ID3D10GeometryShader : ID3D10DeviceChild
     {
         static Guid s_uuid = new Guid("6316be88-54cd-4040-ab44-20461bc81f68");
         public static new ref Guid IID => ref s_uuid;

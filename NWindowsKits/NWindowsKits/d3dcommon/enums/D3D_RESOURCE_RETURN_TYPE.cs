@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:864
-    public enum D3D_RESOURCE_RETURN_TYPE // 1
+    public enum D3D_RESOURCE_RETURN_TYPE
     {
         D3D_RETURN_TYPE_UNORM = 0x1,
         D3D_RETURN_TYPE_SNORM = 0x2,

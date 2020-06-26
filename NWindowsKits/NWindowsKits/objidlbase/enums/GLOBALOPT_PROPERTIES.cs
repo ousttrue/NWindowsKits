@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:4421
-    public enum GLOBALOPT_PROPERTIES // 1
+    public enum GLOBALOPT_PROPERTIES
     {
         _EXCEPTION_HANDLING = 0x1,
         _APPID = 0x2,

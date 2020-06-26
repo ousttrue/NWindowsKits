@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:917
-    public enum D3D_TESSELLATOR_PARTITIONING // 1
+    public enum D3D_TESSELLATOR_PARTITIONING
     {
         D3D_TESSELLATOR_PARTITIONING_UNDEFINED = 0x0,
         D3D_TESSELLATOR_PARTITIONING_INTEGER = 0x1,

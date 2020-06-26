@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:265
-    public enum DPI_HOSTING_BEHAVIOR // 1
+    public enum DPI_HOSTING_BEHAVIOR
     {
         _INVALID = unchecked((int)0xffffffff),
         _DEFAULT = 0x0,

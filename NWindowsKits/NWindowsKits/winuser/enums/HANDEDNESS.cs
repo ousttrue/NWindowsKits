@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12716
-    public enum HANDEDNESS // 2
+    public enum HANDEDNESS
     {
         _LEFT = 0x0,
         _RIGHT = 0x1,

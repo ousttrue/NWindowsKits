@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:4248
-    public enum CHANGEKIND // 1
+    public enum CHANGEKIND
     {
         _ADDMEMBER = 0x0,
         _DELETEMEMBER = 0x1,

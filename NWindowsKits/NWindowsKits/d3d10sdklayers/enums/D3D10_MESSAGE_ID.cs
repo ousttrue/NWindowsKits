@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10sdklayers.h:369
-    public enum D3D10_MESSAGE_ID // 1
+    public enum D3D10_MESSAGE_ID
     {
         _UNKNOWN = 0x0,
         _DEVICE_IASETVERTEXBUFFERS_HAZARD = 0x1,

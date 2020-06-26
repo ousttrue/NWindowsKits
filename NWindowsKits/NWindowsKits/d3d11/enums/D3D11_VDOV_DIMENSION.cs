@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:11211
-    public enum D3D11_VDOV_DIMENSION // 1
+    public enum D3D11_VDOV_DIMENSION
     {
         _UNKNOWN = 0x0,
         _TEXTURE2D = 0x1,

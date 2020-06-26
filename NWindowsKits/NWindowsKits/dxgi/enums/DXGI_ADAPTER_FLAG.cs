@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:2368
-    public enum DXGI_ADAPTER_FLAG // 1
+    public enum DXGI_ADAPTER_FLAG
     {
         _NONE = 0x0,
         _REMOTE = 0x1,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10120
-    public enum D3D11_VIDEO_USAGE // 1
+    public enum D3D11_VIDEO_USAGE
     {
         _PLAYBACK_NORMAL = 0x0,
         _OPTIMAL_SPEED = 0x1,

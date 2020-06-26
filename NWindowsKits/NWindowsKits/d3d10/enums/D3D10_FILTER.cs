@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:3814
-    public enum D3D10_FILTER // 1
+    public enum D3D10_FILTER
     {
         _MIN_MAG_MIP_POINT = 0x0,
         _MIN_MAG_POINT_MIP_LINEAR = 0x1,

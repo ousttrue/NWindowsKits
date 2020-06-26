@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:2405
-    public class ID3D11Buffer : ID3D11Resource // 1
+    public class ID3D11Buffer : ID3D11Resource
     {
         static Guid s_uuid = new Guid("48570b85-d1ee-4fcd-a250-eb350722b037");
         public static new ref Guid IID => ref s_uuid;

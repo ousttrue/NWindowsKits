@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:807
-    public enum D3D_NAME // 1
+    public enum D3D_NAME
     {
         D3D_NAME_UNDEFINED = 0x0,
         D3D_NAME_POSITION = 0x1,

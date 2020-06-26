@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:12855
-    public class IFillLockBytes : IUnknown // 1
+    public class IFillLockBytes : IUnknown
     {
         static Guid s_uuid = new Guid("99caf010-415e-11cf-8814-00aa00b569f5");
         public static new ref Guid IID => ref s_uuid;

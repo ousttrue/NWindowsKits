@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:1959
-    public enum DXGI_GRAPHICS_PREEMPTION_GRANULARITY // 1
+    public enum DXGI_GRAPHICS_PREEMPTION_GRANULARITY
     {
         _DMA_BUFFER_BOUNDARY = 0x0,
         _PRIMITIVE_BOUNDARY = 0x1,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9929
-    public enum D3D11_VIDEO_PROCESSOR_DEVICE_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_DEVICE_CAPS
     {
         _LINEAR_SPACE = 0x1,
         _xvYCC = 0x2,

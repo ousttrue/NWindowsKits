@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:825
-    public enum INVOKEKIND // 1
+    public enum INVOKEKIND
     {
         _FUNC = 0x1,
         _PROPERTYGET = 0x2,

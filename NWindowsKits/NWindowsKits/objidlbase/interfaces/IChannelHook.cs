@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:3686
-    public class IChannelHook : IUnknown // 1
+    public class IChannelHook : IUnknown
     {
         static Guid s_uuid = new Guid("1008c4a0-7613-11cf-9af1-0020af6e72f4");
         public static new ref Guid IID => ref s_uuid;

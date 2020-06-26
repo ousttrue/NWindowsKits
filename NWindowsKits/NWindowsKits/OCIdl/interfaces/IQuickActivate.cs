@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:6514
-    public class IQuickActivate : IUnknown // 1
+    public class IQuickActivate : IUnknown
     {
         static Guid s_uuid = new Guid("cf51ed10-62fe-11cf-bf86-00a0c9034836");
         public static new ref Guid IID => ref s_uuid;

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgitype.h:67
-    public enum DXGI_MODE_SCALING // 1
+    public enum DXGI_MODE_SCALING
     {
         _UNSPECIFIED = 0x0,
         _CENTERED = 0x1,

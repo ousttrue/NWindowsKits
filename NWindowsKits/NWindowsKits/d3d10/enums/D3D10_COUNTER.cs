@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:4614
-    public enum D3D10_COUNTER // 1
+    public enum D3D10_COUNTER
     {
         _GPU_IDLE = 0x0,
         _VERTEX_PROCESSING = 0x1,

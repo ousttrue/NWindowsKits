@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:2500
-    public enum DESCKIND // 1
+    public enum DESCKIND
     {
         _NONE = 0x0,
         _FUNCDESC = 0x1,

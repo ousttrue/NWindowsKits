@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:971
-    public enum D3D10_DEPTH_WRITE_MASK // 1
+    public enum D3D10_DEPTH_WRITE_MASK
     {
         _ZERO = 0x0,
         _ALL = 0x1,

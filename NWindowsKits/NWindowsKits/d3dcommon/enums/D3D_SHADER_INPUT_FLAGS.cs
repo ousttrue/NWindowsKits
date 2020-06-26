@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:738
-    public enum D3D_SHADER_INPUT_FLAGS // 1
+    public enum D3D_SHADER_INPUT_FLAGS
     {
         D3D_SIF_USERPACKED = 0x1,
         D3D_SIF_COMPARISON_SAMPLER = 0x2,

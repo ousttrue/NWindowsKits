@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:2881
-    public enum Uri_PROPERTY // 1
+    public enum Uri_PROPERTY
     {
         _ABSOLUTE_URI = 0x0,
         _STRING_START = 0x0,

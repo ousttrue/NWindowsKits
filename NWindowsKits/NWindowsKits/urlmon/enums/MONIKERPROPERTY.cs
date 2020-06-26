@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:943
-    public enum MONIKERPROPERTY // 1
+    public enum MONIKERPROPERTY
     {
         MIMETYPEPROP = 0x0,
         USE_SRC_URL = 0x1,

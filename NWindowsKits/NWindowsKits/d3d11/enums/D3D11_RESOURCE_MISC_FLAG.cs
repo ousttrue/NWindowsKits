@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1240
-    public enum D3D11_RESOURCE_MISC_FLAG // 1
+    public enum D3D11_RESOURCE_MISC_FLAG
     {
         _GENERATE_MIPS = 0x1,
         _SHARED = 0x2,

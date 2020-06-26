@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9978
-    public enum D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS
     {
         _DENOISE = 0x1,
         _DERINGING = 0x2,

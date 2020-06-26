@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10_1.h:133
-    public enum D3D10_FEATURE_LEVEL1 // 1
+    public enum D3D10_FEATURE_LEVEL1
     {
         _10_0 = 0xa000,
         _10_1 = 0xa100,

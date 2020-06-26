@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:14390
-    public enum D3D11_CREATE_DEVICE_FLAG // 1
+    public enum D3D11_CREATE_DEVICE_FLAG
     {
         _SINGLETHREADED = 0x1,
         _DEBUG = 0x2,

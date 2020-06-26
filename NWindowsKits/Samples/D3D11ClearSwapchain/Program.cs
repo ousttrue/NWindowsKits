@@ -123,7 +123,7 @@ namespace Sample
                 if (hr != 0)
                 {
                     var uhr = (uint)hr;
-                    throw new ComException(hr);
+                    throw new COMException("CreateRenderTargetView", hr);
                 }
                 using (pRTV)
                 {

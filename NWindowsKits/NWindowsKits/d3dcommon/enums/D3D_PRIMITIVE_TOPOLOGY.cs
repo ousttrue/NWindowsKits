@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:110
-    public enum D3D_PRIMITIVE_TOPOLOGY // 1
+    public enum D3D_PRIMITIVE_TOPOLOGY
     {
         D3D_PRIMITIVE_TOPOLOGY_UNDEFINED = 0x0,
         D3D_PRIMITIVE_TOPOLOGY_POINTLIST = 0x1,

@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:6432
-    public enum QUERYOPTION // 1
+    public enum QUERYOPTION
     {
         _EXPIRATION_DATE = 0x1,
         _TIME_OF_LAST_CHANGE = 0x2,

@@ -6,7 +6,7 @@ namespace SampleLib
         {
             if (hr != 0)
             {
-                throw new NWindowsKits.ComException(hr);
+                throw new System.Runtime.InteropServices.COMException("", hr);
             }
         }
     }

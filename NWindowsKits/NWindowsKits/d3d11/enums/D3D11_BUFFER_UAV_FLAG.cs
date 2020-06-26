@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:4599
-    public enum D3D11_BUFFER_UAV_FLAG // 1
+    public enum D3D11_BUFFER_UAV_FLAG
     {
         _RAW = 0x1,
         _APPEND = 0x2,

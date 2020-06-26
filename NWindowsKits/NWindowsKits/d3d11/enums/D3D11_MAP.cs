@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1262
-    public enum D3D11_MAP // 1
+    public enum D3D11_MAP
     {
         _READ = 0x1,
         _WRITE = 0x2,

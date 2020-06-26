@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:12595
-    public class IMessageFilter : IUnknown // 1
+    public class IMessageFilter : IUnknown
     {
         static Guid s_uuid = new Guid("00000016-0000-0000-c000-000000000046");
         public static new ref Guid IID => ref s_uuid;

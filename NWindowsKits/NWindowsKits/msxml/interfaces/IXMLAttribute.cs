@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/msxml.h:9881
-    public class IXMLAttribute : IDispatch // 1
+    public class IXMLAttribute : IDispatch
     {
         static Guid s_uuid = new Guid("d4d4a0fc-3b73-11d1-b2b4-00c04fb92596");
         public static new ref Guid IID => ref s_uuid;

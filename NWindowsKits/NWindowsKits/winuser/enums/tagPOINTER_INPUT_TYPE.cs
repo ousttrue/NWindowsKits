@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6257
-    public enum tagPOINTER_INPUT_TYPE // 0
+    public enum tagPOINTER_INPUT_TYPE
     {
         _POINTER = 0x1,
         _TOUCH = 0x2,

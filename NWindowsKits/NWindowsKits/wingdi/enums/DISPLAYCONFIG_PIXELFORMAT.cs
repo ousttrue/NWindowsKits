@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2897
-    public enum DISPLAYCONFIG_PIXELFORMAT // 1
+    public enum DISPLAYCONFIG_PIXELFORMAT
     {
         _8BPP = 0x1,
         _16BPP = 0x2,

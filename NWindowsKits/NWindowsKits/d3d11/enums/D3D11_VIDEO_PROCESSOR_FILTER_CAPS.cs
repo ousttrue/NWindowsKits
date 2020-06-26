@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9956
-    public enum D3D11_VIDEO_PROCESSOR_FILTER_CAPS // 1
+    public enum D3D11_VIDEO_PROCESSOR_FILTER_CAPS
     {
         _BRIGHTNESS = 0x1,
         _CONTRAST = 0x2,

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13366
-    public class ITimeAndNoticeControl : IUnknown // 1
+    public class ITimeAndNoticeControl : IUnknown
     {
         static Guid s_uuid = new Guid("bc0bf6ae-8878-11d1-83e9-00c04fc2c6d4");
         public static new ref Guid IID => ref s_uuid;

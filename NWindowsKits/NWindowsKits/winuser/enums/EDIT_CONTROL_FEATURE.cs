@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:11265
-    public enum EDIT_CONTROL_FEATURE // 1
+    public enum EDIT_CONTROL_FEATURE
     {
         _ENTERPRISE_DATA_PROTECTION_PASTE_SUPPORT = 0x0,
         _PASTE_NOTIFICATIONS = 0x1,

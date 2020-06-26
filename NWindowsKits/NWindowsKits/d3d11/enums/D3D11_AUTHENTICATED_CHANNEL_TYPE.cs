@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10612
-    public enum D3D11_AUTHENTICATED_CHANNEL_TYPE // 1
+    public enum D3D11_AUTHENTICATED_CHANNEL_TYPE
     {
         _D3D11 = 0x1,
         _DRIVER_SOFTWARE = 0x2,

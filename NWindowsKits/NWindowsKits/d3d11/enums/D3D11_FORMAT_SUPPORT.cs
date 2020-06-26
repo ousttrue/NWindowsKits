@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:6064
-    public enum D3D11_FORMAT_SUPPORT // 1
+    public enum D3D11_FORMAT_SUPPORT
     {
         _BUFFER = 0x1,
         _IA_VERTEX_BUFFER = 0x2,

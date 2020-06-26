@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1642
-    public class ID3D11DepthStencilState : ID3D11DeviceChild // 1
+    public class ID3D11DepthStencilState : ID3D11DeviceChild
     {
         static Guid s_uuid = new Guid("03823efb-8d8f-4e1c-9aa2-f64bb2cbfdf1");
         public static new ref Guid IID => ref s_uuid;

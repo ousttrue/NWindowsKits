@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:80
-    public enum D3D_FEATURE_LEVEL // 3
+    public enum D3D_FEATURE_LEVEL
     {
         _1_0_CORE = 0x1000,
         _9_1 = 0x9100,

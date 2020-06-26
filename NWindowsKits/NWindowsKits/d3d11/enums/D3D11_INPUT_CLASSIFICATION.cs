@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1072
-    public enum D3D11_INPUT_CLASSIFICATION // 1
+    public enum D3D11_INPUT_CLASSIFICATION
     {
         _VERTEX_DATA = 0x0,
         _INSTANCE_DATA = 0x1,

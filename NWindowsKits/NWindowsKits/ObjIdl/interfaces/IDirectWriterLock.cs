@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:13570
-    public class IDirectWriterLock : IUnknown // 1
+    public class IDirectWriterLock : IUnknown
     {
         static Guid s_uuid = new Guid("0e6d4d92-6738-11cf-9608-00aa00680db4");
         public static new ref Guid IID => ref s_uuid;

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:5185
-    public class IErrorLog : IUnknown // 1
+    public class IErrorLog : IUnknown
     {
         static Guid s_uuid = new Guid("3127ca40-446e-11ce-8135-00aa004bb851");
         public static new ref Guid IID => ref s_uuid;

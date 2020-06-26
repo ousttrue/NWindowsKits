@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10405
-    public enum D3D11_VIDEO_PROCESSOR_OUTPUT_RATE // 1
+    public enum D3D11_VIDEO_PROCESSOR_OUTPUT_RATE
     {
         _NORMAL = 0x0,
         _HALF = 0x1,

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10sdklayers.h:926
-    public class ID3D10InfoQueue : IUnknown // 1
+    public class ID3D10InfoQueue : IUnknown
     {
         static Guid s_uuid = new Guid("1b940b17-2642-4d1f-ab1f-b99bad0c395f");
         public static new ref Guid IID => ref s_uuid;

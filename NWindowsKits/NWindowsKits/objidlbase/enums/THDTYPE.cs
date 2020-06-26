@@ -3,7 +3,7 @@
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:7194
-    public enum THDTYPE // 1
+    public enum THDTYPE
     {
         _BLOCKMESSAGES = 0x0,
         _PROCESSMESSAGES = 0x1,

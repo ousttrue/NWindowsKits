@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/objidlbase.h:2790
-    public class IAsyncRpcChannelBuffer : IRpcChannelBuffer2 // 1
+    public class IAsyncRpcChannelBuffer : IRpcChannelBuffer2
     {
         static Guid s_uuid = new Guid("a5029fb6-3c34-11d1-9c99-00c04fb998aa");
         public static new ref Guid IID => ref s_uuid;

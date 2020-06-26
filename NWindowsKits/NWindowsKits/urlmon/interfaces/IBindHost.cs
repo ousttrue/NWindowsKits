@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:4637
-    public class IBindHost : IUnknown // 1
+    public class IBindHost : IUnknown
     {
         static Guid s_uuid = new Guid("fc4801a1-2ba9-11cf-a229-00aa003d7352");
         public static new ref Guid IID => ref s_uuid;
