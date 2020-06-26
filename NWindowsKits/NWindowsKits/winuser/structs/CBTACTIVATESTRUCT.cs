@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:884
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CBTACTIVATESTRUCT // 2
+    public struct CBTACTIVATESTRUCT
     {
 
         public int fMouse;

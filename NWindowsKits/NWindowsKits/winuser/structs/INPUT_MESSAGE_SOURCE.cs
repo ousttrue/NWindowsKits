@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15767
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct INPUT_MESSAGE_SOURCE // 1
+    public struct INPUT_MESSAGE_SOURCE
     {
 
         public INPUT_MESSAGE_DEVICE_TYPE deviceType;

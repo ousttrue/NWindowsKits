@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2249
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DEVMODEW // 4
+    public struct DEVMODEW
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2256
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2258
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public short dmOrientation;
@@ -36,7 +36,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2269
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__2 // 0
+        public struct __Anonymous__2
         {
     
             public POINTL dmPosition;
@@ -46,7 +46,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2285
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__3 // 0
+        public struct __Anonymous__3
         {
     
     

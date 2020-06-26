@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10877
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT // 1
+    public struct D3D11_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT
     {
 
         public D3D11_AUTHENTICATED_QUERY_OUTPUT Output;

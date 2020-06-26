@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10082
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_VIDEO_PROCESSOR_CUSTOM_RATE // 1
+    public struct D3D11_VIDEO_PROCESSOR_CUSTOM_RATE
     {
 
         public DXGI_RATIONAL CustomRate;

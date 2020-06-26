@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1080
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_INPUT_ELEMENT_DESC // 1
+    public struct D3D11_INPUT_ELEMENT_DESC
     {
 
         [MarshalAs(UnmanagedType.LPStr)] public string SemanticName;

@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2842
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DISPLAYCONFIG_VIDEO_SIGNAL_INFO // 1
+    public struct DISPLAYCONFIG_VIDEO_SIGNAL_INFO
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2850
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -23,7 +23,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2852
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 1
+        public struct __Anonymous__1
         {
     
             public uint videoStandard;

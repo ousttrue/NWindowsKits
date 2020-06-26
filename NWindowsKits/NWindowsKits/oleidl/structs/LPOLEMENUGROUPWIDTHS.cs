@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/oleidl.h:2328
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct LPOLEMENUGROUPWIDTHS // 2
+    public struct LPOLEMENUGROUPWIDTHS
     {
 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)] public int[] width;

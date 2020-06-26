@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2907
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DISPLAYCONFIG_SOURCE_MODE // 1
+    public struct DISPLAYCONFIG_SOURCE_MODE
     {
 
         public uint width;

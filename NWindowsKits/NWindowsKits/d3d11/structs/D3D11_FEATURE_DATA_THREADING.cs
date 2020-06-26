@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7302
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_FEATURE_DATA_THREADING // 1
+    public struct D3D11_FEATURE_DATA_THREADING
     {
 
         public int DriverConcurrentCreates;

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:218
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_OUTPUT_DESC // 1
+    public struct DXGI_OUTPUT_DESC
     {
 
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)] public string DeviceName;

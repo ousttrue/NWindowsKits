@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10sdklayers.h:890
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D10_INFO_QUEUE_FILTER_DESC // 1
+    public struct D3D10_INFO_QUEUE_FILTER_DESC
     {
 
         public uint NumCategories;

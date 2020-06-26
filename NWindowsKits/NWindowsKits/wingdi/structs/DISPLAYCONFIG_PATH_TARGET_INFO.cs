@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2969
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DISPLAYCONFIG_PATH_TARGET_INFO // 1
+    public struct DISPLAYCONFIG_PATH_TARGET_INFO
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2973
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:2976
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public uint desktopModeInfoIdx;

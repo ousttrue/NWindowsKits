@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/urlmon.h:8529
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ZONEATTRIBUTES // 2
+    public struct ZONEATTRIBUTES
     {
 
         public uint cbSize;

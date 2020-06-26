@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgitype.h:50
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_GAMMA_CONTROL_CAPABILITIES // 1
+    public struct DXGI_GAMMA_CONTROL_CAPABILITIES
     {
 
         public int ScaleAndOffsetSupported;

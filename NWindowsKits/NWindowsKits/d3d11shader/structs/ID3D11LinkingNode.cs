@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11shader.h:530
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ID3D11LinkingNode // 7
+    public struct ID3D11LinkingNode
     {
 
     }

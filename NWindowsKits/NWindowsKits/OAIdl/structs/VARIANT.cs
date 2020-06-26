@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:468
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct VARIANT // 1
+    public struct VARIANT
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:470
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:472
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public ushort vt;
@@ -33,7 +33,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:478
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__2 // 0
+        public struct __Anonymous__2
         {
     
     
@@ -132,7 +132,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:525
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__3 // 0
+        public struct __Anonymous__3
         {
     
             public IntPtr pvRecord;

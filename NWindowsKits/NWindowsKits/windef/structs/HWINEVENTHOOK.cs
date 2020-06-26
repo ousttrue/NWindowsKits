@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:98
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct HWINEVENTHOOK // 3
+    public struct HWINEVENTHOOK
     {
 
         public IntPtr ptr;

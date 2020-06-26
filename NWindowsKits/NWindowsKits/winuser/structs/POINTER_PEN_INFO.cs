@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6371
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct POINTER_PEN_INFO // 1
+    public struct POINTER_PEN_INFO
     {
 
         public POINTER_INFO pointerInfo;

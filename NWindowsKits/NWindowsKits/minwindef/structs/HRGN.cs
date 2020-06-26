@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/minwindef.h:252
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct HRGN // 47
+    public struct HRGN
     {
 
         public IntPtr ptr;

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10effect.h:723
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ID3D10EffectRenderTargetViewVariable // 4
+    public struct ID3D10EffectRenderTargetViewVariable
     {
 
     }

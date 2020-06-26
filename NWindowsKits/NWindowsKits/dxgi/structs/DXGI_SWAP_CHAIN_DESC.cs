@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:285
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_SWAP_CHAIN_DESC // 1
+    public struct DXGI_SWAP_CHAIN_DESC
     {
 
         public DXGI_MODE_DESC BufferDesc;

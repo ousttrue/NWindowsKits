@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:10838
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct FORMATETC // 2
+    public struct FORMATETC
     {
 
         public ushort cfFormat;

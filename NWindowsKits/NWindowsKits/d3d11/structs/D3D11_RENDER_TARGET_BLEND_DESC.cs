@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:1801
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_RENDER_TARGET_BLEND_DESC // 1
+    public struct D3D11_RENDER_TARGET_BLEND_DESC
     {
 
         public int BlendEnable;

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:178
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_MAPPED_RECT // 1
+    public struct DXGI_MAPPED_RECT
     {
 
         public int Pitch;

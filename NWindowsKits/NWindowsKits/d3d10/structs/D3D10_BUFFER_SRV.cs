@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:2729
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D10_BUFFER_SRV // 1
+    public struct D3D10_BUFFER_SRV
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:2731
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:2736
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
     

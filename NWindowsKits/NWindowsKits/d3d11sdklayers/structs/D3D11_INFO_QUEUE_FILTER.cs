@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11sdklayers.h:2128
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_INFO_QUEUE_FILTER // 1
+    public struct D3D11_INFO_QUEUE_FILTER
     {
 
         public D3D11_INFO_QUEUE_FILTER_DESC AllowList;

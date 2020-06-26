@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:14738
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ALTTABINFO // 3
+    public struct ALTTABINFO
     {
 
         public uint cbSize;

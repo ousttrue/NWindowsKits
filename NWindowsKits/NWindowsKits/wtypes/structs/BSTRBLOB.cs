@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:744
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct BSTRBLOB // 2
+    public struct BSTRBLOB
     {
 
         public uint cbSize;

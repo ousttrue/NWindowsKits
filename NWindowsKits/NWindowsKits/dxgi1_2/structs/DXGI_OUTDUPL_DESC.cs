@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:221
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_OUTDUPL_DESC // 1
+    public struct DXGI_OUTDUPL_DESC
     {
 
         public DXGI_MODE_DESC ModeDesc;

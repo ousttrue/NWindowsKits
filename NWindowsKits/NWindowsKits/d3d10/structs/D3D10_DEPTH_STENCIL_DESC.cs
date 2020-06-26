@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:998
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D10_DEPTH_STENCIL_DESC // 1
+    public struct D3D10_DEPTH_STENCIL_DESC
     {
 
         public int DepthEnable;

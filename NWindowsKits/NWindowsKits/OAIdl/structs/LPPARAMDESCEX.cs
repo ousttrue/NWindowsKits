@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:662
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct LPPARAMDESCEX // 2
+    public struct LPPARAMDESCEX
     {
 
         public uint cBytes;

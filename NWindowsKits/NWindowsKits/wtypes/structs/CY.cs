@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:670
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-    public struct CY // 1
+    public struct CY
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:671
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
             public uint Lo;

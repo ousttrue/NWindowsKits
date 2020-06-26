@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10814
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-    public struct D3D11_AUTHENTICATED_PROTECTION_FLAGS // 1
+    public struct D3D11_AUTHENTICATED_PROTECTION_FLAGS
     {
 
 

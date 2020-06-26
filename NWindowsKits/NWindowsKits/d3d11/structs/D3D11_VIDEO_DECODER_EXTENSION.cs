@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:9758
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_VIDEO_DECODER_EXTENSION // 1
+    public struct D3D11_VIDEO_DECODER_EXTENSION
     {
 
         public uint Function;

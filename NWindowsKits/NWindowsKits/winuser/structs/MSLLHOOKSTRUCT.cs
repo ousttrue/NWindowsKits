@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:1133
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct MSLLHOOKSTRUCT // 3
+    public struct MSLLHOOKSTRUCT
     {
 
         public POINT pt;

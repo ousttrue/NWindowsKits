@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/guiddef.h:22
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct GUID // 1
+    public struct GUID
     {
 
         public uint Data1;

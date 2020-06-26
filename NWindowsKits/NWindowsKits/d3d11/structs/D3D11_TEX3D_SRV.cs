@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:3355
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_TEX3D_SRV // 1
+    public struct D3D11_TEX3D_SRV
     {
 
         public uint MostDetailedMip;

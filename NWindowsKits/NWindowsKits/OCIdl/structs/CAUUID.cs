@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:2291
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CAUUID // 2
+    public struct CAUUID
     {
 
         public uint cElems;

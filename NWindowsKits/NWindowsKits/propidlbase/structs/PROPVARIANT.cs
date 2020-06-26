@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:294
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct PROPVARIANT // 3
+    public struct PROPVARIANT
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:295
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:297
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public ushort vt;
@@ -33,7 +33,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:303
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__2 // 0
+        public struct __Anonymous__2
         {
     
     

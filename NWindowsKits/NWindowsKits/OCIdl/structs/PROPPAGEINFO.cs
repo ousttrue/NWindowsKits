@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:1725
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct PROPPAGEINFO // 2
+    public struct PROPPAGEINFO
     {
 
         public uint cb;

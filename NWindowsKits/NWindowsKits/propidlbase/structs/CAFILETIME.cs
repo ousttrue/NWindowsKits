@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:254
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CAFILETIME // 1
+    public struct CAFILETIME
     {
 
         public uint cElems;

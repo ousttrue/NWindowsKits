@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:12581
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct LPINTERFACEINFO // 2
+    public struct LPINTERFACEINFO
     {
 
         public IntPtr pUnk;

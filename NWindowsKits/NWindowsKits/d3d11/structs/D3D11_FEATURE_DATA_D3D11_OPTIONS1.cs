@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7398
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_FEATURE_DATA_D3D11_OPTIONS1 // 1
+    public struct D3D11_FEATURE_DATA_D3D11_OPTIONS1
     {
 
         public D3D11_TILED_RESOURCES_TIER TiledResourcesTier;

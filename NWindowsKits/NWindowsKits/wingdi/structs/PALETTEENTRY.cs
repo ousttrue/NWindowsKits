@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:1428
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct PALETTEENTRY // 3
+    public struct PALETTEENTRY
     {
 
         public byte peRed;

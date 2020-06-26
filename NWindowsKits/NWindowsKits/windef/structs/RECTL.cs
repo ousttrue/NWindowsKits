@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:164
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct RECTL // 3
+    public struct RECTL
     {
 
         public int left;

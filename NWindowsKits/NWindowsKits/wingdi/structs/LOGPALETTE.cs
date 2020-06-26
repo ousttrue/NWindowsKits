@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:1439
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct LOGPALETTE // 4
+    public struct LOGPALETTE
     {
 
         public ushort palVersion;

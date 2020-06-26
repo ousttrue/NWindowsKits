@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:2191
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_MAPPED_SUBRESOURCE // 1
+    public struct D3D11_MAPPED_SUBRESOURCE
     {
 
         public IntPtr pData;

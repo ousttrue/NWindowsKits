@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4557
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct UPDATELAYEREDWINDOWINFO // 2
+    public struct UPDATELAYEREDWINDOWINFO
     {
 
         public uint cbSize;

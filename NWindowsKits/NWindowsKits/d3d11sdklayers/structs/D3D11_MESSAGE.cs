@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11sdklayers.h:2105
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_MESSAGE // 1
+    public struct D3D11_MESSAGE
     {
 
         public D3D11_MESSAGE_CATEGORY Category;

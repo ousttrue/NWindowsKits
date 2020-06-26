@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:2510
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-    public struct BINDPTR // 2
+    public struct BINDPTR
     {
 
 

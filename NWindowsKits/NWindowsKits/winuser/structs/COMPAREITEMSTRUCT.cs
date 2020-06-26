@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:3376
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct COMPAREITEMSTRUCT // 3
+    public struct COMPAREITEMSTRUCT
     {
 
         public uint CtlType;

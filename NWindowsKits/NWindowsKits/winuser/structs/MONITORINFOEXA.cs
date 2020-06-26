@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:13534
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct MONITORINFOEXA // 2
+    public struct MONITORINFOEXA
     {
 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)] public sbyte[] szDevice;

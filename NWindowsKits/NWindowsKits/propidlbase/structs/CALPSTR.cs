@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:242
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CALPSTR // 1
+    public struct CALPSTR
     {
 
         public uint cElems;

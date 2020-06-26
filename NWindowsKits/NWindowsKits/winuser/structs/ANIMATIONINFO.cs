@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:12853
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ANIMATIONINFO // 2
+    public struct ANIMATIONINFO
     {
 
         public uint cbSize;

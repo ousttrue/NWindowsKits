@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:266
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CACLSID // 1
+    public struct CACLSID
     {
 
         public uint cElems;

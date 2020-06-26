@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi.h:2390
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_DISPLAY_COLOR_SPACE // 1
+    public struct DXGI_DISPLAY_COLOR_SPACE
     {
 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] public float[][] PrimaryCoordinates;

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:206
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CABSTRBLOB // 1
+    public struct CABSTRBLOB
     {
 
         public uint cElems;

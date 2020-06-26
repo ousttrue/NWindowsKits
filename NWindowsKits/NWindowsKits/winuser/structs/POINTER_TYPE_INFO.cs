@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6465
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct POINTER_TYPE_INFO // 2
+    public struct POINTER_TYPE_INFO
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6467
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     

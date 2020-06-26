@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:8431
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct BIND_OPTS // 3
+    public struct BIND_OPTS
     {
 
         public uint cbStruct;

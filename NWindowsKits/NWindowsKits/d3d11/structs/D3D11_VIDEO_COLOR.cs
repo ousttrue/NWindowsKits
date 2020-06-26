@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10368
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_VIDEO_COLOR // 1
+    public struct D3D11_VIDEO_COLOR
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:10370
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     

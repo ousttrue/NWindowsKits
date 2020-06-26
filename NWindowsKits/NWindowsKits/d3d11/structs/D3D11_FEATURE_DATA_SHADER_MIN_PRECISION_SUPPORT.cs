@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:7383
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_FEATURE_DATA_SHADER_MIN_PRECISION_SUPPORT // 1
+    public struct D3D11_FEATURE_DATA_SHADER_MIN_PRECISION_SUPPORT
     {
 
         public uint PixelShaderMinPrecision;

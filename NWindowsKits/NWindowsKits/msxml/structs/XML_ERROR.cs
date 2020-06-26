@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/msxml.h:337
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct XML_ERROR // 1
+    public struct XML_ERROR
     {
 
         public uint _nLine;

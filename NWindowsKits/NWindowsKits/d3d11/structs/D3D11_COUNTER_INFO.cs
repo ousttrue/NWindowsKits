@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:6641
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_COUNTER_INFO // 1
+    public struct D3D11_COUNTER_INFO
     {
 
         public D3D11_COUNTER LastDeviceDependentCounter;

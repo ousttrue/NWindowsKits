@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:180
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct POINTL // 2
+    public struct POINTL
     {
 
         public int x;

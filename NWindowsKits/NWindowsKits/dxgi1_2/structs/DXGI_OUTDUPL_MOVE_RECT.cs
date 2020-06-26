@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/dxgi1_2.h:215
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DXGI_OUTDUPL_MOVE_RECT // 1
+    public struct DXGI_OUTDUPL_MOVE_RECT
     {
 
         public POINT SourcePoint;

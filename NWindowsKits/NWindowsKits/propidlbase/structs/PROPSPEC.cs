@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:441
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct PROPSPEC // 1
+    public struct PROPSPEC
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/propidlbase.h:444
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OAIdl.h:784
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct EXCEPINFO // 3
+    public struct EXCEPINFO
     {
 
         public ushort wCode;

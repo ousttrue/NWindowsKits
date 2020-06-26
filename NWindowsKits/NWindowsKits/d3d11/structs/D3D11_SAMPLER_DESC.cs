@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d11.h:5859
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D11_SAMPLER_DESC // 1
+    public struct D3D11_SAMPLER_DESC
     {
 
         public D3D11_FILTER Filter;

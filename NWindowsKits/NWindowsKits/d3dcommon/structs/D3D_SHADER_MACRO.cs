@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3dcommon.h:345
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D_SHADER_MACRO // 2
+    public struct D3D_SHADER_MACRO
     {
 
         [MarshalAs(UnmanagedType.LPStr)] public string Name;

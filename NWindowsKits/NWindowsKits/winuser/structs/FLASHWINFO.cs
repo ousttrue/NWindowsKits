@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:4670
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct FLASHWINFO // 2
+    public struct FLASHWINFO
     {
 
         public uint cbSize;

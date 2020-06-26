@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:84
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct HENHMETAFILE // 20
+    public struct HENHMETAFILE
     {
 
         public IntPtr ptr;

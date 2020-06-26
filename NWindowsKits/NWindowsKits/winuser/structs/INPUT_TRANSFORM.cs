@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6786
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct INPUT_TRANSFORM // 1
+    public struct INPUT_TRANSFORM
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6787
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:6788
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public float _11;

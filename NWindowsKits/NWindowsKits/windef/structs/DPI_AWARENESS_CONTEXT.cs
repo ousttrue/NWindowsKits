@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/windef.h:250
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DPI_AWARENESS_CONTEXT // 11
+    public struct DPI_AWARENESS_CONTEXT
     {
 
         public IntPtr ptr;

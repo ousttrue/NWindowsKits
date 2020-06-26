@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/wingdi.h:3051
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DISPLAYCONFIG_DEVICE_INFO_HEADER // 1
+    public struct DISPLAYCONFIG_DEVICE_INFO_HEADER
     {
 
         public DISPLAYCONFIG_DEVICE_INFO_TYPE type;

@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:695
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct DECIMAL // 1
+    public struct DECIMAL
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:697
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     
@@ -21,7 +21,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:698
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 0
+        public struct __Anonymous__1
         {
     
             public byte scale;
@@ -30,7 +30,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:705
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__2 // 0
+        public struct __Anonymous__2
         {
     
     
@@ -41,7 +41,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/wtypes.h:706
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__3 // 0
+        public struct __Anonymous__3
         {
     
             public uint Lo32;

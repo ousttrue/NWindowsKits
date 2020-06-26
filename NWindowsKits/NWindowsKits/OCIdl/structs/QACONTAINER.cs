@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/OCIdl.h:6479
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct QACONTAINER // 1
+    public struct QACONTAINER
     {
 
         public uint cbSize;

@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:2794
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct D3D10_SHADER_RESOURCE_VIEW_DESC // 1
+    public struct D3D10_SHADER_RESOURCE_VIEW_DESC
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/d3d10.h:2798
         [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
     

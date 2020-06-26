@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:15304
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct POINTER_DEVICE_INFO // 1
+    public struct POINTER_DEVICE_INFO
     {
 
         public uint displayOrientation;

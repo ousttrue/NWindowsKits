@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/WinUser.h:10897
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct ICONINFOEXW // 2
+    public struct ICONINFOEXW
     {
 
         public uint cbSize;

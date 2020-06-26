@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/mmsyscom.h:275
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct HDRVR // 10
+    public struct HDRVR
     {
 
         public IntPtr ptr;

@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/shared/minwindef.h:258
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct HWINSTA // 9
+    public struct HWINSTA
     {
 
         public IntPtr ptr;

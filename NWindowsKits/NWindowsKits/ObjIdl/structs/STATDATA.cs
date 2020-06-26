@@ -6,7 +6,7 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/ObjIdl.h:10993
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct STATDATA // 1
+    public struct STATDATA
     {
 
         public FORMATETC formatetc;

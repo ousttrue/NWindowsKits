@@ -6,11 +6,11 @@ namespace NWindowsKits
 {
     // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:842
     [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode)]
-    public struct LARGE_INTEGER // 1
+    public struct LARGE_INTEGER
     {
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:843
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__0 // 0
+        public struct __Anonymous__0
         {
     
             public uint LowPart;
@@ -19,7 +19,7 @@ namespace NWindowsKits
     
         // C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winnt.h:847
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct __Anonymous__1 // 1
+        public struct __Anonymous__1
         {
     
             public uint LowPart;
