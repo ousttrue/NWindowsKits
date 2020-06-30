@@ -2,9 +2,8 @@
 using System.Numerics;
 using System.Runtime.InteropServices;
 using NWindowsKits;
-using SampleLib;
 
-namespace Sample
+namespace D3D11ClearSwapchain
 {
     class D3DApp : IDisposable
     {
@@ -107,7 +106,10 @@ namespace Sample
             {
                 DXGI_SWAP_CHAIN_DESC desc = default;
                 m_swapChain.GetDesc(ref desc);
-                m_swapChain.GetBuffer(0, ref ID3D11Texture2D.IID, ref texture.NewPtr).ThrowIfFailed();
+                if (m_swapChain.GetBuffer(0, ref ID3D11Texture2D.IID, ref texture.NewPtr) != 0)
+                {
+                    throw new Exception();
+                };
 
                 D3D11_TEXTURE2D_DESC tdesc = default;
                 texture.GetDesc(ref tdesc);
@@ -145,7 +147,7 @@ namespace Sample
         [STAThread]
         static void Main(string[] _)
         {
-            var window = Window.Create();
+            var window = SampleLib.Window.Create();
             if (window == null)
             {
                 throw new Exception("fail to create window");
@@ -158,7 +160,7 @@ namespace Sample
                     d3d.Resize(window.WindowHandle, w, h);
                 };
 
-                MessageLoop.Run(() =>
+                SampleLib.MessageLoop.Run(() =>
                 {
 
                     d3d.Draw(window.WindowHandle);
